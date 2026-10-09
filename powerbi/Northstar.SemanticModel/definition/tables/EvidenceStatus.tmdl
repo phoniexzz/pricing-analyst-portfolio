@@ -1,0 +1,68 @@
+table EvidenceStatus
+	lineageTag: 6a7212de-689c-53ea-89d4-824e000e4dd6
+
+	column snapshot_id
+		dataType: string
+		lineageTag: 5316b5fe-620b-571e-8e80-e033ae17fea1
+		summarizeBy: none
+		sourceColumn: snapshot_id
+
+	column historical_current
+		dataType: boolean
+		lineageTag: 54dc39d5-cc75-54dc-ac17-5183907126a5
+		summarizeBy: none
+		sourceColumn: historical_current
+
+	column forward_current
+		dataType: boolean
+		lineageTag: 0c2be995-fbe6-56db-8e8b-ce00587052db
+		summarizeBy: none
+		sourceColumn: forward_current
+
+	column experiment_current
+		dataType: boolean
+		lineageTag: 451cd887-1770-5471-bb4a-c37d75b9a73d
+		summarizeBy: none
+		sourceColumn: experiment_current
+
+	column evidence_message
+		dataType: string
+		lineageTag: 28d3a53a-2ffb-5f96-8dcd-15ab613fbaa1
+		summarizeBy: none
+		sourceColumn: evidence_message
+
+	column validation_utc
+		dataType: string
+		lineageTag: 20d83de1-5ddf-5300-b7a4-e9ba667d40eb
+		summarizeBy: none
+		sourceColumn: validation_utc
+
+	column native_status
+		dataType: string
+		lineageTag: e3d69570-0be0-5c8f-a652-e404f35ec54c
+		summarizeBy: none
+		sourceColumn: native_status
+
+	column disclaimer_1
+		dataType: string
+		lineageTag: 8ee2c016-9c2f-584b-9da2-1b16db82fe20
+		summarizeBy: none
+		sourceColumn: disclaimer_1
+
+	column disclaimer_2
+		dataType: string
+		lineageTag: a31bc2a2-9654-5cb5-9f5f-2441ef729cfc
+		summarizeBy: none
+		sourceColumn: disclaimer_2
+
+	partition EvidenceStatus = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(SourceRoot & "/EvidenceStatus.csv"), [Delimiter=",", Columns=9, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Nulls = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				    Typed = Table.TransformColumnTypes(Nulls, {{"snapshot_id", type text}, {"historical_current", type logical}, {"forward_current", type logical}, {"experiment_current", type logical}, {"evidence_message", type text}, {"validation_utc", type text}, {"native_status", type text}, {"disclaimer_1", type text}, {"disclaimer_2", type text}}, "en-GB")
+				in
+				    Typed
+

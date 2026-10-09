@@ -1,0 +1,9 @@
+{
+  "native_powerbi": "pending",
+  "status": "TMDL parsed by Microsoft TOM; DAX and M execution remain pending",
+  "tom_package": "Microsoft.AnalysisServices.NetCore.retail.amd64 19.84.1",
+  "measures": 296.0,
+  "compatibility_level": 1601,
+  "tables": 42,
+  "relationships": 55
+}

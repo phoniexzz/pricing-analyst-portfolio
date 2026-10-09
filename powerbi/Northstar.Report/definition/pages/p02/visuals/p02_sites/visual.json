@@ -1,0 +1,330 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "p02_sites",
+  "position": {
+    "x": 28,
+    "y": 678,
+    "z": 6,
+    "width": 1544,
+    "height": 205,
+    "tabOrder": 6
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Pricing position, service pressure and caution flags'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#17324D'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimGym"
+                    }
+                  },
+                  "Property": "gym_id"
+                }
+              },
+              "queryRef": "DimGym.gym_id",
+              "nativeQueryRef": "Gym Id"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimGym"
+                    }
+                  },
+                  "Property": "city"
+                }
+              },
+              "queryRef": "DimGym.city",
+              "nativeQueryRef": "City"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CommercialMeasures"
+                    }
+                  },
+                  "Property": "Standard Headline December"
+                }
+              },
+              "queryRef": "CommercialMeasures.Standard Headline December",
+              "nativeQueryRef": "Standard Headline December"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CommercialMeasures"
+                    }
+                  },
+                  "Property": "Competitor Recurring December"
+                }
+              },
+              "queryRef": "CommercialMeasures.Competitor Recurring December",
+              "nativeQueryRef": "Competitor Recurring December"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CommercialMeasures"
+                    }
+                  },
+                  "Property": "Competitor Gap December"
+                }
+              },
+              "queryRef": "CommercialMeasures.Competitor Gap December",
+              "nativeQueryRef": "Competitor Gap December"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CommercialMeasures"
+                    }
+                  },
+                  "Property": "Competitor Joining Fee December"
+                }
+              },
+              "queryRef": "CommercialMeasures.Competitor Joining Fee December",
+              "nativeQueryRef": "Competitor Joining Fee December"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CommercialMeasures"
+                    }
+                  },
+                  "Property": "Competitor Intro Discount December"
+                }
+              },
+              "queryRef": "CommercialMeasures.Competitor Intro Discount December",
+              "nativeQueryRef": "Competitor Intro Discount December"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CommercialMeasures"
+                    }
+                  },
+                  "Property": "Headroom Peak 2025"
+                }
+              },
+              "queryRef": "CommercialMeasures.Headroom Peak 2025",
+              "nativeQueryRef": "Headroom Peak 2025"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CommercialMeasures"
+                    }
+                  },
+                  "Property": "Caution Count"
+                }
+              },
+              "queryRef": "CommercialMeasures.Caution Count",
+              "nativeQueryRef": "Caution Count"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CommercialMeasures"
+                    }
+                  },
+                  "Property": "Headroom Score"
+                }
+              },
+              "queryRef": "CommercialMeasures.Headroom Score",
+              "nativeQueryRef": "Headroom Score"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CommercialMeasures"
+                    }
+                  },
+                  "Property": "Saved Estate Rank"
+                }
+              },
+              "queryRef": "CommercialMeasures.Saved Estate Rank",
+              "nativeQueryRef": "Saved Estate Rank"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CommercialMeasures"
+                    }
+                  },
+                  "Property": "Headroom Band"
+                }
+              },
+              "queryRef": "CommercialMeasures.Headroom Band",
+              "nativeQueryRef": "Headroom Band"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "grid": [
+        {
+          "properties": {
+            "rowPadding": {
+              "expr": {
+                "Literal": {
+                  "Value": "4D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "total": [
+        {
+          "properties": {
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

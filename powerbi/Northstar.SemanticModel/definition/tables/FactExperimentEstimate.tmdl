@@ -1,0 +1,140 @@
+table FactExperimentEstimate
+	lineageTag: d5b393e1-e0c0-5370-a9c6-cca6735a2335
+
+	column simulation
+		dataType: string
+		lineageTag: bc387a0b-0102-59cf-942c-477975a5f435
+		summarizeBy: none
+		sourceColumn: simulation
+
+	column population
+		dataType: string
+		lineageTag: f99711f5-7a1f-5208-b3fb-ab079b81a148
+		summarizeBy: none
+		sourceColumn: population
+
+	column checkpoint_months
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 15b50167-e589-5082-8de2-927228e33354
+		summarizeBy: none
+		sourceColumn: checkpoint_months
+
+	column metric
+		dataType: string
+		lineageTag: 935e5397-ce94-54cc-8ff2-017b09aae518
+		summarizeBy: none
+		sourceColumn: metric
+
+	column estimate
+		dataType: double
+		isHidden
+		lineageTag: 5af04b6a-c780-5bb4-8ef8-b9d8ccc4020f
+		summarizeBy: none
+		sourceColumn: estimate
+
+	column lower
+		dataType: double
+		isHidden
+		lineageTag: 0bef6f66-9dcb-5a92-b4d4-520dbc3ad88b
+		summarizeBy: none
+		sourceColumn: lower
+
+	column upper
+		dataType: double
+		isHidden
+		lineageTag: 5c632aa6-84e5-55c6-8e27-614ee4050487
+		summarizeBy: none
+		sourceColumn: upper
+
+	column assigned_pairs
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 5f89132b-2d3e-563e-be60-99457ccfd249
+		summarizeBy: none
+		sourceColumn: assigned_pairs
+
+	column complete_pairs
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 91cfb3db-b72f-55c9-8625-6df91c0b6b0b
+		summarizeBy: none
+		sourceColumn: complete_pairs
+
+	column treated_gyms
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 318bce4e-854d-58e7-a4dc-4c988164833a
+		summarizeBy: none
+		sourceColumn: treated_gyms
+
+	column control_gyms
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: bd5f8873-bcb6-5fb2-9431-b153ed416e9c
+		summarizeBy: none
+		sourceColumn: control_gyms
+
+	column assignment_flips
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: bced9ec6-5153-50fa-a84c-771c4e03f3a3
+		summarizeBy: none
+		sourceColumn: assignment_flips
+
+	column p_value_one_sided
+		dataType: double
+		isHidden
+		lineageTag: 2d46b4a8-0b57-53af-b0e9-9409e9a14159
+		summarizeBy: none
+		sourceColumn: p_value_one_sided
+
+	column p_value_two_sided
+		dataType: double
+		isHidden
+		lineageTag: 5bfee290-6552-5205-a666-879b05e216a2
+		summarizeBy: none
+		sourceColumn: p_value_two_sided
+
+	column interval_status
+		dataType: string
+		lineageTag: 6586673f-7eef-56d2-aecb-2f5fff2a967e
+		summarizeBy: none
+		sourceColumn: interval_status
+
+	column evidence_status
+		dataType: string
+		lineageTag: bcd974bc-b39a-5344-a8c6-0215610b4e01
+		summarizeBy: none
+		sourceColumn: evidence_status
+
+	column is_primary
+		dataType: boolean
+		isHidden
+		lineageTag: 7f699b6a-b628-5831-943c-25eab9ee6011
+		summarizeBy: none
+		sourceColumn: is_primary
+
+	column unit
+		dataType: string
+		lineageTag: 285f8ee9-27b9-5b8c-a014-65c241ab73a8
+		summarizeBy: none
+		sourceColumn: unit
+
+	partition FactExperimentEstimate = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(SourceRoot & "/FactExperimentEstimate.csv"), [Delimiter=",", Columns=18, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Nulls = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				    Typed = Table.TransformColumnTypes(Nulls, {{"simulation", type text}, {"population", type text}, {"checkpoint_months", Int64.Type}, {"metric", type text}, {"estimate", type number}, {"lower", type number}, {"upper", type number}, {"assigned_pairs", Int64.Type}, {"complete_pairs", Int64.Type}, {"treated_gyms", Int64.Type}, {"control_gyms", Int64.Type}, {"assignment_flips", Int64.Type}, {"p_value_one_sided", type number}, {"p_value_two_sided", type number}, {"interval_status", type text}, {"evidence_status", type text}, {"is_primary", type logical}, {"unit", type text}}, "en-GB")
+				in
+				    Typed
+

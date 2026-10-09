@@ -1,0 +1,238 @@
+table FactExperimentGovernance
+	lineageTag: 51a7c900-7003-5026-9e02-109a11044709
+
+	column simulation
+		dataType: string
+		lineageTag: 025fbca4-fee2-5106-8ae0-60e92c91a05e
+		summarizeBy: none
+		sourceColumn: simulation
+
+	column population
+		dataType: string
+		lineageTag: 991856ab-4557-54db-a759-9d293e4c42fd
+		summarizeBy: none
+		sourceColumn: population
+
+	column checkpoint_months
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 6e24014a-d289-524c-879f-f4773da26b56
+		summarizeBy: none
+		sourceColumn: checkpoint_months
+
+	column decision
+		dataType: string
+		lineageTag: 516f93c4-34cb-57e3-9c1f-2e0e97573635
+		summarizeBy: none
+		sourceColumn: decision
+
+	column rule_id
+		dataType: string
+		lineageTag: 6473a086-8bc5-5ef5-864d-a2bbcfc6c10d
+		summarizeBy: none
+		sourceColumn: rule_id
+
+	column service_trigger
+		dataType: boolean
+		isHidden
+		lineageTag: a8ddaa08-4d54-5c97-8ec7-66f78c59d9b7
+		summarizeBy: none
+		sourceColumn: service_trigger
+
+	column capacity_trigger
+		dataType: boolean
+		isHidden
+		lineageTag: de5426a7-f82c-5733-9d3b-d9517288a200
+		summarizeBy: none
+		sourceColumn: capacity_trigger
+
+	column complaints_trigger
+		dataType: boolean
+		isHidden
+		lineageTag: fdf338d7-cd2f-5d61-97bd-141deb032f6c
+		summarizeBy: none
+		sourceColumn: complaints_trigger
+
+	column complete_pairs
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: dc32c033-8cec-512d-8069-ac1992b34d10
+		summarizeBy: none
+		sourceColumn: complete_pairs
+
+	column scope
+		dataType: string
+		lineageTag: 7b2a41bf-e362-5468-bbd3-3ac4f187caae
+		summarizeBy: none
+		sourceColumn: scope
+
+	column revenue_effect_estimate
+		dataType: double
+		isHidden
+		lineageTag: 7fd0236a-69b5-53d9-9201-8a4a1215cdf7
+		summarizeBy: none
+		sourceColumn: revenue_effect_estimate
+
+	column revenue_effect_lower
+		dataType: double
+		isHidden
+		lineageTag: eb2f6609-d5e8-5b3d-8056-a5ae70db1645
+		summarizeBy: none
+		sourceColumn: revenue_effect_lower
+
+	column revenue_effect_upper
+		dataType: double
+		isHidden
+		lineageTag: a9fe5a26-213f-54f6-8e3b-98722b17c5f7
+		summarizeBy: none
+		sourceColumn: revenue_effect_upper
+
+	column incremental_revenue_estimate
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 22ffd256-1243-5c76-a815-ce819e0a01f4
+		summarizeBy: none
+		sourceColumn: incremental_revenue_estimate
+
+	column incremental_revenue_lower
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 322b4b85-4ec9-54d6-aeab-f960466751a7
+		summarizeBy: none
+		sourceColumn: incremental_revenue_lower
+
+	column incremental_revenue_upper
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 97ae4fba-078b-51be-ba0f-5470f1d25bab
+		summarizeBy: none
+		sourceColumn: incremental_revenue_upper
+
+	column member_harm_estimate
+		dataType: double
+		isHidden
+		lineageTag: 23cea71c-bf8a-57dd-b4cd-4f4b5c234b26
+		summarizeBy: none
+		sourceColumn: member_harm_estimate
+
+	column member_harm_lower
+		dataType: double
+		isHidden
+		lineageTag: 2b361e8a-80bd-5680-a127-932d6ef9613c
+		summarizeBy: none
+		sourceColumn: member_harm_lower
+
+	column member_harm_upper
+		dataType: double
+		isHidden
+		lineageTag: 22e9c028-04e6-5c19-99dd-1bb595125005
+		summarizeBy: none
+		sourceColumn: member_harm_upper
+
+	column standard_acquisition_harm_estimate
+		dataType: double
+		isHidden
+		lineageTag: e225ebfa-4a41-5425-b01d-922d8a7749df
+		summarizeBy: none
+		sourceColumn: standard_acquisition_harm_estimate
+
+	column standard_acquisition_harm_lower
+		dataType: double
+		isHidden
+		lineageTag: aff18b83-7540-50fb-ab56-3e5557eca0ab
+		summarizeBy: none
+		sourceColumn: standard_acquisition_harm_lower
+
+	column standard_acquisition_harm_upper
+		dataType: double
+		isHidden
+		lineageTag: a529d1fe-aec4-5e78-bdeb-3d48f9315c34
+		summarizeBy: none
+		sourceColumn: standard_acquisition_harm_upper
+
+	column incumbent_churn_change_pp_estimate
+		dataType: double
+		isHidden
+		lineageTag: e4a47a7f-19f6-57a6-b028-bced05a91ddd
+		summarizeBy: none
+		sourceColumn: incumbent_churn_change_pp_estimate
+
+	column incumbent_churn_change_pp_lower
+		dataType: double
+		isHidden
+		lineageTag: f2a136df-9bdc-58da-b51e-b9890f9310b8
+		summarizeBy: none
+		sourceColumn: incumbent_churn_change_pp_lower
+
+	column incumbent_churn_change_pp_upper
+		dataType: double
+		isHidden
+		lineageTag: 71870c7e-cc61-5872-b33a-90ed37b3679e
+		summarizeBy: none
+		sourceColumn: incumbent_churn_change_pp_upper
+
+	column incumbent_downgrade_change_pp_estimate
+		dataType: double
+		isHidden
+		lineageTag: 946ada97-efe1-5372-94b4-e242d61c6449
+		summarizeBy: none
+		sourceColumn: incumbent_downgrade_change_pp_estimate
+
+	column incumbent_downgrade_change_pp_lower
+		dataType: double
+		isHidden
+		lineageTag: 6e022f3f-f786-5b49-bce9-2cc62c012121
+		summarizeBy: none
+		sourceColumn: incumbent_downgrade_change_pp_lower
+
+	column incumbent_downgrade_change_pp_upper
+		dataType: double
+		isHidden
+		lineageTag: 1b1b06ae-aedf-59d9-88d9-c321a216ccdb
+		summarizeBy: none
+		sourceColumn: incumbent_downgrade_change_pp_upper
+
+	column complaints_change_estimate
+		dataType: double
+		isHidden
+		lineageTag: 935b99ff-ce74-5d5f-9b3d-90ad7e08378c
+		summarizeBy: none
+		sourceColumn: complaints_change_estimate
+
+	column complaints_change_lower
+		dataType: double
+		isHidden
+		lineageTag: 1137731a-7b15-562b-bd0d-ba5f568f918d
+		summarizeBy: none
+		sourceColumn: complaints_change_lower
+
+	column complaints_change_upper
+		dataType: double
+		isHidden
+		lineageTag: 57853111-4f43-5322-aafe-9264b7036486
+		summarizeBy: none
+		sourceColumn: complaints_change_upper
+
+	column p_value_one_sided
+		dataType: double
+		isHidden
+		lineageTag: ff526e1a-4f37-559c-98b5-13574a701331
+		summarizeBy: none
+		sourceColumn: p_value_one_sided
+
+	partition FactExperimentGovernance = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(SourceRoot & "/FactExperimentGovernance.csv"), [Delimiter=",", Columns=32, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Nulls = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				    Typed = Table.TransformColumnTypes(Nulls, {{"simulation", type text}, {"population", type text}, {"checkpoint_months", Int64.Type}, {"decision", type text}, {"rule_id", type text}, {"service_trigger", type logical}, {"capacity_trigger", type logical}, {"complaints_trigger", type logical}, {"complete_pairs", Int64.Type}, {"scope", type text}, {"revenue_effect_estimate", type number}, {"revenue_effect_lower", type number}, {"revenue_effect_upper", type number}, {"incremental_revenue_estimate", type number}, {"incremental_revenue_lower", type number}, {"incremental_revenue_upper", type number}, {"member_harm_estimate", type number}, {"member_harm_lower", type number}, {"member_harm_upper", type number}, {"standard_acquisition_harm_estimate", type number}, {"standard_acquisition_harm_lower", type number}, {"standard_acquisition_harm_upper", type number}, {"incumbent_churn_change_pp_estimate", type number}, {"incumbent_churn_change_pp_lower", type number}, {"incumbent_churn_change_pp_upper", type number}, {"incumbent_downgrade_change_pp_estimate", type number}, {"incumbent_downgrade_change_pp_lower", type number}, {"incumbent_downgrade_change_pp_upper", type number}, {"complaints_change_estimate", type number}, {"complaints_change_lower", type number}, {"complaints_change_upper", type number}, {"p_value_one_sided", type number}}, "en-GB")
+				in
+				    Typed
+

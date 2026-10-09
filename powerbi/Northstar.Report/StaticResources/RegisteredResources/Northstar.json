@@ -1,0 +1,29 @@
+{
+  "name": "Northstar",
+  "dataColors": [
+    "#087F8C",
+    "#17324D",
+    "#B86200",
+    "#7A5195",
+    "#B33545",
+    "#477499",
+    "#477A35"
+  ],
+  "background": "#F4F7FA",
+  "foreground": "#17324D",
+  "tableAccent": "#087F8C",
+  "textClasses": {
+    "title": {
+      "fontFace": "Segoe UI",
+      "fontSize": 13
+    },
+    "label": {
+      "fontFace": "Segoe UI",
+      "fontSize": 11
+    },
+    "callout": {
+      "fontFace": "Segoe UI",
+      "fontSize": 24
+    }
+  }
+}

@@ -1,0 +1,356 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "p03",
+  "displayName": "Customer & Member Behaviour",
+  "displayOption": "FitToPage",
+  "height": 1095,
+  "width": 1600,
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#F4F7FA'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "p03_acquisition",
+      "target": "p03_k0",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_acquisition",
+      "target": "p03_k1",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_acquisition",
+      "target": "p03_k2",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_acquisition",
+      "target": "p03_k3",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_acquisition",
+      "target": "p03_k4",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_acquisition",
+      "target": "p03_churn",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_acquisition",
+      "target": "p03_pilot",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_acquisition",
+      "target": "p03_q4",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_acquisition",
+      "target": "p03_shared0",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_acquisition",
+      "target": "p03_shared1",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_acquisition",
+      "target": "p03_shared2",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_acquisition",
+      "target": "p03_shared3",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_acquisition",
+      "target": "p03_year",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_acquisition",
+      "target": "p03_months",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_acquisition",
+      "target": "p03_scope_label",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_acquisition",
+      "target": "p03_stamp",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_churn",
+      "target": "p03_k0",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_churn",
+      "target": "p03_k1",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_churn",
+      "target": "p03_k2",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_churn",
+      "target": "p03_k3",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_churn",
+      "target": "p03_k4",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_churn",
+      "target": "p03_acquisition",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_churn",
+      "target": "p03_pilot",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_churn",
+      "target": "p03_q4",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_churn",
+      "target": "p03_shared0",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_churn",
+      "target": "p03_shared1",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_churn",
+      "target": "p03_shared2",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_churn",
+      "target": "p03_shared3",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_churn",
+      "target": "p03_year",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_churn",
+      "target": "p03_months",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_churn",
+      "target": "p03_scope_label",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_churn",
+      "target": "p03_stamp",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_pilot",
+      "target": "p03_k0",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_pilot",
+      "target": "p03_k1",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_pilot",
+      "target": "p03_k2",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_pilot",
+      "target": "p03_k3",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_pilot",
+      "target": "p03_k4",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_pilot",
+      "target": "p03_acquisition",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_pilot",
+      "target": "p03_churn",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_pilot",
+      "target": "p03_q4",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_pilot",
+      "target": "p03_shared0",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_pilot",
+      "target": "p03_shared1",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_pilot",
+      "target": "p03_shared2",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_pilot",
+      "target": "p03_shared3",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_pilot",
+      "target": "p03_year",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_pilot",
+      "target": "p03_months",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_pilot",
+      "target": "p03_scope_label",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_pilot",
+      "target": "p03_stamp",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_q4",
+      "target": "p03_k0",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_q4",
+      "target": "p03_k1",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_q4",
+      "target": "p03_k2",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_q4",
+      "target": "p03_k3",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_q4",
+      "target": "p03_k4",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_q4",
+      "target": "p03_acquisition",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_q4",
+      "target": "p03_churn",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_q4",
+      "target": "p03_pilot",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_q4",
+      "target": "p03_shared0",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_q4",
+      "target": "p03_shared1",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_q4",
+      "target": "p03_shared2",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_q4",
+      "target": "p03_shared3",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_q4",
+      "target": "p03_year",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_q4",
+      "target": "p03_months",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_q4",
+      "target": "p03_scope_label",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p03_q4",
+      "target": "p03_stamp",
+      "type": "NoFilter"
+    }
+  ]
+}

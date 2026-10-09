@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "file": "01_membership_bridge.sql",
+    "purpose": "Reconcile integer member stocks and continuity across all historical months."
+  },
+  {
+    "id": 2,
+    "file": "02_weighted_baseline.sql",
+    "purpose": "Separate 2025 revenue components, average-member exposure and subscription yield by gym."
+  },
+  {
+    "id": 3,
+    "file": "03_matching_periods.sql",
+    "purpose": "Compare annual and Q4 growth with matching 2024 windows; rate differences are percentage points."
+  },
+  {
+    "id": 4,
+    "file": "04_region_trading.sql",
+    "purpose": "Compare eight regions without averaging gym-level percentages."
+  },
+  {
+    "id": 5,
+    "file": "05_qualified_funnel.sql",
+    "purpose": "Evaluate recruitment conversion using qualified prospects; trials are not added to leads."
+  },
+  {
+    "id": 6,
+    "file": "06_opening_base_retention.sql",
+    "purpose": "Separate opening-base churn from same-month exits and measure complaints by exposure."
+  },
+  {
+    "id": 7,
+    "file": "07_tier_mix_yield.sql",
+    "purpose": "Track current-tier exposure, legacy paid rates and net subscription yield from the ledger."
+  },
+  {
+    "id": 8,
+    "file": "08_december_competitors.sql",
+    "purpose": "Compare recurring December consumer prices; fees and first-month offers stay separate."
+  },
+  {
+    "id": 9,
+    "file": "09_promotion_context.sql",
+    "purpose": "Describe recruitment during promotion months without asserting a causal promotion effect."
+  },
+  {
+    "id": 10,
+    "file": "10_cohort_censoring.sql",
+    "purpose": "Keep immature cohort retention and incomplete observed revenue unavailable."
+  },
+  {
+    "id": 11,
+    "file": "11_saved_pilot_evidence.sql",
+    "purpose": "Expose all 12 saved primary pair responses; incumbent changes remain separate from acquisition."
+  },
+  {
+    "id": 12,
+    "file": "12_saved_base_scenarios.sql",
+    "purpose": "Compare four saved Base options with a common counterfactual; no case aggregation."
+  },
+  {
+    "id": 13,
+    "file": "13_saved_recommendations.sql",
+    "purpose": "Inspect unchanged actions, conditional qualification gates and investigation rationale."
+  },
+  {
+    "id": 14,
+    "file": "14_conditional_portfolios.sql",
+    "purpose": "Map only conditional RAISE actions to saved scenarios; keep complete-portfolio ranges intact."
+  },
+  {
+    "id": 15,
+    "file": "15_experiment_monitoring.sql",
+    "purpose": "Show saved first/repeat population decisions and intervals at each checkpoint."
+  }
+]

@@ -1,0 +1,27 @@
+table DimSimulation
+	lineageTag: f624934f-0eb3-5f6f-a60c-682fafbb0e20
+
+	column simulation
+		dataType: string
+		lineageTag: f9f432ef-a74d-589a-8535-0ca5240e1b8d
+		summarizeBy: none
+		sourceColumn: simulation
+
+	column sort_order
+		dataType: int64
+		formatString: #,##0
+		lineageTag: 7ae7a747-9076-55ab-892c-4d96f729808a
+		summarizeBy: none
+		sourceColumn: sort_order
+
+	partition DimSimulation = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(SourceRoot & "/DimSimulation.csv"), [Delimiter=",", Columns=2, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Nulls = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				    Typed = Table.TransformColumnTypes(Nulls, {{"simulation", type text}, {"sort_order", Int64.Type}}, "en-GB")
+				in
+				    Typed
+

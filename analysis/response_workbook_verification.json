@@ -1,0 +1,62 @@
+{
+  "cellsCompared": 574168,
+  "maxAbsoluteDifference": 7.275957614183426e-10,
+  "savedWorkbookRecalculated": true,
+  "originalReconciliationsPassed": true,
+  "formulaErrorScan": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}",
+  "inputChangeTests": [
+    "Standard acquisitions propagated to overall estimate",
+    "Incumbent downgrades propagated in pp",
+    "Actual price dose propagated to elasticity",
+    "Zero acquisition denominator became unavailable"
+  ],
+  "nativeExcelApplication": "Not automated; Artifact Tool recalculation plus independently checked saved OOXML caches",
+  "status": "Complete",
+  "csvCellsComparedIndependently": 574168,
+  "maxSavedCsvDifference": 4.793284460902214e-06,
+  "newFormulaCaches": 70527,
+  "originalPackagePartsPreserved": 58,
+  "originalSheetCount": 18,
+  "finalSheetCount": 21,
+  "nativeCharts": 5,
+  "chartSchedulesChecked": true,
+  "internalRelationshipsChecked": true,
+  "sourceHashesUnchanged": true,
+  "allFourCsvsReproduce": true,
+  "visualReview": {
+    "reviewed": true,
+    "sheets": [
+      "Response Data",
+      "Historical Response",
+      "Elasticity Summary",
+      "Dataset Overview",
+      "README",
+      "Headroom Summary"
+    ],
+    "native_charts": 5,
+    "standalone_figures": 3,
+    "views": [
+      "response_identifiers",
+      "response_eligibility",
+      "source_checks",
+      "event_identifiers",
+      "pair_identifiers",
+      "pair_effects",
+      "matching_balance",
+      "placebo_detail",
+      "summary_primary",
+      "synthetic_disclaimers",
+      "estimates_detail",
+      "chart_profiles",
+      "chart_rates",
+      "chart_pairs_acquisition",
+      "chart_pairs_churn",
+      "chart_intervals",
+      "overview_updated",
+      "readme_updated",
+      "headroom_guidance_updated"
+    ],
+    "findings": "Reviewed typed dates, integer member movements, GBP and percentage-point formats, source checks, labels, both disclaimers and progress guidance. Repaired count/rate formatting and summary units; explicit month labels replaced date serials. Endpoint scatter uses an explicit group/sample-size key to avoid category labels obscured by negative bars. No clipping remains in the reviewed table and guidance views. The standalone forest plot displays connected confidence intervals; native charts display editable endpoint dots."
+  },
+  "phase6Ready": true
+}

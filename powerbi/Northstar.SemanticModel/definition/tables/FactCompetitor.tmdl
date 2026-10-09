@@ -1,0 +1,92 @@
+table FactCompetitor
+	lineageTag: 2d0def33-f955-5ba6-9587-a4bb9b5c5412
+
+	column gym_id
+		dataType: string
+		lineageTag: abf071c2-5266-5bc7-97fe-3d4b76098cb5
+		summarizeBy: none
+		sourceColumn: gym_id
+
+	column competitor_id
+		dataType: string
+		lineageTag: 486cc05a-b2ee-5a56-bd48-1af93dd0c80a
+		summarizeBy: none
+		sourceColumn: competitor_id
+
+	column competitor_name
+		dataType: string
+		lineageTag: 9b2a37bd-4cf8-5ab0-9e12-e753a87019a3
+		summarizeBy: none
+		sourceColumn: competitor_name
+
+	column competitor_type
+		dataType: string
+		lineageTag: 0f933095-526c-54da-bc5b-77ae3d2eda40
+		summarizeBy: none
+		sourceColumn: competitor_type
+
+	column distance_km
+		dataType: double
+		isHidden
+		lineageTag: aaa932b0-7809-5af8-bae5-10b233544545
+		summarizeBy: none
+		sourceColumn: distance_km
+
+	column joining_fee
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 0d7125da-e6ee-5c97-9932-33075076dd09
+		summarizeBy: none
+		sourceColumn: joining_fee
+
+	column estimated_quality_score
+		dataType: double
+		isHidden
+		lineageTag: 44539f32-82d2-52ef-915d-f880b32953f8
+		summarizeBy: none
+		sourceColumn: estimated_quality_score
+
+	column month
+		dataType: dateTime
+		isHidden
+		formatString: yyyy-MM-dd
+		lineageTag: 843570e0-7107-5285-983d-ea69b3ebfb19
+		summarizeBy: none
+		sourceColumn: month
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column competitor_standard_price
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 55b07d91-2e23-5f60-bb74-37428a0d1d11
+		summarizeBy: none
+		sourceColumn: competitor_standard_price
+
+	column promotion_active
+		dataType: boolean
+		isHidden
+		lineageTag: feefdaf5-dc9d-5b9a-8ed8-f5d35e4daaa8
+		summarizeBy: none
+		sourceColumn: promotion_active
+
+	column promotion_value
+		dataType: double
+		isHidden
+		lineageTag: 23a32a6c-c356-5dbc-a310-c3579c11e561
+		summarizeBy: none
+		sourceColumn: promotion_value
+
+	partition FactCompetitor = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(SourceRoot & "/FactCompetitor.csv"), [Delimiter=",", Columns=11, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Nulls = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				    Typed = Table.TransformColumnTypes(Nulls, {{"gym_id", type text}, {"competitor_id", type text}, {"competitor_name", type text}, {"competitor_type", type text}, {"distance_km", type number}, {"joining_fee", type number}, {"estimated_quality_score", type number}, {"month", type date}, {"competitor_standard_price", type number}, {"promotion_active", type logical}, {"promotion_value", type number}}, "en-GB")
+				in
+				    Typed
+

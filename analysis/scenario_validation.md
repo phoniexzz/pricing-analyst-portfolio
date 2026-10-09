@@ -1,0 +1,1508 @@
+# Phase 6 Python validation
+
+This project uses synthetic data and is inspired by the commercial economics of UK subscription fitness businesses.
+
+This project uses synthetic data created for portfolio purposes. It is inspired by the economics of multi-site subscription fitness businesses and does not use confidential information from The Gym Group or any other operator.
+
+- PASS: Recruitment probabilities valid standard_join_probability
+- PASS: Recruitment probabilities valid offpeak_join_probability
+- PASS: Recruitment probabilities valid plus_join_probability
+- PASS: All-tier recruitment probability <=1
+- PASS: Complete driver windows
+- PASS: Observed promotion rules uniform
+- PASS: Initial closing ledger exactly preserved
+- PASS: Every original cohort/bucket retained
+- PASS: Linear paid-rate grouping NF001/0
+- PASS: Linear paid-rate grouping NF001/1
+- PASS: Linear paid-rate grouping NF001/2
+- PASS: Linear paid-rate grouping NF002/0
+- PASS: Linear paid-rate grouping NF002/1
+- PASS: Linear paid-rate grouping NF002/2
+- PASS: Linear paid-rate grouping NF003/0
+- PASS: Linear paid-rate grouping NF003/1
+- PASS: Linear paid-rate grouping NF003/2
+- PASS: Linear paid-rate grouping NF004/0
+- PASS: Linear paid-rate grouping NF004/1
+- PASS: Linear paid-rate grouping NF004/2
+- PASS: Linear paid-rate grouping NF004/3
+- PASS: Linear paid-rate grouping NF005/0
+- PASS: Linear paid-rate grouping NF005/1
+- PASS: Linear paid-rate grouping NF005/2
+- PASS: Linear paid-rate grouping NF006/0
+- PASS: Linear paid-rate grouping NF006/1
+- PASS: Linear paid-rate grouping NF006/2
+- PASS: Linear paid-rate grouping NF007/0
+- PASS: Linear paid-rate grouping NF007/1
+- PASS: Linear paid-rate grouping NF007/2
+- PASS: Linear paid-rate grouping NF008/0
+- PASS: Linear paid-rate grouping NF008/1
+- PASS: Linear paid-rate grouping NF008/2
+- PASS: Linear paid-rate grouping NF009/0
+- PASS: Linear paid-rate grouping NF009/1
+- PASS: Linear paid-rate grouping NF009/2
+- PASS: Linear paid-rate grouping NF009/3
+- PASS: Linear paid-rate grouping NF010/0
+- PASS: Linear paid-rate grouping NF010/1
+- PASS: Linear paid-rate grouping NF010/2
+- PASS: Linear paid-rate grouping NF011/0
+- PASS: Linear paid-rate grouping NF011/1
+- PASS: Linear paid-rate grouping NF011/2
+- PASS: Linear paid-rate grouping NF012/0
+- PASS: Linear paid-rate grouping NF012/1
+- PASS: Linear paid-rate grouping NF012/2
+- PASS: Linear paid-rate grouping NF012/3
+- PASS: Linear paid-rate grouping NF013/0
+- PASS: Linear paid-rate grouping NF013/1
+- PASS: Linear paid-rate grouping NF013/2
+- PASS: Linear paid-rate grouping NF014/0
+- PASS: Linear paid-rate grouping NF014/1
+- PASS: Linear paid-rate grouping NF014/2
+- PASS: Linear paid-rate grouping NF015/0
+- PASS: Linear paid-rate grouping NF015/1
+- PASS: Linear paid-rate grouping NF015/2
+- PASS: Linear paid-rate grouping NF016/0
+- PASS: Linear paid-rate grouping NF016/1
+- PASS: Linear paid-rate grouping NF016/2
+- PASS: Linear paid-rate grouping NF017/0
+- PASS: Linear paid-rate grouping NF017/1
+- PASS: Linear paid-rate grouping NF017/2
+- PASS: Linear paid-rate grouping NF017/3
+- PASS: Linear paid-rate grouping NF018/0
+- PASS: Linear paid-rate grouping NF018/1
+- PASS: Linear paid-rate grouping NF018/2
+- PASS: Linear paid-rate grouping NF019/0
+- PASS: Linear paid-rate grouping NF019/1
+- PASS: Linear paid-rate grouping NF019/2
+- PASS: Linear paid-rate grouping NF020/0
+- PASS: Linear paid-rate grouping NF020/1
+- PASS: Linear paid-rate grouping NF020/2
+- PASS: Linear paid-rate grouping NF021/0
+- PASS: Linear paid-rate grouping NF021/1
+- PASS: Linear paid-rate grouping NF021/2
+- PASS: Linear paid-rate grouping NF022/0
+- PASS: Linear paid-rate grouping NF022/1
+- PASS: Linear paid-rate grouping NF022/2
+- PASS: Linear paid-rate grouping NF023/0
+- PASS: Linear paid-rate grouping NF023/1
+- PASS: Linear paid-rate grouping NF023/2
+- PASS: Linear paid-rate grouping NF024/0
+- PASS: Linear paid-rate grouping NF024/1
+- PASS: Linear paid-rate grouping NF024/2
+- PASS: Linear paid-rate grouping NF025/0
+- PASS: Linear paid-rate grouping NF025/1
+- PASS: Linear paid-rate grouping NF025/2
+- PASS: Linear paid-rate grouping NF026/0
+- PASS: Linear paid-rate grouping NF026/1
+- PASS: Linear paid-rate grouping NF026/2
+- PASS: Linear paid-rate grouping NF026/3
+- PASS: Linear paid-rate grouping NF027/0
+- PASS: Linear paid-rate grouping NF027/1
+- PASS: Linear paid-rate grouping NF027/2
+- PASS: Linear paid-rate grouping NF027/3
+- PASS: Linear paid-rate grouping NF028/0
+- PASS: Linear paid-rate grouping NF028/1
+- PASS: Linear paid-rate grouping NF028/2
+- PASS: Linear paid-rate grouping NF029/0
+- PASS: Linear paid-rate grouping NF029/1
+- PASS: Linear paid-rate grouping NF029/2
+- PASS: Linear paid-rate grouping NF030/0
+- PASS: Linear paid-rate grouping NF030/1
+- PASS: Linear paid-rate grouping NF030/2
+- PASS: Linear paid-rate grouping NF030/3
+- PASS: Linear paid-rate grouping NF031/0
+- PASS: Linear paid-rate grouping NF031/1
+- PASS: Linear paid-rate grouping NF031/2
+- PASS: Linear paid-rate grouping NF032/0
+- PASS: Linear paid-rate grouping NF032/1
+- PASS: Linear paid-rate grouping NF032/2
+- PASS: Linear paid-rate grouping NF032/3
+- PASS: Linear paid-rate grouping NF033/0
+- PASS: Linear paid-rate grouping NF033/1
+- PASS: Linear paid-rate grouping NF033/2
+- PASS: Linear paid-rate grouping NF034/0
+- PASS: Linear paid-rate grouping NF034/1
+- PASS: Linear paid-rate grouping NF034/2
+- PASS: Linear paid-rate grouping NF035/0
+- PASS: Linear paid-rate grouping NF035/1
+- PASS: Linear paid-rate grouping NF035/2
+- PASS: Linear paid-rate grouping NF036/0
+- PASS: Linear paid-rate grouping NF036/1
+- PASS: Linear paid-rate grouping NF036/2
+- PASS: Linear paid-rate grouping NF037/0
+- PASS: Linear paid-rate grouping NF037/1
+- PASS: Linear paid-rate grouping NF037/2
+- PASS: Linear paid-rate grouping NF038/0
+- PASS: Linear paid-rate grouping NF038/1
+- PASS: Linear paid-rate grouping NF038/2
+- PASS: Linear paid-rate grouping NF039/0
+- PASS: Linear paid-rate grouping NF039/1
+- PASS: Linear paid-rate grouping NF039/2
+- PASS: Linear paid-rate grouping NF040/0
+- PASS: Linear paid-rate grouping NF040/1
+- PASS: Linear paid-rate grouping NF040/2
+- PASS: Linear paid-rate grouping NF041/0
+- PASS: Linear paid-rate grouping NF041/1
+- PASS: Linear paid-rate grouping NF041/2
+- PASS: Linear paid-rate grouping NF042/0
+- PASS: Linear paid-rate grouping NF042/1
+- PASS: Linear paid-rate grouping NF042/2
+- PASS: Linear paid-rate grouping NF042/3
+- PASS: Linear paid-rate grouping NF043/0
+- PASS: Linear paid-rate grouping NF043/1
+- PASS: Linear paid-rate grouping NF043/2
+- PASS: Linear paid-rate grouping NF044/0
+- PASS: Linear paid-rate grouping NF044/1
+- PASS: Linear paid-rate grouping NF044/2
+- PASS: Linear paid-rate grouping NF044/3
+- PASS: Linear paid-rate grouping NF045/0
+- PASS: Linear paid-rate grouping NF045/1
+- PASS: Linear paid-rate grouping NF045/2
+- PASS: Linear paid-rate grouping NF046/0
+- PASS: Linear paid-rate grouping NF046/1
+- PASS: Linear paid-rate grouping NF046/2
+- PASS: Linear paid-rate grouping NF046/3
+- PASS: Linear paid-rate grouping NF047/0
+- PASS: Linear paid-rate grouping NF047/1
+- PASS: Linear paid-rate grouping NF047/2
+- PASS: Linear paid-rate grouping NF048/0
+- PASS: Linear paid-rate grouping NF048/1
+- PASS: Linear paid-rate grouping NF048/2
+- PASS: Linear paid-rate grouping NF049/0
+- PASS: Linear paid-rate grouping NF049/1
+- PASS: Linear paid-rate grouping NF049/2
+- PASS: Linear paid-rate grouping NF049/3
+- PASS: Linear paid-rate grouping NF050/0
+- PASS: Linear paid-rate grouping NF050/1
+- PASS: Linear paid-rate grouping NF050/2
+- PASS: Linear paid-rate grouping NF051/0
+- PASS: Linear paid-rate grouping NF051/1
+- PASS: Linear paid-rate grouping NF051/2
+- PASS: Linear paid-rate grouping NF051/3
+- PASS: Linear paid-rate grouping NF052/0
+- PASS: Linear paid-rate grouping NF052/1
+- PASS: Linear paid-rate grouping NF052/2
+- PASS: Linear paid-rate grouping NF052/3
+- PASS: Linear paid-rate grouping NF053/0
+- PASS: Linear paid-rate grouping NF053/1
+- PASS: Linear paid-rate grouping NF053/2
+- PASS: Linear paid-rate grouping NF054/0
+- PASS: Linear paid-rate grouping NF054/1
+- PASS: Linear paid-rate grouping NF054/2
+- PASS: Linear paid-rate grouping NF055/0
+- PASS: Linear paid-rate grouping NF055/1
+- PASS: Linear paid-rate grouping NF055/2
+- PASS: Linear paid-rate grouping NF056/0
+- PASS: Linear paid-rate grouping NF056/1
+- PASS: Linear paid-rate grouping NF056/2
+- PASS: Linear paid-rate grouping NF056/3
+- PASS: Linear paid-rate grouping NF057/0
+- PASS: Linear paid-rate grouping NF057/1
+- PASS: Linear paid-rate grouping NF057/2
+- PASS: Linear paid-rate grouping NF057/3
+- PASS: Linear paid-rate grouping NF058/0
+- PASS: Linear paid-rate grouping NF058/1
+- PASS: Linear paid-rate grouping NF058/2
+- PASS: Linear paid-rate grouping NF059/0
+- PASS: Linear paid-rate grouping NF059/1
+- PASS: Linear paid-rate grouping NF059/2
+- PASS: Linear paid-rate grouping NF060/0
+- PASS: Linear paid-rate grouping NF060/1
+- PASS: Linear paid-rate grouping NF060/2
+- PASS: Linear paid-rate grouping NF061/0
+- PASS: Linear paid-rate grouping NF061/1
+- PASS: Linear paid-rate grouping NF061/2
+- PASS: Linear paid-rate grouping NF062/0
+- PASS: Linear paid-rate grouping NF062/1
+- PASS: Linear paid-rate grouping NF062/2
+- PASS: Linear paid-rate grouping NF063/0
+- PASS: Linear paid-rate grouping NF063/1
+- PASS: Linear paid-rate grouping NF063/2
+- PASS: Linear paid-rate grouping NF064/0
+- PASS: Linear paid-rate grouping NF064/1
+- PASS: Linear paid-rate grouping NF064/2
+- PASS: Linear paid-rate grouping NF065/0
+- PASS: Linear paid-rate grouping NF065/1
+- PASS: Linear paid-rate grouping NF065/2
+- PASS: Linear paid-rate grouping NF066/0
+- PASS: Linear paid-rate grouping NF066/1
+- PASS: Linear paid-rate grouping NF066/2
+- PASS: Linear paid-rate grouping NF067/0
+- PASS: Linear paid-rate grouping NF067/1
+- PASS: Linear paid-rate grouping NF067/2
+- PASS: Linear paid-rate grouping NF068/0
+- PASS: Linear paid-rate grouping NF068/1
+- PASS: Linear paid-rate grouping NF068/2
+- PASS: Linear paid-rate grouping NF069/0
+- PASS: Linear paid-rate grouping NF069/1
+- PASS: Linear paid-rate grouping NF069/2
+- PASS: Linear paid-rate grouping NF070/0
+- PASS: Linear paid-rate grouping NF070/1
+- PASS: Linear paid-rate grouping NF070/2
+- PASS: Linear paid-rate grouping NF071/0
+- PASS: Linear paid-rate grouping NF071/1
+- PASS: Linear paid-rate grouping NF071/2
+- PASS: Linear paid-rate grouping NF072/0
+- PASS: Linear paid-rate grouping NF072/1
+- PASS: Linear paid-rate grouping NF072/2
+- PASS: Linear paid-rate grouping NF073/0
+- PASS: Linear paid-rate grouping NF073/1
+- PASS: Linear paid-rate grouping NF073/2
+- PASS: Linear paid-rate grouping NF074/0
+- PASS: Linear paid-rate grouping NF074/1
+- PASS: Linear paid-rate grouping NF074/2
+- PASS: Linear paid-rate grouping NF075/0
+- PASS: Linear paid-rate grouping NF075/1
+- PASS: Linear paid-rate grouping NF075/2
+- PASS: Linear paid-rate grouping NF075/3
+- PASS: Linear paid-rate grouping NF076/0
+- PASS: Linear paid-rate grouping NF076/1
+- PASS: Linear paid-rate grouping NF076/2
+- PASS: Linear paid-rate grouping NF077/0
+- PASS: Linear paid-rate grouping NF077/1
+- PASS: Linear paid-rate grouping NF077/2
+- PASS: Linear paid-rate grouping NF078/0
+- PASS: Linear paid-rate grouping NF078/1
+- PASS: Linear paid-rate grouping NF078/2
+- PASS: Linear paid-rate grouping NF079/0
+- PASS: Linear paid-rate grouping NF079/1
+- PASS: Linear paid-rate grouping NF079/2
+- PASS: Linear paid-rate grouping NF080/0
+- PASS: Linear paid-rate grouping NF080/1
+- PASS: Linear paid-rate grouping NF080/2
+- PASS: Timing calibration positive primary_6m
+- PASS: Unchanged prior Phase 5 inputs
+- PASS: Whole-pair bootstrap repeatable
+- PASS: All bootstrap arrays finite
+- PASS: Joint selected case vectors retained
+- PASS: Break-even Â£0.01 NF001/1
+- PASS: Break-even Â£0.01 NF002/1
+- PASS: Break-even Â£0.01 NF003/1
+- PASS: Break-even Â£0.01 NF004/1
+- PASS: Break-even Â£0.01 NF005/1
+- PASS: Break-even Â£0.01 NF006/1
+- PASS: Break-even Â£0.01 NF007/1
+- PASS: Break-even Â£0.01 NF008/1
+- PASS: Break-even Â£0.01 NF009/1
+- PASS: Break-even Â£0.01 NF010/1
+- PASS: Break-even Â£0.01 NF011/1
+- PASS: Break-even Â£0.01 NF012/1
+- PASS: Break-even Â£0.01 NF013/1
+- PASS: Break-even Â£0.01 NF014/1
+- PASS: Break-even Â£0.01 NF015/1
+- PASS: Break-even Â£0.01 NF016/1
+- PASS: Break-even Â£0.01 NF017/1
+- PASS: Break-even Â£0.01 NF018/1
+- PASS: Break-even Â£0.01 NF019/1
+- PASS: Break-even Â£0.01 NF020/1
+- PASS: Break-even Â£0.01 NF021/1
+- PASS: Break-even Â£0.01 NF022/1
+- PASS: Break-even Â£0.01 NF023/1
+- PASS: Break-even Â£0.01 NF024/1
+- PASS: Break-even Â£0.01 NF025/1
+- PASS: Break-even Â£0.01 NF026/1
+- PASS: Break-even Â£0.01 NF027/1
+- PASS: Break-even Â£0.01 NF028/1
+- PASS: Break-even Â£0.01 NF029/1
+- PASS: Break-even Â£0.01 NF030/1
+- PASS: Break-even Â£0.01 NF031/1
+- PASS: Break-even Â£0.01 NF032/1
+- PASS: Break-even Â£0.01 NF033/1
+- PASS: Break-even Â£0.01 NF034/1
+- PASS: Break-even Â£0.01 NF035/1
+- PASS: Break-even Â£0.01 NF036/1
+- PASS: Break-even Â£0.01 NF037/1
+- PASS: Break-even Â£0.01 NF038/1
+- PASS: Break-even Â£0.01 NF039/1
+- PASS: Break-even Â£0.01 NF040/1
+- PASS: Break-even Â£0.01 NF041/1
+- PASS: Break-even Â£0.01 NF042/1
+- PASS: Break-even Â£0.01 NF043/1
+- PASS: Break-even Â£0.01 NF044/1
+- PASS: Break-even Â£0.01 NF045/1
+- PASS: Break-even Â£0.01 NF046/1
+- PASS: Break-even Â£0.01 NF047/1
+- PASS: Break-even Â£0.01 NF048/1
+- PASS: Break-even Â£0.01 NF049/1
+- PASS: Break-even Â£0.01 NF050/1
+- PASS: Break-even Â£0.01 NF051/1
+- PASS: Break-even Â£0.01 NF052/1
+- PASS: Break-even Â£0.01 NF053/1
+- PASS: Break-even Â£0.01 NF054/1
+- PASS: Break-even Â£0.01 NF055/1
+- PASS: Break-even Â£0.01 NF056/1
+- PASS: Break-even Â£0.01 NF057/1
+- PASS: Break-even Â£0.01 NF058/1
+- PASS: Break-even Â£0.01 NF059/1
+- PASS: Break-even Â£0.01 NF060/1
+- PASS: Break-even Â£0.01 NF061/1
+- PASS: Break-even Â£0.01 NF062/1
+- PASS: Break-even Â£0.01 NF063/1
+- PASS: Break-even Â£0.01 NF064/1
+- PASS: Break-even Â£0.01 NF065/1
+- PASS: Break-even Â£0.01 NF066/1
+- PASS: Break-even Â£0.01 NF067/1
+- PASS: Break-even Â£0.01 NF068/1
+- PASS: Break-even Â£0.01 NF069/1
+- PASS: Break-even Â£0.01 NF070/1
+- PASS: Break-even Â£0.01 NF071/1
+- PASS: Break-even Â£0.01 NF072/1
+- PASS: Break-even Â£0.01 NF073/1
+- PASS: Break-even Â£0.01 NF074/1
+- PASS: Break-even Â£0.01 NF075/1
+- PASS: Break-even Â£0.01 NF076/1
+- PASS: Break-even Â£0.01 NF077/1
+- PASS: Break-even Â£0.01 NF078/1
+- PASS: Break-even Â£0.01 NF079/1
+- PASS: Break-even Â£0.01 NF080/1
+- PASS: Break-even Â£0.01 NF001/2
+- PASS: Break-even Â£0.01 NF002/2
+- PASS: Break-even Â£0.01 NF003/2
+- PASS: Break-even Â£0.01 NF004/2
+- PASS: Break-even Â£0.01 NF005/2
+- PASS: Break-even Â£0.01 NF006/2
+- PASS: Break-even Â£0.01 NF007/2
+- PASS: Break-even Â£0.01 NF008/2
+- PASS: Break-even Â£0.01 NF009/2
+- PASS: Break-even Â£0.01 NF010/2
+- PASS: Break-even Â£0.01 NF011/2
+- PASS: Break-even Â£0.01 NF012/2
+- PASS: Break-even Â£0.01 NF013/2
+- PASS: Break-even Â£0.01 NF014/2
+- PASS: Break-even Â£0.01 NF015/2
+- PASS: Break-even Â£0.01 NF016/2
+- PASS: Break-even Â£0.01 NF017/2
+- PASS: Break-even Â£0.01 NF018/2
+- PASS: Break-even Â£0.01 NF019/2
+- PASS: Break-even Â£0.01 NF020/2
+- PASS: Break-even Â£0.01 NF021/2
+- PASS: Break-even Â£0.01 NF022/2
+- PASS: Break-even Â£0.01 NF023/2
+- PASS: Break-even Â£0.01 NF024/2
+- PASS: Break-even Â£0.01 NF025/2
+- PASS: Break-even Â£0.01 NF026/2
+- PASS: Break-even Â£0.01 NF027/2
+- PASS: Break-even Â£0.01 NF028/2
+- PASS: Break-even Â£0.01 NF029/2
+- PASS: Break-even Â£0.01 NF030/2
+- PASS: Break-even Â£0.01 NF031/2
+- PASS: Break-even Â£0.01 NF032/2
+- PASS: Break-even Â£0.01 NF033/2
+- PASS: Break-even Â£0.01 NF034/2
+- PASS: Break-even Â£0.01 NF035/2
+- PASS: Break-even Â£0.01 NF036/2
+- PASS: Break-even Â£0.01 NF037/2
+- PASS: Break-even Â£0.01 NF038/2
+- PASS: Break-even Â£0.01 NF039/2
+- PASS: Break-even Â£0.01 NF040/2
+- PASS: Break-even Â£0.01 NF041/2
+- PASS: Break-even Â£0.01 NF042/2
+- PASS: Break-even Â£0.01 NF043/2
+- PASS: Break-even Â£0.01 NF044/2
+- PASS: Break-even Â£0.01 NF045/2
+- PASS: Break-even Â£0.01 NF046/2
+- PASS: Break-even Â£0.01 NF047/2
+- PASS: Break-even Â£0.01 NF048/2
+- PASS: Break-even Â£0.01 NF049/2
+- PASS: Break-even Â£0.01 NF050/2
+- PASS: Break-even Â£0.01 NF051/2
+- PASS: Break-even Â£0.01 NF052/2
+- PASS: Break-even Â£0.01 NF053/2
+- PASS: Break-even Â£0.01 NF054/2
+- PASS: Break-even Â£0.01 NF055/2
+- PASS: Break-even Â£0.01 NF056/2
+- PASS: Break-even Â£0.01 NF057/2
+- PASS: Break-even Â£0.01 NF058/2
+- PASS: Break-even Â£0.01 NF059/2
+- PASS: Break-even Â£0.01 NF060/2
+- PASS: Break-even Â£0.01 NF061/2
+- PASS: Break-even Â£0.01 NF062/2
+- PASS: Break-even Â£0.01 NF063/2
+- PASS: Break-even Â£0.01 NF064/2
+- PASS: Break-even Â£0.01 NF065/2
+- PASS: Break-even Â£0.01 NF066/2
+- PASS: Break-even Â£0.01 NF067/2
+- PASS: Break-even Â£0.01 NF068/2
+- PASS: Break-even Â£0.01 NF069/2
+- PASS: Break-even Â£0.01 NF070/2
+- PASS: Break-even Â£0.01 NF071/2
+- PASS: Break-even Â£0.01 NF072/2
+- PASS: Break-even Â£0.01 NF073/2
+- PASS: Break-even Â£0.01 NF074/2
+- PASS: Break-even Â£0.01 NF075/2
+- PASS: Break-even Â£0.01 NF076/2
+- PASS: Break-even Â£0.01 NF077/2
+- PASS: Break-even Â£0.01 NF078/2
+- PASS: Break-even Â£0.01 NF079/2
+- PASS: Break-even Â£0.01 NF080/2
+- PASS: Break-even Â£0.01 NF001/3
+- PASS: Break-even Â£0.01 NF002/3
+- PASS: Break-even Â£0.01 NF003/3
+- PASS: Break-even Â£0.01 NF004/3
+- PASS: Break-even Â£0.01 NF005/3
+- PASS: Break-even Â£0.01 NF006/3
+- PASS: Break-even Â£0.01 NF007/3
+- PASS: Break-even Â£0.01 NF008/3
+- PASS: Break-even Â£0.01 NF009/3
+- PASS: Break-even Â£0.01 NF010/3
+- PASS: Break-even Â£0.01 NF011/3
+- PASS: Break-even Â£0.01 NF012/3
+- PASS: Break-even Â£0.01 NF013/3
+- PASS: Break-even Â£0.01 NF014/3
+- PASS: Break-even Â£0.01 NF015/3
+- PASS: Break-even Â£0.01 NF016/3
+- PASS: Break-even Â£0.01 NF017/3
+- PASS: Break-even Â£0.01 NF018/3
+- PASS: Break-even Â£0.01 NF019/3
+- PASS: Break-even Â£0.01 NF020/3
+- PASS: Break-even Â£0.01 NF021/3
+- PASS: Break-even Â£0.01 NF022/3
+- PASS: Break-even Â£0.01 NF023/3
+- PASS: Break-even Â£0.01 NF024/3
+- PASS: Break-even Â£0.01 NF025/3
+- PASS: Break-even Â£0.01 NF026/3
+- PASS: Break-even Â£0.01 NF027/3
+- PASS: Break-even Â£0.01 NF028/3
+- PASS: Break-even Â£0.01 NF029/3
+- PASS: Break-even Â£0.01 NF030/3
+- PASS: Break-even Â£0.01 NF031/3
+- PASS: Break-even Â£0.01 NF032/3
+- PASS: Break-even Â£0.01 NF033/3
+- PASS: Break-even Â£0.01 NF034/3
+- PASS: Break-even Â£0.01 NF035/3
+- PASS: Break-even Â£0.01 NF036/3
+- PASS: Break-even Â£0.01 NF037/3
+- PASS: Break-even Â£0.01 NF038/3
+- PASS: Break-even Â£0.01 NF039/3
+- PASS: Break-even Â£0.01 NF040/3
+- PASS: Break-even Â£0.01 NF041/3
+- PASS: Break-even Â£0.01 NF042/3
+- PASS: Break-even Â£0.01 NF043/3
+- PASS: Break-even Â£0.01 NF044/3
+- PASS: Break-even Â£0.01 NF045/3
+- PASS: Break-even Â£0.01 NF046/3
+- PASS: Break-even Â£0.01 NF047/3
+- PASS: Break-even Â£0.01 NF048/3
+- PASS: Break-even Â£0.01 NF049/3
+- PASS: Break-even Â£0.01 NF050/3
+- PASS: Break-even Â£0.01 NF051/3
+- PASS: Break-even Â£0.01 NF052/3
+- PASS: Break-even Â£0.01 NF053/3
+- PASS: Break-even Â£0.01 NF054/3
+- PASS: Break-even Â£0.01 NF055/3
+- PASS: Break-even Â£0.01 NF056/3
+- PASS: Break-even Â£0.01 NF057/3
+- PASS: Break-even Â£0.01 NF058/3
+- PASS: Break-even Â£0.01 NF059/3
+- PASS: Break-even Â£0.01 NF060/3
+- PASS: Break-even Â£0.01 NF061/3
+- PASS: Break-even Â£0.01 NF062/3
+- PASS: Break-even Â£0.01 NF063/3
+- PASS: Break-even Â£0.01 NF064/3
+- PASS: Break-even Â£0.01 NF065/3
+- PASS: Break-even Â£0.01 NF066/3
+- PASS: Break-even Â£0.01 NF067/3
+- PASS: Break-even Â£0.01 NF068/3
+- PASS: Break-even Â£0.01 NF069/3
+- PASS: Break-even Â£0.01 NF070/3
+- PASS: Break-even Â£0.01 NF071/3
+- PASS: Break-even Â£0.01 NF072/3
+- PASS: Break-even Â£0.01 NF073/3
+- PASS: Break-even Â£0.01 NF074/3
+- PASS: Break-even Â£0.01 NF075/3
+- PASS: Break-even Â£0.01 NF076/3
+- PASS: Break-even Â£0.01 NF077/3
+- PASS: Break-even Â£0.01 NF078/3
+- PASS: Break-even Â£0.01 NF079/3
+- PASS: Break-even Â£0.01 NF080/3
+- PASS: Timing calibration positive early_3m
+- PASS: Timing calibration positive sustained_9m
+- PASS: Source and earlier interfaces unchanged
+- PASS: Monthly grain 11520
+- PASS: Gym scenario grain 960
+- PASS: Estate scenario grain 12
+- PASS: All 80 complete reporting windows
+- PASS: Expected membership bridge
+- PASS: Transfers cancel
+- PASS: Revenue components reconcile
+- PASS: Tier closing populations reconcile
+- PASS: Midpoint average members
+- PASS: Cancellation eligible populations
+- PASS: Incumbent downgrade survivors
+- PASS: Joining-month transfers separate
+- PASS: No negative stocks
+- PASS: All no-increase cases identical
+- PASS: Site/estate revenue reconciliation
+- PASS: Weighted rate/yield NF001/Base/0
+- PASS: Weighted rate/yield NF002/Base/0
+- PASS: Weighted rate/yield NF003/Base/0
+- PASS: Weighted rate/yield NF004/Base/0
+- PASS: Weighted rate/yield NF005/Base/0
+- PASS: Weighted rate/yield NF006/Base/0
+- PASS: Weighted rate/yield NF007/Base/0
+- PASS: Weighted rate/yield NF008/Base/0
+- PASS: Weighted rate/yield NF009/Base/0
+- PASS: Weighted rate/yield NF010/Base/0
+- PASS: Weighted rate/yield NF011/Base/0
+- PASS: Weighted rate/yield NF012/Base/0
+- PASS: Weighted rate/yield NF013/Base/0
+- PASS: Weighted rate/yield NF014/Base/0
+- PASS: Weighted rate/yield NF015/Base/0
+- PASS: Weighted rate/yield NF016/Base/0
+- PASS: Weighted rate/yield NF017/Base/0
+- PASS: Weighted rate/yield NF018/Base/0
+- PASS: Weighted rate/yield NF019/Base/0
+- PASS: Weighted rate/yield NF020/Base/0
+- PASS: Weighted rate/yield NF021/Base/0
+- PASS: Weighted rate/yield NF022/Base/0
+- PASS: Weighted rate/yield NF023/Base/0
+- PASS: Weighted rate/yield NF024/Base/0
+- PASS: Weighted rate/yield NF025/Base/0
+- PASS: Weighted rate/yield NF026/Base/0
+- PASS: Weighted rate/yield NF027/Base/0
+- PASS: Weighted rate/yield NF028/Base/0
+- PASS: Weighted rate/yield NF029/Base/0
+- PASS: Weighted rate/yield NF030/Base/0
+- PASS: Weighted rate/yield NF031/Base/0
+- PASS: Weighted rate/yield NF032/Base/0
+- PASS: Weighted rate/yield NF033/Base/0
+- PASS: Weighted rate/yield NF034/Base/0
+- PASS: Weighted rate/yield NF035/Base/0
+- PASS: Weighted rate/yield NF036/Base/0
+- PASS: Weighted rate/yield NF037/Base/0
+- PASS: Weighted rate/yield NF038/Base/0
+- PASS: Weighted rate/yield NF039/Base/0
+- PASS: Weighted rate/yield NF040/Base/0
+- PASS: Weighted rate/yield NF041/Base/0
+- PASS: Weighted rate/yield NF042/Base/0
+- PASS: Weighted rate/yield NF043/Base/0
+- PASS: Weighted rate/yield NF044/Base/0
+- PASS: Weighted rate/yield NF045/Base/0
+- PASS: Weighted rate/yield NF046/Base/0
+- PASS: Weighted rate/yield NF047/Base/0
+- PASS: Weighted rate/yield NF048/Base/0
+- PASS: Weighted rate/yield NF049/Base/0
+- PASS: Weighted rate/yield NF050/Base/0
+- PASS: Weighted rate/yield NF051/Base/0
+- PASS: Weighted rate/yield NF052/Base/0
+- PASS: Weighted rate/yield NF053/Base/0
+- PASS: Weighted rate/yield NF054/Base/0
+- PASS: Weighted rate/yield NF055/Base/0
+- PASS: Weighted rate/yield NF056/Base/0
+- PASS: Weighted rate/yield NF057/Base/0
+- PASS: Weighted rate/yield NF058/Base/0
+- PASS: Weighted rate/yield NF059/Base/0
+- PASS: Weighted rate/yield NF060/Base/0
+- PASS: Weighted rate/yield NF061/Base/0
+- PASS: Weighted rate/yield NF062/Base/0
+- PASS: Weighted rate/yield NF063/Base/0
+- PASS: Weighted rate/yield NF064/Base/0
+- PASS: Weighted rate/yield NF065/Base/0
+- PASS: Weighted rate/yield NF066/Base/0
+- PASS: Weighted rate/yield NF067/Base/0
+- PASS: Weighted rate/yield NF068/Base/0
+- PASS: Weighted rate/yield NF069/Base/0
+- PASS: Weighted rate/yield NF070/Base/0
+- PASS: Weighted rate/yield NF071/Base/0
+- PASS: Weighted rate/yield NF072/Base/0
+- PASS: Weighted rate/yield NF073/Base/0
+- PASS: Weighted rate/yield NF074/Base/0
+- PASS: Weighted rate/yield NF075/Base/0
+- PASS: Weighted rate/yield NF076/Base/0
+- PASS: Weighted rate/yield NF077/Base/0
+- PASS: Weighted rate/yield NF078/Base/0
+- PASS: Weighted rate/yield NF079/Base/0
+- PASS: Weighted rate/yield NF080/Base/0
+- PASS: Weighted rate/yield NF001/Base/1
+- PASS: Weighted rate/yield NF002/Base/1
+- PASS: Weighted rate/yield NF003/Base/1
+- PASS: Weighted rate/yield NF004/Base/1
+- PASS: Weighted rate/yield NF005/Base/1
+- PASS: Weighted rate/yield NF006/Base/1
+- PASS: Weighted rate/yield NF007/Base/1
+- PASS: Weighted rate/yield NF008/Base/1
+- PASS: Weighted rate/yield NF009/Base/1
+- PASS: Weighted rate/yield NF010/Base/1
+- PASS: Weighted rate/yield NF011/Base/1
+- PASS: Weighted rate/yield NF012/Base/1
+- PASS: Weighted rate/yield NF013/Base/1
+- PASS: Weighted rate/yield NF014/Base/1
+- PASS: Weighted rate/yield NF015/Base/1
+- PASS: Weighted rate/yield NF016/Base/1
+- PASS: Weighted rate/yield NF017/Base/1
+- PASS: Weighted rate/yield NF018/Base/1
+- PASS: Weighted rate/yield NF019/Base/1
+- PASS: Weighted rate/yield NF020/Base/1
+- PASS: Weighted rate/yield NF021/Base/1
+- PASS: Weighted rate/yield NF022/Base/1
+- PASS: Weighted rate/yield NF023/Base/1
+- PASS: Weighted rate/yield NF024/Base/1
+- PASS: Weighted rate/yield NF025/Base/1
+- PASS: Weighted rate/yield NF026/Base/1
+- PASS: Weighted rate/yield NF027/Base/1
+- PASS: Weighted rate/yield NF028/Base/1
+- PASS: Weighted rate/yield NF029/Base/1
+- PASS: Weighted rate/yield NF030/Base/1
+- PASS: Weighted rate/yield NF031/Base/1
+- PASS: Weighted rate/yield NF032/Base/1
+- PASS: Weighted rate/yield NF033/Base/1
+- PASS: Weighted rate/yield NF034/Base/1
+- PASS: Weighted rate/yield NF035/Base/1
+- PASS: Weighted rate/yield NF036/Base/1
+- PASS: Weighted rate/yield NF037/Base/1
+- PASS: Weighted rate/yield NF038/Base/1
+- PASS: Weighted rate/yield NF039/Base/1
+- PASS: Weighted rate/yield NF040/Base/1
+- PASS: Weighted rate/yield NF041/Base/1
+- PASS: Weighted rate/yield NF042/Base/1
+- PASS: Weighted rate/yield NF043/Base/1
+- PASS: Weighted rate/yield NF044/Base/1
+- PASS: Weighted rate/yield NF045/Base/1
+- PASS: Weighted rate/yield NF046/Base/1
+- PASS: Weighted rate/yield NF047/Base/1
+- PASS: Weighted rate/yield NF048/Base/1
+- PASS: Weighted rate/yield NF049/Base/1
+- PASS: Weighted rate/yield NF050/Base/1
+- PASS: Weighted rate/yield NF051/Base/1
+- PASS: Weighted rate/yield NF052/Base/1
+- PASS: Weighted rate/yield NF053/Base/1
+- PASS: Weighted rate/yield NF054/Base/1
+- PASS: Weighted rate/yield NF055/Base/1
+- PASS: Weighted rate/yield NF056/Base/1
+- PASS: Weighted rate/yield NF057/Base/1
+- PASS: Weighted rate/yield NF058/Base/1
+- PASS: Weighted rate/yield NF059/Base/1
+- PASS: Weighted rate/yield NF060/Base/1
+- PASS: Weighted rate/yield NF061/Base/1
+- PASS: Weighted rate/yield NF062/Base/1
+- PASS: Weighted rate/yield NF063/Base/1
+- PASS: Weighted rate/yield NF064/Base/1
+- PASS: Weighted rate/yield NF065/Base/1
+- PASS: Weighted rate/yield NF066/Base/1
+- PASS: Weighted rate/yield NF067/Base/1
+- PASS: Weighted rate/yield NF068/Base/1
+- PASS: Weighted rate/yield NF069/Base/1
+- PASS: Weighted rate/yield NF070/Base/1
+- PASS: Weighted rate/yield NF071/Base/1
+- PASS: Weighted rate/yield NF072/Base/1
+- PASS: Weighted rate/yield NF073/Base/1
+- PASS: Weighted rate/yield NF074/Base/1
+- PASS: Weighted rate/yield NF075/Base/1
+- PASS: Weighted rate/yield NF076/Base/1
+- PASS: Weighted rate/yield NF077/Base/1
+- PASS: Weighted rate/yield NF078/Base/1
+- PASS: Weighted rate/yield NF079/Base/1
+- PASS: Weighted rate/yield NF080/Base/1
+- PASS: Weighted rate/yield NF001/Base/2
+- PASS: Weighted rate/yield NF002/Base/2
+- PASS: Weighted rate/yield NF003/Base/2
+- PASS: Weighted rate/yield NF004/Base/2
+- PASS: Weighted rate/yield NF005/Base/2
+- PASS: Weighted rate/yield NF006/Base/2
+- PASS: Weighted rate/yield NF007/Base/2
+- PASS: Weighted rate/yield NF008/Base/2
+- PASS: Weighted rate/yield NF009/Base/2
+- PASS: Weighted rate/yield NF010/Base/2
+- PASS: Weighted rate/yield NF011/Base/2
+- PASS: Weighted rate/yield NF012/Base/2
+- PASS: Weighted rate/yield NF013/Base/2
+- PASS: Weighted rate/yield NF014/Base/2
+- PASS: Weighted rate/yield NF015/Base/2
+- PASS: Weighted rate/yield NF016/Base/2
+- PASS: Weighted rate/yield NF017/Base/2
+- PASS: Weighted rate/yield NF018/Base/2
+- PASS: Weighted rate/yield NF019/Base/2
+- PASS: Weighted rate/yield NF020/Base/2
+- PASS: Weighted rate/yield NF021/Base/2
+- PASS: Weighted rate/yield NF022/Base/2
+- PASS: Weighted rate/yield NF023/Base/2
+- PASS: Weighted rate/yield NF024/Base/2
+- PASS: Weighted rate/yield NF025/Base/2
+- PASS: Weighted rate/yield NF026/Base/2
+- PASS: Weighted rate/yield NF027/Base/2
+- PASS: Weighted rate/yield NF028/Base/2
+- PASS: Weighted rate/yield NF029/Base/2
+- PASS: Weighted rate/yield NF030/Base/2
+- PASS: Weighted rate/yield NF031/Base/2
+- PASS: Weighted rate/yield NF032/Base/2
+- PASS: Weighted rate/yield NF033/Base/2
+- PASS: Weighted rate/yield NF034/Base/2
+- PASS: Weighted rate/yield NF035/Base/2
+- PASS: Weighted rate/yield NF036/Base/2
+- PASS: Weighted rate/yield NF037/Base/2
+- PASS: Weighted rate/yield NF038/Base/2
+- PASS: Weighted rate/yield NF039/Base/2
+- PASS: Weighted rate/yield NF040/Base/2
+- PASS: Weighted rate/yield NF041/Base/2
+- PASS: Weighted rate/yield NF042/Base/2
+- PASS: Weighted rate/yield NF043/Base/2
+- PASS: Weighted rate/yield NF044/Base/2
+- PASS: Weighted rate/yield NF045/Base/2
+- PASS: Weighted rate/yield NF046/Base/2
+- PASS: Weighted rate/yield NF047/Base/2
+- PASS: Weighted rate/yield NF048/Base/2
+- PASS: Weighted rate/yield NF049/Base/2
+- PASS: Weighted rate/yield NF050/Base/2
+- PASS: Weighted rate/yield NF051/Base/2
+- PASS: Weighted rate/yield NF052/Base/2
+- PASS: Weighted rate/yield NF053/Base/2
+- PASS: Weighted rate/yield NF054/Base/2
+- PASS: Weighted rate/yield NF055/Base/2
+- PASS: Weighted rate/yield NF056/Base/2
+- PASS: Weighted rate/yield NF057/Base/2
+- PASS: Weighted rate/yield NF058/Base/2
+- PASS: Weighted rate/yield NF059/Base/2
+- PASS: Weighted rate/yield NF060/Base/2
+- PASS: Weighted rate/yield NF061/Base/2
+- PASS: Weighted rate/yield NF062/Base/2
+- PASS: Weighted rate/yield NF063/Base/2
+- PASS: Weighted rate/yield NF064/Base/2
+- PASS: Weighted rate/yield NF065/Base/2
+- PASS: Weighted rate/yield NF066/Base/2
+- PASS: Weighted rate/yield NF067/Base/2
+- PASS: Weighted rate/yield NF068/Base/2
+- PASS: Weighted rate/yield NF069/Base/2
+- PASS: Weighted rate/yield NF070/Base/2
+- PASS: Weighted rate/yield NF071/Base/2
+- PASS: Weighted rate/yield NF072/Base/2
+- PASS: Weighted rate/yield NF073/Base/2
+- PASS: Weighted rate/yield NF074/Base/2
+- PASS: Weighted rate/yield NF075/Base/2
+- PASS: Weighted rate/yield NF076/Base/2
+- PASS: Weighted rate/yield NF077/Base/2
+- PASS: Weighted rate/yield NF078/Base/2
+- PASS: Weighted rate/yield NF079/Base/2
+- PASS: Weighted rate/yield NF080/Base/2
+- PASS: Weighted rate/yield NF001/Base/3
+- PASS: Weighted rate/yield NF002/Base/3
+- PASS: Weighted rate/yield NF003/Base/3
+- PASS: Weighted rate/yield NF004/Base/3
+- PASS: Weighted rate/yield NF005/Base/3
+- PASS: Weighted rate/yield NF006/Base/3
+- PASS: Weighted rate/yield NF007/Base/3
+- PASS: Weighted rate/yield NF008/Base/3
+- PASS: Weighted rate/yield NF009/Base/3
+- PASS: Weighted rate/yield NF010/Base/3
+- PASS: Weighted rate/yield NF011/Base/3
+- PASS: Weighted rate/yield NF012/Base/3
+- PASS: Weighted rate/yield NF013/Base/3
+- PASS: Weighted rate/yield NF014/Base/3
+- PASS: Weighted rate/yield NF015/Base/3
+- PASS: Weighted rate/yield NF016/Base/3
+- PASS: Weighted rate/yield NF017/Base/3
+- PASS: Weighted rate/yield NF018/Base/3
+- PASS: Weighted rate/yield NF019/Base/3
+- PASS: Weighted rate/yield NF020/Base/3
+- PASS: Weighted rate/yield NF021/Base/3
+- PASS: Weighted rate/yield NF022/Base/3
+- PASS: Weighted rate/yield NF023/Base/3
+- PASS: Weighted rate/yield NF024/Base/3
+- PASS: Weighted rate/yield NF025/Base/3
+- PASS: Weighted rate/yield NF026/Base/3
+- PASS: Weighted rate/yield NF027/Base/3
+- PASS: Weighted rate/yield NF028/Base/3
+- PASS: Weighted rate/yield NF029/Base/3
+- PASS: Weighted rate/yield NF030/Base/3
+- PASS: Weighted rate/yield NF031/Base/3
+- PASS: Weighted rate/yield NF032/Base/3
+- PASS: Weighted rate/yield NF033/Base/3
+- PASS: Weighted rate/yield NF034/Base/3
+- PASS: Weighted rate/yield NF035/Base/3
+- PASS: Weighted rate/yield NF036/Base/3
+- PASS: Weighted rate/yield NF037/Base/3
+- PASS: Weighted rate/yield NF038/Base/3
+- PASS: Weighted rate/yield NF039/Base/3
+- PASS: Weighted rate/yield NF040/Base/3
+- PASS: Weighted rate/yield NF041/Base/3
+- PASS: Weighted rate/yield NF042/Base/3
+- PASS: Weighted rate/yield NF043/Base/3
+- PASS: Weighted rate/yield NF044/Base/3
+- PASS: Weighted rate/yield NF045/Base/3
+- PASS: Weighted rate/yield NF046/Base/3
+- PASS: Weighted rate/yield NF047/Base/3
+- PASS: Weighted rate/yield NF048/Base/3
+- PASS: Weighted rate/yield NF049/Base/3
+- PASS: Weighted rate/yield NF050/Base/3
+- PASS: Weighted rate/yield NF051/Base/3
+- PASS: Weighted rate/yield NF052/Base/3
+- PASS: Weighted rate/yield NF053/Base/3
+- PASS: Weighted rate/yield NF054/Base/3
+- PASS: Weighted rate/yield NF055/Base/3
+- PASS: Weighted rate/yield NF056/Base/3
+- PASS: Weighted rate/yield NF057/Base/3
+- PASS: Weighted rate/yield NF058/Base/3
+- PASS: Weighted rate/yield NF059/Base/3
+- PASS: Weighted rate/yield NF060/Base/3
+- PASS: Weighted rate/yield NF061/Base/3
+- PASS: Weighted rate/yield NF062/Base/3
+- PASS: Weighted rate/yield NF063/Base/3
+- PASS: Weighted rate/yield NF064/Base/3
+- PASS: Weighted rate/yield NF065/Base/3
+- PASS: Weighted rate/yield NF066/Base/3
+- PASS: Weighted rate/yield NF067/Base/3
+- PASS: Weighted rate/yield NF068/Base/3
+- PASS: Weighted rate/yield NF069/Base/3
+- PASS: Weighted rate/yield NF070/Base/3
+- PASS: Weighted rate/yield NF071/Base/3
+- PASS: Weighted rate/yield NF072/Base/3
+- PASS: Weighted rate/yield NF073/Base/3
+- PASS: Weighted rate/yield NF074/Base/3
+- PASS: Weighted rate/yield NF075/Base/3
+- PASS: Weighted rate/yield NF076/Base/3
+- PASS: Weighted rate/yield NF077/Base/3
+- PASS: Weighted rate/yield NF078/Base/3
+- PASS: Weighted rate/yield NF079/Base/3
+- PASS: Weighted rate/yield NF080/Base/3
+- PASS: Weighted rate/yield NF001/Downside/0
+- PASS: Weighted rate/yield NF002/Downside/0
+- PASS: Weighted rate/yield NF003/Downside/0
+- PASS: Weighted rate/yield NF004/Downside/0
+- PASS: Weighted rate/yield NF005/Downside/0
+- PASS: Weighted rate/yield NF006/Downside/0
+- PASS: Weighted rate/yield NF007/Downside/0
+- PASS: Weighted rate/yield NF008/Downside/0
+- PASS: Weighted rate/yield NF009/Downside/0
+- PASS: Weighted rate/yield NF010/Downside/0
+- PASS: Weighted rate/yield NF011/Downside/0
+- PASS: Weighted rate/yield NF012/Downside/0
+- PASS: Weighted rate/yield NF013/Downside/0
+- PASS: Weighted rate/yield NF014/Downside/0
+- PASS: Weighted rate/yield NF015/Downside/0
+- PASS: Weighted rate/yield NF016/Downside/0
+- PASS: Weighted rate/yield NF017/Downside/0
+- PASS: Weighted rate/yield NF018/Downside/0
+- PASS: Weighted rate/yield NF019/Downside/0
+- PASS: Weighted rate/yield NF020/Downside/0
+- PASS: Weighted rate/yield NF021/Downside/0
+- PASS: Weighted rate/yield NF022/Downside/0
+- PASS: Weighted rate/yield NF023/Downside/0
+- PASS: Weighted rate/yield NF024/Downside/0
+- PASS: Weighted rate/yield NF025/Downside/0
+- PASS: Weighted rate/yield NF026/Downside/0
+- PASS: Weighted rate/yield NF027/Downside/0
+- PASS: Weighted rate/yield NF028/Downside/0
+- PASS: Weighted rate/yield NF029/Downside/0
+- PASS: Weighted rate/yield NF030/Downside/0
+- PASS: Weighted rate/yield NF031/Downside/0
+- PASS: Weighted rate/yield NF032/Downside/0
+- PASS: Weighted rate/yield NF033/Downside/0
+- PASS: Weighted rate/yield NF034/Downside/0
+- PASS: Weighted rate/yield NF035/Downside/0
+- PASS: Weighted rate/yield NF036/Downside/0
+- PASS: Weighted rate/yield NF037/Downside/0
+- PASS: Weighted rate/yield NF038/Downside/0
+- PASS: Weighted rate/yield NF039/Downside/0
+- PASS: Weighted rate/yield NF040/Downside/0
+- PASS: Weighted rate/yield NF041/Downside/0
+- PASS: Weighted rate/yield NF042/Downside/0
+- PASS: Weighted rate/yield NF043/Downside/0
+- PASS: Weighted rate/yield NF044/Downside/0
+- PASS: Weighted rate/yield NF045/Downside/0
+- PASS: Weighted rate/yield NF046/Downside/0
+- PASS: Weighted rate/yield NF047/Downside/0
+- PASS: Weighted rate/yield NF048/Downside/0
+- PASS: Weighted rate/yield NF049/Downside/0
+- PASS: Weighted rate/yield NF050/Downside/0
+- PASS: Weighted rate/yield NF051/Downside/0
+- PASS: Weighted rate/yield NF052/Downside/0
+- PASS: Weighted rate/yield NF053/Downside/0
+- PASS: Weighted rate/yield NF054/Downside/0
+- PASS: Weighted rate/yield NF055/Downside/0
+- PASS: Weighted rate/yield NF056/Downside/0
+- PASS: Weighted rate/yield NF057/Downside/0
+- PASS: Weighted rate/yield NF058/Downside/0
+- PASS: Weighted rate/yield NF059/Downside/0
+- PASS: Weighted rate/yield NF060/Downside/0
+- PASS: Weighted rate/yield NF061/Downside/0
+- PASS: Weighted rate/yield NF062/Downside/0
+- PASS: Weighted rate/yield NF063/Downside/0
+- PASS: Weighted rate/yield NF064/Downside/0
+- PASS: Weighted rate/yield NF065/Downside/0
+- PASS: Weighted rate/yield NF066/Downside/0
+- PASS: Weighted rate/yield NF067/Downside/0
+- PASS: Weighted rate/yield NF068/Downside/0
+- PASS: Weighted rate/yield NF069/Downside/0
+- PASS: Weighted rate/yield NF070/Downside/0
+- PASS: Weighted rate/yield NF071/Downside/0
+- PASS: Weighted rate/yield NF072/Downside/0
+- PASS: Weighted rate/yield NF073/Downside/0
+- PASS: Weighted rate/yield NF074/Downside/0
+- PASS: Weighted rate/yield NF075/Downside/0
+- PASS: Weighted rate/yield NF076/Downside/0
+- PASS: Weighted rate/yield NF077/Downside/0
+- PASS: Weighted rate/yield NF078/Downside/0
+- PASS: Weighted rate/yield NF079/Downside/0
+- PASS: Weighted rate/yield NF080/Downside/0
+- PASS: Weighted rate/yield NF001/Downside/1
+- PASS: Weighted rate/yield NF002/Downside/1
+- PASS: Weighted rate/yield NF003/Downside/1
+- PASS: Weighted rate/yield NF004/Downside/1
+- PASS: Weighted rate/yield NF005/Downside/1
+- PASS: Weighted rate/yield NF006/Downside/1
+- PASS: Weighted rate/yield NF007/Downside/1
+- PASS: Weighted rate/yield NF008/Downside/1
+- PASS: Weighted rate/yield NF009/Downside/1
+- PASS: Weighted rate/yield NF010/Downside/1
+- PASS: Weighted rate/yield NF011/Downside/1
+- PASS: Weighted rate/yield NF012/Downside/1
+- PASS: Weighted rate/yield NF013/Downside/1
+- PASS: Weighted rate/yield NF014/Downside/1
+- PASS: Weighted rate/yield NF015/Downside/1
+- PASS: Weighted rate/yield NF016/Downside/1
+- PASS: Weighted rate/yield NF017/Downside/1
+- PASS: Weighted rate/yield NF018/Downside/1
+- PASS: Weighted rate/yield NF019/Downside/1
+- PASS: Weighted rate/yield NF020/Downside/1
+- PASS: Weighted rate/yield NF021/Downside/1
+- PASS: Weighted rate/yield NF022/Downside/1
+- PASS: Weighted rate/yield NF023/Downside/1
+- PASS: Weighted rate/yield NF024/Downside/1
+- PASS: Weighted rate/yield NF025/Downside/1
+- PASS: Weighted rate/yield NF026/Downside/1
+- PASS: Weighted rate/yield NF027/Downside/1
+- PASS: Weighted rate/yield NF028/Downside/1
+- PASS: Weighted rate/yield NF029/Downside/1
+- PASS: Weighted rate/yield NF030/Downside/1
+- PASS: Weighted rate/yield NF031/Downside/1
+- PASS: Weighted rate/yield NF032/Downside/1
+- PASS: Weighted rate/yield NF033/Downside/1
+- PASS: Weighted rate/yield NF034/Downside/1
+- PASS: Weighted rate/yield NF035/Downside/1
+- PASS: Weighted rate/yield NF036/Downside/1
+- PASS: Weighted rate/yield NF037/Downside/1
+- PASS: Weighted rate/yield NF038/Downside/1
+- PASS: Weighted rate/yield NF039/Downside/1
+- PASS: Weighted rate/yield NF040/Downside/1
+- PASS: Weighted rate/yield NF041/Downside/1
+- PASS: Weighted rate/yield NF042/Downside/1
+- PASS: Weighted rate/yield NF043/Downside/1
+- PASS: Weighted rate/yield NF044/Downside/1
+- PASS: Weighted rate/yield NF045/Downside/1
+- PASS: Weighted rate/yield NF046/Downside/1
+- PASS: Weighted rate/yield NF047/Downside/1
+- PASS: Weighted rate/yield NF048/Downside/1
+- PASS: Weighted rate/yield NF049/Downside/1
+- PASS: Weighted rate/yield NF050/Downside/1
+- PASS: Weighted rate/yield NF051/Downside/1
+- PASS: Weighted rate/yield NF052/Downside/1
+- PASS: Weighted rate/yield NF053/Downside/1
+- PASS: Weighted rate/yield NF054/Downside/1
+- PASS: Weighted rate/yield NF055/Downside/1
+- PASS: Weighted rate/yield NF056/Downside/1
+- PASS: Weighted rate/yield NF057/Downside/1
+- PASS: Weighted rate/yield NF058/Downside/1
+- PASS: Weighted rate/yield NF059/Downside/1
+- PASS: Weighted rate/yield NF060/Downside/1
+- PASS: Weighted rate/yield NF061/Downside/1
+- PASS: Weighted rate/yield NF062/Downside/1
+- PASS: Weighted rate/yield NF063/Downside/1
+- PASS: Weighted rate/yield NF064/Downside/1
+- PASS: Weighted rate/yield NF065/Downside/1
+- PASS: Weighted rate/yield NF066/Downside/1
+- PASS: Weighted rate/yield NF067/Downside/1
+- PASS: Weighted rate/yield NF068/Downside/1
+- PASS: Weighted rate/yield NF069/Downside/1
+- PASS: Weighted rate/yield NF070/Downside/1
+- PASS: Weighted rate/yield NF071/Downside/1
+- PASS: Weighted rate/yield NF072/Downside/1
+- PASS: Weighted rate/yield NF073/Downside/1
+- PASS: Weighted rate/yield NF074/Downside/1
+- PASS: Weighted rate/yield NF075/Downside/1
+- PASS: Weighted rate/yield NF076/Downside/1
+- PASS: Weighted rate/yield NF077/Downside/1
+- PASS: Weighted rate/yield NF078/Downside/1
+- PASS: Weighted rate/yield NF079/Downside/1
+- PASS: Weighted rate/yield NF080/Downside/1
+- PASS: Weighted rate/yield NF001/Downside/2
+- PASS: Weighted rate/yield NF002/Downside/2
+- PASS: Weighted rate/yield NF003/Downside/2
+- PASS: Weighted rate/yield NF004/Downside/2
+- PASS: Weighted rate/yield NF005/Downside/2
+- PASS: Weighted rate/yield NF006/Downside/2
+- PASS: Weighted rate/yield NF007/Downside/2
+- PASS: Weighted rate/yield NF008/Downside/2
+- PASS: Weighted rate/yield NF009/Downside/2
+- PASS: Weighted rate/yield NF010/Downside/2
+- PASS: Weighted rate/yield NF011/Downside/2
+- PASS: Weighted rate/yield NF012/Downside/2
+- PASS: Weighted rate/yield NF013/Downside/2
+- PASS: Weighted rate/yield NF014/Downside/2
+- PASS: Weighted rate/yield NF015/Downside/2
+- PASS: Weighted rate/yield NF016/Downside/2
+- PASS: Weighted rate/yield NF017/Downside/2
+- PASS: Weighted rate/yield NF018/Downside/2
+- PASS: Weighted rate/yield NF019/Downside/2
+- PASS: Weighted rate/yield NF020/Downside/2
+- PASS: Weighted rate/yield NF021/Downside/2
+- PASS: Weighted rate/yield NF022/Downside/2
+- PASS: Weighted rate/yield NF023/Downside/2
+- PASS: Weighted rate/yield NF024/Downside/2
+- PASS: Weighted rate/yield NF025/Downside/2
+- PASS: Weighted rate/yield NF026/Downside/2
+- PASS: Weighted rate/yield NF027/Downside/2
+- PASS: Weighted rate/yield NF028/Downside/2
+- PASS: Weighted rate/yield NF029/Downside/2
+- PASS: Weighted rate/yield NF030/Downside/2
+- PASS: Weighted rate/yield NF031/Downside/2
+- PASS: Weighted rate/yield NF032/Downside/2
+- PASS: Weighted rate/yield NF033/Downside/2
+- PASS: Weighted rate/yield NF034/Downside/2
+- PASS: Weighted rate/yield NF035/Downside/2
+- PASS: Weighted rate/yield NF036/Downside/2
+- PASS: Weighted rate/yield NF037/Downside/2
+- PASS: Weighted rate/yield NF038/Downside/2
+- PASS: Weighted rate/yield NF039/Downside/2
+- PASS: Weighted rate/yield NF040/Downside/2
+- PASS: Weighted rate/yield NF041/Downside/2
+- PASS: Weighted rate/yield NF042/Downside/2
+- PASS: Weighted rate/yield NF043/Downside/2
+- PASS: Weighted rate/yield NF044/Downside/2
+- PASS: Weighted rate/yield NF045/Downside/2
+- PASS: Weighted rate/yield NF046/Downside/2
+- PASS: Weighted rate/yield NF047/Downside/2
+- PASS: Weighted rate/yield NF048/Downside/2
+- PASS: Weighted rate/yield NF049/Downside/2
+- PASS: Weighted rate/yield NF050/Downside/2
+- PASS: Weighted rate/yield NF051/Downside/2
+- PASS: Weighted rate/yield NF052/Downside/2
+- PASS: Weighted rate/yield NF053/Downside/2
+- PASS: Weighted rate/yield NF054/Downside/2
+- PASS: Weighted rate/yield NF055/Downside/2
+- PASS: Weighted rate/yield NF056/Downside/2
+- PASS: Weighted rate/yield NF057/Downside/2
+- PASS: Weighted rate/yield NF058/Downside/2
+- PASS: Weighted rate/yield NF059/Downside/2
+- PASS: Weighted rate/yield NF060/Downside/2
+- PASS: Weighted rate/yield NF061/Downside/2
+- PASS: Weighted rate/yield NF062/Downside/2
+- PASS: Weighted rate/yield NF063/Downside/2
+- PASS: Weighted rate/yield NF064/Downside/2
+- PASS: Weighted rate/yield NF065/Downside/2
+- PASS: Weighted rate/yield NF066/Downside/2
+- PASS: Weighted rate/yield NF067/Downside/2
+- PASS: Weighted rate/yield NF068/Downside/2
+- PASS: Weighted rate/yield NF069/Downside/2
+- PASS: Weighted rate/yield NF070/Downside/2
+- PASS: Weighted rate/yield NF071/Downside/2
+- PASS: Weighted rate/yield NF072/Downside/2
+- PASS: Weighted rate/yield NF073/Downside/2
+- PASS: Weighted rate/yield NF074/Downside/2
+- PASS: Weighted rate/yield NF075/Downside/2
+- PASS: Weighted rate/yield NF076/Downside/2
+- PASS: Weighted rate/yield NF077/Downside/2
+- PASS: Weighted rate/yield NF078/Downside/2
+- PASS: Weighted rate/yield NF079/Downside/2
+- PASS: Weighted rate/yield NF080/Downside/2
+- PASS: Weighted rate/yield NF001/Downside/3
+- PASS: Weighted rate/yield NF002/Downside/3
+- PASS: Weighted rate/yield NF003/Downside/3
+- PASS: Weighted rate/yield NF004/Downside/3
+- PASS: Weighted rate/yield NF005/Downside/3
+- PASS: Weighted rate/yield NF006/Downside/3
+- PASS: Weighted rate/yield NF007/Downside/3
+- PASS: Weighted rate/yield NF008/Downside/3
+- PASS: Weighted rate/yield NF009/Downside/3
+- PASS: Weighted rate/yield NF010/Downside/3
+- PASS: Weighted rate/yield NF011/Downside/3
+- PASS: Weighted rate/yield NF012/Downside/3
+- PASS: Weighted rate/yield NF013/Downside/3
+- PASS: Weighted rate/yield NF014/Downside/3
+- PASS: Weighted rate/yield NF015/Downside/3
+- PASS: Weighted rate/yield NF016/Downside/3
+- PASS: Weighted rate/yield NF017/Downside/3
+- PASS: Weighted rate/yield NF018/Downside/3
+- PASS: Weighted rate/yield NF019/Downside/3
+- PASS: Weighted rate/yield NF020/Downside/3
+- PASS: Weighted rate/yield NF021/Downside/3
+- PASS: Weighted rate/yield NF022/Downside/3
+- PASS: Weighted rate/yield NF023/Downside/3
+- PASS: Weighted rate/yield NF024/Downside/3
+- PASS: Weighted rate/yield NF025/Downside/3
+- PASS: Weighted rate/yield NF026/Downside/3
+- PASS: Weighted rate/yield NF027/Downside/3
+- PASS: Weighted rate/yield NF028/Downside/3
+- PASS: Weighted rate/yield NF029/Downside/3
+- PASS: Weighted rate/yield NF030/Downside/3
+- PASS: Weighted rate/yield NF031/Downside/3
+- PASS: Weighted rate/yield NF032/Downside/3
+- PASS: Weighted rate/yield NF033/Downside/3
+- PASS: Weighted rate/yield NF034/Downside/3
+- PASS: Weighted rate/yield NF035/Downside/3
+- PASS: Weighted rate/yield NF036/Downside/3
+- PASS: Weighted rate/yield NF037/Downside/3
+- PASS: Weighted rate/yield NF038/Downside/3
+- PASS: Weighted rate/yield NF039/Downside/3
+- PASS: Weighted rate/yield NF040/Downside/3
+- PASS: Weighted rate/yield NF041/Downside/3
+- PASS: Weighted rate/yield NF042/Downside/3
+- PASS: Weighted rate/yield NF043/Downside/3
+- PASS: Weighted rate/yield NF044/Downside/3
+- PASS: Weighted rate/yield NF045/Downside/3
+- PASS: Weighted rate/yield NF046/Downside/3
+- PASS: Weighted rate/yield NF047/Downside/3
+- PASS: Weighted rate/yield NF048/Downside/3
+- PASS: Weighted rate/yield NF049/Downside/3
+- PASS: Weighted rate/yield NF050/Downside/3
+- PASS: Weighted rate/yield NF051/Downside/3
+- PASS: Weighted rate/yield NF052/Downside/3
+- PASS: Weighted rate/yield NF053/Downside/3
+- PASS: Weighted rate/yield NF054/Downside/3
+- PASS: Weighted rate/yield NF055/Downside/3
+- PASS: Weighted rate/yield NF056/Downside/3
+- PASS: Weighted rate/yield NF057/Downside/3
+- PASS: Weighted rate/yield NF058/Downside/3
+- PASS: Weighted rate/yield NF059/Downside/3
+- PASS: Weighted rate/yield NF060/Downside/3
+- PASS: Weighted rate/yield NF061/Downside/3
+- PASS: Weighted rate/yield NF062/Downside/3
+- PASS: Weighted rate/yield NF063/Downside/3
+- PASS: Weighted rate/yield NF064/Downside/3
+- PASS: Weighted rate/yield NF065/Downside/3
+- PASS: Weighted rate/yield NF066/Downside/3
+- PASS: Weighted rate/yield NF067/Downside/3
+- PASS: Weighted rate/yield NF068/Downside/3
+- PASS: Weighted rate/yield NF069/Downside/3
+- PASS: Weighted rate/yield NF070/Downside/3
+- PASS: Weighted rate/yield NF071/Downside/3
+- PASS: Weighted rate/yield NF072/Downside/3
+- PASS: Weighted rate/yield NF073/Downside/3
+- PASS: Weighted rate/yield NF074/Downside/3
+- PASS: Weighted rate/yield NF075/Downside/3
+- PASS: Weighted rate/yield NF076/Downside/3
+- PASS: Weighted rate/yield NF077/Downside/3
+- PASS: Weighted rate/yield NF078/Downside/3
+- PASS: Weighted rate/yield NF079/Downside/3
+- PASS: Weighted rate/yield NF080/Downside/3
+- PASS: Weighted rate/yield NF001/Upside/0
+- PASS: Weighted rate/yield NF002/Upside/0
+- PASS: Weighted rate/yield NF003/Upside/0
+- PASS: Weighted rate/yield NF004/Upside/0
+- PASS: Weighted rate/yield NF005/Upside/0
+- PASS: Weighted rate/yield NF006/Upside/0
+- PASS: Weighted rate/yield NF007/Upside/0
+- PASS: Weighted rate/yield NF008/Upside/0
+- PASS: Weighted rate/yield NF009/Upside/0
+- PASS: Weighted rate/yield NF010/Upside/0
+- PASS: Weighted rate/yield NF011/Upside/0
+- PASS: Weighted rate/yield NF012/Upside/0
+- PASS: Weighted rate/yield NF013/Upside/0
+- PASS: Weighted rate/yield NF014/Upside/0
+- PASS: Weighted rate/yield NF015/Upside/0
+- PASS: Weighted rate/yield NF016/Upside/0
+- PASS: Weighted rate/yield NF017/Upside/0
+- PASS: Weighted rate/yield NF018/Upside/0
+- PASS: Weighted rate/yield NF019/Upside/0
+- PASS: Weighted rate/yield NF020/Upside/0
+- PASS: Weighted rate/yield NF021/Upside/0
+- PASS: Weighted rate/yield NF022/Upside/0
+- PASS: Weighted rate/yield NF023/Upside/0
+- PASS: Weighted rate/yield NF024/Upside/0
+- PASS: Weighted rate/yield NF025/Upside/0
+- PASS: Weighted rate/yield NF026/Upside/0
+- PASS: Weighted rate/yield NF027/Upside/0
+- PASS: Weighted rate/yield NF028/Upside/0
+- PASS: Weighted rate/yield NF029/Upside/0
+- PASS: Weighted rate/yield NF030/Upside/0
+- PASS: Weighted rate/yield NF031/Upside/0
+- PASS: Weighted rate/yield NF032/Upside/0
+- PASS: Weighted rate/yield NF033/Upside/0
+- PASS: Weighted rate/yield NF034/Upside/0
+- PASS: Weighted rate/yield NF035/Upside/0
+- PASS: Weighted rate/yield NF036/Upside/0
+- PASS: Weighted rate/yield NF037/Upside/0
+- PASS: Weighted rate/yield NF038/Upside/0
+- PASS: Weighted rate/yield NF039/Upside/0
+- PASS: Weighted rate/yield NF040/Upside/0
+- PASS: Weighted rate/yield NF041/Upside/0
+- PASS: Weighted rate/yield NF042/Upside/0
+- PASS: Weighted rate/yield NF043/Upside/0
+- PASS: Weighted rate/yield NF044/Upside/0
+- PASS: Weighted rate/yield NF045/Upside/0
+- PASS: Weighted rate/yield NF046/Upside/0
+- PASS: Weighted rate/yield NF047/Upside/0
+- PASS: Weighted rate/yield NF048/Upside/0
+- PASS: Weighted rate/yield NF049/Upside/0
+- PASS: Weighted rate/yield NF050/Upside/0
+- PASS: Weighted rate/yield NF051/Upside/0
+- PASS: Weighted rate/yield NF052/Upside/0
+- PASS: Weighted rate/yield NF053/Upside/0
+- PASS: Weighted rate/yield NF054/Upside/0
+- PASS: Weighted rate/yield NF055/Upside/0
+- PASS: Weighted rate/yield NF056/Upside/0
+- PASS: Weighted rate/yield NF057/Upside/0
+- PASS: Weighted rate/yield NF058/Upside/0
+- PASS: Weighted rate/yield NF059/Upside/0
+- PASS: Weighted rate/yield NF060/Upside/0
+- PASS: Weighted rate/yield NF061/Upside/0
+- PASS: Weighted rate/yield NF062/Upside/0
+- PASS: Weighted rate/yield NF063/Upside/0
+- PASS: Weighted rate/yield NF064/Upside/0
+- PASS: Weighted rate/yield NF065/Upside/0
+- PASS: Weighted rate/yield NF066/Upside/0
+- PASS: Weighted rate/yield NF067/Upside/0
+- PASS: Weighted rate/yield NF068/Upside/0
+- PASS: Weighted rate/yield NF069/Upside/0
+- PASS: Weighted rate/yield NF070/Upside/0
+- PASS: Weighted rate/yield NF071/Upside/0
+- PASS: Weighted rate/yield NF072/Upside/0
+- PASS: Weighted rate/yield NF073/Upside/0
+- PASS: Weighted rate/yield NF074/Upside/0
+- PASS: Weighted rate/yield NF075/Upside/0
+- PASS: Weighted rate/yield NF076/Upside/0
+- PASS: Weighted rate/yield NF077/Upside/0
+- PASS: Weighted rate/yield NF078/Upside/0
+- PASS: Weighted rate/yield NF079/Upside/0
+- PASS: Weighted rate/yield NF080/Upside/0
+- PASS: Weighted rate/yield NF001/Upside/1
+- PASS: Weighted rate/yield NF002/Upside/1
+- PASS: Weighted rate/yield NF003/Upside/1
+- PASS: Weighted rate/yield NF004/Upside/1
+- PASS: Weighted rate/yield NF005/Upside/1
+- PASS: Weighted rate/yield NF006/Upside/1
+- PASS: Weighted rate/yield NF007/Upside/1
+- PASS: Weighted rate/yield NF008/Upside/1
+- PASS: Weighted rate/yield NF009/Upside/1
+- PASS: Weighted rate/yield NF010/Upside/1
+- PASS: Weighted rate/yield NF011/Upside/1
+- PASS: Weighted rate/yield NF012/Upside/1
+- PASS: Weighted rate/yield NF013/Upside/1
+- PASS: Weighted rate/yield NF014/Upside/1
+- PASS: Weighted rate/yield NF015/Upside/1
+- PASS: Weighted rate/yield NF016/Upside/1
+- PASS: Weighted rate/yield NF017/Upside/1
+- PASS: Weighted rate/yield NF018/Upside/1
+- PASS: Weighted rate/yield NF019/Upside/1
+- PASS: Weighted rate/yield NF020/Upside/1
+- PASS: Weighted rate/yield NF021/Upside/1
+- PASS: Weighted rate/yield NF022/Upside/1
+- PASS: Weighted rate/yield NF023/Upside/1
+- PASS: Weighted rate/yield NF024/Upside/1
+- PASS: Weighted rate/yield NF025/Upside/1
+- PASS: Weighted rate/yield NF026/Upside/1
+- PASS: Weighted rate/yield NF027/Upside/1
+- PASS: Weighted rate/yield NF028/Upside/1
+- PASS: Weighted rate/yield NF029/Upside/1
+- PASS: Weighted rate/yield NF030/Upside/1
+- PASS: Weighted rate/yield NF031/Upside/1
+- PASS: Weighted rate/yield NF032/Upside/1
+- PASS: Weighted rate/yield NF033/Upside/1
+- PASS: Weighted rate/yield NF034/Upside/1
+- PASS: Weighted rate/yield NF035/Upside/1
+- PASS: Weighted rate/yield NF036/Upside/1
+- PASS: Weighted rate/yield NF037/Upside/1
+- PASS: Weighted rate/yield NF038/Upside/1
+- PASS: Weighted rate/yield NF039/Upside/1
+- PASS: Weighted rate/yield NF040/Upside/1
+- PASS: Weighted rate/yield NF041/Upside/1
+- PASS: Weighted rate/yield NF042/Upside/1
+- PASS: Weighted rate/yield NF043/Upside/1
+- PASS: Weighted rate/yield NF044/Upside/1
+- PASS: Weighted rate/yield NF045/Upside/1
+- PASS: Weighted rate/yield NF046/Upside/1
+- PASS: Weighted rate/yield NF047/Upside/1
+- PASS: Weighted rate/yield NF048/Upside/1
+- PASS: Weighted rate/yield NF049/Upside/1
+- PASS: Weighted rate/yield NF050/Upside/1
+- PASS: Weighted rate/yield NF051/Upside/1
+- PASS: Weighted rate/yield NF052/Upside/1
+- PASS: Weighted rate/yield NF053/Upside/1
+- PASS: Weighted rate/yield NF054/Upside/1
+- PASS: Weighted rate/yield NF055/Upside/1
+- PASS: Weighted rate/yield NF056/Upside/1
+- PASS: Weighted rate/yield NF057/Upside/1
+- PASS: Weighted rate/yield NF058/Upside/1
+- PASS: Weighted rate/yield NF059/Upside/1
+- PASS: Weighted rate/yield NF060/Upside/1
+- PASS: Weighted rate/yield NF061/Upside/1
+- PASS: Weighted rate/yield NF062/Upside/1
+- PASS: Weighted rate/yield NF063/Upside/1
+- PASS: Weighted rate/yield NF064/Upside/1
+- PASS: Weighted rate/yield NF065/Upside/1
+- PASS: Weighted rate/yield NF066/Upside/1
+- PASS: Weighted rate/yield NF067/Upside/1
+- PASS: Weighted rate/yield NF068/Upside/1
+- PASS: Weighted rate/yield NF069/Upside/1
+- PASS: Weighted rate/yield NF070/Upside/1
+- PASS: Weighted rate/yield NF071/Upside/1
+- PASS: Weighted rate/yield NF072/Upside/1
+- PASS: Weighted rate/yield NF073/Upside/1
+- PASS: Weighted rate/yield NF074/Upside/1
+- PASS: Weighted rate/yield NF075/Upside/1
+- PASS: Weighted rate/yield NF076/Upside/1
+- PASS: Weighted rate/yield NF077/Upside/1
+- PASS: Weighted rate/yield NF078/Upside/1
+- PASS: Weighted rate/yield NF079/Upside/1
+- PASS: Weighted rate/yield NF080/Upside/1
+- PASS: Weighted rate/yield NF001/Upside/2
+- PASS: Weighted rate/yield NF002/Upside/2
+- PASS: Weighted rate/yield NF003/Upside/2
+- PASS: Weighted rate/yield NF004/Upside/2
+- PASS: Weighted rate/yield NF005/Upside/2
+- PASS: Weighted rate/yield NF006/Upside/2
+- PASS: Weighted rate/yield NF007/Upside/2
+- PASS: Weighted rate/yield NF008/Upside/2
+- PASS: Weighted rate/yield NF009/Upside/2
+- PASS: Weighted rate/yield NF010/Upside/2
+- PASS: Weighted rate/yield NF011/Upside/2
+- PASS: Weighted rate/yield NF012/Upside/2
+- PASS: Weighted rate/yield NF013/Upside/2
+- PASS: Weighted rate/yield NF014/Upside/2
+- PASS: Weighted rate/yield NF015/Upside/2
+- PASS: Weighted rate/yield NF016/Upside/2
+- PASS: Weighted rate/yield NF017/Upside/2
+- PASS: Weighted rate/yield NF018/Upside/2
+- PASS: Weighted rate/yield NF019/Upside/2
+- PASS: Weighted rate/yield NF020/Upside/2
+- PASS: Weighted rate/yield NF021/Upside/2
+- PASS: Weighted rate/yield NF022/Upside/2
+- PASS: Weighted rate/yield NF023/Upside/2
+- PASS: Weighted rate/yield NF024/Upside/2
+- PASS: Weighted rate/yield NF025/Upside/2
+- PASS: Weighted rate/yield NF026/Upside/2
+- PASS: Weighted rate/yield NF027/Upside/2
+- PASS: Weighted rate/yield NF028/Upside/2
+- PASS: Weighted rate/yield NF029/Upside/2
+- PASS: Weighted rate/yield NF030/Upside/2
+- PASS: Weighted rate/yield NF031/Upside/2
+- PASS: Weighted rate/yield NF032/Upside/2
+- PASS: Weighted rate/yield NF033/Upside/2
+- PASS: Weighted rate/yield NF034/Upside/2
+- PASS: Weighted rate/yield NF035/Upside/2
+- PASS: Weighted rate/yield NF036/Upside/2
+- PASS: Weighted rate/yield NF037/Upside/2
+- PASS: Weighted rate/yield NF038/Upside/2
+- PASS: Weighted rate/yield NF039/Upside/2
+- PASS: Weighted rate/yield NF040/Upside/2
+- PASS: Weighted rate/yield NF041/Upside/2
+- PASS: Weighted rate/yield NF042/Upside/2
+- PASS: Weighted rate/yield NF043/Upside/2
+- PASS: Weighted rate/yield NF044/Upside/2
+- PASS: Weighted rate/yield NF045/Upside/2
+- PASS: Weighted rate/yield NF046/Upside/2
+- PASS: Weighted rate/yield NF047/Upside/2
+- PASS: Weighted rate/yield NF048/Upside/2
+- PASS: Weighted rate/yield NF049/Upside/2
+- PASS: Weighted rate/yield NF050/Upside/2
+- PASS: Weighted rate/yield NF051/Upside/2
+- PASS: Weighted rate/yield NF052/Upside/2
+- PASS: Weighted rate/yield NF053/Upside/2
+- PASS: Weighted rate/yield NF054/Upside/2
+- PASS: Weighted rate/yield NF055/Upside/2
+- PASS: Weighted rate/yield NF056/Upside/2
+- PASS: Weighted rate/yield NF057/Upside/2
+- PASS: Weighted rate/yield NF058/Upside/2
+- PASS: Weighted rate/yield NF059/Upside/2
+- PASS: Weighted rate/yield NF060/Upside/2
+- PASS: Weighted rate/yield NF061/Upside/2
+- PASS: Weighted rate/yield NF062/Upside/2
+- PASS: Weighted rate/yield NF063/Upside/2
+- PASS: Weighted rate/yield NF064/Upside/2
+- PASS: Weighted rate/yield NF065/Upside/2
+- PASS: Weighted rate/yield NF066/Upside/2
+- PASS: Weighted rate/yield NF067/Upside/2
+- PASS: Weighted rate/yield NF068/Upside/2
+- PASS: Weighted rate/yield NF069/Upside/2
+- PASS: Weighted rate/yield NF070/Upside/2
+- PASS: Weighted rate/yield NF071/Upside/2
+- PASS: Weighted rate/yield NF072/Upside/2
+- PASS: Weighted rate/yield NF073/Upside/2
+- PASS: Weighted rate/yield NF074/Upside/2
+- PASS: Weighted rate/yield NF075/Upside/2
+- PASS: Weighted rate/yield NF076/Upside/2
+- PASS: Weighted rate/yield NF077/Upside/2
+- PASS: Weighted rate/yield NF078/Upside/2
+- PASS: Weighted rate/yield NF079/Upside/2
+- PASS: Weighted rate/yield NF080/Upside/2
+- PASS: Weighted rate/yield NF001/Upside/3
+- PASS: Weighted rate/yield NF002/Upside/3
+- PASS: Weighted rate/yield NF003/Upside/3
+- PASS: Weighted rate/yield NF004/Upside/3
+- PASS: Weighted rate/yield NF005/Upside/3
+- PASS: Weighted rate/yield NF006/Upside/3
+- PASS: Weighted rate/yield NF007/Upside/3
+- PASS: Weighted rate/yield NF008/Upside/3
+- PASS: Weighted rate/yield NF009/Upside/3
+- PASS: Weighted rate/yield NF010/Upside/3
+- PASS: Weighted rate/yield NF011/Upside/3
+- PASS: Weighted rate/yield NF012/Upside/3
+- PASS: Weighted rate/yield NF013/Upside/3
+- PASS: Weighted rate/yield NF014/Upside/3
+- PASS: Weighted rate/yield NF015/Upside/3
+- PASS: Weighted rate/yield NF016/Upside/3
+- PASS: Weighted rate/yield NF017/Upside/3
+- PASS: Weighted rate/yield NF018/Upside/3
+- PASS: Weighted rate/yield NF019/Upside/3
+- PASS: Weighted rate/yield NF020/Upside/3
+- PASS: Weighted rate/yield NF021/Upside/3
+- PASS: Weighted rate/yield NF022/Upside/3
+- PASS: Weighted rate/yield NF023/Upside/3
+- PASS: Weighted rate/yield NF024/Upside/3
+- PASS: Weighted rate/yield NF025/Upside/3
+- PASS: Weighted rate/yield NF026/Upside/3
+- PASS: Weighted rate/yield NF027/Upside/3
+- PASS: Weighted rate/yield NF028/Upside/3
+- PASS: Weighted rate/yield NF029/Upside/3
+- PASS: Weighted rate/yield NF030/Upside/3
+- PASS: Weighted rate/yield NF031/Upside/3
+- PASS: Weighted rate/yield NF032/Upside/3
+- PASS: Weighted rate/yield NF033/Upside/3
+- PASS: Weighted rate/yield NF034/Upside/3
+- PASS: Weighted rate/yield NF035/Upside/3
+- PASS: Weighted rate/yield NF036/Upside/3
+- PASS: Weighted rate/yield NF037/Upside/3
+- PASS: Weighted rate/yield NF038/Upside/3
+- PASS: Weighted rate/yield NF039/Upside/3
+- PASS: Weighted rate/yield NF040/Upside/3
+- PASS: Weighted rate/yield NF041/Upside/3
+- PASS: Weighted rate/yield NF042/Upside/3
+- PASS: Weighted rate/yield NF043/Upside/3
+- PASS: Weighted rate/yield NF044/Upside/3
+- PASS: Weighted rate/yield NF045/Upside/3
+- PASS: Weighted rate/yield NF046/Upside/3
+- PASS: Weighted rate/yield NF047/Upside/3
+- PASS: Weighted rate/yield NF048/Upside/3
+- PASS: Weighted rate/yield NF049/Upside/3
+- PASS: Weighted rate/yield NF050/Upside/3
+- PASS: Weighted rate/yield NF051/Upside/3
+- PASS: Weighted rate/yield NF052/Upside/3
+- PASS: Weighted rate/yield NF053/Upside/3
+- PASS: Weighted rate/yield NF054/Upside/3
+- PASS: Weighted rate/yield NF055/Upside/3
+- PASS: Weighted rate/yield NF056/Upside/3
+- PASS: Weighted rate/yield NF057/Upside/3
+- PASS: Weighted rate/yield NF058/Upside/3
+- PASS: Weighted rate/yield NF059/Upside/3
+- PASS: Weighted rate/yield NF060/Upside/3
+- PASS: Weighted rate/yield NF061/Upside/3
+- PASS: Weighted rate/yield NF062/Upside/3
+- PASS: Weighted rate/yield NF063/Upside/3
+- PASS: Weighted rate/yield NF064/Upside/3
+- PASS: Weighted rate/yield NF065/Upside/3
+- PASS: Weighted rate/yield NF066/Upside/3
+- PASS: Weighted rate/yield NF067/Upside/3
+- PASS: Weighted rate/yield NF068/Upside/3
+- PASS: Weighted rate/yield NF069/Upside/3
+- PASS: Weighted rate/yield NF070/Upside/3
+- PASS: Weighted rate/yield NF071/Upside/3
+- PASS: Weighted rate/yield NF072/Upside/3
+- PASS: Weighted rate/yield NF073/Upside/3
+- PASS: Weighted rate/yield NF074/Upside/3
+- PASS: Weighted rate/yield NF075/Upside/3
+- PASS: Weighted rate/yield NF076/Upside/3
+- PASS: Weighted rate/yield NF077/Upside/3
+- PASS: Weighted rate/yield NF078/Upside/3
+- PASS: Weighted rate/yield NF079/Upside/3
+- PASS: Weighted rate/yield NF080/Upside/3
+- PASS: Every revenue bridge exact
+- PASS: Missing denominator remains unavailable
+- PASS: Valid zero response gives unchanged acquisition
+- PASS: Negative elasticity lowers acquisition
+- PASS: Percentage point conversion
+- PASS: Null behavioural effect preserves members
+- PASS: Extreme hazards bounded and populations exhausted safely
+- PASS: Notice month no incumbent cash increase
+- PASS: Billing date cash increment once
+- PASS: Future joiner never receives incumbent increment twice
+- PASS: January protected states honoured
+- PASS: Future-joiner sensitivity exactly half incumbent billing response
+
+Workbook evidence is recorded independently.

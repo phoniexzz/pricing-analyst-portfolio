@@ -1,0 +1,38 @@
+// Execute in native Power BI DAX Query View. Executed against the native Desktop engine; results: analysis/powerbi_native_dax_results.json.
+EVALUATE
+CALCULATETABLE(
+ ROW("Revenue 2025", [Net Revenue], "December members", [Closing Members],
+ "ARPMM", [ARPMM], "Acquisitions", [Acquisitions], "Monthly churn", [Opening-base Churn],
+ "Conversion", [Qualified Conversion], "Volume contribution", [Volume Bridge],
+ "ARPMM contribution", [ARPMM Bridge],
+ "Bridge residual", [Volume Bridge]+[ARPMM Bridge]-([Net Revenue]-[Net Revenue Prior Year])),
+ DimHistoryMonth[year] = 2025)
+
+EVALUATE
+CALCULATETABLE(ROW("Base portfolio uplift", [Portfolio Increment],
+ "December member difference", [Portfolio Member Difference],
+ "Saved portfolio lower", [Portfolio Increment lower], "Saved portfolio upper", [Portfolio Increment upper]),
+ DimPolicy[variant]="base", DimCase[case]="Base")
+
+EVALUATE SUMMARIZECOLUMNS(FactRecommendation[action], "Sites", [Recommendation Site Count])
+
+EVALUATE SUMMARIZECOLUMNS(DimCase[case], DimPrice[label],
+ "Annual scenario revenue", [Scenario Revenue], "Incremental revenue", [Scenario Incremental Revenue],
+ "December members", [Scenario December Members], "Churn", [Scenario Churn])
+
+// Both must be blank: no unique case/option, and unsupported multi-gym uncertainty.
+EVALUATE ROW("Multiple-case/option refusal", [Scenario Revenue],
+ "Unsupported two-gym interval", CALCULATE([Scenario Increment lower],
+ DimCase[case]="Base", DimPrice[price_increment]=2, DimGym[gym_id] IN {"NF001","NF002"}))
+
+EVALUATE CALCULATETABLE(ROW("Main primary six-month decision", [Experiment Saved Decision],
+ "Revenue effect", [Experiment Revenue Effect], "Revenue lower", [Experiment Revenue Effect lower],
+ "One-sided p", [Experiment One-sided p], "Two-sided p", [Experiment Two-sided p],
+ "Member harm upper", [Experiment Member Harm upper], "Complete pairs", [Experiment Complete Pairs]),
+ DimSimulation[simulation]="Main", DimPopulation[population]="First repricing", DimCheckpoint[checkpoint_months]=6)
+
+EVALUATE CALCULATETABLE(ROW("Main primary twelve-month decision", [Experiment Saved Decision]),
+ DimSimulation[simulation]="Main", DimPopulation[population]="First repricing", DimCheckpoint[checkpoint_months]=12)
+
+EVALUATE CALCULATETABLE(ROW("Repeat interval unavailable", [Experiment Revenue Effect lower]),
+ DimSimulation[simulation]="Main", DimPopulation[population]="Repeat repricing", DimCheckpoint[checkpoint_months]=6)

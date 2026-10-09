@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmarksMetadata/1.0.0/schema.json",
+  "items": [
+    {
+      "name": "reset_p01"
+    },
+    {
+      "name": "reset_p02"
+    },
+    {
+      "name": "reset_p03"
+    },
+    {
+      "name": "reset_p04"
+    },
+    {
+      "name": "reset_p05"
+    },
+    {
+      "name": "reset_p06"
+    },
+    {
+      "name": "reset_p07"
+    }
+  ]
+}

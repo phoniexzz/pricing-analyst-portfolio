@@ -1,0 +1,16 @@
+{
+  "reporting_window": "Hypothetical January–December 2026",
+  "member_loss_limit": 0.05,
+  "minimum_post_increase_competitor_gap": 0.0,
+  "test_repeat_repricing": true,
+  "variants": ["base", "member_limit_3pct", "member_limit_7pct", "competitor_buffer_1gbp", "allow_repeat_repricing"],
+  "nonzero_sensitivities": ["early_3m", "sustained_9m", "fixed_acquisition_weights", "future_joiner_churn", "offpeak_diversion", "member_sensitive_ancillary"],
+  "actions": ["RAISE £2", "RAISE £1", "TEST FIRST", "HOLD PRICE", "DEFENSIVE / INVESTIGATE"],
+  "cases": ["Base", "Downside", "Upside"],
+  "candidate_increments": [1, 2],
+  "interval_percentiles": [2.5, 97.5],
+  "qualification": "Positive Base, Downside and conditional lower-bound incremental revenue; non-negative required competitor gap; downside member impact at least minus policy limit; positive revenue in every nonzero sensitivity",
+  "tie_rule": "Exact unrounded revenue ties favour the smaller increase",
+  "caution_precedence": "Any Phase 3 caution or missing required evidence => DEFENSIVE / INVESTIGATE",
+  "uncertainty": "Reuse the 10,000 Phase 6 common whole-pair draws; conditional parameter uncertainty excludes future shocks and transport uncertainty"
+}

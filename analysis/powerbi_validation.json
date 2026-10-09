@@ -1,0 +1,27 @@
+{
+  "status": "Phase 9 build-ready; native verification pending",
+  "checks_passed": [
+    "All protected source/configuration/evidence hashes unchanged",
+    "213 JSON documents checked against pinned Microsoft schemas (theme checked separately)",
+    "Navy/teal theme validates against Microsoft report-theme 2.157 schema; statuses also use text labels",
+    "1236 semantic field/measure references resolve; 296 measures have acyclic dependencies; no summed interval endpoints",
+    "Relationship graph has only many-to-one, single-direction dimension-to-fact edges",
+    "Six populated main pages, one hidden Gym Detail; positioned bounds; separate experiment controls",
+    "12 matching-window/site/region weighted-rate and exact bridge cases; closing-member boundaries; null vs zero and pp units",
+    "Scenario multiple-option/case refusal and saved uncertainty scope guards; full portfolio only; no endpoint aggregation",
+    "Experiment history not repeated by simulation; twelve-month pre history; primary/exploratory intervals remain saved"
+  ],
+  "json_documents": 213,
+  "field_measure_bindings": 1236,
+  "explicit_measures": 296,
+  "report_pages": 7,
+  "native_pending": [
+    "Open PBIP in Power BI Desktop",
+    "Refresh M queries and materialise Import model",
+    "Execute DAX checks and compare native results",
+    "Test slicer defaults/sync, reset bookmarks, navigation, drill-through and cross-filter exclusions",
+    "Test unsupported selection uncertainty suppression and stale source gating",
+    "Review actual native screenshots of all seven layouts",
+    "Save PBIX through native File > Save As only if requested"
+  ]
+}

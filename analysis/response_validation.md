@@ -1,0 +1,305 @@
+# Phase 5 Python validation
+
+This project uses synthetic data and is inspired by the commercial economics of UK subscription fitness businesses.
+
+This project uses synthetic data created for portfolio purposes. It is inspired by the economics of multi-site subscription fitness businesses and does not use confidential information from The Gym Group or any other operator.
+
+- PASS: Prior source, generation, baseline and headroom hashes unchanged
+- PASS: 80 unique gyms, 24 consecutive periods and 5760 family-panel rows
+- PASS: Exact consecutive monthly ISO boundaries
+- PASS: All eighty gyms are mature at the observation start
+- PASS: Unique key: gym_id,event_family,month
+- PASS: Unique key: gym_id,event_id
+- PASS: Unique key: pair_id,window
+- PASS: Unique estimates estimator/window/group/metric keys
+- PASS: Ledger-to-monthly opening_members
+- PASS: Ledger-to-monthly new_members
+- PASS: Ledger-to-monthly closing_members
+- PASS: Ledger-to-monthly subscription_revenue
+- PASS: Monthly membership bridges
+- PASS: Closing and average tier membership totals
+- PASS: Every ledger bucket and tier transfer reconciles
+- PASS: Revenue component reconciliation within GBP0.01
+- PASS: Eligible exits and opening-base downgrades bounded
+- PASS: No bucket mixes opening members and same-month joins
+- PASS: Joining-month transfers excluded from incumbent downgrade denominator
+- PASS: Pair period exposure-weighted rate treatment_pre_incumbent_churn
+- PASS: Pair period exposure-weighted rate treatment_pre_incumbent_downgrade
+- PASS: Pair period exposure-weighted rate treatment_pre_conversion
+- PASS: Pair period exposure-weighted rate treatment_pre_site_churn
+- PASS: Pair period exposure-weighted rate treatment_pre_subscription_yield
+- PASS: Pair period exposure-weighted rate treatment_pre_standard_yield
+- PASS: Pair period exposure-weighted rate treatment_pre_total_arpmm
+- PASS: Pair period exposure-weighted rate treatment_pre_incumbent_paid_rate
+- PASS: Pair period exposure-weighted rate treatment_pre_protected_share
+- PASS: Pair period exposure-weighted rate treatment_pre_repriced_share
+- PASS: Pair period exposure-weighted rate treatment_pre_complaints_per_1000_member_months
+- PASS: Pair period exposure-weighted rate treatment_post_incumbent_churn
+- PASS: Pair period exposure-weighted rate treatment_post_incumbent_downgrade
+- PASS: Pair period exposure-weighted rate treatment_post_conversion
+- PASS: Pair period exposure-weighted rate treatment_post_site_churn
+- PASS: Pair period exposure-weighted rate treatment_post_subscription_yield
+- PASS: Pair period exposure-weighted rate treatment_post_standard_yield
+- PASS: Pair period exposure-weighted rate treatment_post_total_arpmm
+- PASS: Pair period exposure-weighted rate treatment_post_incumbent_paid_rate
+- PASS: Pair period exposure-weighted rate treatment_post_protected_share
+- PASS: Pair period exposure-weighted rate treatment_post_repriced_share
+- PASS: Pair period exposure-weighted rate treatment_post_complaints_per_1000_member_months
+- PASS: Pair period exposure-weighted rate control_pre_incumbent_churn
+- PASS: Pair period exposure-weighted rate control_pre_incumbent_downgrade
+- PASS: Pair period exposure-weighted rate control_pre_conversion
+- PASS: Pair period exposure-weighted rate control_pre_site_churn
+- PASS: Pair period exposure-weighted rate control_pre_subscription_yield
+- PASS: Pair period exposure-weighted rate control_pre_standard_yield
+- PASS: Pair period exposure-weighted rate control_pre_total_arpmm
+- PASS: Pair period exposure-weighted rate control_pre_incumbent_paid_rate
+- PASS: Pair period exposure-weighted rate control_pre_protected_share
+- PASS: Pair period exposure-weighted rate control_pre_repriced_share
+- PASS: Pair period exposure-weighted rate control_pre_complaints_per_1000_member_months
+- PASS: Pair period exposure-weighted rate control_post_incumbent_churn
+- PASS: Pair period exposure-weighted rate control_post_incumbent_downgrade
+- PASS: Pair period exposure-weighted rate control_post_conversion
+- PASS: Pair period exposure-weighted rate control_post_site_churn
+- PASS: Pair period exposure-weighted rate control_post_subscription_yield
+- PASS: Pair period exposure-weighted rate control_post_standard_yield
+- PASS: Pair period exposure-weighted rate control_post_total_arpmm
+- PASS: Pair period exposure-weighted rate control_post_incumbent_paid_rate
+- PASS: Pair period exposure-weighted rate control_post_protected_share
+- PASS: Pair period exposure-weighted rate control_post_repriced_share
+- PASS: Pair period exposure-weighted rate control_post_complaints_per_1000_member_months
+- PASS: Numerator/denominator rate: incumbent_churn
+- PASS: Numerator/denominator rate: incumbent_downgrade
+- PASS: Numerator/denominator rate: conversion
+- PASS: Numerator/denominator rate: site_churn
+- PASS: Numerator/denominator rate: subscription_yield
+- PASS: Numerator/denominator rate: standard_yield
+- PASS: Numerator/denominator rate: total_arpmm
+- PASS: Numerator/denominator rate: incumbent_paid_rate
+- PASS: Numerator/denominator rate: protected_share
+- PASS: Numerator/denominator rate: repriced_share
+- PASS: Numerator/denominator rate: complaints_per_1000_member_months
+- PASS: Pilot has original 12 treatment/12 control gyms
+- PASS: One treatment and control per pair
+- PASS: Pilot controls unchanged throughout source observation
+- PASS: Historical billing starts following notification month
+- PASS: Every eligible status matches notice and expiry NF001
+- PASS: Timing/protection NF001
+- PASS: Single persistent cash increment NF001
+- PASS: New event-price cohorts excluded NF001
+- PASS: Persistent repricing flag NF001
+- PASS: Every eligible status matches notice and expiry NF002
+- PASS: Timing/protection NF002
+- PASS: Single persistent cash increment NF002
+- PASS: New event-price cohorts excluded NF002
+- PASS: Persistent repricing flag NF002
+- PASS: Every eligible status matches notice and expiry NF004
+- PASS: Timing/protection NF004
+- PASS: Single persistent cash increment NF004
+- PASS: New event-price cohorts excluded NF004
+- PASS: Persistent repricing flag NF004
+- PASS: Every eligible status matches notice and expiry NF011
+- PASS: Timing/protection NF011
+- PASS: Single persistent cash increment NF011
+- PASS: New event-price cohorts excluded NF011
+- PASS: Persistent repricing flag NF011
+- PASS: Every eligible status matches notice and expiry NF013
+- PASS: Timing/protection NF013
+- PASS: Single persistent cash increment NF013
+- PASS: New event-price cohorts excluded NF013
+- PASS: Persistent repricing flag NF013
+- PASS: Every eligible status matches notice and expiry NF015
+- PASS: Timing/protection NF015
+- PASS: Single persistent cash increment NF015
+- PASS: New event-price cohorts excluded NF015
+- PASS: Persistent repricing flag NF015
+- PASS: Every eligible status matches notice and expiry NF019
+- PASS: Timing/protection NF019
+- PASS: Single persistent cash increment NF019
+- PASS: New event-price cohorts excluded NF019
+- PASS: Persistent repricing flag NF019
+- PASS: Every eligible status matches notice and expiry NF020
+- PASS: Timing/protection NF020
+- PASS: Single persistent cash increment NF020
+- PASS: New event-price cohorts excluded NF020
+- PASS: Persistent repricing flag NF020
+- PASS: Every eligible status matches notice and expiry NF021
+- PASS: Timing/protection NF021
+- PASS: Single persistent cash increment NF021
+- PASS: New event-price cohorts excluded NF021
+- PASS: Persistent repricing flag NF021
+- PASS: Every eligible status matches notice and expiry NF022
+- PASS: Timing/protection NF022
+- PASS: Single persistent cash increment NF022
+- PASS: New event-price cohorts excluded NF022
+- PASS: Persistent repricing flag NF022
+- PASS: Every eligible status matches notice and expiry NF024
+- PASS: Timing/protection NF024
+- PASS: Single persistent cash increment NF024
+- PASS: New event-price cohorts excluded NF024
+- PASS: Persistent repricing flag NF024
+- PASS: Every eligible status matches notice and expiry NF028
+- PASS: Timing/protection NF028
+- PASS: Single persistent cash increment NF028
+- PASS: New event-price cohorts excluded NF028
+- PASS: Persistent repricing flag NF028
+- PASS: Every eligible status matches notice and expiry NF029
+- PASS: Timing/protection NF029
+- PASS: Single persistent cash increment NF029
+- PASS: New event-price cohorts excluded NF029
+- PASS: Persistent repricing flag NF029
+- PASS: Every eligible status matches notice and expiry NF031
+- PASS: Timing/protection NF031
+- PASS: Single persistent cash increment NF031
+- PASS: New event-price cohorts excluded NF031
+- PASS: Persistent repricing flag NF031
+- PASS: Every eligible status matches notice and expiry NF036
+- PASS: Timing/protection NF036
+- PASS: Single persistent cash increment NF036
+- PASS: New event-price cohorts excluded NF036
+- PASS: Persistent repricing flag NF036
+- PASS: Every eligible status matches notice and expiry NF039
+- PASS: Timing/protection NF039
+- PASS: Single persistent cash increment NF039
+- PASS: New event-price cohorts excluded NF039
+- PASS: Persistent repricing flag NF039
+- PASS: Every eligible status matches notice and expiry NF043
+- PASS: Timing/protection NF043
+- PASS: Single persistent cash increment NF043
+- PASS: New event-price cohorts excluded NF043
+- PASS: Persistent repricing flag NF043
+- PASS: Every eligible status matches notice and expiry NF045
+- PASS: Timing/protection NF045
+- PASS: Single persistent cash increment NF045
+- PASS: New event-price cohorts excluded NF045
+- PASS: Persistent repricing flag NF045
+- PASS: Every eligible status matches notice and expiry NF046
+- PASS: Timing/protection NF046
+- PASS: Single persistent cash increment NF046
+- PASS: New event-price cohorts excluded NF046
+- PASS: Persistent repricing flag NF046
+- PASS: Every eligible status matches notice and expiry NF051
+- PASS: Timing/protection NF051
+- PASS: Single persistent cash increment NF051
+- PASS: New event-price cohorts excluded NF051
+- PASS: Persistent repricing flag NF051
+- PASS: Every eligible status matches notice and expiry NF052
+- PASS: Timing/protection NF052
+- PASS: Single persistent cash increment NF052
+- PASS: New event-price cohorts excluded NF052
+- PASS: Persistent repricing flag NF052
+- PASS: Every eligible status matches notice and expiry NF057
+- PASS: Timing/protection NF057
+- PASS: Single persistent cash increment NF057
+- PASS: New event-price cohorts excluded NF057
+- PASS: Persistent repricing flag NF057
+- PASS: Every eligible status matches notice and expiry NF058
+- PASS: Timing/protection NF058
+- PASS: Single persistent cash increment NF058
+- PASS: New event-price cohorts excluded NF058
+- PASS: Persistent repricing flag NF058
+- PASS: Every eligible status matches notice and expiry NF060
+- PASS: Timing/protection NF060
+- PASS: Single persistent cash increment NF060
+- PASS: New event-price cohorts excluded NF060
+- PASS: Persistent repricing flag NF060
+- PASS: Every eligible status matches notice and expiry NF062
+- PASS: Timing/protection NF062
+- PASS: Single persistent cash increment NF062
+- PASS: New event-price cohorts excluded NF062
+- PASS: Persistent repricing flag NF062
+- PASS: Every eligible status matches notice and expiry NF064
+- PASS: Timing/protection NF064
+- PASS: Single persistent cash increment NF064
+- PASS: New event-price cohorts excluded NF064
+- PASS: Persistent repricing flag NF064
+- PASS: Every eligible status matches notice and expiry NF065
+- PASS: Timing/protection NF065
+- PASS: Single persistent cash increment NF065
+- PASS: New event-price cohorts excluded NF065
+- PASS: Persistent repricing flag NF065
+- PASS: Every eligible status matches notice and expiry NF067
+- PASS: Timing/protection NF067
+- PASS: Single persistent cash increment NF067
+- PASS: New event-price cohorts excluded NF067
+- PASS: Persistent repricing flag NF067
+- PASS: Every eligible status matches notice and expiry NF071
+- PASS: Timing/protection NF071
+- PASS: Single persistent cash increment NF071
+- PASS: New event-price cohorts excluded NF071
+- PASS: Persistent repricing flag NF071
+- PASS: Every eligible status matches notice and expiry NF072
+- PASS: Timing/protection NF072
+- PASS: Single persistent cash increment NF072
+- PASS: New event-price cohorts excluded NF072
+- PASS: Persistent repricing flag NF072
+- PASS: Every eligible status matches notice and expiry NF079
+- PASS: Timing/protection NF079
+- PASS: Single persistent cash increment NF079
+- PASS: New event-price cohorts excluded NF079
+- PASS: Persistent repricing flag NF079
+- PASS: Every eligible status matches notice and expiry NF080
+- PASS: Timing/protection NF080
+- PASS: Single persistent cash increment NF080
+- PASS: New event-price cohorts excluded NF080
+- PASS: Persistent repricing flag NF080
+- PASS: Missing denominators unavailable
+- PASS: Null controlled acquisition example
+- PASS: Acquisition elasticity direction and pp units
+- PASS: Intervals unavailable below four pairs
+- PASS: Whole-pair exact 4096 assignments, zero null p=1
+- PASS: Deterministic matching rerun
+- PASS: Deterministic gym-ID distance ties
+- PASS: Empty subgroup remains unavailable
+- PASS: Control-group member changes scaled per treatment site
+- PASS: Nearest comparator deterministic NF002
+- PASS: Same-region comparators NF002
+- PASS: Nearest comparator deterministic NF013
+- PASS: Same-region comparators NF013
+- PASS: Nearest comparator deterministic NF015
+- PASS: Same-region comparators NF015
+- PASS: Nearest comparator deterministic NF019
+- PASS: Same-region comparators NF019
+- PASS: Nearest comparator deterministic NF020
+- PASS: Same-region comparators NF020
+- PASS: Nearest comparator deterministic NF024
+- PASS: Same-region comparators NF024
+- PASS: Nearest comparator deterministic NF039
+- PASS: Same-region comparators NF039
+- PASS: Nearest comparator deterministic NF051
+- PASS: Same-region comparators NF051
+- PASS: Nearest comparator deterministic NF057
+- PASS: Same-region comparators NF057
+- PASS: Nearest comparator deterministic NF060
+- PASS: Same-region comparators NF060
+- PASS: Nearest comparator deterministic NF067
+- PASS: Same-region comparators NF067
+- PASS: Nearest comparator deterministic NF080
+- PASS: Same-region comparators NF080
+- PASS: Nearest comparator deterministic NF004
+- PASS: Same-region comparators NF004
+- PASS: Nearest comparator deterministic NF022
+- PASS: Same-region comparators NF022
+- PASS: Nearest comparator deterministic NF028
+- PASS: Same-region comparators NF028
+- PASS: Nearest comparator deterministic NF029
+- PASS: Same-region comparators NF029
+- PASS: Nearest comparator deterministic NF052
+- PASS: Same-region comparators NF052
+- PASS: Nearest comparator deterministic NF062
+- PASS: Same-region comparators NF062
+- PASS: Nearest comparator deterministic NF071
+- PASS: Same-region comparators NF071
+- PASS: Nearest comparator deterministic NF072
+- PASS: Same-region comparators NF072
+- PASS: No same-region comparators remain unavailable
+- PASS: Joint pair resampling preserves paired columns
+- PASS: Deterministic whole-pair bootstrap byte-identical rerun
+
+Saved workbook verification and visual review are recorded separately.
+
+
+## Saved workbook completion evidence
+
+Phase 5 is complete; the dataset and response estimates are ready for Phase 6. The workbook contains 21 populated sheets, preserving all 18 prior sheets, original styles, tables and chart resources except explicitly updated progress guidance. All 574,168 delivered CSV cells match the independently decoded saved workbook; the largest difference is 0.00000479, below the documented precision tolerance and below £0.01 for monetary values. 70,527 new formula caches are present, and the full recalculated workbook error scan found zero entries. Original source reconciliations and four representative input-change tests passed. All four CSVs reproduce byte-for-byte.
+
+Visual review covers all three new sheets, three affected guidance sheets, five editable native charts and three standalone figures. Native subgroup dots display means and interval endpoints; the report forest figure connects the actual intervals. Recalculation uses Artifact Tool, with independent saved-OOXML checks; native Excel was not automated. Revenue is not profit, monthly exposure is not annual retention, repeated stocks are not unique customers, and the historical local policy estimate is not an estate forecast.

@@ -1,0 +1,9 @@
+{
+  "sheet_count": 31,
+  "all_unaffected_sheets_byte_identical": true,
+  "all_other_native_resources_byte_identical": true,
+  "guide_cells_changed": 5,
+  "guide_cells_independently_compared": 2656,
+  "selector_restored": true,
+  "refresh_packaging_tests": "Phase 6/7/8 owned summary replacements retain 31 sheets, latest guidance and selector. Forecast engines are unchanged; their prior verification is retained."
+}

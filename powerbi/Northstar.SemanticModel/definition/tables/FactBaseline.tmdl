@@ -1,0 +1,1506 @@
+table FactBaseline
+	lineageTag: 9f925807-e6ff-5eba-9ed5-579a62adc4e5
+
+	column gym_id
+		dataType: string
+		lineageTag: eda68275-f57b-5014-bfa0-14713ddcc7f2
+		summarizeBy: none
+		sourceColumn: gym_id
+
+	column gym_name
+		dataType: string
+		lineageTag: d59aa6b0-3a1e-57bb-9cae-5d386710f83d
+		summarizeBy: none
+		sourceColumn: gym_name
+
+	column city
+		dataType: string
+		lineageTag: 64a0bf60-e3fa-5732-a06b-dcfc905e0714
+		summarizeBy: none
+		sourceColumn: city
+
+	column region
+		dataType: string
+		lineageTag: d85ca7b3-cdff-545a-a5d0-297ec09b30e3
+		summarizeBy: none
+		sourceColumn: region
+
+	column location_type
+		dataType: string
+		lineageTag: 30f568ae-3a0f-5fb6-8f45-aef972604430
+		summarizeBy: none
+		sourceColumn: location_type
+
+	column standard_price_dec2025
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: b941ac90-7034-5db9-8282-e827f82db32a
+		summarizeBy: none
+		sourceColumn: standard_price_dec2025
+
+	column competitor_gap_dec2025
+		dataType: double
+		isHidden
+		lineageTag: cd1114ce-4cab-5f1f-94b3-249f7d8c42c8
+		summarizeBy: none
+		sourceColumn: competitor_gap_dec2025
+
+	column average_members_2025
+		dataType: double
+		isHidden
+		lineageTag: 3e043a0c-7723-5f7c-a9f0-fc559af848d0
+		summarizeBy: none
+		sourceColumn: average_members_2025
+
+	column total_revenue_2025
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: df129caa-2f2c-5cdf-b561-449219392c1d
+		summarizeBy: none
+		sourceColumn: total_revenue_2025
+
+	column revenue_growth_yoy
+		dataType: double
+		isHidden
+		lineageTag: 30148ca3-a312-5ffa-ba89-affc40fa8dd8
+		summarizeBy: none
+		sourceColumn: revenue_growth_yoy
+
+	column arpmm_2025
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 5dd3d483-9f46-5d4c-9ccb-272998a0552b
+		summarizeBy: none
+		sourceColumn: arpmm_2025
+
+	column subscription_yield_2025
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 697a37a4-b1e6-5712-8412-464cefcfeca8
+		summarizeBy: none
+		sourceColumn: subscription_yield_2025
+
+	column standard_yield_2025
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 21668b85-58c9-5390-bdc4-0a3730630a7e
+		summarizeBy: none
+		sourceColumn: standard_yield_2025
+
+	column member_growth_2025
+		dataType: double
+		isHidden
+		lineageTag: 840b769d-a399-5732-8962-6a1d2c58376a
+		summarizeBy: none
+		sourceColumn: member_growth_2025
+
+	column acquisition_growth_yoy
+		dataType: double
+		isHidden
+		lineageTag: e08a94e8-b11e-55e8-a54c-8d9c30936702
+		summarizeBy: none
+		sourceColumn: acquisition_growth_yoy
+
+	column churn_rate_2025
+		dataType: double
+		isHidden
+		lineageTag: 3df3a25a-7491-5c63-ab01-8357c8c754ba
+		summarizeBy: none
+		sourceColumn: churn_rate_2025
+
+	column conversion_rate_2025
+		dataType: double
+		isHidden
+		lineageTag: 49389934-a9a7-5135-86cb-c229b272c128
+		summarizeBy: none
+		sourceColumn: conversion_rate_2025
+
+	column average_utilisation_2025
+		dataType: double
+		isHidden
+		lineageTag: 215cbfcb-7955-5e7c-aa47-80ba125b9a38
+		summarizeBy: none
+		sourceColumn: average_utilisation_2025
+
+	column max_monthly_peak_2025
+		dataType: double
+		isHidden
+		lineageTag: 77c44d34-87ee-5583-bad6-93dd8c3a7c24
+		summarizeBy: none
+		sourceColumn: max_monthly_peak_2025
+
+	column high_churn_exception
+		dataType: boolean
+		isHidden
+		lineageTag: 9503a58f-6243-51ff-ad34-32f551cfd0ee
+		summarizeBy: none
+		sourceColumn: high_churn_exception
+
+	column weak_conversion_exception
+		dataType: boolean
+		isHidden
+		lineageTag: d5557219-dee0-58b6-8722-6cb615980cdd
+		summarizeBy: none
+		sourceColumn: weak_conversion_exception
+
+	column declining_acquisition_exception
+		dataType: boolean
+		isHidden
+		lineageTag: ee2585c2-403a-558a-80e8-556c3062f84a
+		summarizeBy: none
+		sourceColumn: declining_acquisition_exception
+
+	column peak_capacity_exception
+		dataType: boolean
+		isHidden
+		lineageTag: ff2c682f-9bf0-575a-8e87-9960b08b25f6
+		summarizeBy: none
+		sourceColumn: peak_capacity_exception
+
+	column capacity_proxy
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 24b48cea-ecf7-5c9f-8b79-6b6e6b79acbb
+		summarizeBy: none
+		sourceColumn: capacity_proxy
+
+	column competitor_price_dec2025
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 1482def3-5f62-592c-9f3b-3ef35b61f09a
+		summarizeBy: none
+		sourceColumn: competitor_price_dec2025
+
+	column competitor_count_dec2025
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 9879bec1-3980-5f75-a6e1-1c1318a9535e
+		summarizeBy: none
+		sourceColumn: competitor_count_dec2025
+
+	column december_annualised_revenue
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: eab63f99-0821-5c01-aec7-bab0619df825
+		summarizeBy: none
+		sourceColumn: december_annualised_revenue
+
+	column historical_price_events
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 6220c001-0b6f-5da9-af07-e5443109c042
+		summarizeBy: none
+		sourceColumn: historical_price_events
+
+	column historical_cash_increase
+		dataType: double
+		isHidden
+		lineageTag: 313c6c67-56a1-5dfd-ab47-fe8a09cf4662
+		summarizeBy: none
+		sourceColumn: historical_cash_increase
+
+	column pilot_assignment
+		dataType: string
+		lineageTag: 282d4df0-d43e-56d7-8edb-6560de1a0a01
+		summarizeBy: none
+		sourceColumn: pilot_assignment
+
+	column pilot_pair_id
+		dataType: string
+		lineageTag: 47c5220f-c053-558d-b88f-dfa90fe841cd
+		summarizeBy: none
+		sourceColumn: pilot_pair_id
+
+	column months_2025
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 26b938dc-2cb4-58eb-b93c-c62bf2ac4502
+		summarizeBy: none
+		sourceColumn: months_2025
+
+	column opening_members_2025
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 4b52855c-399d-55ea-83d4-efecdf9bbb09
+		summarizeBy: none
+		sourceColumn: opening_members_2025
+
+	column closing_members_2025
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 7435956b-235b-5d47-8294-f7b2e1138f96
+		summarizeBy: none
+		sourceColumn: closing_members_2025
+
+	column member_months_2025
+		dataType: double
+		isHidden
+		lineageTag: 79123447-dd3f-540d-a0da-7a15993fb57e
+		summarizeBy: none
+		sourceColumn: member_months_2025
+
+	column opening_member_months_2025
+		dataType: double
+		isHidden
+		lineageTag: 105cbe69-5eb5-5eeb-95af-66ac624073f6
+		summarizeBy: none
+		sourceColumn: opening_member_months_2025
+
+	column subscription_revenue_2025
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 24f65280-1d7c-5326-be82-18cc34fc2646
+		summarizeBy: none
+		sourceColumn: subscription_revenue_2025
+
+	column joining_fee_revenue_2025
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 59f77615-5c12-5b85-8353-459eec3d869f
+		summarizeBy: none
+		sourceColumn: joining_fee_revenue_2025
+
+	column ancillary_revenue_2025
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 333bc51a-8e0f-5318-b185-cf1af9f041b6
+		summarizeBy: none
+		sourceColumn: ancillary_revenue_2025
+
+	column average_monthly_revenue_2025
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 3f4d2b62-e0c7-55a7-aa39-df8254fadc7a
+		summarizeBy: none
+		sourceColumn: average_monthly_revenue_2025
+
+	column standard_member_months_2025
+		dataType: double
+		isHidden
+		lineageTag: 7efe623e-921e-53c0-8851-8d10b9db6a5d
+		summarizeBy: none
+		sourceColumn: standard_member_months_2025
+
+	column standard_subscription_revenue_2025
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 8610ef7e-4fd9-58d2-9386-696b0ec97b7a
+		summarizeBy: none
+		sourceColumn: standard_subscription_revenue_2025
+
+	column new_members_2025
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 87b50edb-5308-565f-880d-013eb670f241
+		summarizeBy: none
+		sourceColumn: new_members_2025
+
+	column average_monthly_joins_2025
+		dataType: double
+		isHidden
+		lineageTag: 4b8736cb-d469-5b80-ab7b-03c5d18784c7
+		summarizeBy: none
+		sourceColumn: average_monthly_joins_2025
+
+	column acquisition_rate_2025
+		dataType: double
+		isHidden
+		lineageTag: 2024e578-9063-5dc7-b471-5ceee2d33508
+		summarizeBy: none
+		sourceColumn: acquisition_rate_2025
+
+	column opening_base_cancellations_2025
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 297dc677-8c18-5699-84c3-7b4cd4636ccd
+		summarizeBy: none
+		sourceColumn: opening_base_cancellations_2025
+
+	column same_month_cancellations_2025
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: b0fb6f15-9871-587c-a340-0ae66ccf8ea5
+		summarizeBy: none
+		sourceColumn: same_month_cancellations_2025
+
+	column all_cancellations_2025
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: c5375e6c-9138-58c8-bb6e-dec06edfe3a1
+		summarizeBy: none
+		sourceColumn: all_cancellations_2025
+
+	column retention_rate_2025
+		dataType: double
+		isHidden
+		lineageTag: 52da6e1f-2c7e-5dd8-8e4d-ffd813277dc9
+		summarizeBy: none
+		sourceColumn: retention_rate_2025
+
+	column qualified_prospects_2025
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 007daf59-87b0-577c-8422-19a7b4aa1310
+		summarizeBy: none
+		sourceColumn: qualified_prospects_2025
+
+	column occupancy_minutes_2025
+		dataType: double
+		isHidden
+		lineageTag: d143067d-5699-5e7a-b26e-cb4eb7375418
+		summarizeBy: none
+		sourceColumn: occupancy_minutes_2025
+
+	column capacity_minutes_2025
+		dataType: double
+		isHidden
+		lineageTag: 5a34df24-33c1-51eb-9d7e-ecc1ed217b24
+		summarizeBy: none
+		sourceColumn: capacity_minutes_2025
+
+	column opening_minutes_2025
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: bbdcc7f7-98a4-50c0-969b-49038cee7a74
+		summarizeBy: none
+		sourceColumn: opening_minutes_2025
+
+	column average_monthly_peak_2025
+		dataType: double
+		isHidden
+		lineageTag: 7680d429-6eaa-5497-8928-e3964dd04c59
+		summarizeBy: none
+		sourceColumn: average_monthly_peak_2025
+
+	column promotion_gym_months_2025
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 5b63d1fe-54b0-5a3d-b93a-94854490216c
+		summarizeBy: none
+		sourceColumn: promotion_gym_months_2025
+
+	column promotion_frequency_2025
+		dataType: double
+		isHidden
+		lineageTag: 195b208d-1e36-520f-ae36-7c2de13d6949
+		summarizeBy: none
+		sourceColumn: promotion_frequency_2025
+
+	column standard_mix_2025
+		dataType: double
+		isHidden
+		lineageTag: 82d4e197-a026-5751-8974-fe8ebc5ac1ae
+		summarizeBy: none
+		sourceColumn: standard_mix_2025
+
+	column offpeak_mix_2025
+		dataType: double
+		isHidden
+		lineageTag: aa39f827-a168-5c88-a8dc-b3be66732f5c
+		summarizeBy: none
+		sourceColumn: offpeak_mix_2025
+
+	column plus_mix_2025
+		dataType: double
+		isHidden
+		lineageTag: 553a072a-1f4a-5ca5-ae4f-1e46adfafe30
+		summarizeBy: none
+		sourceColumn: plus_mix_2025
+
+	column pricing_complaints_2025
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: a7e11e66-82cd-5ff0-8dac-1c8539736067
+		summarizeBy: none
+		sourceColumn: pricing_complaints_2025
+
+	column complaints_per_1000_member_months_2025
+		dataType: double
+		isHidden
+		lineageTag: c3ab0129-f6c1-56a4-bd35-97488787b192
+		summarizeBy: none
+		sourceColumn: complaints_per_1000_member_months_2025
+
+	column marketing_spend_2025
+		dataType: double
+		isHidden
+		lineageTag: a80c5350-02fa-5586-9e1c-a16656a69126
+		summarizeBy: none
+		sourceColumn: marketing_spend_2025
+
+	column months_2024
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: fe470f9c-b695-5191-8257-d87fb9fd2f26
+		summarizeBy: none
+		sourceColumn: months_2024
+
+	column opening_members_2024
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: a9bbd6c4-9877-5a86-a522-e09e6a6ac2e8
+		summarizeBy: none
+		sourceColumn: opening_members_2024
+
+	column closing_members_2024
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 9f994cbd-47e5-549d-89b6-bc88ad402969
+		summarizeBy: none
+		sourceColumn: closing_members_2024
+
+	column member_months_2024
+		dataType: double
+		isHidden
+		lineageTag: 6181df9b-ec57-55e8-9123-8b4083c45065
+		summarizeBy: none
+		sourceColumn: member_months_2024
+
+	column opening_member_months_2024
+		dataType: double
+		isHidden
+		lineageTag: 4529d1d4-4303-51de-a79c-03fc5559c464
+		summarizeBy: none
+		sourceColumn: opening_member_months_2024
+
+	column average_members_2024
+		dataType: double
+		isHidden
+		lineageTag: 070f6685-7772-5358-868b-48ca94735f48
+		summarizeBy: none
+		sourceColumn: average_members_2024
+
+	column subscription_revenue_2024
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: f961fc5b-26d5-5527-a5ee-8ee897dbee25
+		summarizeBy: none
+		sourceColumn: subscription_revenue_2024
+
+	column joining_fee_revenue_2024
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 954ca8b1-2154-564d-b8ed-2692eae78208
+		summarizeBy: none
+		sourceColumn: joining_fee_revenue_2024
+
+	column ancillary_revenue_2024
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 4211598d-685f-590b-9ee7-c343113b5551
+		summarizeBy: none
+		sourceColumn: ancillary_revenue_2024
+
+	column total_revenue_2024
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: d8c9b6ee-e582-5d89-b8e8-79880db6da99
+		summarizeBy: none
+		sourceColumn: total_revenue_2024
+
+	column average_monthly_revenue_2024
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: f07e6815-9e9c-5349-a82b-eddbf1b7f1e3
+		summarizeBy: none
+		sourceColumn: average_monthly_revenue_2024
+
+	column arpmm_2024
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 1f8a1a08-5698-5ef8-89ee-5b9573d7bc73
+		summarizeBy: none
+		sourceColumn: arpmm_2024
+
+	column subscription_yield_2024
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 411f62b2-4036-5cdf-be4c-3da951a60f8c
+		summarizeBy: none
+		sourceColumn: subscription_yield_2024
+
+	column standard_member_months_2024
+		dataType: double
+		isHidden
+		lineageTag: 211d695f-3ccf-5203-a32a-8a2b6bc3ebc1
+		summarizeBy: none
+		sourceColumn: standard_member_months_2024
+
+	column standard_subscription_revenue_2024
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: a651c715-8f4c-5bd0-bbb3-373e360bd65b
+		summarizeBy: none
+		sourceColumn: standard_subscription_revenue_2024
+
+	column standard_yield_2024
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 27b7f115-cc00-509d-a608-8af58257d67d
+		summarizeBy: none
+		sourceColumn: standard_yield_2024
+
+	column new_members_2024
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 98afe32b-8971-569c-ac87-62f8c0d87791
+		summarizeBy: none
+		sourceColumn: new_members_2024
+
+	column average_monthly_joins_2024
+		dataType: double
+		isHidden
+		lineageTag: 8e5e480c-4d1f-597f-a72e-f318ef175963
+		summarizeBy: none
+		sourceColumn: average_monthly_joins_2024
+
+	column acquisition_rate_2024
+		dataType: double
+		isHidden
+		lineageTag: d6eb7356-2790-5dc2-8530-598eae268e0c
+		summarizeBy: none
+		sourceColumn: acquisition_rate_2024
+
+	column opening_base_cancellations_2024
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 72aa54ab-4803-518e-8e7d-893517fba847
+		summarizeBy: none
+		sourceColumn: opening_base_cancellations_2024
+
+	column same_month_cancellations_2024
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 64e7e091-4e5d-5c12-a802-40627421aea4
+		summarizeBy: none
+		sourceColumn: same_month_cancellations_2024
+
+	column all_cancellations_2024
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 80e19ac1-5856-5fba-b69f-cb10f5dad37a
+		summarizeBy: none
+		sourceColumn: all_cancellations_2024
+
+	column churn_rate_2024
+		dataType: double
+		isHidden
+		lineageTag: b8848aab-edf0-56ba-bca3-14d8503218f5
+		summarizeBy: none
+		sourceColumn: churn_rate_2024
+
+	column retention_rate_2024
+		dataType: double
+		isHidden
+		lineageTag: b982e445-3d26-5fce-b90d-9a1deec199f2
+		summarizeBy: none
+		sourceColumn: retention_rate_2024
+
+	column qualified_prospects_2024
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 7a6c3203-8141-5d61-aed3-e82cc3a0a80a
+		summarizeBy: none
+		sourceColumn: qualified_prospects_2024
+
+	column conversion_rate_2024
+		dataType: double
+		isHidden
+		lineageTag: 3aedfc6a-f91d-5b4f-9c84-2160c94e2e10
+		summarizeBy: none
+		sourceColumn: conversion_rate_2024
+
+	column member_growth_2024
+		dataType: double
+		isHidden
+		lineageTag: de3a17f8-349e-5c2c-8d46-2efb5253ff2e
+		summarizeBy: none
+		sourceColumn: member_growth_2024
+
+	column occupancy_minutes_2024
+		dataType: double
+		isHidden
+		lineageTag: 79ff33c9-8d79-584a-94da-519fc48997a8
+		summarizeBy: none
+		sourceColumn: occupancy_minutes_2024
+
+	column capacity_minutes_2024
+		dataType: double
+		isHidden
+		lineageTag: 644b36a6-a4c2-56e8-b7da-58d7bf446537
+		summarizeBy: none
+		sourceColumn: capacity_minutes_2024
+
+	column opening_minutes_2024
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: b4e497ed-7059-50be-9559-a06682b89cfd
+		summarizeBy: none
+		sourceColumn: opening_minutes_2024
+
+	column average_utilisation_2024
+		dataType: double
+		isHidden
+		lineageTag: 5731923f-c82b-5fd9-b56f-0337b3dad178
+		summarizeBy: none
+		sourceColumn: average_utilisation_2024
+
+	column average_monthly_peak_2024
+		dataType: double
+		isHidden
+		lineageTag: de917b6f-a29d-561d-a801-2933eb51b3e7
+		summarizeBy: none
+		sourceColumn: average_monthly_peak_2024
+
+	column max_monthly_peak_2024
+		dataType: double
+		isHidden
+		lineageTag: a328eca7-e209-5117-89c3-806b296e7e3b
+		summarizeBy: none
+		sourceColumn: max_monthly_peak_2024
+
+	column promotion_gym_months_2024
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 52d861cf-9990-597d-b1eb-3876ae4ecbbb
+		summarizeBy: none
+		sourceColumn: promotion_gym_months_2024
+
+	column promotion_frequency_2024
+		dataType: double
+		isHidden
+		lineageTag: e85a9390-28c9-5c67-b3d4-d142498fb498
+		summarizeBy: none
+		sourceColumn: promotion_frequency_2024
+
+	column standard_mix_2024
+		dataType: double
+		isHidden
+		lineageTag: 59b1a461-5d35-5cc7-9052-dce1e8778644
+		summarizeBy: none
+		sourceColumn: standard_mix_2024
+
+	column offpeak_mix_2024
+		dataType: double
+		isHidden
+		lineageTag: bd973483-89c0-5e0a-8dcb-06b87ee36532
+		summarizeBy: none
+		sourceColumn: offpeak_mix_2024
+
+	column plus_mix_2024
+		dataType: double
+		isHidden
+		lineageTag: 87224c72-3cfd-57a1-841c-51de6d3dd8fa
+		summarizeBy: none
+		sourceColumn: plus_mix_2024
+
+	column pricing_complaints_2024
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: f7562f88-31a0-5a80-92e7-f932d03d62fa
+		summarizeBy: none
+		sourceColumn: pricing_complaints_2024
+
+	column complaints_per_1000_member_months_2024
+		dataType: double
+		isHidden
+		lineageTag: 19d7b4e7-bda8-5f27-8b45-faf22db6178e
+		summarizeBy: none
+		sourceColumn: complaints_per_1000_member_months_2024
+
+	column marketing_spend_2024
+		dataType: double
+		isHidden
+		lineageTag: 7d908494-a64f-5bbb-b2e1-893b585fe213
+		summarizeBy: none
+		sourceColumn: marketing_spend_2024
+
+	column months_q4_2025
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: bc59c0ea-cb7f-5a8c-a46a-861aaba77782
+		summarizeBy: none
+		sourceColumn: months_q4_2025
+
+	column opening_members_q4_2025
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 74962fb3-545d-51e7-aa9f-8db2d60fda96
+		summarizeBy: none
+		sourceColumn: opening_members_q4_2025
+
+	column closing_members_q4_2025
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: d6aa37c7-4239-5aa5-acee-e052ac69b1f0
+		summarizeBy: none
+		sourceColumn: closing_members_q4_2025
+
+	column member_months_q4_2025
+		dataType: double
+		isHidden
+		lineageTag: a4ae9c0a-6c39-5ec3-b5ab-d29c71782242
+		summarizeBy: none
+		sourceColumn: member_months_q4_2025
+
+	column opening_member_months_q4_2025
+		dataType: double
+		isHidden
+		lineageTag: e3d16b23-2878-57f3-a06a-825d68a76033
+		summarizeBy: none
+		sourceColumn: opening_member_months_q4_2025
+
+	column average_members_q4_2025
+		dataType: double
+		isHidden
+		lineageTag: c7154e72-0372-5231-ae8b-dbaf989cb501
+		summarizeBy: none
+		sourceColumn: average_members_q4_2025
+
+	column subscription_revenue_q4_2025
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: ed8acef8-e4b5-5305-a600-73237d6a057a
+		summarizeBy: none
+		sourceColumn: subscription_revenue_q4_2025
+
+	column joining_fee_revenue_q4_2025
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 8109e81a-623e-5924-90a5-04333495799d
+		summarizeBy: none
+		sourceColumn: joining_fee_revenue_q4_2025
+
+	column ancillary_revenue_q4_2025
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 6bde3a29-0a81-58ce-9178-a0be980b61e2
+		summarizeBy: none
+		sourceColumn: ancillary_revenue_q4_2025
+
+	column total_revenue_q4_2025
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 775ac8b9-059b-5e74-9b1f-5e9146f48679
+		summarizeBy: none
+		sourceColumn: total_revenue_q4_2025
+
+	column average_monthly_revenue_q4_2025
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 5b103708-cc1e-5b16-b3d5-871e1b021e06
+		summarizeBy: none
+		sourceColumn: average_monthly_revenue_q4_2025
+
+	column arpmm_q4_2025
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: e6957150-9ef9-5b0d-846b-c41a0e7188b5
+		summarizeBy: none
+		sourceColumn: arpmm_q4_2025
+
+	column subscription_yield_q4_2025
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: eacf42fb-6121-5f70-8752-e78624817fa8
+		summarizeBy: none
+		sourceColumn: subscription_yield_q4_2025
+
+	column standard_member_months_q4_2025
+		dataType: double
+		isHidden
+		lineageTag: ef10b1db-3622-5e02-9c06-688344600dc1
+		summarizeBy: none
+		sourceColumn: standard_member_months_q4_2025
+
+	column standard_subscription_revenue_q4_2025
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: cf138ccd-d2c2-5400-8f6c-e8b2d12481d7
+		summarizeBy: none
+		sourceColumn: standard_subscription_revenue_q4_2025
+
+	column standard_yield_q4_2025
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 73b110a6-5b0c-5c42-9156-04c8028eb2d7
+		summarizeBy: none
+		sourceColumn: standard_yield_q4_2025
+
+	column new_members_q4_2025
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 016e171a-4110-5549-9aea-a97d0a56acf7
+		summarizeBy: none
+		sourceColumn: new_members_q4_2025
+
+	column average_monthly_joins_q4_2025
+		dataType: double
+		isHidden
+		lineageTag: 1445ede8-3598-542c-a933-aef6e3cbab45
+		summarizeBy: none
+		sourceColumn: average_monthly_joins_q4_2025
+
+	column acquisition_rate_q4_2025
+		dataType: double
+		isHidden
+		lineageTag: 0edc5b01-a317-51cd-a061-e1add96f68a9
+		summarizeBy: none
+		sourceColumn: acquisition_rate_q4_2025
+
+	column opening_base_cancellations_q4_2025
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: af7a1f4b-4f36-5a57-b711-407690f93f39
+		summarizeBy: none
+		sourceColumn: opening_base_cancellations_q4_2025
+
+	column same_month_cancellations_q4_2025
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 0ea0c038-1e8f-558c-87fd-195f8219fbf3
+		summarizeBy: none
+		sourceColumn: same_month_cancellations_q4_2025
+
+	column all_cancellations_q4_2025
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 5054c3bb-7efd-50fa-849f-eea4b61e508a
+		summarizeBy: none
+		sourceColumn: all_cancellations_q4_2025
+
+	column churn_rate_q4_2025
+		dataType: double
+		isHidden
+		lineageTag: e84b737e-2606-5ae9-8353-0644fc0ef218
+		summarizeBy: none
+		sourceColumn: churn_rate_q4_2025
+
+	column retention_rate_q4_2025
+		dataType: double
+		isHidden
+		lineageTag: 14c00adc-326f-593e-bce1-0a8c3bfa2afe
+		summarizeBy: none
+		sourceColumn: retention_rate_q4_2025
+
+	column qualified_prospects_q4_2025
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 107fb974-9de1-5fca-a27c-564402bb8f95
+		summarizeBy: none
+		sourceColumn: qualified_prospects_q4_2025
+
+	column conversion_rate_q4_2025
+		dataType: double
+		isHidden
+		lineageTag: b74c5e2b-2959-5034-95ec-9e6ebbafdf7d
+		summarizeBy: none
+		sourceColumn: conversion_rate_q4_2025
+
+	column member_growth_q4_2025
+		dataType: double
+		isHidden
+		lineageTag: cc77c46f-ca5e-5d5a-97a9-8c114260ba4b
+		summarizeBy: none
+		sourceColumn: member_growth_q4_2025
+
+	column occupancy_minutes_q4_2025
+		dataType: double
+		isHidden
+		lineageTag: bfb6b99b-bf05-50bd-bf8b-24aaf8246137
+		summarizeBy: none
+		sourceColumn: occupancy_minutes_q4_2025
+
+	column capacity_minutes_q4_2025
+		dataType: double
+		isHidden
+		lineageTag: 8920f338-cf67-59e9-890b-55b635d2a23d
+		summarizeBy: none
+		sourceColumn: capacity_minutes_q4_2025
+
+	column opening_minutes_q4_2025
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: fbcea016-bf7f-5217-a84c-16b67d5f8780
+		summarizeBy: none
+		sourceColumn: opening_minutes_q4_2025
+
+	column average_utilisation_q4_2025
+		dataType: double
+		isHidden
+		lineageTag: 051cd0ea-117a-54a8-9f56-49a6cc0fca61
+		summarizeBy: none
+		sourceColumn: average_utilisation_q4_2025
+
+	column average_monthly_peak_q4_2025
+		dataType: double
+		isHidden
+		lineageTag: 8d635400-dc1d-575b-80d6-934aafd2f78d
+		summarizeBy: none
+		sourceColumn: average_monthly_peak_q4_2025
+
+	column max_monthly_peak_q4_2025
+		dataType: double
+		isHidden
+		lineageTag: 85005f95-f983-58e8-aa19-4479959f8672
+		summarizeBy: none
+		sourceColumn: max_monthly_peak_q4_2025
+
+	column promotion_gym_months_q4_2025
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 5fefe8ee-dedc-51bb-bde5-821ca46df22b
+		summarizeBy: none
+		sourceColumn: promotion_gym_months_q4_2025
+
+	column promotion_frequency_q4_2025
+		dataType: double
+		isHidden
+		lineageTag: 7ae9abc2-6f8c-5fe5-96b7-46b66002f7c7
+		summarizeBy: none
+		sourceColumn: promotion_frequency_q4_2025
+
+	column standard_mix_q4_2025
+		dataType: double
+		isHidden
+		lineageTag: 6a1fa9e1-d91b-5278-8464-aaba062c502c
+		summarizeBy: none
+		sourceColumn: standard_mix_q4_2025
+
+	column offpeak_mix_q4_2025
+		dataType: double
+		isHidden
+		lineageTag: 5788846f-e77a-50b4-8dd9-4068a68a65e6
+		summarizeBy: none
+		sourceColumn: offpeak_mix_q4_2025
+
+	column plus_mix_q4_2025
+		dataType: double
+		isHidden
+		lineageTag: d4fc0e71-6f74-5353-868b-c3c08583c462
+		summarizeBy: none
+		sourceColumn: plus_mix_q4_2025
+
+	column pricing_complaints_q4_2025
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: b5112bd7-602c-5832-a4e8-b34b455b17be
+		summarizeBy: none
+		sourceColumn: pricing_complaints_q4_2025
+
+	column complaints_per_1000_member_months_q4_2025
+		dataType: double
+		isHidden
+		lineageTag: b6fa297f-f4d1-53f1-a06c-664f8b676fd8
+		summarizeBy: none
+		sourceColumn: complaints_per_1000_member_months_q4_2025
+
+	column marketing_spend_q4_2025
+		dataType: double
+		isHidden
+		lineageTag: 26e13895-e2ee-51de-8bfd-d14fd5089b12
+		summarizeBy: none
+		sourceColumn: marketing_spend_q4_2025
+
+	column months_q4_2024
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 6bf33228-2f2c-5335-a537-9ad03ca68490
+		summarizeBy: none
+		sourceColumn: months_q4_2024
+
+	column opening_members_q4_2024
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 0ab6a719-0209-5aca-936b-e2fb4a24ead0
+		summarizeBy: none
+		sourceColumn: opening_members_q4_2024
+
+	column closing_members_q4_2024
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: b6eb4043-3d7b-5283-b12f-98f004105690
+		summarizeBy: none
+		sourceColumn: closing_members_q4_2024
+
+	column member_months_q4_2024
+		dataType: double
+		isHidden
+		lineageTag: 1b05bfd4-94f2-5fdc-8306-3e6e4b7df95e
+		summarizeBy: none
+		sourceColumn: member_months_q4_2024
+
+	column opening_member_months_q4_2024
+		dataType: double
+		isHidden
+		lineageTag: e444cc64-8016-5a9f-9983-cb9a58f03dee
+		summarizeBy: none
+		sourceColumn: opening_member_months_q4_2024
+
+	column average_members_q4_2024
+		dataType: double
+		isHidden
+		lineageTag: 8cee55dd-5931-5ba5-8f33-a44670f53d2a
+		summarizeBy: none
+		sourceColumn: average_members_q4_2024
+
+	column subscription_revenue_q4_2024
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 11bfbf98-4279-5ba0-afc4-74748abcb9f5
+		summarizeBy: none
+		sourceColumn: subscription_revenue_q4_2024
+
+	column joining_fee_revenue_q4_2024
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: b6b46f35-dae6-55ff-93e6-e63fa7dd94ab
+		summarizeBy: none
+		sourceColumn: joining_fee_revenue_q4_2024
+
+	column ancillary_revenue_q4_2024
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: d0960ec5-f93f-5cdc-8f85-7e6eb6d0e960
+		summarizeBy: none
+		sourceColumn: ancillary_revenue_q4_2024
+
+	column total_revenue_q4_2024
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 6693385d-a4fd-5837-9f8d-23577ba0ad56
+		summarizeBy: none
+		sourceColumn: total_revenue_q4_2024
+
+	column average_monthly_revenue_q4_2024
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 31ca9b11-d393-5fb8-9066-890e6b8ab87c
+		summarizeBy: none
+		sourceColumn: average_monthly_revenue_q4_2024
+
+	column arpmm_q4_2024
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 3c696392-c961-580a-95da-cc4b074c6144
+		summarizeBy: none
+		sourceColumn: arpmm_q4_2024
+
+	column subscription_yield_q4_2024
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 351be533-e8ae-5502-acc0-19db7793b750
+		summarizeBy: none
+		sourceColumn: subscription_yield_q4_2024
+
+	column standard_member_months_q4_2024
+		dataType: double
+		isHidden
+		lineageTag: a6963e56-cae9-59fa-ab47-0f5d1a516c6e
+		summarizeBy: none
+		sourceColumn: standard_member_months_q4_2024
+
+	column standard_subscription_revenue_q4_2024
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: e4a3f548-2825-5993-94ea-eaf8b76032ff
+		summarizeBy: none
+		sourceColumn: standard_subscription_revenue_q4_2024
+
+	column standard_yield_q4_2024
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: eb98f30d-0cc9-5f46-9edb-172745eb0136
+		summarizeBy: none
+		sourceColumn: standard_yield_q4_2024
+
+	column new_members_q4_2024
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 041d4817-a6df-5353-a893-9de4fd184765
+		summarizeBy: none
+		sourceColumn: new_members_q4_2024
+
+	column average_monthly_joins_q4_2024
+		dataType: double
+		isHidden
+		lineageTag: 4916691c-0e4b-5b18-80eb-c55099ec0ea4
+		summarizeBy: none
+		sourceColumn: average_monthly_joins_q4_2024
+
+	column acquisition_rate_q4_2024
+		dataType: double
+		isHidden
+		lineageTag: 4b5395cf-5fc4-561e-93e9-34a0e02b7aae
+		summarizeBy: none
+		sourceColumn: acquisition_rate_q4_2024
+
+	column opening_base_cancellations_q4_2024
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 3dcb8657-8317-5df1-a4e0-87e3aa44a50e
+		summarizeBy: none
+		sourceColumn: opening_base_cancellations_q4_2024
+
+	column same_month_cancellations_q4_2024
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 2f00114e-3742-56c1-aaef-3aa04429f683
+		summarizeBy: none
+		sourceColumn: same_month_cancellations_q4_2024
+
+	column all_cancellations_q4_2024
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 4ccefeaf-3670-5108-a923-17d669412c10
+		summarizeBy: none
+		sourceColumn: all_cancellations_q4_2024
+
+	column churn_rate_q4_2024
+		dataType: double
+		isHidden
+		lineageTag: 38d1b27b-ba44-52a2-9879-4c109b0d8255
+		summarizeBy: none
+		sourceColumn: churn_rate_q4_2024
+
+	column retention_rate_q4_2024
+		dataType: double
+		isHidden
+		lineageTag: d07f06c7-a606-5bd3-b7de-2855a453bbea
+		summarizeBy: none
+		sourceColumn: retention_rate_q4_2024
+
+	column qualified_prospects_q4_2024
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 3595e42f-92ea-5b56-b178-bce4e875a06b
+		summarizeBy: none
+		sourceColumn: qualified_prospects_q4_2024
+
+	column conversion_rate_q4_2024
+		dataType: double
+		isHidden
+		lineageTag: 6753d6a4-89b1-5e66-9b4f-c7087494f6b4
+		summarizeBy: none
+		sourceColumn: conversion_rate_q4_2024
+
+	column member_growth_q4_2024
+		dataType: double
+		isHidden
+		lineageTag: fb19074e-c9fa-565f-90da-669cba7af28f
+		summarizeBy: none
+		sourceColumn: member_growth_q4_2024
+
+	column occupancy_minutes_q4_2024
+		dataType: double
+		isHidden
+		lineageTag: 80d81242-16ae-540b-9bb9-1b44de91020a
+		summarizeBy: none
+		sourceColumn: occupancy_minutes_q4_2024
+
+	column capacity_minutes_q4_2024
+		dataType: double
+		isHidden
+		lineageTag: 1dbf5411-bef4-5075-a91a-3cf63c146c92
+		summarizeBy: none
+		sourceColumn: capacity_minutes_q4_2024
+
+	column opening_minutes_q4_2024
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 91ed0e0c-b051-575f-9cfa-12a4393b9e66
+		summarizeBy: none
+		sourceColumn: opening_minutes_q4_2024
+
+	column average_utilisation_q4_2024
+		dataType: double
+		isHidden
+		lineageTag: 6f69e65d-a260-5e6c-84e2-c66f29eaa9b4
+		summarizeBy: none
+		sourceColumn: average_utilisation_q4_2024
+
+	column average_monthly_peak_q4_2024
+		dataType: double
+		isHidden
+		lineageTag: 97320c5f-c0a2-54d4-bf77-0420f8d89d04
+		summarizeBy: none
+		sourceColumn: average_monthly_peak_q4_2024
+
+	column max_monthly_peak_q4_2024
+		dataType: double
+		isHidden
+		lineageTag: f08d0ba8-ef40-5b66-9b0b-cf68cf1fe154
+		summarizeBy: none
+		sourceColumn: max_monthly_peak_q4_2024
+
+	column promotion_gym_months_q4_2024
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 9eddf0d5-1e35-537c-9512-07ec4cf8abad
+		summarizeBy: none
+		sourceColumn: promotion_gym_months_q4_2024
+
+	column promotion_frequency_q4_2024
+		dataType: double
+		isHidden
+		lineageTag: bce4308d-1545-5d1c-83b5-230067adbf83
+		summarizeBy: none
+		sourceColumn: promotion_frequency_q4_2024
+
+	column standard_mix_q4_2024
+		dataType: double
+		isHidden
+		lineageTag: 87aa9148-82a0-550c-b749-6b2ea559fc1e
+		summarizeBy: none
+		sourceColumn: standard_mix_q4_2024
+
+	column offpeak_mix_q4_2024
+		dataType: double
+		isHidden
+		lineageTag: f7447e07-7b32-54bb-8477-6d4933a01e4e
+		summarizeBy: none
+		sourceColumn: offpeak_mix_q4_2024
+
+	column plus_mix_q4_2024
+		dataType: double
+		isHidden
+		lineageTag: 5ee649db-fd7e-5a3d-b4fa-848cb0a19a17
+		summarizeBy: none
+		sourceColumn: plus_mix_q4_2024
+
+	column pricing_complaints_q4_2024
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 086fe7e5-3546-5869-972f-e00340356bf6
+		summarizeBy: none
+		sourceColumn: pricing_complaints_q4_2024
+
+	column complaints_per_1000_member_months_q4_2024
+		dataType: double
+		isHidden
+		lineageTag: 04d73b8f-a0da-5a7e-a58d-3fefc6846144
+		summarizeBy: none
+		sourceColumn: complaints_per_1000_member_months_q4_2024
+
+	column marketing_spend_q4_2024
+		dataType: double
+		isHidden
+		lineageTag: 04770e78-f45f-505f-8c20-4fa233671d14
+		summarizeBy: none
+		sourceColumn: marketing_spend_q4_2024
+
+	column closing_member_growth_yoy
+		dataType: double
+		isHidden
+		lineageTag: 7acdf5ed-b20f-596b-b74e-fdc3f51dc2ce
+		summarizeBy: none
+		sourceColumn: closing_member_growth_yoy
+
+	column churn_change_pp_yoy
+		dataType: double
+		isHidden
+		lineageTag: 96e83ad8-c977-545c-943b-b9e83f3e0279
+		summarizeBy: none
+		sourceColumn: churn_change_pp_yoy
+
+	column retention_change_pp_yoy
+		dataType: double
+		isHidden
+		lineageTag: 54d9412f-45e2-5647-bb0b-70dd029807d4
+		summarizeBy: none
+		sourceColumn: retention_change_pp_yoy
+
+	column conversion_change_pp_yoy
+		dataType: double
+		isHidden
+		lineageTag: 522b7b70-d391-5cb0-8212-6abe31aeb3d2
+		summarizeBy: none
+		sourceColumn: conversion_change_pp_yoy
+
+	column revenue_growth_q4_yoy
+		dataType: double
+		isHidden
+		lineageTag: 931de957-0535-5d98-9fbe-05dd536d70db
+		summarizeBy: none
+		sourceColumn: revenue_growth_q4_yoy
+
+	column acquisition_growth_q4_yoy
+		dataType: double
+		isHidden
+		lineageTag: 5bab1188-3169-5aec-b4a1-9155c633736e
+		summarizeBy: none
+		sourceColumn: acquisition_growth_q4_yoy
+
+	column closing_member_growth_q4_yoy
+		dataType: double
+		isHidden
+		lineageTag: fa8b2faa-90ee-5afa-b595-bcbd8847a6c0
+		summarizeBy: none
+		sourceColumn: closing_member_growth_q4_yoy
+
+	column churn_change_pp_q4_yoy
+		dataType: double
+		isHidden
+		lineageTag: 4d0706b9-9477-5da5-9c1c-9fed9c05392e
+		summarizeBy: none
+		sourceColumn: churn_change_pp_q4_yoy
+
+	column retention_change_pp_q4_yoy
+		dataType: double
+		isHidden
+		lineageTag: 70d48f68-f149-58f2-a63e-b945421d1b2e
+		summarizeBy: none
+		sourceColumn: retention_change_pp_q4_yoy
+
+	column conversion_change_pp_q4_yoy
+		dataType: double
+		isHidden
+		lineageTag: 917380c3-e178-566f-a7ef-190ee177918c
+		summarizeBy: none
+		sourceColumn: conversion_change_pp_q4_yoy
+
+	column highest_rank_total_revenue_2025
+		dataType: int64
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: a86ee98a-2d5b-5c8e-ac60-d607a65b1c83
+		summarizeBy: none
+		sourceColumn: highest_rank_total_revenue_2025
+
+	column lowest_rank_total_revenue_2025
+		dataType: int64
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: e976c491-263d-562e-8cb4-8f0f9ba2bdbb
+		summarizeBy: none
+		sourceColumn: lowest_rank_total_revenue_2025
+
+	column highest_rank_revenue_growth_yoy
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: f5d32c09-cac1-5e8c-94c8-91a2d23f6146
+		summarizeBy: none
+		sourceColumn: highest_rank_revenue_growth_yoy
+
+	column lowest_rank_revenue_growth_yoy
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: de5ce6cb-7661-5946-bf56-0a0e5deec6b3
+		summarizeBy: none
+		sourceColumn: lowest_rank_revenue_growth_yoy
+
+	column highest_rank_member_growth_2025
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 58787fe4-7fed-5a07-9fca-dc9334b40a17
+		summarizeBy: none
+		sourceColumn: highest_rank_member_growth_2025
+
+	column lowest_rank_member_growth_2025
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: b3d1b81c-bc57-5bd8-9b56-3bf02717aff6
+		summarizeBy: none
+		sourceColumn: lowest_rank_member_growth_2025
+
+	partition FactBaseline = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(SourceRoot & "/FactBaseline.csv"), [Delimiter=",", Columns=201, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Nulls = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				    Typed = Table.TransformColumnTypes(Nulls, {{"gym_id", type text}, {"gym_name", type text}, {"city", type text}, {"region", type text}, {"location_type", type text}, {"standard_price_dec2025", type number}, {"competitor_gap_dec2025", type number}, {"average_members_2025", type number}, {"total_revenue_2025", type number}, {"revenue_growth_yoy", type number}, {"arpmm_2025", type number}, {"subscription_yield_2025", type number}, {"standard_yield_2025", type number}, {"member_growth_2025", type number}, {"acquisition_growth_yoy", type number}, {"churn_rate_2025", type number}, {"conversion_rate_2025", type number}, {"average_utilisation_2025", type number}, {"max_monthly_peak_2025", type number}, {"high_churn_exception", type logical}, {"weak_conversion_exception", type logical}, {"declining_acquisition_exception", type logical}, {"peak_capacity_exception", type logical}, {"capacity_proxy", Int64.Type}, {"competitor_price_dec2025", type number}, {"competitor_count_dec2025", Int64.Type}, {"december_annualised_revenue", type number}, {"historical_price_events", Int64.Type}, {"historical_cash_increase", type number}, {"pilot_assignment", type text}, {"pilot_pair_id", type text}, {"months_2025", Int64.Type}, {"opening_members_2025", Int64.Type}, {"closing_members_2025", Int64.Type}, {"member_months_2025", type number}, {"opening_member_months_2025", type number}, {"subscription_revenue_2025", type number}, {"joining_fee_revenue_2025", type number}, {"ancillary_revenue_2025", type number}, {"average_monthly_revenue_2025", type number}, {"standard_member_months_2025", type number}, {"standard_subscription_revenue_2025", type number}, {"new_members_2025", Int64.Type}, {"average_monthly_joins_2025", type number}, {"acquisition_rate_2025", type number}, {"opening_base_cancellations_2025", Int64.Type}, {"same_month_cancellations_2025", Int64.Type}, {"all_cancellations_2025", Int64.Type}, {"retention_rate_2025", type number}, {"qualified_prospects_2025", Int64.Type}, {"occupancy_minutes_2025", type number}, {"capacity_minutes_2025", type number}, {"opening_minutes_2025", Int64.Type}, {"average_monthly_peak_2025", type number}, {"promotion_gym_months_2025", Int64.Type}, {"promotion_frequency_2025", type number}, {"standard_mix_2025", type number}, {"offpeak_mix_2025", type number}, {"plus_mix_2025", type number}, {"pricing_complaints_2025", Int64.Type}, {"complaints_per_1000_member_months_2025", type number}, {"marketing_spend_2025", type number}, {"months_2024", Int64.Type}, {"opening_members_2024", Int64.Type}, {"closing_members_2024", Int64.Type}, {"member_months_2024", type number}, {"opening_member_months_2024", type number}, {"average_members_2024", type number}, {"subscription_revenue_2024", type number}, {"joining_fee_revenue_2024", type number}, {"ancillary_revenue_2024", type number}, {"total_revenue_2024", type number}, {"average_monthly_revenue_2024", type number}, {"arpmm_2024", type number}, {"subscription_yield_2024", type number}, {"standard_member_months_2024", type number}, {"standard_subscription_revenue_2024", type number}, {"standard_yield_2024", type number}, {"new_members_2024", Int64.Type}, {"average_monthly_joins_2024", type number}, {"acquisition_rate_2024", type number}, {"opening_base_cancellations_2024", Int64.Type}, {"same_month_cancellations_2024", Int64.Type}, {"all_cancellations_2024", Int64.Type}, {"churn_rate_2024", type number}, {"retention_rate_2024", type number}, {"qualified_prospects_2024", Int64.Type}, {"conversion_rate_2024", type number}, {"member_growth_2024", type number}, {"occupancy_minutes_2024", type number}, {"capacity_minutes_2024", type number}, {"opening_minutes_2024", Int64.Type}, {"average_utilisation_2024", type number}, {"average_monthly_peak_2024", type number}, {"max_monthly_peak_2024", type number}, {"promotion_gym_months_2024", Int64.Type}, {"promotion_frequency_2024", type number}, {"standard_mix_2024", type number}, {"offpeak_mix_2024", type number}, {"plus_mix_2024", type number}, {"pricing_complaints_2024", Int64.Type}, {"complaints_per_1000_member_months_2024", type number}, {"marketing_spend_2024", type number}, {"months_q4_2025", Int64.Type}, {"opening_members_q4_2025", Int64.Type}, {"closing_members_q4_2025", Int64.Type}, {"member_months_q4_2025", type number}, {"opening_member_months_q4_2025", type number}, {"average_members_q4_2025", type number}, {"subscription_revenue_q4_2025", type number}, {"joining_fee_revenue_q4_2025", type number}, {"ancillary_revenue_q4_2025", type number}, {"total_revenue_q4_2025", type number}, {"average_monthly_revenue_q4_2025", type number}, {"arpmm_q4_2025", type number}, {"subscription_yield_q4_2025", type number}, {"standard_member_months_q4_2025", type number}, {"standard_subscription_revenue_q4_2025", type number}, {"standard_yield_q4_2025", type number}, {"new_members_q4_2025", Int64.Type}, {"average_monthly_joins_q4_2025", type number}, {"acquisition_rate_q4_2025", type number}, {"opening_base_cancellations_q4_2025", Int64.Type}, {"same_month_cancellations_q4_2025", Int64.Type}, {"all_cancellations_q4_2025", Int64.Type}, {"churn_rate_q4_2025", type number}, {"retention_rate_q4_2025", type number}, {"qualified_prospects_q4_2025", Int64.Type}, {"conversion_rate_q4_2025", type number}, {"member_growth_q4_2025", type number}, {"occupancy_minutes_q4_2025", type number}, {"capacity_minutes_q4_2025", type number}, {"opening_minutes_q4_2025", Int64.Type}, {"average_utilisation_q4_2025", type number}, {"average_monthly_peak_q4_2025", type number}, {"max_monthly_peak_q4_2025", type number}, {"promotion_gym_months_q4_2025", Int64.Type}, {"promotion_frequency_q4_2025", type number}, {"standard_mix_q4_2025", type number}, {"offpeak_mix_q4_2025", type number}, {"plus_mix_q4_2025", type number}, {"pricing_complaints_q4_2025", Int64.Type}, {"complaints_per_1000_member_months_q4_2025", type number}, {"marketing_spend_q4_2025", type number}, {"months_q4_2024", Int64.Type}, {"opening_members_q4_2024", Int64.Type}, {"closing_members_q4_2024", Int64.Type}, {"member_months_q4_2024", type number}, {"opening_member_months_q4_2024", type number}, {"average_members_q4_2024", type number}, {"subscription_revenue_q4_2024", type number}, {"joining_fee_revenue_q4_2024", type number}, {"ancillary_revenue_q4_2024", type number}, {"total_revenue_q4_2024", type number}, {"average_monthly_revenue_q4_2024", type number}, {"arpmm_q4_2024", type number}, {"subscription_yield_q4_2024", type number}, {"standard_member_months_q4_2024", type number}, {"standard_subscription_revenue_q4_2024", type number}, {"standard_yield_q4_2024", type number}, {"new_members_q4_2024", Int64.Type}, {"average_monthly_joins_q4_2024", type number}, {"acquisition_rate_q4_2024", type number}, {"opening_base_cancellations_q4_2024", Int64.Type}, {"same_month_cancellations_q4_2024", Int64.Type}, {"all_cancellations_q4_2024", Int64.Type}, {"churn_rate_q4_2024", type number}, {"retention_rate_q4_2024", type number}, {"qualified_prospects_q4_2024", Int64.Type}, {"conversion_rate_q4_2024", type number}, {"member_growth_q4_2024", type number}, {"occupancy_minutes_q4_2024", type number}, {"capacity_minutes_q4_2024", type number}, {"opening_minutes_q4_2024", Int64.Type}, {"average_utilisation_q4_2024", type number}, {"average_monthly_peak_q4_2024", type number}, {"max_monthly_peak_q4_2024", type number}, {"promotion_gym_months_q4_2024", Int64.Type}, {"promotion_frequency_q4_2024", type number}, {"standard_mix_q4_2024", type number}, {"offpeak_mix_q4_2024", type number}, {"plus_mix_q4_2024", type number}, {"pricing_complaints_q4_2024", Int64.Type}, {"complaints_per_1000_member_months_q4_2024", type number}, {"marketing_spend_q4_2024", type number}, {"closing_member_growth_yoy", type number}, {"churn_change_pp_yoy", type number}, {"retention_change_pp_yoy", type number}, {"conversion_change_pp_yoy", type number}, {"revenue_growth_q4_yoy", type number}, {"acquisition_growth_q4_yoy", type number}, {"closing_member_growth_q4_yoy", type number}, {"churn_change_pp_q4_yoy", type number}, {"retention_change_pp_q4_yoy", type number}, {"conversion_change_pp_q4_yoy", type number}, {"highest_rank_total_revenue_2025", Int64.Type}, {"lowest_rank_total_revenue_2025", Int64.Type}, {"highest_rank_revenue_growth_yoy", Int64.Type}, {"lowest_rank_revenue_growth_yoy", Int64.Type}, {"highest_rank_member_growth_2025", Int64.Type}, {"lowest_rank_member_growth_2025", Int64.Type}}, "en-GB")
+				in
+				    Typed
+

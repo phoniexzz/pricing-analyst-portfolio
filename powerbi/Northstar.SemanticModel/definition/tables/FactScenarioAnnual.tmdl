@@ -1,0 +1,796 @@
+table FactScenarioAnnual
+	lineageTag: 00070b34-e5b3-5ca0-8bd9-016c00f70181
+
+	column new_members
+		dataType: double
+		isHidden
+		lineageTag: 51b3a679-e5e6-5a7e-ae31-7f3de4794e16
+		summarizeBy: none
+		sourceColumn: new_members
+
+	column standard_joins
+		dataType: double
+		isHidden
+		lineageTag: dcf40caf-97da-5b37-b502-e046b976112e
+		summarizeBy: none
+		sourceColumn: standard_joins
+
+	column offpeak_joins
+		dataType: double
+		isHidden
+		lineageTag: b1e83c65-61d0-5bee-9592-2539ffdbe63a
+		summarizeBy: none
+		sourceColumn: offpeak_joins
+
+	column plus_joins
+		dataType: double
+		isHidden
+		lineageTag: e7839c01-4a0e-5262-a9e3-fb319dc8eeed
+		summarizeBy: none
+		sourceColumn: plus_joins
+
+	column qualified_prospects
+		dataType: double
+		isHidden
+		lineageTag: 0b559ced-8e8c-546c-af88-233e1e072b92
+		summarizeBy: none
+		sourceColumn: qualified_prospects
+
+	column opening_members
+		dataType: double
+		isHidden
+		lineageTag: b83ad0fb-6adc-56b1-ba13-6770ae1a06ab
+		summarizeBy: none
+		sourceColumn: opening_members
+
+	column average_members
+		dataType: double
+		isHidden
+		lineageTag: 8975c22e-d10f-51df-b23b-c83c3f50c640
+		summarizeBy: none
+		sourceColumn: average_members
+
+	column opening_base_cancellations
+		dataType: double
+		isHidden
+		lineageTag: 5f937daa-0186-56de-a1cb-ad37fe8adb61
+		summarizeBy: none
+		sourceColumn: opening_base_cancellations
+
+	column same_month_cancellations
+		dataType: double
+		isHidden
+		lineageTag: 40cad068-f47f-5052-a055-b96f4acf3da0
+		summarizeBy: none
+		sourceColumn: same_month_cancellations
+
+	column subscription_revenue
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 67961235-3705-5b60-b7f5-95227c2f2eea
+		summarizeBy: none
+		sourceColumn: subscription_revenue
+
+	column joining_fee_revenue
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 8e4b7ebd-1347-545c-8ccc-2b6d94b94b77
+		summarizeBy: none
+		sourceColumn: joining_fee_revenue
+
+	column ancillary_revenue
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: f73c6077-83a0-5113-977d-4c5b0c77ec93
+		summarizeBy: none
+		sourceColumn: ancillary_revenue
+
+	column monthly_revenue
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 22fbb26a-a589-5b87-955e-4de21beb2cd5
+		summarizeBy: none
+		sourceColumn: monthly_revenue
+
+	column incumbent_standard_opening
+		dataType: double
+		isHidden
+		lineageTag: 72bf635a-2201-5872-a289-13177c9bde1a
+		summarizeBy: none
+		sourceColumn: incumbent_standard_opening
+
+	column incumbent_standard_cancellations
+		dataType: double
+		isHidden
+		lineageTag: 060ed06c-d26f-558b-97fa-65c2fa43652d
+		summarizeBy: none
+		sourceColumn: incumbent_standard_cancellations
+
+	column incumbent_standard_downgrades
+		dataType: double
+		isHidden
+		lineageTag: 8d1d4436-de97-5b3d-84eb-e0b2290ef178
+		summarizeBy: none
+		sourceColumn: incumbent_standard_downgrades
+
+	column standard_average_members
+		dataType: double
+		isHidden
+		lineageTag: c55f50fe-a3e5-528a-bb12-ed439a36c14d
+		summarizeBy: none
+		sourceColumn: standard_average_members
+
+	column standard_subscription_revenue
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 74664978-2007-5b26-a020-3bae91a87620
+		summarizeBy: none
+		sourceColumn: standard_subscription_revenue
+
+	column offpeak_average_members
+		dataType: double
+		isHidden
+		lineageTag: b3fd5cad-9956-5987-b632-ddc4a49f34f2
+		summarizeBy: none
+		sourceColumn: offpeak_average_members
+
+	column plus_average_members
+		dataType: double
+		isHidden
+		lineageTag: 9361a7b6-a6e7-5bf4-8efe-1aeed7629c50
+		summarizeBy: none
+		sourceColumn: plus_average_members
+
+	column pricing_complaints
+		dataType: double
+		isHidden
+		lineageTag: a0ef5730-65b8-5070-8393-a44101e821d4
+		summarizeBy: none
+		sourceColumn: pricing_complaints
+
+	column probability_caps
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: d4354648-a034-56e6-8811-b96b98881d60
+		summarizeBy: none
+		sourceColumn: probability_caps
+
+	column transfers_out
+		dataType: double
+		isHidden
+		lineageTag: 8cf2b79b-0714-5a64-8ff5-4670e7e90efa
+		summarizeBy: none
+		sourceColumn: transfers_out
+
+	column incumbent_standard_paid_rate_numerator
+		dataType: double
+		isHidden
+		lineageTag: 090a4bf4-4932-5af7-9005-951e03e9cf5a
+		summarizeBy: none
+		sourceColumn: incumbent_standard_paid_rate_numerator
+
+	column protected_standard_opening
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 2a9c0379-9f77-5e96-963e-1d1f55bd02c1
+		summarizeBy: none
+		sourceColumn: protected_standard_opening
+
+	column repriced_standard_opening
+		dataType: double
+		isHidden
+		lineageTag: 97244f9c-a0f4-5d91-a08f-53ac08d506ef
+		summarizeBy: none
+		sourceColumn: repriced_standard_opening
+
+	column period_opening_members
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 31622e3a-c044-5d46-b4c9-036f6841e5d0
+		summarizeBy: none
+		sourceColumn: period_opening_members
+
+	column month12_members
+		dataType: double
+		isHidden
+		lineageTag: f8a994d5-94b3-59b2-8f00-9675fb909a5e
+		summarizeBy: none
+		sourceColumn: month12_members
+
+	column annualised_exit_run_rate
+		dataType: double
+		isHidden
+		lineageTag: d036e1cb-0483-5646-9762-238aba52e645
+		summarizeBy: none
+		sourceColumn: annualised_exit_run_rate
+
+	column average_members_per_month
+		dataType: double
+		isHidden
+		lineageTag: 5e61a555-9257-5766-818d-377633bec002
+		summarizeBy: none
+		sourceColumn: average_members_per_month
+
+	column churn_rate
+		dataType: double
+		isHidden
+		lineageTag: 15c04e1c-e525-520e-9f6b-7131ff76b0d4
+		summarizeBy: none
+		sourceColumn: churn_rate
+
+	column retention_rate
+		dataType: double
+		isHidden
+		lineageTag: ebad84b0-9e26-5588-b405-a82c7ee0f1aa
+		summarizeBy: none
+		sourceColumn: retention_rate
+
+	column incumbent_churn_rate
+		dataType: double
+		isHidden
+		lineageTag: f4a79831-a23a-5a6d-ab0e-99cb8de65a60
+		summarizeBy: none
+		sourceColumn: incumbent_churn_rate
+
+	column incumbent_downgrade_rate
+		dataType: double
+		isHidden
+		lineageTag: 75ff562f-96a7-5cba-a327-c0c02d2f4a6f
+		summarizeBy: none
+		sourceColumn: incumbent_downgrade_rate
+
+	column conversion_rate
+		dataType: double
+		isHidden
+		lineageTag: 8bf7b31d-12fc-5b78-8cc4-0895acc0846a
+		summarizeBy: none
+		sourceColumn: conversion_rate
+
+	column subscription_yield
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 3976ae74-29c2-531d-93ba-15765d9537db
+		summarizeBy: none
+		sourceColumn: subscription_yield
+
+	column standard_yield
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: db3beb20-2aa7-5ed0-9080-d45dd9014781
+		summarizeBy: none
+		sourceColumn: standard_yield
+
+	column arpmm
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 40650997-714a-51fa-9bbb-f01708b07a52
+		summarizeBy: none
+		sourceColumn: arpmm
+
+	column member_growth
+		dataType: double
+		isHidden
+		lineageTag: fbcbaecf-64c2-5b99-8e53-67f1876dec3a
+		summarizeBy: none
+		sourceColumn: member_growth
+
+	column standard_mix
+		dataType: double
+		isHidden
+		lineageTag: 26fa7d49-af59-5d86-8a85-8cac238301ba
+		summarizeBy: none
+		sourceColumn: standard_mix
+
+	column offpeak_mix
+		dataType: double
+		isHidden
+		lineageTag: 13581e01-6425-52e0-a066-693fb44948d7
+		summarizeBy: none
+		sourceColumn: offpeak_mix
+
+	column plus_mix
+		dataType: double
+		isHidden
+		lineageTag: 1d055d22-98d4-5f38-b1cb-174d1aa885f1
+		summarizeBy: none
+		sourceColumn: plus_mix
+
+	column complaints_per_1000
+		dataType: double
+		isHidden
+		lineageTag: 9031bf47-7958-598d-8b12-2cf5dd6a191d
+		summarizeBy: none
+		sourceColumn: complaints_per_1000
+
+	column incumbent_paid_rate
+		dataType: double
+		isHidden
+		lineageTag: 3d6244bc-6a87-5624-a9ac-0eacbb1ad4d2
+		summarizeBy: none
+		sourceColumn: incumbent_paid_rate
+
+	column protected_share
+		dataType: double
+		isHidden
+		lineageTag: 5adb16a2-b1c2-58a4-b5e2-d85f59746015
+		summarizeBy: none
+		sourceColumn: protected_share
+
+	column repriced_share
+		dataType: double
+		isHidden
+		lineageTag: e29dbf16-7290-5b3d-8ae8-f24cbdbadb46
+		summarizeBy: none
+		sourceColumn: repriced_share
+
+	column average_utilisation
+		dataType: double
+		isHidden
+		lineageTag: ac2e8f86-9c1d-5edf-92b3-1821cf210e9b
+		summarizeBy: none
+		sourceColumn: average_utilisation
+
+	column average_monthly_peak_utilisation
+		dataType: double
+		isHidden
+		lineageTag: e7728867-7957-5689-a808-837d53261da6
+		summarizeBy: none
+		sourceColumn: average_monthly_peak_utilisation
+
+	column maximum_monthly_peak_utilisation
+		dataType: double
+		isHidden
+		lineageTag: 4b7dffc4-7c4b-5b37-a6d9-85aebd3f82a4
+		summarizeBy: none
+		sourceColumn: maximum_monthly_peak_utilisation
+
+	column gym_id
+		dataType: string
+		lineageTag: 5133f6d0-d79e-543e-8ab9-12b2e9c2f18c
+		summarizeBy: none
+		sourceColumn: gym_id
+
+	column price_increment
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 9f74aa3c-b2d4-51ee-938d-d8e5b679b0b5
+		summarizeBy: none
+		sourceColumn: price_increment
+
+	column case
+		dataType: string
+		lineageTag: 209194fe-bcc1-56a6-b2c9-ef98f9b24dcb
+		summarizeBy: none
+		sourceColumn: case
+
+	column counterfactual_revenue
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 37b0d11a-6961-5f5a-a8fd-a175a66d8be4
+		summarizeBy: none
+		sourceColumn: counterfactual_revenue
+
+	column incremental_revenue
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 2b108474-384c-523f-83fa-39bd74c50278
+		summarizeBy: none
+		sourceColumn: incremental_revenue
+
+	column revenue_uplift
+		dataType: double
+		isHidden
+		lineageTag: 05d2e8d5-cbde-5d32-853c-78e650f5c9ba
+		summarizeBy: none
+		sourceColumn: revenue_uplift
+
+	column member_difference
+		dataType: double
+		isHidden
+		lineageTag: 86f4f51b-586e-53b8-9d96-e5583ddc1825
+		summarizeBy: none
+		sourceColumn: member_difference
+
+	column member_impact
+		dataType: double
+		isHidden
+		lineageTag: 31a98d66-2c22-5db1-a516-90370ef437a6
+		summarizeBy: none
+		sourceColumn: member_impact
+
+	column acquisition_difference
+		dataType: double
+		isHidden
+		lineageTag: eeec039d-665d-523a-82de-a7e1e250cd4c
+		summarizeBy: none
+		sourceColumn: acquisition_difference
+
+	column standard_acquisition_impact
+		dataType: double
+		isHidden
+		lineageTag: fb983b89-41aa-5525-b5e5-46cbc1dfcced
+		summarizeBy: none
+		sourceColumn: standard_acquisition_impact
+
+	column churn_change_pp
+		dataType: double
+		isHidden
+		formatString: 0.00" pp"
+		lineageTag: 4f190f22-f595-578d-871f-940e74bc634a
+		summarizeBy: none
+		sourceColumn: churn_change_pp
+
+	column incumbent_churn_change_pp
+		dataType: double
+		isHidden
+		formatString: 0.00" pp"
+		lineageTag: 863e9f66-46ed-555f-873b-19fbb9450ddf
+		summarizeBy: none
+		sourceColumn: incumbent_churn_change_pp
+
+	column downgrade_change_pp
+		dataType: double
+		isHidden
+		formatString: 0.00" pp"
+		lineageTag: e6c57ae6-8952-5cfe-bc60-a4734a89aa84
+		summarizeBy: none
+		sourceColumn: downgrade_change_pp
+
+	column conversion_change_pp
+		dataType: double
+		isHidden
+		formatString: 0.00" pp"
+		lineageTag: 5a8c594e-5765-5f4c-9708-9ed1abedf542
+		summarizeBy: none
+		sourceColumn: conversion_change_pp
+
+	column elasticity
+		dataType: double
+		isHidden
+		lineageTag: d2a16357-bc86-5491-b94e-33dc57fbd6c6
+		summarizeBy: none
+		sourceColumn: elasticity
+
+	column incumbent_churn_increment_pp
+		dataType: double
+		isHidden
+		formatString: 0.00" pp"
+		lineageTag: 5197987f-9b75-5545-8594-9981d096f4ea
+		summarizeBy: none
+		sourceColumn: incumbent_churn_increment_pp
+
+	column incumbent_downgrade_increment_pp
+		dataType: double
+		isHidden
+		formatString: 0.00" pp"
+		lineageTag: e6ebc827-1bc3-5bc2-af74-008b057f2570
+		summarizeBy: none
+		sourceColumn: incumbent_downgrade_increment_pp
+
+	column evidence_status
+		dataType: string
+		lineageTag: 97dc2326-25ea-5b8b-a062-8faf8fb01767
+		summarizeBy: none
+		sourceColumn: evidence_status
+
+	column region
+		dataType: string
+		lineageTag: c0dab788-c538-5be8-ac8f-ad761b034f3e
+		summarizeBy: none
+		sourceColumn: region
+
+	column old_standard_price
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 6b8b7184-4a6a-5d8d-af5b-10d0e939a30e
+		summarizeBy: none
+		sourceColumn: old_standard_price
+
+	column new_standard_price
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: d77eb663-c706-535f-8773-f1b34bf64397
+		summarizeBy: none
+		sourceColumn: new_standard_price
+
+	column december_competitor_gap
+		dataType: double
+		isHidden
+		lineageTag: 8f6c1f9b-4ff7-5187-b2b3-768dccaa8576
+		summarizeBy: none
+		sourceColumn: december_competitor_gap
+
+	column post_increase_competitor_gap
+		dataType: double
+		isHidden
+		lineageTag: dd68ce56-5de0-5221-8c28-15f5fbe0303e
+		summarizeBy: none
+		sourceColumn: post_increase_competitor_gap
+
+	column teaching_break_even_retention
+		dataType: double
+		isHidden
+		lineageTag: a2bdd682-144e-5e77-96d9-cb0e6930d542
+		summarizeBy: none
+		sourceColumn: teaching_break_even_retention
+
+	column out_of_pilot_value_support
+		dataType: boolean
+		isHidden
+		lineageTag: 93f3d9af-437e-5f49-9174-ff8f3b4ef5f3
+		summarizeBy: none
+		sourceColumn: out_of_pilot_value_support
+
+	column repeated_repricing
+		dataType: boolean
+		isHidden
+		lineageTag: 59fa4462-407b-52be-9f1d-58599bce7ed2
+		summarizeBy: none
+		sourceColumn: repeated_repricing
+
+	column cash_increment_extrapolation
+		dataType: boolean
+		isHidden
+		lineageTag: 4075e784-3297-596f-a6de-10afee879f0a
+		summarizeBy: none
+		sourceColumn: cash_increment_extrapolation
+
+	column monthly_revenue_lower
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: fc59b834-185b-55e8-82dc-79ea0bf0f196
+		summarizeBy: none
+		sourceColumn: monthly_revenue_lower
+
+	column monthly_revenue_upper
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 12a888d2-3af0-5167-ae61-67d8181d5355
+		summarizeBy: none
+		sourceColumn: monthly_revenue_upper
+
+	column month12_members_lower
+		dataType: double
+		isHidden
+		lineageTag: a3541eff-1480-56d2-a807-8bfba70ab1c5
+		summarizeBy: none
+		sourceColumn: month12_members_lower
+
+	column month12_members_upper
+		dataType: double
+		isHidden
+		lineageTag: 35756385-f32e-5cad-9cc3-9366c6eb29ac
+		summarizeBy: none
+		sourceColumn: month12_members_upper
+
+	column new_members_lower
+		dataType: double
+		isHidden
+		lineageTag: dbb26070-42b7-5484-9110-5e9c72b10672
+		summarizeBy: none
+		sourceColumn: new_members_lower
+
+	column new_members_upper
+		dataType: double
+		isHidden
+		lineageTag: a54d92e1-b59e-58fe-b90c-3919985b96e9
+		summarizeBy: none
+		sourceColumn: new_members_upper
+
+	column standard_joins_lower
+		dataType: double
+		isHidden
+		lineageTag: 0e67add5-229b-5230-a407-d95d703eb5e2
+		summarizeBy: none
+		sourceColumn: standard_joins_lower
+
+	column standard_joins_upper
+		dataType: double
+		isHidden
+		lineageTag: 70c96ce9-538b-57d4-ad54-60fdb72ad01f
+		summarizeBy: none
+		sourceColumn: standard_joins_upper
+
+	column incumbent_churn_rate_lower
+		dataType: double
+		isHidden
+		lineageTag: 1915721b-7391-5ff1-88fb-d3c2132a7a9d
+		summarizeBy: none
+		sourceColumn: incumbent_churn_rate_lower
+
+	column incumbent_churn_rate_upper
+		dataType: double
+		isHidden
+		lineageTag: b1636075-8b1b-5170-9110-971acdc0c4d1
+		summarizeBy: none
+		sourceColumn: incumbent_churn_rate_upper
+
+	column incumbent_downgrade_rate_lower
+		dataType: double
+		isHidden
+		lineageTag: 77284905-1012-52eb-8e9e-cc31aec4edaf
+		summarizeBy: none
+		sourceColumn: incumbent_downgrade_rate_lower
+
+	column incumbent_downgrade_rate_upper
+		dataType: double
+		isHidden
+		lineageTag: 3f64426e-50a3-59b7-833c-b000b3e4799f
+		summarizeBy: none
+		sourceColumn: incumbent_downgrade_rate_upper
+
+	column arpmm_lower
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: d4119fad-2fa5-52d5-a527-3bf9dc4a15a0
+		summarizeBy: none
+		sourceColumn: arpmm_lower
+
+	column arpmm_upper
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 5686337f-dee3-5f3e-9034-5f98a2d9541c
+		summarizeBy: none
+		sourceColumn: arpmm_upper
+
+	column pricing_complaints_lower
+		dataType: double
+		isHidden
+		lineageTag: c3190b73-9965-526c-8927-e9ec27ba7481
+		summarizeBy: none
+		sourceColumn: pricing_complaints_lower
+
+	column pricing_complaints_upper
+		dataType: double
+		isHidden
+		lineageTag: 2cfcdc21-8291-58ed-8cb8-bebe04b348fa
+		summarizeBy: none
+		sourceColumn: pricing_complaints_upper
+
+	column incremental_revenue_lower
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: d9c69cda-753c-5353-9e12-2dc2c6d35352
+		summarizeBy: none
+		sourceColumn: incremental_revenue_lower
+
+	column incremental_revenue_upper
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: e1254282-5844-5eee-9daa-eb86abd43683
+		summarizeBy: none
+		sourceColumn: incremental_revenue_upper
+
+	column positive_revenue_draw_fraction
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 3d1d6a83-c7c9-5e6e-92f1-43c13c78694f
+		summarizeBy: none
+		sourceColumn: positive_revenue_draw_fraction
+
+	column break_even_response_multiplier
+		dataType: double
+		isHidden
+		lineageTag: 87c02c82-004b-5ade-846a-6655d39c2af0
+		summarizeBy: none
+		sourceColumn: break_even_response_multiplier
+
+	column break_even_member_impact
+		dataType: double
+		isHidden
+		lineageTag: 69405a3b-7df4-5cea-8b22-bffc306ba521
+		summarizeBy: none
+		sourceColumn: break_even_member_impact
+
+	column break_even_crossings
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: bd08056a-a0ce-50f4-9550-6c91981a0e62
+		summarizeBy: none
+		sourceColumn: break_even_crossings
+
+	column elasticity_parameter_lower
+		dataType: double
+		isHidden
+		lineageTag: 0706980b-1964-503a-95f9-53a524b304c6
+		summarizeBy: none
+		sourceColumn: elasticity_parameter_lower
+
+	column elasticity_parameter_upper
+		dataType: double
+		isHidden
+		lineageTag: efc77e46-f692-5002-9a8e-08eb1889c99a
+		summarizeBy: none
+		sourceColumn: elasticity_parameter_upper
+
+	column churn_increment_parameter_lower
+		dataType: double
+		isHidden
+		lineageTag: 2d2f836b-6ce8-5dbf-a68b-1c334d0c892d
+		summarizeBy: none
+		sourceColumn: churn_increment_parameter_lower
+
+	column churn_increment_parameter_upper
+		dataType: double
+		isHidden
+		lineageTag: 782847ac-2c8b-50b3-8a97-73570163b7ca
+		summarizeBy: none
+		sourceColumn: churn_increment_parameter_upper
+
+	column downgrade_increment_parameter_lower
+		dataType: double
+		isHidden
+		lineageTag: a50681dc-9c17-58ac-a509-6e382f50d071
+		summarizeBy: none
+		sourceColumn: downgrade_increment_parameter_lower
+
+	column downgrade_increment_parameter_upper
+		dataType: double
+		isHidden
+		lineageTag: 4293f46e-20e4-5c28-a8d2-122ced17a07e
+		summarizeBy: none
+		sourceColumn: downgrade_increment_parameter_upper
+
+	column pilot_log_dose_parameter_lower
+		dataType: double
+		isHidden
+		lineageTag: d1bb75ec-4eaf-5b64-948f-297c41de550a
+		summarizeBy: none
+		sourceColumn: pilot_log_dose_parameter_lower
+
+	column pilot_log_dose_parameter_upper
+		dataType: double
+		isHidden
+		lineageTag: 0d76521f-8d2a-5354-8148-611a5b3a396f
+		summarizeBy: none
+		sourceColumn: pilot_log_dose_parameter_upper
+
+	column complaints_increment_parameter_lower
+		dataType: double
+		isHidden
+		lineageTag: 4728b1a0-208c-550d-94a9-933851af930a
+		summarizeBy: none
+		sourceColumn: complaints_increment_parameter_lower
+
+	column complaints_increment_parameter_upper
+		dataType: double
+		isHidden
+		lineageTag: 28017baf-76d6-5b43-9664-8b213477a254
+		summarizeBy: none
+		sourceColumn: complaints_increment_parameter_upper
+
+	partition FactScenarioAnnual = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(SourceRoot & "/FactScenarioAnnual.csv"), [Delimiter=",", Columns=108, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Nulls = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				    Typed = Table.TransformColumnTypes(Nulls, {{"new_members", type number}, {"standard_joins", type number}, {"offpeak_joins", type number}, {"plus_joins", type number}, {"qualified_prospects", type number}, {"opening_members", type number}, {"average_members", type number}, {"opening_base_cancellations", type number}, {"same_month_cancellations", type number}, {"subscription_revenue", type number}, {"joining_fee_revenue", type number}, {"ancillary_revenue", type number}, {"monthly_revenue", type number}, {"incumbent_standard_opening", type number}, {"incumbent_standard_cancellations", type number}, {"incumbent_standard_downgrades", type number}, {"standard_average_members", type number}, {"standard_subscription_revenue", type number}, {"offpeak_average_members", type number}, {"plus_average_members", type number}, {"pricing_complaints", type number}, {"probability_caps", Int64.Type}, {"transfers_out", type number}, {"incumbent_standard_paid_rate_numerator", type number}, {"protected_standard_opening", Int64.Type}, {"repriced_standard_opening", type number}, {"period_opening_members", Int64.Type}, {"month12_members", type number}, {"annualised_exit_run_rate", type number}, {"average_members_per_month", type number}, {"churn_rate", type number}, {"retention_rate", type number}, {"incumbent_churn_rate", type number}, {"incumbent_downgrade_rate", type number}, {"conversion_rate", type number}, {"subscription_yield", type number}, {"standard_yield", type number}, {"arpmm", type number}, {"member_growth", type number}, {"standard_mix", type number}, {"offpeak_mix", type number}, {"plus_mix", type number}, {"complaints_per_1000", type number}, {"incumbent_paid_rate", type number}, {"protected_share", type number}, {"repriced_share", type number}, {"average_utilisation", type number}, {"average_monthly_peak_utilisation", type number}, {"maximum_monthly_peak_utilisation", type number}, {"gym_id", type text}, {"price_increment", Int64.Type}, {"case", type text}, {"counterfactual_revenue", type number}, {"incremental_revenue", type number}, {"revenue_uplift", type number}, {"member_difference", type number}, {"member_impact", type number}, {"acquisition_difference", type number}, {"standard_acquisition_impact", type number}, {"churn_change_pp", type number}, {"incumbent_churn_change_pp", type number}, {"downgrade_change_pp", type number}, {"conversion_change_pp", type number}, {"elasticity", type number}, {"incumbent_churn_increment_pp", type number}, {"incumbent_downgrade_increment_pp", type number}, {"evidence_status", type text}, {"region", type text}, {"old_standard_price", type number}, {"new_standard_price", type number}, {"december_competitor_gap", type number}, {"post_increase_competitor_gap", type number}, {"teaching_break_even_retention", type number}, {"out_of_pilot_value_support", type logical}, {"repeated_repricing", type logical}, {"cash_increment_extrapolation", type logical}, {"monthly_revenue_lower", type number}, {"monthly_revenue_upper", type number}, {"month12_members_lower", type number}, {"month12_members_upper", type number}, {"new_members_lower", type number}, {"new_members_upper", type number}, {"standard_joins_lower", type number}, {"standard_joins_upper", type number}, {"incumbent_churn_rate_lower", type number}, {"incumbent_churn_rate_upper", type number}, {"incumbent_downgrade_rate_lower", type number}, {"incumbent_downgrade_rate_upper", type number}, {"arpmm_lower", type number}, {"arpmm_upper", type number}, {"pricing_complaints_lower", type number}, {"pricing_complaints_upper", type number}, {"incremental_revenue_lower", type number}, {"incremental_revenue_upper", type number}, {"positive_revenue_draw_fraction", type number}, {"break_even_response_multiplier", type number}, {"break_even_member_impact", type number}, {"break_even_crossings", Int64.Type}, {"elasticity_parameter_lower", type number}, {"elasticity_parameter_upper", type number}, {"churn_increment_parameter_lower", type number}, {"churn_increment_parameter_upper", type number}, {"downgrade_increment_parameter_lower", type number}, {"downgrade_increment_parameter_upper", type number}, {"pilot_log_dose_parameter_lower", type number}, {"pilot_log_dose_parameter_upper", type number}, {"complaints_increment_parameter_lower", type number}, {"complaints_increment_parameter_upper", type number}}, "en-GB")
+				in
+				    Typed
+

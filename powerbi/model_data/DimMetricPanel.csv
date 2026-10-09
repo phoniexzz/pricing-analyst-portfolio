@@ -1,0 +1,45 @@
+row_id,panel,metric,sort_order
+Executive Portfolio / Conditional Raise Sites,Executive Portfolio,Conditional Raise Sites,0
+Executive Portfolio / Portfolio Increment,Executive Portfolio,Portfolio Increment,1
+Executive Portfolio / Portfolio Member Difference,Executive Portfolio,Portfolio Member Difference,2
+Executive Portfolio / Portfolio Increment lower,Executive Portfolio,Portfolio Increment lower,3
+Executive Portfolio / Portfolio Increment upper,Executive Portfolio,Portfolio Increment upper,4
+Historical Pilot / Historical Standard Acquisition Effect,Historical Pilot,Historical Standard Acquisition Effect,0
+Historical Pilot / Historical Standard Acquisition Effect lower,Historical Pilot,Historical Standard Acquisition Effect lower,1
+Historical Pilot / Historical Standard Acquisition Effect upper,Historical Pilot,Historical Standard Acquisition Effect upper,2
+Historical Pilot / Historical Acquisition Elasticity,Historical Pilot,Historical Acquisition Elasticity,3
+Historical Pilot / Historical Incumbent Churn Effect,Historical Pilot,Historical Incumbent Churn Effect,4
+Historical Pilot / Historical Incumbent Churn Effect lower,Historical Pilot,Historical Incumbent Churn Effect lower,5
+Historical Pilot / Historical Incumbent Churn Effect upper,Historical Pilot,Historical Incumbent Churn Effect upper,6
+Historical Pilot / Historical Downgrade Effect,Historical Pilot,Historical Downgrade Effect,7
+Historical Pilot / Historical Downgrade Effect lower,Historical Pilot,Historical Downgrade Effect lower,8
+Historical Pilot / Historical Downgrade Effect upper,Historical Pilot,Historical Downgrade Effect upper,9
+Q4 and Mix / Q4 Net Revenue Growth,Q4 and Mix,Q4 Net Revenue Growth,0
+Q4 and Mix / Q4 Acquisitions Growth,Q4 and Mix,Q4 Acquisitions Growth,1
+Q4 and Mix / Q4 Opening-base Churn Change pp,Q4 and Mix,Q4 Opening-base Churn Change pp,2
+Q4 and Mix / Q4 Qualified Conversion Change pp,Q4 and Mix,Q4 Qualified Conversion Change pp,3
+Q4 and Mix / Standard Mix,Q4 and Mix,Standard Mix,4
+Q4 and Mix / Off-Peak Mix,Q4 and Mix,Off-Peak Mix,5
+Q4 and Mix / Plus Mix,Q4 and Mix,Plus Mix,6
+Q4 and Mix / Marketing Spend,Q4 and Mix,Marketing Spend,7
+Detail Position / Standard Headline December,Detail Position,Standard Headline December,0
+Detail Position / Competitor Recurring December,Detail Position,Competitor Recurring December,1
+Detail Position / Competitor Gap December,Detail Position,Competitor Gap December,2
+Detail Position / Headroom Band,Detail Position,Headroom Band,3
+Detail Position / Saved Estate Rank,Detail Position,Saved Estate Rank,4
+Detail Position / Caution Count,Detail Position,Caution Count,5
+Detail Position / Rank Movement Sensitivity,Detail Position,Rank Movement Sensitivity,6
+Detail Qualification £1 / £1 plausible,Detail Qualification £1,£1 plausible,0
+Detail Qualification £1 / £1 qualified,Detail Qualification £1,£1 qualified,1
+Detail Qualification £1 / £1 base revenue,Detail Qualification £1,£1 base revenue,2
+Detail Qualification £1 / £1 downside revenue,Detail Qualification £1,£1 downside revenue,3
+Detail Qualification £1 / £1 downside member impact,Detail Qualification £1,£1 downside member impact,4
+Detail Qualification £1 / £1 revenue lower,Detail Qualification £1,£1 revenue lower,5
+Detail Qualification £1 / £1 failed gates,Detail Qualification £1,£1 failed gates,6
+Detail Qualification £2 / £2 plausible,Detail Qualification £2,£2 plausible,0
+Detail Qualification £2 / £2 qualified,Detail Qualification £2,£2 qualified,1
+Detail Qualification £2 / £2 base revenue,Detail Qualification £2,£2 base revenue,2
+Detail Qualification £2 / £2 downside revenue,Detail Qualification £2,£2 downside revenue,3
+Detail Qualification £2 / £2 downside member impact,Detail Qualification £2,£2 downside member impact,4
+Detail Qualification £2 / £2 revenue lower,Detail Qualification £2,£2 revenue lower,5
+Detail Qualification £2 / £2 failed gates,Detail Qualification £2,£2 failed gates,6

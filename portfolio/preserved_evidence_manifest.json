@@ -1,0 +1,185 @@
+{
+  "description": "All source/derived CSVs and prior analytical configurations/results preserved at Phase 11 entry.",
+  "files": {
+    "analysis/baseline_results.json": {
+      "bytes": 14933,
+      "sha256": "50048d07881262e4f633df40aa2f06e9669573ddcfabf330f483c4069211b807"
+    },
+    "analysis/experiment_config.json": {
+      "bytes": 1519,
+      "sha256": "72fda49a2c945fdcf791d04646c7ed1ad7d42b118efbd83796d111c5762a6e4b"
+    },
+    "analysis/experiment_results.json": {
+      "bytes": 80232,
+      "sha256": "fb9de2aa0d02046e3a3739d0b281ec2e804fc8e74d3765753da885a38f0efd76"
+    },
+    "analysis/generation_config.json": {
+      "bytes": 1388,
+      "sha256": "2a98c053337c861defaa492bb8be543557a11b271e8da8975e1ced260b504e41"
+    },
+    "analysis/headroom_config.json": {
+      "bytes": 811,
+      "sha256": "9904b1bdf6f1d3f555ace7643b7fd149df4405114209cd043251667e1ba5efa0"
+    },
+    "analysis/headroom_results.json": {
+      "bytes": 6858,
+      "sha256": "86985d4baec3cb09a84e1275d21b6233cc24bbcdc947f29825695cc8033a6ce3"
+    },
+    "analysis/powerbi_native_dax_results.json": {
+      "bytes": 137578,
+      "sha256": "da99211f143d63c1111f7e0c98504081bc0ba18b7d26095e04cb1924cd59853b"
+    },
+    "analysis/recommendation_config.json": {
+      "bytes": 1225,
+      "sha256": "887a30d7adf69a5e55ae034dbfea92ad2dcbe64ccdcdd2ed7b4d37c87c98f939"
+    },
+    "analysis/recommendation_results.json": {
+      "bytes": 53309,
+      "sha256": "cb2752fa77c6017c099f3898e359d2d2db96ac1248ad213cb055ae4eb6ac00d1"
+    },
+    "analysis/response_config.json": {
+      "bytes": 1622,
+      "sha256": "c726223569abd3a670051b18117664aa1c8ee712457a633f74462d92515f88bb"
+    },
+    "analysis/response_results.json": {
+      "bytes": 25801,
+      "sha256": "eae700c4c75da01f33e731f3a4e2e7eacca304f979bc510f72333d15b0859150"
+    },
+    "analysis/scenario_config.json": {
+      "bytes": 1159,
+      "sha256": "abe865a4a24bdd6c64bc43ef7dcab62671bfea6eb1710eb4fec65dd8d5dc3bc3"
+    },
+    "analysis/scenario_results.json": {
+      "bytes": 23977,
+      "sha256": "e98737b673ee65be9257df7e98a135e5069bee452920f551e452816078a9cf68"
+    },
+    "analysis/validation_results.json": {
+      "bytes": 6257,
+      "sha256": "35625e1ba84c174767ab6828b822bb8c2dab4cf02285cb872a18e9b884706ee4"
+    },
+    "data/cohorts.csv": {
+      "bytes": 795610,
+      "sha256": "15cb135413cdff2adc6dea8d6ecc9867a7c68bf6d98a60b2dd69b979858eb3d8"
+    },
+    "data/competitor_prices.csv": {
+      "bytes": 890971,
+      "sha256": "754062b02e2f4cd0ce989c12e02af029d2584007fc3b74f65852d0cefdfd56c5"
+    },
+    "data/estate_monthly_trend.csv": {
+      "bytes": 15187,
+      "sha256": "7edbbc497491da2b12dc3427a70294f8d72c5916c652d5eac8e08a2b78e1da3a"
+    },
+    "data/estate_scenarios.csv": {
+      "bytes": 18241,
+      "sha256": "9f06edc2ad82a2efec00c04cc31833d1b174580dde257a9f064851de216a222c"
+    },
+    "data/experiment_assignments.csv": {
+      "bytes": 4778,
+      "sha256": "05f2d39ffd30f0e55d8e0c663f17191693a9c2be05ffb8e4f69155d247a814f4"
+    },
+    "data/experiment_design.csv": {
+      "bytes": 37413,
+      "sha256": "c3239810a18d0be672bfedcc621e14b90bef1c40e26149041fa809f1c5099a38"
+    },
+    "data/experiment_estimates.csv": {
+      "bytes": 316559,
+      "sha256": "ab343c76a1578c5c368a49944e4cc6f91c3c014cde07108947329412697c2602"
+    },
+    "data/experiment_monitoring.csv": {
+      "bytes": 50276,
+      "sha256": "a9c0994458bf5da14711be3fe3577e8ccf8b171ebcf6b115e9839a87f0757ca2"
+    },
+    "data/experiment_monthly.csv": {
+      "bytes": 319318,
+      "sha256": "e8c1ab658bb63cf97f94408ece47c210fb605cd73567d87854566cfd08653ded"
+    },
+    "data/experiment_pair_results.csv": {
+      "bytes": 142716,
+      "sha256": "af79d0dce1e3f82661b6dfc2bca79c82c0be24c86432958ac8848d10dea12916"
+    },
+    "data/experiment_power.csv": {
+      "bytes": 24509,
+      "sha256": "0d5e0e13eb1bfd4b74f263b91aa6b035c58c77e6cbe57fdc7ed9d4a663425b1f"
+    },
+    "data/experiment_simulation_ledger.csv": {
+      "bytes": 13584356,
+      "sha256": "d50db7b85a2a4548801f3da4ea95062a0294e5d09332b3583fc581c729678042"
+    },
+    "data/gym_baseline.csv": {
+      "bytes": 215667,
+      "sha256": "9129c0dbfcbddce50f53ddea1989f1b29a575455c5631da9031de3b0f09349ad"
+    },
+    "data/gym_headroom.csv": {
+      "bytes": 67437,
+      "sha256": "e61b78a63dbf25312fff8dbbb0db537b405a0a0e82f9ef511b337f8fb0c7548d"
+    },
+    "data/gym_master.csv": {
+      "bytes": 20507,
+      "sha256": "1bfbf7bbcd847c2634d155d88641d5f2f87dca2fe0e345da8be498f053a20d14"
+    },
+    "data/gym_recommendations.csv": {
+      "bytes": 116155,
+      "sha256": "57a788c133345764f867f42f74b31b04b32e49bf1867d10a1f5f349154614199"
+    },
+    "data/gym_scenarios.csv": {
+      "bytes": 1371691,
+      "sha256": "341d4b7b1c4ac4e09ad1f7dc79b68f0b164393341f5f264bf663f7830c6ceb07"
+    },
+    "data/headroom_sensitivity.csv": {
+      "bytes": 180559,
+      "sha256": "5e3c583b42c4cc63e85e35cf6aedf489aefb097745a8de25305883260b58efab"
+    },
+    "data/historical_event_response.csv": {
+      "bytes": 73134,
+      "sha256": "a0030df4957f8d019cffa653a89d8c507be694143d3ac62d34c6ff8dc7f5e564"
+    },
+    "data/historical_response_panel.csv": {
+      "bytes": 4015815,
+      "sha256": "b58b71f00c4a8659247a1c3e6bd2e5fab16d60d8d75bbb194a698646696faa5c"
+    },
+    "data/market_events.csv": {
+      "bytes": 119766,
+      "sha256": "c786240e6f0a962348b18ec46552d6805c3eae1001bad4e21f4b458659273ec7"
+    },
+    "data/membership_ledger.csv": {
+      "bytes": 17603925,
+      "sha256": "709ab573bf893097d6cf51b2bda5c052f88a1d526f8846af901c5d58508cc496"
+    },
+    "data/monthly_performance.csv": {
+      "bytes": 1030230,
+      "sha256": "f3e088c724d27f282af506cf8dd0e97b21447192164476c3e74d489856b7a51d"
+    },
+    "data/pilot_pair_response.csv": {
+      "bytes": 74542,
+      "sha256": "92119d380582a78b34f9e12d6c17226f87579d1c1e5a4a7e1ed49b90d4b0463d"
+    },
+    "data/price_response_estimates.csv": {
+      "bytes": 88692,
+      "sha256": "65fca90290010450f8ea1d40cdaf2a80b2c229e3c02807a6cba22ad814512794"
+    },
+    "data/pricing_history.csv": {
+      "bytes": 6503,
+      "sha256": "1a1cc79ad85b7a7628bcc9b49a5877167d424368f1f305ab90884246af1afa6e"
+    },
+    "data/recommendation_portfolio.csv": {
+      "bytes": 15388,
+      "sha256": "c0aa8c4e705544e245df2c1f598318c4ea034b53a95a6857410dc338527fe4e8"
+    },
+    "data/recommendation_sensitivity.csv": {
+      "bytes": 591249,
+      "sha256": "d57af6b977c9f321f448915ebc385ee11b7ca69595a0a9ff42963c216cd97ff7"
+    },
+    "data/region_year_baseline.csv": {
+      "bytes": 10479,
+      "sha256": "3ad64a1ef920a38db07135ec5f750ad954dcbdd87a0441fa30f66d0be7cf249b"
+    },
+    "data/scenario_monthly.csv": {
+      "bytes": 12062637,
+      "sha256": "4e982fa81d0d4c16aed455f4df79b1f55b2f8a5db4cc5448e3e9fd12917593e5"
+    },
+    "data/scenario_sensitivity.csv": {
+      "bytes": 2212344,
+      "sha256": "371ed1578e9a76e88a26e0a8274b4d370b1054f286caf9048de8f4ee36e6336b"
+    }
+  }
+}

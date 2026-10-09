@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "gym_pricing_dashboard"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "ccceb81b-d95e-487c-b839-034bdeab7d00"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "status": "Phase 9 native verification complete",
+  "accepted_at_utc": "2026-10-06T11:36:28Z",
+  "desktop_version": "2.158.1177.0",
+  "project_fingerprint": "6efebefd24071fe8e24332ad29bfcf59e020028f3e2a58e1a830ea6f6e476a79",
+  "pbix": {
+    "path": "powerbi/gym_pricing_dashboard.pbix",
+    "sha256": "7889903B8492889866E73DF4EFF32EE0BF999CDEECE906A5BB97A7DC35ACD1F8",
+    "bytes": 10521072,
+    "opened_in_desktop": true,
+    "refreshed_without_reported_errors": true,
+    "recreated": false
+  },
+  "workbook": {
+    "path": "excel/gym_pricing_model.xlsx",
+    "sha256": "D13E56FB50B2C110489DE2EE15CDEC4B332379763689065910AC2871C814D3FA",
+    "sheets": 31,
+    "unchanged": true
+  },
+  "protected_evidence": {
+    "manifest_path": "analysis/.powerbi_native/protected_hashes.json",
+    "manifest_sha256": "851D0DBCEFE2BF9C9FCDB4A308CB36F527BF53179E4F8844A9DA0D4FB5DF4DFD",
+    "source_hashes_unchanged": 46
+  },
+  "native_validation": {
+    "dax_result_path": "analysis/powerbi_native_dax_results.json",
+    "python_parity_path": "analysis/powerbi_native_parity.json",
+    "dax_checks_passed": 8,
+    "measures_executed": 296,
+    "model_tables_reconciled": 41,
+    "sites_reconciled": 80,
+    "matching_windows_reconciled": 3,
+    "revenue_2025_gbp": 107006933.85,
+    "december_2025_members": 396311,
+    "base_conditional_raise_portfolio_uplift_gbp": 148618.48020484,
+    "bridge_residual_gbp": -0.000000004190951585769653,
+    "unsupported_multi_gym_uncertainty": "blank",
+    "repeat_repricing_interval": "blank",
+    "main_primary_experiment_six_month_decision": "EXTEND TEST",
+    "main_primary_experiment_twelve_month_decision": "STOP",
+    "recommendation_counts": {
+      "RAISE £2": 1,
+      "RAISE £1": 10,
+      "TEST FIRST": 5,
+      "HOLD PRICE": 26,
+      "DEFENSIVE / INVESTIGATE": 38
+    }
+  },
+  "interactions": {
+    "six_main_pages_reviewed": true,
+    "gym_detail_drill_through_and_back_reviewed": true,
+    "saved_scenario_selection_and_reset_reviewed": true,
+    "experiment_assessment_and_population_reviewed": true,
+    "experiment_reset_defaults": ["Main", "6 months", "First repricing"],
+    "repeat_population_pairs": 2,
+    "repeat_population_uncertainty_suppressed": true,
+    "stale_evidence_suppression_passed": true,
+    "evidence_restore_passed": true,
+    "final_dax_and_python_parity_rerun_after_restore": true
+  },
+  "native_screenshots": [
+    "images/native_powerbi/01_executive_overview.jpg",
+    "images/native_powerbi/02_estate_pricing.jpg",
+    "images/native_powerbi/03_member_behaviour.jpg",
+    "images/native_powerbi/04_pricing_scenarios.jpg",
+    "images/native_powerbi/05_recommendations.jpg",
+    "images/native_powerbi/06_experiment_main_6m_first.jpg",
+    "images/native_powerbi/07_gym_detail_NF001.jpg",
+    "images/native_powerbi/stale_scenario_verification.jpg",
+    "images/native_powerbi/stale_recommendation_verification.jpg",
+    "images/native_powerbi/stale_experiment_verification.jpg"
+  ],
+  "limitations": [
+    "Recommendations evidence table is horizontally and vertically scrollable; authoring panes and current zoom place some columns outside the immediate viewport.",
+    "Dashboard evidence remains synthetic and conditional; this is not proof of causal effects or profit improvement."
+  ]
+}

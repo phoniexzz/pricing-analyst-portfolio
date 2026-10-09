@@ -1,0 +1,96 @@
+{
+  "cellsCompared": 19360,
+  "maxAbsoluteDifference": 4.943999987183645e-09,
+  "formulaErrorScan": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}",
+  "savedWorkbookRecalculated": true,
+  "originalReconciliationsPassed": true,
+  "inputChangeTests": [
+    "Invalid weight total blocked scores",
+    "Editable threshold changed count",
+    "Valid weight transfer changed score",
+    "Ranking list and chart schedule reacted to competitor-only weights",
+    "Missing required input produced unavailable score"
+  ],
+  "nativeExcelApplication": "Not automated; recalculation uses Artifact Tool and saved OOXML verification",
+  "savedCsvCellsCompared": 19360,
+  "newFormulaCachesChecked": 21227,
+  "sheetCount": 18,
+  "allOriginalAnalysisAndSourcePartsPreserved": true,
+  "originalStylesPreserved": true,
+  "originalSheetCount": 16,
+  "sourceAndBaselineHashesUnchanged": true,
+  "chartSchedulesMatchPython": true,
+  "filteredScatterObservationsRemainBlank": true,
+  "newNativeCharts": [
+    {
+      "part": "xl/drawings/charts/phase4_chart1.xml",
+      "range_references": [
+        "'Headroom Summary'!$A$83:$A$92",
+        "'Headroom Summary'!$B$83:$B$92",
+        "'Headroom Summary'!$A$83:$A$92",
+        "'Headroom Summary'!$C$83:$C$92",
+        "'Headroom Summary'!$A$83:$A$92",
+        "'Headroom Summary'!$D$83:$D$92",
+        "'Headroom Summary'!$A$83:$A$92",
+        "'Headroom Summary'!$E$83:$E$92",
+        "'Headroom Summary'!$A$83:$A$92",
+        "'Headroom Summary'!$F$83:$F$92",
+        "'Headroom Summary'!$A$83:$A$92",
+        "'Headroom Summary'!$G$83:$G$92"
+      ]
+    },
+    {
+      "part": "xl/drawings/charts/phase4_chart2.xml",
+      "range_references": [
+        "'Headroom Summary'!$A$97:$A$176",
+        "'Headroom Summary'!$B$97:$B$176",
+        "'Headroom Summary'!$A$97:$A$176",
+        "'Headroom Summary'!$C$97:$C$176"
+      ]
+    },
+    {
+      "part": "xl/drawings/charts/phase4_chart3.xml",
+      "range_references": [
+        "'Headroom Summary'!$A$181:$A$260",
+        "'Headroom Summary'!$B$181:$B$260",
+        "'Headroom Summary'!$A$181:$A$260",
+        "'Headroom Summary'!$C$181:$C$260",
+        "'Headroom Summary'!$A$181:$A$260",
+        "'Headroom Summary'!$D$181:$D$260",
+        "'Headroom Summary'!$A$181:$A$260",
+        "'Headroom Summary'!$E$181:$E$260",
+        "'Headroom Summary'!$A$181:$A$260",
+        "'Headroom Summary'!$F$181:$F$260",
+        "'Headroom Summary'!$A$181:$A$260",
+        "'Headroom Summary'!$G$181:$G$260"
+      ]
+    }
+  ],
+  "phase4_status": "Complete",
+  "visual_review": {
+    "new_sheets": [
+      "Headroom Score",
+      "Headroom Summary"
+    ],
+    "affected_sheets": [
+      "Dataset Overview",
+      "README"
+    ],
+    "native_charts_reviewed": 3,
+    "standalone_visuals_reviewed": 3,
+    "repairs_reviewed": [
+      "Gross introductory discounts at two decimals",
+      "Complaint exposure at two decimals",
+      "Band alignment",
+      "Sensitivity matrix contrast"
+    ],
+    "all_reviewed": true
+  },
+  "csv_reproducibility": {
+    "identical_csv_hashes": {
+      "data\\gym_headroom.csv": "e61b78a63dbf25312fff8dbbb0db537b405a0a0e82f9ef511b337f8fb0c7548d",
+      "data\\headroom_sensitivity.csv": "5e3c583b42c4cc63e85e35cf6aedf489aefb097745a8de25305883260b58efab"
+    },
+    "byte_identical_rerun": true
+  }
+}

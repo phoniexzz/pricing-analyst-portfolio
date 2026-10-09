@@ -1,0 +1,440 @@
+{
+  "status": "Phase 11 complete; Phase 12 next",
+  "validated_at_utc": "2026-10-06T12:47:08.613339+00:00",
+  "prior_inventory_files": 45,
+  "integrity": {
+    "protected_files_checked": 50,
+    "unavailable_dependencies": [],
+    "project_fingerprint": "6efebefd24071fe8e24332ad29bfcf59e020028f3e2a58e1a830ea6f6e476a79",
+    "workbook_sha256": "d13e56fb50b2c110489de2ee15cdec4b332379763689065910ac2871c814d3fa",
+    "workbook_sheets": 31,
+    "pbix_sha256": "7889903b8492889866e73df4eff32ee0bf999cdeece906a5bb97a7dc35acd1f8",
+    "snapshot_files_checked": 41
+  },
+  "documentation": {
+    "case_study_words": 740,
+    "local_links_checked": 49,
+    "native_images": {
+      "images/native_powerbi/01_executive_overview.jpg": [
+        1707,
+        1019
+      ],
+      "images/native_powerbi/02_estate_pricing.jpg": [
+        1707,
+        1019
+      ],
+      "images/native_powerbi/03_member_behaviour.jpg": [
+        1707,
+        1019
+      ],
+      "images/native_powerbi/04_pricing_scenarios.jpg": [
+        1707,
+        1019
+      ],
+      "images/native_powerbi/05_recommendations.jpg": [
+        1561,
+        999
+      ],
+      "images/native_powerbi/06_experiment_main_6m_first.jpg": [
+        1561,
+        999
+      ],
+      "images/native_powerbi/07_gym_detail_NF001.jpg": [
+        1707,
+        1019
+      ]
+    }
+  },
+  "sql": {
+    "status": "pass",
+    "queries": [
+      {
+        "query": "01_membership_bridge.sql",
+        "rows": 1920,
+        "columns_checked": 10,
+        "maximum_absolute_difference": 0.0,
+        "passed": true
+      },
+      {
+        "query": "02_weighted_baseline.sql",
+        "rows": 80,
+        "columns_checked": 14,
+        "maximum_absolute_difference": 2.3283064365386963e-10,
+        "passed": true
+      },
+      {
+        "query": "03_matching_periods.sql",
+        "rows": 160,
+        "columns_checked": 8,
+        "maximum_absolute_difference": 4.656612873077393e-10,
+        "passed": true
+      },
+      {
+        "query": "04_region_trading.sql",
+        "rows": 16,
+        "columns_checked": 10,
+        "maximum_absolute_difference": 3.725290298461914e-09,
+        "passed": true
+      },
+      {
+        "query": "05_qualified_funnel.sql",
+        "rows": 80,
+        "columns_checked": 8,
+        "maximum_absolute_difference": 7.275957614183426e-12,
+        "passed": true
+      },
+      {
+        "query": "06_opening_base_retention.sql",
+        "rows": 80,
+        "columns_checked": 7,
+        "maximum_absolute_difference": 2.220446049250313e-16,
+        "passed": true
+      },
+      {
+        "query": "07_tier_mix_yield.sql",
+        "rows": 240,
+        "columns_checked": 7,
+        "maximum_absolute_difference": 1.1641532182693481e-10,
+        "passed": true
+      },
+      {
+        "query": "08_december_competitors.sql",
+        "rows": 80,
+        "columns_checked": 8,
+        "maximum_absolute_difference": 3.552713678800501e-15,
+        "passed": true
+      },
+      {
+        "query": "09_promotion_context.sql",
+        "rows": 157,
+        "columns_checked": 7,
+        "maximum_absolute_difference": 7.275957614183426e-12,
+        "passed": true
+      },
+      {
+        "query": "10_cohort_censoring.sql",
+        "rows": 5760,
+        "columns_checked": 11,
+        "maximum_absolute_difference": 1.1102230246251565e-16,
+        "passed": true
+      },
+      {
+        "query": "11_saved_pilot_evidence.sql",
+        "rows": 12,
+        "columns_checked": 9,
+        "maximum_absolute_difference": 8.326672684688674e-17,
+        "passed": true
+      },
+      {
+        "query": "12_saved_base_scenarios.sql",
+        "rows": 320,
+        "columns_checked": 16,
+        "maximum_absolute_difference": 0.0,
+        "passed": true
+      },
+      {
+        "query": "13_saved_recommendations.sql",
+        "rows": 80,
+        "columns_checked": 14,
+        "maximum_absolute_difference": 0.0,
+        "passed": true
+      },
+      {
+        "query": "14_conditional_portfolios.sql",
+        "rows": 15,
+        "columns_checked": 13,
+        "maximum_absolute_difference": 5.820766091346741e-11,
+        "passed": true
+      },
+      {
+        "query": "15_experiment_monitoring.sql",
+        "rows": 24,
+        "columns_checked": 10,
+        "maximum_absolute_difference": 0.0,
+        "passed": true
+      }
+    ],
+    "boundary_tests": [
+      "Zero denominator stays unavailable; valid zero conversion remains zero",
+      "Monthly retention and weighted churn use opening-base exposures",
+      "Zero prior-period comparisons remain unavailable",
+      "Annual/Q4 windows and pp units independently reconciled",
+      "Repeated history deduplicates from 252 records to 84 gym-months",
+      "Saved Base scenarios contain 320 rows, not all 960 cases",
+      "TEST FIRST is mapped to no increase in all portfolios",
+      "Complete-portfolio intervals are joined, never summed",
+      "Repeat population intervals remain unavailable",
+      "Three anchors, action counts and Main decisions match saved evidence",
+      "Query connection rejects mutations",
+      "All 1920 member bridges and continuity balances are exact",
+      "All fifteen site-mapped portfolios match saved revenue and weighted rates",
+      "Cohort maturity boundaries preserve unavailable retention and revenue"
+    ],
+    "money_tolerance_gbp": 0.01,
+    "sql_runtime": "3.53.1",
+    "python_independent_expected": "Pandas source aggregation / frozen interface parity"
+  },
+  "clean_copy_validation": {
+    "lean": {
+      "protected_files_checked": 48,
+      "unavailable_dependencies": [
+        "analysis/.workbook_previews/phase6/joint_draws.npz",
+        "analysis/.workbook_previews/phase8/payload.json#extended_history"
+      ],
+      "project_fingerprint": "6efebefd24071fe8e24332ad29bfcf59e020028f3e2a58e1a830ea6f6e476a79",
+      "workbook_sha256": "d13e56fb50b2c110489de2ee15cdec4b332379763689065910ac2871c814d3fa",
+      "workbook_sheets": 31,
+      "pbix_sha256": "7889903b8492889866e73df4eff32ee0bf999cdeece906a5bb97a7dc35acd1f8",
+      "snapshot_files_checked": 41
+    },
+    "lean_manifests": [
+      {
+        "manifest": "PORTFOLIO_MANIFEST.json",
+        "files_checked": 603
+      }
+    ],
+    "supplement_restored": {
+      "protected_files_checked": 50,
+      "unavailable_dependencies": [],
+      "project_fingerprint": "6efebefd24071fe8e24332ad29bfcf59e020028f3e2a58e1a830ea6f6e476a79",
+      "workbook_sha256": "d13e56fb50b2c110489de2ee15cdec4b332379763689065910ac2871c814d3fa",
+      "workbook_sheets": 31,
+      "pbix_sha256": "7889903b8492889866e73df4eff32ee0bf999cdeece906a5bb97a7dc35acd1f8",
+      "snapshot_files_checked": 41
+    },
+    "restored_manifests": [
+      {
+        "manifest": "PORTFOLIO_MANIFEST.json",
+        "files_checked": 603
+      },
+      {
+        "manifest": "REPRODUCTION_MANIFEST.json",
+        "files_checked": 28
+      }
+    ],
+    "documentation": {
+      "case_study_words": 740,
+      "local_links_checked": 49,
+      "native_images": {
+        "images/native_powerbi/01_executive_overview.jpg": [
+          1707,
+          1019
+        ],
+        "images/native_powerbi/02_estate_pricing.jpg": [
+          1707,
+          1019
+        ],
+        "images/native_powerbi/03_member_behaviour.jpg": [
+          1707,
+          1019
+        ],
+        "images/native_powerbi/04_pricing_scenarios.jpg": [
+          1707,
+          1019
+        ],
+        "images/native_powerbi/05_recommendations.jpg": [
+          1561,
+          999
+        ],
+        "images/native_powerbi/06_experiment_main_6m_first.jpg": [
+          1561,
+          999
+        ],
+        "images/native_powerbi/07_gym_detail_NF001.jpg": [
+          1707,
+          1019
+        ]
+      }
+    },
+    "sql": {
+      "status": "pass",
+      "queries": [
+        {
+          "query": "01_membership_bridge.sql",
+          "rows": 1920,
+          "columns_checked": 10,
+          "maximum_absolute_difference": 0.0,
+          "passed": true
+        },
+        {
+          "query": "02_weighted_baseline.sql",
+          "rows": 80,
+          "columns_checked": 14,
+          "maximum_absolute_difference": 2.3283064365386963e-10,
+          "passed": true
+        },
+        {
+          "query": "03_matching_periods.sql",
+          "rows": 160,
+          "columns_checked": 8,
+          "maximum_absolute_difference": 4.656612873077393e-10,
+          "passed": true
+        },
+        {
+          "query": "04_region_trading.sql",
+          "rows": 16,
+          "columns_checked": 10,
+          "maximum_absolute_difference": 3.725290298461914e-09,
+          "passed": true
+        },
+        {
+          "query": "05_qualified_funnel.sql",
+          "rows": 80,
+          "columns_checked": 8,
+          "maximum_absolute_difference": 7.275957614183426e-12,
+          "passed": true
+        },
+        {
+          "query": "06_opening_base_retention.sql",
+          "rows": 80,
+          "columns_checked": 7,
+          "maximum_absolute_difference": 2.220446049250313e-16,
+          "passed": true
+        },
+        {
+          "query": "07_tier_mix_yield.sql",
+          "rows": 240,
+          "columns_checked": 7,
+          "maximum_absolute_difference": 1.1641532182693481e-10,
+          "passed": true
+        },
+        {
+          "query": "08_december_competitors.sql",
+          "rows": 80,
+          "columns_checked": 8,
+          "maximum_absolute_difference": 3.552713678800501e-15,
+          "passed": true
+        },
+        {
+          "query": "09_promotion_context.sql",
+          "rows": 157,
+          "columns_checked": 7,
+          "maximum_absolute_difference": 7.275957614183426e-12,
+          "passed": true
+        },
+        {
+          "query": "10_cohort_censoring.sql",
+          "rows": 5760,
+          "columns_checked": 11,
+          "maximum_absolute_difference": 1.1102230246251565e-16,
+          "passed": true
+        },
+        {
+          "query": "11_saved_pilot_evidence.sql",
+          "rows": 12,
+          "columns_checked": 9,
+          "maximum_absolute_difference": 8.326672684688674e-17,
+          "passed": true
+        },
+        {
+          "query": "12_saved_base_scenarios.sql",
+          "rows": 320,
+          "columns_checked": 16,
+          "maximum_absolute_difference": 0.0,
+          "passed": true
+        },
+        {
+          "query": "13_saved_recommendations.sql",
+          "rows": 80,
+          "columns_checked": 14,
+          "maximum_absolute_difference": 0.0,
+          "passed": true
+        },
+        {
+          "query": "14_conditional_portfolios.sql",
+          "rows": 15,
+          "columns_checked": 13,
+          "maximum_absolute_difference": 5.820766091346741e-11,
+          "passed": true
+        },
+        {
+          "query": "15_experiment_monitoring.sql",
+          "rows": 24,
+          "columns_checked": 10,
+          "maximum_absolute_difference": 0.0,
+          "passed": true
+        }
+      ],
+      "boundary_tests": [
+        "Zero denominator stays unavailable; valid zero conversion remains zero",
+        "Monthly retention and weighted churn use opening-base exposures",
+        "Zero prior-period comparisons remain unavailable",
+        "Annual/Q4 windows and pp units independently reconciled",
+        "Repeated history deduplicates from 252 records to 84 gym-months",
+        "Saved Base scenarios contain 320 rows, not all 960 cases",
+        "TEST FIRST is mapped to no increase in all portfolios",
+        "Complete-portfolio intervals are joined, never summed",
+        "Repeat population intervals remain unavailable",
+        "Three anchors, action counts and Main decisions match saved evidence",
+        "Query connection rejects mutations",
+        "All 1920 member bridges and continuity balances are exact",
+        "All fifteen site-mapped portfolios match saved revenue and weighted rates",
+        "Cohort maturity boundaries preserve unavailable retention and revenue"
+      ],
+      "money_tolerance_gbp": 0.01,
+      "sql_runtime": "3.53.1",
+      "python_independent_expected": "Pandas source aggregation / frozen interface parity"
+    },
+    "sql_outputs_byte_identical": true,
+    "clean_directory": "C:\\Users\\prave\\Downloads\\Pricing analyst portfolio\\analysis\\.portfolio_build\\extracted_wvmsml7f"
+  },
+  "byte_identical_packaging": true,
+  "documentation_visual_review": {
+    "renderer": "Marked + local headless Microsoft Edge",
+    "human_visual_review_completed": true,
+    "rendered_pages": [
+      {
+        "file": "README.md",
+        "brokenImages": [],
+        "horizontalOverflow": false,
+        "height": 4341
+      },
+      {
+        "file": "portfolio/case_study.md",
+        "brokenImages": [],
+        "horizontalOverflow": false,
+        "height": 2344
+      },
+      {
+        "file": "portfolio/dashboard_gallery.md",
+        "brokenImages": [],
+        "horizontalOverflow": false,
+        "height": 5779
+      },
+      {
+        "file": "portfolio/REPRODUCIBILITY.md",
+        "brokenImages": [],
+        "horizontalOverflow": false,
+        "height": 2165
+      },
+      {
+        "file": "sql/README.md",
+        "brokenImages": [],
+        "horizontalOverflow": false,
+        "height": 1955
+      }
+    ],
+    "notes": "All five rendered Markdown documents reviewed. No broken images or horizontal overflow. Native Power BI screenshots reused without editing; scrollable viewport limitation labelled."
+  },
+  "archives": {
+    "northstar_portfolio.zip": {
+      "bytes": 63481657,
+      "sha256": "02a63000e8b1a841e00954588ec34c59d19ea9c44b7672eea7fa0a1d563ebf7e",
+      "files": 603
+    },
+    "northstar_reproduction.zip": {
+      "bytes": 192263946,
+      "sha256": "4ce4d27073c4acd41a5e5d461547a5a9af0b6a089f568248bdebec19147215b5",
+      "files": 28
+    }
+  },
+  "ordinary_package_max_file_bytes": 31909335,
+  "no_git_or_publication": true,
+  "limitations": [
+    "Native PowerPoint rendering unverified",
+    "PDF is image-based",
+    "Native dashboard tables use scrolling",
+    "Advanced historical builders require bundled Artifact Tool and adaptation of host-specific runtime/helper paths",
+    "Protected workbook progress captions remain older; external guidance is current"
+  ]
+}

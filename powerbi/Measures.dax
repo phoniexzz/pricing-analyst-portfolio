@@ -1,0 +1,889 @@
+// Documentation mirror; authoritative expressions are in TMDL.
+
+[Forward Evidence Current] =
+SELECTEDVALUE(EvidenceStatus[forward_current], FALSE())
+
+[Experiment Evidence Current] =
+SELECTEDVALUE(EvidenceStatus[experiment_current], FALSE())
+
+[Evidence Status] =
+SELECTEDVALUE(EvidenceStatus[evidence_message])
+
+[Snapshot Version] =
+SELECTEDVALUE(EvidenceStatus[snapshot_id])
+
+[Snapshot Stamp] =
+"Validated snapshot " & SELECTEDVALUE(EvidenceStatus[snapshot_id]) & "  |  " & SELECTEDVALUE(EvidenceStatus[validation_utc]) & "  |  Native verification pending"
+
+[Full Estate Scope] =
+COUNTROWS(VALUES(DimGym[gym_id])) = COUNTROWS(ALL(DimGym))
+
+[Uncertainty Scope] =
+IF([Full Estate Scope], "Saved complete-estate conditional parameter range", IF(HASONEVALUE(DimGym[gym_id]), "Saved individual-gym conditional parameter range", "Range unavailable for selected gyms or region. Site interval endpoints cannot be added."))
+
+[Historical Window] =
+FORMAT(MIN(DimHistoryMonth[month]), "mmm yyyy") & "–" & FORMAT(MAX(DimHistoryMonth[month]), "mmm yyyy")
+
+[Net Revenue] =
+SUM(FactHistory[monthly_revenue])
+
+[Subscription Revenue] =
+SUM(FactHistory[subscription_revenue])
+
+[Joining Fee Revenue] =
+SUM(FactHistory[joining_fee_revenue])
+
+[Ancillary Revenue] =
+SUM(FactHistory[ancillary_revenue])
+
+[Average Member Months] =
+SUM(FactHistory[average_members])
+
+[Opening Member Months] =
+SUM(FactHistory[opening_members])
+
+[Acquisitions] =
+SUM(FactHistory[new_members])
+
+[Opening-base Exits] =
+SUM(FactHistory[opening_base_cancellations])
+
+[Same-month Exits] =
+SUM(FactHistory[same_month_cancellations])
+
+[Qualified Prospects] =
+SUM(FactHistory[qualified_prospects])
+
+[Complaints] =
+SUM(FactHistory[pricing_complaints])
+
+[Marketing Spend] =
+SUM(FactHistory[marketing_spend])
+
+[Standard Subscription Revenue] =
+SUM(FactHistory[standard_subscription_revenue])
+
+[Standard Member Months] =
+SUM(FactHistory[average_standard_members])
+
+[ARPMM] =
+DIVIDE([Net Revenue], [Average Member Months])
+
+[Subscription Yield] =
+DIVIDE([Subscription Revenue], [Average Member Months])
+
+[Standard Yield] =
+DIVIDE([Standard Subscription Revenue], [Standard Member Months])
+
+[Opening-base Churn] =
+DIVIDE([Opening-base Exits], [Opening Member Months])
+
+[Acquisition Rate] =
+DIVIDE([Acquisitions], [Opening Member Months])
+
+[Qualified Conversion] =
+DIVIDE([Acquisitions], [Qualified Prospects])
+
+[Complaints per 1000] =
+DIVIDE([Complaints], [Average Member Months]) * 1000
+
+[Monthly Retention] =
+IF(NOT ISBLANK([Opening-base Churn]), 1 - [Opening-base Churn])
+
+[Observed Months] =
+DISTINCTCOUNT(FactHistory[month])
+
+[Average Members] =
+DIVIDE([Average Member Months], [Observed Months])
+
+[Average Monthly Revenue] =
+DIVIDE([Net Revenue], [Observed Months])
+
+[Average Monthly Acquisitions] =
+DIVIDE([Acquisitions], [Observed Months])
+
+[Closing Members] =
+VAR LastMonth = MAX(FactHistory[month]) RETURN CALCULATE(SUM(FactHistory[closing_members]), KEEPFILTERS(FactHistory[month] = LastMonth))
+
+[Period Opening Members] =
+VAR FirstMonth = MIN(FactHistory[month]) RETURN CALCULATE(SUM(FactHistory[opening_members]), KEEPFILTERS(FactHistory[month] = FirstMonth))
+
+[Period Member Growth] =
+DIVIDE([Closing Members] - [Period Opening Members], [Period Opening Members])
+
+[Average Occupancy] =
+DIVIDE(SUMX(FactHistory, FactHistory[utilisation_pct] * FactHistory[opening_minutes]), SUM(FactHistory[opening_minutes]))
+
+[Average Monthly Peak] =
+AVERAGEX(VALUES(FactHistory[month]), CALCULATE(AVERAGE(FactHistory[peak_utilisation_pct])))
+
+[Maximum Monthly Peak] =
+MAX(FactHistory[peak_utilisation_pct])
+
+[Promotion Frequency] =
+DIVIDE(COALESCE(COUNTROWS(FILTER(FactHistory, FactHistory[promotion_active] = TRUE())), 0), COUNTROWS(FactHistory))
+
+[Standard Mix] =
+DIVIDE(SUM(FactHistory[average_standard_members]), [Average Member Months])
+
+[Off-Peak Mix] =
+DIVIDE(SUM(FactHistory[average_offpeak_members]), [Average Member Months])
+
+[Plus Mix] =
+DIVIDE(SUM(FactHistory[average_premium_members]), [Average Member Months])
+
+[Net Revenue Prior Year] =
+VAR MatchingMonths = SELECTCOLUMNS(VALUES(DimHistoryMonth[month]), "Month", EDATE(DimHistoryMonth[month], -12)) VAR PriorMonths = CALCULATE(DISTINCTCOUNT(FactHistory[month]), REMOVEFILTERS(DimHistoryMonth), TREATAS(MatchingMonths, DimHistoryMonth[month])) RETURN IF(PriorMonths = COUNTROWS(MatchingMonths), CALCULATE([Net Revenue], REMOVEFILTERS(DimHistoryMonth), TREATAS(MatchingMonths, DimHistoryMonth[month])))
+
+[Closing Members Prior Year] =
+VAR MatchingMonths = SELECTCOLUMNS(VALUES(DimHistoryMonth[month]), "Month", EDATE(DimHistoryMonth[month], -12)) VAR PriorMonths = CALCULATE(DISTINCTCOUNT(FactHistory[month]), REMOVEFILTERS(DimHistoryMonth), TREATAS(MatchingMonths, DimHistoryMonth[month])) RETURN IF(PriorMonths = COUNTROWS(MatchingMonths), CALCULATE([Closing Members], REMOVEFILTERS(DimHistoryMonth), TREATAS(MatchingMonths, DimHistoryMonth[month])))
+
+[Average Members Prior Year] =
+VAR MatchingMonths = SELECTCOLUMNS(VALUES(DimHistoryMonth[month]), "Month", EDATE(DimHistoryMonth[month], -12)) VAR PriorMonths = CALCULATE(DISTINCTCOUNT(FactHistory[month]), REMOVEFILTERS(DimHistoryMonth), TREATAS(MatchingMonths, DimHistoryMonth[month])) RETURN IF(PriorMonths = COUNTROWS(MatchingMonths), CALCULATE([Average Members], REMOVEFILTERS(DimHistoryMonth), TREATAS(MatchingMonths, DimHistoryMonth[month])))
+
+[Average Member Months Prior Year] =
+VAR MatchingMonths = SELECTCOLUMNS(VALUES(DimHistoryMonth[month]), "Month", EDATE(DimHistoryMonth[month], -12)) VAR PriorMonths = CALCULATE(DISTINCTCOUNT(FactHistory[month]), REMOVEFILTERS(DimHistoryMonth), TREATAS(MatchingMonths, DimHistoryMonth[month])) RETURN IF(PriorMonths = COUNTROWS(MatchingMonths), CALCULATE([Average Member Months], REMOVEFILTERS(DimHistoryMonth), TREATAS(MatchingMonths, DimHistoryMonth[month])))
+
+[ARPMM Prior Year] =
+VAR MatchingMonths = SELECTCOLUMNS(VALUES(DimHistoryMonth[month]), "Month", EDATE(DimHistoryMonth[month], -12)) VAR PriorMonths = CALCULATE(DISTINCTCOUNT(FactHistory[month]), REMOVEFILTERS(DimHistoryMonth), TREATAS(MatchingMonths, DimHistoryMonth[month])) RETURN IF(PriorMonths = COUNTROWS(MatchingMonths), CALCULATE([ARPMM], REMOVEFILTERS(DimHistoryMonth), TREATAS(MatchingMonths, DimHistoryMonth[month])))
+
+[Acquisitions Prior Year] =
+VAR MatchingMonths = SELECTCOLUMNS(VALUES(DimHistoryMonth[month]), "Month", EDATE(DimHistoryMonth[month], -12)) VAR PriorMonths = CALCULATE(DISTINCTCOUNT(FactHistory[month]), REMOVEFILTERS(DimHistoryMonth), TREATAS(MatchingMonths, DimHistoryMonth[month])) RETURN IF(PriorMonths = COUNTROWS(MatchingMonths), CALCULATE([Acquisitions], REMOVEFILTERS(DimHistoryMonth), TREATAS(MatchingMonths, DimHistoryMonth[month])))
+
+[Qualified Conversion Prior Year] =
+VAR MatchingMonths = SELECTCOLUMNS(VALUES(DimHistoryMonth[month]), "Month", EDATE(DimHistoryMonth[month], -12)) VAR PriorMonths = CALCULATE(DISTINCTCOUNT(FactHistory[month]), REMOVEFILTERS(DimHistoryMonth), TREATAS(MatchingMonths, DimHistoryMonth[month])) RETURN IF(PriorMonths = COUNTROWS(MatchingMonths), CALCULATE([Qualified Conversion], REMOVEFILTERS(DimHistoryMonth), TREATAS(MatchingMonths, DimHistoryMonth[month])))
+
+[Opening-base Churn Prior Year] =
+VAR MatchingMonths = SELECTCOLUMNS(VALUES(DimHistoryMonth[month]), "Month", EDATE(DimHistoryMonth[month], -12)) VAR PriorMonths = CALCULATE(DISTINCTCOUNT(FactHistory[month]), REMOVEFILTERS(DimHistoryMonth), TREATAS(MatchingMonths, DimHistoryMonth[month])) RETURN IF(PriorMonths = COUNTROWS(MatchingMonths), CALCULATE([Opening-base Churn], REMOVEFILTERS(DimHistoryMonth), TREATAS(MatchingMonths, DimHistoryMonth[month])))
+
+[Monthly Retention Prior Year] =
+VAR MatchingMonths = SELECTCOLUMNS(VALUES(DimHistoryMonth[month]), "Month", EDATE(DimHistoryMonth[month], -12)) VAR PriorMonths = CALCULATE(DISTINCTCOUNT(FactHistory[month]), REMOVEFILTERS(DimHistoryMonth), TREATAS(MatchingMonths, DimHistoryMonth[month])) RETURN IF(PriorMonths = COUNTROWS(MatchingMonths), CALCULATE([Monthly Retention], REMOVEFILTERS(DimHistoryMonth), TREATAS(MatchingMonths, DimHistoryMonth[month])))
+
+[Net Revenue YoY] =
+VAR Previous = [Net Revenue Prior Year] RETURN IF(NOT ISBLANK(Previous) && Previous <> 0, DIVIDE([Net Revenue] - Previous, Previous))
+
+[Closing Members YoY] =
+VAR Previous = [Closing Members Prior Year] RETURN IF(NOT ISBLANK(Previous) && Previous <> 0, DIVIDE([Closing Members] - Previous, Previous))
+
+[Average Members YoY] =
+VAR Previous = [Average Members Prior Year] RETURN IF(NOT ISBLANK(Previous) && Previous <> 0, DIVIDE([Average Members] - Previous, Previous))
+
+[Acquisitions YoY] =
+VAR Previous = [Acquisitions Prior Year] RETURN IF(NOT ISBLANK(Previous) && Previous <> 0, DIVIDE([Acquisitions] - Previous, Previous))
+
+[ARPMM YoY] =
+VAR Previous = [ARPMM Prior Year] RETURN IF(NOT ISBLANK(Previous) && Previous <> 0, DIVIDE([ARPMM] - Previous, Previous))
+
+[Qualified Conversion Change pp] =
+VAR Previous = [Qualified Conversion Prior Year] RETURN IF(NOT ISBLANK(Previous) && NOT ISBLANK([Qualified Conversion]), ([Qualified Conversion] - Previous) * 100)
+
+[Opening-base Churn Change pp] =
+VAR Previous = [Opening-base Churn Prior Year] RETURN IF(NOT ISBLANK(Previous) && NOT ISBLANK([Opening-base Churn]), ([Opening-base Churn] - Previous) * 100)
+
+[Monthly Retention Change pp] =
+VAR Previous = [Monthly Retention Prior Year] RETURN IF(NOT ISBLANK(Previous) && NOT ISBLANK([Monthly Retention]), ([Monthly Retention] - Previous) * 100)
+
+[Executive Revenue Comparison] =
+VAR Change = [Net Revenue YoY] RETURN IF(ISBLANK(Change), "Prior period unavailable", "vs " & FORMAT(MAX(DimHistoryMonth[year])-1,"0") & ": " & FORMAT(Change,"+0.00%;−0.00%;0.00%"))
+
+[Executive Members Comparison] =
+VAR Change = [Closing Members YoY] RETURN IF(ISBLANK(Change), "Prior period unavailable", "vs " & FORMAT(MAX(DimHistoryMonth[year])-1,"0") & ": " & FORMAT(Change,"+0.00%;−0.00%;0.00%"))
+
+[Executive ARPMM Comparison] =
+VAR Change = [ARPMM YoY] RETURN IF(ISBLANK(Change), "Prior period unavailable", "vs " & FORMAT(MAX(DimHistoryMonth[year])-1,"0") & ": " & FORMAT(Change,"+0.00%;−0.00%;0.00%"))
+
+[Executive Acquisition Comparison] =
+VAR Change = [Acquisitions YoY] RETURN IF(ISBLANK(Change), "Prior period unavailable", "vs " & FORMAT(MAX(DimHistoryMonth[year])-1,"0") & ": " & FORMAT(Change,"+0.00%;−0.00%;0.00%"))
+
+[Executive Churn Comparison] =
+VAR Change = [Opening-base Churn Change pp] RETURN IF(ISBLANK(Change), "Prior period unavailable", "vs " & FORMAT(MAX(DimHistoryMonth[year])-1,"0") & ": " & FORMAT(Change,"+0.00;−0.00;0.00") & " pp")
+
+[Q4 Net Revenue] =
+CALCULATE([Net Revenue], REMOVEFILTERS(DimHistoryMonth), DimHistoryMonth[year] = 2025, DimHistoryMonth[quarter] = "Q4")
+
+[Q4 Net Revenue 2024] =
+CALCULATE([Net Revenue], REMOVEFILTERS(DimHistoryMonth), DimHistoryMonth[year] = 2024, DimHistoryMonth[quarter] = "Q4")
+
+[Q4 Net Revenue Growth] =
+VAR Previous = [Q4 Net Revenue 2024] RETURN DIVIDE([Q4 Net Revenue] - Previous, Previous)
+
+[Q4 Acquisitions] =
+CALCULATE([Acquisitions], REMOVEFILTERS(DimHistoryMonth), DimHistoryMonth[year] = 2025, DimHistoryMonth[quarter] = "Q4")
+
+[Q4 Acquisitions 2024] =
+CALCULATE([Acquisitions], REMOVEFILTERS(DimHistoryMonth), DimHistoryMonth[year] = 2024, DimHistoryMonth[quarter] = "Q4")
+
+[Q4 Acquisitions Growth] =
+VAR Previous = [Q4 Acquisitions 2024] RETURN DIVIDE([Q4 Acquisitions] - Previous, Previous)
+
+[Q4 Qualified Conversion] =
+CALCULATE([Qualified Conversion], REMOVEFILTERS(DimHistoryMonth), DimHistoryMonth[year] = 2025, DimHistoryMonth[quarter] = "Q4")
+
+[Q4 Qualified Conversion 2024] =
+CALCULATE([Qualified Conversion], REMOVEFILTERS(DimHistoryMonth), DimHistoryMonth[year] = 2024, DimHistoryMonth[quarter] = "Q4")
+
+[Q4 Qualified Conversion Change pp] =
+VAR Previous = [Q4 Qualified Conversion 2024] RETURN IF(NOT ISBLANK(Previous), ([Q4 Qualified Conversion] - Previous) * 100)
+
+[Q4 Opening-base Churn] =
+CALCULATE([Opening-base Churn], REMOVEFILTERS(DimHistoryMonth), DimHistoryMonth[year] = 2025, DimHistoryMonth[quarter] = "Q4")
+
+[Q4 Opening-base Churn 2024] =
+CALCULATE([Opening-base Churn], REMOVEFILTERS(DimHistoryMonth), DimHistoryMonth[year] = 2024, DimHistoryMonth[quarter] = "Q4")
+
+[Q4 Opening-base Churn Change pp] =
+VAR Previous = [Q4 Opening-base Churn 2024] RETURN IF(NOT ISBLANK(Previous), ([Q4 Opening-base Churn] - Previous) * 100)
+
+[Volume Bridge] =
+IF(NOT ISBLANK([Net Revenue Prior Year]), ([Average Member Months] - [Average Member Months Prior Year]) * [ARPMM Prior Year])
+
+[ARPMM Bridge] =
+IF(NOT ISBLANK([Net Revenue Prior Year]), [Average Member Months] * ([ARPMM] - [ARPMM Prior Year]))
+
+[Revenue Bridge] =
+SWITCH(SELECTEDVALUE(DimBridge[step]), "2024 revenue", [Net Revenue Prior Year], "Member volume", [Volume Bridge], "Total ARPMM", [ARPMM Bridge], "2025 revenue", [Net Revenue])
+
+[December Exit Run-rate] =
+CALCULATE([Net Revenue], REMOVEFILTERS(DimHistoryMonth), DimHistoryMonth[month] = DATE(2025,12,1)) * 12
+
+[Standard Headline December] =
+SELECTEDVALUE(DimGym[current_standard_price])
+
+[Off-Peak Headline December] =
+SELECTEDVALUE(DimGym[current_offpeak_price])
+
+[Plus Headline December] =
+SELECTEDVALUE(DimGym[current_premium_price])
+
+[Competitor Recurring December] =
+SELECTEDVALUE(DimGym[local_competitor_avg_price])
+
+[Competitor Gap December] =
+SELECTEDVALUE(DimGym[competitor_price_gap])
+
+[Headroom Score] =
+SELECTEDVALUE(DimGym[score])
+
+[Saved Estate Rank] =
+SELECTEDVALUE(DimGym[rank])
+
+[December Competitor Count] =
+SELECTEDVALUE(DimGym[competitor_count_3km])
+
+[Headroom Band] =
+SELECTEDVALUE(DimGym[band])
+
+[Headroom Segment] =
+SELECTEDVALUE(DimGym[segment])
+
+[Caution Count] =
+SELECTEDVALUE(FactHeadroom[caution_flag_count])
+
+[Pricing Complaints 2025] =
+SELECTEDVALUE(FactHeadroom[complaints_per_1000_member_months_2025])
+
+[Competitor Joining Fee December] =
+SELECTEDVALUE(FactHeadroom[competitor_mean_joining_fee_dec2025])
+
+[Competitor Intro Discount December] =
+SELECTEDVALUE(FactHeadroom[competitor_mean_first_month_discount_dec2025])
+
+[Rank Movement Sensitivity] =
+SELECTEDVALUE(FactHeadroom[max_absolute_rank_movement])
+
+[Saved Recommendation] =
+IF([Forward Evidence Current], SELECTEDVALUE(FactRecommendation[action]), "UNAVAILABLE — refresh evidence")
+
+[Recommended Increment] =
+IF([Forward Evidence Current], SELECTEDVALUE(FactRecommendation[proposed_increment]))
+
+[Provisional Test Increment] =
+IF([Forward Evidence Current], SELECTEDVALUE(FactRecommendation[provisional_test_increment]))
+
+[Recommendation Explanation] =
+IF([Forward Evidence Current], SELECTEDVALUE(FactRecommendation[explanation]), [Evidence Status])
+
+[Recommendation Site Count] =
+IF([Forward Evidence Current], COALESCE(COUNTROWS(FactRecommendation), 0))
+
+[Conditional Raise Sites] =
+IF([Forward Evidence Current], COALESCE(CALCULATE(COUNTROWS(FactRecommendation), FactRecommendation[action] IN {"RAISE £1", "RAISE £2"}), 0))
+
+[Saved Policy Action] =
+IF([Forward Evidence Current] && HASONEVALUE(DimPolicy[variant]), SELECTEDVALUE(FactPolicyRecommendation[action]))
+
+[Saved Policy Amount] =
+IF([Forward Evidence Current] && HASONEVALUE(DimPolicy[variant]), SELECTEDVALUE(FactPolicyRecommendation[proposed_increment]))
+
+[£1 plausible] =
+IF([Forward Evidence Current], SELECTEDVALUE(FactRecommendation[plus1_plausible]))
+
+[£1 qualified] =
+IF([Forward Evidence Current], SELECTEDVALUE(FactRecommendation[plus1_qualified]))
+
+[£1 failed gates] =
+IF([Forward Evidence Current] && HASONEVALUE(DimGym[gym_id]), IF(SELECTEDVALUE(FactRecommendation[plus1_complete]) = TRUE(), COALESCE(SELECTEDVALUE(FactRecommendation[plus1_failed_gates]), "None"), "Unavailable required evidence"))
+
+[£1 base revenue] =
+IF([Forward Evidence Current], SELECTEDVALUE(FactRecommendation[plus1_base_revenue]))
+
+[£1 downside revenue] =
+IF([Forward Evidence Current], SELECTEDVALUE(FactRecommendation[plus1_downside_revenue]))
+
+[£1 downside member impact] =
+IF([Forward Evidence Current], SELECTEDVALUE(FactRecommendation[plus1_downside_member_impact]))
+
+[£1 revenue lower] =
+IF([Forward Evidence Current], SELECTEDVALUE(FactRecommendation[plus1_revenue_lower]))
+
+[£1 revenue upper] =
+IF([Forward Evidence Current], SELECTEDVALUE(FactRecommendation[plus1_revenue_upper]))
+
+[£1 post competitor gap] =
+IF([Forward Evidence Current], SELECTEDVALUE(FactRecommendation[plus1_post_competitor_gap]))
+
+[£1 worst sensitivity revenue] =
+IF([Forward Evidence Current], SELECTEDVALUE(FactRecommendation[plus1_worst_sensitivity_revenue]))
+
+[£2 plausible] =
+IF([Forward Evidence Current], SELECTEDVALUE(FactRecommendation[plus2_plausible]))
+
+[£2 qualified] =
+IF([Forward Evidence Current], SELECTEDVALUE(FactRecommendation[plus2_qualified]))
+
+[£2 failed gates] =
+IF([Forward Evidence Current] && HASONEVALUE(DimGym[gym_id]), IF(SELECTEDVALUE(FactRecommendation[plus2_complete]) = TRUE(), COALESCE(SELECTEDVALUE(FactRecommendation[plus2_failed_gates]), "None"), "Unavailable required evidence"))
+
+[£2 base revenue] =
+IF([Forward Evidence Current], SELECTEDVALUE(FactRecommendation[plus2_base_revenue]))
+
+[£2 downside revenue] =
+IF([Forward Evidence Current], SELECTEDVALUE(FactRecommendation[plus2_downside_revenue]))
+
+[£2 downside member impact] =
+IF([Forward Evidence Current], SELECTEDVALUE(FactRecommendation[plus2_downside_member_impact]))
+
+[£2 revenue lower] =
+IF([Forward Evidence Current], SELECTEDVALUE(FactRecommendation[plus2_revenue_lower]))
+
+[£2 revenue upper] =
+IF([Forward Evidence Current], SELECTEDVALUE(FactRecommendation[plus2_revenue_upper]))
+
+[£2 post competitor gap] =
+IF([Forward Evidence Current], SELECTEDVALUE(FactRecommendation[plus2_post_competitor_gap]))
+
+[£2 worst sensitivity revenue] =
+IF([Forward Evidence Current], SELECTEDVALUE(FactRecommendation[plus2_worst_sensitivity_revenue]))
+
+[Scenario Revenue] =
+IF([Forward Evidence Current] && HASONEVALUE(DimCase[case]) && HASONEVALUE(DimPrice[price_increment]), SUM(FactScenarioAnnual[monthly_revenue]))
+
+[Scenario Subscription] =
+IF([Forward Evidence Current] && HASONEVALUE(DimCase[case]) && HASONEVALUE(DimPrice[price_increment]), SUM(FactScenarioAnnual[subscription_revenue]))
+
+[Scenario Joining Fees] =
+IF([Forward Evidence Current] && HASONEVALUE(DimCase[case]) && HASONEVALUE(DimPrice[price_increment]), SUM(FactScenarioAnnual[joining_fee_revenue]))
+
+[Scenario Ancillary] =
+IF([Forward Evidence Current] && HASONEVALUE(DimCase[case]) && HASONEVALUE(DimPrice[price_increment]), SUM(FactScenarioAnnual[ancillary_revenue]))
+
+[Scenario Incremental Revenue] =
+IF([Forward Evidence Current] && HASONEVALUE(DimCase[case]) && HASONEVALUE(DimPrice[price_increment]), SUM(FactScenarioAnnual[incremental_revenue]))
+
+[Scenario December Members] =
+IF([Forward Evidence Current] && HASONEVALUE(DimCase[case]) && HASONEVALUE(DimPrice[price_increment]), SUM(FactScenarioAnnual[month12_members]))
+
+[Scenario Member Difference] =
+IF([Forward Evidence Current] && HASONEVALUE(DimCase[case]) && HASONEVALUE(DimPrice[price_increment]), SUM(FactScenarioAnnual[member_difference]))
+
+[Scenario Joins] =
+IF([Forward Evidence Current] && HASONEVALUE(DimCase[case]) && HASONEVALUE(DimPrice[price_increment]), SUM(FactScenarioAnnual[new_members]))
+
+[Scenario Standard Joins] =
+IF([Forward Evidence Current] && HASONEVALUE(DimCase[case]) && HASONEVALUE(DimPrice[price_increment]), SUM(FactScenarioAnnual[standard_joins]))
+
+[Scenario Prospects] =
+IF([Forward Evidence Current] && HASONEVALUE(DimCase[case]) && HASONEVALUE(DimPrice[price_increment]), SUM(FactScenarioAnnual[qualified_prospects]))
+
+[Scenario Opening Exposure] =
+IF([Forward Evidence Current] && HASONEVALUE(DimCase[case]) && HASONEVALUE(DimPrice[price_increment]), SUM(FactScenarioAnnual[opening_members]))
+
+[Scenario Average Exposure] =
+IF([Forward Evidence Current] && HASONEVALUE(DimCase[case]) && HASONEVALUE(DimPrice[price_increment]), SUM(FactScenarioAnnual[average_members]))
+
+[Scenario Opening Exits] =
+IF([Forward Evidence Current] && HASONEVALUE(DimCase[case]) && HASONEVALUE(DimPrice[price_increment]), SUM(FactScenarioAnnual[opening_base_cancellations]))
+
+[Scenario Incumbent Exposure] =
+IF([Forward Evidence Current] && HASONEVALUE(DimCase[case]) && HASONEVALUE(DimPrice[price_increment]), SUM(FactScenarioAnnual[incumbent_standard_opening]))
+
+[Scenario Incumbent Exits] =
+IF([Forward Evidence Current] && HASONEVALUE(DimCase[case]) && HASONEVALUE(DimPrice[price_increment]), SUM(FactScenarioAnnual[incumbent_standard_cancellations]))
+
+[Scenario Downgrades] =
+IF([Forward Evidence Current] && HASONEVALUE(DimCase[case]) && HASONEVALUE(DimPrice[price_increment]), SUM(FactScenarioAnnual[incumbent_standard_downgrades]))
+
+[Scenario Exit Run-rate] =
+IF([Forward Evidence Current] && HASONEVALUE(DimCase[case]) && HASONEVALUE(DimPrice[price_increment]), SUM(FactScenarioAnnual[annualised_exit_run_rate]))
+
+[Scenario Standard Revenue] =
+IF([Forward Evidence Current] && HASONEVALUE(DimCase[case]) && HASONEVALUE(DimPrice[price_increment]), SUM(FactScenarioAnnual[standard_subscription_revenue]))
+
+[Scenario Standard Exposure] =
+IF([Forward Evidence Current] && HASONEVALUE(DimCase[case]) && HASONEVALUE(DimPrice[price_increment]), SUM(FactScenarioAnnual[standard_average_members]))
+
+[Scenario ARPMM] =
+DIVIDE([Scenario Revenue], [Scenario Average Exposure])
+
+[Scenario Subscription Yield] =
+DIVIDE([Scenario Subscription], [Scenario Average Exposure])
+
+[Scenario Standard Yield] =
+DIVIDE([Scenario Standard Revenue], [Scenario Standard Exposure])
+
+[Scenario Conversion] =
+DIVIDE([Scenario Joins], [Scenario Prospects])
+
+[Scenario Churn] =
+DIVIDE([Scenario Opening Exits], [Scenario Opening Exposure])
+
+[Scenario Incumbent Churn] =
+DIVIDE([Scenario Incumbent Exits], [Scenario Incumbent Exposure])
+
+[Scenario Downgrade Rate] =
+DIVIDE([Scenario Downgrades], [Scenario Incumbent Exposure])
+
+[Scenario Member Impact] =
+DIVIDE([Scenario Member Difference], CALCULATE([Scenario December Members], REMOVEFILTERS(DimPrice), DimPrice[price_increment] = 0))
+
+[Scenario Monthly Revenue] =
+IF([Forward Evidence Current] && HASONEVALUE(DimCase[case]) && HASONEVALUE(DimPrice[price_increment]) && HASONEVALUE(DimScenarioMonth[month]), SUM(FactScenarioMonthly[monthly_revenue]))
+
+[Scenario Monthly Closing] =
+IF([Forward Evidence Current] && HASONEVALUE(DimCase[case]) && HASONEVALUE(DimPrice[price_increment]) && HASONEVALUE(DimScenarioMonth[month]), SUM(FactScenarioMonthly[closing_members]))
+
+[Scenario Cumulative Increment] =
+IF([Forward Evidence Current] && HASONEVALUE(DimCase[case]) && HASONEVALUE(DimPrice[price_increment]) && HASONEVALUE(DimScenarioMonth[month]), SUM(FactScenarioMonthly[cumulative_incremental_revenue]))
+
+[Scenario Increment lower] =
+IF([Forward Evidence Current] && HASONEVALUE(DimCase[case]) && HASONEVALUE(DimPrice[price_increment]), IF(HASONEVALUE(DimGym[gym_id]), SELECTEDVALUE(FactScenarioAnnual[incremental_revenue_lower]), IF([Full Estate Scope], SELECTEDVALUE(FactScenarioEstate[incremental_revenue_lower]))))
+
+[Scenario Members lower] =
+IF([Forward Evidence Current] && HASONEVALUE(DimCase[case]) && HASONEVALUE(DimPrice[price_increment]), IF(HASONEVALUE(DimGym[gym_id]), SELECTEDVALUE(FactScenarioAnnual[month12_members_lower]), IF([Full Estate Scope], SELECTEDVALUE(FactScenarioEstate[month12_members_lower]))))
+
+[Scenario Increment upper] =
+IF([Forward Evidence Current] && HASONEVALUE(DimCase[case]) && HASONEVALUE(DimPrice[price_increment]), IF(HASONEVALUE(DimGym[gym_id]), SELECTEDVALUE(FactScenarioAnnual[incremental_revenue_upper]), IF([Full Estate Scope], SELECTEDVALUE(FactScenarioEstate[incremental_revenue_upper]))))
+
+[Scenario Members upper] =
+IF([Forward Evidence Current] && HASONEVALUE(DimCase[case]) && HASONEVALUE(DimPrice[price_increment]), IF(HASONEVALUE(DimGym[gym_id]), SELECTEDVALUE(FactScenarioAnnual[month12_members_upper]), IF([Full Estate Scope], SELECTEDVALUE(FactScenarioEstate[month12_members_upper]))))
+
+[Positive Draw Fraction] =
+IF([Forward Evidence Current] && HASONEVALUE(DimCase[case]) && HASONEVALUE(DimPrice[price_increment]), IF(HASONEVALUE(DimGym[gym_id]), SELECTEDVALUE(FactScenarioAnnual[positive_revenue_draw_fraction]), IF([Full Estate Scope], SELECTEDVALUE(FactScenarioEstate[positive_revenue_draw_fraction]))))
+
+[Break-even Multiplier] =
+IF([Forward Evidence Current] && HASONEVALUE(DimCase[case]) && HASONEVALUE(DimPrice[price_increment]) && HASONEVALUE(DimGym[gym_id]), SELECTEDVALUE(FactScenarioAnnual[break_even_response_multiplier]))
+
+[Break-even Member Impact] =
+IF([Forward Evidence Current] && HASONEVALUE(DimCase[case]) && HASONEVALUE(DimPrice[price_increment]) && HASONEVALUE(DimGym[gym_id]), SELECTEDVALUE(FactScenarioAnnual[break_even_member_impact]))
+
+[Break-even Crossings] =
+IF([Forward Evidence Current] && HASONEVALUE(DimCase[case]) && HASONEVALUE(DimPrice[price_increment]) && HASONEVALUE(DimGym[gym_id]), SELECTEDVALUE(FactScenarioAnnual[break_even_crossings]))
+
+[Teaching Retention Ratio] =
+IF([Forward Evidence Current] && HASONEVALUE(DimCase[case]) && HASONEVALUE(DimPrice[price_increment]) && HASONEVALUE(DimGym[gym_id]), SELECTEDVALUE(FactScenarioAnnual[teaching_break_even_retention]))
+
+[Scenario Selection Status] =
+IF(NOT [Forward Evidence Current], [Evidence Status], IF(NOT HASONEVALUE(DimCase[case]), "Select one saved case. No forecasts are rerun.", "Jan–Dec 2026 saved scenarios. +£3 is an analytical comparison; Standard reaches unchanged Plus at 20 sites."))
+
+[Portfolio Increment] =
+IF([Forward Evidence Current] && HASONEVALUE(DimPolicy[variant]) && HASONEVALUE(DimCase[case]), SUM(FactPortfolioSite[incremental_revenue]))
+
+[Portfolio Revenue] =
+IF([Forward Evidence Current] && HASONEVALUE(DimPolicy[variant]) && HASONEVALUE(DimCase[case]), SUM(FactPortfolioSite[monthly_revenue]))
+
+[Portfolio December Members] =
+IF([Forward Evidence Current] && HASONEVALUE(DimPolicy[variant]) && HASONEVALUE(DimCase[case]), SUM(FactPortfolioSite[month12_members]))
+
+[Portfolio Member Difference] =
+IF([Forward Evidence Current] && HASONEVALUE(DimPolicy[variant]) && HASONEVALUE(DimCase[case]), SUM(FactPortfolioSite[member_difference]))
+
+[Portfolio Joins] =
+IF([Forward Evidence Current] && HASONEVALUE(DimPolicy[variant]) && HASONEVALUE(DimCase[case]), SUM(FactPortfolioSite[new_members]))
+
+[Portfolio Prospects] =
+IF([Forward Evidence Current] && HASONEVALUE(DimPolicy[variant]) && HASONEVALUE(DimCase[case]), SUM(FactPortfolioSite[qualified_prospects]))
+
+[Portfolio Opening Exposure] =
+IF([Forward Evidence Current] && HASONEVALUE(DimPolicy[variant]) && HASONEVALUE(DimCase[case]), SUM(FactPortfolioSite[opening_members]))
+
+[Portfolio Exits] =
+IF([Forward Evidence Current] && HASONEVALUE(DimPolicy[variant]) && HASONEVALUE(DimCase[case]), SUM(FactPortfolioSite[opening_base_cancellations]))
+
+[Portfolio Average Exposure] =
+IF([Forward Evidence Current] && HASONEVALUE(DimPolicy[variant]) && HASONEVALUE(DimCase[case]), SUM(FactPortfolioSite[average_members]))
+
+[Portfolio Subscription] =
+IF([Forward Evidence Current] && HASONEVALUE(DimPolicy[variant]) && HASONEVALUE(DimCase[case]), SUM(FactPortfolioSite[subscription_revenue]))
+
+[Portfolio Incumbent Exposure] =
+IF([Forward Evidence Current] && HASONEVALUE(DimPolicy[variant]) && HASONEVALUE(DimCase[case]), SUM(FactPortfolioSite[incumbent_standard_opening]))
+
+[Portfolio Incumbent Exits] =
+IF([Forward Evidence Current] && HASONEVALUE(DimPolicy[variant]) && HASONEVALUE(DimCase[case]), SUM(FactPortfolioSite[incumbent_standard_cancellations]))
+
+[Portfolio Downgrades] =
+IF([Forward Evidence Current] && HASONEVALUE(DimPolicy[variant]) && HASONEVALUE(DimCase[case]), SUM(FactPortfolioSite[incumbent_standard_downgrades]))
+
+[Portfolio Churn] =
+DIVIDE([Portfolio Exits], [Portfolio Opening Exposure])
+
+[Portfolio Conversion] =
+DIVIDE([Portfolio Joins], [Portfolio Prospects])
+
+[Portfolio ARPMM] =
+DIVIDE([Portfolio Revenue], [Portfolio Average Exposure])
+
+[Portfolio Downgrade Rate] =
+DIVIDE([Portfolio Downgrades], [Portfolio Incumbent Exposure])
+
+[Portfolio Increment lower] =
+IF([Forward Evidence Current] && HASONEVALUE(DimPolicy[variant]) && HASONEVALUE(DimCase[case]) && [Full Estate Scope], SELECTEDVALUE(FactPortfolio[incremental_revenue_lower]))
+
+[Portfolio Increment upper] =
+IF([Forward Evidence Current] && HASONEVALUE(DimPolicy[variant]) && HASONEVALUE(DimCase[case]) && [Full Estate Scope], SELECTEDVALUE(FactPortfolio[incremental_revenue_upper]))
+
+[Portfolio Uncertainty Scope] =
+IF([Full Estate Scope], "Saved full named policy portfolio range. TEST FIRST gains excluded.", "Portfolio range unavailable for selected gyms or region. Filtered points and weighted rates remain available.")
+
+[Historical Standard Acquisition Effect] =
+CALCULATE(SELECTEDVALUE(FactHistoricalEstimate[estimate]), REMOVEFILTERS(FactHistoricalEstimate), FactHistoricalEstimate[estimator] = "paired_equal", FactHistoricalEstimate[window] = "primary_6m", FactHistoricalEstimate[group] = "All assigned pairs", FactHistoricalEstimate[metric] = "controlled_acquisition_response")
+
+[Historical Standard Acquisition Effect lower] =
+CALCULATE(SELECTEDVALUE(FactHistoricalEstimate[ci_lower]), REMOVEFILTERS(FactHistoricalEstimate), FactHistoricalEstimate[estimator] = "paired_equal", FactHistoricalEstimate[window] = "primary_6m", FactHistoricalEstimate[group] = "All assigned pairs", FactHistoricalEstimate[metric] = "controlled_acquisition_response")
+
+[Historical Standard Acquisition Effect upper] =
+CALCULATE(SELECTEDVALUE(FactHistoricalEstimate[ci_upper]), REMOVEFILTERS(FactHistoricalEstimate), FactHistoricalEstimate[estimator] = "paired_equal", FactHistoricalEstimate[window] = "primary_6m", FactHistoricalEstimate[group] = "All assigned pairs", FactHistoricalEstimate[metric] = "controlled_acquisition_response")
+
+[Historical Acquisition Elasticity] =
+CALCULATE(SELECTEDVALUE(FactHistoricalEstimate[estimate]), REMOVEFILTERS(FactHistoricalEstimate), FactHistoricalEstimate[estimator] = "paired_equal", FactHistoricalEstimate[window] = "primary_6m", FactHistoricalEstimate[group] = "All assigned pairs", FactHistoricalEstimate[metric] = "acquisition_elasticity")
+
+[Historical Acquisition Elasticity lower] =
+CALCULATE(SELECTEDVALUE(FactHistoricalEstimate[ci_lower]), REMOVEFILTERS(FactHistoricalEstimate), FactHistoricalEstimate[estimator] = "paired_equal", FactHistoricalEstimate[window] = "primary_6m", FactHistoricalEstimate[group] = "All assigned pairs", FactHistoricalEstimate[metric] = "acquisition_elasticity")
+
+[Historical Acquisition Elasticity upper] =
+CALCULATE(SELECTEDVALUE(FactHistoricalEstimate[ci_upper]), REMOVEFILTERS(FactHistoricalEstimate), FactHistoricalEstimate[estimator] = "paired_equal", FactHistoricalEstimate[window] = "primary_6m", FactHistoricalEstimate[group] = "All assigned pairs", FactHistoricalEstimate[metric] = "acquisition_elasticity")
+
+[Historical Incumbent Churn Effect] =
+CALCULATE(SELECTEDVALUE(FactHistoricalEstimate[estimate]), REMOVEFILTERS(FactHistoricalEstimate), FactHistoricalEstimate[estimator] = "paired_equal", FactHistoricalEstimate[window] = "primary_6m", FactHistoricalEstimate[group] = "All assigned pairs", FactHistoricalEstimate[metric] = "incumbent_churn_response_pp")
+
+[Historical Incumbent Churn Effect lower] =
+CALCULATE(SELECTEDVALUE(FactHistoricalEstimate[ci_lower]), REMOVEFILTERS(FactHistoricalEstimate), FactHistoricalEstimate[estimator] = "paired_equal", FactHistoricalEstimate[window] = "primary_6m", FactHistoricalEstimate[group] = "All assigned pairs", FactHistoricalEstimate[metric] = "incumbent_churn_response_pp")
+
+[Historical Incumbent Churn Effect upper] =
+CALCULATE(SELECTEDVALUE(FactHistoricalEstimate[ci_upper]), REMOVEFILTERS(FactHistoricalEstimate), FactHistoricalEstimate[estimator] = "paired_equal", FactHistoricalEstimate[window] = "primary_6m", FactHistoricalEstimate[group] = "All assigned pairs", FactHistoricalEstimate[metric] = "incumbent_churn_response_pp")
+
+[Historical Downgrade Effect] =
+CALCULATE(SELECTEDVALUE(FactHistoricalEstimate[estimate]), REMOVEFILTERS(FactHistoricalEstimate), FactHistoricalEstimate[estimator] = "paired_equal", FactHistoricalEstimate[window] = "primary_6m", FactHistoricalEstimate[group] = "All assigned pairs", FactHistoricalEstimate[metric] = "incumbent_downgrade_response_pp")
+
+[Historical Downgrade Effect lower] =
+CALCULATE(SELECTEDVALUE(FactHistoricalEstimate[ci_lower]), REMOVEFILTERS(FactHistoricalEstimate), FactHistoricalEstimate[estimator] = "paired_equal", FactHistoricalEstimate[window] = "primary_6m", FactHistoricalEstimate[group] = "All assigned pairs", FactHistoricalEstimate[metric] = "incumbent_downgrade_response_pp")
+
+[Historical Downgrade Effect upper] =
+CALCULATE(SELECTEDVALUE(FactHistoricalEstimate[ci_upper]), REMOVEFILTERS(FactHistoricalEstimate), FactHistoricalEstimate[estimator] = "paired_equal", FactHistoricalEstimate[window] = "primary_6m", FactHistoricalEstimate[group] = "All assigned pairs", FactHistoricalEstimate[metric] = "incumbent_downgrade_response_pp")
+
+[Historical Conversion Effect] =
+CALCULATE(SELECTEDVALUE(FactHistoricalEstimate[estimate]), REMOVEFILTERS(FactHistoricalEstimate), FactHistoricalEstimate[estimator] = "paired_equal", FactHistoricalEstimate[window] = "primary_6m", FactHistoricalEstimate[group] = "All assigned pairs", FactHistoricalEstimate[metric] = "conversion_response_pp")
+
+[Historical Conversion Effect lower] =
+CALCULATE(SELECTEDVALUE(FactHistoricalEstimate[ci_lower]), REMOVEFILTERS(FactHistoricalEstimate), FactHistoricalEstimate[estimator] = "paired_equal", FactHistoricalEstimate[window] = "primary_6m", FactHistoricalEstimate[group] = "All assigned pairs", FactHistoricalEstimate[metric] = "conversion_response_pp")
+
+[Historical Conversion Effect upper] =
+CALCULATE(SELECTEDVALUE(FactHistoricalEstimate[ci_upper]), REMOVEFILTERS(FactHistoricalEstimate), FactHistoricalEstimate[estimator] = "paired_equal", FactHistoricalEstimate[window] = "primary_6m", FactHistoricalEstimate[group] = "All assigned pairs", FactHistoricalEstimate[metric] = "conversion_response_pp")
+
+[Historical Pilot Pairs] =
+12
+
+[Historical Pilot Scope] =
+"Saved £2 pilot: 12 pairs, Oct 2024–Mar 2025 vs Apr–Sep 2025. Independent of the displayed site/date filters."
+
+[Experiment Revenue Effect] =
+IF([Experiment Evidence Current] && HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]) && HASONEVALUE(DimCheckpoint[checkpoint_months]), CALCULATE(SELECTEDVALUE(FactExperimentEstimate[estimate]), FactExperimentEstimate[metric] = "revenue_effect"))
+
+[Experiment Revenue Effect lower] =
+IF([Experiment Evidence Current] && HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]) && HASONEVALUE(DimCheckpoint[checkpoint_months]), CALCULATE(SELECTEDVALUE(FactExperimentEstimate[lower]), FactExperimentEstimate[metric] = "revenue_effect"))
+
+[Experiment Revenue Effect upper] =
+IF([Experiment Evidence Current] && HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]) && HASONEVALUE(DimCheckpoint[checkpoint_months]), CALCULATE(SELECTEDVALUE(FactExperimentEstimate[upper]), FactExperimentEstimate[metric] = "revenue_effect"))
+
+[Experiment Revenue Difference] =
+IF([Experiment Evidence Current] && HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]) && HASONEVALUE(DimCheckpoint[checkpoint_months]), CALCULATE(SELECTEDVALUE(FactExperimentEstimate[estimate]), FactExperimentEstimate[metric] = "incremental_revenue"))
+
+[Experiment Revenue Difference lower] =
+IF([Experiment Evidence Current] && HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]) && HASONEVALUE(DimCheckpoint[checkpoint_months]), CALCULATE(SELECTEDVALUE(FactExperimentEstimate[lower]), FactExperimentEstimate[metric] = "incremental_revenue"))
+
+[Experiment Revenue Difference upper] =
+IF([Experiment Evidence Current] && HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]) && HASONEVALUE(DimCheckpoint[checkpoint_months]), CALCULATE(SELECTEDVALUE(FactExperimentEstimate[upper]), FactExperimentEstimate[metric] = "incremental_revenue"))
+
+[Experiment Member Harm] =
+IF([Experiment Evidence Current] && HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]) && HASONEVALUE(DimCheckpoint[checkpoint_months]), CALCULATE(SELECTEDVALUE(FactExperimentEstimate[estimate]), FactExperimentEstimate[metric] = "member_harm"))
+
+[Experiment Member Harm lower] =
+IF([Experiment Evidence Current] && HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]) && HASONEVALUE(DimCheckpoint[checkpoint_months]), CALCULATE(SELECTEDVALUE(FactExperimentEstimate[lower]), FactExperimentEstimate[metric] = "member_harm"))
+
+[Experiment Member Harm upper] =
+IF([Experiment Evidence Current] && HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]) && HASONEVALUE(DimCheckpoint[checkpoint_months]), CALCULATE(SELECTEDVALUE(FactExperimentEstimate[upper]), FactExperimentEstimate[metric] = "member_harm"))
+
+[Experiment Acquisition Harm] =
+IF([Experiment Evidence Current] && HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]) && HASONEVALUE(DimCheckpoint[checkpoint_months]), CALCULATE(SELECTEDVALUE(FactExperimentEstimate[estimate]), FactExperimentEstimate[metric] = "standard_acquisition_harm"))
+
+[Experiment Acquisition Harm lower] =
+IF([Experiment Evidence Current] && HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]) && HASONEVALUE(DimCheckpoint[checkpoint_months]), CALCULATE(SELECTEDVALUE(FactExperimentEstimate[lower]), FactExperimentEstimate[metric] = "standard_acquisition_harm"))
+
+[Experiment Acquisition Harm upper] =
+IF([Experiment Evidence Current] && HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]) && HASONEVALUE(DimCheckpoint[checkpoint_months]), CALCULATE(SELECTEDVALUE(FactExperimentEstimate[upper]), FactExperimentEstimate[metric] = "standard_acquisition_harm"))
+
+[Experiment Churn Harm] =
+IF([Experiment Evidence Current] && HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]) && HASONEVALUE(DimCheckpoint[checkpoint_months]), CALCULATE(SELECTEDVALUE(FactExperimentEstimate[estimate]), FactExperimentEstimate[metric] = "incumbent_churn_change_pp"))
+
+[Experiment Churn Harm lower] =
+IF([Experiment Evidence Current] && HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]) && HASONEVALUE(DimCheckpoint[checkpoint_months]), CALCULATE(SELECTEDVALUE(FactExperimentEstimate[lower]), FactExperimentEstimate[metric] = "incumbent_churn_change_pp"))
+
+[Experiment Churn Harm upper] =
+IF([Experiment Evidence Current] && HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]) && HASONEVALUE(DimCheckpoint[checkpoint_months]), CALCULATE(SELECTEDVALUE(FactExperimentEstimate[upper]), FactExperimentEstimate[metric] = "incumbent_churn_change_pp"))
+
+[Experiment Downgrade Harm] =
+IF([Experiment Evidence Current] && HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]) && HASONEVALUE(DimCheckpoint[checkpoint_months]), CALCULATE(SELECTEDVALUE(FactExperimentEstimate[estimate]), FactExperimentEstimate[metric] = "incumbent_downgrade_change_pp"))
+
+[Experiment Downgrade Harm lower] =
+IF([Experiment Evidence Current] && HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]) && HASONEVALUE(DimCheckpoint[checkpoint_months]), CALCULATE(SELECTEDVALUE(FactExperimentEstimate[lower]), FactExperimentEstimate[metric] = "incumbent_downgrade_change_pp"))
+
+[Experiment Downgrade Harm upper] =
+IF([Experiment Evidence Current] && HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]) && HASONEVALUE(DimCheckpoint[checkpoint_months]), CALCULATE(SELECTEDVALUE(FactExperimentEstimate[upper]), FactExperimentEstimate[metric] = "incumbent_downgrade_change_pp"))
+
+[Experiment Complaint Change] =
+IF([Experiment Evidence Current] && HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]) && HASONEVALUE(DimCheckpoint[checkpoint_months]), CALCULATE(SELECTEDVALUE(FactExperimentEstimate[estimate]), FactExperimentEstimate[metric] = "complaints_change"))
+
+[Experiment Complaint Change lower] =
+IF([Experiment Evidence Current] && HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]) && HASONEVALUE(DimCheckpoint[checkpoint_months]), CALCULATE(SELECTEDVALUE(FactExperimentEstimate[lower]), FactExperimentEstimate[metric] = "complaints_change"))
+
+[Experiment Complaint Change upper] =
+IF([Experiment Evidence Current] && HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]) && HASONEVALUE(DimCheckpoint[checkpoint_months]), CALCULATE(SELECTEDVALUE(FactExperimentEstimate[upper]), FactExperimentEstimate[metric] = "complaints_change"))
+
+[Experiment One-sided p] =
+IF([Experiment Evidence Current] && HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]) && HASONEVALUE(DimCheckpoint[checkpoint_months]), CALCULATE(SELECTEDVALUE(FactExperimentEstimate[p_value_one_sided]), FactExperimentEstimate[metric] = "revenue_effect"))
+
+[Experiment Two-sided p] =
+IF([Experiment Evidence Current] && HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]) && HASONEVALUE(DimCheckpoint[checkpoint_months]), CALCULATE(SELECTEDVALUE(FactExperimentEstimate[p_value_two_sided]), FactExperimentEstimate[metric] = "revenue_effect"))
+
+[Experiment Complete Pairs] =
+IF([Experiment Evidence Current] && HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]) && HASONEVALUE(DimCheckpoint[checkpoint_months]), CALCULATE(SELECTEDVALUE(FactExperimentEstimate[complete_pairs]), FactExperimentEstimate[metric] = "revenue_effect"))
+
+[Experiment Saved Decision] =
+IF([Experiment Evidence Current] && HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]) && HASONEVALUE(DimCheckpoint[checkpoint_months]), SELECTEDVALUE(FactExperimentGovernance[decision], "DESCRIPTIVE — no saved governance classification for this population"), "UNAVAILABLE — select current saved evidence")
+
+[Experiment Required Response] =
+SWITCH([Experiment Saved Decision], "EXTEND TEST", "Keep controls and collect further complete evidence. Early reviews cannot authorise rollout.", "STOP", "Stop the tested policy and investigate controlled harm.", "MODIFY", "Investigate service pressure or inconclusive harm; revise and retain controls.", "ROLL OUT", "Conditional £1 progression for comparable first-repricing sites only; retain controls.", "Authoritative conclusion unavailable.")
+
+[Experiment Interval Status] =
+IF([Experiment Evidence Current] && HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]) && HASONEVALUE(DimCheckpoint[checkpoint_months]), CALCULATE(SELECTEDVALUE(FactExperimentEstimate[interval_status]), FactExperimentEstimate[metric] = "revenue_effect"))
+
+[Experiment Window] =
+VAR Checkpoint = SELECTEDVALUE(DimCheckpoint[checkpoint_months],6) RETURN FORMAT(EDATE(DATE(2026,1,1),-Checkpoint), "mmm yyyy") & "–Dec 2025 vs Jan–" & FORMAT(DATE(2026, Checkpoint,1),"mmm") & " 2026. " & SELECTEDVALUE(DimSimulation[simulation],"select one simulation") & "; " & SELECTEDVALUE(DimPopulation[population],"select one population")
+
+[Experiment Path Revenue] =
+VAR Checkpoint = SELECTEDVALUE(DimCheckpoint[checkpoint_months],6) RETURN IF(HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]), CALCULATE(SUM(FactExperimentPath[monthly_revenue]), FILTER(ALL(DimGym), SWITCH(TRUE(), SELECTEDVALUE(DimPopulation[population]) = "All assigned pairs", DimGym[experiment_assignment] IN {"Treatment", "Control"}, SELECTEDVALUE(DimPopulation[population]) = "First repricing", DimGym[experiment_population] = "First repricing", SELECTEDVALUE(DimPopulation[population]) = "Repeat repricing", DimGym[experiment_population] = "Repeat repricing", LEFT(SELECTEDVALUE(DimPopulation[population]),7) = "Region:", DimGym[region] = TRIM(MID(SELECTEDVALUE(DimPopulation[population]),8,100)) && DimGym[experiment_assignment] IN {"Treatment", "Control"}, FALSE())), KEEPFILTERS(DimExperimentMonth[month_number] <= Checkpoint)))
+
+[Experiment Path Subscription] =
+VAR Checkpoint = SELECTEDVALUE(DimCheckpoint[checkpoint_months],6) RETURN IF(HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]), CALCULATE(SUM(FactExperimentPath[subscription_revenue]), FILTER(ALL(DimGym), SWITCH(TRUE(), SELECTEDVALUE(DimPopulation[population]) = "All assigned pairs", DimGym[experiment_assignment] IN {"Treatment", "Control"}, SELECTEDVALUE(DimPopulation[population]) = "First repricing", DimGym[experiment_population] = "First repricing", SELECTEDVALUE(DimPopulation[population]) = "Repeat repricing", DimGym[experiment_population] = "Repeat repricing", LEFT(SELECTEDVALUE(DimPopulation[population]),7) = "Region:", DimGym[region] = TRIM(MID(SELECTEDVALUE(DimPopulation[population]),8,100)) && DimGym[experiment_assignment] IN {"Treatment", "Control"}, FALSE())), KEEPFILTERS(DimExperimentMonth[month_number] <= Checkpoint)))
+
+[Experiment Path Joining Fees] =
+VAR Checkpoint = SELECTEDVALUE(DimCheckpoint[checkpoint_months],6) RETURN IF(HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]), CALCULATE(SUM(FactExperimentPath[joining_fee_revenue]), FILTER(ALL(DimGym), SWITCH(TRUE(), SELECTEDVALUE(DimPopulation[population]) = "All assigned pairs", DimGym[experiment_assignment] IN {"Treatment", "Control"}, SELECTEDVALUE(DimPopulation[population]) = "First repricing", DimGym[experiment_population] = "First repricing", SELECTEDVALUE(DimPopulation[population]) = "Repeat repricing", DimGym[experiment_population] = "Repeat repricing", LEFT(SELECTEDVALUE(DimPopulation[population]),7) = "Region:", DimGym[region] = TRIM(MID(SELECTEDVALUE(DimPopulation[population]),8,100)) && DimGym[experiment_assignment] IN {"Treatment", "Control"}, FALSE())), KEEPFILTERS(DimExperimentMonth[month_number] <= Checkpoint)))
+
+[Experiment Path Ancillary] =
+VAR Checkpoint = SELECTEDVALUE(DimCheckpoint[checkpoint_months],6) RETURN IF(HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]), CALCULATE(SUM(FactExperimentPath[ancillary_revenue]), FILTER(ALL(DimGym), SWITCH(TRUE(), SELECTEDVALUE(DimPopulation[population]) = "All assigned pairs", DimGym[experiment_assignment] IN {"Treatment", "Control"}, SELECTEDVALUE(DimPopulation[population]) = "First repricing", DimGym[experiment_population] = "First repricing", SELECTEDVALUE(DimPopulation[population]) = "Repeat repricing", DimGym[experiment_population] = "Repeat repricing", LEFT(SELECTEDVALUE(DimPopulation[population]),7) = "Region:", DimGym[region] = TRIM(MID(SELECTEDVALUE(DimPopulation[population]),8,100)) && DimGym[experiment_assignment] IN {"Treatment", "Control"}, FALSE())), KEEPFILTERS(DimExperimentMonth[month_number] <= Checkpoint)))
+
+[Experiment Path Average Exposure] =
+VAR Checkpoint = SELECTEDVALUE(DimCheckpoint[checkpoint_months],6) RETURN IF(HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]), CALCULATE(SUM(FactExperimentPath[average_members]), FILTER(ALL(DimGym), SWITCH(TRUE(), SELECTEDVALUE(DimPopulation[population]) = "All assigned pairs", DimGym[experiment_assignment] IN {"Treatment", "Control"}, SELECTEDVALUE(DimPopulation[population]) = "First repricing", DimGym[experiment_population] = "First repricing", SELECTEDVALUE(DimPopulation[population]) = "Repeat repricing", DimGym[experiment_population] = "Repeat repricing", LEFT(SELECTEDVALUE(DimPopulation[population]),7) = "Region:", DimGym[region] = TRIM(MID(SELECTEDVALUE(DimPopulation[population]),8,100)) && DimGym[experiment_assignment] IN {"Treatment", "Control"}, FALSE())), KEEPFILTERS(DimExperimentMonth[month_number] <= Checkpoint)))
+
+[Experiment Path Opening Exposure] =
+VAR Checkpoint = SELECTEDVALUE(DimCheckpoint[checkpoint_months],6) RETURN IF(HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]), CALCULATE(SUM(FactExperimentPath[opening_members]), FILTER(ALL(DimGym), SWITCH(TRUE(), SELECTEDVALUE(DimPopulation[population]) = "All assigned pairs", DimGym[experiment_assignment] IN {"Treatment", "Control"}, SELECTEDVALUE(DimPopulation[population]) = "First repricing", DimGym[experiment_population] = "First repricing", SELECTEDVALUE(DimPopulation[population]) = "Repeat repricing", DimGym[experiment_population] = "Repeat repricing", LEFT(SELECTEDVALUE(DimPopulation[population]),7) = "Region:", DimGym[region] = TRIM(MID(SELECTEDVALUE(DimPopulation[population]),8,100)) && DimGym[experiment_assignment] IN {"Treatment", "Control"}, FALSE())), KEEPFILTERS(DimExperimentMonth[month_number] <= Checkpoint)))
+
+[Experiment Path Joins] =
+VAR Checkpoint = SELECTEDVALUE(DimCheckpoint[checkpoint_months],6) RETURN IF(HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]), CALCULATE(SUM(FactExperimentPath[new_members]), FILTER(ALL(DimGym), SWITCH(TRUE(), SELECTEDVALUE(DimPopulation[population]) = "All assigned pairs", DimGym[experiment_assignment] IN {"Treatment", "Control"}, SELECTEDVALUE(DimPopulation[population]) = "First repricing", DimGym[experiment_population] = "First repricing", SELECTEDVALUE(DimPopulation[population]) = "Repeat repricing", DimGym[experiment_population] = "Repeat repricing", LEFT(SELECTEDVALUE(DimPopulation[population]),7) = "Region:", DimGym[region] = TRIM(MID(SELECTEDVALUE(DimPopulation[population]),8,100)) && DimGym[experiment_assignment] IN {"Treatment", "Control"}, FALSE())), KEEPFILTERS(DimExperimentMonth[month_number] <= Checkpoint)))
+
+[Experiment Path Standard Joins] =
+VAR Checkpoint = SELECTEDVALUE(DimCheckpoint[checkpoint_months],6) RETURN IF(HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]), CALCULATE(SUM(FactExperimentPath[standard_joins]), FILTER(ALL(DimGym), SWITCH(TRUE(), SELECTEDVALUE(DimPopulation[population]) = "All assigned pairs", DimGym[experiment_assignment] IN {"Treatment", "Control"}, SELECTEDVALUE(DimPopulation[population]) = "First repricing", DimGym[experiment_population] = "First repricing", SELECTEDVALUE(DimPopulation[population]) = "Repeat repricing", DimGym[experiment_population] = "Repeat repricing", LEFT(SELECTEDVALUE(DimPopulation[population]),7) = "Region:", DimGym[region] = TRIM(MID(SELECTEDVALUE(DimPopulation[population]),8,100)) && DimGym[experiment_assignment] IN {"Treatment", "Control"}, FALSE())), KEEPFILTERS(DimExperimentMonth[month_number] <= Checkpoint)))
+
+[Experiment Path Prospects] =
+VAR Checkpoint = SELECTEDVALUE(DimCheckpoint[checkpoint_months],6) RETURN IF(HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]), CALCULATE(SUM(FactExperimentPath[qualified_prospects]), FILTER(ALL(DimGym), SWITCH(TRUE(), SELECTEDVALUE(DimPopulation[population]) = "All assigned pairs", DimGym[experiment_assignment] IN {"Treatment", "Control"}, SELECTEDVALUE(DimPopulation[population]) = "First repricing", DimGym[experiment_population] = "First repricing", SELECTEDVALUE(DimPopulation[population]) = "Repeat repricing", DimGym[experiment_population] = "Repeat repricing", LEFT(SELECTEDVALUE(DimPopulation[population]),7) = "Region:", DimGym[region] = TRIM(MID(SELECTEDVALUE(DimPopulation[population]),8,100)) && DimGym[experiment_assignment] IN {"Treatment", "Control"}, FALSE())), KEEPFILTERS(DimExperimentMonth[month_number] <= Checkpoint)))
+
+[Experiment Path Incumbent Exposure] =
+VAR Checkpoint = SELECTEDVALUE(DimCheckpoint[checkpoint_months],6) RETURN IF(HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]), CALCULATE(SUM(FactExperimentPath[incumbent_standard_opening]), FILTER(ALL(DimGym), SWITCH(TRUE(), SELECTEDVALUE(DimPopulation[population]) = "All assigned pairs", DimGym[experiment_assignment] IN {"Treatment", "Control"}, SELECTEDVALUE(DimPopulation[population]) = "First repricing", DimGym[experiment_population] = "First repricing", SELECTEDVALUE(DimPopulation[population]) = "Repeat repricing", DimGym[experiment_population] = "Repeat repricing", LEFT(SELECTEDVALUE(DimPopulation[population]),7) = "Region:", DimGym[region] = TRIM(MID(SELECTEDVALUE(DimPopulation[population]),8,100)) && DimGym[experiment_assignment] IN {"Treatment", "Control"}, FALSE())), KEEPFILTERS(DimExperimentMonth[month_number] <= Checkpoint)))
+
+[Experiment Path Incumbent Exits] =
+VAR Checkpoint = SELECTEDVALUE(DimCheckpoint[checkpoint_months],6) RETURN IF(HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]), CALCULATE(SUM(FactExperimentPath[incumbent_standard_cancellations]), FILTER(ALL(DimGym), SWITCH(TRUE(), SELECTEDVALUE(DimPopulation[population]) = "All assigned pairs", DimGym[experiment_assignment] IN {"Treatment", "Control"}, SELECTEDVALUE(DimPopulation[population]) = "First repricing", DimGym[experiment_population] = "First repricing", SELECTEDVALUE(DimPopulation[population]) = "Repeat repricing", DimGym[experiment_population] = "Repeat repricing", LEFT(SELECTEDVALUE(DimPopulation[population]),7) = "Region:", DimGym[region] = TRIM(MID(SELECTEDVALUE(DimPopulation[population]),8,100)) && DimGym[experiment_assignment] IN {"Treatment", "Control"}, FALSE())), KEEPFILTERS(DimExperimentMonth[month_number] <= Checkpoint)))
+
+[Experiment Path Downgrades] =
+VAR Checkpoint = SELECTEDVALUE(DimCheckpoint[checkpoint_months],6) RETURN IF(HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]), CALCULATE(SUM(FactExperimentPath[incumbent_standard_downgrades]), FILTER(ALL(DimGym), SWITCH(TRUE(), SELECTEDVALUE(DimPopulation[population]) = "All assigned pairs", DimGym[experiment_assignment] IN {"Treatment", "Control"}, SELECTEDVALUE(DimPopulation[population]) = "First repricing", DimGym[experiment_population] = "First repricing", SELECTEDVALUE(DimPopulation[population]) = "Repeat repricing", DimGym[experiment_population] = "Repeat repricing", LEFT(SELECTEDVALUE(DimPopulation[population]),7) = "Region:", DimGym[region] = TRIM(MID(SELECTEDVALUE(DimPopulation[population]),8,100)) && DimGym[experiment_assignment] IN {"Treatment", "Control"}, FALSE())), KEEPFILTERS(DimExperimentMonth[month_number] <= Checkpoint)))
+
+[Experiment Path Complaints] =
+VAR Checkpoint = SELECTEDVALUE(DimCheckpoint[checkpoint_months],6) RETURN IF(HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]), CALCULATE(SUM(FactExperimentPath[pricing_complaints]), FILTER(ALL(DimGym), SWITCH(TRUE(), SELECTEDVALUE(DimPopulation[population]) = "All assigned pairs", DimGym[experiment_assignment] IN {"Treatment", "Control"}, SELECTEDVALUE(DimPopulation[population]) = "First repricing", DimGym[experiment_population] = "First repricing", SELECTEDVALUE(DimPopulation[population]) = "Repeat repricing", DimGym[experiment_population] = "Repeat repricing", LEFT(SELECTEDVALUE(DimPopulation[population]),7) = "Region:", DimGym[region] = TRIM(MID(SELECTEDVALUE(DimPopulation[population]),8,100)) && DimGym[experiment_assignment] IN {"Treatment", "Control"}, FALSE())), KEEPFILTERS(DimExperimentMonth[month_number] <= Checkpoint)))
+
+[Experiment Path Standard Exposure] =
+VAR Checkpoint = SELECTEDVALUE(DimCheckpoint[checkpoint_months],6) RETURN IF(HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]), CALCULATE(SUM(FactExperimentPath[standard_average_members]), FILTER(ALL(DimGym), SWITCH(TRUE(), SELECTEDVALUE(DimPopulation[population]) = "All assigned pairs", DimGym[experiment_assignment] IN {"Treatment", "Control"}, SELECTEDVALUE(DimPopulation[population]) = "First repricing", DimGym[experiment_population] = "First repricing", SELECTEDVALUE(DimPopulation[population]) = "Repeat repricing", DimGym[experiment_population] = "Repeat repricing", LEFT(SELECTEDVALUE(DimPopulation[population]),7) = "Region:", DimGym[region] = TRIM(MID(SELECTEDVALUE(DimPopulation[population]),8,100)) && DimGym[experiment_assignment] IN {"Treatment", "Control"}, FALSE())), KEEPFILTERS(DimExperimentMonth[month_number] <= Checkpoint)))
+
+[Experiment Path Standard Revenue] =
+VAR Checkpoint = SELECTEDVALUE(DimCheckpoint[checkpoint_months],6) RETURN IF(HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]), CALCULATE(SUM(FactExperimentPath[standard_subscription_revenue]), FILTER(ALL(DimGym), SWITCH(TRUE(), SELECTEDVALUE(DimPopulation[population]) = "All assigned pairs", DimGym[experiment_assignment] IN {"Treatment", "Control"}, SELECTEDVALUE(DimPopulation[population]) = "First repricing", DimGym[experiment_population] = "First repricing", SELECTEDVALUE(DimPopulation[population]) = "Repeat repricing", DimGym[experiment_population] = "Repeat repricing", LEFT(SELECTEDVALUE(DimPopulation[population]),7) = "Region:", DimGym[region] = TRIM(MID(SELECTEDVALUE(DimPopulation[population]),8,100)) && DimGym[experiment_assignment] IN {"Treatment", "Control"}, FALSE())), KEEPFILTERS(DimExperimentMonth[month_number] <= Checkpoint)))
+
+[Experiment Path Paid Rate Numerator] =
+VAR Checkpoint = SELECTEDVALUE(DimCheckpoint[checkpoint_months],6) RETURN IF(HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]), CALCULATE(SUM(FactExperimentPath[incumbent_paid_rate_numerator]), FILTER(ALL(DimGym), SWITCH(TRUE(), SELECTEDVALUE(DimPopulation[population]) = "All assigned pairs", DimGym[experiment_assignment] IN {"Treatment", "Control"}, SELECTEDVALUE(DimPopulation[population]) = "First repricing", DimGym[experiment_population] = "First repricing", SELECTEDVALUE(DimPopulation[population]) = "Repeat repricing", DimGym[experiment_population] = "Repeat repricing", LEFT(SELECTEDVALUE(DimPopulation[population]),7) = "Region:", DimGym[region] = TRIM(MID(SELECTEDVALUE(DimPopulation[population]),8,100)) && DimGym[experiment_assignment] IN {"Treatment", "Control"}, FALSE())), KEEPFILTERS(DimExperimentMonth[month_number] <= Checkpoint)))
+
+[Experiment Path Protected Exposure] =
+VAR Checkpoint = SELECTEDVALUE(DimCheckpoint[checkpoint_months],6) RETURN IF(HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]), CALCULATE(SUM(FactExperimentPath[incumbent_protected_opening]), FILTER(ALL(DimGym), SWITCH(TRUE(), SELECTEDVALUE(DimPopulation[population]) = "All assigned pairs", DimGym[experiment_assignment] IN {"Treatment", "Control"}, SELECTEDVALUE(DimPopulation[population]) = "First repricing", DimGym[experiment_population] = "First repricing", SELECTEDVALUE(DimPopulation[population]) = "Repeat repricing", DimGym[experiment_population] = "Repeat repricing", LEFT(SELECTEDVALUE(DimPopulation[population]),7) = "Region:", DimGym[region] = TRIM(MID(SELECTEDVALUE(DimPopulation[population]),8,100)) && DimGym[experiment_assignment] IN {"Treatment", "Control"}, FALSE())), KEEPFILTERS(DimExperimentMonth[month_number] <= Checkpoint)))
+
+[Experiment Path Repriced Exposure] =
+VAR Checkpoint = SELECTEDVALUE(DimCheckpoint[checkpoint_months],6) RETURN IF(HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]), CALCULATE(SUM(FactExperimentPath[incumbent_repriced_opening]), FILTER(ALL(DimGym), SWITCH(TRUE(), SELECTEDVALUE(DimPopulation[population]) = "All assigned pairs", DimGym[experiment_assignment] IN {"Treatment", "Control"}, SELECTEDVALUE(DimPopulation[population]) = "First repricing", DimGym[experiment_population] = "First repricing", SELECTEDVALUE(DimPopulation[population]) = "Repeat repricing", DimGym[experiment_population] = "Repeat repricing", LEFT(SELECTEDVALUE(DimPopulation[population]),7) = "Region:", DimGym[region] = TRIM(MID(SELECTEDVALUE(DimPopulation[population]),8,100)) && DimGym[experiment_assignment] IN {"Treatment", "Control"}, FALSE())), KEEPFILTERS(DimExperimentMonth[month_number] <= Checkpoint)))
+
+[Experiment Path Conversion] =
+DIVIDE([Experiment Path Joins], [Experiment Path Prospects]) * 1
+
+[Experiment Path Churn] =
+DIVIDE([Experiment Path Incumbent Exits], [Experiment Path Incumbent Exposure]) * 1
+
+[Experiment Path Downgrade Rate] =
+DIVIDE([Experiment Path Downgrades], [Experiment Path Incumbent Exposure]) * 1
+
+[Experiment Path ARPMM] =
+DIVIDE([Experiment Path Revenue], [Experiment Path Average Exposure]) * 1
+
+[Experiment Path Subscription Yield] =
+DIVIDE([Experiment Path Subscription], [Experiment Path Average Exposure]) * 1
+
+[Experiment Path Standard Yield] =
+DIVIDE([Experiment Path Standard Revenue], [Experiment Path Standard Exposure]) * 1
+
+[Experiment Path Complaints per 1000] =
+DIVIDE([Experiment Path Complaints], [Experiment Path Average Exposure]) * 1000
+
+[Experiment Path Paid Rate] =
+DIVIDE([Experiment Path Paid Rate Numerator], [Experiment Path Incumbent Exposure]) * 1
+
+[Experiment Path Protected Share] =
+DIVIDE([Experiment Path Protected Exposure], [Experiment Path Incumbent Exposure]) * 1
+
+[Experiment Path Repriced Share] =
+DIVIDE([Experiment Path Repriced Exposure], [Experiment Path Incumbent Exposure]) * 1
+
+[Experiment Path Closing] =
+VAR Checkpoint = SELECTEDVALUE(DimCheckpoint[checkpoint_months],6) VAR LastMonth = CALCULATE(MAX(FactExperimentPath[month]), KEEPFILTERS(DimExperimentMonth[month_number] <= Checkpoint)) RETURN IF(HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]), CALCULATE(SUM(FactExperimentPath[closing_members]), FactExperimentPath[month] = LastMonth, FILTER(ALL(DimGym), SWITCH(TRUE(), SELECTEDVALUE(DimPopulation[population]) = "All assigned pairs", DimGym[experiment_assignment] IN {"Treatment", "Control"}, SELECTEDVALUE(DimPopulation[population]) = "First repricing", DimGym[experiment_population] = "First repricing", SELECTEDVALUE(DimPopulation[population]) = "Repeat repricing", DimGym[experiment_population] = "Repeat repricing", LEFT(SELECTEDVALUE(DimPopulation[population]),7) = "Region:", DimGym[region] = TRIM(MID(SELECTEDVALUE(DimPopulation[population]),8,100)) && DimGym[experiment_assignment] IN {"Treatment", "Control"}, FALSE())), KEEPFILTERS(DimExperimentMonth[month_number] <= Checkpoint)))
+
+[Experiment Monitoring In Population] =
+VAR Population = SELECTEDVALUE(DimPopulation[population]) VAR RowPopulation = SELECTEDVALUE(FactExperimentMonitoring[population]) RETURN IF(Population = "All assigned pairs" || Population = RowPopulation, 1, IF(LEFT(Population,7) = "Region:", IF(LOOKUPVALUE(DimGym[region], DimGym[gym_id], SELECTEDVALUE(FactExperimentMonitoring[gym_id])) = TRIM(MID(Population,8,100)), 1, 0), 0))
+
+[Experiment Pair In Population] =
+VAR Population = SELECTEDVALUE(DimPopulation[population]) VAR RowPopulation = SELECTEDVALUE(FactExperimentPair[population]) RETURN IF(Population = "All assigned pairs" || Population = RowPopulation, 1, IF(LEFT(Population,7) = "Region:", IF(SELECTEDVALUE(FactExperimentPair[region]) = TRIM(MID(Population,8,100)), 1, 0), 0))
+
+[Recommended Standard Price] =
+IF([Forward Evidence Current], SELECTEDVALUE(FactRecommendation[proposed_standard_price]))
+
+[Provisional Test Price] =
+IF([Forward Evidence Current], SELECTEDVALUE(FactRecommendation[provisional_test_price]))
+
+[Gyms In Selection] =
+COUNTROWS(VALUES(DimGym[gym_id]))
+
+[Median Standard Price] =
+MEDIAN(DimGym[current_standard_price])
+
+[Average Competitor Gap] =
+AVERAGE(DimGym[competitor_price_gap])
+
+[Caution Sites] =
+COALESCE(COUNTROWS(FILTER(DimGym, DimGym[caution_flag_count] > 0)), 0)
+
+[Headroom Churn 2025] =
+SELECTEDVALUE(FactHeadroom[churn_rate_2025])
+
+[Headroom Peak 2025] =
+SELECTEDVALUE(FactHeadroom[average_monthly_peak_2025])
+
+[Guardrail Point] =
+IF([Experiment Evidence Current] && HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]) && HASONEVALUE(DimCheckpoint[checkpoint_months]), SELECTEDVALUE(FactExperimentGuardrail[estimate]))
+
+[Guardrail Point Display] =
+VAR DisplayAmount = [Guardrail Point] RETURN IF(NOT ISBLANK(DisplayAmount), IF(CONTAINSSTRING(SELECTEDVALUE(FactExperimentGuardrail[metric]), "_pp"), FORMAT(DisplayAmount,"0.00") & " pp", FORMAT(DisplayAmount,"0.00%")), "Unavailable")
+
+[Guardrail Lower] =
+IF([Experiment Evidence Current] && HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]) && HASONEVALUE(DimCheckpoint[checkpoint_months]), SELECTEDVALUE(FactExperimentGuardrail[lower]))
+
+[Guardrail Lower Display] =
+VAR DisplayAmount = [Guardrail Lower] RETURN IF(NOT ISBLANK(DisplayAmount), IF(CONTAINSSTRING(SELECTEDVALUE(FactExperimentGuardrail[metric]), "_pp"), FORMAT(DisplayAmount,"0.00") & " pp", FORMAT(DisplayAmount,"0.00%")), "Unavailable")
+
+[Guardrail Upper] =
+IF([Experiment Evidence Current] && HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]) && HASONEVALUE(DimCheckpoint[checkpoint_months]), SELECTEDVALUE(FactExperimentGuardrail[upper]))
+
+[Guardrail Upper Display] =
+VAR DisplayAmount = [Guardrail Upper] RETURN IF(NOT ISBLANK(DisplayAmount), IF(CONTAINSSTRING(SELECTEDVALUE(FactExperimentGuardrail[metric]), "_pp"), FORMAT(DisplayAmount,"0.00") & " pp", FORMAT(DisplayAmount,"0.00%")), "Unavailable")
+
+[Guardrail Tolerance] =
+IF([Experiment Evidence Current] && HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]) && HASONEVALUE(DimCheckpoint[checkpoint_months]), SELECTEDVALUE(FactExperimentGuardrail[tolerance]))
+
+[Guardrail Tolerance Display] =
+VAR DisplayAmount = [Guardrail Tolerance] RETURN IF(NOT ISBLANK(DisplayAmount), IF(CONTAINSSTRING(SELECTEDVALUE(FactExperimentGuardrail[metric]), "_pp"), FORMAT(DisplayAmount,"0.00") & " pp", FORMAT(DisplayAmount,"0.00%")), "Unavailable")
+
+[Guardrail Upper Pass] =
+IF([Experiment Evidence Current] && HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]) && HASONEVALUE(DimCheckpoint[checkpoint_months]), IF(ISBLANK([Guardrail Upper]), "Uncertainty unavailable", IF([Guardrail Upper] <= [Guardrail Tolerance], "PASS", "Upper bound exceeds limit")))
+
+[Experiment Pair Revenue Effect] =
+VAR LogEffect = SELECTEDVALUE(FactExperimentPair[revenue_log]) RETURN IF([Experiment Evidence Current] && HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimCheckpoint[checkpoint_months]) && NOT ISBLANK(LogEffect), EXP(LogEffect) - 1)
+
+[Metric Panel Saved Value] =
+SWITCH(SELECTEDVALUE(DimMetricPanel[metric]), "Conditional Raise Sites", IF(ISBLANK([Conditional Raise Sites]), "Unavailable", FORMAT([Conditional Raise Sites], "#,##0")), "Portfolio Increment", IF(ISBLANK([Portfolio Increment]), "Unavailable", FORMAT([Portfolio Increment], "£#,##0;−£#,##0;£0")), "Portfolio Member Difference", IF(ISBLANK([Portfolio Member Difference]), "Unavailable", FORMAT([Portfolio Member Difference], "#,##0")), "Portfolio Increment lower", IF(ISBLANK([Portfolio Increment lower]), "Unavailable", FORMAT([Portfolio Increment lower], "£#,##0;−£#,##0;£0")), "Portfolio Increment upper", IF(ISBLANK([Portfolio Increment upper]), "Unavailable", FORMAT([Portfolio Increment upper], "£#,##0;−£#,##0;£0")), "Historical Standard Acquisition Effect", IF(ISBLANK([Historical Standard Acquisition Effect]), "Unavailable", FORMAT([Historical Standard Acquisition Effect], "0.00%;−0.00%;0.00%")), "Historical Standard Acquisition Effect lower", IF(ISBLANK([Historical Standard Acquisition Effect lower]), "Unavailable", FORMAT([Historical Standard Acquisition Effect lower], "0.00%;−0.00%;0.00%")), "Historical Standard Acquisition Effect upper", IF(ISBLANK([Historical Standard Acquisition Effect upper]), "Unavailable", FORMAT([Historical Standard Acquisition Effect upper], "0.00%;−0.00%;0.00%")), "Historical Acquisition Elasticity", IF(ISBLANK([Historical Acquisition Elasticity]), "Unavailable", FORMAT([Historical Acquisition Elasticity], "0.00")), "Historical Incumbent Churn Effect", IF(ISBLANK([Historical Incumbent Churn Effect]), "Unavailable", FORMAT([Historical Incumbent Churn Effect], "0.00"" pp""")), "Historical Incumbent Churn Effect lower", IF(ISBLANK([Historical Incumbent Churn Effect lower]), "Unavailable", FORMAT([Historical Incumbent Churn Effect lower], "0.00"" pp""")), "Historical Incumbent Churn Effect upper", IF(ISBLANK([Historical Incumbent Churn Effect upper]), "Unavailable", FORMAT([Historical Incumbent Churn Effect upper], "0.00"" pp""")), "Historical Downgrade Effect", IF(ISBLANK([Historical Downgrade Effect]), "Unavailable", FORMAT([Historical Downgrade Effect], "0.00"" pp""")), "Historical Downgrade Effect lower", IF(ISBLANK([Historical Downgrade Effect lower]), "Unavailable", FORMAT([Historical Downgrade Effect lower], "0.00"" pp""")), "Historical Downgrade Effect upper", IF(ISBLANK([Historical Downgrade Effect upper]), "Unavailable", FORMAT([Historical Downgrade Effect upper], "0.00"" pp""")), "Q4 Net Revenue Growth", IF(ISBLANK([Q4 Net Revenue Growth]), "Unavailable", FORMAT([Q4 Net Revenue Growth], "0.00%;−0.00%;0.00%")), "Q4 Acquisitions Growth", IF(ISBLANK([Q4 Acquisitions Growth]), "Unavailable", FORMAT([Q4 Acquisitions Growth], "0.00%;−0.00%;0.00%")), "Q4 Opening-base Churn Change pp", IF(ISBLANK([Q4 Opening-base Churn Change pp]), "Unavailable", FORMAT([Q4 Opening-base Churn Change pp], "0.00"" pp""")), "Q4 Qualified Conversion Change pp", IF(ISBLANK([Q4 Qualified Conversion Change pp]), "Unavailable", FORMAT([Q4 Qualified Conversion Change pp], "0.00"" pp""")), "Standard Mix", IF(ISBLANK([Standard Mix]), "Unavailable", FORMAT([Standard Mix], "0.00%;−0.00%;0.00%")), "Off-Peak Mix", IF(ISBLANK([Off-Peak Mix]), "Unavailable", FORMAT([Off-Peak Mix], "0.00%;−0.00%;0.00%")), "Plus Mix", IF(ISBLANK([Plus Mix]), "Unavailable", FORMAT([Plus Mix], "0.00%;−0.00%;0.00%")), "Marketing Spend", IF(ISBLANK([Marketing Spend]), "Unavailable", FORMAT([Marketing Spend], "£#,##0;−£#,##0;£0")), "Standard Headline December", IF(ISBLANK([Standard Headline December]), "Unavailable", FORMAT([Standard Headline December], "£0.00")), "Competitor Recurring December", IF(ISBLANK([Competitor Recurring December]), "Unavailable", FORMAT([Competitor Recurring December], "£0.00")), "Competitor Gap December", IF(ISBLANK([Competitor Gap December]), "Unavailable", FORMAT([Competitor Gap December], "£0.00")), "Headroom Band", IF(ISBLANK([Headroom Band]), "Unavailable", [Headroom Band] & ""), "Saved Estate Rank", IF(ISBLANK([Saved Estate Rank]), "Unavailable", FORMAT([Saved Estate Rank], "#,##0")), "Caution Count", IF(ISBLANK([Caution Count]), "Unavailable", FORMAT([Caution Count], "#,##0")), "Rank Movement Sensitivity", IF(ISBLANK([Rank Movement Sensitivity]), "Unavailable", FORMAT([Rank Movement Sensitivity], "#,##0")), "£1 plausible", IF(ISBLANK([£1 plausible]), "Unavailable", IF([£1 plausible], "Yes", "No")), "£1 qualified", IF(ISBLANK([£1 qualified]), "Unavailable", IF([£1 qualified], "Yes", "No")), "£1 base revenue", IF(ISBLANK([£1 base revenue]), "Unavailable", FORMAT([£1 base revenue], "£#,##0;−£#,##0;£0")), "£1 downside revenue", IF(ISBLANK([£1 downside revenue]), "Unavailable", FORMAT([£1 downside revenue], "£#,##0;−£#,##0;£0")), "£1 downside member impact", IF(ISBLANK([£1 downside member impact]), "Unavailable", FORMAT([£1 downside member impact], "0.00%;−0.00%;0.00%")), "£1 revenue lower", IF(ISBLANK([£1 revenue lower]), "Unavailable", FORMAT([£1 revenue lower], "£#,##0;−£#,##0;£0")), "£1 failed gates", IF(ISBLANK([£1 failed gates]), "Unavailable", [£1 failed gates] & ""), "£2 plausible", IF(ISBLANK([£2 plausible]), "Unavailable", IF([£2 plausible], "Yes", "No")), "£2 qualified", IF(ISBLANK([£2 qualified]), "Unavailable", IF([£2 qualified], "Yes", "No")), "£2 base revenue", IF(ISBLANK([£2 base revenue]), "Unavailable", FORMAT([£2 base revenue], "£#,##0;−£#,##0;£0")), "£2 downside revenue", IF(ISBLANK([£2 downside revenue]), "Unavailable", FORMAT([£2 downside revenue], "£#,##0;−£#,##0;£0")), "£2 downside member impact", IF(ISBLANK([£2 downside member impact]), "Unavailable", FORMAT([£2 downside member impact], "0.00%;−0.00%;0.00%")), "£2 revenue lower", IF(ISBLANK([£2 revenue lower]), "Unavailable", FORMAT([£2 revenue lower], "£#,##0;−£#,##0;£0")), "£2 failed gates", IF(ISBLANK([£2 failed gates]), "Unavailable", [£2 failed gates] & ""), "Unavailable")
+
+[Base Portfolio Increment] =
+CALCULATE([Portfolio Increment], REMOVEFILTERS(DimPolicy), DimPolicy[variant] = "base")
+
+[Base Portfolio Member Difference] =
+CALCULATE([Portfolio Member Difference], REMOVEFILTERS(DimPolicy), DimPolicy[variant] = "base")
+
+[Base Portfolio Increment lower] =
+CALCULATE([Portfolio Increment lower], REMOVEFILTERS(DimPolicy), DimPolicy[variant] = "base")
+
+[Saved Policy Raise £1 Sites] =
+IF([Forward Evidence Current] && HASONEVALUE(DimPolicy[variant]), COALESCE(CALCULATE(COUNTROWS(FactPolicyRecommendation), FactPolicyRecommendation[action] = "RAISE £1"), 0))
+
+[Saved Policy Raise £2 Sites] =
+IF([Forward Evidence Current] && HASONEVALUE(DimPolicy[variant]), COALESCE(CALCULATE(COUNTROWS(FactPolicyRecommendation), FactPolicyRecommendation[action] = "RAISE £2"), 0))
+
+[Saved Policy Test Sites] =
+IF([Forward Evidence Current] && HASONEVALUE(DimPolicy[variant]), COALESCE(CALCULATE(COUNTROWS(FactPolicyRecommendation), FactPolicyRecommendation[action] = "TEST FIRST"), 0))
+
+[Historical Reporting Note] =
+"Historical window: " & [Historical Window] & ". Prior year uses the same months; incomplete comparisons are unavailable. Pricing snapshots are December 2025; conditional portfolio is Jan–Dec 2026."
+
+[Experiment Profile Revenue] =
+VAR Checkpoint = SELECTEDVALUE(DimCheckpoint[checkpoint_months],6) VAR Month = SELECTEDVALUE(DimExperimentMonth[month]) VAR PreStart = EDATE(DATE(2026,1,1),-Checkpoint) RETURN IF([Experiment Evidence Current] && HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]) && NOT ISBLANK(Month), IF(Month >= PreStart && Month < DATE(2026,1,1), CALCULATE(SUM(FactExperimentHistory[monthly_revenue]), FILTER(ALL(DimGym), SWITCH(TRUE(), SELECTEDVALUE(DimPopulation[population]) = "All assigned pairs", DimGym[experiment_assignment] IN {"Treatment", "Control"}, SELECTEDVALUE(DimPopulation[population]) = "First repricing", DimGym[experiment_population] = "First repricing", SELECTEDVALUE(DimPopulation[population]) = "Repeat repricing", DimGym[experiment_population] = "Repeat repricing", LEFT(SELECTEDVALUE(DimPopulation[population]),7) = "Region:", DimGym[region] = TRIM(MID(SELECTEDVALUE(DimPopulation[population]),8,100)) && DimGym[experiment_assignment] IN {"Treatment", "Control"}, FALSE()))), IF(Month >= DATE(2026,1,1) && Month <= DATE(2026,Checkpoint,1), CALCULATE(SUM(FactExperimentPath[monthly_revenue]), FILTER(ALL(DimGym), SWITCH(TRUE(), SELECTEDVALUE(DimPopulation[population]) = "All assigned pairs", DimGym[experiment_assignment] IN {"Treatment", "Control"}, SELECTEDVALUE(DimPopulation[population]) = "First repricing", DimGym[experiment_population] = "First repricing", SELECTEDVALUE(DimPopulation[population]) = "Repeat repricing", DimGym[experiment_population] = "Repeat repricing", LEFT(SELECTEDVALUE(DimPopulation[population]),7) = "Region:", DimGym[region] = TRIM(MID(SELECTEDVALUE(DimPopulation[population]),8,100)) && DimGym[experiment_assignment] IN {"Treatment", "Control"}, FALSE()))))))
+
+[Experiment Profile Incumbent Exposure] =
+VAR Checkpoint = SELECTEDVALUE(DimCheckpoint[checkpoint_months],6) VAR Month = SELECTEDVALUE(DimExperimentMonth[month]) VAR PreStart = EDATE(DATE(2026,1,1),-Checkpoint) RETURN IF([Experiment Evidence Current] && HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]) && NOT ISBLANK(Month), IF(Month >= PreStart && Month < DATE(2026,1,1), CALCULATE(SUM(FactExperimentHistory[incumbent_standard_opening]), FILTER(ALL(DimGym), SWITCH(TRUE(), SELECTEDVALUE(DimPopulation[population]) = "All assigned pairs", DimGym[experiment_assignment] IN {"Treatment", "Control"}, SELECTEDVALUE(DimPopulation[population]) = "First repricing", DimGym[experiment_population] = "First repricing", SELECTEDVALUE(DimPopulation[population]) = "Repeat repricing", DimGym[experiment_population] = "Repeat repricing", LEFT(SELECTEDVALUE(DimPopulation[population]),7) = "Region:", DimGym[region] = TRIM(MID(SELECTEDVALUE(DimPopulation[population]),8,100)) && DimGym[experiment_assignment] IN {"Treatment", "Control"}, FALSE()))), IF(Month >= DATE(2026,1,1) && Month <= DATE(2026,Checkpoint,1), CALCULATE(SUM(FactExperimentPath[incumbent_standard_opening]), FILTER(ALL(DimGym), SWITCH(TRUE(), SELECTEDVALUE(DimPopulation[population]) = "All assigned pairs", DimGym[experiment_assignment] IN {"Treatment", "Control"}, SELECTEDVALUE(DimPopulation[population]) = "First repricing", DimGym[experiment_population] = "First repricing", SELECTEDVALUE(DimPopulation[population]) = "Repeat repricing", DimGym[experiment_population] = "Repeat repricing", LEFT(SELECTEDVALUE(DimPopulation[population]),7) = "Region:", DimGym[region] = TRIM(MID(SELECTEDVALUE(DimPopulation[population]),8,100)) && DimGym[experiment_assignment] IN {"Treatment", "Control"}, FALSE()))))))
+
+[Experiment Profile Incumbent Exits] =
+VAR Checkpoint = SELECTEDVALUE(DimCheckpoint[checkpoint_months],6) VAR Month = SELECTEDVALUE(DimExperimentMonth[month]) VAR PreStart = EDATE(DATE(2026,1,1),-Checkpoint) RETURN IF([Experiment Evidence Current] && HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]) && NOT ISBLANK(Month), IF(Month >= PreStart && Month < DATE(2026,1,1), CALCULATE(SUM(FactExperimentHistory[incumbent_standard_cancellations]), FILTER(ALL(DimGym), SWITCH(TRUE(), SELECTEDVALUE(DimPopulation[population]) = "All assigned pairs", DimGym[experiment_assignment] IN {"Treatment", "Control"}, SELECTEDVALUE(DimPopulation[population]) = "First repricing", DimGym[experiment_population] = "First repricing", SELECTEDVALUE(DimPopulation[population]) = "Repeat repricing", DimGym[experiment_population] = "Repeat repricing", LEFT(SELECTEDVALUE(DimPopulation[population]),7) = "Region:", DimGym[region] = TRIM(MID(SELECTEDVALUE(DimPopulation[population]),8,100)) && DimGym[experiment_assignment] IN {"Treatment", "Control"}, FALSE()))), IF(Month >= DATE(2026,1,1) && Month <= DATE(2026,Checkpoint,1), CALCULATE(SUM(FactExperimentPath[incumbent_standard_cancellations]), FILTER(ALL(DimGym), SWITCH(TRUE(), SELECTEDVALUE(DimPopulation[population]) = "All assigned pairs", DimGym[experiment_assignment] IN {"Treatment", "Control"}, SELECTEDVALUE(DimPopulation[population]) = "First repricing", DimGym[experiment_population] = "First repricing", SELECTEDVALUE(DimPopulation[population]) = "Repeat repricing", DimGym[experiment_population] = "Repeat repricing", LEFT(SELECTEDVALUE(DimPopulation[population]),7) = "Region:", DimGym[region] = TRIM(MID(SELECTEDVALUE(DimPopulation[population]),8,100)) && DimGym[experiment_assignment] IN {"Treatment", "Control"}, FALSE()))))))
+
+[Experiment Profile Downgrades] =
+VAR Checkpoint = SELECTEDVALUE(DimCheckpoint[checkpoint_months],6) VAR Month = SELECTEDVALUE(DimExperimentMonth[month]) VAR PreStart = EDATE(DATE(2026,1,1),-Checkpoint) RETURN IF([Experiment Evidence Current] && HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]) && NOT ISBLANK(Month), IF(Month >= PreStart && Month < DATE(2026,1,1), CALCULATE(SUM(FactExperimentHistory[incumbent_standard_downgrades]), FILTER(ALL(DimGym), SWITCH(TRUE(), SELECTEDVALUE(DimPopulation[population]) = "All assigned pairs", DimGym[experiment_assignment] IN {"Treatment", "Control"}, SELECTEDVALUE(DimPopulation[population]) = "First repricing", DimGym[experiment_population] = "First repricing", SELECTEDVALUE(DimPopulation[population]) = "Repeat repricing", DimGym[experiment_population] = "Repeat repricing", LEFT(SELECTEDVALUE(DimPopulation[population]),7) = "Region:", DimGym[region] = TRIM(MID(SELECTEDVALUE(DimPopulation[population]),8,100)) && DimGym[experiment_assignment] IN {"Treatment", "Control"}, FALSE()))), IF(Month >= DATE(2026,1,1) && Month <= DATE(2026,Checkpoint,1), CALCULATE(SUM(FactExperimentPath[incumbent_standard_downgrades]), FILTER(ALL(DimGym), SWITCH(TRUE(), SELECTEDVALUE(DimPopulation[population]) = "All assigned pairs", DimGym[experiment_assignment] IN {"Treatment", "Control"}, SELECTEDVALUE(DimPopulation[population]) = "First repricing", DimGym[experiment_population] = "First repricing", SELECTEDVALUE(DimPopulation[population]) = "Repeat repricing", DimGym[experiment_population] = "Repeat repricing", LEFT(SELECTEDVALUE(DimPopulation[population]),7) = "Region:", DimGym[region] = TRIM(MID(SELECTEDVALUE(DimPopulation[population]),8,100)) && DimGym[experiment_assignment] IN {"Treatment", "Control"}, FALSE()))))))
+
+[Experiment Profile Closing] =
+VAR Checkpoint = SELECTEDVALUE(DimCheckpoint[checkpoint_months],6) VAR Month = SELECTEDVALUE(DimExperimentMonth[month]) VAR PreStart = EDATE(DATE(2026,1,1),-Checkpoint) RETURN IF([Experiment Evidence Current] && HASONEVALUE(DimSimulation[simulation]) && HASONEVALUE(DimPopulation[population]) && NOT ISBLANK(Month), IF(Month >= PreStart && Month < DATE(2026,1,1), CALCULATE(SUM(FactExperimentHistory[closing_members]), FILTER(ALL(DimGym), SWITCH(TRUE(), SELECTEDVALUE(DimPopulation[population]) = "All assigned pairs", DimGym[experiment_assignment] IN {"Treatment", "Control"}, SELECTEDVALUE(DimPopulation[population]) = "First repricing", DimGym[experiment_population] = "First repricing", SELECTEDVALUE(DimPopulation[population]) = "Repeat repricing", DimGym[experiment_population] = "Repeat repricing", LEFT(SELECTEDVALUE(DimPopulation[population]),7) = "Region:", DimGym[region] = TRIM(MID(SELECTEDVALUE(DimPopulation[population]),8,100)) && DimGym[experiment_assignment] IN {"Treatment", "Control"}, FALSE()))), IF(Month >= DATE(2026,1,1) && Month <= DATE(2026,Checkpoint,1), CALCULATE(SUM(FactExperimentPath[closing_members]), FILTER(ALL(DimGym), SWITCH(TRUE(), SELECTEDVALUE(DimPopulation[population]) = "All assigned pairs", DimGym[experiment_assignment] IN {"Treatment", "Control"}, SELECTEDVALUE(DimPopulation[population]) = "First repricing", DimGym[experiment_population] = "First repricing", SELECTEDVALUE(DimPopulation[population]) = "Repeat repricing", DimGym[experiment_population] = "Repeat repricing", LEFT(SELECTEDVALUE(DimPopulation[population]),7) = "Region:", DimGym[region] = TRIM(MID(SELECTEDVALUE(DimPopulation[population]),8,100)) && DimGym[experiment_assignment] IN {"Treatment", "Control"}, FALSE()))))))
+
+[Experiment Profile Churn] =
+DIVIDE([Experiment Profile Incumbent Exits], [Experiment Profile Incumbent Exposure])
+
+[Experiment Profile Downgrade Rate] =
+DIVIDE([Experiment Profile Downgrades], [Experiment Profile Incumbent Exposure])
+
+[Planning Power] =
+SELECTEDVALUE(FactPower[planning_power])
+
+[80% Detectable Effect] =
+SELECTEDVALUE(FactPower[effect_detectable_80pct])

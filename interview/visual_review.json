@@ -1,0 +1,276 @@
+{
+  "reviewer": "Codex assistant",
+  "renderer": "Marked + local headless Microsoft Edge",
+  "visual_review_completed": true,
+  "documents": [
+    {
+      "file": "README.md",
+      "source_sha256": "8a05de3fc99609f99ea1a9004283aa8757fc7582863d166407aa676741029746",
+      "brokenImages": [],
+      "horizontalOverflow": false,
+      "clippedText": [],
+      "height": 4533,
+      "sections": [
+        {
+          "heading": "Start here",
+          "image": "README_section_1.png"
+        },
+        {
+          "heading": "The business problem",
+          "image": "README_section_2.png"
+        },
+        {
+          "heading": "Commercial model and approach",
+          "image": "README_section_3.png"
+        },
+        {
+          "heading": "Findings and conditional decisions",
+          "image": "README_section_4.png"
+        },
+        {
+          "heading": "Dashboard preview",
+          "image": "README_section_5.png"
+        },
+        {
+          "heading": "Tools and verification",
+          "image": "README_section_6.png"
+        },
+        {
+          "heading": "Repository structure",
+          "image": "README_section_7.png"
+        },
+        {
+          "heading": "Run the SQL examples",
+          "image": "README_section_8.png"
+        },
+        {
+          "heading": "Evidence limits and project status",
+          "image": "README_section_9.png"
+        }
+      ]
+    },
+    {
+      "file": "interview/README.md",
+      "source_sha256": "6e1a59e40c046499ef90e1def970587163a8390d6832c0b8996c9457ca811de7",
+      "brokenImages": [],
+      "horizontalOverflow": false,
+      "clippedText": [],
+      "height": 1937,
+      "sections": [
+        {
+          "heading": "Use the pack",
+          "image": "interview_README_section_1.png"
+        },
+        {
+          "heading": "Extract and reproduce",
+          "image": "interview_README_section_2.png"
+        },
+        {
+          "heading": "Personal ownership and honest language",
+          "image": "interview_README_section_3.png"
+        },
+        {
+          "heading": "Evidence status",
+          "image": "interview_README_section_4.png"
+        }
+      ]
+    },
+    {
+      "file": "interview/story.md",
+      "source_sha256": "ecb6e8d0a8311a4e8b6dd92a60d7a3e9c91ee71929b40a9fed8b394436f6970e",
+      "brokenImages": [],
+      "horizontalOverflow": false,
+      "clippedText": [],
+      "height": 2137,
+      "sections": [
+        {
+          "heading": "Opening pitch",
+          "image": "interview_story_section_1.png"
+        },
+        {
+          "heading": "Two-minute story",
+          "image": "interview_story_section_2.png"
+        },
+        {
+          "heading": "Five-minute explanation outline",
+          "image": "interview_story_section_3.png"
+        }
+      ]
+    },
+    {
+      "file": "interview/core_questions.md",
+      "source_sha256": "60eceeab7c2824a016f446e28da22427c1c8a3ccb02b8605e1055d4438c4cda7",
+      "brokenImages": [],
+      "horizontalOverflow": false,
+      "clippedText": [],
+      "height": 10329,
+      "sections": [
+        {
+          "heading": "Commercial economics",
+          "image": "interview_core_questions_section_1.png"
+        },
+        {
+          "heading": "Data and billing integrity",
+          "image": "interview_core_questions_section_2.png"
+        },
+        {
+          "heading": "Headroom and competitors",
+          "image": "interview_core_questions_section_3.png"
+        },
+        {
+          "heading": "Historical response and causality",
+          "image": "interview_core_questions_section_4.png"
+        },
+        {
+          "heading": "Scenarios and uncertainty",
+          "image": "interview_core_questions_section_5.png"
+        },
+        {
+          "heading": "Recommendations and experiment governance",
+          "image": "interview_core_questions_section_6.png"
+        }
+      ]
+    },
+    {
+      "file": "interview/stakeholder_challenges.md",
+      "source_sha256": "0dfb94baf6f1ad01bbd93e4fa8749a861bf937b61ef863761bf32d6dc4b84e8c",
+      "brokenImages": [],
+      "horizontalOverflow": false,
+      "clippedText": [],
+      "height": 5206,
+      "sections": [
+        {
+          "heading": "Pricing Manager",
+          "image": "interview_stakeholder_challenges_section_1.png"
+        },
+        {
+          "heading": "CFO",
+          "image": "interview_stakeholder_challenges_section_2.png"
+        },
+        {
+          "heading": "Marketing Director",
+          "image": "interview_stakeholder_challenges_section_3.png"
+        },
+        {
+          "heading": "Operations Director",
+          "image": "interview_stakeholder_challenges_section_4.png"
+        },
+        {
+          "heading": "Sceptical interviewer",
+          "image": "interview_stakeholder_challenges_section_5.png"
+        }
+      ]
+    },
+    {
+      "file": "interview/quick_reference.md",
+      "source_sha256": "fab3faf0a3000906755f3231ec302798bdaac64e803fb7039ac399af21feefdf",
+      "brokenImages": [],
+      "horizontalOverflow": false,
+      "clippedText": [],
+      "height": 6449,
+      "sections": [
+        {
+          "heading": "Baseline â€” synthetic historical trading",
+          "image": "interview_quick_reference_section_1.png"
+        },
+        {
+          "heading": "Headroom â€” relative indicators",
+          "image": "interview_quick_reference_section_2.png"
+        },
+        {
+          "heading": "Historical pilot â€” local +Â£2 policy",
+          "image": "interview_quick_reference_section_3.png"
+        },
+        {
+          "heading": "Conditional RAISE-only portfolio â€” hypothetical 2026",
+          "image": "interview_quick_reference_section_4.png"
+        },
+        {
+          "heading": "Experiment â€” simulated primary first-repricing population",
+          "image": "interview_quick_reference_section_5.png"
+        },
+        {
+          "heading": "Policy assumptions â€” not empirical tolerances",
+          "image": "interview_quick_reference_section_6.png"
+        },
+        {
+          "heading": "Windows and populations",
+          "image": "interview_quick_reference_section_7.png"
+        },
+        {
+          "heading": "Definitions worth being able to derive",
+          "image": "interview_quick_reference_section_8.png"
+        },
+        {
+          "heading": "Ordered decision rules",
+          "image": "interview_quick_reference_section_9.png"
+        },
+        {
+          "heading": "Uncertainty and common traps",
+          "image": "interview_quick_reference_section_10.png"
+        }
+      ]
+    },
+    {
+      "file": "interview/demonstration.md",
+      "source_sha256": "c7e83c4bad94d45786733aa9d4eeda31df89b2ffe7da53e70cc769fcaf7e875a",
+      "brokenImages": [],
+      "horizontalOverflow": false,
+      "clippedText": [],
+      "height": 3368,
+      "sections": [
+        {
+          "heading": "NF049 Hull",
+          "image": "interview_demonstration_section_1.png"
+        },
+        {
+          "heading": "NF023 Portsmouth",
+          "image": "interview_demonstration_section_2.png"
+        },
+        {
+          "heading": "NF013 Reading",
+          "image": "interview_demonstration_section_3.png"
+        },
+        {
+          "heading": "NF001 London",
+          "image": "interview_demonstration_section_4.png"
+        },
+        {
+          "heading": "NF002 London",
+          "image": "interview_demonstration_section_5.png"
+        },
+        {
+          "heading": "Five-minute artifact demonstration",
+          "image": "interview_demonstration_section_6.png"
+        }
+      ]
+    },
+    {
+      "file": "interview/rehearsal.md",
+      "source_sha256": "a69a8671510c1b2350544e1a1d7a02f92b13bb7fe929187b10af3d93b201527c",
+      "brokenImages": [],
+      "horizontalOverflow": false,
+      "clippedText": [],
+      "height": 2288,
+      "sections": [
+        {
+          "heading": "Practice sequence",
+          "image": "interview_rehearsal_section_1.png"
+        },
+        {
+          "heading": "Answer-quality rubric",
+          "image": "interview_rehearsal_section_2.png"
+        },
+        {
+          "heading": "Ownership prompts to complete truthfully",
+          "image": "interview_rehearsal_section_3.png"
+        },
+        {
+          "heading": "Concepts to demonstrate before interviewing",
+          "image": "interview_rehearsal_section_4.png"
+        }
+      ]
+    }
+  ],
+  "notes": "All eight documents rendered; narrative, answer, challenge, table, site and rehearsal layouts visually reviewed. DOM checks found no clipped text, broken images or horizontal overflow. Source hashes bind this review to the delivered Markdown. No native application acceptance or candidate rehearsal claimed."
+}

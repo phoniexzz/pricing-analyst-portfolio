@@ -1,0 +1,68 @@
+{
+  "cellsCompared": 17792,
+  "maxAbsoluteDifference": 5.587935447692871e-09,
+  "formulaErrorScan": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}",
+  "savedWorkbookRecalculated": true,
+  "originalReconciliationsPassed": true,
+  "nativeExcelApplication": "Not automated; verification uses Artifact Tool and saved OOXML",
+  "inputChangeProof": "A GBP 120 January 2025 source-revenue change propagated to the site annual result; original source restored",
+  "saved_cells_compared_to_derived_csvs": 17792,
+  "saved_analysis_formula_cells": 29405,
+  "charts": [
+    {
+      "part": "xl/drawings/charts/phase3_chart1.xml",
+      "series_count": 2,
+      "source_formulas": [
+        "'Estate Trends'!$A$36:$A$47",
+        "'Estate Trends'!$B$36:$B$47",
+        "'Estate Trends'!$A$36:$A$47",
+        "'Estate Trends'!$C$36:$C$47"
+      ],
+      "palette_verified": true
+    },
+    {
+      "part": "xl/drawings/charts/phase3_chart2.xml",
+      "series_count": 2,
+      "source_formulas": [
+        "'Estate Trends'!$A$36:$A$47",
+        "'Estate Trends'!$D$36:$D$47",
+        "'Estate Trends'!$A$36:$A$47",
+        "'Estate Trends'!$E$36:$E$47"
+      ],
+      "palette_verified": true
+    },
+    {
+      "part": "xl/drawings/charts/phase3_chart3.xml",
+      "series_count": 1,
+      "source_formulas": [
+        "'Baseline Summary'!$A$38:$A$39",
+        "'Baseline Summary'!$B$38:$B$39"
+      ],
+      "palette_verified": true
+    },
+    {
+      "part": "xl/drawings/charts/phase3_chart4.xml",
+      "series_count": 1,
+      "source_formulas": [
+        "'Baseline'!$O$9:$O$88",
+        "'Baseline'!$P$9:$P$88"
+      ],
+      "palette_verified": true
+    }
+  ],
+  "source_preservation": "All original source sheet XML, native tables, panes and style IDs preserved; four authorised progress-text cells updated",
+  "native_tables": 12,
+  "sheet_count": 16,
+  "package_relationships_valid": true,
+  "source_hashes_unchanged": true,
+  "derived_csv_reproducibility": {
+    "identical_derived_csv_hashes": true,
+    "hashes": {
+      "gym_baseline.csv": "9129c0dbfcbddce50f53ddea1989f1b29a575455c5631da9031de3b0f09349ad",
+      "estate_monthly_trend.csv": "7edbbc497491da2b12dc3427a70294f8d72c5916c652d5eac8e08a2b78e1da3a",
+      "region_year_baseline.csv": "3ad64a1ef920a38db07135ec5f750ad954dcbdd87a0441fa30f66d0be7cf249b"
+    }
+  },
+  "visual_review": "Completed for all three new sheets, four native charts, two updated guide views, three standalone figures and targeted rate/check formatting repairs.",
+  "phase3_status": "Complete"
+}

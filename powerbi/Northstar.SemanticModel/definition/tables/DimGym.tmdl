@@ -1,0 +1,245 @@
+table DimGym
+	lineageTag: 7213d7cf-22dc-5f9b-aaa1-cba50d8d1b73
+
+	column gym_id
+		dataType: string
+		lineageTag: b1a30609-b775-5aff-a64a-24df31a2728c
+		summarizeBy: none
+		sourceColumn: gym_id
+
+	column gym_name
+		dataType: string
+		lineageTag: d8e46683-bad1-5532-acb5-9795da149e71
+		summarizeBy: none
+		sourceColumn: gym_name
+
+	column city
+		dataType: string
+		lineageTag: 6d456d8a-c610-5f7c-92de-7271e09aa343
+		summarizeBy: none
+		sourceColumn: city
+
+	column region
+		dataType: string
+		lineageTag: f008d1cc-223a-580e-972c-f78f1758c1f4
+		summarizeBy: none
+		sourceColumn: region
+
+	column location_type
+		dataType: string
+		lineageTag: 7c3f82a1-f0a8-546f-b267-18700e586191
+		summarizeBy: none
+		sourceColumn: location_type
+
+	column opening_date
+		dataType: dateTime
+		formatString: yyyy-MM-dd
+		lineageTag: 18b03528-50b9-5e8d-b4c9-9cc281866db4
+		summarizeBy: none
+		sourceColumn: opening_date
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column floor_space_sqft
+		dataType: int64
+		formatString: #,##0
+		lineageTag: 52ec90f3-3597-5519-aa96-99b19cdc55c5
+		summarizeBy: none
+		sourceColumn: floor_space_sqft
+
+	column capacity_proxy
+		dataType: int64
+		formatString: #,##0
+		lineageTag: 96aecd8e-dfb1-5fa0-bc7e-98fbdcea5f0e
+		summarizeBy: none
+		sourceColumn: capacity_proxy
+
+	column local_population
+		dataType: int64
+		formatString: #,##0
+		lineageTag: 4ee3ac40-5e3a-5fa3-8e16-e2fcf432e663
+		summarizeBy: none
+		sourceColumn: local_population
+
+	column median_income
+		dataType: int64
+		formatString: #,##0
+		lineageTag: ee926687-ce07-5f24-bd14-2a1b7b9e48ce
+		summarizeBy: none
+		sourceColumn: median_income
+
+	column student_population_pct
+		dataType: double
+		lineageTag: 9ec696c3-d0ab-5c31-8f55-d716d87addb7
+		summarizeBy: none
+		sourceColumn: student_population_pct
+
+	column market_competitiveness
+		dataType: string
+		lineageTag: dc912c06-7b58-513e-b936-c07c03a05342
+		summarizeBy: none
+		sourceColumn: market_competitiveness
+
+	column gym_age_years
+		dataType: double
+		lineageTag: 5fb36474-7f4d-5036-9e04-39011660ee0c
+		summarizeBy: none
+		sourceColumn: gym_age_years
+
+	column snapshot_date
+		dataType: dateTime
+		formatString: yyyy-MM-dd
+		lineageTag: 85809cfc-fff0-5070-bf3b-450685870b38
+		summarizeBy: none
+		sourceColumn: snapshot_date
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column competitor_count_3km
+		dataType: int64
+		formatString: #,##0
+		lineageTag: 3de91c9a-3f59-5793-9cb9-6257bf6e8e57
+		summarizeBy: none
+		sourceColumn: competitor_count_3km
+
+	column nearest_competitor_distance_km
+		dataType: double
+		lineageTag: 073a9709-76cb-5d60-b3dd-ca8ca416f2e7
+		summarizeBy: none
+		sourceColumn: nearest_competitor_distance_km
+
+	column local_competitor_avg_price
+		dataType: double
+		lineageTag: e141b630-9c6a-5bc4-b995-e441ce04afb7
+		summarizeBy: none
+		sourceColumn: local_competitor_avg_price
+
+	column competitor_price_gap
+		dataType: double
+		formatString: £#,##0.00
+		lineageTag: 347e046f-4075-5afa-9012-e9e84f2b5418
+		summarizeBy: none
+		sourceColumn: competitor_price_gap
+
+	column utilisation_pct
+		dataType: double
+		lineageTag: 47032480-fcfc-5034-ba9e-852f161af40b
+		summarizeBy: none
+		sourceColumn: utilisation_pct
+
+	column peak_utilisation_pct
+		dataType: double
+		lineageTag: addfed40-461c-5bad-b6d7-de3dd080c869
+		summarizeBy: none
+		sourceColumn: peak_utilisation_pct
+
+	column current_standard_price
+		dataType: double
+		formatString: £#,##0.00
+		lineageTag: ad078bd3-e049-59a2-a16f-53376290e1eb
+		summarizeBy: none
+		sourceColumn: current_standard_price
+
+	column current_offpeak_price
+		dataType: double
+		lineageTag: 1699b0b2-eb6a-5bd4-ab3f-6392c1accd83
+		summarizeBy: none
+		sourceColumn: current_offpeak_price
+
+	column current_premium_price
+		dataType: double
+		lineageTag: 15609fb1-0bf4-56a9-95a7-c3bfc2fe4bfa
+		summarizeBy: none
+		sourceColumn: current_premium_price
+
+	column PureGym_equivalent_price
+		dataType: double
+		lineageTag: 2751e689-76b1-5ba3-992e-d8f4fb7bb2ba
+		summarizeBy: none
+		sourceColumn: PureGym_equivalent_price
+
+	column JD_equivalent_price
+		dataType: double
+		lineageTag: 43b4218d-1f8d-5af6-aaa2-a4985d07a814
+		summarizeBy: none
+		sourceColumn: JD_equivalent_price
+
+	column segment
+		dataType: string
+		lineageTag: ce57bc0f-035d-5684-a29a-4a0323d0b043
+		summarizeBy: none
+		sourceColumn: segment
+
+	column band
+		dataType: string
+		lineageTag: f6490fc7-8d11-5f15-b4a8-757c8ba5dcf3
+		summarizeBy: none
+		sourceColumn: band
+
+	column rank
+		dataType: int64
+		formatString: #,##0
+		lineageTag: 876ebea9-9441-52cd-a6c1-463abe6ae989
+		summarizeBy: none
+		sourceColumn: rank
+
+	column score
+		dataType: double
+		lineageTag: 5dfc202f-1207-5320-984f-f70c9c3f500c
+		summarizeBy: none
+		sourceColumn: score
+
+	column sensitive
+		dataType: boolean
+		lineageTag: 745d07fb-0e10-5a7d-950a-e2a9a827acf3
+		summarizeBy: none
+		sourceColumn: sensitive
+
+	column caution_flag_count
+		dataType: int64
+		formatString: #,##0
+		lineageTag: 7a8a2874-ebb1-5c1a-ae4c-194fc4df52c6
+		summarizeBy: none
+		sourceColumn: caution_flag_count
+
+	column disposition
+		dataType: string
+		lineageTag: 50148b59-da2c-55ba-a435-fde038ffaea6
+		summarizeBy: none
+		sourceColumn: disposition
+
+	column experiment_population
+		dataType: string
+		lineageTag: 83cca7d1-cd6a-5ae6-8625-b3ed643ec11d
+		summarizeBy: none
+		sourceColumn: experiment_population
+
+	column experiment_assignment
+		dataType: string
+		lineageTag: 1fbd81e3-0eeb-520f-98e7-10e5168c33cf
+		summarizeBy: none
+		sourceColumn: experiment_assignment
+
+	column experiment_pair_id
+		dataType: string
+		lineageTag: 8721a6b7-c2f7-56a8-939f-3c732a5e0ca2
+		summarizeBy: none
+		sourceColumn: experiment_pair_id
+
+	column competitor_proxy_status
+		dataType: string
+		lineageTag: e46ff802-7387-507e-8992-3d4915d77cda
+		summarizeBy: none
+		sourceColumn: competitor_proxy_status
+
+	partition DimGym = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(SourceRoot & "/DimGym.csv"), [Delimiter=",", Columns=36, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Nulls = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				    Typed = Table.TransformColumnTypes(Nulls, {{"gym_id", type text}, {"gym_name", type text}, {"city", type text}, {"region", type text}, {"location_type", type text}, {"opening_date", type date}, {"floor_space_sqft", Int64.Type}, {"capacity_proxy", Int64.Type}, {"local_population", Int64.Type}, {"median_income", Int64.Type}, {"student_population_pct", type number}, {"market_competitiveness", type text}, {"gym_age_years", type number}, {"snapshot_date", type date}, {"competitor_count_3km", Int64.Type}, {"nearest_competitor_distance_km", type number}, {"local_competitor_avg_price", type number}, {"competitor_price_gap", type number}, {"utilisation_pct", type number}, {"peak_utilisation_pct", type number}, {"current_standard_price", type number}, {"current_offpeak_price", type number}, {"current_premium_price", type number}, {"PureGym_equivalent_price", type number}, {"JD_equivalent_price", type number}, {"segment", type text}, {"band", type text}, {"rank", Int64.Type}, {"score", type number}, {"sensitive", type logical}, {"caution_flag_count", Int64.Type}, {"disposition", type text}, {"experiment_population", type text}, {"experiment_assignment", type text}, {"experiment_pair_id", type text}, {"competitor_proxy_status", type text}}, "en-GB")
+				in
+				    Typed
+

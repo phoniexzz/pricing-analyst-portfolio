@@ -1,0 +1,865 @@
+{
+  "disclaimer1": "This project uses synthetic data and is inspired by the commercial economics of UK subscription fitness businesses.",
+  "disclaimer2": "This project uses synthetic data created for portfolio purposes. It is inspired by the economics of multi-site subscription fitness businesses and does not use confidential information from The Gym Group or any other operator.",
+  "input_hashes": {
+    "analysis\\generation_config.json": "2a98c053337c861defaa492bb8be543557a11b271e8da8975e1ced260b504e41",
+    "analysis\\headroom_config.json": "9904b1bdf6f1d3f555ace7643b7fd149df4405114209cd043251667e1ba5efa0",
+    "data\\cohorts.csv": "15cb135413cdff2adc6dea8d6ecc9867a7c68bf6d98a60b2dd69b979858eb3d8",
+    "data\\competitor_prices.csv": "754062b02e2f4cd0ce989c12e02af029d2584007fc3b74f65852d0cefdfd56c5",
+    "data\\estate_monthly_trend.csv": "7edbbc497491da2b12dc3427a70294f8d72c5916c652d5eac8e08a2b78e1da3a",
+    "data\\experiment_assignments.csv": "05f2d39ffd30f0e55d8e0c663f17191693a9c2be05ffb8e4f69155d247a814f4",
+    "data\\gym_baseline.csv": "9129c0dbfcbddce50f53ddea1989f1b29a575455c5631da9031de3b0f09349ad",
+    "data\\gym_headroom.csv": "e61b78a63dbf25312fff8dbbb0db537b405a0a0e82f9ef511b337f8fb0c7548d",
+    "data\\gym_master.csv": "1bfbf7bbcd847c2634d155d88641d5f2f87dca2fe0e345da8be498f053a20d14",
+    "data\\headroom_sensitivity.csv": "5e3c583b42c4cc63e85e35cf6aedf489aefb097745a8de25305883260b58efab",
+    "data\\market_events.csv": "c786240e6f0a962348b18ec46552d6805c3eae1001bad4e21f4b458659273ec7",
+    "data\\membership_ledger.csv": "709ab573bf893097d6cf51b2bda5c052f88a1d526f8846af901c5d58508cc496",
+    "data\\monthly_performance.csv": "f3e088c724d27f282af506cf8dd0e97b21447192164476c3e74d489856b7a51d",
+    "data\\pricing_history.csv": "1a1cc79ad85b7a7628bcc9b49a5877167d424368f1f305ab90884246af1afa6e",
+    "data\\region_year_baseline.csv": "3ad64a1ef920a38db07135ec5f750ad954dcbdd87a0441fa30f66d0be7cf249b"
+  },
+  "analysis_configuration_hash": "c726223569abd3a670051b18117664aa1c8ee712457a633f74462d92515f88bb",
+  "rows": {
+    "historical_response_panel": 5760,
+    "historical_event_response": 32,
+    "pilot_pair_response": 36,
+    "price_response_estimates": 372
+  },
+  "checks_passed": 290,
+  "primary_estimates": [
+    {
+      "metric": "controlled_acquisition_response",
+      "estimator": "paired_equal",
+      "window": "primary_6m",
+      "group_type": "Overall",
+      "group": "All assigned pairs",
+      "estimate": -0.0826637503,
+      "ci_lower": -0.1390105237,
+      "ci_upper": -0.0288900387,
+      "exact_p_value": 0.0166015625,
+      "assigned_pairs": 12,
+      "complete_pairs": 12,
+      "treatment_gyms": 12,
+      "control_gyms": 12,
+      "bootstrap_samples": 10000,
+      "interval_status": "95% whole-pair percentile interval",
+      "evidence_status": "Local randomised +GBP2 policy response",
+      "weight_method": "Equal pairs",
+      "unit": "decimal fraction"
+    },
+    {
+      "metric": "acquisition_elasticity",
+      "estimator": "paired_equal",
+      "window": "primary_6m",
+      "group_type": "Overall",
+      "group": "All assigned pairs",
+      "estimate": -1.1197390069,
+      "ci_lower": -1.901662753,
+      "ci_upper": -0.3836848753,
+      "exact_p_value": null,
+      "assigned_pairs": 12,
+      "complete_pairs": 12,
+      "treatment_gyms": 12,
+      "control_gyms": 12,
+      "bootstrap_samples": 10000,
+      "interval_status": "95% whole-pair percentile interval",
+      "evidence_status": "Local randomised +GBP2 policy response",
+      "weight_method": "Equal pairs",
+      "unit": "elasticity"
+    },
+    {
+      "metric": "incumbent_churn_response_pp",
+      "estimator": "paired_equal",
+      "window": "primary_6m",
+      "group_type": "Overall",
+      "group": "All assigned pairs",
+      "estimate": 0.3451282527,
+      "ci_lower": 0.1824306195,
+      "ci_upper": 0.4965634441,
+      "exact_p_value": 0.0034179688,
+      "assigned_pairs": 12,
+      "complete_pairs": 12,
+      "treatment_gyms": 12,
+      "control_gyms": 12,
+      "bootstrap_samples": 10000,
+      "interval_status": "95% whole-pair percentile interval",
+      "evidence_status": "Local randomised +GBP2 policy response",
+      "weight_method": "Equal pairs",
+      "unit": "percentage points"
+    },
+    {
+      "metric": "incumbent_downgrade_response_pp",
+      "estimator": "paired_equal",
+      "window": "primary_6m",
+      "group_type": "Overall",
+      "group": "All assigned pairs",
+      "estimate": 0.3240992209,
+      "ci_lower": 0.2939386378,
+      "ci_upper": 0.356406879,
+      "exact_p_value": null,
+      "assigned_pairs": 12,
+      "complete_pairs": 12,
+      "treatment_gyms": 12,
+      "control_gyms": 12,
+      "bootstrap_samples": 10000,
+      "interval_status": "95% whole-pair percentile interval",
+      "evidence_status": "Local randomised +GBP2 policy response",
+      "weight_method": "Equal pairs",
+      "unit": "percentage points"
+    },
+    {
+      "metric": "conversion_response_pp",
+      "estimator": "paired_equal",
+      "window": "primary_6m",
+      "group_type": "Overall",
+      "group": "All assigned pairs",
+      "estimate": -1.5097364372,
+      "ci_lower": -2.699500533,
+      "ci_upper": -0.4714704381,
+      "exact_p_value": null,
+      "assigned_pairs": 12,
+      "complete_pairs": 12,
+      "treatment_gyms": 12,
+      "control_gyms": 12,
+      "bootstrap_samples": 10000,
+      "interval_status": "95% whole-pair percentile interval",
+      "evidence_status": "Local randomised +GBP2 policy response",
+      "weight_method": "Equal pairs",
+      "unit": "percentage points"
+    },
+    {
+      "metric": "subscription_yield_controlled_change",
+      "estimator": "paired_equal",
+      "window": "primary_6m",
+      "group_type": "Overall",
+      "group": "All assigned pairs",
+      "estimate": 0.8993493259,
+      "ci_lower": 0.8656559226,
+      "ci_upper": 0.9336172891,
+      "exact_p_value": null,
+      "assigned_pairs": 12,
+      "complete_pairs": 12,
+      "treatment_gyms": 12,
+      "control_gyms": 12,
+      "bootstrap_samples": 10000,
+      "interval_status": "95% whole-pair percentile interval",
+      "evidence_status": "Local randomised +GBP2 policy response",
+      "weight_method": "Equal pairs",
+      "unit": "GBP net / member-month"
+    },
+    {
+      "metric": "standard_yield_controlled_change",
+      "estimator": "paired_equal",
+      "window": "primary_6m",
+      "group_type": "Overall",
+      "group": "All assigned pairs",
+      "estimate": 1.3803656609,
+      "ci_lower": 1.3301366651,
+      "ci_upper": 1.43037123,
+      "exact_p_value": null,
+      "assigned_pairs": 12,
+      "complete_pairs": 12,
+      "treatment_gyms": 12,
+      "control_gyms": 12,
+      "bootstrap_samples": 10000,
+      "interval_status": "95% whole-pair percentile interval",
+      "evidence_status": "Local randomised +GBP2 policy response",
+      "weight_method": "Equal pairs",
+      "unit": "GBP net / member-month"
+    },
+    {
+      "metric": "total_arpmm_controlled_change",
+      "estimator": "paired_equal",
+      "window": "primary_6m",
+      "group_type": "Overall",
+      "group": "All assigned pairs",
+      "estimate": 0.8701929701,
+      "ci_lower": 0.7997355326,
+      "ci_upper": 0.9376233049,
+      "exact_p_value": null,
+      "assigned_pairs": 12,
+      "complete_pairs": 12,
+      "treatment_gyms": 12,
+      "control_gyms": 12,
+      "bootstrap_samples": 10000,
+      "interval_status": "95% whole-pair percentile interval",
+      "evidence_status": "Local randomised +GBP2 policy response",
+      "weight_method": "Equal pairs",
+      "unit": "GBP net / member-month"
+    },
+    {
+      "metric": "monthly_revenue_controlled_growth",
+      "estimator": "paired_equal",
+      "window": "primary_6m",
+      "group_type": "Overall",
+      "group": "All assigned pairs",
+      "estimate": 0.0269060985,
+      "ci_lower": 0.0192083649,
+      "ci_upper": 0.034867083,
+      "exact_p_value": null,
+      "assigned_pairs": 12,
+      "complete_pairs": 12,
+      "treatment_gyms": 12,
+      "control_gyms": 12,
+      "bootstrap_samples": 10000,
+      "interval_status": "95% whole-pair percentile interval",
+      "evidence_status": "Local randomised +GBP2 policy response",
+      "weight_method": "Equal pairs",
+      "unit": "decimal fraction"
+    },
+    {
+      "metric": "monthly_revenue_estimated_difference",
+      "estimator": "paired_equal",
+      "window": "primary_6m",
+      "group_type": "Overall",
+      "group": "All assigned pairs",
+      "estimate": 217436.4130186202,
+      "ci_lower": 151026.1895336974,
+      "ci_upper": 289220.1296511158,
+      "exact_p_value": null,
+      "assigned_pairs": 12,
+      "complete_pairs": 12,
+      "treatment_gyms": 12,
+      "control_gyms": 12,
+      "bootstrap_samples": 10000,
+      "interval_status": "95% whole-pair percentile interval",
+      "evidence_status": "Local randomised +GBP2 policy response",
+      "weight_method": "Equal pairs",
+      "unit": "GBP net cumulative"
+    },
+    {
+      "metric": "subscription_revenue_estimated_difference",
+      "estimator": "paired_equal",
+      "window": "primary_6m",
+      "group_type": "Overall",
+      "group": "All assigned pairs",
+      "estimate": 235805.5485991337,
+      "ci_lower": 164043.0818944251,
+      "ci_upper": 321814.9305675735,
+      "exact_p_value": null,
+      "assigned_pairs": 12,
+      "complete_pairs": 12,
+      "treatment_gyms": 12,
+      "control_gyms": 12,
+      "bootstrap_samples": 10000,
+      "interval_status": "95% whole-pair percentile interval",
+      "evidence_status": "Local randomised +GBP2 policy response",
+      "weight_method": "Equal pairs",
+      "unit": "GBP net cumulative"
+    },
+    {
+      "metric": "complaints_per_1000_member_months_controlled_change",
+      "estimator": "paired_equal",
+      "window": "primary_6m",
+      "group_type": "Overall",
+      "group": "All assigned pairs",
+      "estimate": 0.9455567801,
+      "ci_lower": 0.7864206343,
+      "ci_upper": 1.1090610178,
+      "exact_p_value": null,
+      "assigned_pairs": 12,
+      "complete_pairs": 12,
+      "treatment_gyms": 12,
+      "control_gyms": 12,
+      "bootstrap_samples": 10000,
+      "interval_status": "95% whole-pair percentile interval",
+      "evidence_status": "Local randomised +GBP2 policy response",
+      "weight_method": "Equal pairs",
+      "unit": "complaints / 1000 member-months"
+    }
+  ],
+  "matching_balance": [
+    {
+      "window": "Matching",
+      "metric": "price",
+      "treatment_mean": 25.24,
+      "control_mean": 24.906666666666666,
+      "standardised_difference": 0.1255136243162794
+    },
+    {
+      "window": "Matching",
+      "metric": "members",
+      "treatment_mean": 5534.569444444445,
+      "control_mean": 5588.888888888888,
+      "standardised_difference": -0.035643455073914296
+    },
+    {
+      "window": "Matching",
+      "metric": "utilisation",
+      "treatment_mean": 0.6931359280555557,
+      "control_mean": 0.6574672902777778,
+      "standardised_difference": 0.3486674771088952
+    },
+    {
+      "window": "Matching",
+      "metric": "acquisition",
+      "treatment_mean": 0.05933706972222222,
+      "control_mean": 0.058484676388888886,
+      "standardised_difference": 0.14808720623038155
+    },
+    {
+      "window": "Matching",
+      "metric": "churn",
+      "treatment_mean": 0.04438770222222222,
+      "control_mean": 0.044574720000000005,
+      "standardised_difference": -0.039573559301808274
+    },
+    {
+      "window": "Matching",
+      "metric": "competition",
+      "treatment_mean": 4.166666666666667,
+      "control_mean": 3.8333333333333335,
+      "standardised_difference": 0.2875878420888013
+    },
+    {
+      "window": "Matching",
+      "metric": "historical_growth",
+      "treatment_mean": 0.04178542808539946,
+      "control_mean": 0.03901799534426557,
+      "standardised_difference": 0.3193457419821368
+    },
+    {
+      "window": "Primary baseline",
+      "metric": "price",
+      "treatment_mean": 25.24,
+      "control_mean": 24.906666666666666,
+      "standardised_difference": 0.1255136243162794
+    },
+    {
+      "window": "Primary baseline",
+      "metric": "members",
+      "treatment_mean": 5482.840277777777,
+      "control_mean": 5535.069444444444,
+      "standardised_difference": -0.03470408605952767
+    },
+    {
+      "window": "Primary baseline",
+      "metric": "utilisation",
+      "treatment_mean": 0.6781087034722222,
+      "control_mean": 0.6521152320833333,
+      "standardised_difference": 0.2612452379980901
+    },
+    {
+      "window": "Primary baseline",
+      "metric": "acquisition",
+      "treatment_mean": 0.05016063166666667,
+      "control_mean": 0.04948512083333333,
+      "standardised_difference": 0.12449735402441367
+    },
+    {
+      "window": "Primary baseline",
+      "metric": "churn",
+      "treatment_mean": 0.044671654861111104,
+      "control_mean": 0.0436137551388889,
+      "standardised_difference": 0.21974338060081874
+    },
+    {
+      "window": "Primary baseline",
+      "metric": "competition",
+      "treatment_mean": 4.111111111111111,
+      "control_mean": 3.8333333333333335,
+      "standardised_difference": 0.24326521386755778
+    },
+    {
+      "window": "Primary baseline",
+      "metric": "historical_growth",
+      "treatment_mean": 0.027216970338864183,
+      "control_mean": 0.029723687889531374,
+      "standardised_difference": -0.17195264522520645
+    }
+  ],
+  "targeted_matches": {
+    "NF002": {
+      "control_ids": [
+        "NF012",
+        "NF007",
+        "NF008"
+      ],
+      "distances": [
+        2.5435699656042825,
+        3.228772054278034,
+        3.5869820155910115
+      ],
+      "candidate_count": 8,
+      "excluded_constant_features": []
+    },
+    "NF013": {
+      "control_ids": [
+        "NF018",
+        "NF023",
+        "NF014"
+      ],
+      "distances": [
+        1.9250109003338607,
+        2.821562110817566,
+        2.970558943038785
+      ],
+      "candidate_count": 5,
+      "excluded_constant_features": []
+    },
+    "NF015": {
+      "control_ids": [
+        "NF018",
+        "NF023",
+        "NF014"
+      ],
+      "distances": [
+        2.4413515312673444,
+        3.0331792931245856,
+        4.244690077709387
+      ],
+      "candidate_count": 5,
+      "excluded_constant_features": []
+    },
+    "NF019": {
+      "control_ids": [
+        "NF016",
+        "NF018",
+        "NF023"
+      ],
+      "distances": [
+        3.3655361026553003,
+        3.3744476527889655,
+        3.5731339387904084
+      ],
+      "candidate_count": 5,
+      "excluded_constant_features": []
+    },
+    "NF020": {
+      "control_ids": [
+        "NF023",
+        "NF018",
+        "NF016"
+      ],
+      "distances": [
+        2.0908566742178185,
+        2.3677078547287507,
+        3.3930413638304686
+      ],
+      "candidate_count": 5,
+      "excluded_constant_features": []
+    },
+    "NF024": {
+      "control_ids": [
+        "NF018",
+        "NF023",
+        "NF014"
+      ],
+      "distances": [
+        1.9897553472799157,
+        2.8150786102202625,
+        2.873214621125659
+      ],
+      "candidate_count": 5,
+      "excluded_constant_features": []
+    },
+    "NF039": {
+      "control_ids": [
+        "NF033",
+        "NF037",
+        "NF042"
+      ],
+      "distances": [
+        3.5251488273606864,
+        3.7498572846204286,
+        3.8729892870385783
+      ],
+      "candidate_count": 9,
+      "excluded_constant_features": []
+    },
+    "NF051": {
+      "control_ids": [
+        "NF049",
+        "NF050",
+        "NF054"
+      ],
+      "distances": [
+        5.248025421547214,
+        5.272529711943053,
+        5.297351203217269
+      ],
+      "candidate_count": 6,
+      "excluded_constant_features": []
+    },
+    "NF057": {
+      "control_ids": [
+        "NF061",
+        "NF059",
+        "NF056"
+      ],
+      "distances": [
+        2.020107495828759,
+        2.0688012131377618,
+        3.2906966913210067
+      ],
+      "candidate_count": 5,
+      "excluded_constant_features": []
+    },
+    "NF060": {
+      "control_ids": [
+        "NF061",
+        "NF059",
+        "NF056"
+      ],
+      "distances": [
+        2.48385299224266,
+        2.6726700333593008,
+        3.381513715279982
+      ],
+      "candidate_count": 5,
+      "excluded_constant_features": []
+    },
+    "NF067": {
+      "control_ids": [
+        "NF069",
+        "NF066",
+        "NF070"
+      ],
+      "distances": [
+        4.309657068930764,
+        4.376894767361214,
+        4.536423288201632
+      ],
+      "candidate_count": 4,
+      "excluded_constant_features": []
+    },
+    "NF080": {
+      "control_ids": [
+        "NF073",
+        "NF077",
+        "NF074"
+      ],
+      "distances": [
+        3.518236505332481,
+        3.825821203694131,
+        4.962877019311827
+      ],
+      "candidate_count": 6,
+      "excluded_constant_features": []
+    },
+    "NF004": {
+      "control_ids": [
+        "NF009",
+        "NF007",
+        "NF005"
+      ],
+      "distances": [
+        2.4839327775836577,
+        3.762007112405146,
+        3.772901964725241
+      ],
+      "candidate_count": 8,
+      "excluded_constant_features": []
+    },
+    "NF022": {
+      "control_ids": [
+        "NF018",
+        "NF023",
+        "NF014"
+      ],
+      "distances": [
+        2.8500221122514895,
+        2.9001249463674545,
+        3.97220845436985
+      ],
+      "candidate_count": 5,
+      "excluded_constant_features": []
+    },
+    "NF028": {
+      "control_ids": [
+        "NF032",
+        "NF030",
+        "NF025"
+      ],
+      "distances": [
+        2.2805889339163343,
+        3.252963708807558,
+        4.220013922805706
+      ],
+      "candidate_count": 5,
+      "excluded_constant_features": []
+    },
+    "NF029": {
+      "control_ids": [
+        "NF030",
+        "NF025",
+        "NF027"
+      ],
+      "distances": [
+        4.239343523811725,
+        4.525418441468345,
+        4.62549699502338
+      ],
+      "candidate_count": 5,
+      "excluded_constant_features": []
+    },
+    "NF052": {
+      "control_ids": [
+        "NF053",
+        "NF047",
+        "NF049"
+      ],
+      "distances": [
+        4.216712312147768,
+        4.476184394919666,
+        4.691752098537552
+      ],
+      "candidate_count": 6,
+      "excluded_constant_features": []
+    },
+    "NF062": {
+      "control_ids": [
+        "NF055",
+        "NF056",
+        "NF059"
+      ],
+      "distances": [
+        2.099917927440371,
+        3.425597614002469,
+        3.747058763809941
+      ],
+      "candidate_count": 5,
+      "excluded_constant_features": []
+    },
+    "NF071": {
+      "control_ids": [
+        "NF069",
+        "NF066",
+        "NF068"
+      ],
+      "distances": [
+        1.4675557175832348,
+        2.525894793383481,
+        2.6928452006221923
+      ],
+      "candidate_count": 4,
+      "excluded_constant_features": []
+    },
+    "NF072": {
+      "control_ids": [
+        "NF068",
+        "NF066",
+        "NF069"
+      ],
+      "distances": [
+        1.850781390304174,
+        2.9511768501739852,
+        4.090574705452046
+      ],
+      "candidate_count": 4,
+      "excluded_constant_features": []
+    }
+  },
+  "monthly_profiles": [
+    {
+      "month": "2024-10-01",
+      "arm": "Control",
+      "standard_joins": 2201.0,
+      "incumbent_churn": 0.04334358375794034,
+      "incumbent_downgrade": 0.0011672016340822876
+    },
+    {
+      "month": "2024-11-01",
+      "arm": "Control",
+      "standard_joins": 1904.0,
+      "incumbent_churn": 0.04153811759445562,
+      "incumbent_downgrade": 0.0011401743796109994
+    },
+    {
+      "month": "2024-12-01",
+      "arm": "Control",
+      "standard_joins": 1397.0,
+      "incumbent_churn": 0.0443996866957592,
+      "incumbent_downgrade": 0.0008280183506769609
+    },
+    {
+      "month": "2025-01-01",
+      "arm": "Control",
+      "standard_joins": 3610.0,
+      "incumbent_churn": 0.0439453125,
+      "incumbent_downgrade": 0.000931140988372093
+    },
+    {
+      "month": "2025-02-01",
+      "arm": "Control",
+      "standard_joins": 2276.0,
+      "incumbent_churn": 0.045655892285426075,
+      "incumbent_downgrade": 0.0008332967852287181
+    },
+    {
+      "month": "2025-03-01",
+      "arm": "Control",
+      "standard_joins": 2151.0,
+      "incumbent_churn": 0.043988013211715554,
+      "incumbent_downgrade": 0.0007874532449635803
+    },
+    {
+      "month": "2025-04-01",
+      "arm": "Control",
+      "standard_joins": 1903.0,
+      "incumbent_churn": 0.043765014195239135,
+      "incumbent_downgrade": 0.0008953920069884254
+    },
+    {
+      "month": "2025-05-01",
+      "arm": "Control",
+      "standard_joins": 1833.0,
+      "incumbent_churn": 0.04393644987998628,
+      "incumbent_downgrade": 0.0011658475254314779
+    },
+    {
+      "month": "2025-06-01",
+      "arm": "Control",
+      "standard_joins": 1313.0,
+      "incumbent_churn": 0.042803792013789144,
+      "incumbent_downgrade": 0.0010293976826582399
+    },
+    {
+      "month": "2025-07-01",
+      "arm": "Control",
+      "standard_joins": 1267.0,
+      "incumbent_churn": 0.043514183420545305,
+      "incumbent_downgrade": 0.0007260709546581208
+    },
+    {
+      "month": "2025-08-01",
+      "arm": "Control",
+      "standard_joins": 1430.0,
+      "incumbent_churn": 0.04482108241211295,
+      "incumbent_downgrade": 0.0011526169644260492
+    },
+    {
+      "month": "2025-09-01",
+      "arm": "Control",
+      "standard_joins": 2926.0,
+      "incumbent_churn": 0.04503143963315852,
+      "incumbent_downgrade": 0.0010708696010324282
+    },
+    {
+      "month": "2025-10-01",
+      "arm": "Control",
+      "standard_joins": 2219.0,
+      "incumbent_churn": 0.04395509499136442,
+      "incumbent_downgrade": 0.001093839953943581
+    },
+    {
+      "month": "2025-11-01",
+      "arm": "Control",
+      "standard_joins": 1860.0,
+      "incumbent_churn": 0.04406932931424265,
+      "incumbent_downgrade": 0.0006330067822155238
+    },
+    {
+      "month": "2025-12-01",
+      "arm": "Control",
+      "standard_joins": 1463.0,
+      "incumbent_churn": 0.04348100466994825,
+      "incumbent_downgrade": 0.0008203963145273256
+    },
+    {
+      "month": "2024-10-01",
+      "arm": "Treatment",
+      "standard_joins": 2258.0,
+      "incumbent_churn": 0.04617300724637681,
+      "incumbent_downgrade": 0.0010643115942028986
+    },
+    {
+      "month": "2024-11-01",
+      "arm": "Treatment",
+      "standard_joins": 2058.0,
+      "incumbent_churn": 0.04574292745704545,
+      "incumbent_downgrade": 0.0008805400645729381
+    },
+    {
+      "month": "2024-12-01",
+      "arm": "Treatment",
+      "standard_joins": 1316.0,
+      "incumbent_churn": 0.04594765628531393,
+      "incumbent_downgrade": 0.0009266374361524205
+    },
+    {
+      "month": "2025-01-01",
+      "arm": "Treatment",
+      "standard_joins": 3799.0,
+      "incumbent_churn": 0.04573900239278483,
+      "incumbent_downgrade": 0.0010123320449107306
+    },
+    {
+      "month": "2025-02-01",
+      "arm": "Treatment",
+      "standard_joins": 2279.0,
+      "incumbent_churn": 0.04315766164747564,
+      "incumbent_downgrade": 0.0008635961027457928
+    },
+    {
+      "month": "2025-03-01",
+      "arm": "Treatment",
+      "standard_joins": 2083.0,
+      "incumbent_churn": 0.044924025545034135,
+      "incumbent_downgrade": 0.0009028848271305879
+    },
+    {
+      "month": "2025-04-01",
+      "arm": "Treatment",
+      "standard_joins": 1738.0,
+      "incumbent_churn": 0.04503372569765904,
+      "incumbent_downgrade": 0.0009919322840894061
+    },
+    {
+      "month": "2025-05-01",
+      "arm": "Treatment",
+      "standard_joins": 1788.0,
+      "incumbent_churn": 0.05062618420444567,
+      "incumbent_downgrade": 0.005037201349415407
+    },
+    {
+      "month": "2025-06-01",
+      "arm": "Treatment",
+      "standard_joins": 1285.0,
+      "incumbent_churn": 0.05040495240891629,
+      "incumbent_downgrade": 0.005505395287381634
+    },
+    {
+      "month": "2025-07-01",
+      "arm": "Treatment",
+      "standard_joins": 1227.0,
+      "incumbent_churn": 0.05097968069666183,
+      "incumbent_downgrade": 0.004483723823346465
+    },
+    {
+      "month": "2025-08-01",
+      "arm": "Treatment",
+      "standard_joins": 1325.0,
+      "incumbent_churn": 0.04903413456261662,
+      "incumbent_downgrade": 0.005378114367248381
+    },
+    {
+      "month": "2025-09-01",
+      "arm": "Treatment",
+      "standard_joins": 2652.0,
+      "incumbent_churn": 0.045935985606917966,
+      "incumbent_downgrade": 0.004817039551957285
+    },
+    {
+      "month": "2025-10-01",
+      "arm": "Treatment",
+      "standard_joins": 1989.0,
+      "incumbent_churn": 0.04557960381511372,
+      "incumbent_downgrade": 0.005716556615309366
+    },
+    {
+      "month": "2025-11-01",
+      "arm": "Treatment",
+      "standard_joins": 1685.0,
+      "incumbent_churn": 0.045111812850422116,
+      "incumbent_downgrade": 0.004672294902365148
+    },
+    {
+      "month": "2025-12-01",
+      "arm": "Treatment",
+      "standard_joins": 1234.0,
+      "incumbent_churn": 0.044932008545559364,
+      "incumbent_downgrade": 0.004747532978398725
+    }
+  ]
+}

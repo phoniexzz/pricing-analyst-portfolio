@@ -1,0 +1,21 @@
+{
+  "indicators": ["competitor_gap", "churn", "conversion", "acquisition_growth", "peak_utilisation", "income"],
+  "weights": {
+    "base": [0.30, 0.25, 0.15, 0.15, 0.10, 0.05],
+    "market_emphasis": [0.40, 0.20, 0.15, 0.10, 0.10, 0.05],
+    "retention_emphasis": [0.20, 0.40, 0.15, 0.10, 0.10, 0.05],
+    "exclude_income": [0.30, 0.30, 0.15, 0.15, 0.10, 0.00],
+    "recent_trading": [0.30, 0.25, 0.15, 0.15, 0.10, 0.05],
+    "value_competitors": [0.30, 0.25, 0.15, 0.15, 0.10, 0.05]
+  },
+  "high_threshold": 65,
+  "medium_threshold": 40,
+  "rank_movement_threshold": 10,
+  "threshold_shift": 5,
+  "comparison_tolerance": 1e-10,
+  "primary_year": 2025,
+  "competitor_snapshot": "2025-12-01",
+  "recent_start": "2025-10-01",
+  "recent_end": "2025-12-01",
+  "value_types": ["National value", "Local low-cost"]
+}

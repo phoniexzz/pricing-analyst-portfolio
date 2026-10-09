@@ -1,0 +1,6 @@
+variant,sort_order,label
+base,1,Base policy
+member_limit_3pct,2,3% member limit
+member_limit_7pct,3,7% member limit
+competitor_buffer_1gbp,4,£1 competitor buffer
+allow_repeat_repricing,5,Repeat repricing warning

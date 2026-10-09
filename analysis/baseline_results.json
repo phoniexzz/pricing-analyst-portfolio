@@ -1,0 +1,446 @@
+{
+  "annual": {
+    "2024": {
+      "months": 12,
+      "opening_members": 400000,
+      "closing_members": 399002,
+      "member_months": 4889517.0,
+      "opening_member_months": 4890016.0,
+      "average_members": 407459.75,
+      "subscription_revenue": 100730861.76,
+      "joining_fee_revenue": 1263966.68,
+      "ancillary_revenue": 2535814.84,
+      "total_revenue": 104530643.28,
+      "average_monthly_revenue": 8710886.94,
+      "arpmm": 21.378521289526144,
+      "subscription_yield": 20.601393094655364,
+      "standard_member_months": 3321703.5,
+      "standard_subscription_revenue": 66696953.85,
+      "standard_yield": 20.07914127495124,
+      "new_members": 221574,
+      "average_monthly_joins": 18464.5,
+      "acquisition_rate": 0.045311508183204306,
+      "opening_base_cancellations": 218581,
+      "same_month_cancellations": 3991,
+      "all_cancellations": 222572,
+      "churn_rate": 0.04469944474619306,
+      "retention_rate": 0.955300555253807,
+      "qualified_prospects": 715598,
+      "conversion_rate": 0.30963473905740374,
+      "member_growth": -0.002495000000000025,
+      "occupancy_minutes": 1887347400.0,
+      "capacity_minutes": 8741485440.0,
+      "opening_minutes": 42163200,
+      "average_utilisation": 0.21590694315679143,
+      "average_monthly_peak": 0.6692862305798211,
+      "max_monthly_peak": 1.06,
+      "promotion_gym_months": 203,
+      "promotion_frequency": 0.21145833333333333,
+      "standard_mix": 0.6793520709714272,
+      "offpeak_mix": 0.1469899787647737,
+      "plus_mix": 0.17365795026379907,
+      "pricing_complaints": 1731,
+      "complaints_per_1000_member_months": 0.354022697947466,
+      "marketing_spend": 4279606.74
+    },
+    "2025": {
+      "months": 12,
+      "opening_members": 399002,
+      "closing_members": 396311,
+      "member_months": 4869601.5,
+      "opening_member_months": 4870947.0,
+      "average_members": 405800.125,
+      "subscription_revenue": 103181994.13,
+      "joining_fee_revenue": 1289124.88,
+      "ancillary_revenue": 2535814.84,
+      "total_revenue": 107006933.85,
+      "average_monthly_revenue": 8917244.487499999,
+      "arpmm": 21.974474471884403,
+      "subscription_yield": 21.189001631858375,
+      "standard_member_months": 3277607.0,
+      "standard_subscription_revenue": 68825065.96000001,
+      "standard_yield": 20.998571811690667,
+      "new_members": 221277,
+      "average_monthly_joins": 18439.75,
+      "acquisition_rate": 0.04542792192154831,
+      "opening_base_cancellations": 220106,
+      "same_month_cancellations": 3862,
+      "all_cancellations": 223968,
+      "churn_rate": 0.045187516924327036,
+      "retention_rate": 0.954812483075673,
+      "qualified_prospects": 720173,
+      "conversion_rate": 0.30725534003635235,
+      "member_growth": -0.00674432709610473,
+      "occupancy_minutes": 1875088500.0,
+      "capacity_minutes": 8717601600.0,
+      "opening_minutes": 42048000,
+      "average_utilisation": 0.21509224509640357,
+      "average_monthly_peak": 0.6668568474797262,
+      "max_monthly_peak": 1.04666667,
+      "promotion_gym_months": 197,
+      "promotion_frequency": 0.20520833333333333,
+      "standard_mix": 0.6730749939189069,
+      "offpeak_mix": 0.15464232545517329,
+      "plus_mix": 0.1722826806259198,
+      "pricing_complaints": 2067,
+      "complaints_per_1000_member_months": 0.4244700516048387,
+      "marketing_spend": 4251158.07
+    }
+  },
+  "q4": {
+    "2024": {
+      "months": 3,
+      "opening_members": 403370,
+      "closing_members": 399002,
+      "member_months": 1211181.0,
+      "opening_member_months": 1213365.0,
+      "average_members": 403727.0,
+      "subscription_revenue": 25165943.75,
+      "joining_fee_revenue": 282149.94,
+      "ancillary_revenue": 632368.78,
+      "total_revenue": 26080462.47,
+      "average_monthly_revenue": 8693487.49,
+      "arpmm": 21.5330842128468,
+      "subscription_yield": 20.778020584867168,
+      "standard_member_months": 821538.5,
+      "standard_subscription_revenue": 16724921.780000001,
+      "standard_yield": 20.35804990271302,
+      "new_members": 50517,
+      "average_monthly_joins": 16839.0,
+      "acquisition_rate": 0.041633803513369844,
+      "opening_base_cancellations": 53990,
+      "same_month_cancellations": 895,
+      "all_cancellations": 54885,
+      "churn_rate": 0.04449609144816275,
+      "retention_rate": 0.9555039085518372,
+      "qualified_prospects": 161987,
+      "conversion_rate": 0.3118583590041176,
+      "member_growth": -0.01082876763269458,
+      "occupancy_minutes": 469019640.0,
+      "capacity_minutes": 2197313280.0,
+      "opening_minutes": 10598400,
+      "average_utilisation": 0.21345142009062995,
+      "average_monthly_peak": 0.6618389527392864,
+      "max_monthly_peak": 0.96568627,
+      "promotion_gym_months": 57,
+      "promotion_frequency": 0.2375,
+      "standard_mix": 0.6782953992838395,
+      "offpeak_mix": 0.14921510492651388,
+      "plus_mix": 0.17248949578964665,
+      "pricing_complaints": 361,
+      "complaints_per_1000_member_months": 0.2980561947388541,
+      "marketing_spend": 975394.9
+    },
+    "2025": {
+      "months": 3,
+      "opening_members": 401018,
+      "closing_members": 396311,
+      "member_months": 1203313.5,
+      "opening_member_months": 1205667.0,
+      "average_members": 401104.5,
+      "subscription_revenue": 25690543.630000003,
+      "joining_fee_revenue": 292141.65,
+      "ancillary_revenue": 632368.78,
+      "total_revenue": 26615054.06,
+      "average_monthly_revenue": 8871684.686666666,
+      "arpmm": 22.118138008091822,
+      "subscription_yield": 21.34983412884506,
+      "standard_member_months": 804184.5,
+      "standard_subscription_revenue": 17095926.5,
+      "standard_yield": 21.258711775718133,
+      "new_members": 49849,
+      "average_monthly_joins": 16616.333333333332,
+      "acquisition_rate": 0.041345578837274306,
+      "opening_base_cancellations": 53688,
+      "same_month_cancellations": 868,
+      "all_cancellations": 54556,
+      "churn_rate": 0.0445297084518362,
+      "retention_rate": 0.9554702915481638,
+      "qualified_prospects": 161936,
+      "conversion_rate": 0.30783148898330204,
+      "member_growth": -0.011737627737408274,
+      "occupancy_minutes": 463648380.0,
+      "capacity_minutes": 2197313280.0,
+      "opening_minutes": 10598400,
+      "average_utilisation": 0.21100695300034777,
+      "average_monthly_peak": 0.6542251455187192,
+      "max_monthly_peak": 0.96666667,
+      "promotion_gym_months": 45,
+      "promotion_frequency": 0.1875,
+      "standard_mix": 0.6683083834761265,
+      "offpeak_mix": 0.15881605250834466,
+      "plus_mix": 0.17287556401552878,
+      "pricing_complaints": 361,
+      "complaints_per_1000_member_months": 0.3000049446798361,
+      "marketing_spend": 965316.3000000002
+    }
+  },
+  "bridge": {
+    "2024_revenue": 104530643.28,
+    "member_volume_contribution": -425763.9407415579,
+    "total_arpmm_contribution": 2902054.5107415468,
+    "2025_revenue": 107006933.85,
+    "difference": 0.0
+  },
+  "thresholds": {
+    "churn_upper_quartile": 0.0479290877172128,
+    "conversion_lower_quartile": 0.296277153335325,
+    "acquisition_growth_lower_quartile": -0.023958179102267718
+  },
+  "rankings": {
+    "highest_total_revenue_2025": [
+      "NF004",
+      "NF009",
+      "NF011",
+      "NF001",
+      "NF052"
+    ],
+    "lowest_total_revenue_2025": [
+      "NF050",
+      "NF075",
+      "NF027",
+      "NF035",
+      "NF032"
+    ],
+    "highest_revenue_growth_yoy": [
+      "NF022",
+      "NF045",
+      "NF015",
+      "NF028",
+      "NF071"
+    ],
+    "lowest_revenue_growth_yoy": [
+      "NF008",
+      "NF027",
+      "NF003",
+      "NF005",
+      "NF063"
+    ],
+    "highest_member_growth_2025": [
+      "NF050",
+      "NF017",
+      "NF019",
+      "NF025",
+      "NF055"
+    ],
+    "lowest_member_growth_2025": [
+      "NF058",
+      "NF031",
+      "NF052",
+      "NF011",
+      "NF036"
+    ]
+  },
+  "exception_counts": {
+    "high_churn_exception": 20,
+    "weak_conversion_exception": 20,
+    "declining_acquisition_exception": 20,
+    "peak_capacity_exception": 2
+  },
+  "sources_sha256": {
+    "cohorts.csv": "15cb135413cdff2adc6dea8d6ecc9867a7c68bf6d98a60b2dd69b979858eb3d8",
+    "competitor_prices.csv": "754062b02e2f4cd0ce989c12e02af029d2584007fc3b74f65852d0cefdfd56c5",
+    "experiment_assignments.csv": "05f2d39ffd30f0e55d8e0c663f17191693a9c2be05ffb8e4f69155d247a814f4",
+    "gym_master.csv": "1bfbf7bbcd847c2634d155d88641d5f2f87dca2fe0e345da8be498f053a20d14",
+    "market_events.csv": "c786240e6f0a962348b18ec46552d6805c3eae1001bad4e21f4b458659273ec7",
+    "membership_ledger.csv": "709ab573bf893097d6cf51b2bda5c052f88a1d526f8846af901c5d58508cc496",
+    "monthly_performance.csv": "f3e088c724d27f282af506cf8dd0e97b21447192164476c3e74d489856b7a51d",
+    "pricing_history.csv": "1a1cc79ad85b7a7628bcc9b49a5877167d424368f1f305ab90884246af1afa6e"
+  },
+  "generation_config_sha256": "2a98c053337c861defaa492bb8be543557a11b271e8da8975e1ced260b504e41",
+  "checks": [
+    {
+      "check": "80 mature gyms, unique gym-month keys and exact 24-month coverage",
+      "status": "PASS"
+    },
+    {
+      "check": "All source monthly member bridges reconcile exactly",
+      "status": "PASS"
+    },
+    {
+      "check": "Same-month and opening-base cancellations reconcile",
+      "status": "PASS"
+    },
+    {
+      "check": "Attendance utilisation reconstructs source occupancy within rounding tolerance",
+      "status": "PASS"
+    },
+    {
+      "check": "Source visit duration is constant and monthly opening minutes are common across gyms",
+      "status": "PASS"
+    },
+    {
+      "check": "80 gym, 24 estate-month and 16 region-year derived records with unique keys",
+      "status": "PASS"
+    },
+    {
+      "check": "2024 site and region totals reconcile: total_revenue",
+      "status": "PASS"
+    },
+    {
+      "check": "2024 site and region totals reconcile: subscription_revenue",
+      "status": "PASS"
+    },
+    {
+      "check": "2024 site and region totals reconcile: joining_fee_revenue",
+      "status": "PASS"
+    },
+    {
+      "check": "2024 site and region totals reconcile: ancillary_revenue",
+      "status": "PASS"
+    },
+    {
+      "check": "2024 site and region totals reconcile: new_members",
+      "status": "PASS"
+    },
+    {
+      "check": "2024 site and region totals reconcile: opening_base_cancellations",
+      "status": "PASS"
+    },
+    {
+      "check": "2024 site and region totals reconcile: same_month_cancellations",
+      "status": "PASS"
+    },
+    {
+      "check": "2024 site and region totals reconcile: all_cancellations",
+      "status": "PASS"
+    },
+    {
+      "check": "2024 site and region totals reconcile: qualified_prospects",
+      "status": "PASS"
+    },
+    {
+      "check": "2024 site and region totals reconcile: member_months",
+      "status": "PASS"
+    },
+    {
+      "check": "2024 site and region totals reconcile: opening_member_months",
+      "status": "PASS"
+    },
+    {
+      "check": "2024 site and region totals reconcile: opening_members",
+      "status": "PASS"
+    },
+    {
+      "check": "2024 site and region totals reconcile: closing_members",
+      "status": "PASS"
+    },
+    {
+      "check": "2024 revenue components and annual member bridge reconcile",
+      "status": "PASS"
+    },
+    {
+      "check": "2024 weighted ARPMM and churn independently reconstruct from raw CSV",
+      "status": "PASS"
+    },
+    {
+      "check": "2025 site and region totals reconcile: total_revenue",
+      "status": "PASS"
+    },
+    {
+      "check": "2025 site and region totals reconcile: subscription_revenue",
+      "status": "PASS"
+    },
+    {
+      "check": "2025 site and region totals reconcile: joining_fee_revenue",
+      "status": "PASS"
+    },
+    {
+      "check": "2025 site and region totals reconcile: ancillary_revenue",
+      "status": "PASS"
+    },
+    {
+      "check": "2025 site and region totals reconcile: new_members",
+      "status": "PASS"
+    },
+    {
+      "check": "2025 site and region totals reconcile: opening_base_cancellations",
+      "status": "PASS"
+    },
+    {
+      "check": "2025 site and region totals reconcile: same_month_cancellations",
+      "status": "PASS"
+    },
+    {
+      "check": "2025 site and region totals reconcile: all_cancellations",
+      "status": "PASS"
+    },
+    {
+      "check": "2025 site and region totals reconcile: qualified_prospects",
+      "status": "PASS"
+    },
+    {
+      "check": "2025 site and region totals reconcile: member_months",
+      "status": "PASS"
+    },
+    {
+      "check": "2025 site and region totals reconcile: opening_member_months",
+      "status": "PASS"
+    },
+    {
+      "check": "2025 site and region totals reconcile: opening_members",
+      "status": "PASS"
+    },
+    {
+      "check": "2025 site and region totals reconcile: closing_members",
+      "status": "PASS"
+    },
+    {
+      "check": "2025 revenue components and annual member bridge reconcile",
+      "status": "PASS"
+    },
+    {
+      "check": "2025 weighted ARPMM and churn independently reconstruct from raw CSV",
+      "status": "PASS"
+    },
+    {
+      "check": "Exact annual revenue bridge within GBP 0.01",
+      "status": "PASS"
+    },
+    {
+      "check": "Q4 windows contain exactly October, November and December",
+      "status": "PASS"
+    },
+    {
+      "check": "Percentage-point arithmetic and retention identities",
+      "status": "PASS"
+    },
+    {
+      "check": "Zero and missing denominators are unavailable, positive denominator preserves zero numerator",
+      "status": "PASS"
+    },
+    {
+      "check": "Ranking ties resolve deterministically by gym ID",
+      "status": "PASS"
+    },
+    {
+      "check": "Annual site weighted occupancy matches opening-time-weighted source utilisation",
+      "status": "PASS"
+    },
+    {
+      "check": "Calendar boundaries connect 2024 closing stocks to 2025 opening stocks",
+      "status": "PASS"
+    },
+    {
+      "check": "gym_baseline saved CSV values match calculated outputs",
+      "status": "PASS"
+    },
+    {
+      "check": "estate_monthly_trend saved CSV values match calculated outputs",
+      "status": "PASS"
+    },
+    {
+      "check": "region_year_baseline saved CSV values match calculated outputs",
+      "status": "PASS"
+    },
+    {
+      "check": "All eight source CSVs and generation configuration remain unchanged",
+      "status": "PASS"
+    }
+  ],
+  "derived_rows": {
+    "gym_baseline": 80,
+    "estate_monthly_trend": 24,
+    "region_year_baseline": 16
+  }
+}

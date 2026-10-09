@@ -1,0 +1,33 @@
+gym_id,event_id,effective_date,notification_date,existing_member_effective_date,old_price,new_price,change_amount,change_pct,reason,test_group,control_group_flag,selection_method,pair_id
+NF001,PILOT_202504,2025-04-01,2025-04-01,2025-05-01,25.99000000,27.99000000,2.00000000,0.07695267,Historical matched-pair pilot,Treatment,False,randomised_within_matched_pairs,PAIR12
+NF002,TARGETED_202407,2024-07-01,2024-07-01,2024-08-01,30.99000000,31.99000000,1.00000000,0.03226847,Targeted increase using preceding six months' observed performance,Targeted,False,commercially_targeted,
+NF004,TARGETED_202502,2025-02-01,2025-02-01,2025-03-01,31.99000000,33.99000000,2.00000000,0.06251954,Targeted increase using preceding six months' observed performance,Targeted,False,commercially_targeted,
+NF011,PILOT_202504,2025-04-01,2025-04-01,2025-05-01,29.99000000,31.99000000,2.00000000,0.06668890,Historical matched-pair pilot,Treatment,False,randomised_within_matched_pairs,PAIR01
+NF013,TARGETED_202407,2024-07-01,2024-07-01,2024-08-01,28.99000000,29.99000000,1.00000000,0.03449465,Targeted increase using preceding six months' observed performance,Targeted,False,commercially_targeted,
+NF015,TARGETED_202407,2024-07-01,2024-07-01,2024-08-01,26.99000000,27.99000000,1.00000000,0.03705076,Targeted increase using preceding six months' observed performance,Targeted,False,commercially_targeted,
+NF019,TARGETED_202407,2024-07-01,2024-07-01,2024-08-01,29.99000000,30.99000000,1.00000000,0.03334445,Targeted increase using preceding six months' observed performance,Targeted,False,commercially_targeted,
+NF020,TARGETED_202407,2024-07-01,2024-07-01,2024-08-01,28.99000000,29.99000000,1.00000000,0.03449465,Targeted increase using preceding six months' observed performance,Targeted,False,commercially_targeted,
+NF021,PILOT_202504,2025-04-01,2025-04-01,2025-05-01,28.99000000,30.99000000,2.00000000,0.06898931,Historical matched-pair pilot,Treatment,False,randomised_within_matched_pairs,PAIR02
+NF022,TARGETED_202502,2025-02-01,2025-02-01,2025-03-01,26.99000000,28.99000000,2.00000000,0.07410152,Targeted increase using preceding six months' observed performance,Targeted,False,commercially_targeted,
+NF024,TARGETED_202407,2024-07-01,2024-07-01,2024-08-01,26.99000000,27.99000000,1.00000000,0.03705076,Targeted increase using preceding six months' observed performance,Targeted,False,commercially_targeted,
+NF028,TARGETED_202502,2025-02-01,2025-02-01,2025-03-01,25.99000000,27.99000000,2.00000000,0.07695267,Targeted increase using preceding six months' observed performance,Targeted,False,commercially_targeted,
+NF029,TARGETED_202502,2025-02-01,2025-02-01,2025-03-01,27.99000000,29.99000000,2.00000000,0.07145409,Targeted increase using preceding six months' observed performance,Targeted,False,commercially_targeted,
+NF031,PILOT_202504,2025-04-01,2025-04-01,2025-05-01,21.99000000,23.99000000,2.00000000,0.09095043,Historical matched-pair pilot,Treatment,False,randomised_within_matched_pairs,PAIR03
+NF036,PILOT_202504,2025-04-01,2025-04-01,2025-05-01,22.99000000,24.99000000,2.00000000,0.08699435,Historical matched-pair pilot,Treatment,False,randomised_within_matched_pairs,PAIR04
+NF039,TARGETED_202407,2024-07-01,2024-07-01,2024-08-01,20.99000000,21.99000000,1.00000000,0.04764173,Targeted increase using preceding six months' observed performance,Targeted,False,commercially_targeted,
+NF043,PILOT_202504,2025-04-01,2025-04-01,2025-05-01,25.99000000,27.99000000,2.00000000,0.07695267,Historical matched-pair pilot,Treatment,False,randomised_within_matched_pairs,PAIR10
+NF045,PILOT_202504,2025-04-01,2025-04-01,2025-05-01,22.99000000,24.99000000,2.00000000,0.08699435,Historical matched-pair pilot,Treatment,False,randomised_within_matched_pairs,PAIR09
+NF046,PILOT_202504,2025-04-01,2025-04-01,2025-05-01,27.99000000,29.99000000,2.00000000,0.07145409,Historical matched-pair pilot,Treatment,False,randomised_within_matched_pairs,PAIR05
+NF051,TARGETED_202407,2024-07-01,2024-07-01,2024-08-01,22.99000000,23.99000000,1.00000000,0.04349717,Targeted increase using preceding six months' observed performance,Targeted,False,commercially_targeted,
+NF052,TARGETED_202502,2025-02-01,2025-02-01,2025-03-01,24.99000000,26.99000000,2.00000000,0.08003201,Targeted increase using preceding six months' observed performance,Targeted,False,commercially_targeted,
+NF057,TARGETED_202407,2024-07-01,2024-07-01,2024-08-01,24.99000000,25.99000000,1.00000000,0.04001601,Targeted increase using preceding six months' observed performance,Targeted,False,commercially_targeted,
+NF058,PILOT_202504,2025-04-01,2025-04-01,2025-05-01,23.99000000,25.99000000,2.00000000,0.08336807,Historical matched-pair pilot,Treatment,False,randomised_within_matched_pairs,PAIR11
+NF060,TARGETED_202407,2024-07-01,2024-07-01,2024-08-01,26.99000000,27.99000000,1.00000000,0.03705076,Targeted increase using preceding six months' observed performance,Targeted,False,commercially_targeted,
+NF062,TARGETED_202502,2025-02-01,2025-02-01,2025-03-01,23.99000000,25.99000000,2.00000000,0.08336807,Targeted increase using preceding six months' observed performance,Targeted,False,commercially_targeted,
+NF064,PILOT_202504,2025-04-01,2025-04-01,2025-05-01,25.99000000,27.99000000,2.00000000,0.07695267,Historical matched-pair pilot,Treatment,False,randomised_within_matched_pairs,PAIR06
+NF065,PILOT_202504,2025-04-01,2025-04-01,2025-05-01,20.99000000,22.99000000,2.00000000,0.09528347,Historical matched-pair pilot,Treatment,False,randomised_within_matched_pairs,PAIR07
+NF067,TARGETED_202407,2024-07-01,2024-07-01,2024-08-01,29.99000000,30.99000000,1.00000000,0.03334445,Targeted increase using preceding six months' observed performance,Targeted,False,commercially_targeted,
+NF071,TARGETED_202502,2025-02-01,2025-02-01,2025-03-01,22.99000000,24.99000000,2.00000000,0.08699435,Targeted increase using preceding six months' observed performance,Targeted,False,commercially_targeted,
+NF072,TARGETED_202502,2025-02-01,2025-02-01,2025-03-01,21.99000000,23.99000000,2.00000000,0.09095043,Targeted increase using preceding six months' observed performance,Targeted,False,commercially_targeted,
+NF079,PILOT_202504,2025-04-01,2025-04-01,2025-05-01,24.99000000,26.99000000,2.00000000,0.08003201,Historical matched-pair pilot,Treatment,False,randomised_within_matched_pairs,PAIR08
+NF080,TARGETED_202407,2024-07-01,2024-07-01,2024-08-01,22.99000000,23.99000000,1.00000000,0.04349717,Targeted increase using preceding six months' observed performance,Targeted,False,commercially_targeted,

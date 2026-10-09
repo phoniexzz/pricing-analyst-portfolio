@@ -1,0 +1,216 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "p05",
+  "displayName": "Recommendations",
+  "displayOption": "FitToPage",
+  "width": 1600,
+  "height": 1095,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "p05_case",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DimCase"
+              }
+            },
+            "Property": "case"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User",
+        "isHiddenInViewMode": true,
+        "isLockedInViewMode": true,
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "s",
+              "Entity": "DimCase",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "s"
+                          }
+                        },
+                        "Property": "case"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'Base'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#F4F7FA'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "p05_recommendations",
+      "target": "p05_policy",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p05_recommendations",
+      "target": "p05_k0",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p05_recommendations",
+      "target": "p05_k1",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p05_recommendations",
+      "target": "p05_k2",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p05_recommendations",
+      "target": "p05_k3",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p05_recommendations",
+      "target": "p05_sensitivity",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p05_recommendations",
+      "target": "p05_policy_scope",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p05_recommendations",
+      "target": "p05_shared0",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p05_recommendations",
+      "target": "p05_shared1",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p05_recommendations",
+      "target": "p05_shared2",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p05_recommendations",
+      "target": "p05_shared3",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p05_recommendations",
+      "target": "p05_stamp",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p05_sensitivity",
+      "target": "p05_policy",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p05_sensitivity",
+      "target": "p05_k0",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p05_sensitivity",
+      "target": "p05_k1",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p05_sensitivity",
+      "target": "p05_k2",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p05_sensitivity",
+      "target": "p05_k3",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p05_sensitivity",
+      "target": "p05_recommendations",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p05_sensitivity",
+      "target": "p05_policy_scope",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p05_sensitivity",
+      "target": "p05_shared0",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p05_sensitivity",
+      "target": "p05_shared1",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p05_sensitivity",
+      "target": "p05_shared2",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p05_sensitivity",
+      "target": "p05_shared3",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p05_sensitivity",
+      "target": "p05_stamp",
+      "type": "NoFilter"
+    }
+  ]
+}

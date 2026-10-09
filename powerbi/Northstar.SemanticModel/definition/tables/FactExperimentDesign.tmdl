@@ -1,0 +1,290 @@
+table FactExperimentDesign
+	lineageTag: 2d9785c7-0118-56e7-b699-05bd8dfea5e1
+
+	column gym_id
+		dataType: string
+		lineageTag: 84290d3e-2766-5892-86ea-f304ace2d47b
+		summarizeBy: none
+		sourceColumn: gym_id
+
+	column gym_name
+		dataType: string
+		lineageTag: 194884a1-daa5-5637-b9af-eaf91d96506e
+		summarizeBy: none
+		sourceColumn: gym_name
+
+	column region
+		dataType: string
+		lineageTag: f0750dce-2254-5183-a37d-d2aa8fcc0abc
+		summarizeBy: none
+		sourceColumn: region
+
+	column action
+		dataType: string
+		lineageTag: 7d35aace-17c2-567d-a706-67678d3c2a99
+		summarizeBy: none
+		sourceColumn: action
+
+	column repeated_repricing
+		dataType: boolean
+		isHidden
+		lineageTag: ab602d41-72d4-5ec3-824d-3892fac28697
+		summarizeBy: none
+		sourceColumn: repeated_repricing
+
+	column caution_flag_count
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: d9d1daef-1165-5b11-877f-8de25e144fb0
+		summarizeBy: none
+		sourceColumn: caution_flag_count
+
+	column plus1_complete
+		dataType: boolean
+		isHidden
+		lineageTag: 755cbc6a-d4bf-5721-848e-161afbd69fd9
+		summarizeBy: none
+		sourceColumn: plus1_complete
+
+	column plus1_plausible
+		dataType: boolean
+		isHidden
+		lineageTag: a0e59ed1-4018-5a3c-af4d-4a4378ad7404
+		summarizeBy: none
+		sourceColumn: plus1_plausible
+
+	column evidence_status
+		dataType: string
+		lineageTag: 5e32d3ac-19b6-5ad1-a6d3-ed89dd30dfb6
+		summarizeBy: none
+		sourceColumn: evidence_status
+
+	column current_standard_price
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 0ff160aa-83e6-56c3-8df3-bd80ca54d764
+		summarizeBy: none
+		sourceColumn: current_standard_price
+
+	column competitor_gap_dec2025
+		dataType: double
+		isHidden
+		lineageTag: 7ff765b3-3ea6-541c-ab05-f5a06c57ac77
+		summarizeBy: none
+		sourceColumn: competitor_gap_dec2025
+
+	column standard_price
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: bb8b20e2-53a9-58eb-96a7-62d93cce0347
+		summarizeBy: none
+		sourceColumn: standard_price
+
+	column average_members
+		dataType: double
+		isHidden
+		lineageTag: 71071987-3f3c-5006-8a0a-bb167b28ba88
+		summarizeBy: none
+		sourceColumn: average_members
+
+	column acquisition_rate
+		dataType: double
+		isHidden
+		lineageTag: 4fc4527a-8167-5204-8137-75c63a630599
+		summarizeBy: none
+		sourceColumn: acquisition_rate
+
+	column churn_rate
+		dataType: double
+		isHidden
+		lineageTag: 49c460be-a08c-5e6e-be5d-8d68485a49c3
+		summarizeBy: none
+		sourceColumn: churn_rate
+
+	column conversion_rate
+		dataType: double
+		isHidden
+		lineageTag: 7f0bd13e-a460-5f2d-bcae-fb69596f20e1
+		summarizeBy: none
+		sourceColumn: conversion_rate
+
+	column peak_utilisation
+		dataType: double
+		isHidden
+		lineageTag: 38a1d0e3-bb35-50ae-b789-80dfa6682ba4
+		summarizeBy: none
+		sourceColumn: peak_utilisation
+
+	column competitor_gap
+		dataType: double
+		isHidden
+		lineageTag: 01502b85-2737-5a65-98e9-3fd53c75bc6b
+		summarizeBy: none
+		sourceColumn: competitor_gap
+
+	column competitor_count
+		dataType: double
+		isHidden
+		lineageTag: 71a5dc21-8aa4-5b99-9b49-b0a533ee78c4
+		summarizeBy: none
+		sourceColumn: competitor_count
+
+	column marketing_per_prospect
+		dataType: double
+		isHidden
+		lineageTag: 67c912da-f87d-54e5-8bd5-6b40b5fd6ac0
+		summarizeBy: none
+		sourceColumn: marketing_per_prospect
+
+	column member_growth
+		dataType: double
+		isHidden
+		lineageTag: 2ac0299e-10d3-58fc-91e9-e09e604fef1c
+		summarizeBy: none
+		sourceColumn: member_growth
+
+	column eligible
+		dataType: boolean
+		isHidden
+		lineageTag: 50dada15-d237-5911-a4fa-85f36fd5f91d
+		summarizeBy: none
+		sourceColumn: eligible
+
+	column pair_id
+		dataType: string
+		lineageTag: bda3cbb8-73d5-53eb-8f24-2734dc341a1f
+		summarizeBy: none
+		sourceColumn: pair_id
+
+	column assignment
+		dataType: string
+		lineageTag: 73ccd07a-582e-5de3-839a-47817ccefe5d
+		summarizeBy: none
+		sourceColumn: assignment
+
+	column population
+		dataType: string
+		lineageTag: 415096c5-7f42-5afe-b870-b96018afe4ae
+		summarizeBy: none
+		sourceColumn: population
+
+	column matched_gym_id
+		dataType: string
+		lineageTag: 2fe3bd69-5b84-5549-8583-de7ef042aabe
+		summarizeBy: none
+		sourceColumn: matched_gym_id
+
+	column matching_distance_squared
+		dataType: double
+		isHidden
+		lineageTag: b829dc9e-c24c-534a-abc3-60cee5040de3
+		summarizeBy: none
+		sourceColumn: matching_distance_squared
+
+	column disposition
+		dataType: string
+		lineageTag: 73026630-2b7e-5e90-8371-36091492c0c9
+		summarizeBy: none
+		sourceColumn: disposition
+
+	column exclusion_reason
+		dataType: string
+		lineageTag: 75f2bf71-d51d-5da2-8d5c-f5d2660829fc
+		summarizeBy: none
+		sourceColumn: exclusion_reason
+
+	column experiment_increment
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 9cd7c6be-1901-53af-8c9a-8feb8975ab20
+		summarizeBy: none
+		sourceColumn: experiment_increment
+
+	column proposed_standard_price
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 9aafd26d-da56-5ac7-ae2d-0670510fac47
+		summarizeBy: none
+		sourceColumn: proposed_standard_price
+
+	column post_increase_competitor_gap
+		dataType: double
+		isHidden
+		lineageTag: 24a557d1-d628-5d50-8117-7f721af530ac
+		summarizeBy: none
+		sourceColumn: post_increase_competitor_gap
+
+	column pre_start
+		dataType: dateTime
+		isHidden
+		formatString: yyyy-MM-dd
+		lineageTag: 288465b5-7817-5785-9f52-f7f5e3e74d78
+		summarizeBy: none
+		sourceColumn: pre_start
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column pre_end
+		dataType: dateTime
+		isHidden
+		formatString: yyyy-MM-dd
+		lineageTag: ce18a035-dfe0-5c32-b056-9751e1eed365
+		summarizeBy: none
+		sourceColumn: pre_end
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column notification_date
+		dataType: dateTime
+		isHidden
+		formatString: yyyy-MM-dd
+		lineageTag: 9d9b0223-8148-573c-bc91-6043c15356ca
+		summarizeBy: none
+		sourceColumn: notification_date
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column new_joiner_effective_date
+		dataType: dateTime
+		isHidden
+		formatString: yyyy-MM-dd
+		lineageTag: 517c7831-115a-5c83-a8d9-a690ae8b38b8
+		summarizeBy: none
+		sourceColumn: new_joiner_effective_date
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column incumbent_effective_date
+		dataType: dateTime
+		isHidden
+		formatString: yyyy-MM-dd
+		lineageTag: 592e2513-879d-5b15-9a06-ddd8977e468f
+		summarizeBy: none
+		sourceColumn: incumbent_effective_date
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column seed
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 7ad8d6b7-bd72-566c-a1eb-dfc41f10a987
+		summarizeBy: none
+		sourceColumn: seed
+
+	partition FactExperimentDesign = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(SourceRoot & "/FactExperimentDesign.csv"), [Delimiter=",", Columns=38, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Nulls = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				    Typed = Table.TransformColumnTypes(Nulls, {{"gym_id", type text}, {"gym_name", type text}, {"region", type text}, {"action", type text}, {"repeated_repricing", type logical}, {"caution_flag_count", Int64.Type}, {"plus1_complete", type logical}, {"plus1_plausible", type logical}, {"evidence_status", type text}, {"current_standard_price", type number}, {"competitor_gap_dec2025", type number}, {"standard_price", type number}, {"average_members", type number}, {"acquisition_rate", type number}, {"churn_rate", type number}, {"conversion_rate", type number}, {"peak_utilisation", type number}, {"competitor_gap", type number}, {"competitor_count", type number}, {"marketing_per_prospect", type number}, {"member_growth", type number}, {"eligible", type logical}, {"pair_id", type text}, {"assignment", type text}, {"population", type text}, {"matched_gym_id", type text}, {"matching_distance_squared", type number}, {"disposition", type text}, {"exclusion_reason", type text}, {"experiment_increment", Int64.Type}, {"proposed_standard_price", type number}, {"post_increase_competitor_gap", type number}, {"pre_start", type date}, {"pre_end", type date}, {"notification_date", type date}, {"new_joiner_effective_date", type date}, {"incumbent_effective_date", type date}, {"seed", Int64.Type}}, "en-GB")
+				in
+				    Typed
+

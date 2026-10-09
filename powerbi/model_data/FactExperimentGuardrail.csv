@@ -1,0 +1,433 @@
+simulation,population,checkpoint_months,metric,estimate,lower,upper,unit,complete_pairs,interval_status,label,tolerance,upper_bound_pass
+Main,First repricing,1,member_harm,0.0057377356136399998,-0.00773763330746,0.019616894705500001,decimal proportion,5,Available,Closing membership loss,0.029999999999999999,True
+Main,Repeat repricing,1,member_harm,-0.0021793075471600002,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Main,All assigned pairs,1,member_harm,0.0034757232819800001,-0.0094148599287499999,0.0162572270152,decimal proportion,7,Available,Closing membership loss,0.029999999999999999,True
+Main,Region: North West,1,member_harm,-0.011947073205799999,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Main,Region: Scotland,1,member_harm,-0.0014234734599399999,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Main,Region: South East,1,member_harm,-0.0021793075471600002,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Main,Region: South West,1,member_harm,0.026343109155199999,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Main,Region: Wales,1,member_harm,0.023410864338599999,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Main,Region: Yorkshire,1,member_harm,-0.0076947487597699999,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Main,First repricing,3,member_harm,0.0023164305472399998,-0.019055475154800001,0.022365242965799999,decimal proportion,5,Available,Closing membership loss,0.029999999999999999,True
+Main,Repeat repricing,3,member_harm,0.0017459929378300001,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Main,All assigned pairs,3,member_harm,0.0021534483731300001,-0.012507174102600001,0.016558086434600001,decimal proportion,7,Available,Closing membership loss,0.029999999999999999,True
+Main,Region: North West,3,member_harm,-0.031875396178600003,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Main,Region: Scotland,3,member_harm,-0.0019805614814899998,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Main,Region: South East,3,member_harm,0.0017459929378300001,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Main,Region: South West,3,member_harm,0.0246791792149,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Main,Region: Wales,3,member_harm,0.032224208940199998,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Main,Region: Yorkshire,3,member_harm,-0.0114652777589,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Main,First repricing,6,member_harm,0.0205440941318,0.00295314166573,0.038135046597899999,decimal proportion,5,Available,Closing membership loss,0.029999999999999999,False
+Main,Repeat repricing,6,member_harm,0.0224159277245,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Main,All assigned pairs,6,member_harm,0.021078903729700001,0.0071535398164900002,0.034096114529099997,decimal proportion,7,Available,Closing membership loss,0.029999999999999999,False
+Main,Region: North West,6,member_harm,0.040174032057500003,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Main,Region: Scotland,6,member_harm,0.0079311603262899998,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Main,Region: South East,6,member_harm,0.0224159277245,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Main,Region: South West,6,member_harm,0.020727282323300001,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Main,Region: Wales,6,member_harm,0.044799943275600003,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Main,Region: Yorkshire,6,member_harm,-0.010911947323599999,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Main,First repricing,12,member_harm,0.062346922909199999,0.0273538966451,0.092228916809500003,decimal proportion,5,Available,Closing membership loss,0.029999999999999999,False
+Main,Repeat repricing,12,member_harm,0.010741919430900001,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Main,All assigned pairs,12,member_harm,0.047602636201100001,0.0193171645834,0.0773972145493,decimal proportion,7,Available,Closing membership loss,0.029999999999999999,False
+Main,Region: North West,12,member_harm,0.0910730399503,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Main,Region: Scotland,12,member_harm,0.0030898250209900001,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Main,Region: South East,12,member_harm,0.010741919430900001,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Main,Region: South West,12,member_harm,0.0832910585777,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Main,Region: Wales,12,member_harm,0.097853722784700004,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Main,Region: Yorkshire,12,member_harm,0.036426968212500001,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+A/A null,First repricing,1,member_harm,0.0024163707671999999,-0.0113937786585,0.016226520192899999,decimal proportion,5,Available,Closing membership loss,0.029999999999999999,True
+A/A null,Repeat repricing,1,member_harm,-0.00496599938408,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+A/A null,All assigned pairs,1,member_harm,0.00030712215254599998,-0.0123781141244,0.0129152440884,decimal proportion,7,Available,Closing membership loss,0.029999999999999999,True
+A/A null,Region: North West,1,member_harm,-0.0158117359413,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+A/A null,Region: Scotland,1,member_harm,-0.0046960991902000003,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+A/A null,Region: South East,1,member_harm,-0.00496599938408,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+A/A null,Region: South West,1,member_harm,0.022132700978500001,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+A/A null,Region: Wales,1,member_harm,0.020781649098699999,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+A/A null,Region: Yorkshire,1,member_harm,-0.0103246611097,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+A/A null,First repricing,3,member_harm,-0.0067168644017700004,-0.026149762213099999,0.0127160334096,decimal proportion,5,Available,Closing membership loss,0.029999999999999999,True
+A/A null,Repeat repricing,3,member_harm,-0.0064002376481600001,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+A/A null,All assigned pairs,3,member_harm,-0.0066263996150299998,-0.021090331506599998,0.0077440040925799997,decimal proportion,7,Available,Closing membership loss,0.029999999999999999,True
+A/A null,Region: North West,3,member_harm,-0.040874309517299999,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+A/A null,Region: Scotland,3,member_harm,-0.013431767898399999,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+A/A null,Region: South East,3,member_harm,-0.0064002376481600001,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+A/A null,Region: South West,3,member_harm,0.017538815288300001,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+A/A null,Region: Wales,3,member_harm,0.020967152184800001,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+A/A null,Region: Yorkshire,3,member_harm,-0.017784212066300001,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+A/A null,First repricing,6,member_harm,0.0056864496422600001,-0.0123557144483,0.0237286137329,decimal proportion,5,Available,Closing membership loss,0.029999999999999999,True
+A/A null,Repeat repricing,6,member_harm,0.0094875023266599995,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+A/A null,All assigned pairs,6,member_harm,0.0067724646949400003,-0.0071831142531000002,0.019659724759700001,decimal proportion,7,Available,Closing membership loss,0.029999999999999999,True
+A/A null,Region: North West,6,member_harm,0.027336546327699999,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+A/A null,Region: Scotland,6,member_harm,-0.0088338390767300004,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+A/A null,Region: South East,6,member_harm,0.0094875023266599995,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+A/A null,Region: South West,6,member_harm,0.00765942287139,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+A/A null,Region: Wales,6,member_harm,0.0281552765688,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+A/A null,Region: Yorkshire,6,member_harm,-0.0258851584798,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+A/A null,First repricing,12,member_harm,0.041358951238199999,0.0034944952297200002,0.072679306992700005,decimal proportion,5,Available,Closing membership loss,0.029999999999999999,False
+A/A null,Repeat repricing,12,member_harm,-0.00906128880149,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+A/A null,All assigned pairs,12,member_harm,0.026953168369699999,-0.0023629048027200002,0.056251641470200002,decimal proportion,7,Available,Closing membership loss,0.029999999999999999,False
+A/A null,Region: North West,12,member_harm,0.072492930644900005,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+A/A null,Region: Scotland,12,member_harm,-0.023987278244200001,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+A/A null,Region: South East,12,member_harm,-0.00906128880149,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+A/A null,Region: South West,12,member_harm,0.064284773434000006,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+A/A null,Region: Wales,12,member_harm,0.077062950119799994,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+A/A null,Region: Yorkshire,12,member_harm,0.016941380236399999,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Adverse response,First repricing,1,member_harm,0.0086441720589999996,-0.0051268936970899999,0.022415237815099999,decimal proportion,5,Available,Closing membership loss,0.029999999999999999,True
+Adverse response,Repeat repricing,1,member_harm,0.00239859214177,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Adverse response,All assigned pairs,1,member_harm,0.0068597206540799999,-0.0061262004659000001,0.019624085880399999,decimal proportion,7,Available,Closing membership loss,0.029999999999999999,True
+Adverse response,Region: North West,1,member_harm,-0.0086769739680700002,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Adverse response,Region: Scotland,1,member_harm,0.0018491522703200001,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Adverse response,Region: South East,1,member_harm,0.00239859214177,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Adverse response,Region: South West,1,member_harm,0.029237764776599999,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Adverse response,Region: Wales,1,member_harm,0.0258757536259,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Adverse response,Region: Yorkshire,1,member_harm,-0.0050648364098099998,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Adverse response,First repricing,3,member_harm,0.0111960140139,-0.0106074749174,0.032999502945099998,decimal proportion,5,Available,Closing membership loss,0.029999999999999999,False
+Adverse response,Repeat repricing,3,member_harm,0.0103701330649,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Adverse response,All assigned pairs,3,member_harm,0.010960048028499999,-0.0051088090530700004,0.026674228985799998,decimal proportion,7,Available,Closing membership loss,0.029999999999999999,True
+Adverse response,Region: North West,3,member_harm,-0.0246762655076,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Adverse response,Region: Scotland,3,member_harm,0.0066078433312099999,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Adverse response,Region: South East,3,member_harm,0.0103701330649,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Adverse response,Region: South West,3,member_harm,0.0400177387609,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Adverse response,Region: Wales,3,member_harm,0.039177096936200001,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Adverse response,Region: Yorkshire,3,member_harm,-0.0051463434514400002,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Adverse response,First repricing,6,member_harm,0.0348756416586,0.015061712153300001,0.052585425344900003,decimal proportion,5,Available,Closing membership loss,0.029999999999999999,False
+Adverse response,Repeat repricing,6,member_harm,0.034520885336700002,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Adverse response,All assigned pairs,6,member_harm,0.034774282709499997,0.0200869325812,0.048062225779699999,decimal proportion,7,Available,Closing membership loss,0.029999999999999999,False
+Adverse response,Region: North West,6,member_harm,0.0530115177874,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Adverse response,Region: Scotland,6,member_harm,0.0213431598487,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Adverse response,Region: South East,6,member_harm,0.034520885336700002,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Adverse response,Region: South West,6,member_harm,0.042507048076499999,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Adverse response,Region: Wales,6,member_harm,0.057198521536699999,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Adverse response,Region: Yorkshire,6,member_harm,0.00031796104351300002,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Adverse response,First repricing,12,member_harm,0.084631201133500006,0.051000618164500001,0.113491126442,decimal proportion,5,Available,Closing membership loss,0.029999999999999999,False
+Adverse response,Repeat repricing,12,member_harm,0.026920136254600002,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Adverse response,All assigned pairs,12,member_harm,0.068142325453800001,0.039227377400799998,0.098470065116200003,decimal proportion,7,Available,Closing membership loss,0.029999999999999999,False
+Adverse response,Region: North West,12,member_harm,0.11534705372,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Adverse response,Region: Scotland,12,member_harm,0.0288775424164,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Adverse response,Region: South East,12,member_harm,0.026920136254600002,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Adverse response,Region: South West,12,member_harm,0.11056094595800001,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Adverse response,Region: Wales,12,member_harm,0.113100289406,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Adverse response,Region: Yorkshire,12,member_harm,0.055270174167499998,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Closing membership loss,0.029999999999999999,
+Main,First repricing,1,standard_acquisition_harm,0.0148109004642,-0.213469486382,0.24277074669000001,decimal proportion,5,Available,Standard acquisition loss,0.10000000000000001,False
+Main,Repeat repricing,1,standard_acquisition_harm,-0.25982957465700002,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Main,All assigned pairs,1,standard_acquisition_harm,-0.056894542925700002,-0.28524717106000003,0.14931179471700001,decimal proportion,7,Available,Standard acquisition loss,0.10000000000000001,False
+Main,Region: North West,1,standard_acquisition_harm,-0.30668901194999998,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Main,Region: Scotland,1,standard_acquisition_harm,0.049578059071700001,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Main,Region: South East,1,standard_acquisition_harm,-0.25982957465700002,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Main,Region: South West,1,standard_acquisition_harm,-0.016842765979700001,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Main,Region: Wales,1,standard_acquisition_harm,0.40298879202999999,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Main,Region: Yorkshire,1,standard_acquisition_harm,-0.23104239510499999,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Main,First repricing,3,standard_acquisition_harm,-0.0133420305753,-0.18895421349200001,0.116066578372,decimal proportion,5,Available,Standard acquisition loss,0.10000000000000001,False
+Main,Repeat repricing,3,standard_acquisition_harm,-0.014925455010199999,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Main,All assigned pairs,3,standard_acquisition_harm,-0.0137941853103,-0.13303954386,0.081891226559399996,decimal proportion,7,Available,Standard acquisition loss,0.10000000000000001,True
+Main,Region: North West,3,standard_acquisition_harm,-0.34983790156200001,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Main,Region: Scotland,3,standard_acquisition_harm,0.0398609144315,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Main,Region: South East,3,standard_acquisition_harm,-0.014925455010199999,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Main,Region: South West,3,standard_acquisition_harm,0.017142857142899998,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Main,Region: Wales,3,standard_acquisition_harm,0.19096626643799999,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Main,Region: Yorkshire,3,standard_acquisition_harm,-0.036829834260199999,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Main,First repricing,6,standard_acquisition_harm,0.052722621340100001,-0.0099807526448299991,0.111533135883,decimal proportion,5,Available,Standard acquisition loss,0.10000000000000001,False
+Main,Repeat repricing,6,standard_acquisition_harm,0.0305782874539,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Main,All assigned pairs,6,standard_acquisition_harm,0.046447797056600001,0.00124178394525,0.094113298616799998,decimal proportion,7,Available,Standard acquisition loss,0.10000000000000001,True
+Main,Region: North West,6,standard_acquisition_harm,0.139008486008,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Main,Region: Scotland,6,standard_acquisition_harm,0.016571796115800001,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Main,Region: South East,6,standard_acquisition_harm,0.0305782874539,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Main,Region: South West,6,standard_acquisition_harm,-0.0148220986545,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Main,Region: Wales,6,standard_acquisition_harm,0.128569236906,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Main,Region: Yorkshire,6,standard_acquisition_harm,-0.0186418109188,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Main,First repricing,12,standard_acquisition_harm,0.081344021630699995,-0.025256984754200001,0.178444099016,decimal proportion,5,Available,Standard acquisition loss,0.10000000000000001,False
+Main,Repeat repricing,12,standard_acquisition_harm,0.049283439318900002,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Main,All assigned pairs,12,standard_acquisition_harm,0.072295804024599994,-0.00900992752254,0.14953401059499999,decimal proportion,7,Available,Standard acquisition loss,0.10000000000000001,False
+Main,Region: North West,12,standard_acquisition_harm,0.22464681800299999,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Main,Region: Scotland,12,standard_acquisition_harm,-0.11163671167,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Main,Region: South East,12,standard_acquisition_harm,0.049283439318900002,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Main,Region: South West,12,standard_acquisition_harm,0.054600871782000002,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Main,Region: Wales,12,standard_acquisition_harm,0.184590974366,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Main,Region: Yorkshire,12,standard_acquisition_harm,0.0152831666147,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+A/A null,First repricing,1,standard_acquisition_harm,-0.030217788093199999,-0.26491267372600003,0.19905743575599999,decimal proportion,5,Available,Standard acquisition loss,0.10000000000000001,False
+A/A null,Repeat repricing,1,standard_acquisition_harm,-0.31004243385399999,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+A/A null,All assigned pairs,1,standard_acquisition_harm,-0.103430884298,-0.33659158257400001,0.117388005389,decimal proportion,7,Available,Standard acquisition loss,0.10000000000000001,False
+A/A null,Region: North West,1,standard_acquisition_harm,-0.35849606528700001,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+A/A null,Region: Scotland,1,standard_acquisition_harm,0.0029535864978899999,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+A/A null,Region: South East,1,standard_acquisition_harm,-0.31004243385399999,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+A/A null,Region: South West,1,standard_acquisition_harm,-0.073334030756400007,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+A/A null,Region: Wales,1,standard_acquisition_harm,0.37567455375699998,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+A/A null,Region: Yorkshire,1,standard_acquisition_harm,-0.27857298950999998,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+A/A null,First repricing,3,standard_acquisition_harm,-0.063665380660800006,-0.23899869805900001,0.066974129229599999,decimal proportion,5,Available,Standard acquisition loss,0.10000000000000001,True
+A/A null,Repeat repricing,3,standard_acquisition_harm,-0.066381413402999995,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+A/A null,All assigned pairs,3,standard_acquisition_harm,-0.0644406833633,-0.1891493514,0.031124770002999999,decimal proportion,7,Available,Standard acquisition loss,0.10000000000000001,True
+A/A null,Region: North West,3,standard_acquisition_harm,-0.408782788093,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+A/A null,Region: Scotland,3,standard_acquisition_harm,-0.0081460398468899999,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+A/A null,Region: South East,3,standard_acquisition_harm,-0.066381413402999995,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+A/A null,Region: South West,3,standard_acquisition_harm,-0.035854341736699998,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+A/A null,Region: Wales,3,standard_acquisition_harm,0.14088322578900001,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+A/A null,Region: Yorkshire,3,standard_acquisition_harm,-0.077225801828799998,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+A/A null,First repricing,6,standard_acquisition_harm,0.0081575460061800008,-0.055833854805399999,0.068519042698400007,decimal proportion,5,Available,Standard acquisition loss,0.10000000000000001,True
+A/A null,Repeat repricing,6,standard_acquisition_harm,-0.0147123464286,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+A/A null,All assigned pairs,6,standard_acquisition_harm,0.0016764025011800001,-0.043847586301499999,0.050512066501,decimal proportion,7,Available,Standard acquisition loss,0.10000000000000001,True
+A/A null,Region: North West,6,standard_acquisition_harm,0.102202741899,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+A/A null,Region: Scotland,6,standard_acquisition_harm,-0.031793525386700001,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+A/A null,Region: South East,6,standard_acquisition_harm,-0.0147123464286,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+A/A null,Region: South West,6,standard_acquisition_harm,-0.069319076376199995,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+A/A null,Region: Wales,6,standard_acquisition_harm,0.081138964744899997,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+A/A null,Region: Yorkshire,6,standard_acquisition_harm,-0.054593874833600002,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+A/A null,First repricing,12,standard_acquisition_harm,0.038547128987200002,-0.072284734394800002,0.13804769473600001,decimal proportion,5,Available,Standard acquisition loss,0.10000000000000001,False
+A/A null,Repeat repricing,12,standard_acquisition_harm,0.000189730590927,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+A/A null,All assigned pairs,12,standard_acquisition_harm,0.027740556888499999,-0.056860228391699998,0.10796675256799999,decimal proportion,7,Available,Standard acquisition loss,0.10000000000000001,False
+A/A null,Region: North West,12,standard_acquisition_harm,0.191540362751,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+A/A null,Region: Scotland,12,standard_acquisition_harm,-0.16756094049100001,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+A/A null,Region: South East,12,standard_acquisition_harm,0.000189730590927,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+A/A null,Region: South West,12,standard_acquisition_harm,0.0057133123000200001,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+A/A null,Region: Wales,12,standard_acquisition_harm,0.14404577419699999,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+A/A null,Region: Yorkshire,12,standard_acquisition_harm,-0.022680412371099998,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Adverse response,First repricing,1,standard_acquisition_harm,0.057031897138700001,-0.16469479942000001,0.266817642252,decimal proportion,5,Available,Standard acquisition loss,0.10000000000000001,False
+Adverse response,Repeat repricing,1,standard_acquisition_harm,-0.19284892759899999,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Adverse response,All assigned pairs,1,standard_acquisition_harm,-0.0084749817484499994,-0.22996862871900001,0.186631791031,decimal proportion,7,Available,Standard acquisition loss,0.10000000000000001,False
+Adverse response,Region: North West,1,standard_acquisition_harm,-0.254881958613,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Adverse response,Region: Scotland,1,standard_acquisition_harm,0.096202531645599998,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Adverse response,Region: South East,1,standard_acquisition_harm,-0.19284892759899999,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Adverse response,Region: South West,1,standard_acquisition_harm,0.028350245841600001,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Adverse response,Region: Wales,1,standard_acquisition_harm,0.42835201328400002,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Adverse response,Region: Yorkshire,1,standard_acquisition_harm,-0.183511800699,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Adverse response,First repricing,3,standard_acquisition_harm,0.043394350190599999,-0.13538953513599999,0.163610545887,decimal proportion,5,Available,Standard acquisition loss,0.10000000000000001,False
+Adverse response,Repeat repricing,3,standard_acquisition_harm,0.0299008337885,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Adverse response,All assigned pairs,3,standard_acquisition_harm,0.039558326605599999,-0.080688693217499996,0.131026694719,decimal proportion,7,Available,Standard acquisition loss,0.10000000000000001,False
+Adverse response,Region: North West,3,standard_acquisition_harm,-0.29089301503100001,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Adverse response,Region: Scotland,3,standard_acquisition_harm,0.087867868710000005,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Adverse response,Region: South East,3,standard_acquisition_harm,0.0299008337885,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Adverse response,Region: South West,3,standard_acquisition_harm,0.123137254902,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Adverse response,Region: Wales,3,standard_acquisition_harm,0.224354960204,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Adverse response,Region: Yorkshire,3,standard_acquisition_harm,-0.00028110169818500001,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Adverse response,First repricing,6,standard_acquisition_harm,0.10423905046900001,0.047982635634200001,0.15728930766400001,decimal proportion,5,Available,Standard acquisition loss,0.10000000000000001,False
+Adverse response,Repeat repricing,6,standard_acquisition_harm,0.070351192354100006,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Adverse response,All assigned pairs,6,standard_acquisition_harm,0.094684866644100002,0.050586541829399999,0.14147252724699999,decimal proportion,7,Available,Standard acquisition loss,0.10000000000000001,False
+Adverse response,Region: North West,6,standard_acquisition_harm,0.17712872097900001,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Adverse response,Region: Scotland,6,standard_acquisition_harm,0.065944728482900006,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Adverse response,Region: South East,6,standard_acquisition_harm,0.070351192354100006,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Adverse response,Region: South West,6,standard_acquisition_harm,0.067659813572900004,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Adverse response,Region: Wales,6,standard_acquisition_harm,0.17921512073900001,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Adverse response,Region: Yorkshire,6,standard_acquisition_harm,0.019489165960500002,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Adverse response,First repricing,12,standard_acquisition_harm,0.12744630730199999,0.024703490542200002,0.21936566033300001,decimal proportion,5,Available,Standard acquisition loss,0.10000000000000001,False
+Adverse response,Repeat repricing,12,standard_acquisition_harm,0.076894226161900003,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Adverse response,All assigned pairs,12,standard_acquisition_harm,0.113292189104,0.032603929786399997,0.18824882786800001,decimal proportion,7,Available,Standard acquisition loss,0.10000000000000001,False
+Adverse response,Region: North West,12,standard_acquisition_harm,0.26569882251499999,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Adverse response,Region: Scotland,12,standard_acquisition_harm,-0.056853793640800003,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Adverse response,Region: South East,12,standard_acquisition_harm,0.076894226161900003,,,decimal proportion,2,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Adverse response,Region: South West,12,standard_acquisition_harm,0.118586059928,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Adverse response,Region: Wales,12,standard_acquisition_harm,0.21899296238900001,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Adverse response,Region: Yorkshire,12,standard_acquisition_harm,0.053246745600500002,,,decimal proportion,1,Unavailable: fewer than four complete pairs,Standard acquisition loss,0.10000000000000001,
+Main,First repricing,1,incumbent_churn_change_pp,0.040701283420199998,-0.400358054947,0.49918358934399998,percentage points,5,Available,Monthly incumbent churn,0.25,False
+Main,Repeat repricing,1,incumbent_churn_change_pp,-0.33188765271600001,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Main,All assigned pairs,1,incumbent_churn_change_pp,-0.065752698333000001,-0.63165225952500004,0.46995695790000003,percentage points,7,Available,Monthly incumbent churn,0.25,False
+Main,Region: North West,1,incumbent_churn_change_pp,0.94878968165099997,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Main,Region: Scotland,1,incumbent_churn_change_pp,0.15023215235500001,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Main,Region: South East,1,incumbent_churn_change_pp,-0.33188765271600001,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Main,Region: South West,1,incumbent_churn_change_pp,-0.55313742891499995,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Main,Region: Wales,1,incumbent_churn_change_pp,-0.50068325058600005,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Main,Region: Yorkshire,1,incumbent_churn_change_pp,0.158305262596,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Main,First repricing,3,incumbent_churn_change_pp,0.025975392435100001,-0.36389181815900001,0.39743843424000003,percentage points,5,Available,Monthly incumbent churn,0.25,False
+Main,Repeat repricing,3,incumbent_churn_change_pp,-0.421082407582,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Main,All assigned pairs,3,incumbent_churn_change_pp,-0.10175540757,-0.44361702511700002,0.241048060954,percentage points,7,Available,Monthly incumbent churn,0.25,True
+Main,Region: North West,3,incumbent_churn_change_pp,-0.065744238053900006,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Main,Region: Scotland,3,incumbent_churn_change_pp,0.64659990931900002,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Main,Region: South East,3,incumbent_churn_change_pp,-0.421082407582,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Main,Region: South West,3,incumbent_churn_change_pp,0.37986829530999999,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Main,Region: Wales,3,incumbent_churn_change_pp,-0.14660681354499999,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Main,Region: Yorkshire,3,incumbent_churn_change_pp,-0.68424019085300003,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Main,First repricing,6,incumbent_churn_change_pp,0.249353373613,-0.082987375623100004,0.529631805043,percentage points,5,Available,Monthly incumbent churn,0.25,False
+Main,Repeat repricing,6,incumbent_churn_change_pp,0.52979815219399995,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Main,All assigned pairs,6,incumbent_churn_change_pp,0.32948045320800001,0.059945746518100002,0.54725458878400002,percentage points,7,Available,Monthly incumbent churn,0.25,False
+Main,Region: North West,6,incumbent_churn_change_pp,0.19515501375700001,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Main,Region: Scotland,6,incumbent_churn_change_pp,0.69378819100199995,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Main,Region: South East,6,incumbent_churn_change_pp,0.52979815219399995,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Main,Region: South West,6,incumbent_churn_change_pp,0.32400971961300001,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Main,Region: Wales,6,incumbent_churn_change_pp,0.42019421440400001,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Main,Region: Yorkshire,6,incumbent_churn_change_pp,-0.38638027071100001,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Main,First repricing,12,incumbent_churn_change_pp,0.48241473045799999,0.31518593045400001,0.64977600739200003,percentage points,5,Available,Monthly incumbent churn,0.25,False
+Main,Repeat repricing,12,incumbent_churn_change_pp,0.60419845784600001,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Main,All assigned pairs,12,incumbent_churn_change_pp,0.51721008114,0.38399456019,0.65042560209,percentage points,7,Available,Monthly incumbent churn,0.25,False
+Main,Region: North West,12,incumbent_churn_change_pp,0.237113202217,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Main,Region: Scotland,12,incumbent_churn_change_pp,0.77404604606299998,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Main,Region: South East,12,incumbent_churn_change_pp,0.60419845784600001,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Main,Region: South West,12,incumbent_churn_change_pp,0.612976527474,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Main,Region: Wales,12,incumbent_churn_change_pp,0.47417250523600002,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Main,Region: Yorkshire,12,incumbent_churn_change_pp,0.31376537129900001,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+A/A null,First repricing,1,incumbent_churn_change_pp,-0.098761793208599999,-0.57794429600399999,0.36443077330000001,percentage points,5,Available,Monthly incumbent churn,0.25,False
+A/A null,Repeat repricing,1,incumbent_churn_change_pp,-0.427757919677,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+A/A null,All assigned pairs,1,incumbent_churn_change_pp,-0.192760686485,-0.76395965331500004,0.34312814672399999,percentage points,7,Available,Monthly incumbent churn,0.25,False
+A/A null,Region: North West,1,incumbent_churn_change_pp,0.77218924015000001,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+A/A null,Region: Scotland,1,incumbent_churn_change_pp,0.026851523113799999,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+A/A null,Region: South East,1,incumbent_churn_change_pp,-0.427757919677,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+A/A null,Region: South West,1,incumbent_churn_change_pp,-0.79843587535799998,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+A/A null,Region: Wales,1,incumbent_churn_change_pp,-0.55126494001399995,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+A/A null,Region: Yorkshire,1,incumbent_churn_change_pp,0.056851086065700003,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+A/A null,First repricing,3,incumbent_churn_change_pp,-0.160199713568,-0.50630729143200004,0.182387374647,percentage points,5,Available,Monthly incumbent churn,0.25,True
+A/A null,Repeat repricing,3,incumbent_churn_change_pp,-0.58105877467400002,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+A/A null,All assigned pairs,3,incumbent_churn_change_pp,-0.28044515959900002,-0.58617134210300004,0.023544267169600001,percentage points,7,Available,Monthly incumbent churn,0.25,True
+A/A null,Region: North West,3,incumbent_churn_change_pp,-0.228522479162,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+A/A null,Region: Scotland,3,incumbent_churn_change_pp,0.33253608839799997,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+A/A null,Region: South East,3,incumbent_churn_change_pp,-0.58105877467400002,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+A/A null,Region: South West,3,incumbent_churn_change_pp,0.155008377355,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+A/A null,Region: Wales,3,incumbent_churn_change_pp,-0.24067976931400001,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+A/A null,Region: Yorkshire,3,incumbent_churn_change_pp,-0.81934078511800001,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+A/A null,First repricing,6,incumbent_churn_change_pp,0.0263885921451,-0.323987485169,0.29719659822400002,percentage points,5,Available,Monthly incumbent churn,0.25,False
+A/A null,Repeat repricing,6,incumbent_churn_change_pp,0.37048386797100002,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+A/A null,All assigned pairs,6,incumbent_churn_change_pp,0.124701528095,-0.17107762281899999,0.34723483682799999,percentage points,7,Available,Monthly incumbent churn,0.25,False
+A/A null,Region: North West,6,incumbent_churn_change_pp,0.021815626202100001,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+A/A null,Region: Scotland,6,incumbent_churn_change_pp,0.40057843991300002,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+A/A null,Region: South East,6,incumbent_churn_change_pp,0.37048386797100002,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+A/A null,Region: South West,6,incumbent_churn_change_pp,0.11186000966200001,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+A/A null,Region: Wales,6,incumbent_churn_change_pp,0.26243204517800001,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+A/A null,Region: Yorkshire,6,incumbent_churn_change_pp,-0.66474316022900004,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+A/A null,First repricing,12,incumbent_churn_change_pp,0.27337636626700001,0.121904842363,0.42484789017199998,percentage points,5,Available,Monthly incumbent churn,0.25,False
+A/A null,Repeat repricing,12,incumbent_churn_change_pp,0.44696275789399997,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+A/A null,All assigned pairs,12,incumbent_churn_change_pp,0.322972478161,0.18718267463800001,0.44902785617399998,percentage points,7,Available,Monthly incumbent churn,0.25,False
+A/A null,Region: North West,12,incumbent_churn_change_pp,0.054804174478799997,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+A/A null,Region: Scotland,12,incumbent_churn_change_pp,0.51664782201699999,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+A/A null,Region: South East,12,incumbent_churn_change_pp,0.44696275789399997,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+A/A null,Region: South West,12,incumbent_churn_change_pp,0.38530804996700002,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+A/A null,Region: Wales,12,incumbent_churn_change_pp,0.32032770689099999,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+A/A null,Region: Yorkshire,12,incumbent_churn_change_pp,0.089794077982300005,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Adverse response,First repricing,1,incumbent_churn_change_pp,0.130099996967,-0.29693129279800001,0.58584532300900005,percentage points,5,Available,Monthly incumbent churn,0.25,False
+Adverse response,Repeat repricing,1,incumbent_churn_change_pp,-0.22739042837599999,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Adverse response,All assigned pairs,1,incumbent_churn_change_pp,0.0279598754404,-0.52652247142599995,0.55108234398199996,percentage points,7,Available,Monthly incumbent churn,0.25,False
+Adverse response,Region: North West,1,incumbent_churn_change_pp,1.0370899024,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Adverse response,Region: Scotland,1,incumbent_churn_change_pp,0.24276762428599999,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Adverse response,Region: South East,1,incumbent_churn_change_pp,-0.22739042837599999,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Adverse response,Region: South West,1,incumbent_churn_change_pp,-0.430488205693,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Adverse response,Region: Wales,1,incumbent_churn_change_pp,-0.424810716443,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Adverse response,Region: Yorkshire,1,incumbent_churn_change_pp,0.22594138028300001,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Adverse response,First repricing,3,incumbent_churn_change_pp,0.19687452361300001,-0.203247544281,0.60895482997600003,percentage points,5,Available,Monthly incumbent churn,0.25,False
+Adverse response,Repeat repricing,3,incumbent_churn_change_pp,-0.24947491047299999,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Adverse response,All assigned pairs,3,incumbent_churn_change_pp,0.069346113873800005,-0.28432606232800001,0.43655831806500001,percentage points,7,Available,Monthly incumbent churn,0.25,False
+Adverse response,Region: North West,3,incumbent_churn_change_pp,0.066818265173499994,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Adverse response,Region: Scotland,3,incumbent_churn_change_pp,0.79537588529900005,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Adverse response,Region: South East,3,incumbent_churn_change_pp,-0.24947491047299999,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Adverse response,Region: South West,3,incumbent_churn_change_pp,0.66370646087899998,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Adverse response,Region: Wales,3,incumbent_churn_change_pp,-0.00505996689376,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Adverse response,Region: Yorkshire,3,incumbent_churn_change_pp,-0.53646802639400004,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Adverse response,First repricing,6,incumbent_churn_change_pp,0.434816342809,0.095819331147900005,0.70574892113499998,percentage points,5,Available,Monthly incumbent churn,0.25,False
+Adverse response,Repeat repricing,6,incumbent_churn_change_pp,0.70172061905500005,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Adverse response,All assigned pairs,6,incumbent_churn_change_pp,0.51107470745000005,0.23950202358,0.73299261992099995,percentage points,7,Available,Monthly incumbent churn,0.25,False
+Adverse response,Region: North West,6,incumbent_churn_change_pp,0.358201949957,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Adverse response,Region: Scotland,6,incumbent_churn_change_pp,0.858424257478,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Adverse response,Region: South East,6,incumbent_churn_change_pp,0.70172061905500005,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Adverse response,Region: South West,6,incumbent_churn_change_pp,0.60396536357300001,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Adverse response,Region: Wales,6,incumbent_churn_change_pp,0.58137377336499996,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Adverse response,Region: Yorkshire,6,incumbent_churn_change_pp,-0.22788363033,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Adverse response,First repricing,12,incumbent_churn_change_pp,0.68618614659800004,0.50850741062100002,0.86386488257500005,percentage points,5,Available,Monthly incumbent churn,0.25,False
+Adverse response,Repeat repricing,12,incumbent_churn_change_pp,0.77565101410899995,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Adverse response,All assigned pairs,12,incumbent_churn_change_pp,0.71174753731499996,0.57522754512300001,0.84852604009400001,percentage points,7,Available,Monthly incumbent churn,0.25,False
+Adverse response,Region: North West,12,incumbent_churn_change_pp,0.447367247917,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Adverse response,Region: Scotland,12,incumbent_churn_change_pp,0.96935976816199998,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Adverse response,Region: South East,12,incumbent_churn_change_pp,0.77565101410899995,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Adverse response,Region: South West,12,incumbent_churn_change_pp,0.86390188089499997,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Adverse response,Region: Wales,12,incumbent_churn_change_pp,0.65280111476199998,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Adverse response,Region: Yorkshire,12,incumbent_churn_change_pp,0.497500721255,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent churn,0.25,
+Main,First repricing,1,incumbent_downgrade_change_pp,0.022945257925999999,-0.040999152532699999,0.078820796513299998,percentage points,5,Available,Monthly incumbent downgrades,0.25,True
+Main,Repeat repricing,1,incumbent_downgrade_change_pp,-0.101836464875,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Main,All assigned pairs,1,incumbent_downgrade_change_pp,-0.012706662874199999,-0.108361066353,0.063715280337799995,percentage points,7,Available,Monthly incumbent downgrades,0.25,True
+Main,Region: North West,1,incumbent_downgrade_change_pp,0.044150110375299999,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Main,Region: Scotland,1,incumbent_downgrade_change_pp,0.040555054058499997,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Main,Region: South East,1,incumbent_downgrade_change_pp,-0.101836464875,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Main,Region: South West,1,incumbent_downgrade_change_pp,0.0113101589309,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Main,Region: Wales,1,incumbent_downgrade_change_pp,-0.095368623593600002,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Main,Region: Yorkshire,1,incumbent_downgrade_change_pp,0.11407958985900001,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Main,First repricing,3,incumbent_downgrade_change_pp,0.110089718194,0.062349677635299999,0.15854107507500001,percentage points,5,Available,Monthly incumbent downgrades,0.25,True
+Main,Repeat repricing,3,incumbent_downgrade_change_pp,-0.0235346637343,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Main,All assigned pairs,3,incumbent_downgrade_change_pp,0.071911323357500001,0.0157958500716,0.128563102199,percentage points,7,Available,Monthly incumbent downgrades,0.25,True
+Main,Region: North West,3,incumbent_downgrade_change_pp,0.027603735905299999,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Main,Region: Scotland,3,incumbent_downgrade_change_pp,0.19216455527000001,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Main,Region: South East,3,incumbent_downgrade_change_pp,-0.0235346637343,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Main,Region: South West,3,incumbent_downgrade_change_pp,0.11446859023,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Main,Region: Wales,3,incumbent_downgrade_change_pp,0.086103024871899997,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Main,Region: Yorkshire,3,incumbent_downgrade_change_pp,0.13010868469299999,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Main,First repricing,6,incumbent_downgrade_change_pp,0.17544079082700001,0.14172969432099999,0.21412436689799999,percentage points,5,Available,Monthly incumbent downgrades,0.25,True
+Main,Repeat repricing,6,incumbent_downgrade_change_pp,-0.043067069583200002,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Main,All assigned pairs,6,incumbent_downgrade_change_pp,0.113009973567,0.0043725191947199997,0.188781134258,percentage points,7,Available,Monthly incumbent downgrades,0.25,True
+Main,Region: North West,6,incumbent_downgrade_change_pp,0.11471628894200001,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Main,Region: Scotland,6,incumbent_downgrade_change_pp,0.23677961025899999,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Main,Region: South East,6,incumbent_downgrade_change_pp,-0.043067069583200002,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Main,Region: South West,6,incumbent_downgrade_change_pp,0.19918267153499999,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Main,Region: Wales,6,incumbent_downgrade_change_pp,0.16110033217600001,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Main,Region: Yorkshire,6,incumbent_downgrade_change_pp,0.16542505122100001,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Main,First repricing,12,incumbent_downgrade_change_pp,0.25558225820899999,0.212596295248,0.31730546717000002,percentage points,5,Available,Monthly incumbent downgrades,0.25,False
+Main,Repeat repricing,12,incumbent_downgrade_change_pp,0.089435632146199998,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Main,All assigned pairs,12,incumbent_downgrade_change_pp,0.20811179362000001,0.139879211846,0.278133935873,percentage points,7,Available,Monthly incumbent downgrades,0.25,False
+Main,Region: North West,12,incumbent_downgrade_change_pp,0.256167028741,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Main,Region: Scotland,12,incumbent_downgrade_change_pp,0.225553121306,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Main,Region: South East,12,incumbent_downgrade_change_pp,0.089435632146199998,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Main,Region: South West,12,incumbent_downgrade_change_pp,0.377476963532,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Main,Region: Wales,12,incumbent_downgrade_change_pp,0.19792941651500001,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Main,Region: Yorkshire,12,incumbent_downgrade_change_pp,0.220784760952,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+A/A null,First repricing,1,incumbent_downgrade_change_pp,0.022945257925999999,-0.040280141269400001,0.078820796513299998,percentage points,5,Available,Monthly incumbent downgrades,0.25,True
+A/A null,Repeat repricing,1,incumbent_downgrade_change_pp,-0.101836464875,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+A/A null,All assigned pairs,1,incumbent_downgrade_change_pp,-0.012706662874199999,-0.10694038136099999,0.063104017797999998,percentage points,7,Available,Monthly incumbent downgrades,0.25,True
+A/A null,Region: North West,1,incumbent_downgrade_change_pp,0.044150110375299999,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+A/A null,Region: Scotland,1,incumbent_downgrade_change_pp,0.040555054058499997,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+A/A null,Region: South East,1,incumbent_downgrade_change_pp,-0.101836464875,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+A/A null,Region: South West,1,incumbent_downgrade_change_pp,0.0113101589309,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+A/A null,Region: Wales,1,incumbent_downgrade_change_pp,-0.095368623593600002,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+A/A null,Region: Yorkshire,1,incumbent_downgrade_change_pp,0.11407958985900001,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+A/A null,First repricing,3,incumbent_downgrade_change_pp,-0.0037267618375300001,-0.031496068990900003,0.0256200229488,percentage points,5,Available,Monthly incumbent downgrades,0.25,True
+A/A null,Repeat repricing,3,incumbent_downgrade_change_pp,-0.131852618029,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+A/A null,All assigned pairs,3,incumbent_downgrade_change_pp,-0.040334149320799997,-0.091733955665000005,0.0061539095750099996,percentage points,7,Available,Monthly incumbent downgrades,0.25,True
+A/A null,Region: North West,3,incumbent_downgrade_change_pp,-0.034041342078599997,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+A/A null,Region: Scotland,3,incumbent_downgrade_change_pp,0.0195005167888,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+A/A null,Region: South East,3,incumbent_downgrade_change_pp,-0.131852618029,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+A/A null,Region: South West,3,incumbent_downgrade_change_pp,-0.013882267020900001,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+A/A null,Region: Wales,3,incumbent_downgrade_change_pp,-0.037757696888099997,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+A/A null,Region: Yorkshire,3,incumbent_downgrade_change_pp,0.047546980011200002,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+A/A null,First repricing,6,incumbent_downgrade_change_pp,0.0129437912322,-0.000606895281125,0.0262254161685,percentage points,5,Available,Monthly incumbent downgrades,0.25,True
+A/A null,Repeat repricing,6,incumbent_downgrade_change_pp,-0.187163150423,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+A/A null,All assigned pairs,6,incumbent_downgrade_change_pp,-0.044229620669199998,-0.129640630264,0.016918824280500001,percentage points,7,Available,Monthly incumbent downgrades,0.25,True
+A/A null,Region: North West,6,incumbent_downgrade_change_pp,-0.0092704662867500003,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+A/A null,Region: Scotland,6,incumbent_downgrade_change_pp,0.0196654250615,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+A/A null,Region: South East,6,incumbent_downgrade_change_pp,-0.187163150423,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+A/A null,Region: South West,6,incumbent_downgrade_change_pp,0.029547074931399998,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+A/A null,Region: Wales,6,incumbent_downgrade_change_pp,-0.0014068305045799999,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+A/A null,Region: Yorkshire,6,incumbent_downgrade_change_pp,0.026183752959199998,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+A/A null,First repricing,12,incumbent_downgrade_change_pp,0.079673567518099994,0.0165879045775,0.15034957128099999,percentage points,5,Available,Monthly incumbent downgrades,0.25,True
+A/A null,Repeat repricing,12,incumbent_downgrade_change_pp,-0.070092972811599999,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+A/A null,All assigned pairs,12,incumbent_downgrade_change_pp,0.0368831274239,-0.029531279186000001,0.107743240635,percentage points,7,Available,Monthly incumbent downgrades,0.25,True
+A/A null,Region: North West,12,incumbent_downgrade_change_pp,0.11534065216100001,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+A/A null,Region: Scotland,12,incumbent_downgrade_change_pp,-0.0021753652297599999,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+A/A null,Region: South East,12,incumbent_downgrade_change_pp,-0.070092972811599999,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+A/A null,Region: South West,12,incumbent_downgrade_change_pp,0.20857987539,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+A/A null,Region: Wales,12,incumbent_downgrade_change_pp,0.0106675780772,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+A/A null,Region: Yorkshire,12,incumbent_downgrade_change_pp,0.065955097192400003,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Adverse response,First repricing,1,incumbent_downgrade_change_pp,0.022945257925999999,-0.040280141269400001,0.0795398077767,percentage points,5,Available,Monthly incumbent downgrades,0.25,True
+Adverse response,Repeat repricing,1,incumbent_downgrade_change_pp,-0.101836464875,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Adverse response,All assigned pairs,1,incumbent_downgrade_change_pp,-0.012706662874199999,-0.108590838656,0.063018589894699995,percentage points,7,Available,Monthly incumbent downgrades,0.25,True
+Adverse response,Region: North West,1,incumbent_downgrade_change_pp,0.044150110375299999,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Adverse response,Region: Scotland,1,incumbent_downgrade_change_pp,0.040555054058499997,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Adverse response,Region: South East,1,incumbent_downgrade_change_pp,-0.101836464875,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Adverse response,Region: South West,1,incumbent_downgrade_change_pp,0.0113101589309,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Adverse response,Region: Wales,1,incumbent_downgrade_change_pp,-0.095368623593600002,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Adverse response,Region: Yorkshire,1,incumbent_downgrade_change_pp,0.11407958985900001,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Adverse response,First repricing,3,incumbent_downgrade_change_pp,0.239291338401,0.19010360015,0.281635437993,percentage points,5,Available,Monthly incumbent downgrades,0.25,False
+Adverse response,Repeat repricing,3,incumbent_downgrade_change_pp,0.11384215969,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Adverse response,All assigned pairs,3,incumbent_downgrade_change_pp,0.20344871591200001,0.14846364577500001,0.25812341106999998,percentage points,7,Available,Monthly incumbent downgrades,0.25,False
+Adverse response,Region: North West,3,incumbent_downgrade_change_pp,0.151234115946,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Adverse response,Region: Scotland,3,incumbent_downgrade_change_pp,0.31136334367399998,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Adverse response,Region: South East,3,incumbent_downgrade_change_pp,0.11384215969,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Adverse response,Region: South West,3,incumbent_downgrade_change_pp,0.27209157530599998,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Adverse response,Region: Wales,3,incumbent_downgrade_change_pp,0.23704357947099999,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Adverse response,Region: Yorkshire,3,incumbent_downgrade_change_pp,0.224724077607,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Adverse response,First repricing,6,incumbent_downgrade_change_pp,0.33907789130299998,0.28235934766800003,0.39515337073200002,percentage points,5,Available,Monthly incumbent downgrades,0.25,False
+Adverse response,Repeat repricing,6,incumbent_downgrade_change_pp,0.108651756908,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Adverse response,All assigned pairs,6,incumbent_downgrade_change_pp,0.27324185290500003,0.16061593692500001,0.36149590786699998,percentage points,7,Available,Monthly incumbent downgrades,0.25,False
+Adverse response,Region: North West,6,incumbent_downgrade_change_pp,0.25699923339300002,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Adverse response,Region: Scotland,6,incumbent_downgrade_change_pp,0.43304099270700003,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Adverse response,Region: South East,6,incumbent_downgrade_change_pp,0.108651756908,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Adverse response,Region: South West,6,incumbent_downgrade_change_pp,0.37256733799500003,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Adverse response,Region: Wales,6,incumbent_downgrade_change_pp,0.36455019225599999,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Adverse response,Region: Yorkshire,6,incumbent_downgrade_change_pp,0.26823170016699999,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Adverse response,First repricing,12,incumbent_downgrade_change_pp,0.44080562338399998,0.39880305404999999,0.497585074553,percentage points,5,Available,Monthly incumbent downgrades,0.25,False
+Adverse response,Repeat repricing,12,incumbent_downgrade_change_pp,0.23503618065699999,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Adverse response,All assigned pairs,12,incumbent_downgrade_change_pp,0.38201435403299999,0.30096344781599998,0.45900831198199998,percentage points,7,Available,Monthly incumbent downgrades,0.25,False
+Adverse response,Region: North West,12,incumbent_downgrade_change_pp,0.45107890043900001,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Adverse response,Region: Scotland,12,incumbent_downgrade_change_pp,0.412088449312,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Adverse response,Region: South East,12,incumbent_downgrade_change_pp,0.23503618065699999,,,percentage points,2,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Adverse response,Region: South West,12,incumbent_downgrade_change_pp,0.54989735669999995,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Adverse response,Region: Wales,12,incumbent_downgrade_change_pp,0.40380900824400001,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,
+Adverse response,Region: Yorkshire,12,incumbent_downgrade_change_pp,0.38715440222500003,,,percentage points,1,Unavailable: fewer than four complete pairs,Monthly incumbent downgrades,0.25,

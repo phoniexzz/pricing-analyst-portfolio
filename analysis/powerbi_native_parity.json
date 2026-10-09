@@ -1,0 +1,18 @@
+{
+  "status": "Native DAX parity passed",
+  "measures_executed": 296,
+  "source_tables_reconciled": 41,
+  "sites_reconciled": 80,
+  "matching_month_windows": 3,
+  "source_hashes_unchanged": 46,
+  "excel_hash_unchanged": true,
+  "reserved_local_variable_repairs": [
+    "Guardrail Point Display",
+    "Guardrail Lower Display",
+    "Guardrail Upper Display",
+    "Guardrail Tolerance Display"
+  ],
+  "revenue_2025": 107006933.85,
+  "december_members": 396311,
+  "portfolio_increment": 148618.48020484
+}

@@ -1,0 +1,115 @@
+table FactPower
+	lineageTag: 2c83cde5-3b52-5d6f-8982-21f9a7830996
+
+	column design
+		dataType: string
+		lineageTag: acccfdb6-b41c-53a7-8442-fe70cb15fb12
+		summarizeBy: none
+		sourceColumn: design
+
+	column pairs
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: a06da009-6975-525b-a7e7-f792964ba76f
+		summarizeBy: none
+		sourceColumn: pairs
+
+	column effect_assumption
+		dataType: double
+		isHidden
+		formatString: 0.0%
+		lineageTag: df557095-7609-5f1e-af3c-6c95aa8651ff
+		summarizeBy: none
+		sourceColumn: effect_assumption
+
+	column method
+		dataType: string
+		lineageTag: 2a5f2e5a-ce0e-5571-a928-bf097005c893
+		summarizeBy: none
+		sourceColumn: method
+
+	column planning_power
+		dataType: double
+		isHidden
+		formatString: 0.0%
+		lineageTag: a8d5f7be-1607-52f1-8041-93bba57ec1a1
+		summarizeBy: none
+		sourceColumn: planning_power
+
+	column target_power
+		dataType: double
+		isHidden
+		lineageTag: d4849a0d-4eb3-5aa9-8629-5d1284585161
+		summarizeBy: none
+		sourceColumn: target_power
+
+	column effect_detectable_80pct
+		dataType: double
+		isHidden
+		formatString: 0.0%
+		lineageTag: 7cab8c83-039e-5b43-97a5-02c0c858ee21
+		summarizeBy: none
+		sourceColumn: effect_detectable_80pct
+
+	column alpha
+		dataType: double
+		isHidden
+		lineageTag: 6100b40d-e227-5d8a-9770-da2213d5b9b2
+		summarizeBy: none
+		sourceColumn: alpha
+
+	column noise_log_sd
+		dataType: double
+		isHidden
+		lineageTag: 6038eb08-17fa-5a10-9966-9200a67cb765
+		summarizeBy: none
+		sourceColumn: noise_log_sd
+
+	column noise_pairs
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 3d4d4f50-7ff8-5504-a9b2-cf95bf836316
+		summarizeBy: none
+		sourceColumn: noise_pairs
+
+	column monte_carlo_samples
+		dataType: double
+		isHidden
+		lineageTag: 38f56871-6c3d-5ccf-9577-befde2dbc418
+		summarizeBy: none
+		sourceColumn: monte_carlo_samples
+
+	column additional_eligible_gyms_required
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 2dd60070-2e06-5f9c-8861-e9dc6dd4afda
+		summarizeBy: none
+		sourceColumn: additional_eligible_gyms_required
+
+	column available_primary_design
+		dataType: boolean
+		isHidden
+		lineageTag: de6ddd17-46b2-5b8b-9829-a5a0ee0ebbbc
+		summarizeBy: none
+		sourceColumn: available_primary_design
+
+	column evidence_status
+		dataType: string
+		lineageTag: 2e68c569-6545-5fe2-a254-d597d750dce3
+		summarizeBy: none
+		sourceColumn: evidence_status
+
+	partition FactPower = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(SourceRoot & "/FactPower.csv"), [Delimiter=",", Columns=14, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Nulls = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				    Typed = Table.TransformColumnTypes(Nulls, {{"design", type text}, {"pairs", Int64.Type}, {"effect_assumption", type number}, {"method", type text}, {"planning_power", type number}, {"target_power", type number}, {"effect_detectable_80pct", type number}, {"alpha", type number}, {"noise_log_sd", type number}, {"noise_pairs", Int64.Type}, {"monte_carlo_samples", type number}, {"additional_eligible_gyms_required", Int64.Type}, {"available_primary_design", type logical}, {"evidence_status", type text}}, "en-GB")
+				in
+				    Typed
+

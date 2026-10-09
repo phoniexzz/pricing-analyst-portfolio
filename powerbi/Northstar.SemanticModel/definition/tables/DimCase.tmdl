@@ -1,0 +1,27 @@
+table DimCase
+	lineageTag: 6a4df4fe-774a-5f8b-b41f-90ac37fd6cbe
+
+	column case
+		dataType: string
+		lineageTag: 1d02463f-e50a-50d6-b0d5-21888fdc139c
+		summarizeBy: none
+		sourceColumn: case
+
+	column sort_order
+		dataType: int64
+		formatString: #,##0
+		lineageTag: 257a81e3-dfa4-5569-aa58-2222ce669fe5
+		summarizeBy: none
+		sourceColumn: sort_order
+
+	partition DimCase = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(SourceRoot & "/DimCase.csv"), [Delimiter=",", Columns=2, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Nulls = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				    Typed = Table.TransformColumnTypes(Nulls, {{"case", type text}, {"sort_order", Int64.Type}}, "en-GB")
+				in
+				    Typed
+

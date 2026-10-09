@@ -1,0 +1,57 @@
+model Model
+	culture: en-GB
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-GB
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["SourceRoot", "DimGym", "DimHistoryMonth", "DimScenarioMonth", "DimExperimentMonth", "DimAssignment", "DimCase", "DimPrice", "DimPolicy", "DimSimulation", "DimPopulation", "DimCheckpoint", "DimBridge", "DimMetricPanel", "FactHistory", "FactCompetitor", "FactBaseline", "FactHeadroom", "FactRecommendation", "FactScenarioMonthly", "FactScenarioAnnual", "FactScenarioEstate", "FactPolicyRecommendation", "FactPortfolio", "FactHistoricalEstimate", "FactHistoricalPair", "FactHistoricalEvent", "FactExperimentDesign", "FactExperimentPair", "FactExperimentEstimate", "FactExperimentMonitoring", "FactPower", "DimAlternative", "FactScenarioSiteSensitivity", "FactScenarioEstateSensitivity", "FactHistoricalPilotMonth", "FactPortfolioSite", "FactExperimentHistory", "FactExperimentPath", "FactExperimentGovernance", "FactExperimentGuardrail", "EvidenceStatus"]
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table CommercialMeasures
+ref table DimAlternative
+ref table DimAssignment
+ref table DimBridge
+ref table DimCase
+ref table DimCheckpoint
+ref table DimExperimentMonth
+ref table DimGym
+ref table DimHistoryMonth
+ref table DimMetricPanel
+ref table DimPolicy
+ref table DimPopulation
+ref table DimPrice
+ref table DimScenarioMonth
+ref table DimSimulation
+ref table EvidenceStatus
+ref table FactBaseline
+ref table FactCompetitor
+ref table FactExperimentDesign
+ref table FactExperimentEstimate
+ref table FactExperimentGovernance
+ref table FactExperimentGuardrail
+ref table FactExperimentHistory
+ref table FactExperimentMonitoring
+ref table FactExperimentPair
+ref table FactExperimentPath
+ref table FactHeadroom
+ref table FactHistoricalEstimate
+ref table FactHistoricalEvent
+ref table FactHistoricalPair
+ref table FactHistoricalPilotMonth
+ref table FactHistory
+ref table FactPolicyRecommendation
+ref table FactPortfolio
+ref table FactPortfolioSite
+ref table FactPower
+ref table FactRecommendation
+ref table FactScenarioAnnual
+ref table FactScenarioEstate
+ref table FactScenarioEstateSensitivity
+ref table FactScenarioMonthly
+ref table FactScenarioSiteSensitivity
+

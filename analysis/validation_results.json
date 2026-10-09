@@ -1,0 +1,221 @@
+{
+  "seed": 20261004,
+  "period": "January 2024\u2013December 2025",
+  "rows": {
+    "monthly_performance": 1920,
+    "competitor_prices": 7344,
+    "pricing_history": 32,
+    "membership_ledger": 93044,
+    "experiment_assignments": 24,
+    "market_events": 941,
+    "cohorts": 5760,
+    "gym_master": 80
+  },
+  "checks": [
+    {
+      "check": "Two complete generations produce identical CSV SHA-256 hashes",
+      "passed": true
+    },
+    {
+      "check": "80 unique gyms and 1,920 complete consecutive gym-months",
+      "passed": true
+    },
+    {
+      "check": "Every gym mature at observation start",
+      "passed": true
+    },
+    {
+      "check": "Unique non-null declared primary keys",
+      "passed": true
+    },
+    {
+      "check": "All foreign gym keys exist",
+      "passed": true
+    },
+    {
+      "check": "Exact 400,000 opening members",
+      "passed": true
+    },
+    {
+      "check": "Estate member stock remains within 300,000\u2013500,000",
+      "passed": true
+    },
+    {
+      "check": "Gym member bridges and monthly continuity",
+      "passed": true
+    },
+    {
+      "check": "Ledger bridges and exposures",
+      "passed": true
+    },
+    {
+      "check": "Cancellations eligible and member counts non-negative",
+      "passed": true
+    },
+    {
+      "check": "Every billing bucket carries its own closing membership forward",
+      "passed": true
+    },
+    {
+      "check": "Member movement counts are integers",
+      "passed": true
+    },
+    {
+      "check": "Ledger rolls up to gym member counts",
+      "passed": true
+    },
+    {
+      "check": "Tier member totals and tier subscription revenue reconcile",
+      "passed": true
+    },
+    {
+      "check": "Ledger subscription revenue reconciles",
+      "passed": true
+    },
+    {
+      "check": "Revenue components, VAT and ARPMM reconcile",
+      "passed": true
+    },
+    {
+      "check": "Acquisition, conversion and opening-base churn rates reconcile",
+      "passed": true
+    },
+    {
+      "check": "Attendance utilisation derived from visits and capacity",
+      "passed": true
+    },
+    {
+      "check": "32 actual price events; no zero changes or repeated site events",
+      "passed": true
+    },
+    {
+      "check": "Headline changes and one-month notice match event history",
+      "passed": true
+    },
+    {
+      "check": "Existing-member repricing eligibility and protected promotions",
+      "passed": true
+    },
+    {
+      "check": "Billed rate applies eligible cash increase exactly once",
+      "passed": true
+    },
+    {
+      "check": "12 randomised matched treatment/control pairs",
+      "passed": true
+    },
+    {
+      "check": "Historical controls remain unrepriced",
+      "passed": true
+    },
+    {
+      "check": "Cohort acquisitions reconcile and all three origin tiers present",
+      "passed": true
+    },
+    {
+      "check": "Cohort survivors never rise after joining",
+      "passed": true
+    },
+    {
+      "check": "Observed cohort milestones and revenues reconcile; immature outputs blank",
+      "passed": true
+    },
+    {
+      "check": "December master snapshot matches monthly records",
+      "passed": true
+    },
+    {
+      "check": "Competitor entry, prices and promotional events align",
+      "passed": true
+    },
+    {
+      "check": "No analyst-facing assumed elasticity or opportunity rankings",
+      "passed": true
+    },
+    {
+      "check": "Controlled higher-price conversion response",
+      "passed": true
+    },
+    {
+      "check": "Controlled promotion improves conversion",
+      "passed": true
+    },
+    {
+      "check": "Controlled existing-member price response increases churn",
+      "passed": true
+    },
+    {
+      "check": "Lagged churn is distinct from notification response",
+      "passed": true
+    },
+    {
+      "check": "Equivalent relative price rise from competitor cut reduces conversion",
+      "passed": true
+    }
+  ],
+  "csv_sha256": {
+    "monthly_performance": "f3e088c724d27f282af506cf8dd0e97b21447192164476c3e74d489856b7a51d",
+    "competitor_prices": "754062b02e2f4cd0ce989c12e02af029d2584007fc3b74f65852d0cefdfd56c5",
+    "pricing_history": "1a1cc79ad85b7a7628bcc9b49a5877167d424368f1f305ab90884246af1afa6e",
+    "membership_ledger": "709ab573bf893097d6cf51b2bda5c052f88a1d526f8846af901c5d58508cc496",
+    "experiment_assignments": "05f2d39ffd30f0e55d8e0c663f17191693a9c2be05ffb8e4f69155d247a814f4",
+    "market_events": "c786240e6f0a962348b18ec46552d6805c3eae1001bad4e21f4b458659273ec7",
+    "cohorts": "15cb135413cdff2adc6dea8d6ecc9867a7c68bf6d98a60b2dd69b979858eb3d8",
+    "gym_master": "1bfbf7bbcd847c2634d155d88641d5f2f87dca2fe0e345da8be498f053a20d14"
+  },
+  "opening_members": 400000,
+  "closing_members": 396311,
+  "minimum_monthly_closing_members": 391550,
+  "maximum_monthly_closing_members": 417099,
+  "ranges": {
+    "standard_price": [
+      19.99,
+      33.99
+    ],
+    "churn_rate": [
+      0.026455026455026454,
+      0.0661764705882353
+    ],
+    "conversion_rate": [
+      0.20652173913043478,
+      0.4331983805668016
+    ],
+    "utilisation_pct": [
+      0.1263282732447818,
+      0.366892020794582
+    ],
+    "peak_utilisation_pct": [
+      0.36470588235294116,
+      1.06
+    ],
+    "realised_ARPMM": [
+      16.600248465361005,
+      28.100047387295085
+    ]
+  },
+  "cohort_censoring": {
+    "customers_remaining_30d": 240,
+    "customers_remaining_90d": 720,
+    "customers_remaining_180d": 1440,
+    "revenue_6_month": 1200,
+    "revenue_12_month": 2640
+  },
+  "csv_reload_validation": "All delivered CSVs independently reloaded and reconciled.",
+  "negative_tests": [
+    {
+      "case": "Incorrect gym membership bridge",
+      "detected_by": "Gym member bridges and monthly continuity",
+      "passed": true
+    },
+    {
+      "case": "Cancellations larger than eligible pool",
+      "detected_by": "Ledger bridges and exposures",
+      "passed": true
+    },
+    {
+      "case": "Incorrect total revenue",
+      "detected_by": "Revenue components, VAT and ARPMM reconcile",
+      "passed": true
+    }
+  ]
+}

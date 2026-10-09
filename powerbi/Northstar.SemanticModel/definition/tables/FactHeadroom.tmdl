@@ -1,0 +1,488 @@
+table FactHeadroom
+	lineageTag: c4c90744-292b-5607-9901-83fbff7af2b7
+
+	column gym_id
+		dataType: string
+		lineageTag: fb859efd-4063-5b7f-b95a-36375b88eb0f
+		summarizeBy: none
+		sourceColumn: gym_id
+
+	column city
+		dataType: string
+		lineageTag: 10adb30a-6dfd-56cb-8991-6709792172e6
+		summarizeBy: none
+		sourceColumn: city
+
+	column score
+		dataType: double
+		isHidden
+		lineageTag: 398b201c-7799-5e83-95bb-b0801a204502
+		summarizeBy: none
+		sourceColumn: score
+
+	column rank
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: c602f21b-b8bb-5a39-9570-269c7294fb03
+		summarizeBy: none
+		sourceColumn: rank
+
+	column band
+		dataType: string
+		lineageTag: 7dd0382a-0171-5c9e-ac10-864d5a9598aa
+		summarizeBy: none
+		sourceColumn: band
+
+	column segment
+		dataType: string
+		lineageTag: f6cd0ac9-3f53-525b-b344-2238e76713f1
+		summarizeBy: none
+		sourceColumn: segment
+
+	column sensitive
+		dataType: boolean
+		isHidden
+		lineageTag: 6a6e0a59-ec0d-55ab-bed2-fc3799f85456
+		summarizeBy: none
+		sourceColumn: sensitive
+
+	column competitor_gap_dec2025
+		dataType: double
+		isHidden
+		lineageTag: 858cb394-0eea-5ebf-a4ae-6bce6710e922
+		summarizeBy: none
+		sourceColumn: competitor_gap_dec2025
+
+	column caution_flag_count
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: e4ea6efb-eb52-5c88-a2a1-929a2e021478
+		summarizeBy: none
+		sourceColumn: caution_flag_count
+
+	column gym_name
+		dataType: string
+		lineageTag: ad8c660b-70fb-5c11-af39-69d910636e80
+		summarizeBy: none
+		sourceColumn: gym_name
+
+	column region
+		dataType: string
+		lineageTag: 828734ee-0ca6-5c96-9b4c-affa45869340
+		summarizeBy: none
+		sourceColumn: region
+
+	column location_type
+		dataType: string
+		lineageTag: df713be4-d8f1-5ccc-8eb2-119afb068f2b
+		summarizeBy: none
+		sourceColumn: location_type
+
+	column standard_price_dec2025
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 73dedf75-ca18-5a9d-a015-fc9024dcc665
+		summarizeBy: none
+		sourceColumn: standard_price_dec2025
+
+	column churn_rate_2025
+		dataType: double
+		isHidden
+		lineageTag: 6b3e4f0c-41ee-5dad-b532-4eaa847d6627
+		summarizeBy: none
+		sourceColumn: churn_rate_2025
+
+	column conversion_rate_2025
+		dataType: double
+		isHidden
+		lineageTag: c62b4510-5de4-5b76-a5e9-ef37307ab02e
+		summarizeBy: none
+		sourceColumn: conversion_rate_2025
+
+	column acquisition_growth_yoy
+		dataType: double
+		isHidden
+		lineageTag: 52119df0-4077-56aa-9327-cffc9536c03f
+		summarizeBy: none
+		sourceColumn: acquisition_growth_yoy
+
+	column average_monthly_peak_2025
+		dataType: double
+		isHidden
+		lineageTag: 51fe1c15-0eb0-5828-8695-b842310fc943
+		summarizeBy: none
+		sourceColumn: average_monthly_peak_2025
+
+	column max_monthly_peak_2025
+		dataType: double
+		isHidden
+		lineageTag: 488655bd-9f78-50ef-a04d-24e10173242b
+		summarizeBy: none
+		sourceColumn: max_monthly_peak_2025
+
+	column high_churn_exception
+		dataType: boolean
+		isHidden
+		lineageTag: 0429ee1f-2d64-5a54-a629-1288a265ca21
+		summarizeBy: none
+		sourceColumn: high_churn_exception
+
+	column weak_conversion_exception
+		dataType: boolean
+		isHidden
+		lineageTag: 98a84de6-3143-567a-a83d-de7bbbf53edd
+		summarizeBy: none
+		sourceColumn: weak_conversion_exception
+
+	column declining_acquisition_exception
+		dataType: boolean
+		isHidden
+		lineageTag: 3b17f41d-3398-5a84-8fa6-0c62f318919d
+		summarizeBy: none
+		sourceColumn: declining_acquisition_exception
+
+	column peak_capacity_exception
+		dataType: boolean
+		isHidden
+		lineageTag: 9c46475c-812a-54ef-a268-68999576f78b
+		summarizeBy: none
+		sourceColumn: peak_capacity_exception
+
+	column complaints_per_1000_member_months_2025
+		dataType: double
+		isHidden
+		lineageTag: 9e3e5b86-bfb2-57b2-ba09-07213f27058d
+		summarizeBy: none
+		sourceColumn: complaints_per_1000_member_months_2025
+
+	column acquisition_growth_q4_yoy
+		dataType: double
+		isHidden
+		lineageTag: 9fd38786-a515-5e59-ba5e-a9b0e7fd7e27
+		summarizeBy: none
+		sourceColumn: acquisition_growth_q4_yoy
+
+	column churn_change_pp_q4_yoy
+		dataType: double
+		isHidden
+		lineageTag: b9d48713-cca0-501f-8eb6-4e3882bce4ed
+		summarizeBy: none
+		sourceColumn: churn_change_pp_q4_yoy
+
+	column conversion_change_pp_q4_yoy
+		dataType: double
+		isHidden
+		lineageTag: f1d8ba9c-3139-5380-bc8b-bf2a6a36edad
+		summarizeBy: none
+		sourceColumn: conversion_change_pp_q4_yoy
+
+	column promotion_frequency_2025
+		dataType: double
+		isHidden
+		lineageTag: 75d1d4cf-a928-5b32-a9b8-e80d4ac28ac4
+		summarizeBy: none
+		sourceColumn: promotion_frequency_2025
+
+	column marketing_spend_2025
+		dataType: double
+		isHidden
+		lineageTag: 0e36b428-9661-5824-9f33-3b2c18745bf1
+		summarizeBy: none
+		sourceColumn: marketing_spend_2025
+
+	column standard_mix_2025
+		dataType: double
+		isHidden
+		lineageTag: 5a648c46-99e7-5bc6-8384-4dc3faa4d482
+		summarizeBy: none
+		sourceColumn: standard_mix_2025
+
+	column offpeak_mix_2025
+		dataType: double
+		isHidden
+		lineageTag: 83b29996-8145-5fc7-9ced-b0e1b5257efb
+		summarizeBy: none
+		sourceColumn: offpeak_mix_2025
+
+	column plus_mix_2025
+		dataType: double
+		isHidden
+		lineageTag: b18e0bb5-5808-5f53-bf6c-01f12aafd9ff
+		summarizeBy: none
+		sourceColumn: plus_mix_2025
+
+	column historical_price_events
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: b7bcfe26-064b-5706-962b-1b9e7c1aede6
+		summarizeBy: none
+		sourceColumn: historical_price_events
+
+	column historical_cash_increase
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 0f5f79a0-c9ac-596f-8908-5f00a6f8c379
+		summarizeBy: none
+		sourceColumn: historical_cash_increase
+
+	column pilot_assignment
+		dataType: string
+		lineageTag: 055926ef-0058-5584-972e-7fbcb24642ef
+		summarizeBy: none
+		sourceColumn: pilot_assignment
+
+	column pilot_pair_id
+		dataType: string
+		lineageTag: d24582c3-7678-526e-ad8d-aec3bb9a3ee9
+		summarizeBy: none
+		sourceColumn: pilot_pair_id
+
+	column median_income
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: ce3588af-05c7-5c66-baab-55d46507d689
+		summarizeBy: none
+		sourceColumn: median_income
+
+	column student_population_pct
+		dataType: double
+		isHidden
+		lineageTag: 5e56fc6d-fc5d-56b0-8b37-ddad4179cab8
+		summarizeBy: none
+		sourceColumn: student_population_pct
+
+	column market_competitiveness
+		dataType: string
+		lineageTag: b13fe11d-647b-5e32-bb2b-ffd8400a437a
+		summarizeBy: none
+		sourceColumn: market_competitiveness
+
+	column competitor_count_dec2025
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 2ee4122e-aab4-5df7-892c-9e45d0cc3f9a
+		summarizeBy: none
+		sourceColumn: competitor_count_dec2025
+
+	column competitor_mean_joining_fee_dec2025
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 1c2bf0cc-ce38-5d35-84ef-acb26a3b8651
+		summarizeBy: none
+		sourceColumn: competitor_mean_joining_fee_dec2025
+
+	column competitor_promotion_share_dec2025
+		dataType: double
+		isHidden
+		lineageTag: 3f50e339-7022-5490-96c1-62ac2137de58
+		summarizeBy: none
+		sourceColumn: competitor_promotion_share_dec2025
+
+	column competitor_mean_first_month_discount_dec2025
+		dataType: double
+		isHidden
+		lineageTag: bd297d47-ad28-54cd-9100-d4299c808d27
+		summarizeBy: none
+		sourceColumn: competitor_mean_first_month_discount_dec2025
+
+	column q4_average_competitor_gap
+		dataType: double
+		isHidden
+		lineageTag: d59e0733-1abf-5ef4-98b4-8117bf874c1e
+		summarizeBy: none
+		sourceColumn: q4_average_competitor_gap
+
+	column value_competitor_gap_dec2025
+		dataType: double
+		isHidden
+		lineageTag: 936ef735-3618-5d5b-a552-eb36e98d79df
+		summarizeBy: none
+		sourceColumn: value_competitor_gap_dec2025
+
+	column competitor_gap_input
+		dataType: double
+		isHidden
+		lineageTag: b92a1f80-6548-5c15-ad87-b5c9857adf91
+		summarizeBy: none
+		sourceColumn: competitor_gap_input
+
+	column competitor_gap_component
+		dataType: double
+		isHidden
+		lineageTag: 1220b8ba-c49b-500e-b818-c064e6601208
+		summarizeBy: none
+		sourceColumn: competitor_gap_component
+
+	column competitor_gap_contribution
+		dataType: double
+		isHidden
+		lineageTag: 562563e4-5330-5d84-8391-36a4f76a2228
+		summarizeBy: none
+		sourceColumn: competitor_gap_contribution
+
+	column churn_input
+		dataType: double
+		isHidden
+		lineageTag: 7de082ac-aead-5dfd-9566-fcb23ba45787
+		summarizeBy: none
+		sourceColumn: churn_input
+
+	column churn_component
+		dataType: double
+		isHidden
+		lineageTag: feab1cdd-3baa-57c6-a0b3-6a5e04513d45
+		summarizeBy: none
+		sourceColumn: churn_component
+
+	column churn_contribution
+		dataType: double
+		isHidden
+		lineageTag: 2e3b0582-41bb-516e-a38c-76ada69b08b9
+		summarizeBy: none
+		sourceColumn: churn_contribution
+
+	column conversion_input
+		dataType: double
+		isHidden
+		lineageTag: 21173cf5-24a9-55a9-a48e-d2c4941bf4d6
+		summarizeBy: none
+		sourceColumn: conversion_input
+
+	column conversion_component
+		dataType: double
+		isHidden
+		lineageTag: e84a8bab-8ba0-5abc-9b4d-5d360aa7564b
+		summarizeBy: none
+		sourceColumn: conversion_component
+
+	column conversion_contribution
+		dataType: double
+		isHidden
+		lineageTag: 0ba1c32b-0c18-5bef-b988-c6169b848c10
+		summarizeBy: none
+		sourceColumn: conversion_contribution
+
+	column acquisition_growth_input
+		dataType: double
+		isHidden
+		lineageTag: f1c7e467-dad9-5497-99fc-a37d13202510
+		summarizeBy: none
+		sourceColumn: acquisition_growth_input
+
+	column acquisition_growth_component
+		dataType: double
+		isHidden
+		lineageTag: 5240a51f-41c6-55af-ae0e-a4a7440149cc
+		summarizeBy: none
+		sourceColumn: acquisition_growth_component
+
+	column acquisition_growth_contribution
+		dataType: double
+		isHidden
+		lineageTag: 7a1ebafc-d5e5-5f26-8d14-923ff19c7e22
+		summarizeBy: none
+		sourceColumn: acquisition_growth_contribution
+
+	column peak_utilisation_input
+		dataType: double
+		isHidden
+		lineageTag: 6340119c-e6f7-548e-84f4-41a98dec5b65
+		summarizeBy: none
+		sourceColumn: peak_utilisation_input
+
+	column peak_utilisation_component
+		dataType: double
+		isHidden
+		lineageTag: 1332324a-5898-58e5-b14b-e5feccd69dc0
+		summarizeBy: none
+		sourceColumn: peak_utilisation_component
+
+	column peak_utilisation_contribution
+		dataType: double
+		isHidden
+		lineageTag: aa0c5908-22ab-56fd-b179-ccd845c23d76
+		summarizeBy: none
+		sourceColumn: peak_utilisation_contribution
+
+	column income_input
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 6fc88e7e-649c-59d3-9b14-9e65f2407a3e
+		summarizeBy: none
+		sourceColumn: income_input
+
+	column income_component
+		dataType: double
+		isHidden
+		lineageTag: 1445d1ea-bd22-58b7-8733-b692d5619b7c
+		summarizeBy: none
+		sourceColumn: income_component
+
+	column income_contribution
+		dataType: double
+		isHidden
+		lineageTag: 1e4aecf9-7d80-582b-bfe0-bf42f3a29d4c
+		summarizeBy: none
+		sourceColumn: income_contribution
+
+	column max_absolute_rank_movement
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: cf532821-94c4-5cee-946d-a298da18fe1b
+		summarizeBy: none
+		sourceColumn: max_absolute_rank_movement
+
+	column alternative_band_change_count
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: b82b0adf-5c81-5fff-8c9b-e9bd790d0df3
+		summarizeBy: none
+		sourceColumn: alternative_band_change_count
+
+	column band_lower_thresholds
+		dataType: string
+		lineageTag: 323df43b-c125-50a7-98e8-2c4cfe52d54a
+		summarizeBy: none
+		sourceColumn: band_lower_thresholds
+
+	column band_higher_thresholds
+		dataType: string
+		lineageTag: d7a41ca5-41de-56ec-be9c-52d301db029d
+		summarizeBy: none
+		sourceColumn: band_higher_thresholds
+
+	column threshold_sensitive
+		dataType: boolean
+		isHidden
+		lineageTag: 643880ec-00b6-5fe0-aa97-e72454c5b6ed
+		summarizeBy: none
+		sourceColumn: threshold_sensitive
+
+	column explanation
+		dataType: string
+		lineageTag: c20f424b-f8f6-50e3-ab6f-52ba286bd84c
+		summarizeBy: none
+		sourceColumn: explanation
+
+	partition FactHeadroom = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(SourceRoot & "/FactHeadroom.csv"), [Delimiter=",", Columns=68, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Nulls = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				    Typed = Table.TransformColumnTypes(Nulls, {{"gym_id", type text}, {"city", type text}, {"score", type number}, {"rank", Int64.Type}, {"band", type text}, {"segment", type text}, {"sensitive", type logical}, {"competitor_gap_dec2025", type number}, {"caution_flag_count", Int64.Type}, {"gym_name", type text}, {"region", type text}, {"location_type", type text}, {"standard_price_dec2025", type number}, {"churn_rate_2025", type number}, {"conversion_rate_2025", type number}, {"acquisition_growth_yoy", type number}, {"average_monthly_peak_2025", type number}, {"max_monthly_peak_2025", type number}, {"high_churn_exception", type logical}, {"weak_conversion_exception", type logical}, {"declining_acquisition_exception", type logical}, {"peak_capacity_exception", type logical}, {"complaints_per_1000_member_months_2025", type number}, {"acquisition_growth_q4_yoy", type number}, {"churn_change_pp_q4_yoy", type number}, {"conversion_change_pp_q4_yoy", type number}, {"promotion_frequency_2025", type number}, {"marketing_spend_2025", type number}, {"standard_mix_2025", type number}, {"offpeak_mix_2025", type number}, {"plus_mix_2025", type number}, {"historical_price_events", Int64.Type}, {"historical_cash_increase", Int64.Type}, {"pilot_assignment", type text}, {"pilot_pair_id", type text}, {"median_income", Int64.Type}, {"student_population_pct", type number}, {"market_competitiveness", type text}, {"competitor_count_dec2025", Int64.Type}, {"competitor_mean_joining_fee_dec2025", type number}, {"competitor_promotion_share_dec2025", type number}, {"competitor_mean_first_month_discount_dec2025", type number}, {"q4_average_competitor_gap", type number}, {"value_competitor_gap_dec2025", type number}, {"competitor_gap_input", type number}, {"competitor_gap_component", type number}, {"competitor_gap_contribution", type number}, {"churn_input", type number}, {"churn_component", type number}, {"churn_contribution", type number}, {"conversion_input", type number}, {"conversion_component", type number}, {"conversion_contribution", type number}, {"acquisition_growth_input", type number}, {"acquisition_growth_component", type number}, {"acquisition_growth_contribution", type number}, {"peak_utilisation_input", type number}, {"peak_utilisation_component", type number}, {"peak_utilisation_contribution", type number}, {"income_input", Int64.Type}, {"income_component", type number}, {"income_contribution", type number}, {"max_absolute_rank_movement", Int64.Type}, {"alternative_band_change_count", Int64.Type}, {"band_lower_thresholds", type text}, {"band_higher_thresholds", type text}, {"threshold_sensitive", type logical}, {"explanation", type text}}, "en-GB")
+				in
+				    Typed
+

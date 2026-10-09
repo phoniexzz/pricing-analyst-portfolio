@@ -1,0 +1,28 @@
+// Read-only native checks: saved-scope guards, missing evidence, rate windows.
+EVALUATE
+SUMMARIZECOLUMNS(DimGym[gym_id],FILTER(ALL(DimHistoryMonth),DimHistoryMonth[year]=2025),
+ "Revenue",[Net Revenue],"Subscription",[Subscription Revenue],"JoiningFees",[Joining Fee Revenue],"Ancillary",[Ancillary Revenue],
+ "Members",[Closing Members],"AverageMembers",[Average Members],"ARPMM",[ARPMM],"Yield",[Subscription Yield],"StandardYield",[Standard Yield],
+ "Joins",[Acquisitions],"Churn",[Opening-base Churn],"Conversion",[Qualified Conversion],"Complaints",[Complaints per 1000],
+ "RevenuePrior",[Net Revenue Prior Year],"RevenueGrowth",[Net Revenue YoY],"ChurnChangePP",[Opening-base Churn Change pp],
+ "SavedRank",[Saved Estate Rank],"Action",[Saved Recommendation])
+
+EVALUATE
+CALCULATETABLE(ROW("Revenue",[Net Revenue],"Prior",[Net Revenue Prior Year],"Members",[Closing Members],"Churn",[Opening-base Churn],"Conversion",[Qualified Conversion],"Bridge",[Volume Bridge]+[ARPMM Bridge]),DimHistoryMonth[year]=2025,DimHistoryMonth[month_number] IN {1,2,3})
+
+EVALUATE
+CALCULATETABLE(ROW("Revenue",[Net Revenue],"Prior",[Net Revenue Prior Year],"Members",[Closing Members],"Churn",[Opening-base Churn],"Conversion",[Qualified Conversion],"Bridge",[Volume Bridge]+[ARPMM Bridge]),DimHistoryMonth[year]=2025,DimHistoryMonth[month_number] IN {10,11,12})
+
+EVALUATE
+CALCULATETABLE(ROW("Revenue",[Net Revenue],"Prior",[Net Revenue Prior Year],"Members",[Closing Members],"Churn",[Opening-base Churn],"Conversion",[Qualified Conversion],"Bridge",[Volume Bridge]+[ARPMM Bridge]),DimHistoryMonth[year]=2025,DimHistoryMonth[month_number] IN {1,5,9})
+
+EVALUATE
+ROW("2024 prior unavailable",CALCULATE([Net Revenue Prior Year],DimHistoryMonth[year]=2024),"Both-year prior unavailable",[Net Revenue Prior Year],
+ "Valid zero",CALCULATE([Scenario Incremental Revenue],DimCase[case]="Base",DimPrice[price_increment]=0),
+ "Single gym lower",CALCULATE([Scenario Increment lower],DimGym[gym_id]="NF001",DimCase[case]="Base",DimPrice[price_increment]=1),
+ "Regional lower suppressed",CALCULATE([Scenario Increment lower],DimGym[region]="London",DimCase[case]="Base",DimPrice[price_increment]=1),
+ "Filtered portfolio lower suppressed",CALCULATE([Portfolio Increment lower],DimGym[region]="London",DimCase[case]="Base",DimPolicy[variant]="base"))
+
+EVALUATE
+SUMMARIZECOLUMNS(DimSimulation[simulation],DimPopulation[population],DimCheckpoint[checkpoint_months],
+ "Revenue",[Experiment Revenue Effect],"Lower",[Experiment Revenue Effect lower],"Upper",[Experiment Revenue Effect upper],"Pairs",[Experiment Complete Pairs],"Decision",[Experiment Saved Decision])

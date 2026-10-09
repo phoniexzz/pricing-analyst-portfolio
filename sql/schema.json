@@ -1,0 +1,6121 @@
+{
+  "gym_master": {
+    "csv": "data/gym_master.csv",
+    "key": [
+      "gym_id"
+    ],
+    "columns": {
+      "gym_id": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "gym_name": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "city": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "region": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "location_type": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "opening_date": {
+        "sqlite_type": "TEXT",
+        "kind": "date",
+        "nullable": false
+      },
+      "floor_space_sqft": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "capacity_proxy": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "local_population": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "median_income": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "student_population_pct": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "market_competitiveness": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "gym_age_years": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "snapshot_date": {
+        "sqlite_type": "TEXT",
+        "kind": "date",
+        "nullable": false
+      },
+      "competitor_count_3km": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "nearest_competitor_distance_km": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "local_competitor_avg_price": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "competitor_price_gap": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "utilisation_pct": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "peak_utilisation_pct": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "current_standard_price": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "current_offpeak_price": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "current_premium_price": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "PureGym_equivalent_price": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "JD_equivalent_price": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      }
+    }
+  },
+  "monthly_performance": {
+    "csv": "data/monthly_performance.csv",
+    "key": [
+      "gym_id",
+      "month"
+    ],
+    "columns": {
+      "gym_id": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "month": {
+        "sqlite_type": "TEXT",
+        "kind": "date",
+        "nullable": false
+      },
+      "opening_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "new_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "cancelled_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "opening_base_cancellations": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "same_month_cancellations": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "closing_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "average_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_price": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "offpeak_price": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "premium_price": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "headline_price": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "subscription_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "joining_fee_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "ancillary_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "monthly_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "realised_ARPMM": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "subscription_yield": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "acquisition_rate": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "churn_rate": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "retention_rate": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "conversion_rate": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "qualified_prospects": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "website_leads": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "trial_visits": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "gym_visits": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "visits_per_member": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "utilisation_pct": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "peak_utilisation_pct": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "average_concurrent_attendance": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "peak_concurrent_attendance": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "opening_minutes": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "average_visit_duration_minutes": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "marketing_spend": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "promotion_active": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "promotion_discount_pct": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "joining_fee": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "joining_fee_payers": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "pricing_complaints": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "pricing_complaints_per_1000_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "competitor_count_3km": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "nearest_competitor_distance_km": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "local_competitor_avg_price": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "competitor_price_gap": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "average_standard_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_subscription_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_realised_yield": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "offpeak_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "average_offpeak_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "offpeak_subscription_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "offpeak_realised_yield": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "premium_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "average_premium_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "premium_subscription_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "premium_realised_yield": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      }
+    }
+  },
+  "membership_ledger": {
+    "csv": "data/membership_ledger.csv",
+    "key": [
+      "gym_id",
+      "month",
+      "cohort_id",
+      "membership_type",
+      "billing_bucket_id"
+    ],
+    "columns": {
+      "gym_id": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "month": {
+        "sqlite_type": "TEXT",
+        "kind": "date",
+        "nullable": false
+      },
+      "cohort_id": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "join_month": {
+        "sqlite_type": "TEXT",
+        "kind": "date",
+        "nullable": true
+      },
+      "original_membership_type": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "membership_type": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "billing_bucket_id": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "opening_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "new_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "opening_base_cancellations": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "same_month_cancellations": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "transfers_in": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "transfers_out": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "closing_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "average_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "headline_price": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "base_billed_price": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "billed_price": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "promotion_discount_pct": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "price_protected_until": {
+        "sqlite_type": "TEXT",
+        "kind": "date",
+        "nullable": true
+      },
+      "repricing_event_id": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": true
+      },
+      "price_increment_applied": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "subscription_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      }
+    }
+  },
+  "competitor_prices": {
+    "csv": "data/competitor_prices.csv",
+    "key": [
+      "gym_id",
+      "competitor_id",
+      "month"
+    ],
+    "columns": {
+      "gym_id": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "competitor_id": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "competitor_name": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "competitor_type": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "distance_km": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "joining_fee": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "estimated_quality_score": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "month": {
+        "sqlite_type": "TEXT",
+        "kind": "date",
+        "nullable": false
+      },
+      "competitor_standard_price": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "promotion_active": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "promotion_value": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      }
+    }
+  },
+  "cohorts": {
+    "csv": "data/cohorts.csv",
+    "key": [
+      "gym_id",
+      "cohort_id"
+    ],
+    "columns": {
+      "gym_id": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "cohort_id": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "join_month": {
+        "sqlite_type": "TEXT",
+        "kind": "date",
+        "nullable": false
+      },
+      "membership_type": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "price_at_join": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "first_month_price": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "customers_joined": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "observation_months": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "customers_remaining_30d": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": true
+      },
+      "customers_remaining_90d": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": true
+      },
+      "customers_remaining_180d": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": true
+      },
+      "average_tenure": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "revenue_6_month": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": true
+      },
+      "revenue_12_month": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": true
+      }
+    }
+  },
+  "gym_baseline": {
+    "csv": "data/gym_baseline.csv",
+    "key": [
+      "gym_id"
+    ],
+    "columns": {
+      "gym_id": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "gym_name": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "city": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "region": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "location_type": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "standard_price_dec2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "competitor_gap_dec2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "average_members_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "total_revenue_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "revenue_growth_yoy": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "arpmm_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "subscription_yield_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_yield_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "member_growth_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "acquisition_growth_yoy": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "churn_rate_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "conversion_rate_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "average_utilisation_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "max_monthly_peak_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "high_churn_exception": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "weak_conversion_exception": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "declining_acquisition_exception": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "peak_capacity_exception": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "capacity_proxy": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "competitor_price_dec2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "competitor_count_dec2025": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "december_annualised_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "historical_price_events": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "historical_cash_increase": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "pilot_assignment": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "pilot_pair_id": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": true
+      },
+      "months_2025": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "opening_members_2025": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "closing_members_2025": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "member_months_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "opening_member_months_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "subscription_revenue_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "joining_fee_revenue_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "ancillary_revenue_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "average_monthly_revenue_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_member_months_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_subscription_revenue_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "new_members_2025": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "average_monthly_joins_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "acquisition_rate_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "opening_base_cancellations_2025": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "same_month_cancellations_2025": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "all_cancellations_2025": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "retention_rate_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "qualified_prospects_2025": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "occupancy_minutes_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "capacity_minutes_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "opening_minutes_2025": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "average_monthly_peak_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "promotion_gym_months_2025": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "promotion_frequency_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_mix_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "offpeak_mix_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus_mix_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "pricing_complaints_2025": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "complaints_per_1000_member_months_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "marketing_spend_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "months_2024": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "opening_members_2024": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "closing_members_2024": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "member_months_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "opening_member_months_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "average_members_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "subscription_revenue_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "joining_fee_revenue_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "ancillary_revenue_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "total_revenue_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "average_monthly_revenue_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "arpmm_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "subscription_yield_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_member_months_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_subscription_revenue_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_yield_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "new_members_2024": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "average_monthly_joins_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "acquisition_rate_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "opening_base_cancellations_2024": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "same_month_cancellations_2024": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "all_cancellations_2024": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "churn_rate_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "retention_rate_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "qualified_prospects_2024": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "conversion_rate_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "member_growth_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "occupancy_minutes_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "capacity_minutes_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "opening_minutes_2024": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "average_utilisation_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "average_monthly_peak_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "max_monthly_peak_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "promotion_gym_months_2024": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "promotion_frequency_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_mix_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "offpeak_mix_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus_mix_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "pricing_complaints_2024": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "complaints_per_1000_member_months_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "marketing_spend_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "months_q4_2025": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "opening_members_q4_2025": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "closing_members_q4_2025": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "member_months_q4_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "opening_member_months_q4_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "average_members_q4_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "subscription_revenue_q4_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "joining_fee_revenue_q4_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "ancillary_revenue_q4_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "total_revenue_q4_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "average_monthly_revenue_q4_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "arpmm_q4_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "subscription_yield_q4_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_member_months_q4_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_subscription_revenue_q4_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_yield_q4_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "new_members_q4_2025": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "average_monthly_joins_q4_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "acquisition_rate_q4_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "opening_base_cancellations_q4_2025": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "same_month_cancellations_q4_2025": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "all_cancellations_q4_2025": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "churn_rate_q4_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "retention_rate_q4_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "qualified_prospects_q4_2025": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "conversion_rate_q4_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "member_growth_q4_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "occupancy_minutes_q4_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "capacity_minutes_q4_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "opening_minutes_q4_2025": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "average_utilisation_q4_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "average_monthly_peak_q4_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "max_monthly_peak_q4_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "promotion_gym_months_q4_2025": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "promotion_frequency_q4_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_mix_q4_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "offpeak_mix_q4_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus_mix_q4_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "pricing_complaints_q4_2025": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "complaints_per_1000_member_months_q4_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "marketing_spend_q4_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "months_q4_2024": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "opening_members_q4_2024": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "closing_members_q4_2024": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "member_months_q4_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "opening_member_months_q4_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "average_members_q4_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "subscription_revenue_q4_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "joining_fee_revenue_q4_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "ancillary_revenue_q4_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "total_revenue_q4_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "average_monthly_revenue_q4_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "arpmm_q4_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "subscription_yield_q4_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_member_months_q4_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_subscription_revenue_q4_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_yield_q4_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "new_members_q4_2024": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "average_monthly_joins_q4_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "acquisition_rate_q4_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "opening_base_cancellations_q4_2024": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "same_month_cancellations_q4_2024": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "all_cancellations_q4_2024": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "churn_rate_q4_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "retention_rate_q4_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "qualified_prospects_q4_2024": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "conversion_rate_q4_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "member_growth_q4_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "occupancy_minutes_q4_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "capacity_minutes_q4_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "opening_minutes_q4_2024": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "average_utilisation_q4_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "average_monthly_peak_q4_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "max_monthly_peak_q4_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "promotion_gym_months_q4_2024": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "promotion_frequency_q4_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_mix_q4_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "offpeak_mix_q4_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus_mix_q4_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "pricing_complaints_q4_2024": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "complaints_per_1000_member_months_q4_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "marketing_spend_q4_2024": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "closing_member_growth_yoy": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "churn_change_pp_yoy": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "retention_change_pp_yoy": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "conversion_change_pp_yoy": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "revenue_growth_q4_yoy": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "acquisition_growth_q4_yoy": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "closing_member_growth_q4_yoy": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "churn_change_pp_q4_yoy": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "retention_change_pp_q4_yoy": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "conversion_change_pp_q4_yoy": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "highest_rank_total_revenue_2025": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "lowest_rank_total_revenue_2025": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "highest_rank_revenue_growth_yoy": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "lowest_rank_revenue_growth_yoy": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "highest_rank_member_growth_2025": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "lowest_rank_member_growth_2025": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      }
+    }
+  },
+  "region_year_baseline": {
+    "csv": "data/region_year_baseline.csv",
+    "key": [
+      "region",
+      "year"
+    ],
+    "columns": {
+      "region": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "year": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "gym_count": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "months": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "opening_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "closing_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "member_months": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "opening_member_months": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "average_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "subscription_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "joining_fee_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "ancillary_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "total_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "average_monthly_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "arpmm": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "subscription_yield": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_member_months": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_subscription_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_yield": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "new_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "average_monthly_joins": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "acquisition_rate": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "opening_base_cancellations": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "same_month_cancellations": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "all_cancellations": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "churn_rate": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "retention_rate": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "qualified_prospects": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "conversion_rate": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "member_growth": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "occupancy_minutes": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "capacity_minutes": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "opening_minutes": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "average_utilisation": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "average_monthly_peak": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "max_monthly_peak": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "promotion_gym_months": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "promotion_frequency": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_mix": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "offpeak_mix": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus_mix": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "pricing_complaints": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "complaints_per_1000_member_months": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "marketing_spend": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      }
+    }
+  },
+  "pilot_pair_response": {
+    "csv": "data/pilot_pair_response.csv",
+    "key": [
+      "pair_id",
+      "window"
+    ],
+    "columns": {
+      "pair_id": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "window": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "treatment_gym_id": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "control_gym_id": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "region": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "pre_start": {
+        "sqlite_type": "TEXT",
+        "kind": "date",
+        "nullable": false
+      },
+      "pre_end": {
+        "sqlite_type": "TEXT",
+        "kind": "date",
+        "nullable": false
+      },
+      "post_start": {
+        "sqlite_type": "TEXT",
+        "kind": "date",
+        "nullable": false
+      },
+      "post_end": {
+        "sqlite_type": "TEXT",
+        "kind": "date",
+        "nullable": false
+      },
+      "months": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "old_price": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "new_price": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "log_price_change": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "pre_pair_competitor_gap": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "pre_pair_competitor_count": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "post_competitor_entries": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "post_competitor_cuts": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "post_competitor_promotions": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "relative_value_group": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "competition_group": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "treatment_pre_standard_joins": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "treatment_pre_new_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "treatment_pre_qualified_prospects": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "treatment_pre_opening_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "treatment_pre_opening_base_cancellations": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "treatment_pre_same_month_cancellations": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "treatment_pre_average_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_pre_average_standard_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_pre_standard_subscription_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_pre_subscription_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_pre_joining_fee_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_pre_ancillary_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_pre_monthly_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_pre_marketing_spend": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_pre_pricing_complaints": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "treatment_pre_incumbent_standard_opening": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "treatment_pre_incumbent_standard_cancellations": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "treatment_pre_incumbent_standard_downgrades": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "treatment_pre_incumbent_paid_rate_numerator": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_pre_incumbent_protected_opening": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "treatment_pre_incumbent_repriced_opening": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "treatment_pre_months": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "treatment_pre_gym_count": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "treatment_pre_period_opening_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "treatment_pre_period_closing_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "treatment_pre_standard_price": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_pre_competitor_gap": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_pre_competition_count": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_pre_peak_utilisation": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_pre_promotion_frequency": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_pre_incumbent_churn": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_pre_incumbent_downgrade": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_pre_conversion": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_pre_site_churn": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_pre_subscription_yield": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_pre_standard_yield": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_pre_total_arpmm": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_pre_incumbent_paid_rate": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_pre_protected_share": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_pre_repriced_share": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "treatment_pre_complaints_per_1000_member_months": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_post_standard_joins": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "treatment_post_new_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "treatment_post_qualified_prospects": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "treatment_post_opening_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "treatment_post_opening_base_cancellations": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "treatment_post_same_month_cancellations": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "treatment_post_average_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_post_average_standard_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_post_standard_subscription_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_post_subscription_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_post_joining_fee_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_post_ancillary_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_post_monthly_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_post_marketing_spend": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_post_pricing_complaints": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "treatment_post_incumbent_standard_opening": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "treatment_post_incumbent_standard_cancellations": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "treatment_post_incumbent_standard_downgrades": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "treatment_post_incumbent_paid_rate_numerator": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_post_incumbent_protected_opening": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "treatment_post_incumbent_repriced_opening": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "treatment_post_months": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "treatment_post_gym_count": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "treatment_post_period_opening_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "treatment_post_period_closing_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "treatment_post_standard_price": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_post_competitor_gap": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_post_competition_count": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "treatment_post_peak_utilisation": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_post_promotion_frequency": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_post_incumbent_churn": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_post_incumbent_downgrade": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_post_conversion": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_post_site_churn": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_post_subscription_yield": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_post_standard_yield": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_post_total_arpmm": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_post_incumbent_paid_rate": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_post_protected_share": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_post_repriced_share": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "treatment_post_complaints_per_1000_member_months": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_pre_standard_joins": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "control_pre_new_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "control_pre_qualified_prospects": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "control_pre_opening_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "control_pre_opening_base_cancellations": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "control_pre_same_month_cancellations": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "control_pre_average_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_pre_average_standard_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_pre_standard_subscription_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_pre_subscription_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_pre_joining_fee_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_pre_ancillary_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_pre_monthly_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_pre_marketing_spend": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_pre_pricing_complaints": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "control_pre_incumbent_standard_opening": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "control_pre_incumbent_standard_cancellations": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "control_pre_incumbent_standard_downgrades": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "control_pre_incumbent_paid_rate_numerator": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_pre_incumbent_protected_opening": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "control_pre_incumbent_repriced_opening": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "control_pre_months": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "control_pre_gym_count": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "control_pre_period_opening_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "control_pre_period_closing_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "control_pre_standard_price": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_pre_competitor_gap": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_pre_competition_count": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "control_pre_peak_utilisation": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_pre_promotion_frequency": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_pre_incumbent_churn": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_pre_incumbent_downgrade": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_pre_conversion": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_pre_site_churn": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_pre_subscription_yield": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_pre_standard_yield": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_pre_total_arpmm": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_pre_incumbent_paid_rate": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_pre_protected_share": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_pre_repriced_share": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "control_pre_complaints_per_1000_member_months": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_post_standard_joins": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "control_post_new_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "control_post_qualified_prospects": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "control_post_opening_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "control_post_opening_base_cancellations": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "control_post_same_month_cancellations": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "control_post_average_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_post_average_standard_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_post_standard_subscription_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_post_subscription_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_post_joining_fee_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_post_ancillary_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_post_monthly_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_post_marketing_spend": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_post_pricing_complaints": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "control_post_incumbent_standard_opening": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "control_post_incumbent_standard_cancellations": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "control_post_incumbent_standard_downgrades": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "control_post_incumbent_paid_rate_numerator": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_post_incumbent_protected_opening": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "control_post_incumbent_repriced_opening": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "control_post_months": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "control_post_gym_count": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "control_post_period_opening_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "control_post_period_closing_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "control_post_standard_price": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_post_competitor_gap": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_post_competition_count": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "control_post_peak_utilisation": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_post_promotion_frequency": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_post_incumbent_churn": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_post_incumbent_downgrade": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_post_conversion": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_post_site_churn": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_post_subscription_yield": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_post_standard_yield": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_post_total_arpmm": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_post_incumbent_paid_rate": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_post_protected_share": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "control_post_repriced_share": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "control_post_complaints_per_1000_member_months": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "acquisition_log_response": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "controlled_acquisition_response": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "pre_acquisition_weight": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "incumbent_churn_response_pp": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incumbent_downgrade_response_pp": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "conversion_response_pp": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "site_churn_response_pp": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "subscription_yield_controlled_change": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_yield_controlled_change": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "total_arpmm_controlled_change": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incumbent_paid_rate_controlled_change": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "complaints_per_1000_member_months_controlled_change": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "monthly_revenue_counterfactual": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "monthly_revenue_estimated_difference": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "monthly_revenue_controlled_growth": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "subscription_revenue_counterfactual": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "subscription_revenue_estimated_difference": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "subscription_revenue_controlled_growth": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_subscription_revenue_counterfactual": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_subscription_revenue_estimated_difference": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_subscription_revenue_controlled_growth": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "new_members_counterfactual": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "new_members_estimated_difference": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "new_members_controlled_growth": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "member_balance_response": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "pair_elasticity": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "marketing_change_treatment": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "marketing_change_control": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      }
+    }
+  },
+  "price_response_estimates": {
+    "csv": "data/price_response_estimates.csv",
+    "key": [
+      "estimator",
+      "window",
+      "group_type",
+      "group",
+      "metric",
+      "weight_method"
+    ],
+    "columns": {
+      "estimator": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "window": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "group_type": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "group": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "metric": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "estimate": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": true
+      },
+      "ci_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": true
+      },
+      "ci_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": true
+      },
+      "exact_p_value": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": true
+      },
+      "assigned_pairs": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "complete_pairs": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "treatment_gyms": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "control_gyms": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "bootstrap_samples": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "interval_status": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "evidence_status": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "weight_method": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "unit": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      }
+    }
+  },
+  "gym_scenarios": {
+    "csv": "data/gym_scenarios.csv",
+    "key": [
+      "gym_id",
+      "price_increment",
+      "case"
+    ],
+    "columns": {
+      "new_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_joins": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "offpeak_joins": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus_joins": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "qualified_prospects": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "opening_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "average_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "opening_base_cancellations": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "same_month_cancellations": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "subscription_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "joining_fee_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "ancillary_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "monthly_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incumbent_standard_opening": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incumbent_standard_cancellations": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incumbent_standard_downgrades": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_average_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_subscription_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "offpeak_average_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus_average_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "pricing_complaints": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "probability_caps": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "transfers_out": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incumbent_standard_paid_rate_numerator": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "protected_standard_opening": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "repriced_standard_opening": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "period_opening_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "month12_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "annualised_exit_run_rate": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "average_members_per_month": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "churn_rate": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "retention_rate": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incumbent_churn_rate": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incumbent_downgrade_rate": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "conversion_rate": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "subscription_yield": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_yield": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "arpmm": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "member_growth": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_mix": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "offpeak_mix": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus_mix": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "complaints_per_1000": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incumbent_paid_rate": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "protected_share": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "repriced_share": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "average_utilisation": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "average_monthly_peak_utilisation": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "maximum_monthly_peak_utilisation": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "gym_id": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "price_increment": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "case": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "counterfactual_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incremental_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "revenue_uplift": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "member_difference": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "member_impact": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "acquisition_difference": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_acquisition_impact": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "churn_change_pp": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incumbent_churn_change_pp": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "downgrade_change_pp": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "conversion_change_pp": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "elasticity": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incumbent_churn_increment_pp": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incumbent_downgrade_increment_pp": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "evidence_status": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "region": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "old_standard_price": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "new_standard_price": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "december_competitor_gap": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "post_increase_competitor_gap": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "teaching_break_even_retention": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "out_of_pilot_value_support": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "repeated_repricing": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "cash_increment_extrapolation": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "monthly_revenue_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "monthly_revenue_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "month12_members_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "month12_members_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "new_members_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "new_members_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_joins_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_joins_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incumbent_churn_rate_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incumbent_churn_rate_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incumbent_downgrade_rate_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incumbent_downgrade_rate_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "arpmm_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "arpmm_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "pricing_complaints_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "pricing_complaints_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incremental_revenue_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incremental_revenue_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "positive_revenue_draw_fraction": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "break_even_response_multiplier": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": true
+      },
+      "break_even_member_impact": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": true
+      },
+      "break_even_crossings": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "elasticity_parameter_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "elasticity_parameter_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "churn_increment_parameter_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "churn_increment_parameter_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "downgrade_increment_parameter_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "downgrade_increment_parameter_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "pilot_log_dose_parameter_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "pilot_log_dose_parameter_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "complaints_increment_parameter_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "complaints_increment_parameter_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      }
+    }
+  },
+  "estate_scenarios": {
+    "csv": "data/estate_scenarios.csv",
+    "key": [
+      "gym_id",
+      "price_increment",
+      "case"
+    ],
+    "columns": {
+      "new_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_joins": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "offpeak_joins": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus_joins": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "qualified_prospects": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "opening_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "average_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "opening_base_cancellations": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "same_month_cancellations": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "subscription_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "joining_fee_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "ancillary_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "monthly_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incumbent_standard_opening": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incumbent_standard_cancellations": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incumbent_standard_downgrades": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_average_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_subscription_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "offpeak_average_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus_average_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "pricing_complaints": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "probability_caps": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "transfers_out": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incumbent_standard_paid_rate_numerator": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "protected_standard_opening": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "repriced_standard_opening": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "period_opening_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "month12_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "annualised_exit_run_rate": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "average_members_per_month": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "churn_rate": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "retention_rate": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incumbent_churn_rate": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incumbent_downgrade_rate": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "conversion_rate": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "subscription_yield": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_yield": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "arpmm": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "member_growth": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_mix": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "offpeak_mix": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus_mix": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "complaints_per_1000": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incumbent_paid_rate": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "protected_share": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "repriced_share": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "average_utilisation": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "average_monthly_peak_utilisation": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "maximum_monthly_peak_utilisation": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "gym_id": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "price_increment": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "case": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "counterfactual_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incremental_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "revenue_uplift": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "member_difference": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "member_impact": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "acquisition_difference": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_acquisition_impact": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "churn_change_pp": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incumbent_churn_change_pp": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "downgrade_change_pp": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "conversion_change_pp": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "elasticity": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incumbent_churn_increment_pp": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incumbent_downgrade_increment_pp": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "evidence_status": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "monthly_revenue_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "monthly_revenue_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "month12_members_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "month12_members_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "new_members_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "new_members_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_joins_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_joins_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incumbent_churn_rate_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incumbent_churn_rate_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incumbent_downgrade_rate_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incumbent_downgrade_rate_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "arpmm_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "arpmm_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "pricing_complaints_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "pricing_complaints_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incremental_revenue_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incremental_revenue_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "positive_revenue_draw_fraction": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "elasticity_parameter_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "elasticity_parameter_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "churn_increment_parameter_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "churn_increment_parameter_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "downgrade_increment_parameter_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "downgrade_increment_parameter_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "pilot_log_dose_parameter_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "pilot_log_dose_parameter_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "complaints_increment_parameter_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "complaints_increment_parameter_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      }
+    }
+  },
+  "gym_recommendations": {
+    "csv": "data/gym_recommendations.csv",
+    "key": [
+      "gym_id"
+    ],
+    "columns": {
+      "gym_id": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "action": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "proposed_increment": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "provisional_test_increment": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "assessment_increment": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "current_standard_price": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "proposed_standard_price": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "provisional_test_price": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": true
+      },
+      "rule_id": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "gym_name": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "city": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "region": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "score": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "rank": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "band": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "segment": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "sensitive": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "max_absolute_rank_movement": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "alternative_band_change_count": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "threshold_sensitive": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "competitor_gap_dec2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "caution_flag_count": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "high_churn_exception": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "weak_conversion_exception": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "declining_acquisition_exception": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "peak_capacity_exception": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "churn_rate_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "conversion_rate_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "acquisition_growth_yoy": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "acquisition_growth_q4_yoy": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "churn_change_pp_q4_yoy": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "conversion_change_pp_q4_yoy": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "average_monthly_peak_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "max_monthly_peak_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "complaints_per_1000_member_months_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "promotion_frequency_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "marketing_spend_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_mix_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "offpeak_mix_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus_mix_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "student_population_pct": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "historical_price_events": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "pilot_assignment": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "pilot_pair_id": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": true
+      },
+      "member_loss_limit": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "minimum_post_increase_competitor_gap": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "test_repeat_repricing": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "repeated_repricing": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "counterfactual_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "counterfactual_month12_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "selected_downside_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "selected_downside_member_impact": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "evidence_status": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "selected_incremental_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "selected_member_difference": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "selected_member_impact": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "selected_acquisition_difference": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "selected_standard_acquisition_impact": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "selected_incumbent_churn_change_pp": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "selected_downgrade_change_pp": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "selected_conversion_change_pp": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "selected_incremental_revenue_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "selected_incremental_revenue_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "selected_month12_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "selected_subscription_yield": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "selected_standard_yield": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "selected_arpmm": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "selected_pricing_complaints": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "selected_annualised_exit_run_rate": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "selected_post_increase_competitor_gap": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus1_complete": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "plus1_plausible": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "plus1_qualified": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "plus1_failed_gates": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": true
+      },
+      "plus1_base_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus1_downside_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus1_downside_member_impact": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus1_revenue_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus1_revenue_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus1_post_competitor_gap": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus1_worst_sensitivity_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus1_base_member_impact": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus2_complete": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "plus2_plausible": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "plus2_qualified": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "plus2_failed_gates": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": true
+      },
+      "plus2_base_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus2_downside_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus2_downside_member_impact": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus2_revenue_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus2_revenue_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus2_post_competitor_gap": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus2_worst_sensitivity_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus2_base_member_impact": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus3_base_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus3_base_member_impact": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus3_standard_price": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "unchanged_plus_price": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus3_standard_plus_parity": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "investigation_needed": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": true
+      },
+      "explanation": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "evidence_limitations": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      }
+    }
+  },
+  "recommendation_sensitivity": {
+    "csv": "data/recommendation_sensitivity.csv",
+    "key": [
+      "gym_id",
+      "variant"
+    ],
+    "columns": {
+      "gym_id": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "variant": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "action": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "proposed_increment": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "provisional_test_increment": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "assessment_increment": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "current_standard_price": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "proposed_standard_price": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "provisional_test_price": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": true
+      },
+      "rule_id": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "gym_name": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "city": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "region": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "score": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "rank": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "band": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "segment": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "sensitive": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "max_absolute_rank_movement": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "alternative_band_change_count": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "threshold_sensitive": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "competitor_gap_dec2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "caution_flag_count": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "high_churn_exception": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "weak_conversion_exception": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "declining_acquisition_exception": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "peak_capacity_exception": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "churn_rate_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "conversion_rate_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "acquisition_growth_yoy": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "acquisition_growth_q4_yoy": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "churn_change_pp_q4_yoy": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "conversion_change_pp_q4_yoy": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "average_monthly_peak_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "max_monthly_peak_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "complaints_per_1000_member_months_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "promotion_frequency_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "marketing_spend_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_mix_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "offpeak_mix_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus_mix_2025": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "student_population_pct": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "historical_price_events": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "pilot_assignment": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "pilot_pair_id": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": true
+      },
+      "member_loss_limit": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "minimum_post_increase_competitor_gap": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "test_repeat_repricing": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "repeated_repricing": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "counterfactual_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "counterfactual_month12_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "selected_downside_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "selected_downside_member_impact": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "evidence_status": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "selected_incremental_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "selected_member_difference": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "selected_member_impact": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "selected_acquisition_difference": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "selected_standard_acquisition_impact": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "selected_incumbent_churn_change_pp": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "selected_downgrade_change_pp": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "selected_conversion_change_pp": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "selected_incremental_revenue_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "selected_incremental_revenue_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "selected_month12_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "selected_subscription_yield": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "selected_standard_yield": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "selected_arpmm": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "selected_pricing_complaints": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "selected_annualised_exit_run_rate": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "selected_post_increase_competitor_gap": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus1_complete": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "plus1_plausible": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "plus1_qualified": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "plus1_failed_gates": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": true
+      },
+      "plus1_base_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus1_downside_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus1_downside_member_impact": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus1_revenue_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus1_revenue_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus1_post_competitor_gap": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus1_worst_sensitivity_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus1_base_member_impact": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus2_complete": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "plus2_plausible": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "plus2_qualified": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "plus2_failed_gates": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": true
+      },
+      "plus2_base_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus2_downside_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus2_downside_member_impact": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus2_revenue_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus2_revenue_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus2_post_competitor_gap": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus2_worst_sensitivity_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus2_base_member_impact": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus3_base_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus3_base_member_impact": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus3_standard_price": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "unchanged_plus_price": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus3_standard_plus_parity": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "investigation_needed": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": true
+      },
+      "explanation": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "evidence_limitations": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "base_action": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "base_proposed_increment": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "base_provisional_test_increment": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "changed_action": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "changed_amount": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      }
+    }
+  },
+  "recommendation_portfolio": {
+    "csv": "data/recommendation_portfolio.csv",
+    "key": [
+      "variant",
+      "case"
+    ],
+    "columns": {
+      "monthly_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "subscription_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "joining_fee_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "ancillary_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "month12_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "period_opening_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "opening_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "average_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "new_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_joins": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "qualified_prospects": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "opening_base_cancellations": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "same_month_cancellations": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incumbent_standard_opening": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incumbent_standard_cancellations": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incumbent_standard_downgrades": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_average_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_subscription_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "offpeak_average_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus_average_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "pricing_complaints": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "annualised_exit_run_rate": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "variant": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "case": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "raise_sites": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "raise_1_sites": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "raise_2_sites": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "test_sites": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "hold_sites": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "investigate_sites": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "counterfactual_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "counterfactual_month12_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incremental_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "member_difference": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "acquisition_difference": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "member_impact": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "revenue_uplift": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "churn_rate": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "retention_rate": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incumbent_churn_rate": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incumbent_downgrade_rate": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "conversion_rate": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "arpmm": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "subscription_yield": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_yield": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_mix": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "offpeak_mix": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus_mix": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "complaints_per_1000_member_months": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "monthly_revenue_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "monthly_revenue_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "month12_members_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "month12_members_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "new_members_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "new_members_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_joins_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_joins_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incremental_revenue_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incremental_revenue_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "member_impact_lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "member_impact_upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "positive_revenue_draw_fraction": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "excluded_test_first_base_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "excluded_test_first_base_member_difference": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "member_loss_limit": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "minimum_post_increase_competitor_gap": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "test_repeat_repricing": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "evidence_status": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      }
+    }
+  },
+  "experiment_monthly": {
+    "csv": "data/experiment_monthly.csv",
+    "key": [
+      "simulation",
+      "gym_id",
+      "month"
+    ],
+    "columns": {
+      "gym_id": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "month": {
+        "sqlite_type": "TEXT",
+        "kind": "date",
+        "nullable": false
+      },
+      "is_simulated": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "opening_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "new_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "opening_base_cancellations": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "same_month_cancellations": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "closing_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "average_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "subscription_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "joining_fee_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "ancillary_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "monthly_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "qualified_prospects": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "pricing_complaints": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "marketing_spend": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "joining_fee_payers": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "standard_price": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "offpeak_price": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "gym_visits": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "opening_minutes": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "plus_price": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "competitor_price": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "competitor_count": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "promotion_active": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "average_utilisation": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "peak_utilisation": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "visit_duration_minutes": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "capacity": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "standard_joins": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "offpeak_joins": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "plus_joins": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "incumbent_standard_opening": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "incumbent_standard_cancellations": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "incumbent_standard_downgrades": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "incumbent_paid_rate_numerator": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incumbent_protected_opening": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "incumbent_repriced_opening": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "joining_month_downgrades": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "transfers_in": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "transfers_out": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "probability_caps": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "standard_opening_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "standard_closing_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "standard_average_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "standard_subscription_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "offpeak_opening_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "offpeak_closing_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "offpeak_average_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "offpeak_subscription_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus_opening_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "plus_closing_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "plus_average_members": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "plus_subscription_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "simulation": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "pair_id": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "assignment": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "population": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "region": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "notification_date": {
+        "sqlite_type": "TEXT",
+        "kind": "date",
+        "nullable": false
+      },
+      "incumbent_billing_date": {
+        "sqlite_type": "TEXT",
+        "kind": "date",
+        "nullable": false
+      },
+      "source_status": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      }
+    }
+  },
+  "experiment_estimates": {
+    "csv": "data/experiment_estimates.csv",
+    "key": [
+      "simulation",
+      "population",
+      "checkpoint_months",
+      "metric"
+    ],
+    "columns": {
+      "simulation": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "population": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "checkpoint_months": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "metric": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "estimate": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "lower": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": true
+      },
+      "upper": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": true
+      },
+      "assigned_pairs": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "complete_pairs": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "treated_gyms": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "control_gyms": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "assignment_flips": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "p_value_one_sided": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": true
+      },
+      "p_value_two_sided": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": true
+      },
+      "interval_status": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "evidence_status": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "is_primary": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "unit": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      }
+    }
+  },
+  "experiment_monitoring": {
+    "csv": "data/experiment_monitoring.csv",
+    "key": [
+      "simulation",
+      "gym_id",
+      "checkpoint_months"
+    ],
+    "columns": {
+      "simulation": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "gym_id": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "pair_id": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "population": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "assignment": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "checkpoint_months": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "review_date": {
+        "sqlite_type": "TEXT",
+        "kind": "date",
+        "nullable": false
+      },
+      "review_label": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "cumulative_revenue": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "closing_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "new_members": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "standard_joins": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "qualified_prospects": {
+        "sqlite_type": "INTEGER",
+        "kind": "integer",
+        "nullable": false
+      },
+      "conversion": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incumbent_churn": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "incumbent_downgrade": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "subscription_yield": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "arpmm": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "complaints_per_1000": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "maximum_peak": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "capacity_trigger": {
+        "sqlite_type": "INTEGER",
+        "kind": "boolean",
+        "nullable": false
+      },
+      "paired_complaints_change": {
+        "sqlite_type": "REAL",
+        "kind": "number",
+        "nullable": false
+      },
+      "population_decision": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      },
+      "required_response": {
+        "sqlite_type": "TEXT",
+        "kind": "text",
+        "nullable": false
+      }
+    }
+  }
+}

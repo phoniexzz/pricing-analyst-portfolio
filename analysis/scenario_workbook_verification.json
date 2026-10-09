@@ -1,0 +1,114 @@
+{
+  "comparisonCellsEvaluated": 0,
+  "maxComparisonDifference": 0,
+  "selectorRestored": true,
+  "errorScan": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}",
+  "inputChangeTests": [
+    "Numeric zero is distinct from blank",
+    "Manual override updates revenue and suppresses uncertainty",
+    "Blank-to-zero capture freshness detected",
+    "Later-period driver changes mark capture stale",
+    "Incumbent churn driver propagates",
+    "Larger price reduces Standard recruitment",
+    "Unselected blank allowed; selected blank makes revenue unavailable",
+    "All twelve captures evaluated through one build; selections restored"
+  ],
+  "savedWorkbookRecalculated": true,
+  "visualReview": {
+    "new_sheets": [
+      "Scenario Inputs",
+      "Scenario Model",
+      "Scenario Comparison",
+      "Scenario Summary"
+    ],
+    "affected_guidance": [
+      "Dataset Overview",
+      "README"
+    ],
+    "views_reviewed": [
+      "inputs_final",
+      "rates_final",
+      "states_final",
+      "model_final",
+      "model_tail_final",
+      "billing_final",
+      "comparison_final",
+      "capture_final",
+      "summary_final",
+      "revenue_final",
+      "members_final",
+      "tradeoff_final",
+      "bridge_final",
+      "overview_final",
+      "readme_final"
+    ],
+    "standalone_figures": [
+      "scenario_monthly_trends.png",
+      "scenario_site_tradeoffs.png",
+      "scenario_revenue_bridge.png"
+    ],
+    "corrections": [
+      "Churn/downgrade and joining-month exit rates display as percentages",
+      "Full and pending legacy paid rates display in GBP",
+      "Captured UTC has an explicit date/time format",
+      "Annual membership exposures clearly labelled member-months",
+      "Case coefficient units separated from complaint-rate units",
+      "All wide source/comparison columns have readable widths",
+      "Native sequential bridge uses light bars so category labels remain legible"
+    ],
+    "limitations": [
+      "Native bar bridge is a sequential channel chart; the report includes the exact waterfall",
+      "Native site scatter is complemented by the standalone plot with conditional revenue intervals"
+    ],
+    "approved": true
+  },
+  "fullRefreshSuccessful": true,
+  "twelveCombinationsCaptured": 12,
+  "captureFreshnessCurrent": true,
+  "selectedCaseRestored": true,
+  "independentCsvCellsCompared": 286240,
+  "maxSavedCsvDifference": 4.9942173063755035e-06,
+  "newFormulaCaches": 672748,
+  "originalSheetsPreserved": [
+    "Dataset Overview",
+    "Assumptions",
+    "Gym Master",
+    "Monthly Performance",
+    "Competitors",
+    "Historical Pricing",
+    "Customer Cohorts",
+    "Membership Ledger",
+    "Pilot Assignments",
+    "Market Events",
+    "Data Dictionary",
+    "Checks",
+    "README",
+    "Baseline",
+    "Estate Trends",
+    "Baseline Summary",
+    "Headroom Score",
+    "Headroom Summary",
+    "Response Data",
+    "Historical Response",
+    "Elasticity Summary"
+  ],
+  "originalNativeFeaturesPreserved": true,
+  "sourceHashesUnchanged": true,
+  "finalSheetCount": 25,
+  "nativeCharts": 4,
+  "formulaErrors": [],
+  "independentInitialSourceChecks": true,
+  "internalRelationshipsChecked": true,
+  "uniqueTableNames": true,
+  "savedSummaryMaxDifference": 4.470348358154297e-08,
+  "savedFormulaErrorScan": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}",
+  "savedInputTests": [
+    "Zero override distinct from blank",
+    "Price change propagates",
+    "Case selection propagates",
+    "Captured comparisons stale after driver override"
+  ],
+  "recalculationEngine": "Artifact Tool recalculation of actual saved formulas/values in bounded blocks; all 21 prior sheets/features checked independently against the pre-edit package. Native Excel was not automated.",
+  "allFourCsvsReproduce": true,
+  "status": "Complete"
+}

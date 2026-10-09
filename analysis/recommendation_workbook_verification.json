@@ -1,0 +1,187 @@
+{
+  "status": "Phase 7 complete: saved parity, actual formula recalculation, refresh, preservation, reproducibility and visual review passed",
+  "checks_passed": 130917,
+  "independent_cells_compared": 11740,
+  "max_saved_csv_difference": 0.0004941970109939575,
+  "formula_caches": 55593,
+  "formula_errors": [],
+  "preserved_sheets": 25,
+  "final_sheet_count": 27,
+  "native_charts": 4,
+  "source_hashes_unchanged": true,
+  "formula_graph_sha256": "41a6231102978ba42a917c3fd5660f7e9973ca7c8150534ef0d13fb12c1034ca",
+  "completion_evidence": {
+    "saved_recalculation": {
+      "savedWorkbookRecalculated": true,
+      "formula_graph_sha256": "41a6231102978ba42a917c3fd5660f7e9973ca7c8150534ef0d13fb12c1034ca",
+      "engine": "Artifact Tool recalculation of actual saved Phase 7 formulas with unchanged saved source caches; native Excel not automated",
+      "independent_cells_checked": 1710,
+      "max_difference": 2.9802322387695312e-08,
+      "tests": [
+        "Actual saved member-policy edit changes mix and hides stale interval",
+        "Saved zero repeat setting valid",
+        "Saved competitor buffer changes actions",
+        "Actual saved case selector independent of named Base/Downside rules",
+        "Saved stale evidence suppresses authority",
+        "Manual behavioural zero suppresses evidence-derived authority",
+        "Blank versus valid zero policy distinguished",
+        "Missing conditional interval leads to investigation"
+      ],
+      "error_scan": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}",
+      "selected_case_restored": true,
+      "policy_restored": [
+        [
+          0.05
+        ],
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ]
+    },
+    "refresh": {
+      "successful": true,
+      "selected_case_restored": true,
+      "selected_case": 1.0,
+      "selected_price": 2.0,
+      "evidence_available": true,
+      "portfolio_status": "CURRENT",
+      "sheet_count": 27,
+      "preservation": {
+        "preserved_sheets": [
+          "Dataset Overview",
+          "Assumptions",
+          "Gym Master",
+          "Monthly Performance",
+          "Competitors",
+          "Historical Pricing",
+          "Customer Cohorts",
+          "Membership Ledger",
+          "Pilot Assignments",
+          "Market Events",
+          "Data Dictionary",
+          "Checks",
+          "README",
+          "Baseline",
+          "Estate Trends",
+          "Baseline Summary",
+          "Headroom Score",
+          "Headroom Summary",
+          "Response Data",
+          "Historical Response",
+          "Elasticity Summary",
+          "Scenario Inputs",
+          "Scenario Model",
+          "Scenario Comparison",
+          "Scenario Summary"
+        ],
+        "owned_sheets": [
+          "Recommendation Summary",
+          "Recommendations"
+        ],
+        "sheet_count": 27,
+        "guidance_updates": {
+          "Dataset Overview": {
+            "D5": "Phase 7 complete",
+            "E5": "80 site recommendations",
+            "E7": "Phase 8: controlled experiment design",
+            "E10": "Conditional recommendations"
+          },
+          "README": {
+            "B20": "Phase 7 complete. Phase 8 next: experiment design and prospective implementation conditions."
+          }
+        }
+      }
+    },
+    "phase6_refresh_compatibility": {
+      "successful": true,
+      "current_27_sheet_input_accepted": true,
+      "all_later_sheets_preserved": true,
+      "selected_case_restored": true,
+      "sheet_count": 27,
+      "method": "Changed preservation/replacement plumbing tested using already validated Phase 6 segments. Unchanged full twelve-case forecast calculation not redundantly rerun.",
+      "preservation": {
+        "preserved_sheets": [
+          "Dataset Overview",
+          "Assumptions",
+          "Gym Master",
+          "Monthly Performance",
+          "Competitors",
+          "Historical Pricing",
+          "Customer Cohorts",
+          "Membership Ledger",
+          "Pilot Assignments",
+          "Market Events",
+          "Data Dictionary",
+          "Checks",
+          "README",
+          "Baseline",
+          "Estate Trends",
+          "Baseline Summary",
+          "Headroom Score",
+          "Headroom Summary",
+          "Response Data",
+          "Historical Response",
+          "Elasticity Summary",
+          "Recommendations",
+          "Recommendation Summary"
+        ],
+        "owned_sheets": [
+          "Scenario Comparison",
+          "Scenario Inputs",
+          "Scenario Model",
+          "Scenario Summary"
+        ],
+        "sheet_count": 27,
+        "guidance_updates": {}
+      }
+    },
+    "visual_review": {
+      "passed": true,
+      "method": "Artifact Tool rendered worksheet regions and native charts; direct image review. Matplotlib commercial figures reviewed separately.",
+      "new_sheets": {
+        "Recommendations": [
+          "controls.png",
+          "actions.png",
+          "financial.png",
+          "candidate.png",
+          "context.png",
+          "rules.png",
+          "sensitivity_inputs.png"
+        ],
+        "Recommendation Summary": [
+          "summary.png",
+          "portfolio.png",
+          "action_changes.png"
+        ]
+      },
+      "native_charts": [
+        "chart_counts.png",
+        "chart_revenue.png",
+        "chart_members.png",
+        "chart_tradeoffs.png"
+      ],
+      "final_delivered_guidance": [
+        "overview_saved.png",
+        "readme_saved.png"
+      ],
+      "commercial_figures": [
+        "analysis/recommendation_actions.png",
+        "analysis/recommendation_tradeoffs.png",
+        "analysis/recommendation_policy_changes.png"
+      ],
+      "repairs_reviewed": [
+        "Native charts use actual range sources",
+        "Long action labels and context columns fit",
+        "Price and competitor gaps have GBP precision",
+        "Policy matrix labels fit and categorical colours are consistent",
+        "Blank pilot IDs remain unavailable",
+        "Source sensitivity revenue amounts use GBP formatting",
+        "Overview and README explicitly identify Phase 7 complete and Phase 8 next"
+      ],
+      "outstanding_clipping_or_chart_errors": []
+    }
+  }
+}

@@ -1,0 +1,3664 @@
+{
+  "measures": 296,
+  "table_counts": [
+    {
+      "rows": [
+        {
+          "[Rows]": 7
+        }
+      ],
+      "table": "DimAlternative"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 2
+        }
+      ],
+      "table": "DimAssignment"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 4
+        }
+      ],
+      "table": "DimBridge"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 3
+        }
+      ],
+      "table": "DimCase"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 4
+        }
+      ],
+      "table": "DimCheckpoint"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 24
+        }
+      ],
+      "table": "DimExperimentMonth"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 80
+        }
+      ],
+      "table": "DimGym"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 24
+        }
+      ],
+      "table": "DimHistoryMonth"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 44
+        }
+      ],
+      "table": "DimMetricPanel"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 5
+        }
+      ],
+      "table": "DimPolicy"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 9
+        }
+      ],
+      "table": "DimPopulation"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 4
+        }
+      ],
+      "table": "DimPrice"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 12
+        }
+      ],
+      "table": "DimScenarioMonth"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 3
+        }
+      ],
+      "table": "DimSimulation"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 1
+        }
+      ],
+      "table": "EvidenceStatus"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 80
+        }
+      ],
+      "table": "FactBaseline"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 7344
+        }
+      ],
+      "table": "FactCompetitor"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 80
+        }
+      ],
+      "table": "FactExperimentDesign"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 1728
+        }
+      ],
+      "table": "FactExperimentEstimate"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 36
+        }
+      ],
+      "table": "FactExperimentGovernance"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 432
+        }
+      ],
+      "table": "FactExperimentGuardrail"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 168
+        }
+      ],
+      "table": "FactExperimentHistory"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 168
+        }
+      ],
+      "table": "FactExperimentMonitoring"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 84
+        }
+      ],
+      "table": "FactExperimentPair"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 504
+        }
+      ],
+      "table": "FactExperimentPath"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 80
+        }
+      ],
+      "table": "FactHeadroom"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 372
+        }
+      ],
+      "table": "FactHistoricalEstimate"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 32
+        }
+      ],
+      "table": "FactHistoricalEvent"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 36
+        }
+      ],
+      "table": "FactHistoricalPair"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 1920
+        }
+      ],
+      "table": "FactHistoricalPilotMonth"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 1920
+        }
+      ],
+      "table": "FactHistory"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 400
+        }
+      ],
+      "table": "FactPolicyRecommendation"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 15
+        }
+      ],
+      "table": "FactPortfolio"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 1200
+        }
+      ],
+      "table": "FactPortfolioSite"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 114
+        }
+      ],
+      "table": "FactPower"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 80
+        }
+      ],
+      "table": "FactRecommendation"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 960
+        }
+      ],
+      "table": "FactScenarioAnnual"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 12
+        }
+      ],
+      "table": "FactScenarioEstate"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 28
+        }
+      ],
+      "table": "FactScenarioEstateSensitivity"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 11520
+        }
+      ],
+      "table": "FactScenarioMonthly"
+    },
+    {
+      "rows": [
+        {
+          "[Rows]": 2240
+        }
+      ],
+      "table": "FactScenarioSiteSensitivity"
+    }
+  ],
+  "all_measure_execution": [
+    {
+      "[Forward Evidence Current]": true,
+      "[Experiment Evidence Current]": true,
+      "[Evidence Status]": "CURRENT saved evidence",
+      "[Snapshot Version]": "6a1cdd7fcbb929ac",
+      "[Snapshot Stamp]": "Validated snapshot 6a1cdd7fcbb929ac  |  2026-10-05T19:13:41.245257+00:00  |  Native verification pending",
+      "[Full Estate Scope]": false,
+      "[Uncertainty Scope]": "Saved individual-gym conditional parameter range",
+      "[Historical Window]": "Jan 2025–Dec 2025",
+      "[Net Revenue]": 2255247.42,
+      "[Subscription Revenue]": 2196639.07,
+      "[Joining Fee Revenue]": 20258.34,
+      "[Ancillary Revenue]": 38350.01,
+      "[Average Member Months]": 100318.0,
+      "[Opening Member Months]": 100353,
+      "[Acquisitions]": 4544,
+      "[Opening-base Exits]": 4534,
+      "[Same-month Exits]": 80,
+      "[Qualified Prospects]": 13725,
+      "[Complaints]": 75,
+      "[Marketing Spend]": 34647.36,
+      "[Standard Subscription Revenue]": 1485876.68,
+      "[Standard Member Months]": 67914.0,
+      "[ARPMM]": 22.480984668753365,
+      "[Subscription Yield]": 21.896759006359773,
+      "[Standard Yield]": 21.87879789145095,
+      "[Opening-base Churn]": 0.04518051278985182,
+      "[Acquisition Rate]": 0.045280161031558595,
+      "[Qualified Conversion]": 0.33107468123861566,
+      "[Complaints per 1000]": 0.7476225602583784,
+      "[Monthly Retention]": 0.9548194872101482,
+      "[Observed Months]": 12,
+      "[Average Members]": 8359.833333333334,
+      "[Average Monthly Revenue]": 187937.285,
+      "[Average Monthly Acquisitions]": 378.6666666666667,
+      "[Closing Members]": 8095,
+      "[Period Opening Members]": 8165,
+      "[Period Member Growth]": -0.008573178199632579,
+      "[Average Occupancy]": 0.23753047857534246,
+      "[Average Monthly Peak]": 0.6755663425000001,
+      "[Maximum Monthly Peak]": 0.82524272,
+      "[Promotion Frequency]": 0.3333333333333333,
+      "[Standard Mix]": 0.6769871807651667,
+      "[Off-Peak Mix]": 0.15080543870491836,
+      "[Plus Mix]": 0.17220738052991488,
+      "[Net Revenue Prior Year]": 2166251.17,
+      "[Closing Members Prior Year]": 8165,
+      "[Average Members Prior Year]": 8366.75,
+      "[Average Member Months Prior Year]": 100401.0,
+      "[ARPMM Prior Year]": 21.57599197219151,
+      "[Acquisitions Prior Year]": 4396,
+      "[Qualified Conversion Prior Year]": 0.3210633946830266,
+      "[Opening-base Churn Prior Year]": 0.0434037977078334,
+      "[Monthly Retention Prior Year]": 0.9565962022921666,
+      "[Net Revenue YoY]": 0.04108307071335592,
+      "[Closing Members YoY]": -0.008573178199632579,
+      "[Average Members YoY]": -0.0008266849931772863,
+      "[Acquisitions YoY]": 0.03366696997270246,
+      "[ARPMM YoY]": 0.0419444305378064,
+      "[Qualified Conversion Change pp]": 1.0011286555589083,
+      "[Opening-base Churn Change pp]": 0.1776715082018425,
+      "[Monthly Retention Change pp]": -0.17767150820183764,
+      "[Executive Revenue Comparison]": "vs 2024: +4.11%",
+      "[Executive Members Comparison]": "vs 2024: −0.86%",
+      "[Executive ARPMM Comparison]": "vs 2024: +4.19%",
+      "[Executive Acquisition Comparison]": "vs 2024: +3.37%",
+      "[Executive Churn Comparison]": "vs 2024: +0.18 pp",
+      "[Q4 Net Revenue]": 564492.72,
+      "[Q4 Net Revenue 2024]": 539926.95,
+      "[Q4 Net Revenue Growth]": 0.04549832157850246,
+      "[Q4 Acquisitions]": 1030,
+      "[Q4 Acquisitions 2024]": 981,
+      "[Q4 Acquisitions Growth]": 0.04994903160040775,
+      "[Q4 Qualified Conversion]": 0.3246139300346675,
+      "[Q4 Qualified Conversion 2024]": 0.3194399218495604,
+      "[Q4 Qualified Conversion Change pp]": 0.5174008185107104,
+      "[Q4 Opening-base Churn]": 0.04373886278956747,
+      "[Q4 Opening-base Churn 2024]": 0.04456991830850553,
+      "[Q4 Opening-base Churn Change pp]": -0.08310555189380564,
+      "[Volume Bridge]": -1790.8073336918953,
+      "[ARPMM Bridge]": 90787.05733369221,
+      "[Revenue Bridge]": null,
+      "[December Exit Run-rate]": 2255210.52,
+      "[Standard Headline December]": 27.99,
+      "[Off-Peak Headline December]": 20.99,
+      "[Plus Headline December]": 30.99,
+      "[Competitor Recurring December]": 28.33333333,
+      "[Competitor Gap December]": 0.34333333,
+      "[Headroom Score]": 57.1518987341772,
+      "[Saved Estate Rank]": 28,
+      "[December Competitor Count]": 6,
+      "[Headroom Band]": "Medium",
+      "[Headroom Segment]": "Mixed indicators",
+      "[Caution Count]": 0,
+      "[Pricing Complaints 2025]": 0.747622560258,
+      "[Competitor Joining Fee December]": 6.66666666666667,
+      "[Competitor Intro Discount December]": 0.833333333333333,
+      "[Rank Movement Sensitivity]": 13,
+      "[Saved Recommendation]": "HOLD PRICE",
+      "[Recommended Increment]": 0,
+      "[Provisional Test Increment]": 0,
+      "[Recommendation Explanation]": "Neither £1 nor £2 preserves the required competitor gap with positive base revenue",
+      "[Recommendation Site Count]": 1,
+      "[Conditional Raise Sites]": 0,
+      "[Saved Policy Action]": "HOLD PRICE",
+      "[Saved Policy Amount]": 0,
+      "[£1 plausible]": false,
+      "[£1 qualified]": false,
+      "[£1 failed gates]": "Post-increase competitor gap",
+      "[£1 base revenue]": 20856.3159526,
+      "[£1 downside revenue]": 12682.826492,
+      "[£1 downside member impact]": -0.0244397861864,
+      "[£1 revenue lower]": 8461.35935083,
+      "[£1 revenue upper]": 32861.0949312,
+      "[£1 post competitor gap]": -0.65666667,
+      "[£1 worst sensitivity revenue]": 16655.564415,
+      "[£2 plausible]": false,
+      "[£2 qualified]": false,
+      "[£2 failed gates]": "Post-increase competitor gap",
+      "[£2 base revenue]": 41174.20942,
+      "[£2 downside revenue]": 25455.400586,
+      "[£2 downside member impact]": -0.0467964934185,
+      "[£2 revenue lower]": 17033.6889102,
+      "[£2 revenue upper]": 64995.897767,
+      "[£2 post competitor gap]": -1.65666667,
+      "[£2 worst sensitivity revenue]": 32717.3082183,
+      "[Scenario Revenue]": 2297078.28843,
+      "[Scenario Subscription]": 2237399.75679,
+      "[Scenario Joining Fees]": 21328.5315957,
+      "[Scenario Ancillary]": 38350.0000357,
+      "[Scenario Incremental Revenue]": 20856.3159526,
+      "[Scenario December Members]": 7936.53391832,
+      "[Scenario Member Difference]": -150.834146833,
+      "[Scenario Joins]": 4398.95239608,
+      "[Scenario Standard Joins]": 2999.31851539,
+      "[Scenario Prospects]": 13921.7501676,
+      "[Scenario Opening Exposure]": 97882.9781103,
+      "[Scenario Average Exposure]": 97803.7450695,
+      "[Scenario Opening Exits]": 4464.02673723,
+      "[Scenario Incumbent Exposure]": 48612.415595,
+      "[Scenario Incumbent Exits]": 2319.78001334,
+      "[Scenario Downgrades]": 249.938879158,
+      "[Scenario Exit Run-rate]": 2263351.54972,
+      "[Scenario Standard Revenue]": 1484989.27613,
+      "[Scenario Standard Exposure]": 63074.7012484,
+      "[Scenario ARPMM]": 23.48660868556394,
+      "[Scenario Subscription Yield]": 22.876422116556874,
+      "[Scenario Standard Yield]": 23.54334220754901,
+      "[Scenario Conversion]": 0.3159769672004066,
+      "[Scenario Churn]": 0.04560575110617993,
+      "[Scenario Incumbent Churn]": 0.04771990827747716,
+      "[Scenario Downgrade Rate]": 0.005141461828194098,
+      "[Scenario Member Impact]": -0.018650585161688497,
+      "[Scenario Monthly Revenue]": null,
+      "[Scenario Monthly Closing]": null,
+      "[Scenario Cumulative Increment]": null,
+      "[Scenario Increment lower]": 8461.35935083,
+      "[Scenario Members lower]": 7864.73510933,
+      "[Scenario Increment upper]": 32861.0949312,
+      "[Scenario Members upper]": 8006.66680588,
+      "[Positive Draw Fraction]": 0.9997,
+      "[Break-even Multiplier]": 1.75829340781,
+      "[Break-even Member Impact]": -0.032321043247,
+      "[Break-even Crossings]": 1,
+      "[Teaching Retention Ratio]": 0.965505346671,
+      "[Scenario Selection Status]": "Jan–Dec 2026 saved scenarios. +£3 is an analytical comparison; Standard reaches unchanged Plus at 20 sites.",
+      "[Portfolio Increment]": 0.0,
+      "[Portfolio Revenue]": 2276221.97247,
+      "[Portfolio December Members]": 8087.36806515,
+      "[Portfolio Member Difference]": 0.0,
+      "[Portfolio Joins]": 4519.19403485,
+      "[Portfolio Prospects]": 13921.7501676,
+      "[Portfolio Opening Exposure]": 98878.5941455,
+      "[Portfolio Exits]": 4430.81205993,
+      "[Portfolio Average Exposure]": 98874.7781781,
+      "[Portfolio Subscription]": 2215960.44349,
+      "[Portfolio Incumbent Exposure]": 49383.8101557,
+      "[Portfolio Incumbent Exits]": 2275.4167123,
+      "[Portfolio Downgrades]": 174.201685506,
+      "[Portfolio Churn]": 0.04481062962333438,
+      "[Portfolio Conversion]": 0.32461393003355943,
+      "[Portfolio ARPMM]": 23.02125996550823,
+      "[Portfolio Downgrade Rate]": 0.003527505977298376,
+      "[Portfolio Increment lower]": null,
+      "[Portfolio Increment upper]": null,
+      "[Portfolio Uncertainty Scope]": "Portfolio range unavailable for selected gyms or region. Filtered points and weighted rates remain available.",
+      "[Historical Standard Acquisition Effect]": -0.0826637502691,
+      "[Historical Standard Acquisition Effect lower]": -0.139010523702,
+      "[Historical Standard Acquisition Effect upper]": -0.028890038719,
+      "[Historical Acquisition Elasticity]": -1.11973900686,
+      "[Historical Acquisition Elasticity lower]": -1.901662753,
+      "[Historical Acquisition Elasticity upper]": -0.383684875251,
+      "[Historical Incumbent Churn Effect]": 0.345128252745,
+      "[Historical Incumbent Churn Effect lower]": 0.182430619537,
+      "[Historical Incumbent Churn Effect upper]": 0.496563444139,
+      "[Historical Downgrade Effect]": 0.324099220895,
+      "[Historical Downgrade Effect lower]": 0.293938637783,
+      "[Historical Downgrade Effect upper]": 0.356406878995,
+      "[Historical Conversion Effect]": -1.50973643721,
+      "[Historical Conversion Effect lower]": -2.69950053299,
+      "[Historical Conversion Effect upper]": -0.471470438137,
+      "[Historical Pilot Pairs]": 12,
+      "[Historical Pilot Scope]": "Saved £2 pilot: 12 pairs, Oct 2024–Mar 2025 vs Apr–Sep 2025. Independent of the displayed site/date filters.",
+      "[Experiment Revenue Effect]": 0.010166646403,
+      "[Experiment Revenue Effect lower]": -0.00961294285458,
+      "[Experiment Revenue Effect upper]": 0.0303412652083,
+      "[Experiment Revenue Difference]": 26538.0522731,
+      "[Experiment Revenue Difference lower]": -31553.7140536,
+      "[Experiment Revenue Difference upper]": 83003.8319241,
+      "[Experiment Member Harm]": 0.0205440941318,
+      "[Experiment Member Harm lower]": 0.00295314166573,
+      "[Experiment Member Harm upper]": 0.0381350465979,
+      "[Experiment Acquisition Harm]": 0.0527226213401,
+      "[Experiment Acquisition Harm lower]": -0.00998075264483,
+      "[Experiment Acquisition Harm upper]": 0.111533135883,
+      "[Experiment Churn Harm]": 0.249353373613,
+      "[Experiment Churn Harm lower]": -0.0829873756231,
+      "[Experiment Churn Harm upper]": 0.529631805043,
+      "[Experiment Downgrade Harm]": 0.175440790827,
+      "[Experiment Downgrade Harm lower]": 0.141729694321,
+      "[Experiment Downgrade Harm upper]": 0.214124366898,
+      "[Experiment Complaint Change]": 0.00860296188783,
+      "[Experiment Complaint Change lower]": -0.142278505087,
+      "[Experiment Complaint Change upper]": 0.172538027533,
+      "[Experiment One-sided p]": 0.1875,
+      "[Experiment Two-sided p]": 0.375,
+      "[Experiment Complete Pairs]": 5,
+      "[Experiment Saved Decision]": "EXTEND TEST",
+      "[Experiment Required Response]": "Keep controls and collect further complete evidence. Early reviews cannot authorise rollout.",
+      "[Experiment Interval Status]": "Available",
+      "[Experiment Window]": "Jul 2025–Dec 2025 vs Jan–Jun 2026. Main; First repricing",
+      "[Experiment Path Revenue]": 5664026.3241334,
+      "[Experiment Path Subscription]": 5440320.305831801,
+      "[Experiment Path Joining Fees]": 72591.6666666593,
+      "[Experiment Path Ancillary]": 151114.35163475003,
+      "[Experiment Path Average Exposure]": 279738.5,
+      "[Experiment Path Opening Exposure]": 279577,
+      "[Experiment Path Joins]": 12740,
+      "[Experiment Path Standard Joins]": 8993,
+      "[Experiment Path Prospects]": 39682,
+      "[Experiment Path Incumbent Exposure]": 166567,
+      "[Experiment Path Incumbent Exits]": 7235,
+      "[Experiment Path Downgrades]": 278,
+      "[Experiment Path Complaints]": 120,
+      "[Experiment Path Standard Exposure]": 191493.5,
+      "[Experiment Path Standard Revenue]": 3688400.2641669,
+      "[Experiment Path Paid Rate Numerator]": 3841426.006,
+      "[Experiment Path Protected Exposure]": 338,
+      "[Experiment Path Repriced Exposure]": 64288,
+      "[Experiment Path Conversion]": 0.32105236631218187,
+      "[Experiment Path Churn]": 0.0434359747128783,
+      "[Experiment Path Downgrade Rate]": 0.0016689980608403825,
+      "[Experiment Path ARPMM]": 20.24757523234521,
+      "[Experiment Path Subscription Yield]": 19.447878307175454,
+      "[Experiment Path Standard Yield]": 19.261229567410382,
+      "[Experiment Path Complaints per 1000]": 0.4289720578325829,
+      "[Experiment Path Paid Rate]": 23.062347319697178,
+      "[Experiment Path Protected Share]": 0.0020292134696548534,
+      "[Experiment Path Repriced Share]": 0.3859588033644119,
+      "[Experiment Path Closing]": null,
+      "[Experiment Monitoring In Population]": 0,
+      "[Experiment Pair In Population]": 0,
+      "[Recommended Standard Price]": 27.99,
+      "[Provisional Test Price]": null,
+      "[Gyms In Selection]": 1,
+      "[Median Standard Price]": 27.99,
+      "[Average Competitor Gap]": 0.34333333,
+      "[Caution Sites]": 0,
+      "[Headroom Churn 2025]": 0.04518051279,
+      "[Headroom Peak 2025]": 0.674167663589,
+      "[Guardrail Point]": null,
+      "[Guardrail Point Display]": "Unavailable",
+      "[Guardrail Lower]": null,
+      "[Guardrail Lower Display]": "Unavailable",
+      "[Guardrail Upper]": null,
+      "[Guardrail Upper Display]": "Unavailable",
+      "[Guardrail Tolerance]": null,
+      "[Guardrail Tolerance Display]": "Unavailable",
+      "[Guardrail Upper Pass]": "Uncertainty unavailable",
+      "[Experiment Pair Revenue Effect]": null,
+      "[Metric Panel Saved Value]": "Unavailable",
+      "[Base Portfolio Increment]": 0.0,
+      "[Base Portfolio Member Difference]": 0.0,
+      "[Base Portfolio Increment lower]": null,
+      "[Saved Policy Raise £1 Sites]": 0,
+      "[Saved Policy Raise £2 Sites]": 0,
+      "[Saved Policy Test Sites]": 0,
+      "[Historical Reporting Note]": "Historical window: Jan 2025–Dec 2025. Prior year uses the same months; incomplete comparisons are unavailable. Pricing snapshots are December 2025; conditional portfolio is Jan–Dec 2026.",
+      "[Experiment Profile Revenue]": null,
+      "[Experiment Profile Incumbent Exposure]": null,
+      "[Experiment Profile Incumbent Exits]": null,
+      "[Experiment Profile Downgrades]": null,
+      "[Experiment Profile Closing]": null,
+      "[Experiment Profile Churn]": null,
+      "[Experiment Profile Downgrade Rate]": null,
+      "[Planning Power]": null,
+      "[80% Detectable Effect]": null
+    }
+  ],
+  "engine": "Power BI Desktop local Analysis Services",
+  "additional_checks": [
+    {
+      "rows": [
+        {
+          "DimGym[gym_id]": "NF003",
+          "[Revenue]": 1004392.07,
+          "[Subscription]": 965698.76,
+          "[JoiningFees]": 12583.3,
+          "[Ancillary]": 26110.01,
+          "[Members]": 3146,
+          "[AverageMembers]": 3271.7083333333335,
+          "[ARPMM]": 25.582763082487485,
+          "[Yield]": 24.597209918365788,
+          "[StandardYield]": 24.312515589410403,
+          "[Joins]": 2136,
+          "[Churn]": 0.05650493337402095,
+          "[Conversion]": 0.27629025999223905,
+          "[Complaints]": 0.17829625195807491,
+          "[RevenuePrior]": 1016563.71,
+          "[RevenueGrowth]": -0.011973317442150294,
+          "[ChurnChangePP]": 0.2347140297897926,
+          "[SavedRank]": 70,
+          "[Action]": "DEFENSIVE / INVESTIGATE"
+        },
+        {
+          "DimGym[gym_id]": "NF011",
+          "[Revenue]": 2299293.66,
+          "[Subscription]": 2242031.97,
+          "[JoiningFees]": 20866.67,
+          "[Ancillary]": 36395.02,
+          "[Members]": 7138,
+          "[AverageMembers]": 7393.875,
+          "[ARPMM]": 25.914396037260573,
+          "[Yield]": 25.269023008909404,
+          "[StandardYield]": 25.246132681034116,
+          "[Joins]": 3645,
+          "[Churn]": 0.04408720694775683,
+          "[Conversion]": 0.2803414859252423,
+          "[Complaints]": 0.72131775737801,
+          "[RevenuePrior]": 2307733.93,
+          "[RevenueGrowth]": -0.00365738436752976,
+          "[ChurnChangePP]": 0.11506203201756757,
+          "[SavedRank]": 63,
+          "[Action]": "DEFENSIVE / INVESTIGATE"
+        },
+        {
+          "DimGym[gym_id]": "NF015",
+          "[Revenue]": 1202503.27,
+          "[Subscription]": 1155461.6,
+          "[JoiningFees]": 18041.66,
+          "[Ancillary]": 29000.01,
+          "[Members]": 4095,
+          "[AverageMembers]": 4267.666666666667,
+          "[ARPMM]": 23.480888658908068,
+          "[Yield]": 22.56232133093806,
+          "[StandardYield]": 22.69075719506624,
+          "[Joins]": 2633,
+          "[Churn]": 0.05081403974544177,
+          "[Conversion]": 0.2911000552791598,
+          "[Complaints]": 0.33195344841052876,
+          "[RevenuePrior]": 1130997.15,
+          "[RevenueGrowth]": 0.06322396126285564,
+          "[ChurnChangePP]": -0.09107897772216919,
+          "[SavedRank]": 51,
+          "[Action]": "DEFENSIVE / INVESTIGATE"
+        },
+        {
+          "DimGym[gym_id]": "NF027",
+          "[Revenue]": 772156.92,
+          "[Subscription]": 733703.6,
+          "[JoiningFees]": 11408.32,
+          "[Ancillary]": 27045.0,
+          "[Members]": 3507,
+          "[AverageMembers]": 3596.2083333333335,
+          "[ARPMM]": 17.89284825452734,
+          "[Yield]": 17.001786603946286,
+          "[StandardYield]": 16.765116871492996,
+          "[Joins]": 2182,
+          "[Churn]": 0.051940837441844315,
+          "[Conversion]": 0.29296455424274975,
+          "[Complaints]": 0.440278534104207,
+          "[RevenuePrior]": 781948.89,
+          "[RevenueGrowth]": -0.012522519214778823,
+          "[ChurnChangePP]": 0.3385116654137585,
+          "[SavedRank]": 65,
+          "[Action]": "DEFENSIVE / INVESTIGATE"
+        },
+        {
+          "DimGym[gym_id]": "NF028",
+          "[Revenue]": 1032087.46,
+          "[Subscription]": 993385.77,
+          "[JoiningFees]": 11316.69,
+          "[Ancillary]": 27385.0,
+          "[Members]": 3628,
+          "[AverageMembers]": 3754.7916666666665,
+          "[ARPMM]": 22.90600810076014,
+          "[Yield]": 22.04706807967597,
+          "[StandardYield]": 22.202555028053517,
+          "[Joins]": 1901,
+          "[Churn]": 0.0438386524822695,
+          "[Conversion]": 0.33765541740674954,
+          "[Complaints]": 0.7102036286966653,
+          "[RevenuePrior]": 973838.51,
+          "[RevenueGrowth]": 0.0598137672744118,
+          "[ChurnChangePP]": 0.15952264194643226,
+          "[SavedRank]": 29,
+          "[Action]": "DEFENSIVE / INVESTIGATE"
+        },
+        {
+          "DimGym[gym_id]": "NF034",
+          "[Revenue]": 1194363.33,
+          "[Subscription]": 1150095.02,
+          "[JoiningFees]": 11358.32,
+          "[Ancillary]": 32909.99,
+          "[Members]": 4674,
+          "[AverageMembers]": 4712.208333333333,
+          "[ARPMM]": 21.121790561750064,
+          "[Yield]": 20.338924955567542,
+          "[StandardYield]": 19.92433764649732,
+          "[Joins]": 2243,
+          "[Churn]": 0.03708686646957815,
+          "[Conversion]": 0.31113885421001525,
+          "[Complaints]": 0.26526840741690466,
+          "[RevenuePrior]": 1158812.67,
+          "[RevenueGrowth]": 0.030678522008220837,
+          "[ChurnChangePP]": -0.17356668133129138,
+          "[SavedRank]": 38,
+          "[Action]": "HOLD PRICE"
+        },
+        {
+          "DimGym[gym_id]": "NF035",
+          "[Revenue]": 802350.41,
+          "[Subscription]": 767517.13,
+          "[JoiningFees]": 9233.32,
+          "[Ancillary]": 25599.96,
+          "[Members]": 2826,
+          "[AverageMembers]": 2904.625,
+          "[ARPMM]": 23.019334394858774,
+          "[Yield]": 22.019971883920757,
+          "[StandardYield]": 21.679823694904655,
+          "[Joins]": 1625,
+          "[Churn]": 0.044530577088716626,
+          "[Conversion]": 0.3048208591258676,
+          "[Complaints]": 0.3442785213237509,
+          "[RevenuePrior]": 787579.72,
+          "[RevenueGrowth]": 0.0187545331918908,
+          "[ChurnChangePP]": -0.3066531955597924,
+          "[SavedRank]": 56,
+          "[Action]": "HOLD PRICE"
+        },
+        {
+          "DimGym[gym_id]": "NF036",
+          "[Revenue]": 978041.17,
+          "[Subscription]": 942122.82,
+          "[JoiningFees]": 9808.34,
+          "[Ancillary]": 26110.01,
+          "[Members]": 3868,
+          "[AverageMembers]": 4047.625,
+          "[ARPMM]": 20.136112123364526,
+          "[Yield]": 19.39661776967975,
+          "[StandardYield]": 19.36773218074656,
+          "[Joins]": 1856,
+          "[Churn]": 0.040918245714990344,
+          "[Conversion]": 0.34281492427041005,
+          "[Complaints]": 0.6176461505203669,
+          "[RevenuePrior]": 940418.27,
+          "[RevenueGrowth]": 0.04000656005970622,
+          "[ChurnChangePP]": 0.458097703571423,
+          "[SavedRank]": 47,
+          "[Action]": "HOLD PRICE"
+        },
+        {
+          "DimGym[gym_id]": "NF037",
+          "[Revenue]": 954274.64,
+          "[Subscription]": 914839.61,
+          "[JoiningFees]": 12475.02,
+          "[Ancillary]": 26960.01,
+          "[Members]": 4134,
+          "[AverageMembers]": 4248.583333333333,
+          "[ARPMM]": 18.717506619853676,
+          "[Yield]": 17.94401290626287,
+          "[StandardYield]": 17.46285275807152,
+          "[Joins]": 1914,
+          "[Churn]": 0.03839294463498285,
+          "[Conversion]": 0.353397341211226,
+          "[Complaints]": 0.13730066885040113,
+          "[RevenuePrior]": 946445.61,
+          "[RevenueGrowth]": 0.008272033719930327,
+          "[ChurnChangePP]": 0.24389749995510704,
+          "[SavedRank]": 11,
+          "[Action]": "RAISE £1"
+        },
+        {
+          "DimGym[gym_id]": "NF039",
+          "[Revenue]": 1234905.71,
+          "[Subscription]": 1181514.06,
+          "[JoiningFees]": 18441.66,
+          "[Ancillary]": 34949.99,
+          "[Members]": 5497,
+          "[AverageMembers]": 5601.583333333333,
+          "[ARPMM]": 18.37137877683393,
+          "[Yield]": 17.577084752822863,
+          "[StandardYield]": 17.580698647040194,
+          "[Joins]": 2970,
+          "[Churn]": 0.04309139064964438,
+          "[Conversion]": 0.34232365145228216,
+          "[Complaints]": 0.2826581770035258,
+          "[RevenuePrior]": 1182828.96,
+          "[RevenueGrowth]": 0.04402728692067195,
+          "[ChurnChangePP]": -0.12565399806342414,
+          "[SavedRank]": 9,
+          "[Action]": "DEFENSIVE / INVESTIGATE"
+        },
+        {
+          "DimGym[gym_id]": "NF041",
+          "[Revenue]": 1323852.21,
+          "[Subscription]": 1274017.21,
+          "[JoiningFees]": 17775.0,
+          "[Ancillary]": 32060.0,
+          "[Members]": 4815,
+          "[AverageMembers]": 4990.541666666667,
+          "[ARPMM]": 22.106020722533458,
+          "[Yield]": 21.273863224599868,
+          "[StandardYield]": 20.93002075201344,
+          "[Joins]": 2907,
+          "[Churn]": 0.048111916129678474,
+          "[Conversion]": 0.28533568904593637,
+          "[Complaints]": 0.333965083950473,
+          "[RevenuePrior]": 1311509.23,
+          "[RevenueGrowth]": 0.00941127955309928,
+          "[ChurnChangePP]": -0.07997820831633223,
+          "[SavedRank]": 37,
+          "[Action]": "DEFENSIVE / INVESTIGATE"
+        },
+        {
+          "DimGym[gym_id]": "NF045",
+          "[Revenue]": 1291799.59,
+          "[Subscription]": 1243879.6,
+          "[JoiningFees]": 17900.0,
+          "[Ancillary]": 30019.99,
+          "[Members]": 5107,
+          "[AverageMembers]": 5314.541666666667,
+          "[ARPMM]": 20.255738422096606,
+          "[Yield]": 19.504341076762657,
+          "[StandardYield]": 19.510262081430746,
+          "[Joins]": 2832,
+          "[Churn]": 0.04595216839731241,
+          "[Conversion]": 0.294478527607362,
+          "[Complaints]": 0.7056111768810418,
+          "[RevenuePrior]": 1209058.97,
+          "[RevenueGrowth]": 0.06843389946480453,
+          "[ChurnChangePP]": -0.009327535219277872,
+          "[SavedRank]": 77,
+          "[Action]": "DEFENSIVE / INVESTIGATE"
+        },
+        {
+          "DimGym[gym_id]": "NF051",
+          "[Revenue]": 945229.17,
+          "[Subscription]": 908572.48,
+          "[JoiningFees]": 9016.67,
+          "[Ancillary]": 27640.02,
+          "[Members]": 3843,
+          "[AverageMembers]": 3929.9166666666665,
+          "[ARPMM]": 20.043452363281666,
+          "[Yield]": 19.266152378125067,
+          "[StandardYield]": 19.16948809767948,
+          "[Joins]": 1888,
+          "[Churn]": 0.039914363235543496,
+          "[Conversion]": 0.36106330082233695,
+          "[Complaints]": 0.33927776246315655,
+          "[RevenuePrior]": 911486.06,
+          "[RevenueGrowth]": 0.037019885965123796,
+          "[ChurnChangePP]": -0.042260192896341475,
+          "[SavedRank]": 4,
+          "[Action]": "DEFENSIVE / INVESTIGATE"
+        },
+        {
+          "DimGym[gym_id]": "NF052",
+          "[Revenue]": 1966986.27,
+          "[Subscription]": 1900089.6,
+          "[JoiningFees]": 28291.67,
+          "[Ancillary]": 38605.0,
+          "[Members]": 7226,
+          "[AverageMembers]": 7469.916666666667,
+          "[ARPMM]": 21.943420497774408,
+          "[Yield]": 21.197130713194035,
+          "[StandardYield]": 21.543895134845748,
+          "[Joins]": 4518,
+          "[Churn]": 0.053406219035637546,
+          "[Conversion]": 0.2876424524097536,
+          "[Complaints]": 0.6135722174499938,
+          "[RevenuePrior]": 1879945.8,
+          "[RevenueGrowth]": 0.04629945714392403,
+          "[ChurnChangePP]": 0.14808596791823156,
+          "[SavedRank]": 69,
+          "[Action]": "DEFENSIVE / INVESTIGATE"
+        },
+        {
+          "DimGym[gym_id]": "NF054",
+          "[Revenue]": 1262767.09,
+          "[Subscription]": 1213922.09,
+          "[JoiningFees]": 14150.01,
+          "[Ancillary]": 34694.99,
+          "[Members]": 4838,
+          "[AverageMembers]": 4975.791666666667,
+          "[ARPMM]": 21.148512213299394,
+          "[Yield]": 20.330468183454897,
+          "[StandardYield]": 19.96438556667783,
+          "[Joins]": 2461,
+          "[Churn]": 0.041893316819254525,
+          "[Conversion]": 0.30920969971101897,
+          "[Complaints]": 0.2512163056130096,
+          "[RevenuePrior]": 1262015.5,
+          "[RevenueGrowth]": 0.0005955473605515018,
+          "[ChurnChangePP]": 0.07729649732202346,
+          "[SavedRank]": 50,
+          "[Action]": "HOLD PRICE"
+        },
+        {
+          "DimGym[gym_id]": "NF056",
+          "[Revenue]": 1017264.97,
+          "[Subscription]": 971868.31,
+          "[JoiningFees]": 15291.65,
+          "[Ancillary]": 30105.01,
+          "[Members]": 3886,
+          "[AverageMembers]": 3977.125,
+          "[ARPMM]": 21.3149148777907,
+          "[Yield]": 20.363711433091325,
+          "[StandardYield]": 20.115424685060667,
+          "[Joins]": 2562,
+          "[Churn]": 0.052758396714647895,
+          "[Conversion]": 0.2960822836010632,
+          "[Complaints]": 0.33525054740128446,
+          "[RevenuePrior]": 997813.88,
+          "[RevenueGrowth]": 0.019493705579641734,
+          "[ChurnChangePP]": 0.07015845105447921,
+          "[SavedRank]": 49,
+          "[Action]": "DEFENSIVE / INVESTIGATE"
+        },
+        {
+          "DimGym[gym_id]": "NF061",
+          "[Revenue]": 1689685.37,
+          "[Subscription]": 1627842.06,
+          "[JoiningFees]": 24683.33,
+          "[Ancillary]": 37159.98,
+          "[Members]": 6240,
+          "[AverageMembers]": 6417.375,
+          "[ARPMM]": 21.94154372569262,
+          "[Yield]": 21.138472506281776,
+          "[StandardYield]": 20.942866522678187,
+          "[Joins]": 3901,
+          "[Churn]": 0.05064638388453351,
+          "[Conversion]": 0.30608081600627696,
+          "[Complaints]": 0.3116539083347942,
+          "[RevenuePrior]": 1679535.9,
+          "[RevenueGrowth]": 0.006043020574910131,
+          "[ChurnChangePP]": 0.04707563687013985,
+          "[SavedRank]": 53,
+          "[Action]": "DEFENSIVE / INVESTIGATE"
+        },
+        {
+          "DimGym[gym_id]": "NF070",
+          "[Revenue]": 847125.05,
+          "[Subscription]": 811921.72,
+          "[JoiningFees]": 9008.33,
+          "[Ancillary]": 26195.0,
+          "[Members]": 3721,
+          "[AverageMembers]": 3806.375,
+          "[ARPMM]": 18.546190053966484,
+          "[Yield]": 17.775480170328287,
+          "[StandardYield]": 17.407588218044378,
+          "[Joins]": 1543,
+          "[Churn]": 0.03332092738139545,
+          "[Conversion]": 0.32552742616033753,
+          "[Complaints]": 0.24082405613389818,
+          "[RevenuePrior]": 821071.29,
+          "[RevenueGrowth]": 0.03173142249316744,
+          "[ChurnChangePP]": 0.0019543167232329017,
+          "[SavedRank]": 8,
+          "[Action]": "RAISE £1"
+        },
+        {
+          "DimGym[gym_id]": "NF005",
+          "[Revenue]": 1587849.24,
+          "[Subscription]": 1538847.57,
+          "[JoiningFees]": 15666.67,
+          "[Ancillary]": 33335.0,
+          "[Members]": 5901,
+          "[AverageMembers]": 6039.708333333333,
+          "[ARPMM]": 21.90847019378695,
+          "[Yield]": 21.232365939304465,
+          "[StandardYield]": 20.792379108269813,
+          "[Joins]": 2798,
+          "[Churn]": 0.0400931694139699,
+          "[Conversion]": 0.29737485386332235,
+          "[Complaints]": 0.3173442426165723,
+          "[RevenuePrior]": 1600917.24,
+          "[RevenueGrowth]": -0.008162820459101309,
+          "[ChurnChangePP]": 0.170742234958874,
+          "[SavedRank]": 45,
+          "[Action]": "DEFENSIVE / INVESTIGATE"
+        },
+        {
+          "DimGym[gym_id]": "NF008",
+          "[Revenue]": 1365815.04,
+          "[Subscription]": 1323110.04,
+          "[JoiningFees]": 11750.0,
+          "[Ancillary]": 30955.0,
+          "[Members]": 4227,
+          "[AverageMembers]": 4337.041666666667,
+          "[ARPMM]": 26.243215709633102,
+          "[Yield]": 25.422667909193095,
+          "[StandardYield]": 24.95237310914758,
+          "[Joins]": 2148,
+          "[Churn]": 0.04285577199884848,
+          "[Conversion]": 0.30240743347881177,
+          "[Complaints]": 0.21135758821777517,
+          "[RevenuePrior]": 1386595.57,
+          "[RevenueGrowth]": -0.014986727528633333,
+          "[ChurnChangePP]": 0.2722618198728787,
+          "[SavedRank]": 54,
+          "[Action]": "HOLD PRICE"
+        },
+        {
+          "DimGym[gym_id]": "NF010",
+          "[Revenue]": 1809837.23,
+          "[Subscription]": 1754147.23,
+          "[JoiningFees]": 21250.0,
+          "[Ancillary]": 34440.0,
+          "[Members]": 6001,
+          "[AverageMembers]": 6158.875,
+          "[ARPMM]": 24.488201037797758,
+          "[Yield]": 23.734681387969935,
+          "[StandardYield]": 23.426120273393323,
+          "[Joins]": 3789,
+          "[Churn]": 0.04985992123106907,
+          "[Conversion]": 0.2983464566929134,
+          "[Complaints]": 0.29767341167556305,
+          "[RevenuePrior]": 1745050.16,
+          "[RevenueGrowth]": 0.03712619355308392,
+          "[ChurnChangePP]": -0.05406775879268008,
+          "[SavedRank]": 41,
+          "[Action]": "DEFENSIVE / INVESTIGATE"
+        },
+        {
+          "DimGym[gym_id]": "NF013",
+          "[Revenue]": 1559776.15,
+          "[Subscription]": 1510471.14,
+          "[JoiningFees]": 15374.99,
+          "[Ancillary]": 33930.02,
+          "[Members]": 5190,
+          "[AverageMembers]": 5199.875,
+          "[ARPMM]": 24.997013550005207,
+          "[Yield]": 24.20685016466742,
+          "[StandardYield]": 24.15753660225943,
+          "[Joins]": 2916,
+          "[Churn]": 0.045678201080249385,
+          "[Conversion]": 0.29950698438783896,
+          "[Complaints]": 0.20833834146654168,
+          "[RevenuePrior]": 1544012.74,
+          "[RevenueGrowth]": 0.010209378194638418,
+          "[ChurnChangePP]": 0.22742149998950661,
+          "[SavedRank]": 16,
+          "[Action]": "TEST FIRST"
+        },
+        {
+          "DimGym[gym_id]": "NF016",
+          "[Revenue]": 863162.01,
+          "[Subscription]": 828565.34,
+          "[JoiningFees]": 8741.67,
+          "[Ancillary]": 25855.0,
+          "[Members]": 2930,
+          "[AverageMembers]": 3008.7083333333335,
+          "[ARPMM]": 23.90732484870307,
+          "[Yield]": 22.949087786840973,
+          "[StandardYield]": 22.46285649409628,
+          "[Joins]": 1468,
+          "[Churn]": 0.04024150441742599,
+          "[Conversion]": 0.3084681655810044,
+          "[Complaints]": 0.16618427065878213,
+          "[RevenuePrior]": 844544.07,
+          "[RevenueGrowth]": 0.02204495971418053,
+          "[ChurnChangePP]": 0.008725846219084787,
+          "[SavedRank]": 35,
+          "[Action]": "HOLD PRICE"
+        },
+        {
+          "DimGym[gym_id]": "NF019",
+          "[Revenue]": 1492836.45,
+          "[Subscription]": 1449224.79,
+          "[JoiningFees]": 12316.66,
+          "[Ancillary]": 31295.0,
+          "[Members]": 4792,
+          "[AverageMembers]": 4833.5,
+          "[ARPMM]": 25.737671976828384,
+          "[Yield]": 24.98577273197476,
+          "[StandardYield]": 24.92285081144496,
+          "[Joins]": 2654,
+          "[Churn]": 0.041909136433492776,
+          "[Conversion]": 0.3517095149748211,
+          "[Complaints]": 0.1896486328057653,
+          "[RevenuePrior]": 1448548.12,
+          "[RevenueGrowth]": 0.03057428979301001,
+          "[ChurnChangePP]": -0.007227478243648777,
+          "[SavedRank]": 1,
+          "[Action]": "TEST FIRST"
+        },
+        {
+          "DimGym[gym_id]": "NF023",
+          "[Revenue]": 986236.67,
+          "[Subscription]": 942771.66,
+          "[JoiningFees]": 14125.0,
+          "[Ancillary]": 29340.01,
+          "[Members]": 3788,
+          "[AverageMembers]": 3854.0,
+          "[ARPMM]": 21.324958268465664,
+          "[Yield]": 20.385133627400105,
+          "[StandardYield]": 20.089754312598014,
+          "[Joins]": 2091,
+          "[Churn]": 0.04301447519311076,
+          "[Conversion]": 0.30543382997370727,
+          "[Complaints]": 0.3243383497664764,
+          "[RevenuePrior]": 943371.65,
+          "[RevenueGrowth]": 0.04543810490807098,
+          "[ChurnChangePP]": -0.17441424448378234,
+          "[SavedRank]": 19,
+          "[Action]": "RAISE £1"
+        },
+        {
+          "DimGym[gym_id]": "NF025",
+          "[Revenue]": 1138230.8,
+          "[Subscription]": 1100992.46,
+          "[JoiningFees]": 9258.34,
+          "[Ancillary]": 27980.0,
+          "[Members]": 3983,
+          "[AverageMembers]": 4023.7916666666665,
+          "[ARPMM]": 23.57293183253772,
+          "[Yield]": 22.80172018514875,
+          "[StandardYield]": 22.429850818531182,
+          "[Joins]": 2095,
+          "[Churn]": 0.0400008294625083,
+          "[Conversion]": 0.31699198063247086,
+          "[Complaints]": 0.2899421151277298,
+          "[RevenuePrior]": 1119134.37,
+          "[RevenueGrowth]": 0.017063572089203134,
+          "[ChurnChangePP]": -0.22406398059880012,
+          "[SavedRank]": 33,
+          "[Action]": "HOLD PRICE"
+        },
+        {
+          "DimGym[gym_id]": "NF026",
+          "[Revenue]": 1025269.6,
+          "[Subscription]": 981659.64,
+          "[JoiningFees]": 15799.98,
+          "[Ancillary]": 27809.98,
+          "[Members]": 3960,
+          "[AverageMembers]": 4047.125,
+          "[ARPMM]": 21.111068556897386,
+          "[Yield]": 20.21310683509899,
+          "[StandardYield]": 20.09758300377081,
+          "[Joins]": 2803,
+          "[Churn]": 0.055541821178409556,
+          "[Conversion]": 0.28935687003200167,
+          "[Complaints]": 0.30886122864996757,
+          "[RevenuePrior]": 1016130.22,
+          "[RevenueGrowth]": 0.00899429996285319,
+          "[ChurnChangePP]": 0.06712657138839145,
+          "[SavedRank]": 67,
+          "[Action]": "DEFENSIVE / INVESTIGATE"
+        },
+        {
+          "DimGym[gym_id]": "NF043",
+          "[Revenue]": 1365032.43,
+          "[Subscription]": 1318762.46,
+          "[JoiningFees]": 15399.99,
+          "[Ancillary]": 30869.98,
+          "[Members]": 4836,
+          "[AverageMembers]": 5009.75,
+          "[ARPMM]": 22.706263286591145,
+          "[Yield]": 21.936597967297104,
+          "[StandardYield]": 21.912797128825083,
+          "[Joins]": 2702,
+          "[Churn]": 0.04563887780880202,
+          "[Conversion]": 0.29715165511932257,
+          "[Complaints]": 0.8317114959162966,
+          "[RevenuePrior]": 1345490.02,
+          "[RevenueGrowth]": 0.014524381236213047,
+          "[ChurnChangePP]": 0.17320389079225965,
+          "[SavedRank]": 68,
+          "[Action]": "HOLD PRICE"
+        },
+        {
+          "DimGym[gym_id]": "NF044",
+          "[Revenue]": 1193454.82,
+          "[Subscription]": 1139314.82,
+          "[JoiningFees]": 19275.01,
+          "[Ancillary]": 34864.99,
+          "[Members]": 5500,
+          "[AverageMembers]": 5580.291666666667,
+          "[ARPMM]": 17.82246776228841,
+          "[Yield]": 17.01396760921995,
+          "[StandardYield]": 16.775900038873772,
+          "[Joins]": 3578,
+          "[Churn]": 0.0518493068833652,
+          "[Conversion]": 0.26789457921533394,
+          "[Complaints]": 0.28373666251017343,
+          "[RevenuePrior]": 1185549.23,
+          "[RevenueGrowth]": 0.006668293310772159,
+          "[ChurnChangePP]": -0.09442081973264904,
+          "[SavedRank]": 71,
+          "[Action]": "DEFENSIVE / INVESTIGATE"
+        },
+        {
+          "DimGym[gym_id]": "NF050",
+          "[Revenue]": 723261.84,
+          "[Subscription]": 685885.18,
+          "[JoiningFees]": 11691.67,
+          "[Ancillary]": 25684.99,
+          "[Members]": 3518,
+          "[AverageMembers]": 3509.2083333333335,
+          "[ARPMM]": 17.17533251801807,
+          "[Yield]": 16.28774723643747,
+          "[StandardYield]": 15.92601516542555,
+          "[Joins]": 2032,
+          "[Churn]": 0.04347412254610351,
+          "[Conversion]": 0.33810316139767055,
+          "[Complaints]": 0.2612175110720604,
+          "[RevenuePrior]": 689563.08,
+          "[RevenueGrowth]": 0.048869727770228084,
+          "[ChurnChangePP]": -0.10122157165544099,
+          "[SavedRank]": 6,
+          "[Action]": "RAISE £1"
+        },
+        {
+          "DimGym[gym_id]": "NF057",
+          "[Revenue]": 1452948.52,
+          "[Subscription]": 1403098.54,
+          "[JoiningFees]": 17025.0,
+          "[Ancillary]": 32824.98,
+          "[Members]": 5510,
+          "[AverageMembers]": 5608.5,
+          "[ARPMM]": 21.588489495111588,
+          "[Yield]": 20.847798579537013,
+          "[StandardYield]": 20.939064842639702,
+          "[Joins]": 3261,
+          "[Churn]": 0.046114267019599677,
+          "[Conversion]": 0.3210593679235995,
+          "[Complaints]": 0.2228759917981635,
+          "[RevenuePrior]": 1385024.29,
+          "[RevenueGrowth]": 0.0490419052506292,
+          "[ChurnChangePP]": -0.25532773577553874,
+          "[SavedRank]": 27,
+          "[Action]": "TEST FIRST"
+        },
+        {
+          "DimGym[gym_id]": "NF060",
+          "[Revenue]": 1170049.21,
+          "[Subscription]": 1123692.52,
+          "[JoiningFees]": 15316.68,
+          "[Ancillary]": 31040.01,
+          "[Members]": 4051,
+          "[AverageMembers]": 4138.833333333333,
+          "[ARPMM]": 23.55835400475174,
+          "[Yield]": 22.62498530181613,
+          "[StandardYield]": 22.5870303657275,
+          "[Joins]": 2348,
+          "[Churn]": 0.04657203261854425,
+          "[Conversion]": 0.3276126691781778,
+          "[Complaints]": 0.2013449844964362,
+          "[RevenuePrior]": 1141464.14,
+          "[RevenueGrowth]": 0.025042459940966755,
+          "[ChurnChangePP]": -0.09020878788227465,
+          "[SavedRank]": 39,
+          "[Action]": "HOLD PRICE"
+        },
+        {
+          "DimGym[gym_id]": "NF063",
+          "[Revenue]": 965536.94,
+          "[Subscription]": 924838.6,
+          "[JoiningFees]": 10508.33,
+          "[Ancillary]": 30190.01,
+          "[Members]": 3944,
+          "[AverageMembers]": 3955.625,
+          "[ARPMM]": 20.341011007531467,
+          "[Yield]": 19.48361721177648,
+          "[StandardYield]": 19.11958236511221,
+          "[Joins]": 2344,
+          "[Churn]": 0.0466018598570314,
+          "[Conversion]": 0.32030609456135556,
+          "[Complaints]": 0.3370727339758782,
+          "[RevenuePrior]": 971485.57,
+          "[RevenueGrowth]": -0.006123230425337151,
+          "[ChurnChangePP]": 0.017107152680172905,
+          "[SavedRank]": 62,
+          "[Action]": "HOLD PRICE"
+        },
+        {
+          "DimGym[gym_id]": "NF067",
+          "[Revenue]": 1603421.65,
+          "[Subscription]": 1558773.32,
+          "[JoiningFees]": 14033.35,
+          "[Ancillary]": 30614.98,
+          "[Members]": 5027,
+          "[AverageMembers]": 5171.166666666667,
+          "[ARPMM]": 25.83913446353176,
+          "[Yield]": 25.119626776678377,
+          "[StandardYield]": 24.993724259993897,
+          "[Joins]": 2470,
+          "[Churn]": 0.04089584440258256,
+          "[Conversion]": 0.321740263123616,
+          "[Complaints]": 0.17726496277435783,
+          "[RevenuePrior]": 1578710.75,
+          "[RevenueGrowth]": 0.015652582336567928,
+          "[ChurnChangePP]": 0.020458910215852277,
+          "[SavedRank]": 5,
+          "[Action]": "DEFENSIVE / INVESTIGATE"
+        },
+        {
+          "DimGym[gym_id]": "NF068",
+          "[Revenue]": 1088678.49,
+          "[Subscription]": 1044218.48,
+          "[JoiningFees]": 17500.0,
+          "[Ancillary]": 26960.01,
+          "[Members]": 4378,
+          "[AverageMembers]": 4443.708333333333,
+          "[ARPMM]": 20.416103104576695,
+          "[Yield]": 19.58233982503352,
+          "[StandardYield]": 19.323863974317995,
+          "[Joins]": 2727,
+          "[Churn]": 0.050337584396099026,
+          "[Conversion]": 0.3267433501078361,
+          "[Complaints]": 0.33755590769721233,
+          "[RevenuePrior]": 1055546.89,
+          "[RevenueGrowth]": 0.03138808925864023,
+          "[ChurnChangePP]": -0.05403388612989918,
+          "[SavedRank]": 42,
+          "[Action]": "DEFENSIVE / INVESTIGATE"
+        },
+        {
+          "DimGym[gym_id]": "NF074",
+          "[Revenue]": 1510064.07,
+          "[Subscription]": 1456374.08,
+          "[JoiningFees]": 18400.0,
+          "[Ancillary]": 35289.99,
+          "[Members]": 5792,
+          "[AverageMembers]": 5932.375,
+          "[ARPMM]": 21.212191154470176,
+          "[Yield]": 20.457996446055194,
+          "[StandardYield]": 20.044510488792096,
+          "[Joins]": 3294,
+          "[Churn]": 0.04489503414551893,
+          "[Conversion]": 0.3000273248929775,
+          "[Complaints]": 0.22475540290917775,
+          "[RevenuePrior]": 1471074.58,
+          "[RevenueGrowth]": 0.02650408791646715,
+          "[ChurnChangePP]": 0.017935675539659107,
+          "[SavedRank]": 36,
+          "[Action]": "RAISE £1"
+        },
+        {
+          "DimGym[gym_id]": "NF077",
+          "[Revenue]": 837590.97,
+          "[Subscription]": 797070.98,
+          "[JoiningFees]": 13900.0,
+          "[Ancillary]": 26619.99,
+          "[Members]": 3841,
+          "[AverageMembers]": 3888.9166666666665,
+          "[ARPMM]": 17.948249726787665,
+          "[Yield]": 17.07997042878265,
+          "[StandardYield]": 16.744851731871417,
+          "[Joins]": 2118,
+          "[Churn]": 0.044513501928846975,
+          "[Conversion]": 0.3184962406015038,
+          "[Complaints]": 0.2999978571581632,
+          "[RevenuePrior]": 832565.18,
+          "[RevenueGrowth]": 0.006036512360509625,
+          "[ChurnChangePP]": -0.015629357903099855,
+          "[SavedRank]": 31,
+          "[Action]": "DEFENSIVE / INVESTIGATE"
+        },
+        {
+          "DimGym[gym_id]": "NF078",
+          "[Revenue]": 1196791.66,
+          "[Subscription]": 1149686.66,
+          "[JoiningFees]": 15725.0,
+          "[Ancillary]": 31380.0,
+          "[Members]": 4380,
+          "[AverageMembers]": 4509.416666666667,
+          "[ARPMM]": 22.116527636612272,
+          "[Yield]": 21.246034409476465,
+          "[StandardYield]": 20.908231554478878,
+          "[Joins]": 2947,
+          "[Churn]": 0.05396567332384947,
+          "[Conversion]": 0.2713378141975877,
+          "[Complaints]": 0.31415741134293057,
+          "[RevenuePrior]": 1189940.43,
+          "[RevenueGrowth]": 0.005757624354355269,
+          "[ChurnChangePP]": 0.08000518089583408,
+          "[SavedRank]": 78,
+          "[Action]": "DEFENSIVE / INVESTIGATE"
+        },
+        {
+          "DimGym[gym_id]": "NF002",
+          "[Revenue]": 1378265.24,
+          "[Subscription]": 1337716.92,
+          "[JoiningFees]": 13758.33,
+          "[Ancillary]": 26789.99,
+          "[Members]": 4139,
+          "[AverageMembers]": 4302.708333333333,
+          "[ARPMM]": 26.6937537403767,
+          "[Yield]": 25.908428218660728,
+          "[StandardYield]": 25.82636819546899,
+          "[Joins]": 2284,
+          "[Churn]": 0.04679493377163299,
+          "[Conversion]": 0.2694349416067005,
+          "[Complaints]": 0.2905146952016656,
+          "[RevenuePrior]": 1378821.77,
+          "[RevenueGrowth]": -0.0004036272215226395,
+          "[ChurnChangePP]": 0.37671654132440807,
+          "[SavedRank]": 61,
+          "[Action]": "DEFENSIVE / INVESTIGATE"
+        },
+        {
+          "DimGym[gym_id]": "NF004",
+          "[Revenue]": 2664227.84,
+          "[Subscription]": 2602642.83,
+          "[JoiningFees]": 24000.0,
+          "[Ancillary]": 37585.01,
+          "[Members]": 7906,
+          "[AverageMembers]": 8015.791666666667,
+          "[ARPMM]": 27.69769922912584,
+          "[Yield]": 27.057452528602393,
+          "[StandardYield]": 27.22577569200419,
+          "[Joins]": 3876,
+          "[Churn]": 0.04038367609922371,
+          "[Conversion]": 0.3232963549920761,
+          "[Complaints]": 0.831691608751475,
+          "[RevenuePrior]": 2551002.97,
+          "[RevenueGrowth]": 0.04438445244146448,
+          "[ChurnChangePP]": 0.03413735113006883,
+          "[SavedRank]": 24,
+          "[Action]": "DEFENSIVE / INVESTIGATE"
+        },
+        {
+          "DimGym[gym_id]": "NF006",
+          "[Revenue]": 1798393.61,
+          "[Subscription]": 1740058.62,
+          "[JoiningFees]": 23300.0,
+          "[Ancillary]": 35034.99,
+          "[Members]": 6990,
+          "[AverageMembers]": 7104.208333333333,
+          "[ARPMM]": 21.095402490307976,
+          "[Yield]": 20.411125096040493,
+          "[StandardYield]": 20.038534329110846,
+          "[Joins]": 4210,
+          "[Churn]": 0.04883770026506533,
+          "[Conversion]": 0.2880996373092452,
+          "[Complaints]": 0.3284438214438625,
+          "[RevenuePrior]": 1787488.03,
+          "[RevenueGrowth]": 0.006101064632024459,
+          "[ChurnChangePP]": 0.18738467969208333,
+          "[SavedRank]": 58,
+          "[Action]": "DEFENSIVE / INVESTIGATE"
+        },
+        {
+          "DimGym[gym_id]": "NF009",
+          "[Revenue]": 2316285.44,
+          "[Subscription]": 2254067.11,
+          "[JoiningFees]": 24633.32,
+          "[Ancillary]": 37585.01,
+          "[Members]": 8106,
+          "[AverageMembers]": 8186.791666666667,
+          "[ARPMM]": 23.577464106309453,
+          "[Yield]": 22.944143869953123,
+          "[StandardYield]": 22.491014594979926,
+          "[Joins]": 3948,
+          "[Churn]": 0.03932727254217272,
+          "[Conversion]": 0.30935590032910204,
+          "[Complaints]": 0.3562649185934661,
+          "[RevenuePrior]": 2262187.51,
+          "[RevenueGrowth]": 0.02391399022444438,
+          "[ChurnChangePP]": 0.09910031333481076,
+          "[SavedRank]": 17,
+          "[Action]": "HOLD PRICE"
+        },
+        {
+          "DimGym[gym_id]": "NF012",
+          "[Revenue]": 1232802.84,
+          "[Subscription]": 1191236.17,
+          "[JoiningFees]": 14691.67,
+          "[Ancillary]": 26875.0,
+          "[Members]": 4432,
+          "[AverageMembers]": 4504.0,
+          "[ARPMM]": 22.809407193605686,
+          "[Yield]": 22.040337662818235,
+          "[StandardYield]": 21.689501508916322,
+          "[Joins]": 2567,
+          "[Churn]": 0.04517598267019681,
+          "[Conversion]": 0.3170701581027668,
+          "[Complaints]": 0.3330373001776199,
+          "[RevenuePrior]": 1208410.43,
+          "[RevenueGrowth]": 0.020185534148360627,
+          "[ChurnChangePP]": 0.04891620306457234,
+          "[SavedRank]": 26,
+          "[Action]": "HOLD PRICE"
+        },
+        {
+          "DimGym[gym_id]": "NF017",
+          "[Revenue]": 1599169.44,
+          "[Subscription]": 1552327.81,
+          "[JoiningFees]": 14016.65,
+          "[Ancillary]": 32824.98,
+          "[Members]": 5423,
+          "[AverageMembers]": 5454.666666666667,
+          "[ARPMM]": 24.431212417501833,
+          "[Yield]": 23.715592306282083,
+          "[StandardYield]": 23.24982136633953,
+          "[Joins]": 2885,
+          "[Churn]": 0.04015302218821729,
+          "[Conversion]": 0.3266530797101449,
+          "[Complaints]": 0.33610364214128574,
+          "[RevenuePrior]": 1574925.6,
+          "[RevenueGrowth]": 0.015393641452015161,
+          "[ChurnChangePP]": 0.015608474085491292,
+          "[SavedRank]": 21,
+          "[Action]": "HOLD PRICE"
+        },
+        {
+          "DimGym[gym_id]": "NF018",
+          "[Revenue]": 1684845.64,
+          "[Subscription]": 1627005.66,
+          "[JoiningFees]": 22549.99,
+          "[Ancillary]": 35289.99,
+          "[Members]": 5737,
+          "[AverageMembers]": 5914.375,
+          "[ARPMM]": 23.739415125576805,
+          "[Yield]": 22.92445186515904,
+          "[StandardYield]": 22.616410309427565,
+          "[Joins]": 3432,
+          "[Churn]": 0.04914686338551639,
+          "[Conversion]": 0.30716906828962676,
+          "[Complaints]": 0.3522491105709958,
+          "[RevenuePrior]": 1670504.88,
+          "[RevenueGrowth]": 0.008584686086041252,
+          "[ChurnChangePP]": 0.16762628705904933,
+          "[SavedRank]": 30,
+          "[Action]": "DEFENSIVE / INVESTIGATE"
+        },
+        {
+          "DimGym[gym_id]": "NF020",
+          "[Revenue]": 1085835.73,
+          "[Subscription]": 1045319.08,
+          "[JoiningFees]": 12791.67,
+          "[Ancillary]": 27724.98,
+          "[Members]": 3497,
+          "[AverageMembers]": 3578.4166666666665,
+          "[ARPMM]": 25.286689411052375,
+          "[Yield]": 24.343147108823732,
+          "[StandardYield]": 24.27241217552642,
+          "[Joins]": 1942,
+          "[Churn]": 0.043639328984156574,
+          "[Conversion]": 0.3069870376225103,
+          "[Complaints]": 0.4191798048485131,
+          "[RevenuePrior]": 1033559.27,
+          "[RevenueGrowth]": 0.050579063549979056,
+          "[ChurnChangePP]": -0.10733174248144656,
+          "[SavedRank]": 20,
+          "[Action]": "TEST FIRST"
+        },
+        {
+          "DimGym[gym_id]": "NF021",
+          "[Revenue]": 1644195.41,
+          "[Subscription]": 1591943.75,
+          "[JoiningFees]": 19766.67,
+          "[Ancillary]": 32484.99,
+          "[Members]": 5207,
+          "[AverageMembers]": 5449.208333333333,
+          "[ARPMM]": 25.144255052339407,
+          "[Yield]": 24.34518393344599,
+          "[StandardYield]": 24.493457933319714,
+          "[Joins]": 3103,
+          "[Churn]": 0.04978321934538349,
+          "[Conversion]": 0.29370563180312353,
+          "[Complaints]": 0.8258080302184568,
+          "[RevenuePrior]": 1618045.89,
+          "[RevenueGrowth]": 0.01616117327797175,
+          "[ChurnChangePP]": 0.15135030227932597,
+          "[SavedRank]": 73,
+          "[Action]": "DEFENSIVE / INVESTIGATE"
+        },
+        {
+          "DimGym[gym_id]": "NF022",
+          "[Revenue]": 1554399.87,
+          "[Subscription]": 1503424.88,
+          "[JoiningFees]": 17300.0,
+          "[Ancillary]": 33674.99,
+          "[Members]": 5297,
+          "[AverageMembers]": 5450.291666666667,
+          "[ARPMM]": 23.7663102127562,
+          "[Yield]": 22.986917825498633,
+          "[StandardYield]": 23.09430037047592,
+          "[Joins]": 3008,
+          "[Churn]": 0.04658589130467998,
+          "[Conversion]": 0.3187115914388642,
+          "[Complaints]": 0.8715129924239529,
+          "[RevenuePrior]": 1448457.16,
+          "[RevenueGrowth]": 0.07314176278434097,
+          "[ChurnChangePP]": 0.12891815057045689,
+          "[SavedRank]": 66,
+          "[Action]": "HOLD PRICE"
+        },
+        {
+          "DimGym[gym_id]": "NF029",
+          "[Revenue]": 1690579.59,
+          "[Subscription]": 1635491.27,
+          "[JoiningFees]": 22433.32,
+          "[Ancillary]": 32655.0,
+          "[Members]": 5643,
+          "[AverageMembers]": 5717.083333333333,
+          "[ARPMM]": 24.642221266671527,
+          "[Yield]": 23.839243058086147,
+          "[StandardYield]": 23.999480856301375,
+          "[Joins]": 3304,
+          "[Churn]": 0.04788063355141413,
+          "[Conversion]": 0.30927642048113824,
+          "[Complaints]": 0.787114641789957,
+          "[RevenuePrior]": 1610855.95,
+          "[RevenueGrowth]": 0.04949147687600504,
+          "[ChurnChangePP]": 0.09279465260931125,
+          "[SavedRank]": 60,
+          "[Action]": "HOLD PRICE"
+        },
+        {
+          "DimGym[gym_id]": "NF030",
+          "[Revenue]": 1208504.03,
+          "[Subscription]": 1156840.7,
+          "[JoiningFees]": 19008.33,
+          "[Ancillary]": 32655.0,
+          "[Members]": 5571,
+          "[AverageMembers]": 5679.0,
+          "[ARPMM]": 17.733521600046956,
+          "[Yield]": 16.97541674003639,
+          "[StandardYield]": 16.78073612899141,
+          "[Joins]": 3247,
+          "[Churn]": 0.04646111853014983,
+          "[Conversion]": 0.32305243259377175,
+          "[Complaints]": 0.23478311909373717,
+          "[RevenuePrior]": 1167828.1,
+          "[RevenueGrowth]": 0.03483040868771691,
+          "[ChurnChangePP]": 0.0316014157878762,
+          "[SavedRank]": 34,
+          "[Action]": "RAISE £1"
+        },
+        {
+          "DimGym[gym_id]": "NF031",
+          "[Revenue]": 1321170.24,
+          "[Subscription]": 1266060.26,
+          "[JoiningFees]": 21349.99,
+          "[Ancillary]": 33759.99,
+          "[Members]": 5401,
+          "[AverageMembers]": 5674.75,
+          "[ARPMM]": 19.40129873562712,
+          "[Yield]": 18.59201227660543,
+          "[StandardYield]": 18.72140364789849,
+          "[Joins]": 3490,
+          "[Churn]": 0.05540989849574502,
+          "[Conversion]": 0.2807949151178695,
+          "[Complaints]": 0.9692056918806995,
+          "[RevenuePrior]": 1306157.08,
+          "[RevenueGrowth]": 0.011494145864906168,
+          "[ChurnChangePP]": 0.22777976176907647,
+          "[SavedRank]": 79,
+          "[Action]": "DEFENSIVE / INVESTIGATE"
+        },
+        {
+          "DimGym[gym_id]": "NF032",
+          "[Revenue]": 808403.05,
+          "[Subscription]": 769726.38,
+          "[JoiningFees]": 11291.67,
+          "[Ancillary]": 27385.0,
+          "[Members]": 3609,
+          "[AverageMembers]": 3729.5416666666665,
+          "[ARPMM]": 18.06305622898256,
+          "[Yield]": 17.198860002904738,
+          "[StandardYield]": 16.72448214139092,
+          "[Joins]": 1976,
+          "[Churn]": 0.04413374131731177,
+          "[Conversion]": 0.35336194563662376,
+          "[Complaints]": 0.4245383145828911,
+          "[RevenuePrior]": 780873.75,
+          "[RevenueGrowth]": 0.03525448255880038,
+          "[ChurnChangePP]": 0.04944022714677351,
+          "[SavedRank]": 32,
+          "[Action]": "RAISE £1"
+        },
+        {
+          "DimGym[gym_id]": "NF033",
+          "[Revenue]": 843004.52,
+          "[Subscription]": 800616.19,
+          "[JoiningFees]": 15258.34,
+          "[Ancillary]": 27129.99,
+          "[Members]": 3648,
+          "[AverageMembers]": 3730.9583333333335,
+          "[ARPMM]": 18.829043476318642,
+          "[Yield]": 17.88227309784126,
+          "[StandardYield]": 17.62146666447336,
+          "[Joins]": 2139,
+          "[Churn]": 0.04891110317743663,
+          "[Conversion]": 0.3005902192242833,
+          "[Complaints]": 0.37970583965245747,
+          "[RevenuePrior]": 835346.1,
+          "[RevenueGrowth]": 0.009167960441785796,
+          "[ChurnChangePP]": 0.19113663584174184,
+          "[SavedRank]": 55,
+          "[Action]": "DEFENSIVE / INVESTIGATE"
+        },
+        {
+          "DimGym[gym_id]": "NF038",
+          "[Revenue]": 1601237.1,
+          "[Subscription]": 1542292.12,
+          "[JoiningFees]": 21699.99,
+          "[Ancillary]": 37244.99,
+          "[Members]": 6520,
+          "[AverageMembers]": 6613.166666666667,
+          "[ARPMM]": 20.17738728294564,
+          "[Yield]": 19.43461427959374,
+          "[StandardYield]": 19.20165300010525,
+          "[Joins]": 3592,
+          "[Churn]": 0.043972525048837356,
+          "[Conversion]": 0.2822124450031427,
+          "[Complaints]": 0.3276292245268278,
+          "[RevenuePrior]": 1593544.81,
+          "[RevenueGrowth]": 0.0048271563822545015,
+          "[ChurnChangePP]": -0.27324420070373723,
+          "[SavedRank]": 57,
+          "[Action]": "DEFENSIVE / INVESTIGATE"
+        },
+        {
+          "DimGym[gym_id]": "NF040",
+          "[Revenue]": 855453.74,
+          "[Subscription]": 816545.41,
+          "[JoiningFees]": 12033.33,
+          "[Ancillary]": 26875.0,
+          "[Members]": 3272,
+          "[AverageMembers]": 3341.875,
+          "[ARPMM]": 21.331681067265134,
+          "[Yield]": 20.361459011283586,
+          "[StandardYield]": 20.093449523536577,
+          "[Joins]": 1918,
+          "[Churn]": 0.04618033032283818,
+          "[Conversion]": 0.32365845426932166,
+          "[Complaints]": 0.32416931612742345,
+          "[RevenuePrior]": 829342.65,
+          "[RevenueGrowth]": 0.03148407959002225,
+          "[ChurnChangePP]": 0.12308225908141818,
+          "[SavedRank]": 22,
+          "[Action]": "RAISE £1"
+        },
+        {
+          "DimGym[gym_id]": "NF042",
+          "[Revenue]": 1811858.83,
+          "[Subscription]": 1750033.83,
+          "[JoiningFees]": 23050.01,
+          "[Ancillary]": 38774.99,
+          "[Members]": 7048,
+          "[AverageMembers]": 7142.166666666667,
+          "[ARPMM]": 21.140396588336873,
+          "[Yield]": 20.419035190068374,
+          "[StandardYield]": 20.0243196551845,
+          "[Joins]": 3672,
+          "[Churn]": 0.04050913761896421,
+          "[Conversion]": 0.32346723044397463,
+          "[Complaints]": 0.22168809651599655,
+          "[RevenuePrior]": 1773138.11,
+          "[RevenueGrowth]": 0.021837396524064315,
+          "[ChurnChangePP]": -0.029527896891819172,
+          "[SavedRank]": 15,
+          "[Action]": "HOLD PRICE"
+        },
+        {
+          "DimGym[gym_id]": "NF046",
+          "[Revenue]": 1543269.88,
+          "[Subscription]": 1493224.87,
+          "[JoiningFees]": 17900.01,
+          "[Ancillary]": 32145.0,
+          "[Members]": 5062,
+          "[AverageMembers]": 5257.583333333333,
+          "[ARPMM]": 24.46101472476264,
+          "[Yield]": 23.66779524813365,
+          "[StandardYield]": 23.65665632466745,
+          "[Joins]": 2823,
+          "[Churn]": 0.0462612605481057,
+          "[Conversion]": 0.31100583893356837,
+          "[Complaints]": 0.7608058201645242,
+          "[RevenuePrior]": 1506240.06,
+          "[RevenueGrowth]": 0.02458427509888419,
+          "[ChurnChangePP]": -0.005160585115378952,
+          "[SavedRank]": 72,
+          "[Action]": "HOLD PRICE"
+        },
+        {
+          "DimGym[gym_id]": "NF047",
+          "[Revenue]": 1412693.03,
+          "[Subscription]": 1362891.39,
+          "[JoiningFees]": 14341.65,
+          "[Ancillary]": 35459.99,
+          "[Members]": 4999,
+          "[AverageMembers]": 5160.416666666667,
+          "[ARPMM]": 22.812967783609206,
+          "[Yield]": 22.008742672587807,
+          "[StandardYield]": 21.665923312218503,
+          "[Joins]": 2793,
+          "[Churn]": 0.045508827421489206,
+          "[Conversion]": 0.2827781715095677,
+          "[Complaints]": 0.2745256358498184,
+          "[RevenuePrior]": 1399001.0,
+          "[RevenueGrowth]": 0.009787005155821924,
+          "[ChurnChangePP]": 0.0015500098125981188,
+          "[SavedRank]": 74,
+          "[Action]": "DEFENSIVE / INVESTIGATE"
+        },
+        {
+          "DimGym[gym_id]": "NF048",
+          "[Revenue]": 1102521.49,
+          "[Subscription]": 1064219.83,
+          "[JoiningFees]": 10491.68,
+          "[Ancillary]": 27809.98,
+          "[Members]": 3966,
+          "[AverageMembers]": 4024.9166666666665,
+          "[ARPMM]": 22.827004492846644,
+          "[Yield]": 22.03399304333423,
+          "[StandardYield]": 21.585414579005256,
+          "[Joins]": 1817,
+          "[Churn]": 0.036919700169793346,
+          "[Conversion]": 0.32325209037537805,
+          "[Complaints]": 0.4140872481831922,
+          "[RevenuePrior]": 1082781.92,
+          "[RevenueGrowth]": 0.018230420766538167,
+          "[ChurnChangePP]": -0.07898551361677983,
+          "[SavedRank]": 23,
+          "[Action]": "HOLD PRICE"
+        },
+        {
+          "DimGym[gym_id]": "NF049",
+          "[Revenue]": 1288990.26,
+          "[Subscription]": 1243386.92,
+          "[JoiningFees]": 13033.33,
+          "[Ancillary]": 32570.01,
+          "[Members]": 4438,
+          "[AverageMembers]": 4528.5,
+          "[ARPMM]": 23.719963564094073,
+          "[Yield]": 22.880772146774135,
+          "[StandardYield]": 22.51147633456099,
+          "[Joins]": 2384,
+          "[Churn]": 0.0436382368091839,
+          "[Conversion]": 0.30350095480585615,
+          "[Complaints]": 0.40484339921239554,
+          "[RevenuePrior]": 1275910.87,
+          "[RevenueGrowth]": 0.010251021687745238,
+          "[ChurnChangePP]": 0.029702325520438583,
+          "[SavedRank]": 14,
+          "[Action]": "RAISE £2"
+        },
+        {
+          "DimGym[gym_id]": "NF053",
+          "[Revenue]": 1611500.11,
+          "[Subscription]": 1545431.78,
+          "[JoiningFees]": 27208.33,
+          "[Ancillary]": 38860.0,
+          "[Members]": 6946,
+          "[AverageMembers]": 7186.291666666667,
+          "[ARPMM]": 18.68720086275374,
+          "[Yield]": 17.92106243948258,
+          "[StandardYield]": 17.60516763816832,
+          "[Joins]": 3872,
+          "[Churn]": 0.045042016806722686,
+          "[Conversion]": 0.31357304826692584,
+          "[Complaints]": 0.24351920032933072,
+          "[RevenuePrior]": 1575326.06,
+          "[RevenueGrowth]": 0.02296289696369274,
+          "[ChurnChangePP]": 0.014198096069870103,
+          "[SavedRank]": 64,
+          "[Action]": "DEFENSIVE / INVESTIGATE"
+        },
+        {
+          "DimGym[gym_id]": "NF055",
+          "[Revenue]": 1058167.55,
+          "[Subscription]": 1017875.86,
+          "[JoiningFees]": 11291.68,
+          "[Ancillary]": 29000.01,
+          "[Members]": 4163,
+          "[AverageMembers]": 4159.25,
+          "[ARPMM]": 21.201088938310193,
+          "[Yield]": 20.393818196389574,
+          "[StandardYield]": 19.92875447164126,
+          "[Joins]": 2055,
+          "[Churn]": 0.037972398298964934,
+          "[Conversion]": 0.31089258698940997,
+          "[Complaints]": 0.30053495221494264,
+          "[RevenuePrior]": 1053587.6,
+          "[RevenueGrowth]": 0.004347004463606019,
+          "[ChurnChangePP]": -0.17260046615939287,
+          "[SavedRank]": 10,
+          "[Action]": "HOLD PRICE"
+        },
+        {
+          "DimGym[gym_id]": "NF058",
+          "[Revenue]": 886665.81,
+          "[Subscription]": 846659.14,
+          "[JoiningFees]": 11941.66,
+          "[Ancillary]": 28065.01,
+          "[Members]": 3266,
+          "[AverageMembers]": 3492.4583333333335,
+          "[ARPMM]": 21.156678318758278,
+          "[Yield]": 20.20208162827044,
+          "[StandardYield]": 20.33133269003967,
+          "[Joins]": 1783,
+          "[Churn]": 0.047886385802983086,
+          "[Conversion]": 0.25784526391901663,
+          "[Complaints]": 0.97829847647908,
+          "[RevenuePrior]": 866979.84,
+          "[RevenueGrowth]": 0.02270637573302753,
+          "[ChurnChangePP]": 0.15985975093140634,
+          "[SavedRank]": 80,
+          "[Action]": "DEFENSIVE / INVESTIGATE"
+        },
+        {
+          "DimGym[gym_id]": "NF059",
+          "[Revenue]": 1821934.03,
+          "[Subscription]": 1762820.71,
+          "[JoiningFees]": 21783.32,
+          "[Ancillary]": 37330.0,
+          "[Members]": 6472,
+          "[AverageMembers]": 6669.333333333333,
+          "[ARPMM]": 22.765069347261097,
+          "[Yield]": 22.02644829568173,
+          "[StandardYield]": 21.698982978723404,
+          "[Joins]": 3489,
+          "[Churn]": 0.043884954978582046,
+          "[Conversion]": 0.3097203728362184,
+          "[Complaints]": 0.274890043982407,
+          "[RevenuePrior]": 1817676.0,
+          "[RevenueGrowth]": 0.0023425682024739436,
+          "[ChurnChangePP]": 0.08690468376462424,
+          "[SavedRank]": 46,
+          "[Action]": "HOLD PRICE"
+        },
+        {
+          "DimGym[gym_id]": "NF062",
+          "[Revenue]": 984536.77,
+          "[Subscription]": 943526.78,
+          "[JoiningFees]": 13624.99,
+          "[Ancillary]": 27385.0,
+          "[Members]": 3773,
+          "[AverageMembers]": 3856.5416666666665,
+          "[ARPMM]": 21.27417202372592,
+          "[Yield]": 20.3880156011971,
+          "[StandardYield]": 20.61613146413448,
+          "[Joins]": 2217,
+          "[Churn]": 0.04805719345990194,
+          "[Conversion]": 0.30817347789824856,
+          "[Complaints]": 0.626640880754562,
+          "[RevenuePrior]": 930932.94,
+          "[RevenueGrowth]": 0.057580764088120115,
+          "[ChurnChangePP]": 0.4692691443945865,
+          "[SavedRank]": 40,
+          "[Action]": "DEFENSIVE / INVESTIGATE"
+        },
+        {
+          "DimGym[gym_id]": "NF064",
+          "[Revenue]": 844182.64,
+          "[Subscription]": 808852.64,
+          "[JoiningFees]": 9475.0,
+          "[Ancillary]": 25855.0,
+          "[Members]": 3026,
+          "[AverageMembers]": 3073.8333333333335,
+          "[ARPMM]": 22.88626145421027,
+          "[Yield]": 21.928445480670174,
+          "[StandardYield]": 21.91219577438298,
+          "[Joins]": 1521,
+          "[Churn]": 0.04093028298818172,
+          "[Conversion]": 0.3151678408619975,
+          "[Complaints]": 0.9217589329284823,
+          "[RevenuePrior]": 815383.83,
+          "[RevenueGrowth]": 0.03531932930286348,
+          "[ChurnChangePP]": 0.0690442881586116,
+          "[SavedRank]": 52,
+          "[Action]": "HOLD PRICE"
+        },
+        {
+          "DimGym[gym_id]": "NF065",
+          "[Revenue]": 1233333.05,
+          "[Subscription]": 1185218.07,
+          "[JoiningFees]": 14524.99,
+          "[Ancillary]": 33589.99,
+          "[Members]": 5261,
+          "[AverageMembers]": 5543.375,
+          "[ARPMM]": 18.54064611661067,
+          "[Yield]": 17.81733555821138,
+          "[StandardYield]": 17.76598674538011,
+          "[Joins]": 2827,
+          "[Churn]": 0.04499069572003121,
+          "[Conversion]": 0.29090347808190986,
+          "[Complaints]": 0.8418457467998588,
+          "[RevenuePrior]": 1170057.05,
+          "[RevenueGrowth]": 0.05407941433283103,
+          "[ChurnChangePP]": 0.13880475069758813,
+          "[SavedRank]": 75,
+          "[Action]": "DEFENSIVE / INVESTIGATE"
+        },
+        {
+          "DimGym[gym_id]": "NF066",
+          "[Revenue]": 1076975.1,
+          "[Subscription]": 1030656.76,
+          "[JoiningFees]": 17658.33,
+          "[Ancillary]": 28660.01,
+          "[Members]": 4740,
+          "[AverageMembers]": 4790.958333333333,
+          "[ARPMM]": 18.73277093135507,
+          "[Yield]": 17.927115486637156,
+          "[StandardYield]": 17.603613524361123,
+          "[Joins]": 2703,
+          "[Churn]": 0.04436551051678507,
+          "[Conversion]": 0.34158978895488434,
+          "[Complaints]": 0.2783020098623275,
+          "[RevenuePrior]": 1023975.66,
+          "[RevenueGrowth]": 0.05175849590018581,
+          "[ChurnChangePP]": -0.007256801077835245,
+          "[SavedRank]": 18,
+          "[Action]": "RAISE £1"
+        },
+        {
+          "DimGym[gym_id]": "NF069",
+          "[Revenue]": 1195272.1,
+          "[Subscription]": 1138598.79,
+          "[JoiningFees]": 20108.33,
+          "[Ancillary]": 36564.98,
+          "[Members]": 5349,
+          "[AverageMembers]": 5548.875,
+          "[ARPMM]": 17.950667177280682,
+          "[Yield]": 17.099544051722198,
+          "[StandardYield]": 16.72676826355952,
+          "[Joins]": 2788,
+          "[Churn]": 0.04232454823797803,
+          "[Conversion]": 0.323546477892538,
+          "[Complaints]": 0.19523476981069737,
+          "[RevenuePrior]": 1153686.25,
+          "[RevenueGrowth]": 0.03604606538389453,
+          "[ChurnChangePP]": 0.15313556681126952,
+          "[SavedRank]": 13,
+          "[Action]": "HOLD PRICE"
+        },
+        {
+          "DimGym[gym_id]": "NF071",
+          "[Revenue]": 1292751.84,
+          "[Subscription]": 1249860.19,
+          "[JoiningFees]": 12191.66,
+          "[Ancillary]": 30699.99,
+          "[Members]": 5199,
+          "[AverageMembers]": 5324.75,
+          "[ARPMM]": 20.231808066106392,
+          "[Yield]": 19.560545722021377,
+          "[StandardYield]": 19.645928122405408,
+          "[Joins]": 2718,
+          "[Churn]": 0.04170840115187179,
+          "[Conversion]": 0.31652497962035636,
+          "[Complaints]": 0.7042584158880699,
+          "[RevenuePrior]": 1221612.31,
+          "[RevenueGrowth]": 0.05823412994258385,
+          "[ChurnChangePP]": 0.12195261910444635,
+          "[SavedRank]": 12,
+          "[Action]": "DEFENSIVE / INVESTIGATE"
+        },
+        {
+          "DimGym[gym_id]": "NF073",
+          "[Revenue]": 1778992.27,
+          "[Subscription]": 1721083.91,
+          "[JoiningFees]": 18708.32,
+          "[Ancillary]": 39200.04,
+          "[Members]": 6592,
+          "[AverageMembers]": 6778.791666666667,
+          "[ARPMM]": 21.869584303987313,
+          "[Yield]": 21.157702761677044,
+          "[StandardYield]": 20.816490602575357,
+          "[Joins]": 3543,
+          "[Churn]": 0.04339437138994715,
+          "[Conversion]": 0.33659509785293557,
+          "[Complaints]": 0.3073310754743655,
+          "[RevenuePrior]": 1750426.22,
+          "[RevenueGrowth]": 0.016319482462962675,
+          "[ChurnChangePP]": -0.001214759193909204,
+          "[SavedRank]": 7,
+          "[Action]": "RAISE £1"
+        },
+        {
+          "DimGym[gym_id]": "NF075",
+          "[Revenue]": 769614.93,
+          "[Subscription]": 731746.58,
+          "[JoiningFees]": 10483.35,
+          "[Ancillary]": 27385.0,
+          "[Members]": 3514,
+          "[AverageMembers]": 3575.0416666666665,
+          "[ARPMM]": 17.939532872577242,
+          "[Yield]": 17.056831039265276,
+          "[StandardYield]": 16.713912056542448,
+          "[Joins]": 1942,
+          "[Churn]": 0.04440455933428125,
+          "[Conversion]": 0.2920739960896375,
+          "[Complaints]": 0.279717019615156,
+          "[RevenuePrior]": 753840.59,
+          "[RevenueGrowth]": 0.020925299339479828,
+          "[ChurnChangePP]": 0.17961078391247193,
+          "[SavedRank]": 48,
+          "[Action]": "DEFENSIVE / INVESTIGATE"
+        },
+        {
+          "DimGym[gym_id]": "NF076",
+          "[Revenue]": 1750732.79,
+          "[Subscription]": 1693212.81,
+          "[JoiningFees]": 21974.99,
+          "[Ancillary]": 35544.99,
+          "[Members]": 6286,
+          "[AverageMembers]": 6391.25,
+          "[ARPMM]": 22.827208944520503,
+          "[Yield]": 22.07722550361823,
+          "[StandardYield]": 21.77971258575914,
+          "[Joins]": 3962,
+          "[Churn]": 0.05157178604942133,
+          "[Conversion]": 0.3114045429537059,
+          "[Complaints]": 0.3259664906447617,
+          "[RevenuePrior]": 1741003.33,
+          "[RevenueGrowth]": 0.005588421246730161,
+          "[ChurnChangePP]": -0.1163646899584321,
+          "[SavedRank]": 59,
+          "[Action]": "DEFENSIVE / INVESTIGATE"
+        },
+        {
+          "DimGym[gym_id]": "NF079",
+          "[Revenue]": 1569250.77,
+          "[Subscription]": 1515284.1,
+          "[JoiningFees]": 17316.67,
+          "[Ancillary]": 36650.0,
+          "[Members]": 5845,
+          "[AverageMembers]": 5986.5,
+          "[ARPMM]": 21.844299256660822,
+          "[Yield]": 21.093071911801555,
+          "[StandardYield]": 21.07516234677646,
+          "[Joins]": 3036,
+          "[Churn]": 0.04261328065220718,
+          "[Conversion]": 0.3067596241285238,
+          "[Complaints]": 0.5985690024777972,
+          "[RevenuePrior]": 1513665.49,
+          "[RevenueGrowth]": 0.036722301173689326,
+          "[ChurnChangePP]": 0.10061770674260062,
+          "[SavedRank]": 44,
+          "[Action]": "HOLD PRICE"
+        },
+        {
+          "DimGym[gym_id]": "NF080",
+          "[Revenue]": 1257886.6,
+          "[Subscription]": 1213143.27,
+          "[JoiningFees]": 13958.34,
+          "[Ancillary]": 30784.99,
+          "[Members]": 5170,
+          "[AverageMembers]": 5237.666666666667,
+          "[ARPMM]": 20.013469738433145,
+          "[Yield]": 19.30158578883727,
+          "[StandardYield]": 19.139046215187577,
+          "[Joins]": 2481,
+          "[Churn]": 0.0387424225549315,
+          "[Conversion]": 0.33364712210866054,
+          "[Complaints]": 0.3500286387068033,
+          "[RevenuePrior]": 1230274.92,
+          "[RevenueGrowth]": 0.02244350392837413,
+          "[ChurnChangePP]": -0.04156782771781373,
+          "[SavedRank]": 3,
+          "[Action]": "DEFENSIVE / INVESTIGATE"
+        },
+        {
+          "DimGym[gym_id]": "NF001",
+          "[Revenue]": 2255247.42,
+          "[Subscription]": 2196639.07,
+          "[JoiningFees]": 20258.34,
+          "[Ancillary]": 38350.01,
+          "[Members]": 8095,
+          "[AverageMembers]": 8359.833333333334,
+          "[ARPMM]": 22.480984668753365,
+          "[Yield]": 21.896759006359773,
+          "[StandardYield]": 21.87879789145095,
+          "[Joins]": 4544,
+          "[Churn]": 0.04518051278985182,
+          "[Conversion]": 0.33107468123861566,
+          "[Complaints]": 0.7476225602583784,
+          "[RevenuePrior]": 2166251.17,
+          "[RevenueGrowth]": 0.04108307071335592,
+          "[ChurnChangePP]": 0.1776715082018425,
+          "[SavedRank]": 28,
+          "[Action]": "HOLD PRICE"
+        },
+        {
+          "DimGym[gym_id]": "NF007",
+          "[Revenue]": 1882331.8,
+          "[Subscription]": 1829923.49,
+          "[JoiningFees]": 16608.32,
+          "[Ancillary]": 35799.99,
+          "[Members]": 5974,
+          "[AverageMembers]": 6022.916666666667,
+          "[ARPMM]": 26.044023521272916,
+          "[Yield]": 25.318899896229677,
+          "[StandardYield]": 24.927356072215066,
+          "[Joins]": 3354,
+          "[Churn]": 0.04395087029369816,
+          "[Conversion]": 0.29634210991341225,
+          "[Complaints]": 0.3320650294015911,
+          "[RevenuePrior]": 1858693.23,
+          "[RevenueGrowth]": 0.01271784370786139,
+          "[ChurnChangePP]": -0.008389106899168303,
+          "[SavedRank]": 25,
+          "[Action]": "HOLD PRICE"
+        },
+        {
+          "DimGym[gym_id]": "NF014",
+          "[Revenue]": 1904493.5,
+          "[Subscription]": 1844681.81,
+          "[JoiningFees]": 21291.68,
+          "[Ancillary]": 38520.01,
+          "[Members]": 7146,
+          "[AverageMembers]": 7250.625,
+          "[ARPMM]": 21.888842915840588,
+          "[Yield]": 21.201411487515443,
+          "[StandardYield]": 20.82430734061468,
+          "[Joins]": 3942,
+          "[Churn]": 0.04446717543214417,
+          "[Conversion]": 0.2999315224834513,
+          "[Complaints]": 0.3218113381030371,
+          "[RevenuePrior]": 1902027.61,
+          "[RevenueGrowth]": 0.0012964533148916264,
+          "[ChurnChangePP]": 0.13146092050994734,
+          "[SavedRank]": 43,
+          "[Action]": "HOLD PRICE"
+        },
+        {
+          "DimGym[gym_id]": "NF072",
+          "[Revenue]": 976834.32,
+          "[Subscription]": 933549.31,
+          "[JoiningFees]": 14625.0,
+          "[Ancillary]": 28660.01,
+          "[Members]": 4031,
+          "[AverageMembers]": 4167.416666666667,
+          "[ARPMM]": 19.53317042932272,
+          "[Yield]": 18.667626027315084,
+          "[StandardYield]": 19.037273052713225,
+          "[Joins]": 2505,
+          "[Churn]": 0.0520997663598059,
+          "[Conversion]": 0.3030852994555354,
+          "[Complaints]": 1.139794836929353,
+          "[RevenuePrior]": 925608.26,
+          "[RevenueGrowth]": 0.05534313187740993,
+          "[ChurnChangePP]": -0.03018068792390305,
+          "[SavedRank]": 76,
+          "[Action]": "DEFENSIVE / INVESTIGATE"
+        },
+        {
+          "DimGym[gym_id]": "NF024",
+          "[Revenue]": 1655201.48,
+          "[Subscription]": 1596168.14,
+          "[JoiningFees]": 20683.33,
+          "[Ancillary]": 38350.01,
+          "[Members]": 5814,
+          "[AverageMembers]": 5893.125,
+          "[ARPMM]": 23.40582571499275,
+          "[Yield]": 22.571048750309327,
+          "[StandardYield]": 22.57611015600127,
+          "[Joins]": 3285,
+          "[Churn]": 0.04421046672893493,
+          "[Conversion]": 0.32297709173139316,
+          "[Complaints]": 0.33937851309788947,
+          "[RevenuePrior]": 1570888.66,
+          "[RevenueGrowth]": 0.053672053371370106,
+          "[ChurnChangePP]": 0.002546188852400183,
+          "[SavedRank]": 2,
+          "[Action]": "TEST FIRST"
+        }
+      ],
+      "check": 1
+    },
+    {
+      "rows": [
+        {
+          "[Revenue]": 26972828.57,
+          "[Prior]": 26401110.83,
+          "[Members]": 416177,
+          "[Churn]": 0.04487131515585345,
+          "[Conversion]": 0.30863017775039503,
+          "[Bridge]": 571717.7400000008
+        }
+      ],
+      "check": 2
+    },
+    {
+      "rows": [
+        {
+          "[Revenue]": 26615054.06,
+          "[Prior]": 26080462.47,
+          "[Members]": 396311,
+          "[Churn]": 0.0445297084518362,
+          "[Conversion]": 0.30783148898330204,
+          "[Bridge]": 534591.5900000008
+        }
+      ],
+      "check": 3
+    },
+    {
+      "rows": [
+        {
+          "[Revenue]": 26799461.74,
+          "[Prior]": 26149122.97,
+          "[Members]": 401018,
+          "[Churn]": 0.045019060891101845,
+          "[Conversion]": 0.30687243866562836,
+          "[Bridge]": 650338.77
+        }
+      ],
+      "check": 4
+    },
+    {
+      "rows": [
+        {
+          "[2024 prior unavailable]": null,
+          "[Both-year prior unavailable]": null,
+          "[Valid zero]": 0.0,
+          "[Single gym lower]": 8461.35935083,
+          "[Regional lower suppressed]": null,
+          "[Filtered portfolio lower suppressed]": null
+        }
+      ],
+      "check": 5
+    },
+    {
+      "rows": [
+        {
+          "DimSimulation[simulation]": "Main",
+          "DimPopulation[population]": "First repricing",
+          "DimCheckpoint[checkpoint_months]": 1,
+          "[Revenue]": 0.00452586993986,
+          "[Lower]": -0.0151907383032,
+          "[Upper]": 0.0240502221227,
+          "[Pairs]": 5,
+          "[Decision]": "EXTEND TEST"
+        },
+        {
+          "DimSimulation[simulation]": "Main",
+          "DimPopulation[population]": "First repricing",
+          "DimCheckpoint[checkpoint_months]": 3,
+          "[Revenue]": 0.0122350477312,
+          "[Lower]": -0.00975448925588,
+          "[Upper]": 0.0347128876004,
+          "[Pairs]": 5,
+          "[Decision]": "EXTEND TEST"
+        },
+        {
+          "DimSimulation[simulation]": "Main",
+          "DimPopulation[population]": "First repricing",
+          "DimCheckpoint[checkpoint_months]": 6,
+          "[Revenue]": 0.010166646403,
+          "[Lower]": -0.00961294285458,
+          "[Upper]": 0.0303412652083,
+          "[Pairs]": 5,
+          "[Decision]": "EXTEND TEST"
+        },
+        {
+          "DimSimulation[simulation]": "Main",
+          "DimPopulation[population]": "First repricing",
+          "DimCheckpoint[checkpoint_months]": 12,
+          "[Revenue]": -0.00408878750351,
+          "[Lower]": -0.0238603174829,
+          "[Upper]": 0.0189901705617,
+          "[Pairs]": 5,
+          "[Decision]": "STOP"
+        },
+        {
+          "DimSimulation[simulation]": "Main",
+          "DimPopulation[population]": "Repeat repricing",
+          "DimCheckpoint[checkpoint_months]": 1,
+          "[Revenue]": 0.00730835375522,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 2,
+          "[Decision]": "EXTEND TEST"
+        },
+        {
+          "DimSimulation[simulation]": "Main",
+          "DimPopulation[population]": "Repeat repricing",
+          "DimCheckpoint[checkpoint_months]": 3,
+          "[Revenue]": 0.00627841854753,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 2,
+          "[Decision]": "EXTEND TEST"
+        },
+        {
+          "DimSimulation[simulation]": "Main",
+          "DimPopulation[population]": "Repeat repricing",
+          "DimCheckpoint[checkpoint_months]": 6,
+          "[Revenue]": -0.00154609066645,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 2,
+          "[Decision]": "EXTEND TEST"
+        },
+        {
+          "DimSimulation[simulation]": "Main",
+          "DimPopulation[population]": "Repeat repricing",
+          "DimCheckpoint[checkpoint_months]": 12,
+          "[Revenue]": -0.00455325807402,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 2,
+          "[Decision]": "EXTEND TEST"
+        },
+        {
+          "DimSimulation[simulation]": "Main",
+          "DimPopulation[population]": "All assigned pairs",
+          "DimCheckpoint[checkpoint_months]": 1,
+          "[Revenue]": 0.00532008009555,
+          "[Lower]": -0.0114294225165,
+          "[Upper]": 0.0230696313745,
+          "[Pairs]": 7,
+          "[Decision]": "EXTEND TEST"
+        },
+        {
+          "DimSimulation[simulation]": "Main",
+          "DimPopulation[population]": "All assigned pairs",
+          "DimCheckpoint[checkpoint_months]": 3,
+          "[Revenue]": 0.010529564811,
+          "[Lower]": -0.00626055789778,
+          "[Upper]": 0.0279051538867,
+          "[Pairs]": 7,
+          "[Decision]": "EXTEND TEST"
+        },
+        {
+          "DimSimulation[simulation]": "Main",
+          "DimPopulation[population]": "All assigned pairs",
+          "DimCheckpoint[checkpoint_months]": 6,
+          "[Revenue]": 0.00680619964292,
+          "[Lower]": -0.0104604883626,
+          "[Upper]": 0.0236002163514,
+          "[Pairs]": 7,
+          "[Decision]": "MODIFY"
+        },
+        {
+          "DimSimulation[simulation]": "Main",
+          "DimPopulation[population]": "All assigned pairs",
+          "DimCheckpoint[checkpoint_months]": 12,
+          "[Revenue]": -0.00422151549063,
+          "[Lower]": -0.0193104228441,
+          "[Upper]": 0.0131689644296,
+          "[Pairs]": 7,
+          "[Decision]": "STOP"
+        },
+        {
+          "DimSimulation[simulation]": "Main",
+          "DimPopulation[population]": "Region: North West",
+          "DimCheckpoint[checkpoint_months]": 1,
+          "[Revenue]": 0.0203896482338,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Main",
+          "DimPopulation[population]": "Region: North West",
+          "DimCheckpoint[checkpoint_months]": 3,
+          "[Revenue]": 0.0481021711553,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Main",
+          "DimPopulation[population]": "Region: North West",
+          "DimCheckpoint[checkpoint_months]": 6,
+          "[Revenue]": 0.0272730218327,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Main",
+          "DimPopulation[population]": "Region: North West",
+          "DimCheckpoint[checkpoint_months]": 12,
+          "[Revenue]": -0.00181531111111,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Main",
+          "DimPopulation[population]": "Region: Scotland",
+          "DimCheckpoint[checkpoint_months]": 1,
+          "[Revenue]": 0.004616085312,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Main",
+          "DimPopulation[population]": "Region: Scotland",
+          "DimCheckpoint[checkpoint_months]": 3,
+          "[Revenue]": 0.0230767956283,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Main",
+          "DimPopulation[population]": "Region: Scotland",
+          "DimCheckpoint[checkpoint_months]": 6,
+          "[Revenue]": 0.0368288566213,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Main",
+          "DimPopulation[population]": "Region: Scotland",
+          "DimCheckpoint[checkpoint_months]": 12,
+          "[Revenue]": 0.0416430924266,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Main",
+          "DimPopulation[population]": "Region: South East",
+          "DimCheckpoint[checkpoint_months]": 1,
+          "[Revenue]": 0.00730835375522,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 2,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Main",
+          "DimPopulation[population]": "Region: South East",
+          "DimCheckpoint[checkpoint_months]": 3,
+          "[Revenue]": 0.00627841854753,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 2,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Main",
+          "DimPopulation[population]": "Region: South East",
+          "DimCheckpoint[checkpoint_months]": 6,
+          "[Revenue]": -0.00154609066645,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 2,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Main",
+          "DimPopulation[population]": "Region: South East",
+          "DimCheckpoint[checkpoint_months]": 12,
+          "[Revenue]": -0.00455325807402,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 2,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Main",
+          "DimPopulation[population]": "Region: South West",
+          "DimCheckpoint[checkpoint_months]": 1,
+          "[Revenue]": -0.0283902543181,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Main",
+          "DimPopulation[population]": "Region: South West",
+          "DimCheckpoint[checkpoint_months]": 3,
+          "[Revenue]": -0.0197266427197,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Main",
+          "DimPopulation[population]": "Region: South West",
+          "DimCheckpoint[checkpoint_months]": 6,
+          "[Revenue]": -0.0185563546109,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Main",
+          "DimPopulation[population]": "Region: South West",
+          "DimCheckpoint[checkpoint_months]": 12,
+          "[Revenue]": -0.0303338670051,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Main",
+          "DimPopulation[population]": "Region: Wales",
+          "DimCheckpoint[checkpoint_months]": 1,
+          "[Revenue]": -0.0102648589112,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Main",
+          "DimPopulation[population]": "Region: Wales",
+          "DimCheckpoint[checkpoint_months]": 3,
+          "[Revenue]": -0.0158622542929,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Main",
+          "DimPopulation[population]": "Region: Wales",
+          "DimCheckpoint[checkpoint_months]": 6,
+          "[Revenue]": -0.0169236521398,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Main",
+          "DimPopulation[population]": "Region: Wales",
+          "DimCheckpoint[checkpoint_months]": 12,
+          "[Revenue]": -0.0261720055724,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Main",
+          "DimPopulation[population]": "Region: Yorkshire",
+          "DimCheckpoint[checkpoint_months]": 1,
+          "[Revenue]": 0.0375967542772,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Main",
+          "DimPopulation[population]": "Region: Yorkshire",
+          "DimCheckpoint[checkpoint_months]": 3,
+          "[Revenue]": 0.0272872737114,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Main",
+          "DimPopulation[population]": "Region: Yorkshire",
+          "DimCheckpoint[checkpoint_months]": 6,
+          "[Revenue]": 0.023574719637,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Main",
+          "DimPopulation[population]": "Region: Yorkshire",
+          "DimCheckpoint[checkpoint_months]": 12,
+          "[Revenue]": -0.0021419047514,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "A/A null",
+          "DimPopulation[population]": "First repricing",
+          "DimCheckpoint[checkpoint_months]": 1,
+          "[Revenue]": 0.00578724528101,
+          "[Lower]": -0.0135813131887,
+          "[Upper]": 0.0253577791427,
+          "[Pairs]": 5,
+          "[Decision]": "EXTEND TEST"
+        },
+        {
+          "DimSimulation[simulation]": "A/A null",
+          "DimPopulation[population]": "First repricing",
+          "DimCheckpoint[checkpoint_months]": 3,
+          "[Revenue]": -0.00146688810676,
+          "[Lower]": -0.0238930037039,
+          "[Upper]": 0.0214408710345,
+          "[Pairs]": 5,
+          "[Decision]": "EXTEND TEST"
+        },
+        {
+          "DimSimulation[simulation]": "A/A null",
+          "DimPopulation[population]": "First repricing",
+          "DimCheckpoint[checkpoint_months]": 6,
+          "[Revenue]": -0.00387017008933,
+          "[Lower]": -0.0246656553958,
+          "[Upper]": 0.0161785605731,
+          "[Pairs]": 5,
+          "[Decision]": "EXTEND TEST"
+        },
+        {
+          "DimSimulation[simulation]": "A/A null",
+          "DimPopulation[population]": "First repricing",
+          "DimCheckpoint[checkpoint_months]": 12,
+          "[Revenue]": -0.0143631758793,
+          "[Lower]": -0.0338986453269,
+          "[Upper]": 0.00950018006946,
+          "[Pairs]": 5,
+          "[Decision]": "MODIFY"
+        },
+        {
+          "DimSimulation[simulation]": "A/A null",
+          "DimPopulation[population]": "Repeat repricing",
+          "DimCheckpoint[checkpoint_months]": 1,
+          "[Revenue]": 0.00909058374064,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 2,
+          "[Decision]": "EXTEND TEST"
+        },
+        {
+          "DimSimulation[simulation]": "A/A null",
+          "DimPopulation[population]": "Repeat repricing",
+          "DimCheckpoint[checkpoint_months]": 3,
+          "[Revenue]": -0.00395255949587,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 2,
+          "[Decision]": "EXTEND TEST"
+        },
+        {
+          "DimSimulation[simulation]": "A/A null",
+          "DimPopulation[population]": "Repeat repricing",
+          "DimCheckpoint[checkpoint_months]": 6,
+          "[Revenue]": -0.0119312047565,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 2,
+          "[Decision]": "EXTEND TEST"
+        },
+        {
+          "DimSimulation[simulation]": "A/A null",
+          "DimPopulation[population]": "Repeat repricing",
+          "DimCheckpoint[checkpoint_months]": 12,
+          "[Revenue]": -0.0111277466786,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 2,
+          "[Decision]": "EXTEND TEST"
+        },
+        {
+          "DimSimulation[simulation]": "A/A null",
+          "DimPopulation[population]": "All assigned pairs",
+          "DimCheckpoint[checkpoint_months]": 1,
+          "[Revenue]": 0.00672995127545,
+          "[Lower]": -0.0101802831695,
+          "[Upper]": 0.0242061446493,
+          "[Pairs]": 7,
+          "[Decision]": "EXTEND TEST"
+        },
+        {
+          "DimSimulation[simulation]": "A/A null",
+          "DimPopulation[population]": "All assigned pairs",
+          "DimCheckpoint[checkpoint_months]": 3,
+          "[Revenue]": -0.00217771222359,
+          "[Lower]": -0.0197134408609,
+          "[Upper]": 0.015344435537,
+          "[Pairs]": 7,
+          "[Decision]": "EXTEND TEST"
+        },
+        {
+          "DimSimulation[simulation]": "A/A null",
+          "DimPopulation[population]": "All assigned pairs",
+          "DimCheckpoint[checkpoint_months]": 6,
+          "[Revenue]": -0.00618001020418,
+          "[Lower]": -0.0231142884503,
+          "[Upper]": 0.00993692592773,
+          "[Pairs]": 7,
+          "[Decision]": "EXTEND TEST"
+        },
+        {
+          "DimSimulation[simulation]": "A/A null",
+          "DimPopulation[population]": "All assigned pairs",
+          "DimCheckpoint[checkpoint_months]": 12,
+          "[Revenue]": -0.0134398492372,
+          "[Lower]": -0.0284447921428,
+          "[Upper]": 0.00377554693774,
+          "[Pairs]": 7,
+          "[Decision]": "MODIFY"
+        },
+        {
+          "DimSimulation[simulation]": "A/A null",
+          "DimPopulation[population]": "Region: North West",
+          "DimCheckpoint[checkpoint_months]": 1,
+          "[Revenue]": 0.0218942502352,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "A/A null",
+          "DimPopulation[population]": "Region: North West",
+          "DimCheckpoint[checkpoint_months]": 3,
+          "[Revenue]": 0.0345121369895,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "A/A null",
+          "DimPopulation[population]": "Region: North West",
+          "DimCheckpoint[checkpoint_months]": 6,
+          "[Revenue]": 0.0128029923968,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "A/A null",
+          "DimPopulation[population]": "Region: North West",
+          "DimCheckpoint[checkpoint_months]": 12,
+          "[Revenue]": -0.0130059306502,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "A/A null",
+          "DimPopulation[population]": "Region: Scotland",
+          "DimCheckpoint[checkpoint_months]": 1,
+          "[Revenue]": 0.00600134769506,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "A/A null",
+          "DimPopulation[population]": "Region: Scotland",
+          "DimCheckpoint[checkpoint_months]": 3,
+          "[Revenue]": 0.0086717236837,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "A/A null",
+          "DimPopulation[population]": "Region: Scotland",
+          "DimCheckpoint[checkpoint_months]": 6,
+          "[Revenue]": 0.0221586731209,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "A/A null",
+          "DimPopulation[population]": "Region: Scotland",
+          "DimCheckpoint[checkpoint_months]": 12,
+          "[Revenue]": 0.0313001800897,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "A/A null",
+          "DimPopulation[population]": "Region: South East",
+          "DimCheckpoint[checkpoint_months]": 1,
+          "[Revenue]": 0.00909058374064,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 2,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "A/A null",
+          "DimPopulation[population]": "Region: South East",
+          "DimCheckpoint[checkpoint_months]": 3,
+          "[Revenue]": -0.00395255949587,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 2,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "A/A null",
+          "DimPopulation[population]": "Region: South East",
+          "DimCheckpoint[checkpoint_months]": 6,
+          "[Revenue]": -0.0119312047565,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 2,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "A/A null",
+          "DimPopulation[population]": "Region: South East",
+          "DimCheckpoint[checkpoint_months]": 12,
+          "[Revenue]": -0.0111277466786,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 2,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "A/A null",
+          "DimPopulation[population]": "Region: South West",
+          "DimCheckpoint[checkpoint_months]": 1,
+          "[Revenue]": -0.0263609944322,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "A/A null",
+          "DimPopulation[population]": "Region: South West",
+          "DimCheckpoint[checkpoint_months]": 3,
+          "[Revenue]": -0.0348826898939,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "A/A null",
+          "DimPopulation[population]": "Region: South West",
+          "DimCheckpoint[checkpoint_months]": 6,
+          "[Revenue]": -0.0356496014279,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "A/A null",
+          "DimPopulation[population]": "Region: South West",
+          "DimCheckpoint[checkpoint_months]": 12,
+          "[Revenue]": -0.0438891562401,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "A/A null",
+          "DimPopulation[population]": "Region: Wales",
+          "DimCheckpoint[checkpoint_months]": 1,
+          "[Revenue]": -0.00983719782541,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "A/A null",
+          "DimPopulation[population]": "Region: Wales",
+          "DimCheckpoint[checkpoint_months]": 3,
+          "[Revenue]": -0.0287651715337,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "A/A null",
+          "DimPopulation[population]": "Region: Wales",
+          "DimCheckpoint[checkpoint_months]": 6,
+          "[Revenue]": -0.028286988565,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "A/A null",
+          "DimPopulation[population]": "Region: Wales",
+          "DimCheckpoint[checkpoint_months]": 12,
+          "[Revenue]": -0.0341910794675,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "A/A null",
+          "DimPopulation[population]": "Region: Yorkshire",
+          "DimCheckpoint[checkpoint_months]": 1,
+          "[Revenue]": 0.0385359393656,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "A/A null",
+          "DimPopulation[population]": "Region: Yorkshire",
+          "DimCheckpoint[checkpoint_months]": 3,
+          "[Revenue]": 0.0148983933285,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "A/A null",
+          "DimPopulation[population]": "Region: Yorkshire",
+          "DimCheckpoint[checkpoint_months]": 6,
+          "[Revenue]": 0.0110288575601,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "A/A null",
+          "DimPopulation[population]": "Region: Yorkshire",
+          "DimCheckpoint[checkpoint_months]": 12,
+          "[Revenue]": -0.0103411547466,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Adverse response",
+          "DimPopulation[population]": "First repricing",
+          "DimCheckpoint[checkpoint_months]": 1,
+          "[Revenue]": 0.00241911265748,
+          "[Lower]": -0.0176593214017,
+          "[Upper]": 0.0220196303969,
+          "[Pairs]": 5,
+          "[Decision]": "EXTEND TEST"
+        },
+        {
+          "DimSimulation[simulation]": "Adverse response",
+          "DimPopulation[population]": "First repricing",
+          "DimCheckpoint[checkpoint_months]": 3,
+          "[Revenue]": 0.00665143427632,
+          "[Lower]": -0.0168045875881,
+          "[Upper]": 0.0299587223784,
+          "[Pairs]": 5,
+          "[Decision]": "EXTEND TEST"
+        },
+        {
+          "DimSimulation[simulation]": "Adverse response",
+          "DimPopulation[population]": "First repricing",
+          "DimCheckpoint[checkpoint_months]": 6,
+          "[Revenue]": 0.000968071887719,
+          "[Lower]": -0.0210556146453,
+          "[Upper]": 0.0221546045968,
+          "[Pairs]": 5,
+          "[Decision]": "STOP"
+        },
+        {
+          "DimSimulation[simulation]": "Adverse response",
+          "DimPopulation[population]": "First repricing",
+          "DimCheckpoint[checkpoint_months]": 12,
+          "[Revenue]": -0.0191840243721,
+          "[Lower]": -0.0392280409261,
+          "[Upper]": 0.00479264149704,
+          "[Pairs]": 5,
+          "[Decision]": "STOP"
+        },
+        {
+          "DimSimulation[simulation]": "Adverse response",
+          "DimPopulation[population]": "Repeat repricing",
+          "DimCheckpoint[checkpoint_months]": 1,
+          "[Revenue]": 0.00400666260841,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 2,
+          "[Decision]": "EXTEND TEST"
+        },
+        {
+          "DimSimulation[simulation]": "Adverse response",
+          "DimPopulation[population]": "Repeat repricing",
+          "DimCheckpoint[checkpoint_months]": 3,
+          "[Revenue]": 0.000542535427999,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 2,
+          "[Decision]": "EXTEND TEST"
+        },
+        {
+          "DimSimulation[simulation]": "Adverse response",
+          "DimPopulation[population]": "Repeat repricing",
+          "DimCheckpoint[checkpoint_months]": 6,
+          "[Revenue]": -0.00993911829319,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 2,
+          "[Decision]": "EXTEND TEST"
+        },
+        {
+          "DimSimulation[simulation]": "Adverse response",
+          "DimPopulation[population]": "Repeat repricing",
+          "DimCheckpoint[checkpoint_months]": 12,
+          "[Revenue]": -0.0161821252404,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 2,
+          "[Decision]": "EXTEND TEST"
+        },
+        {
+          "DimSimulation[simulation]": "Adverse response",
+          "DimPopulation[population]": "All assigned pairs",
+          "DimCheckpoint[checkpoint_months]": 1,
+          "[Revenue]": 0.00287244203533,
+          "[Lower]": -0.0145433705455,
+          "[Upper]": 0.0205443279964,
+          "[Pairs]": 7,
+          "[Decision]": "EXTEND TEST"
+        },
+        {
+          "DimSimulation[simulation]": "Adverse response",
+          "DimPopulation[population]": "All assigned pairs",
+          "DimCheckpoint[checkpoint_months]": 3,
+          "[Revenue]": 0.0049022385696,
+          "[Lower]": -0.0130267025876,
+          "[Upper]": 0.0232166282208,
+          "[Pairs]": 7,
+          "[Decision]": "EXTEND TEST"
+        },
+        {
+          "DimSimulation[simulation]": "Adverse response",
+          "DimPopulation[population]": "All assigned pairs",
+          "DimCheckpoint[checkpoint_months]": 6,
+          "[Revenue]": -0.00216047197068,
+          "[Lower]": -0.0200643038782,
+          "[Upper]": 0.0150660469193,
+          "[Pairs]": 7,
+          "[Decision]": "MODIFY"
+        },
+        {
+          "DimSimulation[simulation]": "Adverse response",
+          "DimPopulation[population]": "All assigned pairs",
+          "DimCheckpoint[checkpoint_months]": 12,
+          "[Revenue]": -0.0183272747854,
+          "[Lower]": -0.0340018459465,
+          "[Upper]": -0.00103693735261,
+          "[Pairs]": 7,
+          "[Decision]": "STOP"
+        },
+        {
+          "DimSimulation[simulation]": "Adverse response",
+          "DimPopulation[population]": "Region: North West",
+          "DimCheckpoint[checkpoint_months]": 1,
+          "[Revenue]": 0.017904694783,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Adverse response",
+          "DimPopulation[population]": "Region: North West",
+          "DimCheckpoint[checkpoint_months]": 3,
+          "[Revenue]": 0.0429717528356,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Adverse response",
+          "DimPopulation[population]": "Region: North West",
+          "DimCheckpoint[checkpoint_months]": 6,
+          "[Revenue]": 0.0191579850515,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Adverse response",
+          "DimPopulation[population]": "Region: North West",
+          "DimCheckpoint[checkpoint_months]": 12,
+          "[Revenue]": -0.0170945344603,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Adverse response",
+          "DimPopulation[population]": "Region: Scotland",
+          "DimCheckpoint[checkpoint_months]": 1,
+          "[Revenue]": 0.0019761875637,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Adverse response",
+          "DimPopulation[population]": "Region: Scotland",
+          "DimCheckpoint[checkpoint_months]": 3,
+          "[Revenue]": 0.0173694400051,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Adverse response",
+          "DimPopulation[population]": "Region: Scotland",
+          "DimCheckpoint[checkpoint_months]": 6,
+          "[Revenue]": 0.027829447137,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Adverse response",
+          "DimPopulation[population]": "Region: Scotland",
+          "DimCheckpoint[checkpoint_months]": 12,
+          "[Revenue]": 0.0260422156824,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Adverse response",
+          "DimPopulation[population]": "Region: South East",
+          "DimCheckpoint[checkpoint_months]": 1,
+          "[Revenue]": 0.00400666260841,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 2,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Adverse response",
+          "DimPopulation[population]": "Region: South East",
+          "DimCheckpoint[checkpoint_months]": 3,
+          "[Revenue]": 0.000542535427999,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 2,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Adverse response",
+          "DimPopulation[population]": "Region: South East",
+          "DimCheckpoint[checkpoint_months]": 6,
+          "[Revenue]": -0.00993911829319,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 2,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Adverse response",
+          "DimPopulation[population]": "Region: South East",
+          "DimCheckpoint[checkpoint_months]": 12,
+          "[Revenue]": -0.0161821252404,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 2,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Adverse response",
+          "DimPopulation[population]": "Region: South West",
+          "DimCheckpoint[checkpoint_months]": 1,
+          "[Revenue]": -0.0305403034829,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Adverse response",
+          "DimPopulation[population]": "Region: South West",
+          "DimCheckpoint[checkpoint_months]": 3,
+          "[Revenue]": -0.0288698573785,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Adverse response",
+          "DimPopulation[population]": "Region: South West",
+          "DimCheckpoint[checkpoint_months]": 6,
+          "[Revenue]": -0.032983417711,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Adverse response",
+          "DimPopulation[population]": "Region: South West",
+          "DimCheckpoint[checkpoint_months]": 12,
+          "[Revenue]": -0.0507641421634,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Adverse response",
+          "DimPopulation[population]": "Region: Wales",
+          "DimCheckpoint[checkpoint_months]": 1,
+          "[Revenue]": -0.0115361093087,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Adverse response",
+          "DimPopulation[population]": "Region: Wales",
+          "DimCheckpoint[checkpoint_months]": 3,
+          "[Revenue]": -0.0197671439728,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Adverse response",
+          "DimPopulation[population]": "Region: Wales",
+          "DimCheckpoint[checkpoint_months]": 6,
+          "[Revenue]": -0.0244560863613,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Adverse response",
+          "DimPopulation[population]": "Region: Wales",
+          "DimCheckpoint[checkpoint_months]": 12,
+          "[Revenue]": -0.0385630968144,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Adverse response",
+          "DimPopulation[population]": "Region: Yorkshire",
+          "DimCheckpoint[checkpoint_months]": 1,
+          "[Revenue]": 0.0355989639093,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Adverse response",
+          "DimPopulation[population]": "Region: Yorkshire",
+          "DimCheckpoint[checkpoint_months]": 3,
+          "[Revenue]": 0.0233817293625,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Adverse response",
+          "DimPopulation[population]": "Region: Yorkshire",
+          "DimCheckpoint[checkpoint_months]": 6,
+          "[Revenue]": 0.0168521516786,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        },
+        {
+          "DimSimulation[simulation]": "Adverse response",
+          "DimPopulation[population]": "Region: Yorkshire",
+          "DimCheckpoint[checkpoint_months]": 12,
+          "[Revenue]": -0.0137982879484,
+          "[Lower]": null,
+          "[Upper]": null,
+          "[Pairs]": 1,
+          "[Decision]": "DESCRIPTIVE — no saved governance classification for this population"
+        }
+      ],
+      "check": 6
+    }
+  ],
+  "port": 52350,
+  "executed_at": "2026-10-06T17:05:46.2783832+05:30",
+  "catalog": "cf2f343b-e80c-4ae5-9cae-cf64862fd0f6",
+  "checks": [
+    {
+      "query": "EVALUATE\r\nCALCULATETABLE(\r\n ROW(\"Revenue 2025\", [Net Revenue], \"December members\", [Closing Members],\r\n \"ARPMM\", [ARPMM], \"Acquisitions\", [Acquisitions], \"Monthly churn\", [Opening-base Churn],\r\n \"Conversion\", [Qualified Conversion], \"Volume contribution\", [Volume Bridge],\r\n \"ARPMM contribution\", [ARPMM Bridge],\r\n \"Bridge residual\", [Volume Bridge]+[ARPMM Bridge]-([Net Revenue]-[Net Revenue Prior Year])),\r\n DimHistoryMonth[year] = 2025)",
+      "check": 1,
+      "rows": [
+        {
+          "[Revenue 2025]": 107006933.85,
+          "[December members]": 396311,
+          "[ARPMM]": 21.974474471884403,
+          "[Acquisitions]": 221277,
+          "[Monthly churn]": 0.045187516924327036,
+          "[Conversion]": 0.30725534003635235,
+          "[Volume contribution]": -425763.9407415579,
+          "[ARPMM contribution]": 2902054.5107415468,
+          "[Bridge residual]": -4.190951585769653E-09
+        }
+      ]
+    },
+    {
+      "query": "EVALUATE\r\nCALCULATETABLE(ROW(\"Base portfolio uplift\", [Portfolio Increment],\r\n \"December member difference\", [Portfolio Member Difference],\r\n \"Saved portfolio lower\", [Portfolio Increment lower], \"Saved portfolio upper\", [Portfolio Increment upper]),\r\n DimPolicy[variant]=\"base\", DimCase[case]=\"Base\")",
+      "check": 2,
+      "rows": [
+        {
+          "[Base portfolio uplift]": 148618.48020484,
+          "[December member difference]": -1208.8879392882,
+          "[Saved portfolio lower]": 64400.3704787,
+          "[Saved portfolio upper]": 230752.087139
+        }
+      ]
+    },
+    {
+      "query": "EVALUATE SUMMARIZECOLUMNS(FactRecommendation[action], \"Sites\", [Recommendation Site Count])",
+      "check": 3,
+      "rows": [
+        {
+          "FactRecommendation[action]": "HOLD PRICE",
+          "[Sites]": 26
+        },
+        {
+          "FactRecommendation[action]": "DEFENSIVE / INVESTIGATE",
+          "[Sites]": 38
+        },
+        {
+          "FactRecommendation[action]": "TEST FIRST",
+          "[Sites]": 5
+        },
+        {
+          "FactRecommendation[action]": "RAISE £1",
+          "[Sites]": 10
+        },
+        {
+          "FactRecommendation[action]": "RAISE £2",
+          "[Sites]": 1
+        }
+      ]
+    },
+    {
+      "query": "EVALUATE SUMMARIZECOLUMNS(DimCase[case], DimPrice[label],\r\n \"Annual scenario revenue\", [Scenario Revenue], \"Incremental revenue\", [Scenario Incremental Revenue],\r\n \"December members\", [Scenario December Members], \"Churn\", [Scenario Churn])",
+      "check": 4,
+      "rows": [
+        {
+          "DimCase[case]": "Base",
+          "DimPrice[label]": "No increase",
+          "[Annual scenario revenue]": 107728047.20464398,
+          "[Incremental revenue]": 0.0,
+          "[December members]": 395423.3716544199,
+          "[Churn]": 0.0451238201974362
+        },
+        {
+          "DimCase[case]": "Downside",
+          "DimPrice[label]": "No increase",
+          "[Annual scenario revenue]": 107728047.20464398,
+          "[Incremental revenue]": 0.0,
+          "[December members]": 395423.3716544199,
+          "[Churn]": 0.0451238201974362
+        },
+        {
+          "DimCase[case]": "Upside",
+          "DimPrice[label]": "No increase",
+          "[Annual scenario revenue]": 107728047.20464398,
+          "[Incremental revenue]": 0.0,
+          "[December members]": 395423.3716544199,
+          "[Churn]": 0.0451238201974362
+        },
+        {
+          "DimCase[case]": "Base",
+          "DimPrice[label]": "+£1",
+          "[Annual scenario revenue]": 108784675.06054597,
+          "[Incremental revenue]": 1056627.8558922298,
+          "[December members]": 387365.16104331,
+          "[Churn]": 0.046009701821145145
+        },
+        {
+          "DimCase[case]": "Downside",
+          "DimPrice[label]": "+£1",
+          "[Annual scenario revenue]": 108374394.60688095,
+          "[Incremental revenue]": 646347.40220063,
+          "[December members]": 384911.37848024,
+          "[Churn]": 0.04591593189300108
+        },
+        {
+          "DimCase[case]": "Upside",
+          "DimPrice[label]": "+£1",
+          "[Annual scenario revenue]": 109187448.420539,
+          "[Incremental revenue]": 1459401.2158696007,
+          "[December members]": 389778.57849323994,
+          "[Churn]": 0.04601541036809959
+        },
+        {
+          "DimCase[case]": "Base",
+          "DimPrice[label]": "+£2",
+          "[Annual scenario revenue]": 109811488.87717597,
+          "[Incremental revenue]": 2083441.6724871001,
+          "[December members]": 379919.6070680601,
+          "[Churn]": 0.04685044716601554
+        },
+        {
+          "DimCase[case]": "Downside",
+          "DimPrice[label]": "+£2",
+          "[Annual scenario revenue]": 109024987.49659,
+          "[Incremental revenue]": 1296940.2919036807,
+          "[December members]": 375371.5174196498,
+          "[Churn]": 0.046674108497099985
+        },
+        {
+          "DimCase[case]": "Upside",
+          "DimPrice[label]": "+£2",
+          "[Annual scenario revenue]": 110606146.797828,
+          "[Incremental revenue]": 2878099.5931263994,
+          "[December members]": 384512.9997438901,
+          "[Churn]": 0.04685635674735407
+        },
+        {
+          "DimCase[case]": "Base",
+          "DimPrice[label]": "+£3",
+          "[Annual scenario revenue]": 110810867.10551302,
+          "[Incremental revenue]": 3082819.9008567,
+          "[December members]": 373019.85543502,
+          "[Churn]": 0.047649579952363984
+        },
+        {
+          "DimCase[case]": "Downside",
+          "DimPrice[label]": "+£3",
+          "[Annual scenario revenue]": 109678524.56114702,
+          "[Incremental revenue]": 1950477.3564285003,
+          "[December members]": 366680.61586532,
+          "[Churn]": 0.04740006794490546
+        },
+        {
+          "DimCase[case]": "Upside",
+          "DimPrice[label]": "+£3",
+          "[Annual scenario revenue]": 111987299.08954698,
+          "[Incremental revenue]": 4259251.8848818,
+          "[December members]": 379588.15773947013,
+          "[Churn]": 0.047651211729056724
+        }
+      ]
+    },
+    {
+      "query": "EVALUATE ROW(\"Multiple-case/option refusal\", [Scenario Revenue],\r\n \"Unsupported two-gym interval\", CALCULATE([Scenario Increment lower],\r\n DimCase[case]=\"Base\", DimPrice[price_increment]=2, DimGym[gym_id] IN {\"NF001\",\"NF002\"}))",
+      "check": 5,
+      "rows": [
+        {
+          "[Multiple-case/option refusal]": null,
+          "[Unsupported two-gym interval]": null
+        }
+      ]
+    },
+    {
+      "query": "EVALUATE CALCULATETABLE(ROW(\"Main primary six-month decision\", [Experiment Saved Decision],\r\n \"Revenue effect\", [Experiment Revenue Effect], \"Revenue lower\", [Experiment Revenue Effect lower],\r\n \"One-sided p\", [Experiment One-sided p], \"Two-sided p\", [Experiment Two-sided p],\r\n \"Member harm upper\", [Experiment Member Harm upper], \"Complete pairs\", [Experiment Complete Pairs]),\r\n DimSimulation[simulation]=\"Main\", DimPopulation[population]=\"First repricing\", DimCheckpoint[checkpoint_months]=6)",
+      "check": 6,
+      "rows": [
+        {
+          "[Main primary six-month decision]": "EXTEND TEST",
+          "[Revenue effect]": 0.010166646403,
+          "[Revenue lower]": -0.00961294285458,
+          "[One-sided p]": 0.1875,
+          "[Two-sided p]": 0.375,
+          "[Member harm upper]": 0.0381350465979,
+          "[Complete pairs]": 5
+        }
+      ]
+    },
+    {
+      "query": "EVALUATE CALCULATETABLE(ROW(\"Main primary twelve-month decision\", [Experiment Saved Decision]),\r\n DimSimulation[simulation]=\"Main\", DimPopulation[population]=\"First repricing\", DimCheckpoint[checkpoint_months]=12)",
+      "check": 7,
+      "rows": [
+        {
+          "[Main primary twelve-month decision]": "STOP"
+        }
+      ]
+    },
+    {
+      "query": "EVALUATE CALCULATETABLE(ROW(\"Repeat interval unavailable\", [Experiment Revenue Effect lower]),\r\n DimSimulation[simulation]=\"Main\", DimPopulation[population]=\"Repeat repricing\", DimCheckpoint[checkpoint_months]=6)",
+      "check": 8,
+      "rows": [
+        {
+          "[Repeat interval unavailable]": null
+        }
+      ]
+    }
+  ],
+  "measure_errors": []
+}

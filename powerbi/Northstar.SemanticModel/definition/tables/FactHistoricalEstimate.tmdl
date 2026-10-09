@@ -1,0 +1,136 @@
+table FactHistoricalEstimate
+	lineageTag: ca98c6fd-de5f-5999-afd1-4afed812c99d
+
+	column estimator
+		dataType: string
+		lineageTag: c76899ee-7954-5861-9113-984abf1ac5de
+		summarizeBy: none
+		sourceColumn: estimator
+
+	column window
+		dataType: string
+		lineageTag: 9fe8f96a-31c1-553f-a0bd-934cb5585657
+		summarizeBy: none
+		sourceColumn: window
+
+	column group_type
+		dataType: string
+		lineageTag: 6d2695b9-03f4-58fc-9fd2-29df892179b4
+		summarizeBy: none
+		sourceColumn: group_type
+
+	column group
+		dataType: string
+		lineageTag: 0d58e47d-d772-5bbe-8512-6c4aa3484221
+		summarizeBy: none
+		sourceColumn: group
+
+	column metric
+		dataType: string
+		lineageTag: 9c241986-f784-505f-a9b1-280228427bf9
+		summarizeBy: none
+		sourceColumn: metric
+
+	column estimate
+		dataType: double
+		isHidden
+		lineageTag: 8db53e04-c786-57a2-a362-59eaf00f1fa2
+		summarizeBy: none
+		sourceColumn: estimate
+
+	column ci_lower
+		dataType: double
+		isHidden
+		lineageTag: 992f1a0e-e24c-59bb-862d-afa9a9d31160
+		summarizeBy: none
+		sourceColumn: ci_lower
+
+	column ci_upper
+		dataType: double
+		isHidden
+		lineageTag: 82cd6ec4-c090-57a6-a9ae-552e93b6981f
+		summarizeBy: none
+		sourceColumn: ci_upper
+
+	column exact_p_value
+		dataType: double
+		isHidden
+		lineageTag: 7d394b62-3f53-53a5-acaa-3065ca6bc25a
+		summarizeBy: none
+		sourceColumn: exact_p_value
+
+	column assigned_pairs
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: a62a0502-f63e-5f59-810d-2a42eae52020
+		summarizeBy: none
+		sourceColumn: assigned_pairs
+
+	column complete_pairs
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 0a64c8cf-bbdd-55fd-8648-279c56aaf654
+		summarizeBy: none
+		sourceColumn: complete_pairs
+
+	column treatment_gyms
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: de1c7267-e725-5204-a377-3ab8ce905c92
+		summarizeBy: none
+		sourceColumn: treatment_gyms
+
+	column control_gyms
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 61f517ba-0621-54ca-93e5-c78c5bc1d5aa
+		summarizeBy: none
+		sourceColumn: control_gyms
+
+	column bootstrap_samples
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 9c6e9ee6-e592-5b63-8ddc-06f35447a65b
+		summarizeBy: none
+		sourceColumn: bootstrap_samples
+
+	column interval_status
+		dataType: string
+		lineageTag: c6534a3f-f257-5c51-a7e7-f2acbf39d615
+		summarizeBy: none
+		sourceColumn: interval_status
+
+	column evidence_status
+		dataType: string
+		lineageTag: 9ddeed2a-a784-581d-b1ce-29493d59ef85
+		summarizeBy: none
+		sourceColumn: evidence_status
+
+	column weight_method
+		dataType: string
+		lineageTag: 0fb59a27-9c0d-57a1-a417-6d9b4a6fb206
+		summarizeBy: none
+		sourceColumn: weight_method
+
+	column unit
+		dataType: string
+		lineageTag: 80a74530-29b3-5128-8d4d-2ae14a5f100f
+		summarizeBy: none
+		sourceColumn: unit
+
+	partition FactHistoricalEstimate = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(SourceRoot & "/FactHistoricalEstimate.csv"), [Delimiter=",", Columns=18, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Nulls = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				    Typed = Table.TransformColumnTypes(Nulls, {{"estimator", type text}, {"window", type text}, {"group_type", type text}, {"group", type text}, {"metric", type text}, {"estimate", type number}, {"ci_lower", type number}, {"ci_upper", type number}, {"exact_p_value", type number}, {"assigned_pairs", Int64.Type}, {"complete_pairs", Int64.Type}, {"treatment_gyms", Int64.Type}, {"control_gyms", Int64.Type}, {"bootstrap_samples", Int64.Type}, {"interval_status", type text}, {"evidence_status", type text}, {"weight_method", type text}, {"unit", type text}}, "en-GB")
+				in
+				    Typed
+

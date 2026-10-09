@@ -1,0 +1,37 @@
+{
+  "renderer": "Marked + local headless Microsoft Edge",
+  "human_visual_review_completed": true,
+  "rendered_pages": [
+    {
+      "file": "README.md",
+      "brokenImages": [],
+      "horizontalOverflow": false,
+      "height": 4341
+    },
+    {
+      "file": "portfolio/case_study.md",
+      "brokenImages": [],
+      "horizontalOverflow": false,
+      "height": 2344
+    },
+    {
+      "file": "portfolio/dashboard_gallery.md",
+      "brokenImages": [],
+      "horizontalOverflow": false,
+      "height": 5779
+    },
+    {
+      "file": "portfolio/REPRODUCIBILITY.md",
+      "brokenImages": [],
+      "horizontalOverflow": false,
+      "height": 2165
+    },
+    {
+      "file": "sql/README.md",
+      "brokenImages": [],
+      "horizontalOverflow": false,
+      "height": 1955
+    }
+  ],
+  "notes": "All five rendered Markdown documents reviewed. No broken images or horizontal overflow. Native Power BI screenshots reused without editing; scrollable viewport limitation labelled."
+}

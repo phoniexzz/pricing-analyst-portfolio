@@ -1,0 +1,4634 @@
+[
+  {
+    "name": "p01",
+    "title": "Executive Overview",
+    "scope": "Historical selected window. Snapshot Dec 2025. Conditional portfolio Jan–Dec 2026.",
+    "visuals": [
+      {
+        "name": "p01_k0",
+        "type": "card",
+        "title": "Net revenue",
+        "x": 28.0,
+        "y": 188,
+        "w": 296.0,
+        "h": 91,
+        "roles": {
+          "Values": [
+            "Net Revenue"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p01_k1",
+        "type": "card",
+        "title": "Final-month members",
+        "x": 340.0,
+        "y": 188,
+        "w": 296.0,
+        "h": 91,
+        "roles": {
+          "Values": [
+            "Closing Members"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p01_k2",
+        "type": "card",
+        "title": "ARPMM",
+        "x": 652.0,
+        "y": 188,
+        "w": 296.0,
+        "h": 91,
+        "roles": {
+          "Values": [
+            "ARPMM"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p01_k3",
+        "type": "card",
+        "title": "Acquisitions",
+        "x": 964.0,
+        "y": 188,
+        "w": 296.0,
+        "h": 91,
+        "roles": {
+          "Values": [
+            "Acquisitions"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p01_k4",
+        "type": "card",
+        "title": "Monthly opening-base churn",
+        "x": 1276.0,
+        "y": 188,
+        "w": 296.0,
+        "h": 91,
+        "roles": {
+          "Values": [
+            "Opening-base Churn"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p01_comparison0",
+        "type": "card",
+        "title": "",
+        "x": 28,
+        "y": 281,
+        "w": 296,
+        "h": 22,
+        "roles": {
+          "Values": [
+            "Executive Revenue Comparison"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "small_font": 10
+      },
+      {
+        "name": "p01_comparison1",
+        "type": "card",
+        "title": "",
+        "x": 340,
+        "y": 281,
+        "w": 296,
+        "h": 22,
+        "roles": {
+          "Values": [
+            "Executive Members Comparison"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "small_font": 10
+      },
+      {
+        "name": "p01_comparison2",
+        "type": "card",
+        "title": "",
+        "x": 652,
+        "y": 281,
+        "w": 296,
+        "h": 22,
+        "roles": {
+          "Values": [
+            "Executive ARPMM Comparison"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "small_font": 10
+      },
+      {
+        "name": "p01_comparison3",
+        "type": "card",
+        "title": "",
+        "x": 964,
+        "y": 281,
+        "w": 296,
+        "h": 22,
+        "roles": {
+          "Values": [
+            "Executive Acquisition Comparison"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "small_font": 10
+      },
+      {
+        "name": "p01_comparison4",
+        "type": "card",
+        "title": "",
+        "x": 1276,
+        "y": 281,
+        "w": 296,
+        "h": 22,
+        "roles": {
+          "Values": [
+            "Executive Churn Comparison"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "small_font": 10
+      },
+      {
+        "name": "p01_revenue",
+        "type": "lineChart",
+        "title": "Matching-month net revenue",
+        "x": 28,
+        "y": 305,
+        "w": 490,
+        "h": 275,
+        "roles": {
+          "Category": [
+            [
+              "DimHistoryMonth",
+              "month_name"
+            ]
+          ],
+          "Y": [
+            "Net Revenue",
+            "Net Revenue Prior Year"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p01_members",
+        "type": "lineChart",
+        "title": "Matching-month closing membership",
+        "x": 540,
+        "y": 305,
+        "w": 490,
+        "h": 275,
+        "roles": {
+          "Category": [
+            [
+              "DimHistoryMonth",
+              "month_name"
+            ]
+          ],
+          "Y": [
+            "Closing Members",
+            "Closing Members Prior Year"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p01_bridge",
+        "type": "waterfallChart",
+        "title": "Revenue change: volume + total ARPMM",
+        "x": 1052,
+        "y": 305,
+        "w": 520,
+        "h": 275,
+        "roles": {
+          "Category": [
+            [
+              "DimBridge",
+              "step"
+            ]
+          ],
+          "Y": [
+            "Revenue Bridge"
+          ]
+        },
+        "filters": [
+          {
+            "name": "p01_bridge_change",
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "DimBridge"
+                  }
+                },
+                "Property": "step"
+              }
+            },
+            "type": "Categorical",
+            "howCreated": "User",
+            "isHiddenInViewMode": false,
+            "isLockedInViewMode": false,
+            "filter": {
+              "Version": 2,
+              "From": [
+                {
+                  "Name": "s",
+                  "Entity": "DimBridge",
+                  "Type": 0
+                }
+              ],
+              "Where": [
+                {
+                  "Condition": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "s"
+                              }
+                            },
+                            "Property": "step"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'Member volume'"
+                            }
+                          }
+                        ],
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'Total ARPMM'"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p01_actions",
+        "type": "barChart",
+        "title": "Saved conditional action counts",
+        "x": 28,
+        "y": 608,
+        "w": 490,
+        "h": 238,
+        "roles": {
+          "Category": [
+            [
+              "FactRecommendation",
+              "action"
+            ]
+          ],
+          "Y": [
+            "Recommendation Site Count"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p01_portfolio",
+        "type": "tableEx",
+        "title": "Conditional RAISE portfolio. TEST FIRST excluded.",
+        "x": 540,
+        "y": 608,
+        "w": 620,
+        "h": 238,
+        "roles": {
+          "Values": [
+            [
+              "DimMetricPanel",
+              "metric"
+            ],
+            "Metric Panel Saved Value"
+          ]
+        },
+        "filters": [
+          {
+            "name": "p01_portfolio_panel",
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "DimMetricPanel"
+                  }
+                },
+                "Property": "panel"
+              }
+            },
+            "type": "Categorical",
+            "howCreated": "User",
+            "isHiddenInViewMode": true,
+            "isLockedInViewMode": true,
+            "filter": {
+              "Version": 2,
+              "From": [
+                {
+                  "Name": "s",
+                  "Entity": "DimMetricPanel",
+                  "Type": 0
+                }
+              ],
+              "Where": [
+                {
+                  "Condition": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "s"
+                              }
+                            },
+                            "Property": "panel"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'Executive Portfolio'"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p01_scope",
+        "type": "card",
+        "title": "Portfolio uncertainty scope",
+        "x": 1180,
+        "y": 608,
+        "w": 392,
+        "h": 100,
+        "roles": {
+          "Values": [
+            "Portfolio Uncertainty Scope"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p01_changes",
+        "type": "card",
+        "title": "Matching-period revenue growth",
+        "x": 1180,
+        "y": 728,
+        "w": 392,
+        "h": 118,
+        "roles": {
+          "Values": [
+            "Net Revenue YoY"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p01_shared0",
+        "type": "slicer",
+        "title": "Region",
+        "x": 28,
+        "y": 114,
+        "w": 370,
+        "h": 58,
+        "roles": {
+          "Values": [
+            [
+              "DimGym",
+              "region"
+            ]
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "default": null,
+        "sync": true
+      },
+      {
+        "name": "p01_shared1",
+        "type": "slicer",
+        "title": "Location type",
+        "x": 418,
+        "y": 114,
+        "w": 370,
+        "h": 58,
+        "roles": {
+          "Values": [
+            [
+              "DimGym",
+              "location_type"
+            ]
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "default": null,
+        "sync": true
+      },
+      {
+        "name": "p01_shared2",
+        "type": "slicer",
+        "title": "Headroom segment",
+        "x": 808,
+        "y": 114,
+        "w": 370,
+        "h": 58,
+        "roles": {
+          "Values": [
+            [
+              "DimGym",
+              "segment"
+            ]
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "default": null,
+        "sync": true
+      },
+      {
+        "name": "p01_shared3",
+        "type": "slicer",
+        "title": "Gym",
+        "x": 1198,
+        "y": 114,
+        "w": 370,
+        "h": 58,
+        "roles": {
+          "Values": [
+            [
+              "DimGym",
+              "gym_id"
+            ]
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "default": null,
+        "sync": true
+      },
+      {
+        "name": "p01_year",
+        "type": "slicer",
+        "title": "Reporting year",
+        "x": 1280,
+        "y": 52,
+        "w": 290,
+        "h": 58,
+        "roles": {
+          "Values": [
+            [
+              "DimHistoryMonth",
+              "year"
+            ]
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "default": [
+          2025
+        ],
+        "sync": true
+      },
+      {
+        "name": "p01_months",
+        "type": "slicer",
+        "title": "Reporting months",
+        "x": 990,
+        "y": 52,
+        "w": 270,
+        "h": 58,
+        "roles": {
+          "Values": [
+            [
+              "DimHistoryMonth",
+              "month_name"
+            ]
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "default": null,
+        "sync": true
+      },
+      {
+        "name": "p01_heading",
+        "type": "textbox",
+        "title": "",
+        "x": 28,
+        "y": 47,
+        "w": 940,
+        "h": 51,
+        "roles": {},
+        "filters": [],
+        "text": "Northstar Fitness  /  Executive Overview",
+        "action": null
+      },
+      {
+        "name": "p01_scope_label",
+        "type": "card",
+        "title": "",
+        "x": 28,
+        "y": 889,
+        "w": 1544,
+        "h": 33,
+        "roles": {
+          "Values": [
+            "Historical Reporting Note"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "small_font": 9
+      },
+      {
+        "name": "p01_stamp",
+        "type": "card",
+        "title": "Snapshot ID. Native acceptance is recorded in powerbi/NATIVE_VERIFICATION.md.",
+        "x": 28,
+        "y": 1026,
+        "w": 1544,
+        "h": 56,
+        "roles": {
+          "Values": [
+            "Snapshot Version"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "small_font": 9
+      },
+      {
+        "name": "p01_definitions",
+        "type": "textbox",
+        "title": "",
+        "x": 28,
+        "y": 925,
+        "w": 1544,
+        "h": 35,
+        "roles": {},
+        "filters": [],
+        "text": "Revenue excludes assumed 20% VAT. Gross recurring prices are separate. Revenue is not profit. Monthly churn uses opening-base exposure; retention is not annual.",
+        "action": null
+      },
+      {
+        "name": "p01_disclaimer",
+        "type": "textbox",
+        "title": "",
+        "x": 28,
+        "y": 966,
+        "w": 1544,
+        "h": 62,
+        "roles": {},
+        "filters": [],
+        "text": "This project uses synthetic data and is inspired by the commercial economics of UK subscription fitness businesses.\nThis project uses synthetic data created for portfolio purposes. It is inspired by the economics of multi-site subscription fitness businesses and does not use confidential information from The Gym Group or any other operator.",
+        "action": null
+      },
+      {
+        "name": "p01_nav0",
+        "type": "actionButton",
+        "title": "Overview",
+        "x": 28,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p01"
+        ]
+      },
+      {
+        "name": "p01_nav1",
+        "type": "actionButton",
+        "title": "Estate Pricing",
+        "x": 248,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p02"
+        ]
+      },
+      {
+        "name": "p01_nav2",
+        "type": "actionButton",
+        "title": "Member Behaviour",
+        "x": 468,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p03"
+        ]
+      },
+      {
+        "name": "p01_nav3",
+        "type": "actionButton",
+        "title": "Scenarios",
+        "x": 688,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p04"
+        ]
+      },
+      {
+        "name": "p01_nav4",
+        "type": "actionButton",
+        "title": "Recommendations",
+        "x": 908,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p05"
+        ]
+      },
+      {
+        "name": "p01_nav5",
+        "type": "actionButton",
+        "title": "Experiment & Monitoring",
+        "x": 1128,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p06"
+        ]
+      },
+      {
+        "name": "p01_reset",
+        "type": "actionButton",
+        "title": "Reset page",
+        "x": 1360,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "Bookmark",
+          "reset_p01"
+        ]
+      }
+    ],
+    "filters": [
+      {
+        "name": "p01_case",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DimCase"
+              }
+            },
+            "Property": "case"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User",
+        "isHiddenInViewMode": true,
+        "isLockedInViewMode": true,
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "s",
+              "Entity": "DimCase",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "s"
+                          }
+                        },
+                        "Property": "case"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'Base'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "p01_policy",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DimPolicy"
+              }
+            },
+            "Property": "variant"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User",
+        "isHiddenInViewMode": true,
+        "isLockedInViewMode": true,
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "s",
+              "Entity": "DimPolicy",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "s"
+                          }
+                        },
+                        "Property": "variant"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'base'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "detail": false,
+    "experiment": false,
+    "height": 1095
+  },
+  {
+    "name": "p02",
+    "title": "Estate Pricing",
+    "scope": "December 2025 snapshot. All competitors and national-equivalent fields are fictional proxies. Recurring prices include VAT; introductory discounts are separate.",
+    "visuals": [
+      {
+        "name": "p02_k0",
+        "type": "card",
+        "title": "Sites in selection",
+        "x": 28.0,
+        "y": 188,
+        "w": 374.0,
+        "h": 91,
+        "roles": {
+          "Values": [
+            "Gyms In Selection"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p02_k1",
+        "type": "card",
+        "title": "Median Standard headline",
+        "x": 418.0,
+        "y": 188,
+        "w": 374.0,
+        "h": 91,
+        "roles": {
+          "Values": [
+            "Median Standard Price"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p02_k2",
+        "type": "card",
+        "title": "Mean competitor recurring gap",
+        "x": 808.0,
+        "y": 188,
+        "w": 374.0,
+        "h": 91,
+        "roles": {
+          "Values": [
+            "Average Competitor Gap"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p02_k3",
+        "type": "card",
+        "title": "Sites with existing caution",
+        "x": 1198.0,
+        "y": 188,
+        "w": 374.0,
+        "h": 91,
+        "roles": {
+          "Values": [
+            "Caution Sites"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p02_gap",
+        "type": "scatterChart",
+        "title": "December competitor gap versus 2025 monthly churn",
+        "x": 28,
+        "y": 305,
+        "w": 850,
+        "h": 345,
+        "roles": {
+          "Category": [
+            [
+              "DimGym",
+              "gym_id"
+            ]
+          ],
+          "X": [
+            "Competitor Gap December"
+          ],
+          "Y": [
+            "Headroom Churn 2025"
+          ],
+          "Series": [
+            [
+              "DimGym",
+              "segment"
+            ]
+          ],
+          "Tooltips": [
+            "Saved Estate Rank",
+            "Headroom Score",
+            "Caution Count"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p02_band",
+        "type": "barChart",
+        "title": "Sites by preserved score band",
+        "x": 904,
+        "y": 305,
+        "w": 668,
+        "h": 345,
+        "roles": {
+          "Category": [
+            [
+              "DimGym",
+              "band"
+            ]
+          ],
+          "Y": [
+            "Gyms In Selection"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p02_sites",
+        "type": "tableEx",
+        "title": "Pricing position, service pressure and caution flags",
+        "x": 28,
+        "y": 678,
+        "w": 1544,
+        "h": 205,
+        "roles": {
+          "Values": [
+            [
+              "DimGym",
+              "gym_id"
+            ],
+            [
+              "DimGym",
+              "city"
+            ],
+            "Standard Headline December",
+            "Competitor Recurring December",
+            "Competitor Gap December",
+            "Competitor Joining Fee December",
+            "Competitor Intro Discount December",
+            "Headroom Peak 2025",
+            "Caution Count",
+            "Headroom Score",
+            "Saved Estate Rank",
+            "Headroom Band"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p02_shared0",
+        "type": "slicer",
+        "title": "Region",
+        "x": 28,
+        "y": 114,
+        "w": 370,
+        "h": 58,
+        "roles": {
+          "Values": [
+            [
+              "DimGym",
+              "region"
+            ]
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "default": null,
+        "sync": true
+      },
+      {
+        "name": "p02_shared1",
+        "type": "slicer",
+        "title": "Location type",
+        "x": 418,
+        "y": 114,
+        "w": 370,
+        "h": 58,
+        "roles": {
+          "Values": [
+            [
+              "DimGym",
+              "location_type"
+            ]
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "default": null,
+        "sync": true
+      },
+      {
+        "name": "p02_shared2",
+        "type": "slicer",
+        "title": "Headroom segment",
+        "x": 808,
+        "y": 114,
+        "w": 370,
+        "h": 58,
+        "roles": {
+          "Values": [
+            [
+              "DimGym",
+              "segment"
+            ]
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "default": null,
+        "sync": true
+      },
+      {
+        "name": "p02_shared3",
+        "type": "slicer",
+        "title": "Gym",
+        "x": 1198,
+        "y": 114,
+        "w": 370,
+        "h": 58,
+        "roles": {
+          "Values": [
+            [
+              "DimGym",
+              "gym_id"
+            ]
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "default": null,
+        "sync": true
+      },
+      {
+        "name": "p02_heading",
+        "type": "textbox",
+        "title": "",
+        "x": 28,
+        "y": 47,
+        "w": 1220,
+        "h": 51,
+        "roles": {},
+        "filters": [],
+        "text": "Northstar Fitness  /  Estate Pricing",
+        "action": null
+      },
+      {
+        "name": "p02_scope_label",
+        "type": "textbox",
+        "title": "",
+        "x": 28,
+        "y": 889,
+        "w": 1544,
+        "h": 33,
+        "roles": {},
+        "filters": [],
+        "text": "December 2025 snapshot. All competitors and national-equivalent fields are fictional proxies. Recurring prices include VAT; introductory discounts are separate.",
+        "action": null
+      },
+      {
+        "name": "p02_stamp",
+        "type": "card",
+        "title": "Snapshot ID. Native acceptance is recorded in powerbi/NATIVE_VERIFICATION.md.",
+        "x": 28,
+        "y": 1026,
+        "w": 1544,
+        "h": 56,
+        "roles": {
+          "Values": [
+            "Snapshot Version"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "small_font": 9
+      },
+      {
+        "name": "p02_definitions",
+        "type": "textbox",
+        "title": "",
+        "x": 28,
+        "y": 925,
+        "w": 1544,
+        "h": 35,
+        "roles": {},
+        "filters": [],
+        "text": "Revenue excludes assumed 20% VAT. Gross recurring prices are separate. Revenue is not profit. Monthly churn uses opening-base exposure; retention is not annual.",
+        "action": null
+      },
+      {
+        "name": "p02_disclaimer",
+        "type": "textbox",
+        "title": "",
+        "x": 28,
+        "y": 966,
+        "w": 1544,
+        "h": 62,
+        "roles": {},
+        "filters": [],
+        "text": "This project uses synthetic data and is inspired by the commercial economics of UK subscription fitness businesses.\nThis project uses synthetic data created for portfolio purposes. It is inspired by the economics of multi-site subscription fitness businesses and does not use confidential information from The Gym Group or any other operator.",
+        "action": null
+      },
+      {
+        "name": "p02_nav0",
+        "type": "actionButton",
+        "title": "Overview",
+        "x": 28,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p01"
+        ]
+      },
+      {
+        "name": "p02_nav1",
+        "type": "actionButton",
+        "title": "Estate Pricing",
+        "x": 248,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p02"
+        ]
+      },
+      {
+        "name": "p02_nav2",
+        "type": "actionButton",
+        "title": "Member Behaviour",
+        "x": 468,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p03"
+        ]
+      },
+      {
+        "name": "p02_nav3",
+        "type": "actionButton",
+        "title": "Scenarios",
+        "x": 688,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p04"
+        ]
+      },
+      {
+        "name": "p02_nav4",
+        "type": "actionButton",
+        "title": "Recommendations",
+        "x": 908,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p05"
+        ]
+      },
+      {
+        "name": "p02_nav5",
+        "type": "actionButton",
+        "title": "Experiment & Monitoring",
+        "x": 1128,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p06"
+        ]
+      },
+      {
+        "name": "p02_reset",
+        "type": "actionButton",
+        "title": "Reset page",
+        "x": 1360,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "Bookmark",
+          "reset_p02"
+        ]
+      }
+    ],
+    "filters": [],
+    "detail": false,
+    "experiment": false,
+    "height": 1095
+  },
+  {
+    "name": "p03",
+    "title": "Customer & Member Behaviour",
+    "scope": "Historical selected window with matching-year comparison. Historical pilot: Oct 2024–Mar 2025 vs Apr–Sep 2025.",
+    "visuals": [
+      {
+        "name": "p03_k0",
+        "type": "card",
+        "title": "Qualified conversion",
+        "x": 28.0,
+        "y": 188,
+        "w": 296.0,
+        "h": 91,
+        "roles": {
+          "Values": [
+            "Qualified Conversion"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p03_k1",
+        "type": "card",
+        "title": "Monthly retention",
+        "x": 340.0,
+        "y": 188,
+        "w": 296.0,
+        "h": 91,
+        "roles": {
+          "Values": [
+            "Monthly Retention"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p03_k2",
+        "type": "card",
+        "title": "Acquisition growth",
+        "x": 652.0,
+        "y": 188,
+        "w": 296.0,
+        "h": 91,
+        "roles": {
+          "Values": [
+            "Acquisitions YoY"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p03_k3",
+        "type": "card",
+        "title": "Member growth within period",
+        "x": 964.0,
+        "y": 188,
+        "w": 296.0,
+        "h": 91,
+        "roles": {
+          "Values": [
+            "Period Member Growth"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p03_k4",
+        "type": "card",
+        "title": "Complaints / 1,000 member-months",
+        "x": 1276.0,
+        "y": 188,
+        "w": 296.0,
+        "h": 91,
+        "roles": {
+          "Values": [
+            "Complaints per 1000"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p03_acquisition",
+        "type": "lineChart",
+        "title": "Monthly acquisition and matching 2024",
+        "x": 28,
+        "y": 305,
+        "w": 750,
+        "h": 270,
+        "roles": {
+          "Category": [
+            [
+              "DimHistoryMonth",
+              "month_name"
+            ]
+          ],
+          "Y": [
+            "Acquisitions",
+            "Acquisitions Prior Year"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p03_churn",
+        "type": "lineChart",
+        "title": "Opening-base churn and matching 2024",
+        "x": 800,
+        "y": 305,
+        "w": 772,
+        "h": 270,
+        "roles": {
+          "Category": [
+            [
+              "DimHistoryMonth",
+              "month_name"
+            ]
+          ],
+          "Y": [
+            "Opening-base Churn",
+            "Opening-base Churn Prior Year"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p03_pilot",
+        "type": "tableEx",
+        "title": "Saved historical £2 pilot. Equal weights, 12 pairs; local evidence.",
+        "x": 28,
+        "y": 605,
+        "w": 980,
+        "h": 248,
+        "roles": {
+          "Values": [
+            [
+              "DimMetricPanel",
+              "metric"
+            ],
+            "Metric Panel Saved Value"
+          ]
+        },
+        "filters": [
+          {
+            "name": "p03_pilot_panel",
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "DimMetricPanel"
+                  }
+                },
+                "Property": "panel"
+              }
+            },
+            "type": "Categorical",
+            "howCreated": "User",
+            "isHiddenInViewMode": true,
+            "isLockedInViewMode": true,
+            "filter": {
+              "Version": 2,
+              "From": [
+                {
+                  "Name": "s",
+                  "Entity": "DimMetricPanel",
+                  "Type": 0
+                }
+              ],
+              "Where": [
+                {
+                  "Condition": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "s"
+                              }
+                            },
+                            "Property": "panel"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'Historical Pilot'"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p03_q4",
+        "type": "tableEx",
+        "title": "Q4 2025 vs Q4 2024 and membership mix",
+        "x": 1030,
+        "y": 605,
+        "w": 542,
+        "h": 248,
+        "roles": {
+          "Values": [
+            [
+              "DimMetricPanel",
+              "metric"
+            ],
+            "Metric Panel Saved Value"
+          ]
+        },
+        "filters": [
+          {
+            "name": "p03_q4_panel",
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "DimMetricPanel"
+                  }
+                },
+                "Property": "panel"
+              }
+            },
+            "type": "Categorical",
+            "howCreated": "User",
+            "isHiddenInViewMode": true,
+            "isLockedInViewMode": true,
+            "filter": {
+              "Version": 2,
+              "From": [
+                {
+                  "Name": "s",
+                  "Entity": "DimMetricPanel",
+                  "Type": 0
+                }
+              ],
+              "Where": [
+                {
+                  "Condition": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "s"
+                              }
+                            },
+                            "Property": "panel"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'Q4 and Mix'"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p03_shared0",
+        "type": "slicer",
+        "title": "Region",
+        "x": 28,
+        "y": 114,
+        "w": 370,
+        "h": 58,
+        "roles": {
+          "Values": [
+            [
+              "DimGym",
+              "region"
+            ]
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "default": null,
+        "sync": true
+      },
+      {
+        "name": "p03_shared1",
+        "type": "slicer",
+        "title": "Location type",
+        "x": 418,
+        "y": 114,
+        "w": 370,
+        "h": 58,
+        "roles": {
+          "Values": [
+            [
+              "DimGym",
+              "location_type"
+            ]
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "default": null,
+        "sync": true
+      },
+      {
+        "name": "p03_shared2",
+        "type": "slicer",
+        "title": "Headroom segment",
+        "x": 808,
+        "y": 114,
+        "w": 370,
+        "h": 58,
+        "roles": {
+          "Values": [
+            [
+              "DimGym",
+              "segment"
+            ]
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "default": null,
+        "sync": true
+      },
+      {
+        "name": "p03_shared3",
+        "type": "slicer",
+        "title": "Gym",
+        "x": 1198,
+        "y": 114,
+        "w": 370,
+        "h": 58,
+        "roles": {
+          "Values": [
+            [
+              "DimGym",
+              "gym_id"
+            ]
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "default": null,
+        "sync": true
+      },
+      {
+        "name": "p03_year",
+        "type": "slicer",
+        "title": "Reporting year",
+        "x": 1280,
+        "y": 52,
+        "w": 290,
+        "h": 58,
+        "roles": {
+          "Values": [
+            [
+              "DimHistoryMonth",
+              "year"
+            ]
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "default": [
+          2025
+        ],
+        "sync": true
+      },
+      {
+        "name": "p03_months",
+        "type": "slicer",
+        "title": "Reporting months",
+        "x": 990,
+        "y": 52,
+        "w": 270,
+        "h": 58,
+        "roles": {
+          "Values": [
+            [
+              "DimHistoryMonth",
+              "month_name"
+            ]
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "default": null,
+        "sync": true
+      },
+      {
+        "name": "p03_heading",
+        "type": "textbox",
+        "title": "",
+        "x": 28,
+        "y": 47,
+        "w": 940,
+        "h": 51,
+        "roles": {},
+        "filters": [],
+        "text": "Northstar Fitness  /  Customer & Member Behaviour",
+        "action": null
+      },
+      {
+        "name": "p03_scope_label",
+        "type": "card",
+        "title": "",
+        "x": 28,
+        "y": 889,
+        "w": 1544,
+        "h": 33,
+        "roles": {
+          "Values": [
+            "Historical Reporting Note"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "small_font": 9
+      },
+      {
+        "name": "p03_stamp",
+        "type": "card",
+        "title": "Snapshot ID. Native acceptance is recorded in powerbi/NATIVE_VERIFICATION.md.",
+        "x": 28,
+        "y": 1026,
+        "w": 1544,
+        "h": 56,
+        "roles": {
+          "Values": [
+            "Snapshot Version"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "small_font": 9
+      },
+      {
+        "name": "p03_definitions",
+        "type": "textbox",
+        "title": "",
+        "x": 28,
+        "y": 925,
+        "w": 1544,
+        "h": 35,
+        "roles": {},
+        "filters": [],
+        "text": "Revenue excludes assumed 20% VAT. Gross recurring prices are separate. Revenue is not profit. Monthly churn uses opening-base exposure; retention is not annual.",
+        "action": null
+      },
+      {
+        "name": "p03_disclaimer",
+        "type": "textbox",
+        "title": "",
+        "x": 28,
+        "y": 966,
+        "w": 1544,
+        "h": 62,
+        "roles": {},
+        "filters": [],
+        "text": "This project uses synthetic data and is inspired by the commercial economics of UK subscription fitness businesses.\nThis project uses synthetic data created for portfolio purposes. It is inspired by the economics of multi-site subscription fitness businesses and does not use confidential information from The Gym Group or any other operator.",
+        "action": null
+      },
+      {
+        "name": "p03_nav0",
+        "type": "actionButton",
+        "title": "Overview",
+        "x": 28,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p01"
+        ]
+      },
+      {
+        "name": "p03_nav1",
+        "type": "actionButton",
+        "title": "Estate Pricing",
+        "x": 248,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p02"
+        ]
+      },
+      {
+        "name": "p03_nav2",
+        "type": "actionButton",
+        "title": "Member Behaviour",
+        "x": 468,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p03"
+        ]
+      },
+      {
+        "name": "p03_nav3",
+        "type": "actionButton",
+        "title": "Scenarios",
+        "x": 688,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p04"
+        ]
+      },
+      {
+        "name": "p03_nav4",
+        "type": "actionButton",
+        "title": "Recommendations",
+        "x": 908,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p05"
+        ]
+      },
+      {
+        "name": "p03_nav5",
+        "type": "actionButton",
+        "title": "Experiment & Monitoring",
+        "x": 1128,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p06"
+        ]
+      },
+      {
+        "name": "p03_reset",
+        "type": "actionButton",
+        "title": "Reset page",
+        "x": 1360,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "Bookmark",
+          "reset_p03"
+        ]
+      }
+    ],
+    "filters": [],
+    "detail": false,
+    "experiment": false,
+    "height": 1095
+  },
+  {
+    "name": "p04",
+    "title": "Pricing Scenarios",
+    "scope": "Saved Jan–Dec 2026 scenarios. Conditional parameter uncertainty excludes future shocks and transport uncertainty.",
+    "visuals": [
+      {
+        "name": "p04_case",
+        "type": "slicer",
+        "title": "Saved case",
+        "x": 28,
+        "y": 184,
+        "w": 240,
+        "h": 58,
+        "roles": {
+          "Values": [
+            [
+              "DimCase",
+              "case"
+            ]
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "default": [
+          "Base"
+        ],
+        "sync": false
+      },
+      {
+        "name": "p04_status",
+        "type": "card",
+        "title": "Saved scenario status",
+        "x": 292,
+        "y": 184,
+        "w": 1280,
+        "h": 61,
+        "roles": {
+          "Values": [
+            "Scenario Selection Status"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p04_revenue",
+        "type": "lineChart",
+        "title": "Cumulative incremental net revenue by price option",
+        "x": 28,
+        "y": 253,
+        "w": 752,
+        "h": 300,
+        "roles": {
+          "Category": [
+            [
+              "DimScenarioMonth",
+              "month_name"
+            ]
+          ],
+          "Series": [
+            [
+              "DimPrice",
+              "label"
+            ]
+          ],
+          "Y": [
+            "Scenario Cumulative Increment"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p04_members",
+        "type": "lineChart",
+        "title": "Closing membership by saved price option",
+        "x": 800,
+        "y": 253,
+        "w": 772,
+        "h": 300,
+        "roles": {
+          "Category": [
+            [
+              "DimScenarioMonth",
+              "month_name"
+            ]
+          ],
+          "Series": [
+            [
+              "DimPrice",
+              "label"
+            ]
+          ],
+          "Y": [
+            "Scenario Monthly Closing"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p04_compare",
+        "type": "tableEx",
+        "title": "Saved annual comparisons. December × 12 is seasonal exit run-rate.",
+        "x": 28,
+        "y": 582,
+        "w": 1544,
+        "h": 154,
+        "roles": {
+          "Values": [
+            [
+              "DimPrice",
+              "label"
+            ],
+            "Scenario Incremental Revenue",
+            "Scenario Increment lower",
+            "Scenario Increment upper",
+            "Scenario December Members",
+            "Scenario Member Impact",
+            "Scenario Joins",
+            "Scenario Churn",
+            "Scenario Downgrade Rate",
+            "Scenario Subscription Yield",
+            "Scenario ARPMM",
+            "Scenario Exit Run-rate"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p04_stress",
+        "type": "tableEx",
+        "title": "Site stress results (single gym). Search 0–64; unavailable if no crossing.",
+        "x": 28,
+        "y": 763,
+        "w": 1080,
+        "h": 116,
+        "roles": {
+          "Values": [
+            [
+              "DimGym",
+              "gym_id"
+            ],
+            [
+              "DimPrice",
+              "label"
+            ],
+            "Break-even Multiplier",
+            "Break-even Member Impact",
+            "Break-even Crossings",
+            "Teaching Retention Ratio"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p04_uncertainty",
+        "type": "card",
+        "title": "Scope of saved ranges",
+        "x": 1132,
+        "y": 763,
+        "w": 440,
+        "h": 116,
+        "roles": {
+          "Values": [
+            "Uncertainty Scope"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p04_shared0",
+        "type": "slicer",
+        "title": "Region",
+        "x": 28,
+        "y": 114,
+        "w": 370,
+        "h": 58,
+        "roles": {
+          "Values": [
+            [
+              "DimGym",
+              "region"
+            ]
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "default": null,
+        "sync": true
+      },
+      {
+        "name": "p04_shared1",
+        "type": "slicer",
+        "title": "Location type",
+        "x": 418,
+        "y": 114,
+        "w": 370,
+        "h": 58,
+        "roles": {
+          "Values": [
+            [
+              "DimGym",
+              "location_type"
+            ]
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "default": null,
+        "sync": true
+      },
+      {
+        "name": "p04_shared2",
+        "type": "slicer",
+        "title": "Headroom segment",
+        "x": 808,
+        "y": 114,
+        "w": 370,
+        "h": 58,
+        "roles": {
+          "Values": [
+            [
+              "DimGym",
+              "segment"
+            ]
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "default": null,
+        "sync": true
+      },
+      {
+        "name": "p04_shared3",
+        "type": "slicer",
+        "title": "Gym",
+        "x": 1198,
+        "y": 114,
+        "w": 370,
+        "h": 58,
+        "roles": {
+          "Values": [
+            [
+              "DimGym",
+              "gym_id"
+            ]
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "default": null,
+        "sync": true
+      },
+      {
+        "name": "p04_heading",
+        "type": "textbox",
+        "title": "",
+        "x": 28,
+        "y": 47,
+        "w": 1220,
+        "h": 51,
+        "roles": {},
+        "filters": [],
+        "text": "Northstar Fitness  /  Pricing Scenarios",
+        "action": null
+      },
+      {
+        "name": "p04_scope_label",
+        "type": "textbox",
+        "title": "",
+        "x": 28,
+        "y": 889,
+        "w": 1544,
+        "h": 33,
+        "roles": {},
+        "filters": [],
+        "text": "Saved Jan–Dec 2026 scenarios. Conditional parameter uncertainty excludes future shocks and transport uncertainty.",
+        "action": null
+      },
+      {
+        "name": "p04_stamp",
+        "type": "card",
+        "title": "Snapshot ID. Native acceptance is recorded in powerbi/NATIVE_VERIFICATION.md.",
+        "x": 28,
+        "y": 1026,
+        "w": 1544,
+        "h": 56,
+        "roles": {
+          "Values": [
+            "Snapshot Version"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "small_font": 9
+      },
+      {
+        "name": "p04_definitions",
+        "type": "textbox",
+        "title": "",
+        "x": 28,
+        "y": 925,
+        "w": 1544,
+        "h": 35,
+        "roles": {},
+        "filters": [],
+        "text": "Saved scenarios only. December revenue × 12 is seasonal exit run-rate. +£3 reaches unchanged Plus at 20 gyms. Teaching ratio covers only a uniformly affected group.",
+        "action": null
+      },
+      {
+        "name": "p04_disclaimer",
+        "type": "textbox",
+        "title": "",
+        "x": 28,
+        "y": 966,
+        "w": 1544,
+        "h": 62,
+        "roles": {},
+        "filters": [],
+        "text": "This project uses synthetic data and is inspired by the commercial economics of UK subscription fitness businesses.\nThis project uses synthetic data created for portfolio purposes. It is inspired by the economics of multi-site subscription fitness businesses and does not use confidential information from The Gym Group or any other operator.",
+        "action": null
+      },
+      {
+        "name": "p04_nav0",
+        "type": "actionButton",
+        "title": "Overview",
+        "x": 28,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p01"
+        ]
+      },
+      {
+        "name": "p04_nav1",
+        "type": "actionButton",
+        "title": "Estate Pricing",
+        "x": 248,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p02"
+        ]
+      },
+      {
+        "name": "p04_nav2",
+        "type": "actionButton",
+        "title": "Member Behaviour",
+        "x": 468,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p03"
+        ]
+      },
+      {
+        "name": "p04_nav3",
+        "type": "actionButton",
+        "title": "Scenarios",
+        "x": 688,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p04"
+        ]
+      },
+      {
+        "name": "p04_nav4",
+        "type": "actionButton",
+        "title": "Recommendations",
+        "x": 908,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p05"
+        ]
+      },
+      {
+        "name": "p04_nav5",
+        "type": "actionButton",
+        "title": "Experiment & Monitoring",
+        "x": 1128,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p06"
+        ]
+      },
+      {
+        "name": "p04_reset",
+        "type": "actionButton",
+        "title": "Reset page",
+        "x": 1360,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "Bookmark",
+          "reset_p04"
+        ]
+      }
+    ],
+    "filters": [],
+    "detail": false,
+    "experiment": false,
+    "height": 1095
+  },
+  {
+    "name": "p05",
+    "title": "Recommendations",
+    "scope": "Hypothetical 2026 conditional actions. Controlled testing precedes wider implementation. Policy variants are read-only.",
+    "visuals": [
+      {
+        "name": "p05_policy",
+        "type": "card",
+        "title": "Evidence status",
+        "x": 28,
+        "y": 184,
+        "w": 1544,
+        "h": 57,
+        "roles": {
+          "Values": [
+            "Evidence Status"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p05_k0",
+        "type": "card",
+        "title": "Base-policy conditional raises",
+        "x": 28.0,
+        "y": 250,
+        "w": 374.0,
+        "h": 91,
+        "roles": {
+          "Values": [
+            "Conditional Raise Sites"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p05_k1",
+        "type": "card",
+        "title": "Base raise-only portfolio uplift",
+        "x": 418.0,
+        "y": 250,
+        "w": 374.0,
+        "h": 91,
+        "roles": {
+          "Values": [
+            "Base Portfolio Increment"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p05_k2",
+        "type": "card",
+        "title": "Base December member difference",
+        "x": 808.0,
+        "y": 250,
+        "w": 374.0,
+        "h": 91,
+        "roles": {
+          "Values": [
+            "Base Portfolio Member Difference"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p05_k3",
+        "type": "card",
+        "title": "Base full-policy lower range",
+        "x": 1198.0,
+        "y": 250,
+        "w": 374.0,
+        "h": 91,
+        "roles": {
+          "Values": [
+            "Base Portfolio Increment lower"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p05_recommendations",
+        "type": "tableEx",
+        "title": "80 saved site actions, provisional tests and failed gates",
+        "x": 28,
+        "y": 371,
+        "w": 1544,
+        "h": 279,
+        "roles": {
+          "Values": [
+            [
+              "DimGym",
+              "gym_id"
+            ],
+            [
+              "DimGym",
+              "city"
+            ],
+            "Saved Recommendation",
+            "Standard Headline December",
+            "Recommended Standard Price",
+            "Provisional Test Increment",
+            "Provisional Test Price",
+            "£1 plausible",
+            "£1 qualified",
+            "£1 failed gates",
+            "£2 plausible",
+            "£2 qualified",
+            "£2 failed gates",
+            "Recommendation Explanation"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p05_sensitivity",
+        "type": "tableEx",
+        "title": "Five read-only policy variants. Base actions above remain unchanged.",
+        "x": 28,
+        "y": 677,
+        "w": 1040,
+        "h": 190,
+        "roles": {
+          "Values": [
+            [
+              "DimPolicy",
+              "label"
+            ],
+            "Saved Policy Raise £1 Sites",
+            "Saved Policy Raise £2 Sites",
+            "Saved Policy Test Sites",
+            "Portfolio Increment",
+            "Saved Policy Action"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p05_policy_scope",
+        "type": "card",
+        "title": "Portfolio range scope",
+        "x": 1092,
+        "y": 677,
+        "w": 480,
+        "h": 190,
+        "roles": {
+          "Values": [
+            "Portfolio Uncertainty Scope"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p05_shared0",
+        "type": "slicer",
+        "title": "Region",
+        "x": 28,
+        "y": 114,
+        "w": 370,
+        "h": 58,
+        "roles": {
+          "Values": [
+            [
+              "DimGym",
+              "region"
+            ]
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "default": null,
+        "sync": true
+      },
+      {
+        "name": "p05_shared1",
+        "type": "slicer",
+        "title": "Location type",
+        "x": 418,
+        "y": 114,
+        "w": 370,
+        "h": 58,
+        "roles": {
+          "Values": [
+            [
+              "DimGym",
+              "location_type"
+            ]
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "default": null,
+        "sync": true
+      },
+      {
+        "name": "p05_shared2",
+        "type": "slicer",
+        "title": "Headroom segment",
+        "x": 808,
+        "y": 114,
+        "w": 370,
+        "h": 58,
+        "roles": {
+          "Values": [
+            [
+              "DimGym",
+              "segment"
+            ]
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "default": null,
+        "sync": true
+      },
+      {
+        "name": "p05_shared3",
+        "type": "slicer",
+        "title": "Gym",
+        "x": 1198,
+        "y": 114,
+        "w": 370,
+        "h": 58,
+        "roles": {
+          "Values": [
+            [
+              "DimGym",
+              "gym_id"
+            ]
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "default": null,
+        "sync": true
+      },
+      {
+        "name": "p05_heading",
+        "type": "textbox",
+        "title": "",
+        "x": 28,
+        "y": 47,
+        "w": 1220,
+        "h": 51,
+        "roles": {},
+        "filters": [],
+        "text": "Northstar Fitness  /  Recommendations",
+        "action": null
+      },
+      {
+        "name": "p05_scope_label",
+        "type": "textbox",
+        "title": "",
+        "x": 28,
+        "y": 889,
+        "w": 1544,
+        "h": 33,
+        "roles": {},
+        "filters": [],
+        "text": "Hypothetical 2026 conditional actions. Controlled testing precedes wider implementation. Policy variants are read-only.",
+        "action": null
+      },
+      {
+        "name": "p05_stamp",
+        "type": "card",
+        "title": "Snapshot ID. Native acceptance is recorded in powerbi/NATIVE_VERIFICATION.md.",
+        "x": 28,
+        "y": 1026,
+        "w": 1544,
+        "h": 56,
+        "roles": {
+          "Values": [
+            "Snapshot Version"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "small_font": 9
+      },
+      {
+        "name": "p05_definitions",
+        "type": "textbox",
+        "title": "",
+        "x": 28,
+        "y": 925,
+        "w": 1544,
+        "h": 35,
+        "roles": {},
+        "filters": [],
+        "text": "Phase 7 gates: downside member loss ≤5%, positive revenue/lower bound/non-zero sensitivities. These are policy assumptions; TEST FIRST gains are excluded from portfolios.",
+        "action": null
+      },
+      {
+        "name": "p05_disclaimer",
+        "type": "textbox",
+        "title": "",
+        "x": 28,
+        "y": 966,
+        "w": 1544,
+        "h": 62,
+        "roles": {},
+        "filters": [],
+        "text": "This project uses synthetic data and is inspired by the commercial economics of UK subscription fitness businesses.\nThis project uses synthetic data created for portfolio purposes. It is inspired by the economics of multi-site subscription fitness businesses and does not use confidential information from The Gym Group or any other operator.",
+        "action": null
+      },
+      {
+        "name": "p05_nav0",
+        "type": "actionButton",
+        "title": "Overview",
+        "x": 28,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p01"
+        ]
+      },
+      {
+        "name": "p05_nav1",
+        "type": "actionButton",
+        "title": "Estate Pricing",
+        "x": 248,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p02"
+        ]
+      },
+      {
+        "name": "p05_nav2",
+        "type": "actionButton",
+        "title": "Member Behaviour",
+        "x": 468,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p03"
+        ]
+      },
+      {
+        "name": "p05_nav3",
+        "type": "actionButton",
+        "title": "Scenarios",
+        "x": 688,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p04"
+        ]
+      },
+      {
+        "name": "p05_nav4",
+        "type": "actionButton",
+        "title": "Recommendations",
+        "x": 908,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p05"
+        ]
+      },
+      {
+        "name": "p05_nav5",
+        "type": "actionButton",
+        "title": "Experiment & Monitoring",
+        "x": 1128,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p06"
+        ]
+      },
+      {
+        "name": "p05_reset",
+        "type": "actionButton",
+        "title": "Reset page",
+        "x": 1360,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "Bookmark",
+          "reset_p05"
+        ]
+      }
+    ],
+    "filters": [
+      {
+        "name": "p05_case",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DimCase"
+              }
+            },
+            "Property": "case"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User",
+        "isHiddenInViewMode": true,
+        "isLockedInViewMode": true,
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "s",
+              "Entity": "DimCase",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "s"
+                          }
+                        },
+                        "Property": "case"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'Base'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "detail": false,
+    "experiment": false,
+    "height": 1095
+  },
+  {
+    "name": "p06",
+    "title": "Experiment & Monitoring",
+    "scope": "Illustrative £1 experiment. Five first-repricing pairs primary; two repeat pairs exploratory. Simulations are not new evidence.",
+    "visuals": [
+      {
+        "name": "p06_simulation",
+        "type": "slicer",
+        "title": "Simulation",
+        "x": 28,
+        "y": 114,
+        "w": 295,
+        "h": 58,
+        "roles": {
+          "Values": [
+            [
+              "DimSimulation",
+              "simulation"
+            ]
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "default": [
+          "Main"
+        ],
+        "sync": false
+      },
+      {
+        "name": "p06_checkpoint",
+        "type": "slicer",
+        "title": "Assessment",
+        "x": 345,
+        "y": 114,
+        "w": 295,
+        "h": 58,
+        "roles": {
+          "Values": [
+            [
+              "DimCheckpoint",
+              "checkpoint_months"
+            ]
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "default": [
+          6
+        ],
+        "sync": false
+      },
+      {
+        "name": "p06_population",
+        "type": "slicer",
+        "title": "Saved population",
+        "x": 662,
+        "y": 114,
+        "w": 410,
+        "h": 58,
+        "roles": {
+          "Values": [
+            [
+              "DimPopulation",
+              "population"
+            ]
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "default": [
+          "First repricing"
+        ],
+        "sync": false
+      },
+      {
+        "name": "p06_window",
+        "type": "card",
+        "title": "Comparison window",
+        "x": 1094,
+        "y": 114,
+        "w": 478,
+        "h": 58,
+        "roles": {
+          "Values": [
+            "Experiment Window"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p06_k0",
+        "type": "card",
+        "title": "Saved decision",
+        "x": 28.0,
+        "y": 188,
+        "w": 296.0,
+        "h": 91,
+        "roles": {
+          "Values": [
+            "Experiment Saved Decision"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p06_k1",
+        "type": "card",
+        "title": "Controlled revenue effect",
+        "x": 340.0,
+        "y": 188,
+        "w": 296.0,
+        "h": 91,
+        "roles": {
+          "Values": [
+            "Experiment Revenue Effect"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p06_k2",
+        "type": "card",
+        "title": "Revenue lower bound",
+        "x": 652.0,
+        "y": 188,
+        "w": 296.0,
+        "h": 91,
+        "roles": {
+          "Values": [
+            "Experiment Revenue Effect lower"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p06_k3",
+        "type": "card",
+        "title": "One-sided p-value",
+        "x": 964.0,
+        "y": 188,
+        "w": 296.0,
+        "h": 91,
+        "roles": {
+          "Values": [
+            "Experiment One-sided p"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p06_k4",
+        "type": "card",
+        "title": "Complete pairs",
+        "x": 1276.0,
+        "y": 188,
+        "w": 296.0,
+        "h": 91,
+        "roles": {
+          "Values": [
+            "Experiment Complete Pairs"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p06_revenue",
+        "type": "lineChart",
+        "title": "Treatment/control revenue. Notice Jan; billing Feb 2026.",
+        "x": 28,
+        "y": 307,
+        "w": 752,
+        "h": 190,
+        "roles": {
+          "Category": [
+            [
+              "DimExperimentMonth",
+              "year_month"
+            ]
+          ],
+          "Series": [
+            [
+              "DimAssignment",
+              "assignment"
+            ]
+          ],
+          "Y": [
+            "Experiment Profile Revenue"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p06_members",
+        "type": "lineChart",
+        "title": "Treatment/control closing members",
+        "x": 800,
+        "y": 307,
+        "w": 772,
+        "h": 190,
+        "roles": {
+          "Category": [
+            [
+              "DimExperimentMonth",
+              "year_month"
+            ]
+          ],
+          "Series": [
+            [
+              "DimAssignment",
+              "assignment"
+            ]
+          ],
+          "Y": [
+            "Experiment Profile Closing"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p06_churn_profile",
+        "type": "lineChart",
+        "title": "Monthly incumbent Standard churn",
+        "x": 28,
+        "y": 525,
+        "w": 752,
+        "h": 190,
+        "roles": {
+          "Category": [
+            [
+              "DimExperimentMonth",
+              "year_month"
+            ]
+          ],
+          "Series": [
+            [
+              "DimAssignment",
+              "assignment"
+            ]
+          ],
+          "Y": [
+            "Experiment Profile Churn"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p06_downgrade_profile",
+        "type": "lineChart",
+        "title": "Monthly incumbent Standard downgrades",
+        "x": 800,
+        "y": 525,
+        "w": 772,
+        "h": 190,
+        "roles": {
+          "Category": [
+            [
+              "DimExperimentMonth",
+              "year_month"
+            ]
+          ],
+          "Series": [
+            [
+              "DimAssignment",
+              "assignment"
+            ]
+          ],
+          "Y": [
+            "Experiment Profile Downgrade Rate"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p06_pairs",
+        "type": "tableEx",
+        "title": "Pair revenue and monthly churn effects (saved)",
+        "x": 28,
+        "y": 744,
+        "w": 590,
+        "h": 180,
+        "roles": {
+          "Values": [
+            [
+              "FactExperimentPair",
+              "pair_id"
+            ],
+            "Experiment Pair Revenue Effect",
+            [
+              "FactExperimentPair",
+              "revenue_difference"
+            ],
+            [
+              "FactExperimentPair",
+              "incumbent_churn_change_pp"
+            ]
+          ]
+        },
+        "filters": [
+          {
+            "name": "pair_population",
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "CommercialMeasures"
+                  }
+                },
+                "Property": "Experiment Pair In Population"
+              }
+            },
+            "type": "Advanced",
+            "howCreated": "User",
+            "isHiddenInViewMode": true,
+            "isLockedInViewMode": true,
+            "filter": {
+              "Version": 2,
+              "From": [
+                {
+                  "Name": "m",
+                  "Entity": "CommercialMeasures",
+                  "Type": 0
+                }
+              ],
+              "Where": [
+                {
+                  "Condition": {
+                    "Comparison": {
+                      "ComparisonKind": 0,
+                      "Left": {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "m"
+                            }
+                          },
+                          "Property": "Experiment Pair In Population"
+                        }
+                      },
+                      "Right": {
+                        "Literal": {
+                          "Value": "1L"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "name": "p06_pairs_current",
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "CommercialMeasures"
+                  }
+                },
+                "Property": "Experiment Evidence Current"
+              }
+            },
+            "type": "Advanced",
+            "howCreated": "User",
+            "isHiddenInViewMode": true,
+            "isLockedInViewMode": true,
+            "filter": {
+              "Version": 2,
+              "From": [
+                {
+                  "Name": "m",
+                  "Entity": "CommercialMeasures",
+                  "Type": 0
+                }
+              ],
+              "Where": [
+                {
+                  "Condition": {
+                    "Comparison": {
+                      "ComparisonKind": 0,
+                      "Left": {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "m"
+                            }
+                          },
+                          "Property": "Experiment Evidence Current"
+                        }
+                      },
+                      "Right": {
+                        "Literal": {
+                          "Value": "true"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p06_harms",
+        "type": "tableEx",
+        "title": "95% harm upper bounds; monthly changes in pp",
+        "x": 640,
+        "y": 744,
+        "w": 540,
+        "h": 180,
+        "roles": {
+          "Values": [
+            [
+              "FactExperimentGuardrail",
+              "label"
+            ],
+            "Guardrail Point Display",
+            "Guardrail Upper Display",
+            "Guardrail Tolerance Display",
+            "Guardrail Upper Pass"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p06_power",
+        "type": "lineChart",
+        "title": "Planning power: five pairs",
+        "x": 1202,
+        "y": 744,
+        "w": 370,
+        "h": 180,
+        "roles": {
+          "Category": [
+            [
+              "FactPower",
+              "effect_assumption"
+            ]
+          ],
+          "Y": [
+            "Planning Power"
+          ]
+        },
+        "filters": [
+          {
+            "name": "p06_powerdesign",
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "FactPower"
+                  }
+                },
+                "Property": "design"
+              }
+            },
+            "type": "Categorical",
+            "howCreated": "User",
+            "isHiddenInViewMode": false,
+            "isLockedInViewMode": false,
+            "filter": {
+              "Version": 2,
+              "From": [
+                {
+                  "Name": "s",
+                  "Entity": "FactPower",
+                  "Type": 0
+                }
+              ],
+              "Where": [
+                {
+                  "Condition": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "s"
+                              }
+                            },
+                            "Property": "design"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'5 first-repricing pairs'"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "name": "p06_powermethod",
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "FactPower"
+                  }
+                },
+                "Property": "method"
+              }
+            },
+            "type": "Categorical",
+            "howCreated": "User",
+            "isHiddenInViewMode": false,
+            "isLockedInViewMode": false,
+            "filter": {
+              "Version": 2,
+              "From": [
+                {
+                  "Name": "s",
+                  "Entity": "FactPower",
+                  "Type": 0
+                }
+              ],
+              "Where": [
+                {
+                  "Condition": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "s"
+                              }
+                            },
+                            "Property": "method"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'Exact assignment Monte Carlo'"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p06_monitoring",
+        "type": "tableEx",
+        "title": "Checkpoint monitoring and required management responses",
+        "x": 28,
+        "y": 950,
+        "w": 990,
+        "h": 216,
+        "roles": {
+          "Values": [
+            [
+              "FactExperimentMonitoring",
+              "gym_id"
+            ],
+            [
+              "FactExperimentMonitoring",
+              "assignment"
+            ],
+            [
+              "FactExperimentMonitoring",
+              "population_decision"
+            ],
+            [
+              "FactExperimentMonitoring",
+              "capacity_trigger"
+            ],
+            [
+              "FactExperimentMonitoring",
+              "paired_complaints_change"
+            ],
+            [
+              "FactExperimentMonitoring",
+              "required_response"
+            ]
+          ]
+        },
+        "filters": [
+          {
+            "name": "monitor_population",
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "CommercialMeasures"
+                  }
+                },
+                "Property": "Experiment Monitoring In Population"
+              }
+            },
+            "type": "Advanced",
+            "howCreated": "User",
+            "isHiddenInViewMode": true,
+            "isLockedInViewMode": true,
+            "filter": {
+              "Version": 2,
+              "From": [
+                {
+                  "Name": "m",
+                  "Entity": "CommercialMeasures",
+                  "Type": 0
+                }
+              ],
+              "Where": [
+                {
+                  "Condition": {
+                    "Comparison": {
+                      "ComparisonKind": 0,
+                      "Left": {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "m"
+                            }
+                          },
+                          "Property": "Experiment Monitoring In Population"
+                        }
+                      },
+                      "Right": {
+                        "Literal": {
+                          "Value": "1L"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "name": "p06_monitoring_current",
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "CommercialMeasures"
+                  }
+                },
+                "Property": "Experiment Evidence Current"
+              }
+            },
+            "type": "Advanced",
+            "howCreated": "User",
+            "isHiddenInViewMode": true,
+            "isLockedInViewMode": true,
+            "filter": {
+              "Version": 2,
+              "From": [
+                {
+                  "Name": "m",
+                  "Entity": "CommercialMeasures",
+                  "Type": 0
+                }
+              ],
+              "Where": [
+                {
+                  "Condition": {
+                    "Comparison": {
+                      "ComparisonKind": 0,
+                      "Left": {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "m"
+                            }
+                          },
+                          "Property": "Experiment Evidence Current"
+                        }
+                      },
+                      "Right": {
+                        "Literal": {
+                          "Value": "true"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p06_assignment",
+        "type": "tableEx",
+        "title": "Seven pairs and reserves NF023/NF057",
+        "x": 1040,
+        "y": 950,
+        "w": 532,
+        "h": 216,
+        "roles": {
+          "Values": [
+            [
+              "FactExperimentDesign",
+              "gym_id"
+            ],
+            [
+              "FactExperimentDesign",
+              "pair_id"
+            ],
+            [
+              "FactExperimentDesign",
+              "assignment"
+            ],
+            [
+              "FactExperimentDesign",
+              "population"
+            ],
+            [
+              "FactExperimentDesign",
+              "disposition"
+            ]
+          ]
+        },
+        "filters": [
+          {
+            "name": "p06_eligible",
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "FactExperimentDesign"
+                  }
+                },
+                "Property": "eligible"
+              }
+            },
+            "type": "Categorical",
+            "howCreated": "User",
+            "isHiddenInViewMode": false,
+            "isLockedInViewMode": false,
+            "filter": {
+              "Version": 2,
+              "From": [
+                {
+                  "Name": "s",
+                  "Entity": "FactExperimentDesign",
+                  "Type": 0
+                }
+              ],
+              "Where": [
+                {
+                  "Condition": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "s"
+                              }
+                            },
+                            "Property": "eligible"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p06_heading",
+        "type": "textbox",
+        "title": "",
+        "x": 28,
+        "y": 47,
+        "w": 1220,
+        "h": 51,
+        "roles": {},
+        "filters": [],
+        "text": "Northstar Fitness  /  Experiment & Monitoring",
+        "action": null
+      },
+      {
+        "name": "p06_scope_label",
+        "type": "textbox",
+        "title": "",
+        "x": 28,
+        "y": 1180,
+        "w": 1544,
+        "h": 33,
+        "roles": {},
+        "filters": [],
+        "text": "Illustrative £1 experiment. Five first-repricing pairs primary; two repeat pairs exploratory. Simulations are not new evidence.",
+        "action": null
+      },
+      {
+        "name": "p06_stamp",
+        "type": "card",
+        "title": "Snapshot ID. Native acceptance is recorded in powerbi/NATIVE_VERIFICATION.md.",
+        "x": 28,
+        "y": 1317,
+        "w": 1544,
+        "h": 56,
+        "roles": {
+          "Values": [
+            "Snapshot Version"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "small_font": 9
+      },
+      {
+        "name": "p06_definitions",
+        "type": "textbox",
+        "title": "",
+        "x": 28,
+        "y": 1216,
+        "w": 1544,
+        "h": 35,
+        "roles": {},
+        "filters": [],
+        "text": "Harm upper bounds: members 3%, Standard acquisition 10%, monthly churn/downgrades +0.25 pp. Primary minimum one-sided p=3.125%; small sample. Repeat intervals unavailable.",
+        "action": null
+      },
+      {
+        "name": "p06_disclaimer",
+        "type": "textbox",
+        "title": "",
+        "x": 28,
+        "y": 1257,
+        "w": 1544,
+        "h": 62,
+        "roles": {},
+        "filters": [],
+        "text": "This project uses synthetic data and is inspired by the commercial economics of UK subscription fitness businesses.\nThis project uses synthetic data created for portfolio purposes. It is inspired by the economics of multi-site subscription fitness businesses and does not use confidential information from The Gym Group or any other operator.",
+        "action": null
+      },
+      {
+        "name": "p06_nav0",
+        "type": "actionButton",
+        "title": "Overview",
+        "x": 28,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p01"
+        ]
+      },
+      {
+        "name": "p06_nav1",
+        "type": "actionButton",
+        "title": "Estate Pricing",
+        "x": 248,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p02"
+        ]
+      },
+      {
+        "name": "p06_nav2",
+        "type": "actionButton",
+        "title": "Member Behaviour",
+        "x": 468,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p03"
+        ]
+      },
+      {
+        "name": "p06_nav3",
+        "type": "actionButton",
+        "title": "Scenarios",
+        "x": 688,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p04"
+        ]
+      },
+      {
+        "name": "p06_nav4",
+        "type": "actionButton",
+        "title": "Recommendations",
+        "x": 908,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p05"
+        ]
+      },
+      {
+        "name": "p06_nav5",
+        "type": "actionButton",
+        "title": "Experiment & Monitoring",
+        "x": 1128,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p06"
+        ]
+      },
+      {
+        "name": "p06_reset",
+        "type": "actionButton",
+        "title": "Reset page",
+        "x": 1360,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "Bookmark",
+          "reset_p06"
+        ]
+      }
+    ],
+    "filters": [],
+    "detail": false,
+    "experiment": true,
+    "height": 1386
+  },
+  {
+    "name": "p07",
+    "title": "Gym Detail",
+    "scope": "Selected gym: 2025 trading, Dec 2025 snapshot and saved £1/£2 qualification evidence.",
+    "visuals": [
+      {
+        "name": "p07_k0",
+        "type": "card",
+        "title": "Selected site revenue",
+        "x": 28.0,
+        "y": 188,
+        "w": 296.0,
+        "h": 91,
+        "roles": {
+          "Values": [
+            "Net Revenue"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p07_k1",
+        "type": "card",
+        "title": "Closing members",
+        "x": 340.0,
+        "y": 188,
+        "w": 296.0,
+        "h": 91,
+        "roles": {
+          "Values": [
+            "Closing Members"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p07_k2",
+        "type": "card",
+        "title": "December competitor gap",
+        "x": 652.0,
+        "y": 188,
+        "w": 296.0,
+        "h": 91,
+        "roles": {
+          "Values": [
+            "Competitor Gap December"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p07_k3",
+        "type": "card",
+        "title": "Saved score",
+        "x": 964.0,
+        "y": 188,
+        "w": 296.0,
+        "h": 91,
+        "roles": {
+          "Values": [
+            "Headroom Score"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p07_k4",
+        "type": "card",
+        "title": "Saved action",
+        "x": 1276.0,
+        "y": 188,
+        "w": 296.0,
+        "h": 91,
+        "roles": {
+          "Values": [
+            "Saved Recommendation"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p07_trading",
+        "type": "lineChart",
+        "title": "Monthly net revenue at selected gym",
+        "x": 28,
+        "y": 305,
+        "w": 752,
+        "h": 254,
+        "roles": {
+          "Category": [
+            [
+              "DimHistoryMonth",
+              "month_name"
+            ]
+          ],
+          "Y": [
+            "Net Revenue",
+            "Net Revenue Prior Year"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p07_position",
+        "type": "tableEx",
+        "title": "December pricing and relative evidence",
+        "x": 804,
+        "y": 305,
+        "w": 768,
+        "h": 254,
+        "roles": {
+          "Values": [
+            [
+              "DimMetricPanel",
+              "metric"
+            ],
+            "Metric Panel Saved Value"
+          ]
+        },
+        "filters": [
+          {
+            "name": "p07_position_panel",
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "DimMetricPanel"
+                  }
+                },
+                "Property": "panel"
+              }
+            },
+            "type": "Categorical",
+            "howCreated": "User",
+            "isHiddenInViewMode": true,
+            "isLockedInViewMode": true,
+            "filter": {
+              "Version": 2,
+              "From": [
+                {
+                  "Name": "s",
+                  "Entity": "DimMetricPanel",
+                  "Type": 0
+                }
+              ],
+              "Where": [
+                {
+                  "Condition": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "s"
+                              }
+                            },
+                            "Property": "panel"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'Detail Position'"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p07_gates1",
+        "type": "tableEx",
+        "title": "£1 qualification evidence (Phase 7 policy)",
+        "x": 28,
+        "y": 589,
+        "w": 752,
+        "h": 200,
+        "roles": {
+          "Values": [
+            [
+              "DimMetricPanel",
+              "metric"
+            ],
+            "Metric Panel Saved Value"
+          ]
+        },
+        "filters": [
+          {
+            "name": "p07_gates1_panel",
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "DimMetricPanel"
+                  }
+                },
+                "Property": "panel"
+              }
+            },
+            "type": "Categorical",
+            "howCreated": "User",
+            "isHiddenInViewMode": true,
+            "isLockedInViewMode": true,
+            "filter": {
+              "Version": 2,
+              "From": [
+                {
+                  "Name": "s",
+                  "Entity": "DimMetricPanel",
+                  "Type": 0
+                }
+              ],
+              "Where": [
+                {
+                  "Condition": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "s"
+                              }
+                            },
+                            "Property": "panel"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'Detail Qualification £1'"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p07_gates2",
+        "type": "tableEx",
+        "title": "£2 qualification evidence (Phase 7 policy)",
+        "x": 800,
+        "y": 589,
+        "w": 772,
+        "h": 200,
+        "roles": {
+          "Values": [
+            [
+              "DimMetricPanel",
+              "metric"
+            ],
+            "Metric Panel Saved Value"
+          ]
+        },
+        "filters": [
+          {
+            "name": "p07_gates2_panel",
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "DimMetricPanel"
+                  }
+                },
+                "Property": "panel"
+              }
+            },
+            "type": "Categorical",
+            "howCreated": "User",
+            "isHiddenInViewMode": true,
+            "isLockedInViewMode": true,
+            "filter": {
+              "Version": 2,
+              "From": [
+                {
+                  "Name": "s",
+                  "Entity": "DimMetricPanel",
+                  "Type": 0
+                }
+              ],
+              "Where": [
+                {
+                  "Condition": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "s"
+                              }
+                            },
+                            "Property": "panel"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'Detail Qualification £2'"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p07_rationale",
+        "type": "tableEx",
+        "title": "Commercial rationale",
+        "x": 28,
+        "y": 810,
+        "w": 1544,
+        "h": 150,
+        "roles": {
+          "Values": [
+            "Recommendation Explanation"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null
+      },
+      {
+        "name": "p07_shared0",
+        "type": "slicer",
+        "title": "Region",
+        "x": 28,
+        "y": 114,
+        "w": 370,
+        "h": 58,
+        "roles": {
+          "Values": [
+            [
+              "DimGym",
+              "region"
+            ]
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "default": null,
+        "sync": false
+      },
+      {
+        "name": "p07_shared1",
+        "type": "slicer",
+        "title": "Location type",
+        "x": 418,
+        "y": 114,
+        "w": 370,
+        "h": 58,
+        "roles": {
+          "Values": [
+            [
+              "DimGym",
+              "location_type"
+            ]
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "default": null,
+        "sync": false
+      },
+      {
+        "name": "p07_shared2",
+        "type": "slicer",
+        "title": "Headroom segment",
+        "x": 808,
+        "y": 114,
+        "w": 370,
+        "h": 58,
+        "roles": {
+          "Values": [
+            [
+              "DimGym",
+              "segment"
+            ]
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "default": null,
+        "sync": false
+      },
+      {
+        "name": "p07_shared3",
+        "type": "slicer",
+        "title": "Gym",
+        "x": 1198,
+        "y": 114,
+        "w": 370,
+        "h": 58,
+        "roles": {
+          "Values": [
+            [
+              "DimGym",
+              "gym_id"
+            ]
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "default": null,
+        "sync": false
+      },
+      {
+        "name": "p07_year",
+        "type": "slicer",
+        "title": "Reporting year",
+        "x": 1280,
+        "y": 52,
+        "w": 290,
+        "h": 58,
+        "roles": {
+          "Values": [
+            [
+              "DimHistoryMonth",
+              "year"
+            ]
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "default": [
+          2025
+        ],
+        "sync": false
+      },
+      {
+        "name": "p07_months",
+        "type": "slicer",
+        "title": "Reporting months",
+        "x": 990,
+        "y": 52,
+        "w": 270,
+        "h": 58,
+        "roles": {
+          "Values": [
+            [
+              "DimHistoryMonth",
+              "month_name"
+            ]
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "default": null,
+        "sync": false
+      },
+      {
+        "name": "p07_heading",
+        "type": "textbox",
+        "title": "",
+        "x": 28,
+        "y": 47,
+        "w": 940,
+        "h": 51,
+        "roles": {},
+        "filters": [],
+        "text": "Northstar Fitness  /  Gym Detail",
+        "action": null
+      },
+      {
+        "name": "p07_scope_label",
+        "type": "card",
+        "title": "",
+        "x": 28,
+        "y": 970,
+        "w": 1544,
+        "h": 33,
+        "roles": {
+          "Values": [
+            "Historical Reporting Note"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "small_font": 9
+      },
+      {
+        "name": "p07_stamp",
+        "type": "card",
+        "title": "Snapshot ID. Native acceptance is recorded in powerbi/NATIVE_VERIFICATION.md.",
+        "x": 28,
+        "y": 1107,
+        "w": 1544,
+        "h": 56,
+        "roles": {
+          "Values": [
+            "Snapshot Version"
+          ]
+        },
+        "filters": [],
+        "text": null,
+        "action": null,
+        "small_font": 9
+      },
+      {
+        "name": "p07_definitions",
+        "type": "textbox",
+        "title": "",
+        "x": 28,
+        "y": 1006,
+        "w": 1544,
+        "h": 35,
+        "roles": {},
+        "filters": [],
+        "text": "Revenue excludes assumed 20% VAT. Gross recurring prices are separate. Revenue is not profit. Monthly churn uses opening-base exposure; retention is not annual.",
+        "action": null
+      },
+      {
+        "name": "p07_disclaimer",
+        "type": "textbox",
+        "title": "",
+        "x": 28,
+        "y": 1047,
+        "w": 1544,
+        "h": 62,
+        "roles": {},
+        "filters": [],
+        "text": "This project uses synthetic data and is inspired by the commercial economics of UK subscription fitness businesses.\nThis project uses synthetic data created for portfolio purposes. It is inspired by the economics of multi-site subscription fitness businesses and does not use confidential information from The Gym Group or any other operator.",
+        "action": null
+      },
+      {
+        "name": "p07_nav1",
+        "type": "actionButton",
+        "title": "Estate Pricing",
+        "x": 248,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p02"
+        ]
+      },
+      {
+        "name": "p07_nav2",
+        "type": "actionButton",
+        "title": "Member Behaviour",
+        "x": 468,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p03"
+        ]
+      },
+      {
+        "name": "p07_nav3",
+        "type": "actionButton",
+        "title": "Scenarios",
+        "x": 688,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p04"
+        ]
+      },
+      {
+        "name": "p07_nav4",
+        "type": "actionButton",
+        "title": "Recommendations",
+        "x": 908,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p05"
+        ]
+      },
+      {
+        "name": "p07_nav5",
+        "type": "actionButton",
+        "title": "Experiment & Monitoring",
+        "x": 1128,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "PageNavigation",
+          "p06"
+        ]
+      },
+      {
+        "name": "p07_reset",
+        "type": "actionButton",
+        "title": "Reset page",
+        "x": 1360,
+        "y": 7,
+        "w": 210,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "Bookmark",
+          "reset_p07"
+        ]
+      },
+      {
+        "name": "p07_back",
+        "type": "actionButton",
+        "title": "Back",
+        "x": 28,
+        "y": 7,
+        "w": 160,
+        "h": 30,
+        "roles": {},
+        "filters": [],
+        "text": null,
+        "action": [
+          "Back",
+          null
+        ]
+      }
+    ],
+    "filters": [
+      {
+        "name": "gym_drill",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DimGym"
+              }
+            },
+            "Property": "gym_id"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough",
+        "isHiddenInViewMode": false,
+        "isLockedInViewMode": false
+      }
+    ],
+    "detail": true,
+    "experiment": false,
+    "height": 1176
+  }
+]

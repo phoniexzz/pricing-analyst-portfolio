@@ -1,0 +1,58 @@
+[
+  {
+    "page": "Executive Overview",
+    "file": "images/powerbi_p01_executive_overview.png",
+    "native_screenshot": false,
+    "source": "Validated saved reporting snapshot",
+    "preview_scope": "Default report selection",
+    "table_preview": "Leading rows/columns shown; native tables retain scrolling and all fields"
+  },
+  {
+    "page": "Estate Pricing",
+    "file": "images/powerbi_p02_estate_pricing.png",
+    "native_screenshot": false,
+    "source": "Validated saved reporting snapshot",
+    "preview_scope": "Default report selection",
+    "table_preview": "Leading rows/columns shown; native tables retain scrolling and all fields"
+  },
+  {
+    "page": "Customer & Member Behaviour",
+    "file": "images/powerbi_p03_customer_member_behaviour.png",
+    "native_screenshot": false,
+    "source": "Validated saved reporting snapshot",
+    "preview_scope": "Default report selection",
+    "table_preview": "Leading rows/columns shown; native tables retain scrolling and all fields"
+  },
+  {
+    "page": "Pricing Scenarios",
+    "file": "images/powerbi_p04_pricing_scenarios.png",
+    "native_screenshot": false,
+    "source": "Validated saved reporting snapshot",
+    "preview_scope": "Default report selection",
+    "table_preview": "Leading rows/columns shown; native tables retain scrolling and all fields"
+  },
+  {
+    "page": "Recommendations",
+    "file": "images/powerbi_p05_recommendations.png",
+    "native_screenshot": false,
+    "source": "Validated saved reporting snapshot",
+    "preview_scope": "Default report selection",
+    "table_preview": "Leading rows/columns shown; native tables retain scrolling and all fields"
+  },
+  {
+    "page": "Experiment & Monitoring",
+    "file": "images/powerbi_p06_experiment_monitoring.png",
+    "native_screenshot": false,
+    "source": "Validated saved reporting snapshot",
+    "preview_scope": "Default report selection",
+    "table_preview": "Leading rows/columns shown; native tables retain scrolling and all fields"
+  },
+  {
+    "page": "Gym Detail",
+    "file": "images/powerbi_p07_gym_detail.png",
+    "native_screenshot": false,
+    "source": "Validated saved reporting snapshot",
+    "preview_scope": "Default report selection; hidden detail uses NF049",
+    "table_preview": "Leading rows/columns shown; native tables retain scrolling and all fields"
+  }
+]

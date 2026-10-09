@@ -1,0 +1,5 @@
+checkpoint_months,sort_order,label
+1,1,30-day approximation
+3,2,90-day approximation
+6,3,Six-month primary
+12,4,Twelve-month sustained

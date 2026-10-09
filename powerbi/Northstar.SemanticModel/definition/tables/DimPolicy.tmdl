@@ -1,0 +1,34 @@
+table DimPolicy
+	lineageTag: 3a7c5b43-d22f-5c83-9b8a-ea174626fa57
+
+	column variant
+		dataType: string
+		lineageTag: 2b3be0ad-1d2f-57c2-a381-3173e10d62e7
+		summarizeBy: none
+		sourceColumn: variant
+
+	column sort_order
+		dataType: int64
+		formatString: #,##0
+		lineageTag: 37263660-8651-540c-a6a1-8a159bd6a957
+		summarizeBy: none
+		sourceColumn: sort_order
+
+	column label
+		dataType: string
+		lineageTag: c8e92a24-3d61-54f3-9d5f-a38a6d9bb76e
+		summarizeBy: none
+		sourceColumn: label
+		sortByColumn: sort_order
+
+	partition DimPolicy = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(SourceRoot & "/DimPolicy.csv"), [Delimiter=",", Columns=3, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Nulls = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				    Typed = Table.TransformColumnTypes(Nulls, {{"variant", type text}, {"sort_order", Int64.Type}, {"label", type text}}, "en-GB")
+				in
+				    Typed
+

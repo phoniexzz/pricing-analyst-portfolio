@@ -1,0 +1,164 @@
+{
+  "status": "Phase 8 complete",
+  "checks_passed": 349761,
+  "independent_cells_compared": 69088,
+  "max_difference": 4.966000000106163e-09,
+  "formula_count": 43304,
+  "formula_graph_sha256": "a8b10b94574a6c8ba76b9f864a1fa0125aa53d81c568f9db1f24a0e122bdfa46",
+  "prior_sheets_preserved": 27,
+  "final_sheet_count": 31,
+  "native_new_charts": 4,
+  "prior_evidence_unchanged": true,
+  "completion_evidence": {
+    "recalculation": {
+      "savedWorkbookRecalculated": true,
+      "formula_graph_sha256": "a8b10b94574a6c8ba76b9f864a1fa0125aa53d81c568f9db1f24a0e122bdfa46",
+      "engine": "Artifact Tool recalculates actual saved formula graph with bounded unchanged source caches; native Excel was not automated",
+      "independent_formula_cells": 86609,
+      "max_difference": 0,
+      "tests": [
+        "Saved guardrail changes decisions; zero is valid",
+        "Missing policy suppresses conclusions",
+        "Assignment/simulation input edit hides intervals and decisions",
+        "Outcome edit recalculates comparisons and suppresses captured inference",
+        "Authoritative scenario selector independent and restored",
+        "Stale Phase 6 evidence suppresses authoritative experiment conclusions"
+      ],
+      "formula_error_scan": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}",
+      "selected_case_restored": true,
+      "guardrails_restored": true
+    },
+    "refresh": {
+      "successful": true,
+      "selected_case_restored": true,
+      "selected_case": 1.0,
+      "selected_price": 2.0,
+      "sheet_count": 31,
+      "capture_status": "CURRENT",
+      "guardrails": [
+        0.03,
+        0.1,
+        0.25,
+        0.25,
+        2.0,
+        1.0,
+        0.05
+      ],
+      "preservation": {
+        "preserved_sheets": [
+          "Dataset Overview",
+          "Assumptions",
+          "Gym Master",
+          "Monthly Performance",
+          "Competitors",
+          "Historical Pricing",
+          "Customer Cohorts",
+          "Membership Ledger",
+          "Pilot Assignments",
+          "Market Events",
+          "Data Dictionary",
+          "Checks",
+          "README",
+          "Baseline",
+          "Estate Trends",
+          "Baseline Summary",
+          "Headroom Score",
+          "Headroom Summary",
+          "Response Data",
+          "Historical Response",
+          "Elasticity Summary",
+          "Scenario Inputs",
+          "Scenario Model",
+          "Scenario Comparison",
+          "Scenario Summary",
+          "Recommendations",
+          "Recommendation Summary"
+        ],
+        "owned_sheets": [
+          "Experiment Data",
+          "Experiment Design",
+          "Experiment Results",
+          "Monitoring"
+        ],
+        "sheet_count": 31,
+        "guidance_updates": {
+          "Dataset Overview": {
+            "D5": "Phase 8 complete",
+            "E5": "7 matched pilot pairs",
+            "E7": "Phase 9: Power BI communication",
+            "E10": "Conditional recommendations"
+          },
+          "README": {
+            "B20": "Phase 8 complete. Phase 9 next: Power BI communication layer."
+          },
+          "Recommendation Summary": {
+            "A17": "Phase 8 complete. Phase 9: Power BI communication layer."
+          }
+        }
+      }
+    },
+    "compatibility": {
+      "successful": true,
+      "sheet_count": 31,
+      "phase6_refresh_accepts_current_inputs": true,
+      "phase6_and_phase7_preserve_all_four_experiment_sheets": true,
+      "phase8_guidance_current": true,
+      "selected_case_restored": true,
+      "method": "Disposable package replacement using previously validated Phase 6/7 Artifact segments; unchanged full forecast engines not redundantly rerun. The actual Phase 8 refresh ran and saved separately."
+    },
+    "visual": {
+      "passed": true,
+      "reviewed_sheets": [
+        "Experiment Design",
+        "Experiment Data",
+        "Experiment Results",
+        "Monitoring"
+      ],
+      "affected_guidance": [
+        "Dataset Overview",
+        "README",
+        "Recommendation Summary"
+      ],
+      "reviewed_native_charts": 4,
+      "commercial_figures": 3,
+      "sampled_render_areas": 24,
+      "checks": [
+        "Readable headers, dates, GBP, percentage and percentage-point units",
+        "No chart/table overlaps; limitations note placed below charts",
+        "Negative pair labels below plot, unchanged chart source data",
+        "Guardrail controls and stale/capture statuses readable",
+        "Current Phase 8 guidance fits original layouts",
+        "Complaint and peak-capacity measures formatted in commercial units"
+      ],
+      "render_hashes": {
+        "analysis\\.workbook_previews\\phase8\\design_controls.png": "da5ec60a66f4b6614c6b4ea4bbfbad19d552e926b88fb3dd9d8b601aebe408ba",
+        "analysis\\.workbook_previews\\phase8\\design_assignments.png": "af5d92ac836d823c4fe3d419312faa7a31e4870932e6beb45f688514016795c6",
+        "analysis\\.workbook_previews\\phase8\\assignment_detail.png": "46acc8f6a8cf0709cf7b5c7f2481cbf5cfd09dfc6e6a921b31ed77002eba80ce",
+        "analysis\\.workbook_previews\\phase8\\policy_dates.png": "e76ce397e8a068d478ea535fc67cfdbf7479d98d847bf28e5c04b0f9b1f71b77",
+        "analysis\\.workbook_previews\\phase8\\power.png": "f273dfb61094d7cbd4c3da28187bb68db4cc067cff13b12ab3833e1e53338e49",
+        "analysis\\.workbook_previews\\phase8\\data.png": "c8998965b9dcd8cab5d2613cc7f81d8ca938ba5d7f1a93a9039efb2b35f2ab78",
+        "analysis\\.workbook_previews\\phase8\\billing_exposure.png": "cf4229338c43f8a82990a6925d671d77b88139de231cf1773240bf91ec8e1343",
+        "analysis\\.workbook_previews\\phase8\\reconciliations.png": "43e136d70b1f2980283f17c5acd5ee01adff33fab7f1598c3afb59bb06a7e7d3",
+        "analysis\\.workbook_previews\\phase8\\primary.png": "108c8300304583f03f7da394a2581683e2b6987c3bf8d097cc53c58c72cb8547",
+        "analysis\\.workbook_previews\\phase8\\decisions.png": "d59587db25f88745175557a6be7a8ad3c8f8b3d31062eba1e4fdea19be33705b",
+        "analysis\\.workbook_previews\\phase8\\pair_effects.png": "6d950a0dbacaa0b3828e4fb014aff474e52501824905fa723e3af382d05cbe25",
+        "analysis\\.workbook_previews\\phase8\\periods.png": "88a16915f63a0209015ca2664093fb6b2af7eee8613d5cadf1660e51381adcf7",
+        "analysis\\.workbook_previews\\phase8\\estimates.png": "2c0c763b8e7427db537bf732b38c0dfc6b412403f634c948c53d516a6b4513ed",
+        "analysis\\.workbook_previews\\phase8\\monitoring.png": "c9bb051ec57539e1917de2eb9d9e2f3e2ef00c95da455901153e14868a21ec88",
+        "analysis\\.workbook_previews\\phase8\\monitoring_measures.png": "12a838580be3e5b996aa9bde42233c23a20e1692fa301e15ad1361073b2ed1e6",
+        "analysis\\.workbook_previews\\phase8\\monitoring_responses.png": "915ca3ba831c537e52974ebafb3f940e2a8d28ce7942c358fd0ec3d923367747",
+        "analysis\\.workbook_previews\\phase8\\revenue_chart.png": "4da8ff2b2ff3a64c69efbb0903d44cbd7df8e82803a2d831ef2942dd6ac08083",
+        "analysis\\.workbook_previews\\phase8\\member_chart.png": "8299836f999aa38fe80fdbe30109edb9691c09153b2fdc128ffa14f1e027a940",
+        "analysis\\.workbook_previews\\phase8\\pair_chart.png": "2bd40e97757157b9a5903992f90a3e132b26f4badbab08de329c9eb2cab6e3cb",
+        "analysis\\.workbook_previews\\phase8\\power_chart.png": "ea07d5ca8dea0d7a1a7a11ceee36a7a7749822fdfd432d8c7bfa7b1ceaec7cfb",
+        "analysis\\.workbook_previews\\phase8\\limitations_note.png": "1b8979b3d9a20bd9c3deb4a00997f80e5819589ed00335b5abb98f85a870e58c",
+        "analysis\\.workbook_previews\\phase8\\overview.png": "ce208158ea50296cbef7aef65bde9d1e178100b3242a64a7e86c31e8f30a2b02",
+        "analysis\\.workbook_previews\\phase8\\readme.png": "1a6827a5fdce41df1fae61230c698d95997ccbc91cf4fbbf96579cdd5a5cfdf9",
+        "analysis\\.workbook_previews\\phase8\\recommendation_guidance.png": "9133fee7d2b4b35ffa89e7c315d41b1642cd734f158872aaff85ac0e2a1fa111",
+        "analysis\\experiment_profiles.png": "6a3596d2d7ada53848fac77ac94af3473f6f819a9c31378680aa2941e641e04d",
+        "analysis\\experiment_effects.png": "7c7118bbd8348ef3593e6e3e5891d8c9039b56936474459cd27b3c924b977c95",
+        "analysis\\experiment_decisions.png": "be0328444493e7920a53eec1f6dceddb03e50ea6efdeec3ef4f84cd601f56f90"
+      }
+    }
+  }
+}

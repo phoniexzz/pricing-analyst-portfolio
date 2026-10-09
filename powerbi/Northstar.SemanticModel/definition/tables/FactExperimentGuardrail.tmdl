@@ -1,0 +1,101 @@
+table FactExperimentGuardrail
+	lineageTag: 7bf631c3-55da-581e-807d-c9b73bc4f2e4
+
+	column simulation
+		dataType: string
+		lineageTag: 27997ea5-9ea1-5ee4-afd7-9211a32f5608
+		summarizeBy: none
+		sourceColumn: simulation
+
+	column population
+		dataType: string
+		lineageTag: 7daed26d-2348-563a-a802-d05d70f46e83
+		summarizeBy: none
+		sourceColumn: population
+
+	column checkpoint_months
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: b3f764f4-b723-530f-b5fd-29a5cdc84b84
+		summarizeBy: none
+		sourceColumn: checkpoint_months
+
+	column metric
+		dataType: string
+		lineageTag: 8d3eab1d-502d-51f3-ba60-12cddbe771c3
+		summarizeBy: none
+		sourceColumn: metric
+
+	column estimate
+		dataType: double
+		isHidden
+		lineageTag: 6631f91f-2fb1-5bdc-9238-d11f27d2f262
+		summarizeBy: none
+		sourceColumn: estimate
+
+	column lower
+		dataType: double
+		isHidden
+		lineageTag: 130b9bae-06c2-5feb-9263-e311913080b4
+		summarizeBy: none
+		sourceColumn: lower
+
+	column upper
+		dataType: double
+		isHidden
+		lineageTag: 86f07b47-a60c-5f35-9c68-e53b854a2ec9
+		summarizeBy: none
+		sourceColumn: upper
+
+	column unit
+		dataType: string
+		lineageTag: ae6bd467-599a-5873-bf1d-7327190807e6
+		summarizeBy: none
+		sourceColumn: unit
+
+	column complete_pairs
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 7d9016a1-3498-503c-8595-676b97f8e3a6
+		summarizeBy: none
+		sourceColumn: complete_pairs
+
+	column interval_status
+		dataType: string
+		lineageTag: 864644e1-5f11-585e-a032-586784441f3f
+		summarizeBy: none
+		sourceColumn: interval_status
+
+	column label
+		dataType: string
+		lineageTag: 713430fb-23ba-5e87-b6cc-f79c80d6bd8c
+		summarizeBy: none
+		sourceColumn: label
+
+	column tolerance
+		dataType: double
+		isHidden
+		lineageTag: 87412989-0d6f-52f5-805a-6b5f6c3cb0a3
+		summarizeBy: none
+		sourceColumn: tolerance
+
+	column upper_bound_pass
+		dataType: boolean
+		isHidden
+		lineageTag: a9aa8fa0-62bc-57af-adcf-2f240b2cc9bc
+		summarizeBy: none
+		sourceColumn: upper_bound_pass
+
+	partition FactExperimentGuardrail = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(SourceRoot & "/FactExperimentGuardrail.csv"), [Delimiter=",", Columns=13, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Nulls = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				    Typed = Table.TransformColumnTypes(Nulls, {{"simulation", type text}, {"population", type text}, {"checkpoint_months", Int64.Type}, {"metric", type text}, {"estimate", type number}, {"lower", type number}, {"upper", type number}, {"unit", type text}, {"complete_pairs", Int64.Type}, {"interval_status", type text}, {"label", type text}, {"tolerance", type number}, {"upper_bound_pass", type logical}}, "en-GB")
+				in
+				    Typed
+

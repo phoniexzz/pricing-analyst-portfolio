@@ -1,0 +1,12 @@
+{
+  "byte_identical_reporting_csvs": 40,
+  "timestamp_metadata_exception": "EvidenceStatus.csv and validation manifest deliberately record each refresh time",
+  "valid_zero_override_suppresses_ranges_and_recommendations": true,
+  "saved_policy_mismatch_suppresses_authority": true,
+  "stale_capture_suppresses_authority": true,
+  "display_selector_change_does_not_change_saved_named_evidence": true,
+  "original_selector_and_evidence_unchanged": true,
+  "native_dax_gating_execution": "pending; status derivation and static DAX guards checked",
+  "experiment_protocol_mismatch_suppresses_authority": true,
+  "inconsistent_capture_suppresses_authority_without_relying_on_cached_status": true
+}

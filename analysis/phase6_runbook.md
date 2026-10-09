@@ -1,0 +1,19 @@
+# Phase 6 workbook and refresh guide
+
+The authoritative controls are Scenario Inputs B3 (1 Base, 2 Downside, 3 Upside) and B4 (consumer Standard cash increment 0-3). E9:E17 are calculated active parameters. F9:H13 hold case coefficients; I9:I17 are optional overrides. A blank override uses evidence; numeric zero overrides it. Policy/timing/VAT values use F14:F17 across cases, or I14:I17 overrides. G14:H17 repeat the policy for reference.
+
+The source-derived trading drivers start at row 50 and December billing states at row 1101. Blue parameter values and yellow override cells are editable. Do not overwrite identifiers or source history. Scenario Model contains exactly one fixed no-increase and one selected calculation. Annual opening_members and average_members are summed member-month exposures, not opening stocks or unique customers. Monthly balances start at row 200; state billing calculations at row 2300.
+
+Scenario Comparison contains captured annual and monthly results for all twelve options. An exact comparison against the captured input snapshot creates the stale warning. Selecting another already-captured case/price does not stale those captures. Editing parameters or late-month trading drivers does. Evidence-derived intervals and stress margins become unavailable after evidence input changes or manual overrides; they require rerunning the analysis with revised assumptions, not merely refreshing captures. The conditional joint-draw ranges omit trading and transport uncertainty.
+
+Close the workbook before saving a refresh. From the project folder, run analysis/refresh_scenario_comparison.py with the bundled Python runtime. It reads saved authoritative inputs, evaluates all twelve combinations using the same Artifact formula build, captures annual/monthly outputs, restores the selected case/price, uses five bounded exports and preserves all 21 earlier sheets/features. Comparisons become CURRENT. Save workbook edits in Excel before running it. Native Excel was not automated in verification; the saved changed dependency graph is recalculated with Artifact Tool.
+
+For full reproducibility run analysis/scenario_analysis.py --reproduce. It re-estimates all 10000 joint draws with fixed seed 20261006 and verifies byte-identical CSVs. The initial workbook build uses analysis/build_scenario_workbook.mjs, analysis/style_scenario_segments.mjs, analysis/append_scenario_sheets.py and its --update-caches option. Saved-file verification uses read_saved_scenario_graph.py to read actual saved formulas/values into bounded audit blocks, recalculate_scenario_saved.mjs to recalculate them with Artifact Tool, and verify_scenario_workbook.py for independent parity and feature checks. extract_scenario_segment.py retains a separate pruned dependency copy for audit purposes. The .workbook_previews/phase6 folder contains prepared inputs, formula/cache transfer records, bounded export parts and audit previews; retain it with the analysis scripts. Analysis does not alter earlier source CSVs or parameters.
+
+OOXML assembly only transfers Artifact-authored formulas, evaluated caches, styles, table/chart resources and disjoint row blocks. It does not implement a second financial engine. All 21 existing source sheets, native charts and tables are preserved; only the two progress-guidance sheets receive authorised status text changes.
+
+Phase 6 supports conditional revenue/member trade-offs. Phase 7 can assess site actions, testing and rollout conditions; no actions are assigned here.
+
+This project uses synthetic data and is inspired by the commercial economics of UK subscription fitness businesses.
+
+This project uses synthetic data created for portfolio purposes. It is inspired by the economics of multi-site subscription fitness businesses and does not use confidential information from The Gym Group or any other operator.

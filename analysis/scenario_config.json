@@ -1,0 +1,14 @@
+{
+  "forecast_start": "2026-01-01", "months": 12, "price_options": [0, 1, 2, 3],
+  "bootstrap_seed": 20261006, "bootstrap_samples": 10000, "bootstrap_batch": 200,
+  "percentiles": [2.5, 97.5], "case_percentiles": [10, 90], "vat_rate": 0.20,
+  "notice_churn_factor": 0.5, "billing_churn_factor": 1.0,
+  "protected_downgrade_factor": 0.0, "billing_downgrade_factor": 1.0,
+  "complaints_response_months": 3, "stress_maximum": 64, "stress_grid_steps": 256,
+  "future_joiner_churn_sensitivity": 0.5, "diversion_sensitivity": 0.25,
+  "counterfactual": "Observed 2025 regional seasonal indices, site Q4 exposure-adjusted anchors; December headline prices and competitor recurring prices frozen",
+  "cases": ["Base", "Downside", "Upside"],
+  "sensitivity_variants": ["early_3m", "sustained_9m", "fixed_acquisition_weights", "zero_behaviour", "future_joiner_churn", "offpeak_diversion", "member_sensitive_ancillary"],
+  "expectation_convention": "Fractional expected memberships, no simulation of individual customer randomness",
+  "comparison_workflow": "One live calculation plus explicitly labelled captured comparisons, refreshed through the same formula build"
+}

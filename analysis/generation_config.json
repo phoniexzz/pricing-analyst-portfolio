@@ -1,0 +1,26 @@
+{
+  "seed": 20261004,
+  "start_month": "2024-01-01",
+  "months": 24,
+  "opening_estate_members": 400000,
+  "vat_rate": 0.20,
+  "monthly_demand_seasonality": [1.65, 1.12, 1.05, 0.95, 0.93, 0.80, 0.73, 0.80, 1.22, 1.08, 0.95, 0.72],
+  "standard_price_bounds": [19.99, 34.99],
+  "offpeak_price_difference": -5.0,
+  "plus_price_difference": 5.0,
+  "new_standard_promotion_discount": 0.20,
+  "promotion_protection_months": 2,
+  "acquisition_elasticity_bounds": [-1.65, -0.30],
+  "opening_churn_bounds": [0.032, 0.056],
+  "churn_response_per_10pct_price_increase_bounds": [0.002, 0.012],
+  "same_month_exit_probability": 0.018,
+  "standard_monthly_downgrade_probability": 0.001,
+  "joining_fee_gross": 10.0,
+  "average_visit_duration_minutes": 60,
+  "historical_events": [
+    {"event_id": "TARGETED_202407", "month_index": 6, "gym_count": 12, "increase_gross": 1.0, "selection": "commercially_targeted"},
+    {"event_id": "TARGETED_202502", "month_index": 13, "gym_count": 8, "increase_gross": 2.0, "selection": "commercially_targeted"},
+    {"event_id": "PILOT_202504", "month_index": 15, "pair_count": 12, "increase_gross": 2.0, "selection": "randomised_within_matched_pairs"}
+  ],
+  "notes": "Assumed data-generating parameters, not estimated elasticities. Never use these as evidence in the later observational analysis. All demographic, commercial and competitor values are synthetic."
+}

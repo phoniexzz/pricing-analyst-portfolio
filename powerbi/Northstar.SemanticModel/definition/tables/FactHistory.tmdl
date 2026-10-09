@@ -1,0 +1,448 @@
+table FactHistory
+	lineageTag: 006f97e3-49a8-56ea-ab5a-5858bf34d467
+
+	column gym_id
+		dataType: string
+		lineageTag: 7f70f438-d5da-5e11-a604-9a9cede36f75
+		summarizeBy: none
+		sourceColumn: gym_id
+
+	column month
+		dataType: dateTime
+		isHidden
+		formatString: yyyy-MM-dd
+		lineageTag: 3f0420e9-85a2-5e32-9b2c-305ebca56545
+		summarizeBy: none
+		sourceColumn: month
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column opening_members
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: cedd976b-2d9a-501f-93bb-6fce0e9a6063
+		summarizeBy: none
+		sourceColumn: opening_members
+
+	column new_members
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: a33506fe-4d1b-5187-a336-effba3e72f55
+		summarizeBy: none
+		sourceColumn: new_members
+
+	column cancelled_members
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: bded0bf1-f71d-54c5-8328-d8936c819e15
+		summarizeBy: none
+		sourceColumn: cancelled_members
+
+	column opening_base_cancellations
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: a3aec118-b29f-5dd1-8539-c33f5ac51879
+		summarizeBy: none
+		sourceColumn: opening_base_cancellations
+
+	column same_month_cancellations
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 217d8591-7cad-5d22-bd51-8f7219c12414
+		summarizeBy: none
+		sourceColumn: same_month_cancellations
+
+	column closing_members
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 90eb6ef7-a9ac-5afb-b0c0-8f31c6a4c5b5
+		summarizeBy: none
+		sourceColumn: closing_members
+
+	column average_members
+		dataType: double
+		isHidden
+		lineageTag: df4476cd-082b-5387-9dfe-b86eae408288
+		summarizeBy: none
+		sourceColumn: average_members
+
+	column standard_price
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 4c58c334-78e2-5c3a-b985-bef95bcf3153
+		summarizeBy: none
+		sourceColumn: standard_price
+
+	column offpeak_price
+		dataType: double
+		isHidden
+		lineageTag: 5c1561e6-f74c-58e8-843a-8f823f4a6114
+		summarizeBy: none
+		sourceColumn: offpeak_price
+
+	column premium_price
+		dataType: double
+		isHidden
+		lineageTag: bd10208a-fc1e-5c1a-8591-b26a27609fe8
+		summarizeBy: none
+		sourceColumn: premium_price
+
+	column headline_price
+		dataType: double
+		isHidden
+		lineageTag: 8cd40cc2-fe56-5f12-84b9-273052b59db0
+		summarizeBy: none
+		sourceColumn: headline_price
+
+	column subscription_revenue
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 51a430f8-f133-50c5-92ad-ff6569684e30
+		summarizeBy: none
+		sourceColumn: subscription_revenue
+
+	column joining_fee_revenue
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 6128f420-955f-556b-a5a0-c62321a5ea83
+		summarizeBy: none
+		sourceColumn: joining_fee_revenue
+
+	column ancillary_revenue
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 40565b9e-f48f-5fdb-ac0d-1f4733e7b587
+		summarizeBy: none
+		sourceColumn: ancillary_revenue
+
+	column monthly_revenue
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: a3b92af1-6157-520b-8251-6fa504608a02
+		summarizeBy: none
+		sourceColumn: monthly_revenue
+
+	column realised_ARPMM
+		dataType: double
+		isHidden
+		lineageTag: bfb0e0cd-e859-526c-bc70-8de6c6b10620
+		summarizeBy: none
+		sourceColumn: realised_ARPMM
+
+	column subscription_yield
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 1d72a4e4-1883-5001-8862-d3c0468fb5c0
+		summarizeBy: none
+		sourceColumn: subscription_yield
+
+	column acquisition_rate
+		dataType: double
+		isHidden
+		lineageTag: 68881d93-b2dc-57a1-8faf-aa02729333d2
+		summarizeBy: none
+		sourceColumn: acquisition_rate
+
+	column churn_rate
+		dataType: double
+		isHidden
+		lineageTag: 45cc9bbc-5fa9-5c36-af81-0ab4865f8155
+		summarizeBy: none
+		sourceColumn: churn_rate
+
+	column retention_rate
+		dataType: double
+		isHidden
+		lineageTag: ae210944-c402-5b5a-80d8-adea72636813
+		summarizeBy: none
+		sourceColumn: retention_rate
+
+	column conversion_rate
+		dataType: double
+		isHidden
+		lineageTag: 8183d6eb-bb80-5cc5-ab7d-db442aef9b74
+		summarizeBy: none
+		sourceColumn: conversion_rate
+
+	column qualified_prospects
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 8681fbb1-0764-5f56-9048-df7a41c2887b
+		summarizeBy: none
+		sourceColumn: qualified_prospects
+
+	column website_leads
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 771f8da3-14e1-536b-a228-25ec2f54cc13
+		summarizeBy: none
+		sourceColumn: website_leads
+
+	column trial_visits
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: c1dc71e2-ccda-50b5-b75b-aa9f6f001bc1
+		summarizeBy: none
+		sourceColumn: trial_visits
+
+	column gym_visits
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: fdb8372e-f145-5fbc-b591-aa58496f2d9d
+		summarizeBy: none
+		sourceColumn: gym_visits
+
+	column visits_per_member
+		dataType: double
+		isHidden
+		lineageTag: f6aa96ed-4676-5a0f-994e-08a9aefbc213
+		summarizeBy: none
+		sourceColumn: visits_per_member
+
+	column utilisation_pct
+		dataType: double
+		isHidden
+		lineageTag: 8646f11f-48ec-52e3-9b9c-19dba551e28e
+		summarizeBy: none
+		sourceColumn: utilisation_pct
+
+	column peak_utilisation_pct
+		dataType: double
+		isHidden
+		lineageTag: d9a6e851-2e45-56b9-89fb-64b40e52c8a7
+		summarizeBy: none
+		sourceColumn: peak_utilisation_pct
+
+	column average_concurrent_attendance
+		dataType: double
+		isHidden
+		lineageTag: cf7f6ac4-20e8-513a-81c9-8d9e03aa80d3
+		summarizeBy: none
+		sourceColumn: average_concurrent_attendance
+
+	column peak_concurrent_attendance
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: b5f5c3b1-3aff-5fb4-92ae-1185ed9f4515
+		summarizeBy: none
+		sourceColumn: peak_concurrent_attendance
+
+	column opening_minutes
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 09625b3d-bbed-5706-aee0-0ee9cbfd9ef4
+		summarizeBy: none
+		sourceColumn: opening_minutes
+
+	column average_visit_duration_minutes
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 2aa57801-044e-593f-a9ec-fc302ff7491d
+		summarizeBy: none
+		sourceColumn: average_visit_duration_minutes
+
+	column marketing_spend
+		dataType: double
+		isHidden
+		lineageTag: b3d80f2b-b65d-5d2c-a7c9-eeeaf718d622
+		summarizeBy: none
+		sourceColumn: marketing_spend
+
+	column promotion_active
+		dataType: boolean
+		isHidden
+		lineageTag: 6328117f-38cf-5927-838b-eaf6d6f5621a
+		summarizeBy: none
+		sourceColumn: promotion_active
+
+	column promotion_discount_pct
+		dataType: double
+		isHidden
+		lineageTag: 298b56e6-8322-557c-aa8b-a298bba004fa
+		summarizeBy: none
+		sourceColumn: promotion_discount_pct
+
+	column joining_fee
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 63f41941-0e12-5f63-b67f-58a9c9ed5e73
+		summarizeBy: none
+		sourceColumn: joining_fee
+
+	column joining_fee_payers
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: d22b27a7-667d-5615-bfa6-dbd00e767de5
+		summarizeBy: none
+		sourceColumn: joining_fee_payers
+
+	column pricing_complaints
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 3484ba84-e5c8-5843-81ef-345308094817
+		summarizeBy: none
+		sourceColumn: pricing_complaints
+
+	column pricing_complaints_per_1000_members
+		dataType: double
+		isHidden
+		lineageTag: 26045684-1b18-515d-9811-de0c51e3b544
+		summarizeBy: none
+		sourceColumn: pricing_complaints_per_1000_members
+
+	column competitor_count_3km
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 160c3299-e031-5de4-b387-c1734dd241d8
+		summarizeBy: none
+		sourceColumn: competitor_count_3km
+
+	column nearest_competitor_distance_km
+		dataType: double
+		isHidden
+		lineageTag: 36ff12ed-d86a-551a-95e3-bb832cc8c202
+		summarizeBy: none
+		sourceColumn: nearest_competitor_distance_km
+
+	column local_competitor_avg_price
+		dataType: double
+		isHidden
+		lineageTag: 9d1789a4-a165-5c0b-861a-deaa5277a784
+		summarizeBy: none
+		sourceColumn: local_competitor_avg_price
+
+	column competitor_price_gap
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: e3a3f3ce-268c-5a38-a764-e2ae969424bf
+		summarizeBy: none
+		sourceColumn: competitor_price_gap
+
+	column standard_members
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 2f9e5a16-3897-5396-9918-c9ec9a7fd01e
+		summarizeBy: none
+		sourceColumn: standard_members
+
+	column average_standard_members
+		dataType: double
+		isHidden
+		lineageTag: 0d7760f6-6664-5a69-9674-821a1351cf79
+		summarizeBy: none
+		sourceColumn: average_standard_members
+
+	column standard_subscription_revenue
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 242b1074-ceee-57fc-bdce-ce6292f02151
+		summarizeBy: none
+		sourceColumn: standard_subscription_revenue
+
+	column standard_realised_yield
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: daf341ba-9ba6-5605-bf0f-7c3feb619a68
+		summarizeBy: none
+		sourceColumn: standard_realised_yield
+
+	column offpeak_members
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: b095a6dc-2a19-5431-8b0d-0c59408a348f
+		summarizeBy: none
+		sourceColumn: offpeak_members
+
+	column average_offpeak_members
+		dataType: double
+		isHidden
+		lineageTag: d1e5a7d5-c222-5a78-9330-549ed9440362
+		summarizeBy: none
+		sourceColumn: average_offpeak_members
+
+	column offpeak_subscription_revenue
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 314a8ddb-c720-53e5-ac27-96da4b52120b
+		summarizeBy: none
+		sourceColumn: offpeak_subscription_revenue
+
+	column offpeak_realised_yield
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 2f1a938f-c035-5805-ae60-bc97673c4409
+		summarizeBy: none
+		sourceColumn: offpeak_realised_yield
+
+	column premium_members
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: af49b3a8-73d1-57e5-a35d-aa561a52179a
+		summarizeBy: none
+		sourceColumn: premium_members
+
+	column average_premium_members
+		dataType: double
+		isHidden
+		lineageTag: 00a0e96d-0449-5850-a13a-787aeb12c2f5
+		summarizeBy: none
+		sourceColumn: average_premium_members
+
+	column premium_subscription_revenue
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 04039501-75a3-5674-81a2-e2f3e2e52d11
+		summarizeBy: none
+		sourceColumn: premium_subscription_revenue
+
+	column premium_realised_yield
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 7d8de660-13d8-50ff-8ff5-4bc2bf3a428e
+		summarizeBy: none
+		sourceColumn: premium_realised_yield
+
+	partition FactHistory = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(SourceRoot & "/FactHistory.csv"), [Delimiter=",", Columns=57, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Nulls = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				    Typed = Table.TransformColumnTypes(Nulls, {{"gym_id", type text}, {"month", type date}, {"opening_members", Int64.Type}, {"new_members", Int64.Type}, {"cancelled_members", Int64.Type}, {"opening_base_cancellations", Int64.Type}, {"same_month_cancellations", Int64.Type}, {"closing_members", Int64.Type}, {"average_members", type number}, {"standard_price", type number}, {"offpeak_price", type number}, {"premium_price", type number}, {"headline_price", type number}, {"subscription_revenue", type number}, {"joining_fee_revenue", type number}, {"ancillary_revenue", type number}, {"monthly_revenue", type number}, {"realised_ARPMM", type number}, {"subscription_yield", type number}, {"acquisition_rate", type number}, {"churn_rate", type number}, {"retention_rate", type number}, {"conversion_rate", type number}, {"qualified_prospects", Int64.Type}, {"website_leads", Int64.Type}, {"trial_visits", Int64.Type}, {"gym_visits", Int64.Type}, {"visits_per_member", type number}, {"utilisation_pct", type number}, {"peak_utilisation_pct", type number}, {"average_concurrent_attendance", type number}, {"peak_concurrent_attendance", Int64.Type}, {"opening_minutes", Int64.Type}, {"average_visit_duration_minutes", Int64.Type}, {"marketing_spend", type number}, {"promotion_active", type logical}, {"promotion_discount_pct", type number}, {"joining_fee", type number}, {"joining_fee_payers", Int64.Type}, {"pricing_complaints", Int64.Type}, {"pricing_complaints_per_1000_members", type number}, {"competitor_count_3km", Int64.Type}, {"nearest_competitor_distance_km", type number}, {"local_competitor_avg_price", type number}, {"competitor_price_gap", type number}, {"standard_members", Int64.Type}, {"average_standard_members", type number}, {"standard_subscription_revenue", type number}, {"standard_realised_yield", type number}, {"offpeak_members", Int64.Type}, {"average_offpeak_members", type number}, {"offpeak_subscription_revenue", type number}, {"offpeak_realised_yield", type number}, {"premium_members", Int64.Type}, {"average_premium_members", type number}, {"premium_subscription_revenue", type number}, {"premium_realised_yield", type number}}, "en-GB")
+				in
+				    Typed
+

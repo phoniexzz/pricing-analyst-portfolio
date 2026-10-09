@@ -1,0 +1,35 @@
+table DimCheckpoint
+	lineageTag: 0db59bc4-d951-5013-91c5-b03d03a91a19
+
+	column checkpoint_months
+		dataType: int64
+		formatString: #,##0
+		lineageTag: 18d0f670-dc4a-5004-a0e6-f6052a0d2ad8
+		summarizeBy: none
+		sourceColumn: checkpoint_months
+
+	column sort_order
+		dataType: int64
+		formatString: #,##0
+		lineageTag: 3895a8ea-a0ea-5bdd-8f0d-be8ca7235f6b
+		summarizeBy: none
+		sourceColumn: sort_order
+
+	column label
+		dataType: string
+		lineageTag: 5f8714f0-aeb8-55de-a9cf-8fb99d4d0cfd
+		summarizeBy: none
+		sourceColumn: label
+		sortByColumn: sort_order
+
+	partition DimCheckpoint = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(SourceRoot & "/DimCheckpoint.csv"), [Delimiter=",", Columns=3, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Nulls = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				    Typed = Table.TransformColumnTypes(Nulls, {{"checkpoint_months", Int64.Type}, {"sort_order", Int64.Type}, {"label", type text}}, "en-GB")
+				in
+				    Typed
+

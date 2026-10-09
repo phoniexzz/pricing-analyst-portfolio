@@ -1,0 +1,260 @@
+{
+  "bands": {
+    "Medium": 43,
+    "Low": 22,
+    "High": 15
+  },
+  "segments": {
+    "Investigation priority": 38,
+    "Mixed indicators": 16,
+    "Limited headroom indicators": 16,
+    "Stronger headroom indicators": 10
+  },
+  "sensitive_sites": 51,
+  "threshold_sensitive_sites": 27,
+  "score_range": [
+    16.139240506329116,
+    84.74683544303798
+  ],
+  "high_score_with_cautions": 5,
+  "checks": [
+    {
+      "check": "80 unique gym results",
+      "passed": true
+    },
+    {
+      "check": "480 unique sensitivity records",
+      "passed": true
+    },
+    {
+      "check": "Complete monthly source coverage",
+      "passed": true
+    },
+    {
+      "check": "Complete December and value benchmark coverage",
+      "passed": true
+    },
+    {
+      "check": "240 unique Q4 benchmark records",
+      "passed": true
+    },
+    {
+      "check": "December benchmark agrees with baseline",
+      "passed": true
+    },
+    {
+      "check": "All weights nonnegative and sum to one",
+      "passed": true
+    },
+    {
+      "check": "Components and scores bounded",
+      "passed": true
+    },
+    {
+      "check": "Contributions sum to score",
+      "passed": true
+    },
+    {
+      "check": "Each variant has ranks 1 to 80",
+      "passed": true
+    },
+    {
+      "check": "Caution flags preserved",
+      "passed": true
+    },
+    {
+      "check": "Investigation precedence",
+      "passed": true
+    },
+    {
+      "check": "High score boundary",
+      "passed": true
+    },
+    {
+      "check": "Constant and tied indicator ranks",
+      "passed": true
+    },
+    {
+      "check": "Reverse churn direction",
+      "passed": true
+    },
+    {
+      "check": "Binary floating-point tie tolerance",
+      "passed": true
+    },
+    {
+      "check": "Missing observations remain missing",
+      "passed": true
+    },
+    {
+      "check": "Missing weighted input blocks base score",
+      "passed": true
+    },
+    {
+      "check": "Zero-weight income does not block score",
+      "passed": true
+    },
+    {
+      "check": "Deterministic tied-score ranks",
+      "passed": true
+    },
+    {
+      "check": "Utilisation cap removes extra reward above capacity",
+      "passed": true
+    },
+    {
+      "check": "Segment rule branches",
+      "passed": true
+    },
+    {
+      "check": "Identical evaluation rerun",
+      "passed": true
+    },
+    {
+      "check": "Sources, baseline and generation configuration unchanged",
+      "passed": true
+    }
+  ],
+  "input_hashes": {
+    "data\\cohorts.csv": "15cb135413cdff2adc6dea8d6ecc9867a7c68bf6d98a60b2dd69b979858eb3d8",
+    "data\\competitor_prices.csv": "754062b02e2f4cd0ce989c12e02af029d2584007fc3b74f65852d0cefdfd56c5",
+    "data\\estate_monthly_trend.csv": "7edbbc497491da2b12dc3427a70294f8d72c5916c652d5eac8e08a2b78e1da3a",
+    "data\\experiment_assignments.csv": "05f2d39ffd30f0e55d8e0c663f17191693a9c2be05ffb8e4f69155d247a814f4",
+    "data\\gym_baseline.csv": "9129c0dbfcbddce50f53ddea1989f1b29a575455c5631da9031de3b0f09349ad",
+    "data\\gym_master.csv": "1bfbf7bbcd847c2634d155d88641d5f2f87dca2fe0e345da8be498f053a20d14",
+    "data\\market_events.csv": "c786240e6f0a962348b18ec46552d6805c3eae1001bad4e21f4b458659273ec7",
+    "data\\membership_ledger.csv": "709ab573bf893097d6cf51b2bda5c052f88a1d526f8846af901c5d58508cc496",
+    "data\\monthly_performance.csv": "f3e088c724d27f282af506cf8dd0e97b21447192164476c3e74d489856b7a51d",
+    "data\\pricing_history.csv": "1a1cc79ad85b7a7628bcc9b49a5877167d424368f1f305ab90884246af1afa6e",
+    "data\\region_year_baseline.csv": "3ad64a1ef920a38db07135ec5f750ad954dcbdd87a0441fa30f66d0be7cf249b",
+    "analysis/generation_config.json": "2a98c053337c861defaa492bb8be543557a11b271e8da8975e1ced260b504e41"
+  },
+  "source_sizes": {
+    "gym_headroom": 80,
+    "headroom_sensitivity": 480
+  },
+  "variants": {
+    "base": {
+      "band_changes": 0,
+      "max_rank_movement": 0,
+      "sensitive_sites": 0
+    },
+    "exclude_income": {
+      "band_changes": 2,
+      "max_rank_movement": 7,
+      "sensitive_sites": 2
+    },
+    "market_emphasis": {
+      "band_changes": 9,
+      "max_rank_movement": 16,
+      "sensitive_sites": 16
+    },
+    "recent_trading": {
+      "band_changes": 19,
+      "max_rank_movement": 32,
+      "sensitive_sites": 29
+    },
+    "retention_emphasis": {
+      "band_changes": 11,
+      "max_rank_movement": 17,
+      "sensitive_sites": 27
+    },
+    "value_competitors": {
+      "band_changes": 11,
+      "max_rank_movement": 20,
+      "sensitive_sites": 15
+    }
+  },
+  "top10": [
+    {
+      "gym_id": "NF019",
+      "city": "Reading",
+      "score": 84.74683544303798,
+      "rank": 1,
+      "band": "High",
+      "segment": "Stronger headroom indicators",
+      "sensitive": false
+    },
+    {
+      "gym_id": "NF024",
+      "city": "Milton Keynes",
+      "score": 78.1012658227848,
+      "rank": 2,
+      "band": "High",
+      "segment": "Stronger headroom indicators",
+      "sensitive": false
+    },
+    {
+      "gym_id": "NF080",
+      "city": "Wrexham",
+      "score": 76.45569620253164,
+      "rank": 3,
+      "band": "High",
+      "segment": "Investigation priority",
+      "sensitive": false
+    },
+    {
+      "gym_id": "NF051",
+      "city": "Sheffield",
+      "score": 76.13924050632912,
+      "rank": 4,
+      "band": "High",
+      "segment": "Investigation priority",
+      "sensitive": false
+    },
+    {
+      "gym_id": "NF067",
+      "city": "Aberdeen",
+      "score": 74.62025316455697,
+      "rank": 5,
+      "band": "High",
+      "segment": "Investigation priority",
+      "sensitive": true
+    },
+    {
+      "gym_id": "NF050",
+      "city": "Leeds",
+      "score": 73.35443037974684,
+      "rank": 6,
+      "band": "High",
+      "segment": "Stronger headroom indicators",
+      "sensitive": false
+    },
+    {
+      "gym_id": "NF073",
+      "city": "Cardiff",
+      "score": 71.77215189873418,
+      "rank": 7,
+      "band": "High",
+      "segment": "Stronger headroom indicators",
+      "sensitive": true
+    },
+    {
+      "gym_id": "NF070",
+      "city": "Edinburgh",
+      "score": 71.39240506329114,
+      "rank": 8,
+      "band": "High",
+      "segment": "Stronger headroom indicators",
+      "sensitive": true
+    },
+    {
+      "gym_id": "NF039",
+      "city": "Manchester",
+      "score": 70.9493670886076,
+      "rank": 9,
+      "band": "High",
+      "segment": "Investigation priority",
+      "sensitive": false
+    },
+    {
+      "gym_id": "NF055",
+      "city": "Birmingham",
+      "score": 69.43037974683544,
+      "rank": 10,
+      "band": "High",
+      "segment": "Stronger headroom indicators",
+      "sensitive": true
+    }
+  ]
+}

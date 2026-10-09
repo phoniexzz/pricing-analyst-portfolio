@@ -1,0 +1,25 @@
+{
+  "bootstrap_seed": 20261005,
+  "bootstrap_samples": 10000,
+  "confidence_percentiles": [2.5, 97.5],
+  "minimum_interval_pairs": 4,
+  "comparison_tolerance": 1e-12,
+  "families": {"TARGETED_202407": "2024-07-01", "TARGETED_202502": "2025-02-01", "PILOT_202504": "2025-04-01"},
+  "windows": {
+    "primary_6m": ["2024-10-01", "2025-03-01", "2025-04-01", "2025-09-01"],
+    "early_3m": ["2025-01-01", "2025-03-01", "2025-04-01", "2025-06-01"],
+    "sustained_9m": ["2024-07-01", "2025-03-01", "2025-04-01", "2025-12-01"],
+    "placebo_3m": ["2024-10-01", "2024-12-01", "2025-01-01", "2025-03-01"]
+  },
+  "targeted_windows": {
+    "TARGETED_202407": ["2024-01-01", "2024-06-01", "2024-07-01", "2024-12-01"],
+    "TARGETED_202502": ["2024-08-01", "2025-01-01", "2025-02-01", "2025-07-01"]
+  },
+  "matching_features": ["standard_price", "average_members", "acquisition_rate", "churn_rate", "conversion_rate", "peak_utilisation_pct", "competitor_price_gap", "marketing_per_prospect"],
+  "targeted_max_controls": 3,
+  "targeted_distance": "Euclidean distance after estate pre-window standardisation, population standard deviation; zero-variance features excluded",
+  "weighted_sensitivity": "Fixed sum of treatment and control pre-window Standard joins per pair",
+  "revenue_counterfactual": "Treatment pre-period revenue multiplied by control post/pre revenue ratio; differences are estimates for the observed historical period",
+  "incumbent_definition": "Current Standard members with opening exposure whose original join month predates the event, including unknown-date opening legacy members",
+  "revenue_vat_rate": 0.2
+}

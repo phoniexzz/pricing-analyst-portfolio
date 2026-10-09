@@ -1,0 +1,5 @@
+expression SourceRoot = "C:/Users/prave/Downloads/Pricing analyst portfolio/powerbi/model_data" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 28c3bd5b-7acd-5369-bbb7-77e79e768962
+
+	annotation PBI_ResultType = Text
+

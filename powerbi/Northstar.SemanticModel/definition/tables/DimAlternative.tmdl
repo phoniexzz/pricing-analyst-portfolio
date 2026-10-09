@@ -1,0 +1,20 @@
+table DimAlternative
+	lineageTag: ee6d9647-813a-5be3-b2f6-ca0765053d79
+
+	column variant
+		dataType: string
+		lineageTag: 9e621810-eddf-5481-88e6-e12192dc3cf9
+		summarizeBy: none
+		sourceColumn: variant
+
+	partition DimAlternative = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(SourceRoot & "/DimAlternative.csv"), [Delimiter=",", Columns=1, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Nulls = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				    Typed = Table.TransformColumnTypes(Nulls, {{"variant", type text}}, "en-GB")
+				in
+				    Typed
+

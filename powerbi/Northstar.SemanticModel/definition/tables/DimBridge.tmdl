@@ -1,0 +1,28 @@
+table DimBridge
+	lineageTag: 95bfa271-ca7b-5f13-bb43-76e246964f90
+
+	column step
+		dataType: string
+		lineageTag: 8b5d2d5f-be89-591e-bbd3-b8a1593b88cd
+		summarizeBy: none
+		sourceColumn: step
+		sortByColumn: sort_order
+
+	column sort_order
+		dataType: int64
+		formatString: #,##0
+		lineageTag: 790487f9-5394-5481-b770-c7bf40c547ab
+		summarizeBy: none
+		sourceColumn: sort_order
+
+	partition DimBridge = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(SourceRoot & "/DimBridge.csv"), [Delimiter=",", Columns=2, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Nulls = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				    Typed = Table.TransformColumnTypes(Nulls, {{"step", type text}, {"sort_order", Int64.Type}}, "en-GB")
+				in
+				    Typed
+

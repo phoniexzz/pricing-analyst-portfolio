@@ -1,0 +1,3824 @@
+{
+  "version": 1,
+  "status": "Saved evidence access; no new response estimates",
+  "records": [
+    {
+      "id": "baseline.total_revenue",
+      "label": "2025 total net revenue",
+      "value": 107006933.85,
+      "display": "£107,006,933.85",
+      "unit": "GBP net",
+      "window": "January–December 2025",
+      "population": "All 80 gyms",
+      "source": {
+        "path": "analysis/baseline_results.json",
+        "key": {
+          "annual": "2025"
+        },
+        "field": "total_revenue",
+        "transformation": "none"
+      },
+      "rounding": "GBP to 2 decimals"
+    },
+    {
+      "id": "baseline.closing_members",
+      "label": "December 2025 member stock",
+      "value": 396311,
+      "display": "396,311",
+      "unit": "members",
+      "window": "December 2025 closing",
+      "population": "All 80 gyms",
+      "source": {
+        "path": "analysis/baseline_results.json",
+        "key": {
+          "annual": "2025"
+        },
+        "field": "closing_members",
+        "transformation": "none"
+      },
+      "rounding": "nearest whole member/count for display; unrounded value retained"
+    },
+    {
+      "id": "baseline.arpmm",
+      "label": "2025 total ARPMM",
+      "value": 21.974474471884403,
+      "display": "£21.97",
+      "unit": "GBP net per average-member month",
+      "window": "January–December 2025",
+      "population": "All 80 gyms",
+      "source": {
+        "path": "analysis/baseline_results.json",
+        "key": {
+          "annual": "2025"
+        },
+        "field": "arpmm",
+        "transformation": "none"
+      },
+      "rounding": "GBP to 2 decimals"
+    },
+    {
+      "id": "baseline.new_members",
+      "label": "2025 joins",
+      "value": 221277,
+      "display": "221,277",
+      "unit": "acquisitions, not unique people",
+      "window": "January–December 2025",
+      "population": "All 80 gyms",
+      "source": {
+        "path": "analysis/baseline_results.json",
+        "key": {
+          "annual": "2025"
+        },
+        "field": "new_members",
+        "transformation": "none"
+      },
+      "rounding": "nearest whole member/count for display; unrounded value retained"
+    },
+    {
+      "id": "baseline.churn_rate",
+      "label": "2025 monthly opening-base churn",
+      "value": 0.045187516924327036,
+      "display": "4.52%",
+      "unit": "decimal monthly rate",
+      "window": "January–December 2025",
+      "population": "All 80 gyms",
+      "source": {
+        "path": "analysis/baseline_results.json",
+        "key": {
+          "annual": "2025"
+        },
+        "field": "churn_rate",
+        "transformation": "none"
+      },
+      "rounding": "decimal ×100, 2 decimals"
+    },
+    {
+      "id": "baseline.retention_rate",
+      "label": "2025 monthly opening-base retention",
+      "value": 0.954812483075673,
+      "display": "95.48%",
+      "unit": "decimal monthly rate",
+      "window": "January–December 2025",
+      "population": "All 80 gyms",
+      "source": {
+        "path": "analysis/baseline_results.json",
+        "key": {
+          "annual": "2025"
+        },
+        "field": "retention_rate",
+        "transformation": "none"
+      },
+      "rounding": "decimal ×100, 2 decimals"
+    },
+    {
+      "id": "baseline.conversion_rate",
+      "label": "2025 qualified-prospect conversion",
+      "value": 0.30725534003635235,
+      "display": "30.73%",
+      "unit": "decimal fraction",
+      "window": "January–December 2025",
+      "population": "All 80 gyms",
+      "source": {
+        "path": "analysis/baseline_results.json",
+        "key": {
+          "annual": "2025"
+        },
+        "field": "conversion_rate",
+        "transformation": "none"
+      },
+      "rounding": "decimal ×100, 2 decimals"
+    },
+    {
+      "id": "baseline.total_revenue_growth",
+      "label": "Matching-year net revenue growth",
+      "value": 0.023689613804125376,
+      "display": "2.37%",
+      "unit": "decimal growth",
+      "window": "Matching 2024/2025 windows",
+      "population": "All 80 gyms",
+      "source": {
+        "path": "analysis/baseline_results.json",
+        "key": {
+          "annual": [
+            "2024",
+            "2025"
+          ]
+        },
+        "field": "total_revenue",
+        "transformation": "2025 / 2024 − 1; descriptive saved-value arithmetic"
+      },
+      "rounding": "decimal ×100, 2 decimals"
+    },
+    {
+      "id": "baseline.closing_members_growth",
+      "label": "December closing membership growth",
+      "value": -0.00674432709610473,
+      "display": "-0.67%",
+      "unit": "decimal growth",
+      "window": "Matching 2024/2025 windows",
+      "population": "All 80 gyms",
+      "source": {
+        "path": "analysis/baseline_results.json",
+        "key": {
+          "annual": [
+            "2024",
+            "2025"
+          ]
+        },
+        "field": "closing_members",
+        "transformation": "2025 / 2024 − 1; descriptive saved-value arithmetic"
+      },
+      "rounding": "decimal ×100, 2 decimals"
+    },
+    {
+      "id": "bridge.member_volume_contribution",
+      "label": "Revenue bridge member-volume contribution",
+      "value": -425763.9407415579,
+      "display": "−£425,763.94",
+      "unit": "GBP net",
+      "window": "2025 versus 2024",
+      "population": "All 80 gyms",
+      "source": {
+        "path": "analysis/baseline_results.json",
+        "key": {
+          "object": "bridge"
+        },
+        "field": "member_volume_contribution",
+        "transformation": "none"
+      },
+      "rounding": "GBP to 2 decimals"
+    },
+    {
+      "id": "bridge.total_arpmm_contribution",
+      "label": "Revenue bridge total-ARPMM contribution",
+      "value": 2902054.5107415468,
+      "display": "£2,902,054.51",
+      "unit": "GBP net",
+      "window": "2025 versus 2024",
+      "population": "All 80 gyms",
+      "source": {
+        "path": "analysis/baseline_results.json",
+        "key": {
+          "object": "bridge"
+        },
+        "field": "total_arpmm_contribution",
+        "transformation": "none"
+      },
+      "rounding": "GBP to 2 decimals"
+    },
+    {
+      "id": "headroom.sensitive_sites",
+      "label": "sensitive sites",
+      "value": 51,
+      "display": "51",
+      "unit": "gyms",
+      "window": "2025/December 2025",
+      "population": "All 80 gyms",
+      "source": {
+        "path": "analysis/headroom_results.json",
+        "key": {},
+        "field": "sensitive_sites",
+        "transformation": "none"
+      },
+      "rounding": "nearest whole member/count for display; unrounded value retained"
+    },
+    {
+      "id": "headroom.high_score_with_cautions",
+      "label": "high score with cautions",
+      "value": 5,
+      "display": "5",
+      "unit": "gyms",
+      "window": "2025/December 2025",
+      "population": "All 80 gyms",
+      "source": {
+        "path": "analysis/headroom_results.json",
+        "key": {},
+        "field": "high_score_with_cautions",
+        "transformation": "none"
+      },
+      "rounding": "nearest whole member/count for display; unrounded value retained"
+    },
+    {
+      "id": "headroom.band.Medium",
+      "label": "Medium score band",
+      "value": 43,
+      "display": "43",
+      "unit": "gyms",
+      "window": "2025/December 2025",
+      "population": "All 80 gyms",
+      "source": {
+        "path": "analysis/headroom_results.json",
+        "key": {
+          "object": "bands"
+        },
+        "field": "Medium",
+        "transformation": "none"
+      },
+      "rounding": "nearest whole member/count for display; unrounded value retained"
+    },
+    {
+      "id": "headroom.band.Low",
+      "label": "Low score band",
+      "value": 22,
+      "display": "22",
+      "unit": "gyms",
+      "window": "2025/December 2025",
+      "population": "All 80 gyms",
+      "source": {
+        "path": "analysis/headroom_results.json",
+        "key": {
+          "object": "bands"
+        },
+        "field": "Low",
+        "transformation": "none"
+      },
+      "rounding": "nearest whole member/count for display; unrounded value retained"
+    },
+    {
+      "id": "headroom.band.High",
+      "label": "High score band",
+      "value": 15,
+      "display": "15",
+      "unit": "gyms",
+      "window": "2025/December 2025",
+      "population": "All 80 gyms",
+      "source": {
+        "path": "analysis/headroom_results.json",
+        "key": {
+          "object": "bands"
+        },
+        "field": "High",
+        "transformation": "none"
+      },
+      "rounding": "nearest whole member/count for display; unrounded value retained"
+    },
+    {
+      "id": "pilot.controlled_acquisition_response.estimate",
+      "label": "Controlled Standard acquisition response estimate",
+      "value": -0.0826637502691,
+      "display": "-8.27%",
+      "unit": "decimal fraction",
+      "window": "October 2024–March 2025 versus April–September 2025",
+      "population": "12 randomised pairs",
+      "source": {
+        "path": "data/price_response_estimates.csv",
+        "key": {
+          "estimator": "paired_equal",
+          "window": "primary_6m",
+          "group_type": "Overall",
+          "group": "All assigned pairs",
+          "metric": "controlled_acquisition_response",
+          "weight_method": "Equal pairs"
+        },
+        "field": "estimate",
+        "transformation": "none"
+      },
+      "rounding": "decimal ×100, 2 decimals"
+    },
+    {
+      "id": "pilot.controlled_acquisition_response.ci_lower",
+      "label": "Controlled Standard acquisition response ci_lower",
+      "value": -0.139010523702,
+      "display": "-13.90%",
+      "unit": "decimal fraction",
+      "window": "October 2024–March 2025 versus April–September 2025",
+      "population": "12 randomised pairs",
+      "source": {
+        "path": "data/price_response_estimates.csv",
+        "key": {
+          "estimator": "paired_equal",
+          "window": "primary_6m",
+          "group_type": "Overall",
+          "group": "All assigned pairs",
+          "metric": "controlled_acquisition_response",
+          "weight_method": "Equal pairs"
+        },
+        "field": "ci_lower",
+        "transformation": "none"
+      },
+      "rounding": "decimal ×100, 2 decimals"
+    },
+    {
+      "id": "pilot.controlled_acquisition_response.ci_upper",
+      "label": "Controlled Standard acquisition response ci_upper",
+      "value": -0.028890038719,
+      "display": "-2.89%",
+      "unit": "decimal fraction",
+      "window": "October 2024–March 2025 versus April–September 2025",
+      "population": "12 randomised pairs",
+      "source": {
+        "path": "data/price_response_estimates.csv",
+        "key": {
+          "estimator": "paired_equal",
+          "window": "primary_6m",
+          "group_type": "Overall",
+          "group": "All assigned pairs",
+          "metric": "controlled_acquisition_response",
+          "weight_method": "Equal pairs"
+        },
+        "field": "ci_upper",
+        "transformation": "none"
+      },
+      "rounding": "decimal ×100, 2 decimals"
+    },
+    {
+      "id": "pilot.controlled_acquisition_response.p",
+      "label": "controlled_acquisition_response exact p-value",
+      "value": 0.0166015625,
+      "display": "0.01660",
+      "unit": "probability",
+      "window": "Primary six-month comparison",
+      "population": "12 pairs / 4096 within-pair flips",
+      "source": {
+        "path": "data/price_response_estimates.csv",
+        "key": {
+          "estimator": "paired_equal",
+          "window": "primary_6m",
+          "group_type": "Overall",
+          "group": "All assigned pairs",
+          "metric": "controlled_acquisition_response",
+          "weight_method": "Equal pairs"
+        },
+        "field": "exact_p_value",
+        "transformation": "none"
+      },
+      "rounding": "5 decimals"
+    },
+    {
+      "id": "pilot.acquisition_elasticity.estimate",
+      "label": "Local Standard acquisition elasticity estimate",
+      "value": -1.11973900686,
+      "display": "-1.120",
+      "unit": "log response / log dose",
+      "window": "October 2024–March 2025 versus April–September 2025",
+      "population": "12 randomised pairs",
+      "source": {
+        "path": "data/price_response_estimates.csv",
+        "key": {
+          "estimator": "paired_equal",
+          "window": "primary_6m",
+          "group_type": "Overall",
+          "group": "All assigned pairs",
+          "metric": "acquisition_elasticity",
+          "weight_method": "Equal pairs"
+        },
+        "field": "estimate",
+        "transformation": "none"
+      },
+      "rounding": "3 decimals"
+    },
+    {
+      "id": "pilot.acquisition_elasticity.ci_lower",
+      "label": "Local Standard acquisition elasticity ci_lower",
+      "value": -1.901662753,
+      "display": "-1.902",
+      "unit": "log response / log dose",
+      "window": "October 2024–March 2025 versus April–September 2025",
+      "population": "12 randomised pairs",
+      "source": {
+        "path": "data/price_response_estimates.csv",
+        "key": {
+          "estimator": "paired_equal",
+          "window": "primary_6m",
+          "group_type": "Overall",
+          "group": "All assigned pairs",
+          "metric": "acquisition_elasticity",
+          "weight_method": "Equal pairs"
+        },
+        "field": "ci_lower",
+        "transformation": "none"
+      },
+      "rounding": "3 decimals"
+    },
+    {
+      "id": "pilot.acquisition_elasticity.ci_upper",
+      "label": "Local Standard acquisition elasticity ci_upper",
+      "value": -0.383684875251,
+      "display": "-0.384",
+      "unit": "log response / log dose",
+      "window": "October 2024–March 2025 versus April–September 2025",
+      "population": "12 randomised pairs",
+      "source": {
+        "path": "data/price_response_estimates.csv",
+        "key": {
+          "estimator": "paired_equal",
+          "window": "primary_6m",
+          "group_type": "Overall",
+          "group": "All assigned pairs",
+          "metric": "acquisition_elasticity",
+          "weight_method": "Equal pairs"
+        },
+        "field": "ci_upper",
+        "transformation": "none"
+      },
+      "rounding": "3 decimals"
+    },
+    {
+      "id": "pilot.incumbent_churn_response_pp.estimate",
+      "label": "Monthly incumbent Standard churn change estimate",
+      "value": 0.345128252745,
+      "display": "0.345 pp",
+      "unit": "percentage points per month",
+      "window": "October 2024–March 2025 versus April–September 2025",
+      "population": "12 randomised pairs",
+      "source": {
+        "path": "data/price_response_estimates.csv",
+        "key": {
+          "estimator": "paired_equal",
+          "window": "primary_6m",
+          "group_type": "Overall",
+          "group": "All assigned pairs",
+          "metric": "incumbent_churn_response_pp",
+          "weight_method": "Equal pairs"
+        },
+        "field": "estimate",
+        "transformation": "none"
+      },
+      "rounding": "already percentage points, 3 decimals"
+    },
+    {
+      "id": "pilot.incumbent_churn_response_pp.ci_lower",
+      "label": "Monthly incumbent Standard churn change ci_lower",
+      "value": 0.182430619537,
+      "display": "0.182 pp",
+      "unit": "percentage points per month",
+      "window": "October 2024–March 2025 versus April–September 2025",
+      "population": "12 randomised pairs",
+      "source": {
+        "path": "data/price_response_estimates.csv",
+        "key": {
+          "estimator": "paired_equal",
+          "window": "primary_6m",
+          "group_type": "Overall",
+          "group": "All assigned pairs",
+          "metric": "incumbent_churn_response_pp",
+          "weight_method": "Equal pairs"
+        },
+        "field": "ci_lower",
+        "transformation": "none"
+      },
+      "rounding": "already percentage points, 3 decimals"
+    },
+    {
+      "id": "pilot.incumbent_churn_response_pp.ci_upper",
+      "label": "Monthly incumbent Standard churn change ci_upper",
+      "value": 0.496563444139,
+      "display": "0.497 pp",
+      "unit": "percentage points per month",
+      "window": "October 2024–March 2025 versus April–September 2025",
+      "population": "12 randomised pairs",
+      "source": {
+        "path": "data/price_response_estimates.csv",
+        "key": {
+          "estimator": "paired_equal",
+          "window": "primary_6m",
+          "group_type": "Overall",
+          "group": "All assigned pairs",
+          "metric": "incumbent_churn_response_pp",
+          "weight_method": "Equal pairs"
+        },
+        "field": "ci_upper",
+        "transformation": "none"
+      },
+      "rounding": "already percentage points, 3 decimals"
+    },
+    {
+      "id": "pilot.incumbent_churn_response_pp.p",
+      "label": "incumbent_churn_response_pp exact p-value",
+      "value": 0.00341796875,
+      "display": "0.00342",
+      "unit": "probability",
+      "window": "Primary six-month comparison",
+      "population": "12 pairs / 4096 within-pair flips",
+      "source": {
+        "path": "data/price_response_estimates.csv",
+        "key": {
+          "estimator": "paired_equal",
+          "window": "primary_6m",
+          "group_type": "Overall",
+          "group": "All assigned pairs",
+          "metric": "incumbent_churn_response_pp",
+          "weight_method": "Equal pairs"
+        },
+        "field": "exact_p_value",
+        "transformation": "none"
+      },
+      "rounding": "5 decimals"
+    },
+    {
+      "id": "pilot.incumbent_downgrade_response_pp.estimate",
+      "label": "Monthly incumbent Standard downgrade change estimate",
+      "value": 0.324099220895,
+      "display": "0.324 pp",
+      "unit": "percentage points per month",
+      "window": "October 2024–March 2025 versus April–September 2025",
+      "population": "12 randomised pairs",
+      "source": {
+        "path": "data/price_response_estimates.csv",
+        "key": {
+          "estimator": "paired_equal",
+          "window": "primary_6m",
+          "group_type": "Overall",
+          "group": "All assigned pairs",
+          "metric": "incumbent_downgrade_response_pp",
+          "weight_method": "Equal pairs"
+        },
+        "field": "estimate",
+        "transformation": "none"
+      },
+      "rounding": "already percentage points, 3 decimals"
+    },
+    {
+      "id": "pilot.incumbent_downgrade_response_pp.ci_lower",
+      "label": "Monthly incumbent Standard downgrade change ci_lower",
+      "value": 0.293938637783,
+      "display": "0.294 pp",
+      "unit": "percentage points per month",
+      "window": "October 2024–March 2025 versus April–September 2025",
+      "population": "12 randomised pairs",
+      "source": {
+        "path": "data/price_response_estimates.csv",
+        "key": {
+          "estimator": "paired_equal",
+          "window": "primary_6m",
+          "group_type": "Overall",
+          "group": "All assigned pairs",
+          "metric": "incumbent_downgrade_response_pp",
+          "weight_method": "Equal pairs"
+        },
+        "field": "ci_lower",
+        "transformation": "none"
+      },
+      "rounding": "already percentage points, 3 decimals"
+    },
+    {
+      "id": "pilot.incumbent_downgrade_response_pp.ci_upper",
+      "label": "Monthly incumbent Standard downgrade change ci_upper",
+      "value": 0.356406878995,
+      "display": "0.356 pp",
+      "unit": "percentage points per month",
+      "window": "October 2024–March 2025 versus April–September 2025",
+      "population": "12 randomised pairs",
+      "source": {
+        "path": "data/price_response_estimates.csv",
+        "key": {
+          "estimator": "paired_equal",
+          "window": "primary_6m",
+          "group_type": "Overall",
+          "group": "All assigned pairs",
+          "metric": "incumbent_downgrade_response_pp",
+          "weight_method": "Equal pairs"
+        },
+        "field": "ci_upper",
+        "transformation": "none"
+      },
+      "rounding": "already percentage points, 3 decimals"
+    },
+    {
+      "id": "pilot.monthly_revenue_estimated_difference.estimate",
+      "label": "Estimated cumulative six-month total net revenue difference estimate",
+      "value": 217436.413019,
+      "display": "£217,436.41",
+      "unit": "GBP net control-derived historical-period estimate",
+      "window": "October 2024–March 2025 versus April–September 2025",
+      "population": "12 randomised pairs",
+      "source": {
+        "path": "data/price_response_estimates.csv",
+        "key": {
+          "estimator": "paired_equal",
+          "window": "primary_6m",
+          "group_type": "Overall",
+          "group": "All assigned pairs",
+          "metric": "monthly_revenue_estimated_difference",
+          "weight_method": "Equal pairs"
+        },
+        "field": "estimate",
+        "transformation": "none"
+      },
+      "rounding": "GBP to 2 decimals"
+    },
+    {
+      "id": "pilot.monthly_revenue_estimated_difference.ci_lower",
+      "label": "Estimated cumulative six-month total net revenue difference ci_lower",
+      "value": 151026.189534,
+      "display": "£151,026.19",
+      "unit": "GBP net control-derived historical-period estimate",
+      "window": "October 2024–March 2025 versus April–September 2025",
+      "population": "12 randomised pairs",
+      "source": {
+        "path": "data/price_response_estimates.csv",
+        "key": {
+          "estimator": "paired_equal",
+          "window": "primary_6m",
+          "group_type": "Overall",
+          "group": "All assigned pairs",
+          "metric": "monthly_revenue_estimated_difference",
+          "weight_method": "Equal pairs"
+        },
+        "field": "ci_lower",
+        "transformation": "none"
+      },
+      "rounding": "GBP to 2 decimals"
+    },
+    {
+      "id": "pilot.monthly_revenue_estimated_difference.ci_upper",
+      "label": "Estimated cumulative six-month total net revenue difference ci_upper",
+      "value": 289220.129651,
+      "display": "£289,220.13",
+      "unit": "GBP net control-derived historical-period estimate",
+      "window": "October 2024–March 2025 versus April–September 2025",
+      "population": "12 randomised pairs",
+      "source": {
+        "path": "data/price_response_estimates.csv",
+        "key": {
+          "estimator": "paired_equal",
+          "window": "primary_6m",
+          "group_type": "Overall",
+          "group": "All assigned pairs",
+          "metric": "monthly_revenue_estimated_difference",
+          "weight_method": "Equal pairs"
+        },
+        "field": "ci_upper",
+        "transformation": "none"
+      },
+      "rounding": "GBP to 2 decimals"
+    },
+    {
+      "id": "portfolio.incremental_revenue",
+      "label": "Base conditional RAISE portfolio uplift",
+      "value": 148618.480205,
+      "display": "£148,618.48",
+      "unit": "GBP net",
+      "window": "January–December 2026 hypothetical",
+      "population": "All 80 gyms; only 11 conditional RAISE increments; other sites no increase",
+      "source": {
+        "path": "data/recommendation_portfolio.csv",
+        "key": {
+          "variant": "base",
+          "case": "Base"
+        },
+        "field": "incremental_revenue",
+        "transformation": "none"
+      },
+      "rounding": "GBP to 2 decimals"
+    },
+    {
+      "id": "portfolio.incremental_revenue_lower",
+      "label": "Portfolio conditional 95% lower bound",
+      "value": 64400.3704787,
+      "display": "£64,400.37",
+      "unit": "GBP net",
+      "window": "January–December 2026 hypothetical",
+      "population": "All 80 gyms; only 11 conditional RAISE increments; other sites no increase",
+      "source": {
+        "path": "data/recommendation_portfolio.csv",
+        "key": {
+          "variant": "base",
+          "case": "Base"
+        },
+        "field": "incremental_revenue_lower",
+        "transformation": "none"
+      },
+      "rounding": "GBP to 2 decimals"
+    },
+    {
+      "id": "portfolio.incremental_revenue_upper",
+      "label": "Portfolio conditional 95% upper bound",
+      "value": 230752.087139,
+      "display": "£230,752.09",
+      "unit": "GBP net",
+      "window": "January–December 2026 hypothetical",
+      "population": "All 80 gyms; only 11 conditional RAISE increments; other sites no increase",
+      "source": {
+        "path": "data/recommendation_portfolio.csv",
+        "key": {
+          "variant": "base",
+          "case": "Base"
+        },
+        "field": "incremental_revenue_upper",
+        "transformation": "none"
+      },
+      "rounding": "GBP to 2 decimals"
+    },
+    {
+      "id": "portfolio.member_difference",
+      "label": "December member difference versus no increase",
+      "value": -1208.88793929,
+      "display": "-1,209",
+      "unit": "expected members",
+      "window": "January–December 2026 hypothetical",
+      "population": "All 80 gyms; only 11 conditional RAISE increments; other sites no increase",
+      "source": {
+        "path": "data/recommendation_portfolio.csv",
+        "key": {
+          "variant": "base",
+          "case": "Base"
+        },
+        "field": "member_difference",
+        "transformation": "none"
+      },
+      "rounding": "nearest whole member/count for display; unrounded value retained"
+    },
+    {
+      "id": "portfolio.member_impact",
+      "label": "December member impact versus no increase",
+      "value": -0.00305719900731,
+      "display": "-0.31%",
+      "unit": "decimal growth",
+      "window": "January–December 2026 hypothetical",
+      "population": "All 80 gyms; only 11 conditional RAISE increments; other sites no increase",
+      "source": {
+        "path": "data/recommendation_portfolio.csv",
+        "key": {
+          "variant": "base",
+          "case": "Base"
+        },
+        "field": "member_impact",
+        "transformation": "none"
+      },
+      "rounding": "decimal ×100, 2 decimals"
+    },
+    {
+      "id": "portfolio.counterfactual_month12_members",
+      "label": "No-increase December 2026 members",
+      "value": 395423.371654,
+      "display": "395,423",
+      "unit": "expected members",
+      "window": "January–December 2026 hypothetical",
+      "population": "All 80 gyms; only 11 conditional RAISE increments; other sites no increase",
+      "source": {
+        "path": "data/recommendation_portfolio.csv",
+        "key": {
+          "variant": "base",
+          "case": "Base"
+        },
+        "field": "counterfactual_month12_members",
+        "transformation": "none"
+      },
+      "rounding": "nearest whole member/count for display; unrounded value retained"
+    },
+    {
+      "id": "portfolio.month12_members",
+      "label": "Conditional-raise December 2026 members",
+      "value": 394214.483715,
+      "display": "394,214",
+      "unit": "expected members",
+      "window": "January–December 2026 hypothetical",
+      "population": "All 80 gyms; only 11 conditional RAISE increments; other sites no increase",
+      "source": {
+        "path": "data/recommendation_portfolio.csv",
+        "key": {
+          "variant": "base",
+          "case": "Base"
+        },
+        "field": "month12_members",
+        "transformation": "none"
+      },
+      "rounding": "nearest whole member/count for display; unrounded value retained"
+    },
+    {
+      "id": "portfolio.excluded_test_first_base_revenue",
+      "label": "Excluded provisional TEST FIRST gains",
+      "value": 107177.072184,
+      "display": "£107,177.07",
+      "unit": "GBP net, separately labelled potential",
+      "window": "January–December 2026 hypothetical",
+      "population": "All 80 gyms; only 11 conditional RAISE increments; other sites no increase",
+      "source": {
+        "path": "data/recommendation_portfolio.csv",
+        "key": {
+          "variant": "base",
+          "case": "Base"
+        },
+        "field": "excluded_test_first_base_revenue",
+        "transformation": "none"
+      },
+      "rounding": "GBP to 2 decimals"
+    },
+    {
+      "id": "portfolio.raise_1_sites",
+      "label": "RAISE £1 sites",
+      "value": 10.0,
+      "display": "10",
+      "unit": "gyms",
+      "window": "January–December 2026 hypothetical",
+      "population": "All 80 gyms; only 11 conditional RAISE increments; other sites no increase",
+      "source": {
+        "path": "data/recommendation_portfolio.csv",
+        "key": {
+          "variant": "base",
+          "case": "Base"
+        },
+        "field": "raise_1_sites",
+        "transformation": "none"
+      },
+      "rounding": "nearest whole member/count for display; unrounded value retained"
+    },
+    {
+      "id": "portfolio.raise_2_sites",
+      "label": "RAISE £2 sites",
+      "value": 1.0,
+      "display": "1",
+      "unit": "gyms",
+      "window": "January–December 2026 hypothetical",
+      "population": "All 80 gyms; only 11 conditional RAISE increments; other sites no increase",
+      "source": {
+        "path": "data/recommendation_portfolio.csv",
+        "key": {
+          "variant": "base",
+          "case": "Base"
+        },
+        "field": "raise_2_sites",
+        "transformation": "none"
+      },
+      "rounding": "nearest whole member/count for display; unrounded value retained"
+    },
+    {
+      "id": "portfolio.test_sites",
+      "label": "TEST FIRST sites",
+      "value": 5.0,
+      "display": "5",
+      "unit": "gyms",
+      "window": "January–December 2026 hypothetical",
+      "population": "All 80 gyms; only 11 conditional RAISE increments; other sites no increase",
+      "source": {
+        "path": "data/recommendation_portfolio.csv",
+        "key": {
+          "variant": "base",
+          "case": "Base"
+        },
+        "field": "test_sites",
+        "transformation": "none"
+      },
+      "rounding": "nearest whole member/count for display; unrounded value retained"
+    },
+    {
+      "id": "portfolio.hold_sites",
+      "label": "HOLD PRICE sites",
+      "value": 26.0,
+      "display": "26",
+      "unit": "gyms",
+      "window": "January–December 2026 hypothetical",
+      "population": "All 80 gyms; only 11 conditional RAISE increments; other sites no increase",
+      "source": {
+        "path": "data/recommendation_portfolio.csv",
+        "key": {
+          "variant": "base",
+          "case": "Base"
+        },
+        "field": "hold_sites",
+        "transformation": "none"
+      },
+      "rounding": "nearest whole member/count for display; unrounded value retained"
+    },
+    {
+      "id": "portfolio.investigate_sites",
+      "label": "DEFENSIVE / INVESTIGATE sites",
+      "value": 38.0,
+      "display": "38",
+      "unit": "gyms",
+      "window": "January–December 2026 hypothetical",
+      "population": "All 80 gyms; only 11 conditional RAISE increments; other sites no increase",
+      "source": {
+        "path": "data/recommendation_portfolio.csv",
+        "key": {
+          "variant": "base",
+          "case": "Base"
+        },
+        "field": "investigate_sites",
+        "transformation": "none"
+      },
+      "rounding": "nearest whole member/count for display; unrounded value retained"
+    },
+    {
+      "id": "experiment.6.revenue_effect.estimate",
+      "label": "Main 6-month revenue effect estimate",
+      "value": 0.010166646403,
+      "display": "1.02%",
+      "unit": "decimal proportion",
+      "window": "July–December 2025 versus January–June 2026",
+      "population": "Five primary first-repricing pairs; simulated",
+      "source": {
+        "path": "data/experiment_estimates.csv",
+        "key": {
+          "simulation": "Main",
+          "population": "First repricing",
+          "checkpoint_months": "6",
+          "metric": "revenue_effect"
+        },
+        "field": "estimate",
+        "transformation": "none"
+      },
+      "rounding": "decimal ×100, 2 decimals"
+    },
+    {
+      "id": "experiment.6.revenue_effect.lower",
+      "label": "Main 6-month revenue effect lower",
+      "value": -0.00961294285458,
+      "display": "-0.96%",
+      "unit": "decimal proportion",
+      "window": "July–December 2025 versus January–June 2026",
+      "population": "Five primary first-repricing pairs; simulated",
+      "source": {
+        "path": "data/experiment_estimates.csv",
+        "key": {
+          "simulation": "Main",
+          "population": "First repricing",
+          "checkpoint_months": "6",
+          "metric": "revenue_effect"
+        },
+        "field": "lower",
+        "transformation": "none"
+      },
+      "rounding": "decimal ×100, 2 decimals"
+    },
+    {
+      "id": "experiment.6.revenue_effect.upper",
+      "label": "Main 6-month revenue effect upper",
+      "value": 0.0303412652083,
+      "display": "3.03%",
+      "unit": "decimal proportion",
+      "window": "July–December 2025 versus January–June 2026",
+      "population": "Five primary first-repricing pairs; simulated",
+      "source": {
+        "path": "data/experiment_estimates.csv",
+        "key": {
+          "simulation": "Main",
+          "population": "First repricing",
+          "checkpoint_months": "6",
+          "metric": "revenue_effect"
+        },
+        "field": "upper",
+        "transformation": "none"
+      },
+      "rounding": "decimal ×100, 2 decimals"
+    },
+    {
+      "id": "experiment.6.p_value_one_sided",
+      "label": "p value one sided",
+      "value": 0.1875,
+      "display": "0.18750",
+      "unit": "probability",
+      "window": "Six-month primary window",
+      "population": "Five pairs / 32 assignment flips",
+      "source": {
+        "path": "data/experiment_estimates.csv",
+        "key": {
+          "simulation": "Main",
+          "population": "First repricing",
+          "checkpoint_months": "6",
+          "metric": "revenue_effect"
+        },
+        "field": "p_value_one_sided",
+        "transformation": "none"
+      },
+      "rounding": "5 decimals"
+    },
+    {
+      "id": "experiment.6.p_value_two_sided",
+      "label": "p value two sided",
+      "value": 0.375,
+      "display": "0.37500",
+      "unit": "probability",
+      "window": "Six-month primary window",
+      "population": "Five pairs / 32 assignment flips",
+      "source": {
+        "path": "data/experiment_estimates.csv",
+        "key": {
+          "simulation": "Main",
+          "population": "First repricing",
+          "checkpoint_months": "6",
+          "metric": "revenue_effect"
+        },
+        "field": "p_value_two_sided",
+        "transformation": "none"
+      },
+      "rounding": "5 decimals"
+    },
+    {
+      "id": "experiment.6.member_harm.estimate",
+      "label": "Main 6-month member harm estimate",
+      "value": 0.0205440941318,
+      "display": "2.05%",
+      "unit": "decimal proportion",
+      "window": "July–December 2025 versus January–June 2026",
+      "population": "Five primary first-repricing pairs; simulated",
+      "source": {
+        "path": "data/experiment_estimates.csv",
+        "key": {
+          "simulation": "Main",
+          "population": "First repricing",
+          "checkpoint_months": "6",
+          "metric": "member_harm"
+        },
+        "field": "estimate",
+        "transformation": "none"
+      },
+      "rounding": "decimal ×100, 2 decimals"
+    },
+    {
+      "id": "experiment.6.member_harm.lower",
+      "label": "Main 6-month member harm lower",
+      "value": 0.00295314166573,
+      "display": "0.30%",
+      "unit": "decimal proportion",
+      "window": "July–December 2025 versus January–June 2026",
+      "population": "Five primary first-repricing pairs; simulated",
+      "source": {
+        "path": "data/experiment_estimates.csv",
+        "key": {
+          "simulation": "Main",
+          "population": "First repricing",
+          "checkpoint_months": "6",
+          "metric": "member_harm"
+        },
+        "field": "lower",
+        "transformation": "none"
+      },
+      "rounding": "decimal ×100, 2 decimals"
+    },
+    {
+      "id": "experiment.6.member_harm.upper",
+      "label": "Main 6-month member harm upper",
+      "value": 0.0381350465979,
+      "display": "3.81%",
+      "unit": "decimal proportion",
+      "window": "July–December 2025 versus January–June 2026",
+      "population": "Five primary first-repricing pairs; simulated",
+      "source": {
+        "path": "data/experiment_estimates.csv",
+        "key": {
+          "simulation": "Main",
+          "population": "First repricing",
+          "checkpoint_months": "6",
+          "metric": "member_harm"
+        },
+        "field": "upper",
+        "transformation": "none"
+      },
+      "rounding": "decimal ×100, 2 decimals"
+    },
+    {
+      "id": "experiment.6.standard_acquisition_harm.estimate",
+      "label": "Main 6-month standard acquisition harm estimate",
+      "value": 0.0527226213401,
+      "display": "5.27%",
+      "unit": "decimal proportion",
+      "window": "July–December 2025 versus January–June 2026",
+      "population": "Five primary first-repricing pairs; simulated",
+      "source": {
+        "path": "data/experiment_estimates.csv",
+        "key": {
+          "simulation": "Main",
+          "population": "First repricing",
+          "checkpoint_months": "6",
+          "metric": "standard_acquisition_harm"
+        },
+        "field": "estimate",
+        "transformation": "none"
+      },
+      "rounding": "decimal ×100, 2 decimals"
+    },
+    {
+      "id": "experiment.6.standard_acquisition_harm.lower",
+      "label": "Main 6-month standard acquisition harm lower",
+      "value": -0.00998075264483,
+      "display": "-1.00%",
+      "unit": "decimal proportion",
+      "window": "July–December 2025 versus January–June 2026",
+      "population": "Five primary first-repricing pairs; simulated",
+      "source": {
+        "path": "data/experiment_estimates.csv",
+        "key": {
+          "simulation": "Main",
+          "population": "First repricing",
+          "checkpoint_months": "6",
+          "metric": "standard_acquisition_harm"
+        },
+        "field": "lower",
+        "transformation": "none"
+      },
+      "rounding": "decimal ×100, 2 decimals"
+    },
+    {
+      "id": "experiment.6.standard_acquisition_harm.upper",
+      "label": "Main 6-month standard acquisition harm upper",
+      "value": 0.111533135883,
+      "display": "11.15%",
+      "unit": "decimal proportion",
+      "window": "July–December 2025 versus January–June 2026",
+      "population": "Five primary first-repricing pairs; simulated",
+      "source": {
+        "path": "data/experiment_estimates.csv",
+        "key": {
+          "simulation": "Main",
+          "population": "First repricing",
+          "checkpoint_months": "6",
+          "metric": "standard_acquisition_harm"
+        },
+        "field": "upper",
+        "transformation": "none"
+      },
+      "rounding": "decimal ×100, 2 decimals"
+    },
+    {
+      "id": "experiment.6.incumbent_churn_change_pp.estimate",
+      "label": "Main 6-month incumbent churn change pp estimate",
+      "value": 0.249353373613,
+      "display": "0.249 pp",
+      "unit": "percentage points per month",
+      "window": "July–December 2025 versus January–June 2026",
+      "population": "Five primary first-repricing pairs; simulated",
+      "source": {
+        "path": "data/experiment_estimates.csv",
+        "key": {
+          "simulation": "Main",
+          "population": "First repricing",
+          "checkpoint_months": "6",
+          "metric": "incumbent_churn_change_pp"
+        },
+        "field": "estimate",
+        "transformation": "none"
+      },
+      "rounding": "already percentage points, 3 decimals"
+    },
+    {
+      "id": "experiment.6.incumbent_churn_change_pp.lower",
+      "label": "Main 6-month incumbent churn change pp lower",
+      "value": -0.0829873756231,
+      "display": "-0.083 pp",
+      "unit": "percentage points per month",
+      "window": "July–December 2025 versus January–June 2026",
+      "population": "Five primary first-repricing pairs; simulated",
+      "source": {
+        "path": "data/experiment_estimates.csv",
+        "key": {
+          "simulation": "Main",
+          "population": "First repricing",
+          "checkpoint_months": "6",
+          "metric": "incumbent_churn_change_pp"
+        },
+        "field": "lower",
+        "transformation": "none"
+      },
+      "rounding": "already percentage points, 3 decimals"
+    },
+    {
+      "id": "experiment.6.incumbent_churn_change_pp.upper",
+      "label": "Main 6-month incumbent churn change pp upper",
+      "value": 0.529631805043,
+      "display": "0.530 pp",
+      "unit": "percentage points per month",
+      "window": "July–December 2025 versus January–June 2026",
+      "population": "Five primary first-repricing pairs; simulated",
+      "source": {
+        "path": "data/experiment_estimates.csv",
+        "key": {
+          "simulation": "Main",
+          "population": "First repricing",
+          "checkpoint_months": "6",
+          "metric": "incumbent_churn_change_pp"
+        },
+        "field": "upper",
+        "transformation": "none"
+      },
+      "rounding": "already percentage points, 3 decimals"
+    },
+    {
+      "id": "experiment.6.incumbent_downgrade_change_pp.estimate",
+      "label": "Main 6-month incumbent downgrade change pp estimate",
+      "value": 0.175440790827,
+      "display": "0.175 pp",
+      "unit": "percentage points per month",
+      "window": "July–December 2025 versus January–June 2026",
+      "population": "Five primary first-repricing pairs; simulated",
+      "source": {
+        "path": "data/experiment_estimates.csv",
+        "key": {
+          "simulation": "Main",
+          "population": "First repricing",
+          "checkpoint_months": "6",
+          "metric": "incumbent_downgrade_change_pp"
+        },
+        "field": "estimate",
+        "transformation": "none"
+      },
+      "rounding": "already percentage points, 3 decimals"
+    },
+    {
+      "id": "experiment.6.incumbent_downgrade_change_pp.lower",
+      "label": "Main 6-month incumbent downgrade change pp lower",
+      "value": 0.141729694321,
+      "display": "0.142 pp",
+      "unit": "percentage points per month",
+      "window": "July–December 2025 versus January–June 2026",
+      "population": "Five primary first-repricing pairs; simulated",
+      "source": {
+        "path": "data/experiment_estimates.csv",
+        "key": {
+          "simulation": "Main",
+          "population": "First repricing",
+          "checkpoint_months": "6",
+          "metric": "incumbent_downgrade_change_pp"
+        },
+        "field": "lower",
+        "transformation": "none"
+      },
+      "rounding": "already percentage points, 3 decimals"
+    },
+    {
+      "id": "experiment.6.incumbent_downgrade_change_pp.upper",
+      "label": "Main 6-month incumbent downgrade change pp upper",
+      "value": 0.214124366898,
+      "display": "0.214 pp",
+      "unit": "percentage points per month",
+      "window": "July–December 2025 versus January–June 2026",
+      "population": "Five primary first-repricing pairs; simulated",
+      "source": {
+        "path": "data/experiment_estimates.csv",
+        "key": {
+          "simulation": "Main",
+          "population": "First repricing",
+          "checkpoint_months": "6",
+          "metric": "incumbent_downgrade_change_pp"
+        },
+        "field": "upper",
+        "transformation": "none"
+      },
+      "rounding": "already percentage points, 3 decimals"
+    },
+    {
+      "id": "experiment.12.incumbent_churn_change_pp.estimate",
+      "label": "Main 12-month incumbent churn change pp estimate",
+      "value": 0.482414730458,
+      "display": "0.482 pp",
+      "unit": "percentage points per month",
+      "window": "January–December 2025 versus January–December 2026",
+      "population": "Five primary first-repricing pairs; simulated",
+      "source": {
+        "path": "data/experiment_estimates.csv",
+        "key": {
+          "simulation": "Main",
+          "population": "First repricing",
+          "checkpoint_months": "12",
+          "metric": "incumbent_churn_change_pp"
+        },
+        "field": "estimate",
+        "transformation": "none"
+      },
+      "rounding": "already percentage points, 3 decimals"
+    },
+    {
+      "id": "experiment.12.incumbent_churn_change_pp.lower",
+      "label": "Main 12-month incumbent churn change pp lower",
+      "value": 0.315185930454,
+      "display": "0.315 pp",
+      "unit": "percentage points per month",
+      "window": "January–December 2025 versus January–December 2026",
+      "population": "Five primary first-repricing pairs; simulated",
+      "source": {
+        "path": "data/experiment_estimates.csv",
+        "key": {
+          "simulation": "Main",
+          "population": "First repricing",
+          "checkpoint_months": "12",
+          "metric": "incumbent_churn_change_pp"
+        },
+        "field": "lower",
+        "transformation": "none"
+      },
+      "rounding": "already percentage points, 3 decimals"
+    },
+    {
+      "id": "experiment.12.incumbent_churn_change_pp.upper",
+      "label": "Main 12-month incumbent churn change pp upper",
+      "value": 0.649776007392,
+      "display": "0.650 pp",
+      "unit": "percentage points per month",
+      "window": "January–December 2025 versus January–December 2026",
+      "population": "Five primary first-repricing pairs; simulated",
+      "source": {
+        "path": "data/experiment_estimates.csv",
+        "key": {
+          "simulation": "Main",
+          "population": "First repricing",
+          "checkpoint_months": "12",
+          "metric": "incumbent_churn_change_pp"
+        },
+        "field": "upper",
+        "transformation": "none"
+      },
+      "rounding": "already percentage points, 3 decimals"
+    },
+    {
+      "id": "decision.Main.6",
+      "label": "Main 6-month primary decision",
+      "value": "EXTEND TEST",
+      "display": "EXTEND TEST",
+      "unit": "saved classification",
+      "window": "Matching-length pre/post 6-month window",
+      "population": "Five primary pairs; simulated",
+      "source": {
+        "path": "analysis/experiment_results.json",
+        "key": {
+          "simulation": "Main",
+          "population": "First repricing",
+          "checkpoint_months": 6
+        },
+        "field": "decision",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "decision.Main.12",
+      "label": "Main 12-month primary decision",
+      "value": "STOP",
+      "display": "STOP",
+      "unit": "saved classification",
+      "window": "Matching-length pre/post 12-month window",
+      "population": "Five primary pairs; simulated",
+      "source": {
+        "path": "analysis/experiment_results.json",
+        "key": {
+          "simulation": "Main",
+          "population": "First repricing",
+          "checkpoint_months": 12
+        },
+        "field": "decision",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "decision.A/A null.12",
+      "label": "A/A null 12-month primary decision",
+      "value": "MODIFY",
+      "display": "MODIFY",
+      "unit": "saved classification",
+      "window": "Matching-length pre/post 12-month window",
+      "population": "Five primary pairs; simulated",
+      "source": {
+        "path": "analysis/experiment_results.json",
+        "key": {
+          "simulation": "A/A null",
+          "population": "First repricing",
+          "checkpoint_months": 12
+        },
+        "field": "decision",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "power.planning_power",
+      "label": "Planning power at assumed 2% revenue effect",
+      "value": 0.647,
+      "display": "64.7%",
+      "unit": "decimal proportion",
+      "window": "Prospective planning, not observed power",
+      "population": "Five primary pairs; historical placebo noise proxy",
+      "source": {
+        "path": "data/experiment_power.csv",
+        "key": {
+          "design": "5 first-repricing pairs",
+          "effect_assumption": "0.02",
+          "method": "Exact assignment Monte Carlo"
+        },
+        "field": "planning_power",
+        "transformation": "none"
+      },
+      "rounding": "decimal ×100, 1 decimal"
+    },
+    {
+      "id": "power.effect_detectable_80pct",
+      "label": "Effect detectable at 80% planning power",
+      "value": 0.0273732095957,
+      "display": "2.74%",
+      "unit": "decimal proportion",
+      "window": "Prospective planning, not observed power",
+      "population": "Five primary pairs; historical placebo noise proxy",
+      "source": {
+        "path": "data/experiment_power.csv",
+        "key": {
+          "design": "5 first-repricing pairs",
+          "effect_assumption": "0.02",
+          "method": "Exact assignment Monte Carlo"
+        },
+        "field": "effect_detectable_80pct",
+        "transformation": "none"
+      },
+      "rounding": "decimal ×100, 2 decimals"
+    },
+    {
+      "id": "policy7.member_loss_limit",
+      "label": "member loss limit",
+      "value": 0.05,
+      "display": "5.00%",
+      "unit": "decimal downside December member-loss tolerance",
+      "window": "Hypothetical 2026 assessment",
+      "population": "Policy/configuration, not empirical tolerance",
+      "source": {
+        "path": "analysis/recommendation_config.json",
+        "key": {},
+        "field": "member_loss_limit",
+        "transformation": "none"
+      },
+      "rounding": "decimal ×100, 2 decimals"
+    },
+    {
+      "id": "policy7.minimum_post_increase_competitor_gap",
+      "label": "minimum post increase competitor gap",
+      "value": 0.0,
+      "display": "£0.00",
+      "unit": "GBP consumer recurring-price gap inclusive VAT",
+      "window": "Hypothetical 2026 assessment",
+      "population": "Policy/configuration, not empirical tolerance",
+      "source": {
+        "path": "analysis/recommendation_config.json",
+        "key": {},
+        "field": "minimum_post_increase_competitor_gap",
+        "transformation": "none"
+      },
+      "rounding": "GBP to 2 decimals"
+    },
+    {
+      "id": "policy7.test_repeat_repricing",
+      "label": "test repeat repricing",
+      "value": true,
+      "display": "True",
+      "unit": "boolean policy",
+      "window": "Hypothetical 2026 assessment",
+      "population": "Policy/configuration, not empirical tolerance",
+      "source": {
+        "path": "analysis/recommendation_config.json",
+        "key": {},
+        "field": "test_repeat_repricing",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "policy8.member_harm_limit",
+      "label": "member harm limit",
+      "value": 0.03,
+      "display": "3.00%",
+      "unit": "decimal controlled closing-member loss",
+      "window": "Hypothetical 2026 experiment",
+      "population": "Policy/configuration, not empirical tolerance",
+      "source": {
+        "path": "analysis/experiment_config.json",
+        "key": {},
+        "field": "member_harm_limit",
+        "transformation": "none"
+      },
+      "rounding": "decimal ×100, 2 decimals"
+    },
+    {
+      "id": "policy8.standard_acquisition_harm_limit",
+      "label": "standard acquisition harm limit",
+      "value": 0.1,
+      "display": "10.00%",
+      "unit": "decimal controlled Standard acquisition loss",
+      "window": "Hypothetical 2026 experiment",
+      "population": "Policy/configuration, not empirical tolerance",
+      "source": {
+        "path": "analysis/experiment_config.json",
+        "key": {},
+        "field": "standard_acquisition_harm_limit",
+        "transformation": "none"
+      },
+      "rounding": "decimal ×100, 2 decimals"
+    },
+    {
+      "id": "policy8.churn_harm_limit_pp",
+      "label": "churn harm limit pp",
+      "value": 0.25,
+      "display": "0.250 pp",
+      "unit": "monthly percentage points",
+      "window": "Hypothetical 2026 experiment",
+      "population": "Policy/configuration, not empirical tolerance",
+      "source": {
+        "path": "analysis/experiment_config.json",
+        "key": {},
+        "field": "churn_harm_limit_pp",
+        "transformation": "none"
+      },
+      "rounding": "already percentage points, 3 decimals"
+    },
+    {
+      "id": "policy8.downgrade_harm_limit_pp",
+      "label": "downgrade harm limit pp",
+      "value": 0.25,
+      "display": "0.250 pp",
+      "unit": "monthly percentage points",
+      "window": "Hypothetical 2026 experiment",
+      "population": "Policy/configuration, not empirical tolerance",
+      "source": {
+        "path": "analysis/experiment_config.json",
+        "key": {},
+        "field": "downgrade_harm_limit_pp",
+        "transformation": "none"
+      },
+      "rounding": "already percentage points, 3 decimals"
+    },
+    {
+      "id": "policy8.complaints_service_limit",
+      "label": "complaints service limit",
+      "value": 2.0,
+      "display": "2.0",
+      "unit": "complaints per 1000 average-member months",
+      "window": "Hypothetical 2026 experiment",
+      "population": "Policy/configuration, not empirical tolerance",
+      "source": {
+        "path": "analysis/experiment_config.json",
+        "key": {},
+        "field": "complaints_service_limit",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "policy8.capacity_service_limit",
+      "label": "capacity service limit",
+      "value": 1.0,
+      "display": "100.00%",
+      "unit": "fraction of concurrent capacity",
+      "window": "Hypothetical 2026 experiment",
+      "population": "Policy/configuration, not empirical tolerance",
+      "source": {
+        "path": "analysis/experiment_config.json",
+        "key": {},
+        "field": "capacity_service_limit",
+        "transformation": "none"
+      },
+      "rounding": "decimal ×100, 2 decimals"
+    },
+    {
+      "id": "policy8.capacity_consecutive_months",
+      "label": "capacity consecutive months",
+      "value": 2,
+      "display": "2",
+      "unit": "consecutive months",
+      "window": "Hypothetical 2026 experiment",
+      "population": "Policy/configuration, not empirical tolerance",
+      "source": {
+        "path": "analysis/experiment_config.json",
+        "key": {},
+        "field": "capacity_consecutive_months",
+        "transformation": "none"
+      },
+      "rounding": "nearest whole member/count for display; unrounded value retained"
+    },
+    {
+      "id": "policy8.alpha",
+      "label": "alpha",
+      "value": 0.05,
+      "display": "5.00%",
+      "unit": "probability",
+      "window": "Hypothetical 2026 experiment",
+      "population": "Policy/configuration, not empirical tolerance",
+      "source": {
+        "path": "analysis/experiment_config.json",
+        "key": {},
+        "field": "alpha",
+        "transformation": "none"
+      },
+      "rounding": "decimal ×100, 2 decimals"
+    },
+    {
+      "id": "policy8.minimum_interval_pairs",
+      "label": "minimum interval pairs",
+      "value": 4,
+      "display": "4",
+      "unit": "complete pairs",
+      "window": "Hypothetical 2026 experiment",
+      "population": "Policy/configuration, not empirical tolerance",
+      "source": {
+        "path": "analysis/experiment_config.json",
+        "key": {},
+        "field": "minimum_interval_pairs",
+        "transformation": "none"
+      },
+      "rounding": "nearest whole member/count for display; unrounded value retained"
+    },
+    {
+      "id": "policy8.bootstrap_samples",
+      "label": "bootstrap samples",
+      "value": 10000,
+      "display": "10,000",
+      "unit": "whole-pair samples",
+      "window": "Hypothetical 2026 experiment",
+      "population": "Policy/configuration, not empirical tolerance",
+      "source": {
+        "path": "analysis/experiment_config.json",
+        "key": {},
+        "field": "bootstrap_samples",
+        "transformation": "none"
+      },
+      "rounding": "nearest whole member/count for display; unrounded value retained"
+    },
+    {
+      "id": "policy8.increment",
+      "label": "increment",
+      "value": 1.0,
+      "display": "£1.00",
+      "unit": "GBP consumer cash increment inclusive VAT",
+      "window": "Hypothetical 2026 experiment",
+      "population": "Policy/configuration, not empirical tolerance",
+      "source": {
+        "path": "analysis/experiment_config.json",
+        "key": {},
+        "field": "increment",
+        "transformation": "none"
+      },
+      "rounding": "GBP to 2 decimals"
+    },
+    {
+      "id": "policy8.intervention_date",
+      "label": "intervention date",
+      "value": "2026-01-01",
+      "display": "2026-01-01",
+      "unit": "ISO date",
+      "window": "Hypothetical 2026 experiment",
+      "population": "Policy/configuration, not empirical tolerance",
+      "source": {
+        "path": "analysis/experiment_config.json",
+        "key": {},
+        "field": "intervention_date",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "policy8.billing_date",
+      "label": "billing date",
+      "value": "2026-02-01",
+      "display": "2026-02-01",
+      "unit": "ISO date",
+      "window": "Hypothetical 2026 experiment",
+      "population": "Policy/configuration, not empirical tolerance",
+      "source": {
+        "path": "analysis/experiment_config.json",
+        "key": {},
+        "field": "billing_date",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "scenario.vat_rate",
+      "label": "vat rate",
+      "value": 0.2,
+      "display": "20.00%",
+      "unit": "decimal VAT rate",
+      "window": "Hypothetical 2026 model",
+      "population": "Policy/configuration, not empirical tolerance",
+      "source": {
+        "path": "analysis/scenario_config.json",
+        "key": {},
+        "field": "vat_rate",
+        "transformation": "none"
+      },
+      "rounding": "decimal ×100, 2 decimals"
+    },
+    {
+      "id": "scenario.notice_churn_factor",
+      "label": "notice churn factor",
+      "value": 0.5,
+      "display": "0.5",
+      "unit": "pre-calibration response multiplier",
+      "window": "Hypothetical 2026 model",
+      "population": "Policy/configuration, not empirical tolerance",
+      "source": {
+        "path": "analysis/scenario_config.json",
+        "key": {},
+        "field": "notice_churn_factor",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "scenario.protected_downgrade_factor",
+      "label": "protected downgrade factor",
+      "value": 0.0,
+      "display": "0.0",
+      "unit": "pre-calibration response multiplier",
+      "window": "Hypothetical 2026 model",
+      "population": "Policy/configuration, not empirical tolerance",
+      "source": {
+        "path": "analysis/scenario_config.json",
+        "key": {},
+        "field": "protected_downgrade_factor",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "scenario.bootstrap_samples",
+      "label": "bootstrap samples",
+      "value": 10000,
+      "display": "10,000",
+      "unit": "whole-pair samples",
+      "window": "Hypothetical 2026 model",
+      "population": "Policy/configuration, not empirical tolerance",
+      "source": {
+        "path": "analysis/scenario_config.json",
+        "key": {},
+        "field": "bootstrap_samples",
+        "transformation": "none"
+      },
+      "rounding": "nearest whole member/count for display; unrounded value retained"
+    },
+    {
+      "id": "site.NF049.city",
+      "label": "NF049 city",
+      "value": "Hull",
+      "display": "Hull",
+      "unit": "text / saved label",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF049"
+        },
+        "field": "city",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF049.action",
+      "label": "NF049 action",
+      "value": "RAISE £2",
+      "display": "RAISE £2",
+      "unit": "text / saved label",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF049"
+        },
+        "field": "action",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF049.proposed_increment",
+      "label": "NF049 proposed increment",
+      "value": 2.0,
+      "display": "2.0",
+      "unit": "GBP consumer inclusive VAT",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF049"
+        },
+        "field": "proposed_increment",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF049.provisional_test_increment",
+      "label": "NF049 provisional test increment",
+      "value": 0.0,
+      "display": "0.0",
+      "unit": "GBP consumer inclusive VAT",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF049"
+        },
+        "field": "provisional_test_increment",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF049.assessment_increment",
+      "label": "NF049 assessment increment",
+      "value": 2.0,
+      "display": "2.0",
+      "unit": "GBP consumer inclusive VAT",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF049"
+        },
+        "field": "assessment_increment",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF049.rule_id",
+      "label": "NF049 rule id",
+      "value": "R7_CONDITIONAL_RAISE",
+      "display": "R7_CONDITIONAL_RAISE",
+      "unit": "text / saved label",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF049"
+        },
+        "field": "rule_id",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF049.current_standard_price",
+      "label": "NF049 current standard price",
+      "value": 27.99,
+      "display": "£27.99",
+      "unit": "GBP consumer inclusive VAT",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF049"
+        },
+        "field": "current_standard_price",
+        "transformation": "none"
+      },
+      "rounding": "GBP to 2 decimals"
+    },
+    {
+      "id": "site.NF049.proposed_standard_price",
+      "label": "NF049 proposed standard price",
+      "value": 29.99,
+      "display": "£29.99",
+      "unit": "GBP consumer inclusive VAT",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF049"
+        },
+        "field": "proposed_standard_price",
+        "transformation": "none"
+      },
+      "rounding": "GBP to 2 decimals"
+    },
+    {
+      "id": "site.NF049.plus1_qualified",
+      "label": "NF049 plus1 qualified",
+      "value": true,
+      "display": "True",
+      "unit": "boolean",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF049"
+        },
+        "field": "plus1_qualified",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF049.plus2_qualified",
+      "label": "NF049 plus2 qualified",
+      "value": true,
+      "display": "True",
+      "unit": "boolean",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF049"
+        },
+        "field": "plus2_qualified",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF049.plus1_failed_gates",
+      "label": "NF049 plus1 failed gates",
+      "value": null,
+      "display": "Unavailable",
+      "unit": "text / saved label",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF049"
+        },
+        "field": "plus1_failed_gates",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF049.plus2_failed_gates",
+      "label": "NF049 plus2 failed gates",
+      "value": null,
+      "display": "Unavailable",
+      "unit": "text / saved label",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF049"
+        },
+        "field": "plus2_failed_gates",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF049.explanation",
+      "label": "NF049 explanation",
+      "value": "£2 gives the higher qualifying base revenue; downside member loss 4.72%, post-increase competitor gap £0.69",
+      "display": "£2 gives the higher qualifying base revenue; downside member loss 4.72%, post-increase competitor gap £0.69",
+      "unit": "text / saved label",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF049"
+        },
+        "field": "explanation",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF049.selected_incremental_revenue",
+      "label": "NF049 selected incremental revenue",
+      "value": 23791.8085576,
+      "display": "£23,791.81",
+      "unit": "GBP net",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF049"
+        },
+        "field": "selected_incremental_revenue",
+        "transformation": "none"
+      },
+      "rounding": "GBP to 2 decimals"
+    },
+    {
+      "id": "site.NF049.selected_member_impact",
+      "label": "NF049 selected member impact",
+      "value": -0.0362376984618,
+      "display": "-3.62%",
+      "unit": "decimal December member impact",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF049"
+        },
+        "field": "selected_member_impact",
+        "transformation": "none"
+      },
+      "rounding": "decimal ×100, 2 decimals"
+    },
+    {
+      "id": "site.NF049.repeated_repricing",
+      "label": "NF049 repeated repricing",
+      "value": false,
+      "display": "False",
+      "unit": "boolean",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF049"
+        },
+        "field": "repeated_repricing",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF049.caution_flag_count",
+      "label": "NF049 caution flag count",
+      "value": 0.0,
+      "display": "0.0",
+      "unit": "count",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF049"
+        },
+        "field": "caution_flag_count",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF049.design.disposition",
+      "label": "NF049 design disposition",
+      "value": "Assigned",
+      "display": "Assigned",
+      "unit": "saved design status",
+      "window": "December 2025 eligibility/matching",
+      "population": "Single gym",
+      "source": {
+        "path": "data/experiment_design.csv",
+        "key": {
+          "gym_id": "NF049"
+        },
+        "field": "disposition",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF049.design.assignment",
+      "label": "NF049 design assignment",
+      "value": "Treatment",
+      "display": "Treatment",
+      "unit": "saved design status",
+      "window": "December 2025 eligibility/matching",
+      "population": "Single gym",
+      "source": {
+        "path": "data/experiment_design.csv",
+        "key": {
+          "gym_id": "NF049"
+        },
+        "field": "assignment",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF049.design.population",
+      "label": "NF049 design population",
+      "value": "First repricing",
+      "display": "First repricing",
+      "unit": "saved design status",
+      "window": "December 2025 eligibility/matching",
+      "population": "Single gym",
+      "source": {
+        "path": "data/experiment_design.csv",
+        "key": {
+          "gym_id": "NF049"
+        },
+        "field": "population",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF049.design.exclusion_reason",
+      "label": "NF049 design exclusion_reason",
+      "value": null,
+      "display": "Unavailable",
+      "unit": "saved design status",
+      "window": "December 2025 eligibility/matching",
+      "population": "Single gym",
+      "source": {
+        "path": "data/experiment_design.csv",
+        "key": {
+          "gym_id": "NF049"
+        },
+        "field": "exclusion_reason",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF023.city",
+      "label": "NF023 city",
+      "value": "Portsmouth",
+      "display": "Portsmouth",
+      "unit": "text / saved label",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF023"
+        },
+        "field": "city",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF023.action",
+      "label": "NF023 action",
+      "value": "RAISE £1",
+      "display": "RAISE £1",
+      "unit": "text / saved label",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF023"
+        },
+        "field": "action",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF023.proposed_increment",
+      "label": "NF023 proposed increment",
+      "value": 1.0,
+      "display": "1.0",
+      "unit": "GBP consumer inclusive VAT",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF023"
+        },
+        "field": "proposed_increment",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF023.provisional_test_increment",
+      "label": "NF023 provisional test increment",
+      "value": 0.0,
+      "display": "0.0",
+      "unit": "GBP consumer inclusive VAT",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF023"
+        },
+        "field": "provisional_test_increment",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF023.assessment_increment",
+      "label": "NF023 assessment increment",
+      "value": 1.0,
+      "display": "1.0",
+      "unit": "GBP consumer inclusive VAT",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF023"
+        },
+        "field": "assessment_increment",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF023.rule_id",
+      "label": "NF023 rule id",
+      "value": "R7_CONDITIONAL_RAISE",
+      "display": "R7_CONDITIONAL_RAISE",
+      "unit": "text / saved label",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF023"
+        },
+        "field": "rule_id",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF023.current_standard_price",
+      "label": "NF023 current standard price",
+      "value": 24.99,
+      "display": "£24.99",
+      "unit": "GBP consumer inclusive VAT",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF023"
+        },
+        "field": "current_standard_price",
+        "transformation": "none"
+      },
+      "rounding": "GBP to 2 decimals"
+    },
+    {
+      "id": "site.NF023.proposed_standard_price",
+      "label": "NF023 proposed standard price",
+      "value": 25.99,
+      "display": "£25.99",
+      "unit": "GBP consumer inclusive VAT",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF023"
+        },
+        "field": "proposed_standard_price",
+        "transformation": "none"
+      },
+      "rounding": "GBP to 2 decimals"
+    },
+    {
+      "id": "site.NF023.plus1_qualified",
+      "label": "NF023 plus1 qualified",
+      "value": true,
+      "display": "True",
+      "unit": "boolean",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF023"
+        },
+        "field": "plus1_qualified",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF023.plus2_qualified",
+      "label": "NF023 plus2 qualified",
+      "value": false,
+      "display": "False",
+      "unit": "boolean",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF023"
+        },
+        "field": "plus2_qualified",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF023.plus1_failed_gates",
+      "label": "NF023 plus1 failed gates",
+      "value": null,
+      "display": "Unavailable",
+      "unit": "text / saved label",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF023"
+        },
+        "field": "plus1_failed_gates",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF023.plus2_failed_gates",
+      "label": "NF023 plus2 failed gates",
+      "value": "Post-increase competitor gap; Downside member limit",
+      "display": "Post-increase competitor gap; Downside member limit",
+      "unit": "text / saved label",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF023"
+        },
+        "field": "plus2_failed_gates",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF023.explanation",
+      "label": "NF023 explanation",
+      "value": "£1 gives the higher qualifying base revenue; downside member loss 2.86%, post-increase competitor gap £0.57",
+      "display": "£1 gives the higher qualifying base revenue; downside member loss 2.86%, post-increase competitor gap £0.57",
+      "unit": "text / saved label",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF023"
+        },
+        "field": "explanation",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF023.selected_incremental_revenue",
+      "label": "NF023 selected incremental revenue",
+      "value": 10335.4383131,
+      "display": "£10,335.44",
+      "unit": "GBP net",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF023"
+        },
+        "field": "selected_incremental_revenue",
+        "transformation": "none"
+      },
+      "rounding": "GBP to 2 decimals"
+    },
+    {
+      "id": "site.NF023.selected_member_impact",
+      "label": "NF023 selected member impact",
+      "value": -0.0219235299558,
+      "display": "-2.19%",
+      "unit": "decimal December member impact",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF023"
+        },
+        "field": "selected_member_impact",
+        "transformation": "none"
+      },
+      "rounding": "decimal ×100, 2 decimals"
+    },
+    {
+      "id": "site.NF023.repeated_repricing",
+      "label": "NF023 repeated repricing",
+      "value": false,
+      "display": "False",
+      "unit": "boolean",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF023"
+        },
+        "field": "repeated_repricing",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF023.caution_flag_count",
+      "label": "NF023 caution flag count",
+      "value": 0.0,
+      "display": "0.0",
+      "unit": "count",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF023"
+        },
+        "field": "caution_flag_count",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF023.design.disposition",
+      "label": "NF023 design disposition",
+      "value": "Reserve",
+      "display": "Reserve",
+      "unit": "saved design status",
+      "window": "December 2025 eligibility/matching",
+      "population": "Single gym",
+      "source": {
+        "path": "data/experiment_design.csv",
+        "key": {
+          "gym_id": "NF023"
+        },
+        "field": "disposition",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF023.design.assignment",
+      "label": "NF023 design assignment",
+      "value": null,
+      "display": "Unavailable",
+      "unit": "saved design status",
+      "window": "December 2025 eligibility/matching",
+      "population": "Single gym",
+      "source": {
+        "path": "data/experiment_design.csv",
+        "key": {
+          "gym_id": "NF023"
+        },
+        "field": "assignment",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF023.design.population",
+      "label": "NF023 design population",
+      "value": null,
+      "display": "Unavailable",
+      "unit": "saved design status",
+      "window": "December 2025 eligibility/matching",
+      "population": "Single gym",
+      "source": {
+        "path": "data/experiment_design.csv",
+        "key": {
+          "gym_id": "NF023"
+        },
+        "field": "population",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF023.design.exclusion_reason",
+      "label": "NF023 design exclusion_reason",
+      "value": "No same-region and same-repricing-history partner",
+      "display": "No same-region and same-repricing-history partner",
+      "unit": "saved design status",
+      "window": "December 2025 eligibility/matching",
+      "population": "Single gym",
+      "source": {
+        "path": "data/experiment_design.csv",
+        "key": {
+          "gym_id": "NF023"
+        },
+        "field": "exclusion_reason",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF013.city",
+      "label": "NF013 city",
+      "value": "Reading",
+      "display": "Reading",
+      "unit": "text / saved label",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF013"
+        },
+        "field": "city",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF013.action",
+      "label": "NF013 action",
+      "value": "TEST FIRST",
+      "display": "TEST FIRST",
+      "unit": "text / saved label",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF013"
+        },
+        "field": "action",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF013.proposed_increment",
+      "label": "NF013 proposed increment",
+      "value": 0.0,
+      "display": "0.0",
+      "unit": "GBP consumer inclusive VAT",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF013"
+        },
+        "field": "proposed_increment",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF013.provisional_test_increment",
+      "label": "NF013 provisional test increment",
+      "value": 2.0,
+      "display": "2.0",
+      "unit": "GBP consumer inclusive VAT",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF013"
+        },
+        "field": "provisional_test_increment",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF013.assessment_increment",
+      "label": "NF013 assessment increment",
+      "value": 2.0,
+      "display": "2.0",
+      "unit": "GBP consumer inclusive VAT",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF013"
+        },
+        "field": "assessment_increment",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF013.rule_id",
+      "label": "NF013 rule id",
+      "value": "R6_REPEAT_REPRICING",
+      "display": "R6_REPEAT_REPRICING",
+      "unit": "text / saved label",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF013"
+        },
+        "field": "rule_id",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF013.current_standard_price",
+      "label": "NF013 current standard price",
+      "value": 29.99,
+      "display": "£29.99",
+      "unit": "GBP consumer inclusive VAT",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF013"
+        },
+        "field": "current_standard_price",
+        "transformation": "none"
+      },
+      "rounding": "GBP to 2 decimals"
+    },
+    {
+      "id": "site.NF013.proposed_standard_price",
+      "label": "NF013 proposed standard price",
+      "value": 29.99,
+      "display": "£29.99",
+      "unit": "GBP consumer inclusive VAT",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF013"
+        },
+        "field": "proposed_standard_price",
+        "transformation": "none"
+      },
+      "rounding": "GBP to 2 decimals"
+    },
+    {
+      "id": "site.NF013.plus1_qualified",
+      "label": "NF013 plus1 qualified",
+      "value": true,
+      "display": "True",
+      "unit": "boolean",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF013"
+        },
+        "field": "plus1_qualified",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF013.plus2_qualified",
+      "label": "NF013 plus2 qualified",
+      "value": true,
+      "display": "True",
+      "unit": "boolean",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF013"
+        },
+        "field": "plus2_qualified",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF013.plus1_failed_gates",
+      "label": "NF013 plus1 failed gates",
+      "value": null,
+      "display": "Unavailable",
+      "unit": "text / saved label",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF013"
+        },
+        "field": "plus1_failed_gates",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF013.plus2_failed_gates",
+      "label": "NF013 plus2 failed gates",
+      "value": null,
+      "display": "Unavailable",
+      "unit": "text / saved label",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF013"
+        },
+        "field": "plus2_failed_gates",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF013.explanation",
+      "label": "NF013 explanation",
+      "value": "£2 passes financial gates; repeat repricing requires controlled evidence",
+      "display": "£2 passes financial gates; repeat repricing requires controlled evidence",
+      "unit": "text / saved label",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF013"
+        },
+        "field": "explanation",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF013.selected_incremental_revenue",
+      "label": "NF013 selected incremental revenue",
+      "value": 27654.9592451,
+      "display": "£27,654.96",
+      "unit": "GBP net",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF013"
+        },
+        "field": "selected_incremental_revenue",
+        "transformation": "none"
+      },
+      "rounding": "GBP to 2 decimals"
+    },
+    {
+      "id": "site.NF013.selected_member_impact",
+      "label": "NF013 selected member impact",
+      "value": -0.0354467308041,
+      "display": "-3.54%",
+      "unit": "decimal December member impact",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF013"
+        },
+        "field": "selected_member_impact",
+        "transformation": "none"
+      },
+      "rounding": "decimal ×100, 2 decimals"
+    },
+    {
+      "id": "site.NF013.repeated_repricing",
+      "label": "NF013 repeated repricing",
+      "value": true,
+      "display": "True",
+      "unit": "boolean",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF013"
+        },
+        "field": "repeated_repricing",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF013.caution_flag_count",
+      "label": "NF013 caution flag count",
+      "value": 0.0,
+      "display": "0.0",
+      "unit": "count",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF013"
+        },
+        "field": "caution_flag_count",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF013.design.disposition",
+      "label": "NF013 design disposition",
+      "value": "Assigned",
+      "display": "Assigned",
+      "unit": "saved design status",
+      "window": "December 2025 eligibility/matching",
+      "population": "Single gym",
+      "source": {
+        "path": "data/experiment_design.csv",
+        "key": {
+          "gym_id": "NF013"
+        },
+        "field": "disposition",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF013.design.assignment",
+      "label": "NF013 design assignment",
+      "value": "Control",
+      "display": "Control",
+      "unit": "saved design status",
+      "window": "December 2025 eligibility/matching",
+      "population": "Single gym",
+      "source": {
+        "path": "data/experiment_design.csv",
+        "key": {
+          "gym_id": "NF013"
+        },
+        "field": "assignment",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF013.design.population",
+      "label": "NF013 design population",
+      "value": "Repeat repricing",
+      "display": "Repeat repricing",
+      "unit": "saved design status",
+      "window": "December 2025 eligibility/matching",
+      "population": "Single gym",
+      "source": {
+        "path": "data/experiment_design.csv",
+        "key": {
+          "gym_id": "NF013"
+        },
+        "field": "population",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF013.design.exclusion_reason",
+      "label": "NF013 design exclusion_reason",
+      "value": null,
+      "display": "Unavailable",
+      "unit": "saved design status",
+      "window": "December 2025 eligibility/matching",
+      "population": "Single gym",
+      "source": {
+        "path": "data/experiment_design.csv",
+        "key": {
+          "gym_id": "NF013"
+        },
+        "field": "exclusion_reason",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF001.city",
+      "label": "NF001 city",
+      "value": "London",
+      "display": "London",
+      "unit": "text / saved label",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF001"
+        },
+        "field": "city",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF001.action",
+      "label": "NF001 action",
+      "value": "HOLD PRICE",
+      "display": "HOLD PRICE",
+      "unit": "text / saved label",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF001"
+        },
+        "field": "action",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF001.proposed_increment",
+      "label": "NF001 proposed increment",
+      "value": 0.0,
+      "display": "0.0",
+      "unit": "GBP consumer inclusive VAT",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF001"
+        },
+        "field": "proposed_increment",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF001.provisional_test_increment",
+      "label": "NF001 provisional test increment",
+      "value": 0.0,
+      "display": "0.0",
+      "unit": "GBP consumer inclusive VAT",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF001"
+        },
+        "field": "provisional_test_increment",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF001.assessment_increment",
+      "label": "NF001 assessment increment",
+      "value": 0.0,
+      "display": "0.0",
+      "unit": "GBP consumer inclusive VAT",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF001"
+        },
+        "field": "assessment_increment",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF001.rule_id",
+      "label": "NF001 rule id",
+      "value": "R3_NO_PLAUSIBLE",
+      "display": "R3_NO_PLAUSIBLE",
+      "unit": "text / saved label",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF001"
+        },
+        "field": "rule_id",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF001.current_standard_price",
+      "label": "NF001 current standard price",
+      "value": 27.99,
+      "display": "£27.99",
+      "unit": "GBP consumer inclusive VAT",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF001"
+        },
+        "field": "current_standard_price",
+        "transformation": "none"
+      },
+      "rounding": "GBP to 2 decimals"
+    },
+    {
+      "id": "site.NF001.proposed_standard_price",
+      "label": "NF001 proposed standard price",
+      "value": 27.99,
+      "display": "£27.99",
+      "unit": "GBP consumer inclusive VAT",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF001"
+        },
+        "field": "proposed_standard_price",
+        "transformation": "none"
+      },
+      "rounding": "GBP to 2 decimals"
+    },
+    {
+      "id": "site.NF001.plus1_qualified",
+      "label": "NF001 plus1 qualified",
+      "value": false,
+      "display": "False",
+      "unit": "boolean",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF001"
+        },
+        "field": "plus1_qualified",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF001.plus2_qualified",
+      "label": "NF001 plus2 qualified",
+      "value": false,
+      "display": "False",
+      "unit": "boolean",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF001"
+        },
+        "field": "plus2_qualified",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF001.plus1_failed_gates",
+      "label": "NF001 plus1 failed gates",
+      "value": "Post-increase competitor gap",
+      "display": "Post-increase competitor gap",
+      "unit": "text / saved label",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF001"
+        },
+        "field": "plus1_failed_gates",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF001.plus2_failed_gates",
+      "label": "NF001 plus2 failed gates",
+      "value": "Post-increase competitor gap",
+      "display": "Post-increase competitor gap",
+      "unit": "text / saved label",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF001"
+        },
+        "field": "plus2_failed_gates",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF001.explanation",
+      "label": "NF001 explanation",
+      "value": "Neither £1 nor £2 preserves the required competitor gap with positive base revenue",
+      "display": "Neither £1 nor £2 preserves the required competitor gap with positive base revenue",
+      "unit": "text / saved label",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF001"
+        },
+        "field": "explanation",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF001.selected_incremental_revenue",
+      "label": "NF001 selected incremental revenue",
+      "value": 0.0,
+      "display": "£0.00",
+      "unit": "GBP net",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF001"
+        },
+        "field": "selected_incremental_revenue",
+        "transformation": "none"
+      },
+      "rounding": "GBP to 2 decimals"
+    },
+    {
+      "id": "site.NF001.selected_member_impact",
+      "label": "NF001 selected member impact",
+      "value": 0.0,
+      "display": "0.00%",
+      "unit": "decimal December member impact",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF001"
+        },
+        "field": "selected_member_impact",
+        "transformation": "none"
+      },
+      "rounding": "decimal ×100, 2 decimals"
+    },
+    {
+      "id": "site.NF001.repeated_repricing",
+      "label": "NF001 repeated repricing",
+      "value": true,
+      "display": "True",
+      "unit": "boolean",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF001"
+        },
+        "field": "repeated_repricing",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF001.caution_flag_count",
+      "label": "NF001 caution flag count",
+      "value": 0.0,
+      "display": "0.0",
+      "unit": "count",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF001"
+        },
+        "field": "caution_flag_count",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF001.design.disposition",
+      "label": "NF001 design disposition",
+      "value": "Excluded",
+      "display": "Excluded",
+      "unit": "saved design status",
+      "window": "December 2025 eligibility/matching",
+      "population": "Single gym",
+      "source": {
+        "path": "data/experiment_design.csv",
+        "key": {
+          "gym_id": "NF001"
+        },
+        "field": "disposition",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF001.design.assignment",
+      "label": "NF001 design assignment",
+      "value": null,
+      "display": "Unavailable",
+      "unit": "saved design status",
+      "window": "December 2025 eligibility/matching",
+      "population": "Single gym",
+      "source": {
+        "path": "data/experiment_design.csv",
+        "key": {
+          "gym_id": "NF001"
+        },
+        "field": "assignment",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF001.design.population",
+      "label": "NF001 design population",
+      "value": null,
+      "display": "Unavailable",
+      "unit": "saved design status",
+      "window": "December 2025 eligibility/matching",
+      "population": "Single gym",
+      "source": {
+        "path": "data/experiment_design.csv",
+        "key": {
+          "gym_id": "NF001"
+        },
+        "field": "population",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF001.design.exclusion_reason",
+      "label": "NF001 design exclusion_reason",
+      "value": "Phase 7 action is outside pilot eligibility",
+      "display": "Phase 7 action is outside pilot eligibility",
+      "unit": "saved design status",
+      "window": "December 2025 eligibility/matching",
+      "population": "Single gym",
+      "source": {
+        "path": "data/experiment_design.csv",
+        "key": {
+          "gym_id": "NF001"
+        },
+        "field": "exclusion_reason",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF002.city",
+      "label": "NF002 city",
+      "value": "London",
+      "display": "London",
+      "unit": "text / saved label",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF002"
+        },
+        "field": "city",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF002.action",
+      "label": "NF002 action",
+      "value": "DEFENSIVE / INVESTIGATE",
+      "display": "DEFENSIVE / INVESTIGATE",
+      "unit": "text / saved label",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF002"
+        },
+        "field": "action",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF002.proposed_increment",
+      "label": "NF002 proposed increment",
+      "value": 0.0,
+      "display": "0.0",
+      "unit": "GBP consumer inclusive VAT",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF002"
+        },
+        "field": "proposed_increment",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF002.provisional_test_increment",
+      "label": "NF002 provisional test increment",
+      "value": 0.0,
+      "display": "0.0",
+      "unit": "GBP consumer inclusive VAT",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF002"
+        },
+        "field": "provisional_test_increment",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF002.assessment_increment",
+      "label": "NF002 assessment increment",
+      "value": 0.0,
+      "display": "0.0",
+      "unit": "GBP consumer inclusive VAT",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF002"
+        },
+        "field": "assessment_increment",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF002.rule_id",
+      "label": "NF002 rule id",
+      "value": "R1_CAUTION",
+      "display": "R1_CAUTION",
+      "unit": "text / saved label",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF002"
+        },
+        "field": "rule_id",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF002.current_standard_price",
+      "label": "NF002 current standard price",
+      "value": 31.99,
+      "display": "£31.99",
+      "unit": "GBP consumer inclusive VAT",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF002"
+        },
+        "field": "current_standard_price",
+        "transformation": "none"
+      },
+      "rounding": "GBP to 2 decimals"
+    },
+    {
+      "id": "site.NF002.proposed_standard_price",
+      "label": "NF002 proposed standard price",
+      "value": 31.99,
+      "display": "£31.99",
+      "unit": "GBP consumer inclusive VAT",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF002"
+        },
+        "field": "proposed_standard_price",
+        "transformation": "none"
+      },
+      "rounding": "GBP to 2 decimals"
+    },
+    {
+      "id": "site.NF002.plus1_qualified",
+      "label": "NF002 plus1 qualified",
+      "value": false,
+      "display": "False",
+      "unit": "boolean",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF002"
+        },
+        "field": "plus1_qualified",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF002.plus2_qualified",
+      "label": "NF002 plus2 qualified",
+      "value": false,
+      "display": "False",
+      "unit": "boolean",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF002"
+        },
+        "field": "plus2_qualified",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF002.plus1_failed_gates",
+      "label": "NF002 plus1 failed gates",
+      "value": "Post-increase competitor gap",
+      "display": "Post-increase competitor gap",
+      "unit": "text / saved label",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF002"
+        },
+        "field": "plus1_failed_gates",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF002.plus2_failed_gates",
+      "label": "NF002 plus2 failed gates",
+      "value": "Post-increase competitor gap",
+      "display": "Post-increase competitor gap",
+      "unit": "text / saved label",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF002"
+        },
+        "field": "plus2_failed_gates",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF002.explanation",
+      "label": "NF002 explanation",
+      "value": "Investigate qualified-prospect conversion and relative value; Investigate peak service capacity and member experience",
+      "display": "Investigate qualified-prospect conversion and relative value; Investigate peak service capacity and member experience",
+      "unit": "text / saved label",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF002"
+        },
+        "field": "explanation",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF002.selected_incremental_revenue",
+      "label": "NF002 selected incremental revenue",
+      "value": 0.0,
+      "display": "£0.00",
+      "unit": "GBP net",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF002"
+        },
+        "field": "selected_incremental_revenue",
+        "transformation": "none"
+      },
+      "rounding": "GBP to 2 decimals"
+    },
+    {
+      "id": "site.NF002.selected_member_impact",
+      "label": "NF002 selected member impact",
+      "value": 0.0,
+      "display": "0.00%",
+      "unit": "decimal December member impact",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF002"
+        },
+        "field": "selected_member_impact",
+        "transformation": "none"
+      },
+      "rounding": "decimal ×100, 2 decimals"
+    },
+    {
+      "id": "site.NF002.repeated_repricing",
+      "label": "NF002 repeated repricing",
+      "value": true,
+      "display": "True",
+      "unit": "boolean",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF002"
+        },
+        "field": "repeated_repricing",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF002.caution_flag_count",
+      "label": "NF002 caution flag count",
+      "value": 2.0,
+      "display": "2.0",
+      "unit": "count",
+      "window": "Phase 7 hypothetical 2026; December 2025 price snapshot",
+      "population": "Single gym saved recommendation",
+      "source": {
+        "path": "data/gym_recommendations.csv",
+        "key": {
+          "gym_id": "NF002"
+        },
+        "field": "caution_flag_count",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF002.design.disposition",
+      "label": "NF002 design disposition",
+      "value": "Excluded",
+      "display": "Excluded",
+      "unit": "saved design status",
+      "window": "December 2025 eligibility/matching",
+      "population": "Single gym",
+      "source": {
+        "path": "data/experiment_design.csv",
+        "key": {
+          "gym_id": "NF002"
+        },
+        "field": "disposition",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF002.design.assignment",
+      "label": "NF002 design assignment",
+      "value": null,
+      "display": "Unavailable",
+      "unit": "saved design status",
+      "window": "December 2025 eligibility/matching",
+      "population": "Single gym",
+      "source": {
+        "path": "data/experiment_design.csv",
+        "key": {
+          "gym_id": "NF002"
+        },
+        "field": "assignment",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF002.design.population",
+      "label": "NF002 design population",
+      "value": null,
+      "display": "Unavailable",
+      "unit": "saved design status",
+      "window": "December 2025 eligibility/matching",
+      "population": "Single gym",
+      "source": {
+        "path": "data/experiment_design.csv",
+        "key": {
+          "gym_id": "NF002"
+        },
+        "field": "population",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    },
+    {
+      "id": "site.NF002.design.exclusion_reason",
+      "label": "NF002 design exclusion_reason",
+      "value": "Existing Phase 3 caution requires investigation",
+      "display": "Existing Phase 3 caution requires investigation",
+      "unit": "saved design status",
+      "window": "December 2025 eligibility/matching",
+      "population": "Single gym",
+      "source": {
+        "path": "data/experiment_design.csv",
+        "key": {
+          "gym_id": "NF002"
+        },
+        "field": "exclusion_reason",
+        "transformation": "none"
+      },
+      "rounding": "unchanged"
+    }
+  ],
+  "sites": [
+    {
+      "gym_id": "NF049",
+      "recommendation": {
+        "city": "Hull",
+        "action": "RAISE £2",
+        "proposed_increment": 2.0,
+        "provisional_test_increment": 0.0,
+        "assessment_increment": 2.0,
+        "rule_id": "R7_CONDITIONAL_RAISE",
+        "current_standard_price": 27.99,
+        "proposed_standard_price": 29.99,
+        "plus1_qualified": true,
+        "plus2_qualified": true,
+        "plus1_failed_gates": null,
+        "plus2_failed_gates": null,
+        "explanation": "£2 gives the higher qualifying base revenue; downside member loss 4.72%, post-increase competitor gap £0.69",
+        "selected_incremental_revenue": 23791.8085576,
+        "selected_member_impact": -0.0362376984618,
+        "repeated_repricing": false,
+        "caution_flag_count": 0.0
+      },
+      "design": {
+        "disposition": "Assigned",
+        "assignment": "Treatment",
+        "population": "First repricing",
+        "exclusion_reason": ""
+      }
+    },
+    {
+      "gym_id": "NF023",
+      "recommendation": {
+        "city": "Portsmouth",
+        "action": "RAISE £1",
+        "proposed_increment": 1.0,
+        "provisional_test_increment": 0.0,
+        "assessment_increment": 1.0,
+        "rule_id": "R7_CONDITIONAL_RAISE",
+        "current_standard_price": 24.99,
+        "proposed_standard_price": 25.99,
+        "plus1_qualified": true,
+        "plus2_qualified": false,
+        "plus1_failed_gates": null,
+        "plus2_failed_gates": "Post-increase competitor gap; Downside member limit",
+        "explanation": "£1 gives the higher qualifying base revenue; downside member loss 2.86%, post-increase competitor gap £0.57",
+        "selected_incremental_revenue": 10335.4383131,
+        "selected_member_impact": -0.0219235299558,
+        "repeated_repricing": false,
+        "caution_flag_count": 0.0
+      },
+      "design": {
+        "disposition": "Reserve",
+        "assignment": "",
+        "population": "",
+        "exclusion_reason": "No same-region and same-repricing-history partner"
+      }
+    },
+    {
+      "gym_id": "NF013",
+      "recommendation": {
+        "city": "Reading",
+        "action": "TEST FIRST",
+        "proposed_increment": 0.0,
+        "provisional_test_increment": 2.0,
+        "assessment_increment": 2.0,
+        "rule_id": "R6_REPEAT_REPRICING",
+        "current_standard_price": 29.99,
+        "proposed_standard_price": 29.99,
+        "plus1_qualified": true,
+        "plus2_qualified": true,
+        "plus1_failed_gates": null,
+        "plus2_failed_gates": null,
+        "explanation": "£2 passes financial gates; repeat repricing requires controlled evidence",
+        "selected_incremental_revenue": 27654.9592451,
+        "selected_member_impact": -0.0354467308041,
+        "repeated_repricing": true,
+        "caution_flag_count": 0.0
+      },
+      "design": {
+        "disposition": "Assigned",
+        "assignment": "Control",
+        "population": "Repeat repricing",
+        "exclusion_reason": ""
+      }
+    },
+    {
+      "gym_id": "NF001",
+      "recommendation": {
+        "city": "London",
+        "action": "HOLD PRICE",
+        "proposed_increment": 0.0,
+        "provisional_test_increment": 0.0,
+        "assessment_increment": 0.0,
+        "rule_id": "R3_NO_PLAUSIBLE",
+        "current_standard_price": 27.99,
+        "proposed_standard_price": 27.99,
+        "plus1_qualified": false,
+        "plus2_qualified": false,
+        "plus1_failed_gates": "Post-increase competitor gap",
+        "plus2_failed_gates": "Post-increase competitor gap",
+        "explanation": "Neither £1 nor £2 preserves the required competitor gap with positive base revenue",
+        "selected_incremental_revenue": 0.0,
+        "selected_member_impact": 0.0,
+        "repeated_repricing": true,
+        "caution_flag_count": 0.0
+      },
+      "design": {
+        "disposition": "Excluded",
+        "assignment": "",
+        "population": "",
+        "exclusion_reason": "Phase 7 action is outside pilot eligibility"
+      }
+    },
+    {
+      "gym_id": "NF002",
+      "recommendation": {
+        "city": "London",
+        "action": "DEFENSIVE / INVESTIGATE",
+        "proposed_increment": 0.0,
+        "provisional_test_increment": 0.0,
+        "assessment_increment": 0.0,
+        "rule_id": "R1_CAUTION",
+        "current_standard_price": 31.99,
+        "proposed_standard_price": 31.99,
+        "plus1_qualified": false,
+        "plus2_qualified": false,
+        "plus1_failed_gates": "Post-increase competitor gap",
+        "plus2_failed_gates": "Post-increase competitor gap",
+        "explanation": "Investigate qualified-prospect conversion and relative value; Investigate peak service capacity and member experience",
+        "selected_incremental_revenue": 0.0,
+        "selected_member_impact": 0.0,
+        "repeated_repricing": true,
+        "caution_flag_count": 2.0
+      },
+      "design": {
+        "disposition": "Excluded",
+        "assignment": "",
+        "population": "",
+        "exclusion_reason": "Existing Phase 3 caution requires investigation"
+      }
+    }
+  ],
+  "source_hashes": {
+    "analysis/baseline_results.json": "50048d07881262e4f633df40aa2f06e9669573ddcfabf330f483c4069211b807",
+    "analysis/experiment_config.json": "72fda49a2c945fdcf791d04646c7ed1ad7d42b118efbd83796d111c5762a6e4b",
+    "analysis/experiment_results.json": "fb9de2aa0d02046e3a3739d0b281ec2e804fc8e74d3765753da885a38f0efd76",
+    "analysis/headroom_results.json": "86985d4baec3cb09a84e1275d21b6233cc24bbcdc947f29825695cc8033a6ce3",
+    "analysis/recommendation_config.json": "887a30d7adf69a5e55ae034dbfea92ad2dcbe64ccdcdd2ed7b4d37c87c98f939",
+    "analysis/scenario_config.json": "abe865a4a24bdd6c64bc43ef7dcab62671bfea6eb1710eb4fec65dd8d5dc3bc3",
+    "data/experiment_design.csv": "c3239810a18d0be672bfedcc621e14b90bef1c40e26149041fa809f1c5099a38",
+    "data/experiment_estimates.csv": "ab343c76a1578c5c368a49944e4cc6f91c3c014cde07108947329412697c2602",
+    "data/experiment_power.csv": "0d5e0e13eb1bfd4b74f263b91aa6b035c58c77e6cbe57fdc7ed9d4a663425b1f",
+    "data/gym_recommendations.csv": "57a788c133345764f867f42f74b31b04b32e49bf1867d10a1f5f349154614199",
+    "data/price_response_estimates.csv": "65fca90290010450f8ea1d40cdaf2a80b2c229e3c02807a6cba22ad814512794",
+    "data/recommendation_portfolio.csv": "c0aa8c4e705544e245df2c1f598318c4ea034b53a95a6857410dc338527fe4e8"
+  },
+  "disclaimers": [
+    "This project uses synthetic data and is inspired by the commercial economics of UK subscription fitness businesses.",
+    "This project uses synthetic data created for portfolio purposes. It is inspired by the economics of multi-site subscription fitness businesses and does not use confidential information from The Gym Group or any other operator."
+  ]
+}

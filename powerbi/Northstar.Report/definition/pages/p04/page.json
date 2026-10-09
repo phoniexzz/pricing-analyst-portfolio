@@ -1,0 +1,256 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "p04",
+  "displayName": "Pricing Scenarios",
+  "displayOption": "FitToPage",
+  "height": 1095,
+  "width": 1600,
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#F4F7FA'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "p04_revenue",
+      "target": "p04_case",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_revenue",
+      "target": "p04_status",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_revenue",
+      "target": "p04_members",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_revenue",
+      "target": "p04_compare",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_revenue",
+      "target": "p04_stress",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_revenue",
+      "target": "p04_uncertainty",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_revenue",
+      "target": "p04_shared0",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_revenue",
+      "target": "p04_shared1",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_revenue",
+      "target": "p04_shared2",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_revenue",
+      "target": "p04_shared3",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_revenue",
+      "target": "p04_stamp",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_members",
+      "target": "p04_case",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_members",
+      "target": "p04_status",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_members",
+      "target": "p04_revenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_members",
+      "target": "p04_compare",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_members",
+      "target": "p04_stress",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_members",
+      "target": "p04_uncertainty",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_members",
+      "target": "p04_shared0",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_members",
+      "target": "p04_shared1",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_members",
+      "target": "p04_shared2",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_members",
+      "target": "p04_shared3",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_members",
+      "target": "p04_stamp",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_compare",
+      "target": "p04_case",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_compare",
+      "target": "p04_status",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_compare",
+      "target": "p04_revenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_compare",
+      "target": "p04_members",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_compare",
+      "target": "p04_stress",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_compare",
+      "target": "p04_uncertainty",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_compare",
+      "target": "p04_shared0",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_compare",
+      "target": "p04_shared1",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_compare",
+      "target": "p04_shared2",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_compare",
+      "target": "p04_shared3",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_compare",
+      "target": "p04_stamp",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_stress",
+      "target": "p04_case",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_stress",
+      "target": "p04_status",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_stress",
+      "target": "p04_revenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_stress",
+      "target": "p04_members",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_stress",
+      "target": "p04_compare",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_stress",
+      "target": "p04_uncertainty",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_stress",
+      "target": "p04_shared0",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_stress",
+      "target": "p04_shared1",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_stress",
+      "target": "p04_shared2",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_stress",
+      "target": "p04_shared3",
+      "type": "NoFilter"
+    },
+    {
+      "source": "p04_stress",
+      "target": "p04_stamp",
+      "type": "NoFilter"
+    }
+  ]
+}

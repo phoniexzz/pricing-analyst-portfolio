@@ -1,0 +1,40 @@
+table DimMetricPanel
+	lineageTag: 4f3e4a44-bb23-529a-a550-2b5b9e5d6ec3
+
+	column row_id
+		dataType: string
+		lineageTag: 60ded682-30c5-5dfe-b2f5-05be72e80779
+		summarizeBy: none
+		sourceColumn: row_id
+
+	column panel
+		dataType: string
+		lineageTag: 40742147-4d1f-5aeb-9ab3-a8d8a935dd57
+		summarizeBy: none
+		sourceColumn: panel
+
+	column metric
+		dataType: string
+		lineageTag: c103b850-5a4d-5d00-a56c-03df77adec21
+		summarizeBy: none
+		sourceColumn: metric
+		sortByColumn: sort_order
+
+	column sort_order
+		dataType: int64
+		formatString: #,##0
+		lineageTag: 756469b2-81c4-5886-ae89-4639f44eca2f
+		summarizeBy: none
+		sourceColumn: sort_order
+
+	partition DimMetricPanel = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(SourceRoot & "/DimMetricPanel.csv"), [Delimiter=",", Columns=4, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Nulls = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				    Typed = Table.TransformColumnTypes(Nulls, {{"row_id", type text}, {"panel", type text}, {"metric", type text}, {"sort_order", Int64.Type}}, "en-GB")
+				in
+				    Typed
+

@@ -1,0 +1,220 @@
+relationship fa6b4e90-0804-59d1-870b-e4b0f25f5217
+	fromColumn: FactHistory.gym_id
+	toColumn: DimGym.gym_id
+
+relationship 27a8776c-bf76-508a-8d85-028da8d7eda8
+	fromColumn: FactCompetitor.gym_id
+	toColumn: DimGym.gym_id
+
+relationship 369b6445-4996-579e-9f1e-fbdef9a0bc5a
+	fromColumn: FactBaseline.gym_id
+	toColumn: DimGym.gym_id
+
+relationship d3747812-72e6-5771-8284-75081d66e933
+	fromColumn: FactHeadroom.gym_id
+	toColumn: DimGym.gym_id
+
+relationship 9093ada3-ae90-59be-9b81-7c4b01af7c67
+	fromColumn: FactRecommendation.gym_id
+	toColumn: DimGym.gym_id
+
+relationship 69639672-cf57-5971-9ba4-db44bb6e6906
+	fromColumn: FactScenarioMonthly.gym_id
+	toColumn: DimGym.gym_id
+
+relationship abe8b962-f671-57a7-b2dd-3eca358775a1
+	fromColumn: FactScenarioMonthly.case
+	toColumn: DimCase.case
+
+relationship a784f0da-7032-5654-93ee-aa0ac58932e8
+	fromColumn: FactScenarioMonthly.price_increment
+	toColumn: DimPrice.price_increment
+
+relationship acab8dc3-5c51-5192-80c8-a2e7fc3b5d79
+	fromColumn: FactScenarioAnnual.gym_id
+	toColumn: DimGym.gym_id
+
+relationship 5da0ced0-20f9-531c-9b77-e33e71d2b1c8
+	fromColumn: FactScenarioAnnual.case
+	toColumn: DimCase.case
+
+relationship 01fae930-fdcc-5c7b-afcc-fdde189720d4
+	fromColumn: FactScenarioAnnual.price_increment
+	toColumn: DimPrice.price_increment
+
+relationship 63368548-bfed-59df-a9cd-066e8eab46bf
+	fromColumn: FactScenarioEstate.case
+	toColumn: DimCase.case
+
+relationship b9d6c2e0-0c8b-5177-bb7e-17eb80a0bf5a
+	fromColumn: FactScenarioEstate.price_increment
+	toColumn: DimPrice.price_increment
+
+relationship be36c5b7-0a9b-5074-b64a-fa8799a3e214
+	fromColumn: FactPolicyRecommendation.gym_id
+	toColumn: DimGym.gym_id
+
+relationship 54ac6d87-ba3e-57a6-8514-169939a53ab4
+	fromColumn: FactPolicyRecommendation.variant
+	toColumn: DimPolicy.variant
+
+relationship f5671b94-848e-5833-a716-00217500dedf
+	fromColumn: FactPortfolio.case
+	toColumn: DimCase.case
+
+relationship c4c27597-3c2e-5fe0-bfc3-b7840f5db1b4
+	fromColumn: FactPortfolio.variant
+	toColumn: DimPolicy.variant
+
+relationship e032f5a8-1ce3-5897-b149-e55222fe4532
+	fromColumn: FactHistoricalEvent.gym_id
+	toColumn: DimGym.gym_id
+
+relationship 2ba4d8ab-e02e-590f-9826-337d1a0bc188
+	fromColumn: FactExperimentDesign.gym_id
+	toColumn: DimGym.gym_id
+
+relationship 1ee81f90-956e-5916-adb1-6e5ebfd769d0
+	fromColumn: FactExperimentPair.simulation
+	toColumn: DimSimulation.simulation
+
+relationship 58c7f97c-52f7-5cd4-9f0e-5ed9ddb40fc5
+	fromColumn: FactExperimentPair.checkpoint_months
+	toColumn: DimCheckpoint.checkpoint_months
+
+relationship 0670755a-e052-575f-b781-01f2a9204c4f
+	fromColumn: FactExperimentEstimate.simulation
+	toColumn: DimSimulation.simulation
+
+relationship 3b19f0b4-4efe-5021-956b-fe3cea014101
+	fromColumn: FactExperimentEstimate.checkpoint_months
+	toColumn: DimCheckpoint.checkpoint_months
+
+relationship 481c170f-fe53-5b84-b6f8-1bc1ee66b057
+	fromColumn: FactExperimentEstimate.population
+	toColumn: DimPopulation.population
+
+relationship b86fbb68-d8a3-557f-9dbf-7a53df4ecd43
+	fromColumn: FactExperimentMonitoring.gym_id
+	toColumn: DimGym.gym_id
+
+relationship dcfafcd3-2710-5f6c-9de1-45a201ac33ac
+	fromColumn: FactExperimentMonitoring.simulation
+	toColumn: DimSimulation.simulation
+
+relationship 3c6bb9f6-f5bd-5b0f-9dac-2930ececee12
+	fromColumn: FactExperimentMonitoring.checkpoint_months
+	toColumn: DimCheckpoint.checkpoint_months
+
+relationship 8a23c318-2bb6-5e0f-810d-c395a543233e
+	fromColumn: FactHistory.month
+	toColumn: DimHistoryMonth.month
+
+relationship d0f8af2a-e052-5c86-b51f-3ad85884d405
+	fromColumn: FactCompetitor.month
+	toColumn: DimHistoryMonth.month
+
+relationship 0b2994b0-7106-5221-9901-8b7581ca48b3
+	fromColumn: FactScenarioMonthly.month
+	toColumn: DimScenarioMonth.month
+
+relationship ead1a8ab-fb07-5a04-b9a9-d650bec050e5
+	fromColumn: FactScenarioSiteSensitivity.price_increment
+	toColumn: DimPrice.price_increment
+
+relationship f401ea06-bff7-5fe3-b934-ab38ffe4f443
+	fromColumn: FactScenarioSiteSensitivity.variant
+	toColumn: DimAlternative.variant
+
+relationship 37858b23-5871-5f46-bf3d-93d580df22a7
+	fromColumn: FactScenarioSiteSensitivity.case
+	toColumn: DimCase.case
+
+relationship 00359d1b-44ca-5bdf-9757-1e1533b4f94c
+	fromColumn: FactScenarioSiteSensitivity.gym_id
+	toColumn: DimGym.gym_id
+
+relationship e1e311f5-3625-5961-ab41-ac06bd96bce1
+	fromColumn: FactScenarioEstateSensitivity.price_increment
+	toColumn: DimPrice.price_increment
+
+relationship 1727bc4c-1984-56f6-ba4c-d943f5374c82
+	fromColumn: FactScenarioEstateSensitivity.variant
+	toColumn: DimAlternative.variant
+
+relationship 58f9b9f7-0a9c-5246-8292-4bea9ca07e62
+	fromColumn: FactScenarioEstateSensitivity.case
+	toColumn: DimCase.case
+
+relationship 687c211a-2945-53d4-8797-00e2b219cc7c
+	fromColumn: FactHistoricalPilotMonth.gym_id
+	toColumn: DimGym.gym_id
+
+relationship 712474fe-442d-57cb-9aa5-cba9d4c7e5fe
+	fromColumn: FactHistoricalPilotMonth.month
+	toColumn: DimHistoryMonth.month
+
+relationship e79bf40c-3a39-5ff3-bd4c-a6420ac52af8
+	fromColumn: FactPortfolioSite.gym_id
+	toColumn: DimGym.gym_id
+
+relationship c2cea5a1-bbd0-5db9-bd5d-c8c6bbe219b7
+	fromColumn: FactPortfolioSite.variant
+	toColumn: DimPolicy.variant
+
+relationship 7408c202-2654-587f-96de-3cf94058a127
+	fromColumn: FactPortfolioSite.case
+	toColumn: DimCase.case
+
+relationship e24adcb7-6d69-50bd-a613-a43145bae46c
+	fromColumn: FactExperimentHistory.gym_id
+	toColumn: DimGym.gym_id
+
+relationship b2bab845-1952-5c01-94d2-4d6bcbdec2e0
+	fromColumn: FactExperimentHistory.month
+	toColumn: DimExperimentMonth.month
+
+relationship 6298b7af-88d7-5baf-8c6b-c84731e9590b
+	fromColumn: FactExperimentHistory.assignment
+	toColumn: DimAssignment.assignment
+
+relationship b68104b7-3900-5b85-bc2c-3d2dba95c552
+	fromColumn: FactExperimentPath.gym_id
+	toColumn: DimGym.gym_id
+
+relationship b91b555b-f2dc-595c-a8a5-b43829bb488b
+	fromColumn: FactExperimentPath.month
+	toColumn: DimExperimentMonth.month
+
+relationship 2b9b1343-b461-5864-8588-c58fe58fb159
+	fromColumn: FactExperimentPath.assignment
+	toColumn: DimAssignment.assignment
+
+relationship 2314343a-e7f9-5b8b-920f-b437b6f743fa
+	fromColumn: FactExperimentPath.simulation
+	toColumn: DimSimulation.simulation
+
+relationship c761534d-29ca-583c-b454-4317fba6fd5d
+	fromColumn: FactExperimentGovernance.simulation
+	toColumn: DimSimulation.simulation
+
+relationship 5aab9a6a-3856-53a8-9f14-25b30cd4c4f7
+	fromColumn: FactExperimentGovernance.population
+	toColumn: DimPopulation.population
+
+relationship e4981018-aef5-5564-9a2e-ad23f9a5a8fd
+	fromColumn: FactExperimentGovernance.checkpoint_months
+	toColumn: DimCheckpoint.checkpoint_months
+
+relationship 767033d8-6465-529e-95c4-1c88f4e4661b
+	fromColumn: FactExperimentGuardrail.simulation
+	toColumn: DimSimulation.simulation
+
+relationship 530ea434-14a6-5c25-bd39-01103be80d7d
+	fromColumn: FactExperimentGuardrail.population
+	toColumn: DimPopulation.population
+
+relationship 6e7bcb0b-83af-5813-9860-af1a7c23df7e
+	fromColumn: FactExperimentGuardrail.checkpoint_months
+	toColumn: DimCheckpoint.checkpoint_months
+

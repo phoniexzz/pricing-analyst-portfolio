@@ -1,0 +1,185 @@
+table FactExperimentMonitoring
+	lineageTag: df6970a7-0a4c-5c25-b8d8-9751b123e38d
+
+	column simulation
+		dataType: string
+		lineageTag: 1552f36b-6825-5748-b417-a86e66f6528f
+		summarizeBy: none
+		sourceColumn: simulation
+
+	column gym_id
+		dataType: string
+		lineageTag: 64f533bf-33e1-5af8-ad03-8c3d4e33aee2
+		summarizeBy: none
+		sourceColumn: gym_id
+
+	column pair_id
+		dataType: string
+		lineageTag: 3cfac762-c613-5c01-893e-c0b0ccdd5189
+		summarizeBy: none
+		sourceColumn: pair_id
+
+	column population
+		dataType: string
+		lineageTag: 3d2df3b5-9943-5682-8dad-4f8913a17790
+		summarizeBy: none
+		sourceColumn: population
+
+	column assignment
+		dataType: string
+		lineageTag: 287e5967-7e29-5529-a3fb-df6512b405aa
+		summarizeBy: none
+		sourceColumn: assignment
+
+	column checkpoint_months
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: c2e5f2ee-6600-58b4-a4e9-0c6d8f732758
+		summarizeBy: none
+		sourceColumn: checkpoint_months
+
+	column review_date
+		dataType: dateTime
+		isHidden
+		formatString: yyyy-MM-dd
+		lineageTag: 5f897d73-636d-58d9-b854-d84ce4430848
+		summarizeBy: none
+		sourceColumn: review_date
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column review_label
+		dataType: string
+		lineageTag: ab7a0f8a-879a-58a4-877e-09df308dd4f9
+		summarizeBy: none
+		sourceColumn: review_label
+
+	column cumulative_revenue
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 89e75b8e-8ff0-55aa-9c80-75a5bbdaac52
+		summarizeBy: none
+		sourceColumn: cumulative_revenue
+
+	column closing_members
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: c2cc1bdd-8f30-55fe-8feb-4736ba8b95b8
+		summarizeBy: none
+		sourceColumn: closing_members
+
+	column new_members
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 0d8aeb63-f3cf-5997-af90-6bfc6071362a
+		summarizeBy: none
+		sourceColumn: new_members
+
+	column standard_joins
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 0e491f5b-1b1d-54e6-bd25-1d70e5e8490d
+		summarizeBy: none
+		sourceColumn: standard_joins
+
+	column qualified_prospects
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: a09f7096-4f49-5013-be14-d950d0cf94a7
+		summarizeBy: none
+		sourceColumn: qualified_prospects
+
+	column conversion
+		dataType: double
+		isHidden
+		lineageTag: 60ae8ea4-ec79-5c30-b6e2-f7c5d3a20bbb
+		summarizeBy: none
+		sourceColumn: conversion
+
+	column incumbent_churn
+		dataType: double
+		isHidden
+		lineageTag: 25577afa-466b-5022-a116-f687274bed8b
+		summarizeBy: none
+		sourceColumn: incumbent_churn
+
+	column incumbent_downgrade
+		dataType: double
+		isHidden
+		lineageTag: d2ce215f-5a5c-5c92-b549-16ad4cfceb66
+		summarizeBy: none
+		sourceColumn: incumbent_downgrade
+
+	column subscription_yield
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 5689fffb-1f5b-5f22-ae92-87651e27015b
+		summarizeBy: none
+		sourceColumn: subscription_yield
+
+	column arpmm
+		dataType: double
+		isHidden
+		formatString: £#,##0.00
+		lineageTag: 8c2c2ac3-d684-51ea-8abc-7adcc1faca45
+		summarizeBy: none
+		sourceColumn: arpmm
+
+	column complaints_per_1000
+		dataType: double
+		isHidden
+		lineageTag: 13ef09b7-e5d9-537c-98c2-f525d72c4e48
+		summarizeBy: none
+		sourceColumn: complaints_per_1000
+
+	column maximum_peak
+		dataType: double
+		isHidden
+		lineageTag: 9e7c4e12-80ec-5fe4-8afd-b0646034a74b
+		summarizeBy: none
+		sourceColumn: maximum_peak
+
+	column capacity_trigger
+		dataType: boolean
+		isHidden
+		lineageTag: 757676bc-f891-59b5-8f5a-c61ae32a9939
+		summarizeBy: none
+		sourceColumn: capacity_trigger
+
+	column paired_complaints_change
+		dataType: double
+		isHidden
+		lineageTag: dbfb7627-8eac-50c3-97f1-7586ddc13ebe
+		summarizeBy: none
+		sourceColumn: paired_complaints_change
+
+	column population_decision
+		dataType: string
+		lineageTag: 61b89c31-92a5-596a-bc6e-c3655119a71b
+		summarizeBy: none
+		sourceColumn: population_decision
+
+	column required_response
+		dataType: string
+		lineageTag: cd67ecc2-13e8-502d-82cd-ee3585f8eff7
+		summarizeBy: none
+		sourceColumn: required_response
+
+	partition FactExperimentMonitoring = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(SourceRoot & "/FactExperimentMonitoring.csv"), [Delimiter=",", Columns=24, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Nulls = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				    Typed = Table.TransformColumnTypes(Nulls, {{"simulation", type text}, {"gym_id", type text}, {"pair_id", type text}, {"population", type text}, {"assignment", type text}, {"checkpoint_months", Int64.Type}, {"review_date", type date}, {"review_label", type text}, {"cumulative_revenue", type number}, {"closing_members", Int64.Type}, {"new_members", Int64.Type}, {"standard_joins", Int64.Type}, {"qualified_prospects", Int64.Type}, {"conversion", type number}, {"incumbent_churn", type number}, {"incumbent_downgrade", type number}, {"subscription_yield", type number}, {"arpmm", type number}, {"complaints_per_1000", type number}, {"maximum_peak", type number}, {"capacity_trigger", type logical}, {"paired_complaints_change", type number}, {"population_decision", type text}, {"required_response", type text}}, "en-GB")
+				in
+				    Typed
+
